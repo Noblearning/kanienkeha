@@ -2004,13 +2004,520 @@
             "storyPrompt": "Io'nikonhraién:ta'ne — it makes the mind happy. You have now completed Unit 3. What, in this course so far, has made your mind happy? What has surprised you? What has felt like coming home to something? Write freely — this reflection is just for you."
           }
         ]
+      },
+      {
+        "id": "u2l3",
+        "title": "Lesson 12 — O-Class Nouns: Nature & Objects",
+        "icon": "🌿",
+        "sub": "Nouns beginning with O",
+        "intro": [
+          "<strong>O-class nouns</strong> begin with the vowel 'o'. They include many words from the natural world — water, feathers, flowers, leaves — alongside everyday objects like glass, money, and candy.",
+          "Like A-class nouns, O-class nouns come in <strong>true</strong> (root meaning lost) and <strong>fake</strong> (root still identifiable) varieties. Many nature nouns in this class appear in the <strong>Thanksgiving Address</strong> — water, flowers, and feathers are all acknowledged as beings to be thanked.",
+          "A key O-class noun to know: <strong>Ohwísta</strong> (money) appears in the Kontinónhstats opening text — the same curriculum you are using. Language and economy are not separate."
+        ],
+        "ped": "<strong>Nature vocabulary and the Thanksgiving Address:</strong> Chew, Leonard & Rosenblum (2023) argue that Indigenous language pedagogies should root vocabulary in the worldview of the language. Introducing O-class nature nouns alongside their presence in the Thanksgiving Address does exactly this — these are not merely 'vocabulary items' but beings the language acknowledges.",
+        "vocabIds": [
+          "o01",
+          "o02",
+          "o03",
+          "o04",
+          "o05",
+          "o06",
+          "o07",
+          "o08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "o05",
+            "prompt": "What does Ónhka mean?",
+            "sub": "",
+            "correct": "Water",
+            "options": [
+              "Water",
+              "Flower",
+              "Feather",
+              "Glass"
+            ],
+            "cm": "Tho niioht! Ónhka — water. Water is the first being acknowledged in the Thanksgiving Address after the people themselves.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "o03",
+            "prompt": "What does Ohwísta mean?",
+            "sub": "",
+            "correct": "Money",
+            "options": [
+              "Money",
+              "Sugar",
+              "Necklace",
+              "Feather"
+            ],
+            "cm": "Niawenhkó:wa! Ohwísta — money. This word appears in the Kontinónhstats curriculum text describing funding for language revitalization.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the O-class nature nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ónhka",
+                "english": "Water",
+                "wids": [
+                  "o05"
+                ]
+              },
+              {
+                "target": "Ohwén:tsia",
+                "english": "Flower",
+                "wids": [
+                  "o07"
+                ]
+              },
+              {
+                "target": "Ohón:ta",
+                "english": "Feather",
+                "wids": [
+                  "o06"
+                ]
+              },
+              {
+                "target": "Ohná:ken",
+                "english": "Leaf",
+                "wids": [
+                  "o08"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! These four nature nouns all appear in the Thanksgiving Address — they are not just vocabulary but acknowledged members of the world.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the O-class everyday nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ó:wise'",
+                "english": "Glass / Ice",
+                "wids": [
+                  "o01"
+                ]
+              },
+              {
+                "target": "Ostarò:kwa",
+                "english": "Necklace",
+                "wids": [
+                  "o02"
+                ]
+              },
+              {
+                "target": "Ohwísta",
+                "english": "Money",
+                "wids": [
+                  "o03"
+                ]
+              },
+              {
+                "target": "Otsikhè:ta",
+                "english": "Sugar / Candy",
+                "wids": [
+                  "o04"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! O-class nouns cover both the natural world and everyday life.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "o04",
+            "prompt": "Complete the word for 'sugar/candy'",
+            "sentence": "Sugar is Otsikhè:___",
+            "correct": "ta",
+            "hint": "t",
+            "alts": [
+              "ta"
+            ],
+            "cm": "Tho niioht! Otsikhè:ta. This word appeared in the very first Kontinónhstats example sentence: 'Shní:non thi otsikhè:ta' (You buy the candy).",
+            "wm": "That answer is incorrect — ends in 'ta'."
+          },
+          {
+            "type": "type",
+            "wid": "o05",
+            "prompt": "How do you say 'Water'?",
+            "sub": "",
+            "correct": "Ónhka",
+            "alts": [
+              "onhka",
+              "Onhka"
+            ],
+            "cm": "Niawenhkó:wa! Ónhka. Water is central to Kanien'kehá:ka life and ceremony.",
+            "wm": "That answer is incorrect — try again. Try: Ónhka"
+          },
+          {
+            "type": "mc",
+            "wid": "o06",
+            "prompt": "Ohón:ta means 'feather'. Why might feathers have particular significance in the vocabulary you are learning?",
+            "sub": "",
+            "correct": "Eagle feathers and other feathers carry ceremonial importance in Haudenosaunee culture",
+            "options": [
+              "Eagle feathers and other feathers carry ceremonial importance in Haudenosaunee culture",
+              "Feathers are only used for writing",
+              "No particular reason",
+              "Feathers are only in the O-class by accident"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Feathers — especially eagle feathers — carry deep ceremonial significance. The language does not separate 'everyday vocabulary' from 'sacred vocabulary'; all of creation is present in the words.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "o05",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ónhka",
+            "meaning": "Water",
+            "hint": "Two syllables: ÓN-hka. The Ó is stressed and slightly long. The -nhka ending is a nasal + stop."
+          },
+          {
+            "type": "mc",
+            "wid": "o07",
+            "prompt": "Ohwén:tsia (flower) appears in the Thanksgiving Address. What does this tell you about how Kanien'kéha treats the natural world?",
+            "sub": "",
+            "correct": "The natural world is addressed directly — flowers are beings to be thanked, not objects to be named",
+            "options": [
+              "The natural world is addressed directly — flowers are beings to be thanked, not objects to be named",
+              "Flowers are only decorative",
+              "The Thanksgiving Address is just poetry",
+              "O-class nouns are less important than A-class"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The Thanksgiving Address acknowledges every element of creation — water, plants, animals, winds, sun, moon, stars — as beings in ongoing relationship with the people. Learning these words means learning a relational ontology.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "o05",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ónhka",
+            "meaning": "Water",
+            "storyPrompt": "Ónhka — water. In the Thanksgiving Address, water is the first being acknowledged after the people themselves. Without water, nothing lives. Think about water in your life: where it comes from, who it connects you to, what it sustains. What does holding this word in Kanien'kéha feel like?"
+          }
+        ]
+      },
+      {
+        "id": "u2l4",
+        "title": "Lesson 13 — Ka-Class Nouns: Tools & Community",
+        "icon": "🛶",
+        "sub": "Nouns beginning with Ka",
+        "intro": [
+          "<strong>Ka-class nouns</strong> begin with the syllable 'ka'. They include a wide range of everyday tools, vehicles, musical instruments, and traditional items.",
+          "Some Ka-class nouns show how Kanien'kéha adapts to the modern world: <strong>Kà:sere'</strong> (car) and <strong>Kahiatónhsera</strong> (paper/book) are examples of the noun class system being extended to name new concepts. The language does not freeze — it grows.",
+          "One culturally significant Ka-class noun: <strong>Ka'nikonhrhà:wi</strong> (flint/arrowhead). The Kanien'kehá:ka — the People of the Flint — take their identity from this stone. The word for who you are as a people is in the same class as your most essential tool."
+        ],
+        "ped": "<strong>Loanwords and language vitality:</strong> A living language adapts. García & Li Wei (2014) note that translanguaging communities continuously add new vocabulary. Kanien'kéha has named cars, books, and clocks using its own noun class system — this is evidence of vitality, not corruption.",
+        "vocabIds": [
+          "ka01",
+          "ka02",
+          "ka03",
+          "ka04",
+          "ka05",
+          "ka06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "ka01",
+            "prompt": "What does Kà:sere' mean?",
+            "sub": "",
+            "correct": "Car / Automobile",
+            "options": [
+              "Car / Automobile",
+              "Boat",
+              "Book",
+              "Drum"
+            ],
+            "cm": "Tho niioht! Kà:sere' — car. A modern concept named using the Ka-class system. The language adapts.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ka02",
+            "prompt": "Kahiatónhsera means 'paper or book'. What does the root -hiatónhsera suggest about this word?",
+            "sub": "",
+            "correct": "The root is related to writing — kahiatónhsera literally means 'writing-thing'",
+            "options": [
+              "The root is related to writing — kahiatónhsera literally means 'writing-thing'",
+              "It is a pure loanword with no Kanien'kéha root",
+              "The root means 'tree'",
+              "Ka- is the only meaningful part"
+            ],
+            "cm": "Niawenhkó:wa! -hiatónhsera is a verb-derived root meaning 'writing'. Kanien'kéha names modern objects by describing their function — 'paper' is 'the writing thing'. This is how the language grows.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the Ka-class nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Kà:sere'",
+                "english": "Car",
+                "wids": [
+                  "ka01"
+                ]
+              },
+              {
+                "target": "Kahiatónhsera",
+                "english": "Paper / Book",
+                "wids": [
+                  "ka02"
+                ]
+              },
+              {
+                "target": "Kanonhsatón:ni",
+                "english": "Door",
+                "wids": [
+                  "ka03"
+                ]
+              },
+              {
+                "target": "Kanén:tara",
+                "english": "Drum",
+                "wids": [
+                  "ka05"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Ka-class nouns range from modern inventions (car, book) to traditional instruments (drum). The same noun class holds all of them.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ka04",
+            "prompt": "What does Kaná:tsihs mean?",
+            "sub": "",
+            "correct": "Boat / Canoe",
+            "options": [
+              "Boat / Canoe",
+              "Car",
+              "Key",
+              "Drum"
+            ],
+            "cm": "Tho niioht! Kaná:tsihs — boat/canoe. Watercraft is historically central to Kanien'kehá:ka life on the St. Lawrence and Lake of Two Mountains.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "ka05",
+            "prompt": "Complete the word for 'drum'",
+            "sentence": "Drum is Kanén:___",
+            "correct": "tara",
+            "hint": "t",
+            "alts": [
+              "tara"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Kanén:tara — drum. The drum opens and closes ceremony and social dance throughout Haudenosaunee culture.",
+            "wm": "That answer is incorrect — ends in 'tara'."
+          },
+          {
+            "type": "type",
+            "wid": "ka01",
+            "prompt": "How do you say 'Car'?",
+            "sub": "",
+            "correct": "Kà:sere'",
+            "alts": [
+              "ka:sere'",
+              "kasere"
+            ],
+            "cm": "Niawenhkó:wa! Kà:sere'. The Ka- prefix marks the class; the rest is the noun root.",
+            "wm": "That answer is incorrect — try again. Try: Kà:sere'"
+          },
+          {
+            "type": "mc",
+            "wid": "ka06",
+            "prompt": "Ka'nikonhrhà:wi means 'flint/arrowhead'. The Kanien'kehá:ka are known as 'People of the Flint' (Kanien'kéha = language of the flint). What does it mean that flint appears in the Ka-class — the same class as 'car' and 'drum'?",
+            "sub": "",
+            "correct": "The noun class system is not a hierarchy — traditional tools and modern inventions belong in the same grammatical family",
+            "options": [
+              "The noun class system is not a hierarchy — traditional tools and modern inventions belong in the same grammatical family",
+              "Cars are more important than flint in the modern world",
+              "Flint is less important than a drum",
+              "The Ka-class only holds modern loanwords"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The noun class system is grammatical, not hierarchical. Flint — the stone that names the people — and car — a modern adaptation — share Ka-class grammar. The language holds both without ranking one above the other.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ka05",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Kanén:tara",
+            "meaning": "Drum",
+            "hint": "Four syllables: ka-NÉN-ta-ra. Stress on the second. The colon (:) after én means the vowel is held slightly longer."
+          },
+          {
+            "type": "mc",
+            "wid": "ka02",
+            "prompt": "Kanien'kéha has adapted its noun class system to name modern objects. How does this compare to how English handles new technology vocabulary?",
+            "sub": "",
+            "correct": "English often borrows foreign words (telephone, internet); Kanien'kéha creates new words from existing roots using its own grammar",
+            "options": [
+              "English often borrows foreign words (telephone, internet); Kanien'kéha creates new words from existing roots using its own grammar",
+              "Kanien'kéha borrows more than English",
+              "English never borrows words",
+              "They do exactly the same thing"
+            ],
+            "cm": "Niawenhkó:wa! Kanien'kéha's strategy of naming new objects by describing their function (kahiatónhsera = 'writing-thing' for paper) is different from English's tendency to borrow Greek/Latin or foreign terms. Both are valid — they reflect different approaches to language growth.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "ka06",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ka'nikonhrhà:wi",
+            "meaning": "Flint / Arrowhead",
+            "storyPrompt": "Ka'nikonhrhà:wi — flint. The Kanien'kehá:ka are the People of the Flint. What object, tool, or material defines the people you come from? What would you be called if your identity were named after the most essential thing your community works with?"
+          }
+        ]
+      },
+      {
+        "id": "u2l5",
+        "title": "Lesson 14 — Kanehsatà:ke: Our Place on the Land",
+        "icon": "🌲",
+        "sub": "Place names, directions, and the land",
+        "intro": [
+          "This lesson introduces the name of the community itself — <strong>Kanehsatà:ke</strong> — and the directional and place vocabulary specific to it. Language and land are inseparable in Kanien'kéha.",
+          "Kanehsatà:ke means <strong>'where the crust of snow on top of the earth is'</strong>. The 1990 Oka Crisis centred on this community's defence of their land against a golf course expansion — the proposed site included a sacred pine grove. Knowing the community's name in its own language is a political act as much as a linguistic one.",
+          "This lesson also introduces <strong>Karáhkwa</strong> (the sun) — one of the beings acknowledged in the Thanksgiving Address — and <strong>Awé:ri</strong>, a directional term encoding local geography."
+        ],
+        "ped": "<strong>Place names as decolonization:</strong> Tuck & Yang (2012) argue that decolonization involves restoring land and relationships to Indigenous peoples. Place names are one site of that restoration — 'Kanehsatà:ke' rather than 'Oka' is not just a preference but an assertion of presence.",
+        "vocabIds": [
+          "pl01",
+          "pl02",
+          "pl03"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "pl01",
+            "prompt": "What does Kanehsatà:ke mean?",
+            "sub": "",
+            "correct": "Where the crust of snow on top of the earth is",
+            "options": [
+              "Where the crust of snow on top of the earth is",
+              "People of the Flint",
+              "The village by the water",
+              "Place of many pines"
+            ],
+            "cm": "Tho niioht! Kanehsatà:ke — 'where the crust of snow on top of the earth is'. The community often called 'Oka' in English — a name that erases Indigenous presence entirely.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "pl02",
+            "prompt": "What does Karáhkwa mean?",
+            "sub": "",
+            "correct": "Sun / The sun",
+            "options": [
+              "Sun / The sun",
+              "Moon",
+              "Star",
+              "Fire"
+            ],
+            "cm": "Niawenhkó:wa! Karáhkwa — the sun. Acknowledged in the Thanksgiving Address: 'Look up and see the sun, our eldest brother.'",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "pl01",
+            "prompt": "Complete the community name",
+            "sentence": "The community's name in Kanien'kéha is Kanehsatà:___",
+            "correct": "ke",
+            "hint": "k",
+            "alts": [
+              "ke"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Kanehsatà:ke. Not 'Oka' — the Kanien'kéha name asserts this community's existence in its own language.",
+            "wm": "That answer is incorrect — ends in 'ke'."
+          },
+          {
+            "type": "type",
+            "wid": "pl01",
+            "prompt": "How do you spell the community's name in Kanien'kéha?",
+            "sub": "Accents optional for this answer",
+            "correct": "Kanehsatà:ke",
+            "alts": [
+              "Kanehsata:ke",
+              "kanehsatake",
+              "kanehsatà:ke"
+            ],
+            "cm": "Niawenhkó:wa! Kanehsatà:ke. The grave accent (à) marks the stressed syllable; the colon (:) marks vowel length. Every mark carries meaning.",
+            "wm": "That answer is incorrect — try again. Try: Kanehsatà:ke"
+          },
+          {
+            "type": "mc",
+            "wid": "pl01",
+            "prompt": "The 1990 Oka Crisis involved Kanehsatà:ke. What was at stake?",
+            "sub": "",
+            "correct": "The community's defence of their land, including a sacred pine grove, against a golf course expansion",
+            "options": [
+              "The community's defence of their land, including a sacred pine grove, against a golf course expansion",
+              "A dispute over fishing rights",
+              "A language policy disagreement",
+              "A boundary between two provinces"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The Oka Crisis — Kanehsatà:ke from the community's perspective — was a 78-day standoff in which Kanien'kehá:ka people defended their land and sacred sites. The community's name in Kanien'kéha is itself a form of that defence.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "pl02",
+            "prompt": "Karáhkwa (the sun) is acknowledged in the Thanksgiving Address. How does including this word in a language lesson connect to the critical pedagogies this course draws on?",
+            "sub": "",
+            "correct": "Language is not separate from culture and ceremony — learning Karáhkwa means entering a worldview where the sun is a being, not just a word",
+            "options": [
+              "Language is not separate from culture and ceremony — learning Karáhkwa means entering a worldview where the sun is a being, not just a word",
+              "It is just vocabulary",
+              "The Thanksgiving Address is not related to language learning",
+              "Only ceremonial words belong in ceremonial contexts"
+            ],
+            "cm": "Niawenhkó:wa! This is precisely McCarty & Lee's (2014) point: culturally sustaining/revitalizing pedagogy treats language as inseparable from its cultural and spiritual dimensions. Karáhkwa is not just 'sun' — it is a being in ongoing relationship with the people.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "pl01",
+            "prompt": "Say the community's name aloud",
+            "sub": "",
+            "word": "Kanehsatà:ke",
+            "meaning": "The community",
+            "hint": "Five syllables: ka-neh-sa-TÀ-ke. The stress falls on the 'ta' (fourth) syllable. The grave accent (à) marks this stress. The final 'ke' is short and quick."
+          },
+          {
+            "type": "story",
+            "wid": "pl01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Kanehsatà:ke",
+            "meaning": "Where the crust of snow on top of the earth is",
+            "storyPrompt": "Kanehsatà:ke — a name that describes what the land looks like at a particular time of year. Indigenous place names are almost always descriptions of the land's actual qualities, not commemorations of people. Think about the place you are from or call home. What would its name be if it were named for what the land actually looks, feels, or sounds like?"
+          }
+        ]
       }
     ]
   },
   {
     "id": 3,
-    "title": "Unit 4 — O-Class & Ka-Class Nouns",
-    "desc": "Nouns beginning with O and Ka — nature, animals, and the land",
+    "title": "Unit 4 — Colours, Body & Numbers",
+    "desc": "Colour nouns, body parts, and counting 1–10",
     "lessons": [
       {
         "id": "u3l0",
@@ -2033,13 +2540,623 @@
             "storyPrompt": "This unit is still being built. What words about the land, animals, and nature would you most want to learn? Write them here."
           }
         ]
+      },
+      {
+        "id": "u3l0",
+        "title": "Lesson 15 — Colours",
+        "icon": "🎨",
+        "sub": "Naming what we see",
+        "intro": [
+          "Kanien'kéha colour words are mostly <strong>O-class nouns</strong> — many are descriptive in origin, naming the colour by what is that colour. <strong>Óhonte'</strong> (green) is related to grass and growing things. <strong>Oròn:ia</strong> (blue) connects to the sky. <strong>Onekwénhtara</strong> (red) is related to the word for blood.",
+          "Colours in Kanien'kéha are used with the question <strong>Ónhka ohsawé:non?</strong> (What colour is it?) — literally 'which colour does it wear?'. The verb for colour in Kanien'kéha uses the metaphor of wearing, not being.",
+          "This lesson covers 8 core colours from Lesson 21 of the Kontinónhstats curriculum."
+        ],
+        "ped": "<strong>Culturally embedded vocabulary:</strong> Flores & Rosa (2015) warn against treating colour terms as 'neutral vocabulary'. The fact that Kanien'kéha colour words are often descriptive — green = plant-coloured, red = blood-coloured — reflects a different way of categorising perception. Learning these is learning an ontology.",
+        "vocabIds": [
+          "col01",
+          "col02",
+          "col03",
+          "col04",
+          "col05",
+          "col06",
+          "col07",
+          "col08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "col01",
+            "prompt": "What does Onekwénhtara mean?",
+            "sub": "",
+            "correct": "Red",
+            "options": [
+              "Red",
+              "Blue",
+              "Green",
+              "Brown"
+            ],
+            "cm": "Tho niioht! Onekwénhtara — red. This colour word is related to the word for blood.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "col03",
+            "prompt": "Óhonte' means green. The root is related to grass and growing things. This is an example of what type of word formation?",
+            "sub": "",
+            "correct": "Descriptive naming — the colour is named by what is that colour",
+            "options": [
+              "Descriptive naming — the colour is named by what is that colour",
+              "Borrowing from another language",
+              "Pure coincidence",
+              "The root has no meaning"
+            ],
+            "cm": "Niawenhkó:wa! Óhonte' = green = the colour of growing plants. This descriptive naming strategy is consistent across Kanien'kéha vocabulary.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the colours",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Onekwénhtara",
+                "english": "Red",
+                "wids": [
+                  "col01"
+                ]
+              },
+              {
+                "target": "Oròn:ia",
+                "english": "Blue",
+                "wids": [
+                  "col02"
+                ]
+              },
+              {
+                "target": "Óhonte'",
+                "english": "Green",
+                "wids": [
+                  "col03"
+                ]
+              },
+              {
+                "target": "Otsì:nekwahr",
+                "english": "Yellow",
+                "wids": [
+                  "col04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four of the eight colours — notice that red, blue, and green are all O-class nouns.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match more colours",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Kayé:ri",
+                "english": "Black",
+                "wids": [
+                  "col05"
+                ]
+              },
+              {
+                "target": "Ó:wira'",
+                "english": "White",
+                "wids": [
+                  "col06"
+                ]
+              },
+              {
+                "target": "Athéhsa",
+                "english": "Brown",
+                "wids": [
+                  "col07"
+                ]
+              },
+              {
+                "target": "Washén:ra",
+                "english": "Pink",
+                "wids": [
+                  "col08"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Notice that brown (Athéhsa) begins with A — it is an A-class noun, not O-class. Colours span noun classes.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "col01",
+            "prompt": "How do you say 'Red'?",
+            "sub": "",
+            "correct": "Onekwénhtara",
+            "alts": [
+              "onekwénhtara",
+              "onekwenhtara"
+            ],
+            "cm": "Tho niioht! Onekwénhtara. The long stress on wén is important — it carries the primary stress of the word.",
+            "wm": "That answer is incorrect — try again. Try: Onekwénhtara"
+          },
+          {
+            "type": "type",
+            "wid": "col03",
+            "prompt": "How do you say 'Green'?",
+            "sub": "",
+            "correct": "Óhonte'",
+            "alts": [
+              "ohonte'",
+              "ohonte"
+            ],
+            "cm": "Niawenhkó:wa! Óhonte'. The glottal stop (') at the end is part of the word.",
+            "wm": "That answer is incorrect — try again. Try: Óhonte'"
+          },
+          {
+            "type": "fill",
+            "wid": "col02",
+            "prompt": "Complete the word for 'blue'",
+            "sentence": "Blue is Oròn:___",
+            "correct": "ia",
+            "hint": "i",
+            "alts": [
+              "ia"
+            ],
+            "cm": "Tho niioht! Oròn:ia — blue, the colour of sky. The grave accent (ò) marks a falling tone on the 'o'.",
+            "wm": "That answer is incorrect — ends in 'ia'."
+          },
+          {
+            "type": "audio",
+            "wid": "col01",
+            "prompt": "Say this colour word aloud",
+            "sub": "",
+            "word": "Onekwénhtara",
+            "meaning": "Red",
+            "hint": "Five syllables: o-nek-wÉN-hta-ra. Stress on the third syllable (wén). The -htara ending is a soft 'hta-ra'."
+          },
+          {
+            "type": "mc",
+            "wid": "col02",
+            "prompt": "Oròn:ia (blue) is related to the word for sky. How does this connect to the broader pattern you have seen in Kanien'kéha vocabulary?",
+            "sub": "",
+            "correct": "Many Kanien'kéha words describe properties or functions rather than giving arbitrary names — the language encodes how things relate to the world",
+            "options": [
+              "Many Kanien'kéha words describe properties or functions rather than giving arbitrary names — the language encodes how things relate to the world",
+              "This is a coincidence in one word only",
+              "Blue and sky are unrelated in Kanien'kéha",
+              "All languages do this identically"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This descriptive naming is a pattern: blue = sky-coloured, green = plant-coloured, red = blood-coloured, writing-thing = paper. Kanien'kéha consistently encodes relationship and function into word roots.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "col03",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Óhonte'",
+            "meaning": "Green",
+            "storyPrompt": "Óhonte' — green, the colour of growing things. Think of something green that matters to you: a plant, a place, a season. Now think of what 'green' means beyond just a colour — growth, renewal, land, life. Holding the word Óhonte' in your mind, what does it bring forward?"
+          }
+        ]
+      },
+      {
+        "id": "u3l1",
+        "title": "Lesson 16 — Body Parts",
+        "icon": "🖐️",
+        "sub": "Naming the self",
+        "intro": [
+          "Body part vocabulary in Kanien'kéha is important for two reasons. First, it gives you the nouns needed for <strong>reflexive and body-focused verbs</strong> — washing your face, brushing your teeth, combing your hair all use body part roots <em>incorporated into the verb</em>.",
+          "Second, the body in Kanien'kéha is not just anatomical — many body part words carry connections to related actions and perceptions. The word for nose is related to smelling; the word for teeth is incorporated into the verb for brushing them.",
+          "This lesson covers 8 core body parts from Lesson 26 of the Kontinónhstats curriculum by Mary McDonald."
+        ],
+        "ped": "<strong>Noun incorporation preview:</strong> You first encountered noun incorporation in Unit 3 (áhta' + -owá:nen → 'a big shoe'). Body part vocabulary sets you up for the next level — verbs that incorporate body part roots to express actions: wash-face, brush-teeth, comb-hair all exist as single Kanien'kéha words.",
+        "vocabIds": [
+          "bp01",
+          "bp02",
+          "bp03",
+          "bp04",
+          "bp05",
+          "bp06",
+          "bp07",
+          "bp08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "bp01",
+            "prompt": "What does Ononkwa' mean?",
+            "sub": "",
+            "correct": "Head",
+            "options": [
+              "Head",
+              "Hair",
+              "Face",
+              "Nose"
+            ],
+            "cm": "Tho niioht! Ononkwa' — head. The glottal stop (') at the end is significant.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the body parts — face",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ononkwa'",
+                "english": "Head",
+                "wids": [
+                  "bp01"
+                ]
+              },
+              {
+                "target": "Ó:nen",
+                "english": "Eye",
+                "wids": [
+                  "bp03"
+                ]
+              },
+              {
+                "target": "Oyén:ta",
+                "english": "Nose",
+                "wids": [
+                  "bp04"
+                ]
+              },
+              {
+                "target": "Ohsó:wa",
+                "english": "Lips",
+                "wids": [
+                  "bp05"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! The vocabulary of the face — head, eye, nose, lips.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the body parts — upper body",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ononkwatón:'a",
+                "english": "Hair",
+                "wids": [
+                  "bp02"
+                ]
+              },
+              {
+                "target": "Onékahrha",
+                "english": "Teeth",
+                "wids": [
+                  "bp06"
+                ]
+              },
+              {
+                "target": "Onenhstà:'a",
+                "english": "Hand",
+                "wids": [
+                  "bp07"
+                ]
+              },
+              {
+                "target": "Ohskenón:ni",
+                "english": "Arm",
+                "wids": [
+                  "bp08"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Upper body vocabulary — hair, teeth, hand, arm.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "bp06",
+            "prompt": "Onékahrha means 'teeth'. How does this connect to the A-stem verb lesson you completed?",
+            "sub": "Think about what verb uses the teeth root",
+            "correct": "The verb 'to brush one's teeth' incorporates the tooth root — the body part is built into the verb",
+            "options": [
+              "The verb 'to brush one's teeth' incorporates the tooth root — the body part is built into the verb",
+              "Teeth and verbs are unrelated",
+              "You need teeth to speak — that is the connection",
+              "Onékahrha is only used in medical contexts"
+            ],
+            "cm": "Niawenhkó:wa! Noun incorporation: the verb for 'to brush one's teeth' embeds -nekáhrha- (teeth root) directly into the verb. One Kanien'kéha word = brush + teeth + I + habitual. This is spaced repetition of a key grammatical concept.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "bp07",
+            "prompt": "Complete the word for 'hand'",
+            "sentence": "Hand is Onenhstà:'___",
+            "correct": "a",
+            "hint": "a",
+            "alts": [
+              "a",
+              "'a"
+            ],
+            "cm": "Tho niioht! Onenhstà:'a — hand. This root appears in the verb 'to wash one's hands' from the A-stem lesson.",
+            "wm": "That answer is incorrect — ends in 'a'."
+          },
+          {
+            "type": "type",
+            "wid": "bp03",
+            "prompt": "How do you say 'Eye'?",
+            "sub": "",
+            "correct": "Ó:nen",
+            "alts": [
+              "o:nen",
+              "onen"
+            ],
+            "cm": "Niawenhkó:wa! Ó:nen — eye. The long vowel on Ó: is important.",
+            "wm": "That answer is incorrect — try again. Try: Ó:nen"
+          },
+          {
+            "type": "mc",
+            "wid": "bp02",
+            "prompt": "Ononkwatón:'a (hair) literally relates to 'on the head' (ononkwa = head). This pattern of body part words being location-based is common in Kanien'kéha. What does this tell you about how the language conceptualises the body?",
+            "sub": "",
+            "correct": "Body parts are named relationally — by their position on or in relation to other body parts",
+            "options": [
+              "Body parts are named relationally — by their position on or in relation to other body parts",
+              "Body part names are arbitrary",
+              "Hair and head are unrelated in the grammar",
+              "Only a few body parts use this pattern"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Relational naming extends to anatomy — the body is described as a set of spatial relationships, not isolated parts. This reflects the same relational ontology you saw in kinship nouns (where 'my mother' is a different word from 'your mother').",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "bp07",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Onenhstà:'a",
+            "meaning": "Hand / Hands",
+            "hint": "Five syllables: o-nenh-STÀ-'a. Stress on the third syllable. The glottal stop (') before the final 'a creates a brief pause."
+          },
+          {
+            "type": "story",
+            "wid": "bp07",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Onenhstà:'a",
+            "meaning": "Hand / Hands",
+            "storyPrompt": "Onenhstà:'a — hand. Hands that bead, that drum, that plant, that write, that hold. The Kontinónhstats video shows a grandmother's hands teaching beading. What do the hands in your family carry? What do your hands know how to do that your voice does not yet know how to name?"
+          }
+        ]
+      },
+      {
+        "id": "u3l2",
+        "title": "Lesson 17 — Numbers 1–10",
+        "icon": "🔢",
+        "sub": "Counting in Kanien'kéha",
+        "intro": [
+          "Kanien'kéha counts from <strong>1 to 10</strong> with unique words for each number. From 10 onwards, numbers combine: eleven = ten + one (Óia'k énska), twenty = two tens (Tékeni óia'k).",
+          "You have already encountered the number <strong>Tékeni</strong> (two) — it is the root in the dual prefix tekeni- (two people). The connection is explicit: the dual is grammatically built on the number two.",
+          "Numbers in Kanien'kéha are used for counting, ages, times, and quantities. The Kontinónhstats curriculum teaches numbers 1–100 in Lesson 27."
+        ],
+        "ped": "<strong>Numeracy and language:</strong> The eCampusOntario OER for beginner Mohawk language learning includes numbers as an early-intermediate topic, reflecting their centrality to daily communication. Tékeni also demonstrates spaced repetition — a number root you've seen grammatically now appears as standalone vocabulary.",
+        "vocabIds": [
+          "num01",
+          "num02",
+          "num03",
+          "num04",
+          "num05",
+          "num06",
+          "num07",
+          "num08",
+          "num09",
+          "num10"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "num01",
+            "prompt": "What does Énska mean?",
+            "sub": "",
+            "correct": "One (1)",
+            "options": [
+              "One (1)",
+              "Two (2)",
+              "Three (3)",
+              "Five (5)"
+            ],
+            "cm": "Tho niioht! Énska — one. You will see this root in compound numbers: eleven = Óia'k énska (ten-one).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "num02",
+            "prompt": "You already know Tékeni from earlier in the course. Where did you see this root before?",
+            "sub": "",
+            "correct": "In the dual prefix tekeni- (two people) — tekeniksá:'a = two girls",
+            "options": [
+              "In the dual prefix tekeni- (two people) — tekeniksá:'a = two girls",
+              "In the word for grandmother",
+              "In the A-stem verb lesson",
+              "It has not appeared before"
+            ],
+            "cm": "Niawenhkó:wa! Tékeni (two) is the root of the tekeni- dual prefix. The number two and the grammatical dual are explicitly connected — this is the prefix system made visible as standalone vocabulary.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match numbers 1–5",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Énska",
+                "english": "One",
+                "wids": [
+                  "num01"
+                ]
+              },
+              {
+                "target": "Tékeni",
+                "english": "Two",
+                "wids": [
+                  "num02"
+                ]
+              },
+              {
+                "target": "Áhsen",
+                "english": "Three",
+                "wids": [
+                  "num03"
+                ]
+              },
+              {
+                "target": "Kaié:ri",
+                "english": "Four",
+                "wids": [
+                  "num04"
+                ]
+              },
+              {
+                "target": "Wísk",
+                "english": "Five",
+                "wids": [
+                  "num05"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Numbers 1–5. Say them aloud in order if you can: Énska, Tékeni, Áhsen, Kaié:ri, Wísk.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match numbers 6–10",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ià:ia'k",
+                "english": "Six",
+                "wids": [
+                  "num06"
+                ]
+              },
+              {
+                "target": "Tsà:ta",
+                "english": "Seven",
+                "wids": [
+                  "num07"
+                ]
+              },
+              {
+                "target": "Sha'té:kon",
+                "english": "Eight",
+                "wids": [
+                  "num08"
+                ]
+              },
+              {
+                "target": "Tióhton",
+                "english": "Nine",
+                "wids": [
+                  "num09"
+                ]
+              },
+              {
+                "target": "Óia'k",
+                "english": "Ten",
+                "wids": [
+                  "num10"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Numbers 6–10. Sha'té:kon (eight) has a glottal stop (') — do not drop it.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "num01",
+            "prompt": "How do you say 'One'?",
+            "sub": "",
+            "correct": "Énska",
+            "alts": [
+              "énska",
+              "enska"
+            ],
+            "cm": "Tho niioht! Énska — one. Stress on the first syllable.",
+            "wm": "That answer is incorrect — try again. Try: Énska"
+          },
+          {
+            "type": "type",
+            "wid": "num10",
+            "prompt": "How do you say 'Ten'?",
+            "sub": "",
+            "correct": "Óia'k",
+            "alts": [
+              "oia'k",
+              "oiak"
+            ],
+            "cm": "Niawenhkó:wa! Óia'k — ten. All numbers above ten are built from this root: eleven = Óia'k Énska.",
+            "wm": "That answer is incorrect — try again. Try: Óia'k"
+          },
+          {
+            "type": "fill",
+            "wid": "num06",
+            "prompt": "Complete the number six",
+            "sentence": "Six is Ià:ia'___",
+            "correct": "k",
+            "hint": "k",
+            "alts": [
+              "k"
+            ],
+            "cm": "Tho niioht! Ià:ia'k — six. The Haudenosaunee Confederacy has six member nations — Ia:ia'k Onkwehonwe.",
+            "wm": "That answer is incorrect — ends in 'k'."
+          },
+          {
+            "type": "mc",
+            "wid": "num06",
+            "prompt": "The Haudenosaunee Confederacy consists of six nations. How is Ià:ia'k (six) related to Haudenosaunee identity?",
+            "sub": "",
+            "correct": "'Six Nations' in Kanien'kéha is Ià:ia'k Onkwehonwe — the number is embedded in the confederacy's self-description",
+            "options": [
+              "'Six Nations' in Kanien'kéha is Ià:ia'k Onkwehonwe — the number is embedded in the confederacy's self-description",
+              "Numbers are only used for counting objects",
+              "The number six has no cultural meaning",
+              "Only the English name 'Six Nations' carries meaning"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Ià:ia'k Onkwehonwe — six peoples. The political identity of the confederacy is encoded in the language itself. Learning to count is also learning to name the political reality.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "num05",
+            "prompt": "Say these numbers aloud in sequence",
+            "sub": "Record yourself counting 1 to 5",
+            "word": "Wísk",
+            "meaning": "Five — try counting: Énska, Tékeni, Áhsen, Kaié:ri, Wísk",
+            "hint": "Short, distinct words. Énska (ÉN-ska), Tékeni (TÉ-ke-ni), Áhsen (ÁH-sen), Kaié:ri (ka-IÉ-ri), Wísk (single syllable, short and sharp)."
+          },
+          {
+            "type": "story",
+            "wid": "num02",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Tékeni",
+            "meaning": "Two — and the dual prefix tekeni-",
+            "storyPrompt": "Tékeni — two. You have now seen this number as a standalone word AND as a grammatical prefix (tekeniksá:'a = two girls). In Kanien'kéha, the number two and the grammatical dual are the same root. What other pairs exist in your life that belong together — people, places, ideas? Who is your tékeni?"
+          }
+        ]
       }
     ]
   },
   {
     "id": 4,
-    "title": "Unit 5 — Story, Ceremony & Verb Conjugation",
-    "desc": "Oral tradition, the Thanksgiving Address, and full verb paradigms",
+    "title": "Unit 5 — The Thanksgiving Address",
+    "desc": "Ohén:ton Karihwatéhkwen — the words before all else",
     "lessons": [
       {
         "id": "u4l0",
@@ -2060,6 +3177,1902 @@
             "word": "",
             "meaning": "",
             "storyPrompt": "This unit is still being built. What stories, ceremonies, or phrases from the Thanksgiving Address would you most want to understand? Write your response here."
+          }
+        ]
+      },
+      {
+        "id": "u4l0",
+        "title": "Lesson 18 — The Thanksgiving Address",
+        "icon": "🌿",
+        "sub": "Ohén:ton Karihwatéhkwen",
+        "intro": [
+          "The <strong>Ohén:ton Karihwatéhkwen</strong> — 'the words that come before all else' — is the most important oral text in Kanien'kéha. It opens and closes every gathering, every ceremony, every school day in Haudenosaunee communities.",
+          "The Address acknowledges every element of creation in order: the people, the earth, the waters, the plants, the animals, the trees, the birds, the winds, Grandfather Thunderers, the sun, the moon, the stars, and finally the Creator. At the end of each section comes the phrase: <strong>Ionkhi'nikonhraién:tase'</strong> — 'and so our minds are made one' or 'and so we give thanks'.",
+          "An animated version produced by <strong>Kontinónhstats, Kanehsatà:ke</strong> is available on YouTube and in the Resources tab. The Smithsonian/NMAI has published a bilingual PDF with cultural commentary. Listening to the full Address in Kanien'kéha — even without understanding every word — is a form of language immersion."
+        ],
+        "ped": "<strong>Oral tradition as curriculum:</strong> McCarty & Lee (2014) argue that culturally sustaining/revitalizing pedagogy must centre the oral traditions and knowledge systems of the community. The Thanksgiving Address is not 'advanced material' to be deferred — it is the beginning of meaning in Kanien'kéha. Starting learners here, even at a vocabulary level, grounds the language in its living context.",
+        "vocabIds": [
+          "ta01",
+          "ta02",
+          "ta03",
+          "ta04"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "ta01",
+            "prompt": "What does Ohén:ton Karihwatéhkwen mean?",
+            "sub": "",
+            "correct": "The words that come before all else (Thanksgiving Address)",
+            "options": [
+              "The words that come before all else (Thanksgiving Address)",
+              "The end of the gathering",
+              "A prayer to the Creator only",
+              "A greeting between two people"
+            ],
+            "cm": "Tho niioht! Ohén:ton Karihwatéhkwen — 'the words before all else'. It opens and closes every gathering in Haudenosaunee communities.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ta02",
+            "prompt": "Onkwehshón:'a — 'the people' — is the first group acknowledged in the Thanksgiving Address. What does it mean that humans come first?",
+            "sub": "",
+            "correct": "Acknowledging the people first establishes their presence and responsibility before anything else can be named",
+            "options": [
+              "Acknowledging the people first establishes their presence and responsibility before anything else can be named",
+              "Humans are more important than all other beings",
+              "The order is arbitrary",
+              "Humans come first because they are the speakers"
+            ],
+            "cm": "Niawenhkó:wa! The people are named first not as a hierarchy but as an acknowledgement of presence and relationship. We are here. Then the Address proceeds to acknowledge everything we are in relationship with.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ta03",
+            "prompt": "Ionkhi'nikonhraién:tase' is the closing refrain of each section. It shares a root with Io'nikonhraién:ta'ne ('it makes my mind happy') but is in first person plural. What does this shift signal?",
+            "sub": "",
+            "correct": "The Thanksgiving Address is a collective act — 'our minds' not 'my mind' — gratitude as communal practice",
+            "options": [
+              "The Thanksgiving Address is a collective act — 'our minds' not 'my mind' — gratitude as communal practice",
+              "It is just a grammatical accident",
+              "The plural form is more polite",
+              "Only elders say the plural form"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! You just used the singular form — I. The Thanksgiving Address uses the plural — we. Gratitude, in this tradition, is not a private feeling but a collective orientation toward the world.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "ta01",
+            "prompt": "Complete the name of the Thanksgiving Address",
+            "sentence": "Ohén:ton Karihwatéh___",
+            "correct": "kwen",
+            "hint": "k",
+            "alts": [
+              "kwen"
+            ],
+            "cm": "Tho niioht! Ohén:ton Karihwatéhkwen. The full name: 'the words that come before all else'.",
+            "wm": "That answer is incorrect — ends in 'kwen'."
+          },
+          {
+            "type": "mc",
+            "wid": "ta04",
+            "prompt": "Ohwén:tsia ne Ionkwarihó:ten means 'the earth that sustains us'. What does Ionkwarihó:ten literally mean?",
+            "sub": "",
+            "correct": "It takes care of us / it is our responsibility — a two-way relationship",
+            "options": [
+              "It takes care of us / it is our responsibility — a two-way relationship",
+              "It is just an object below our feet",
+              "The earth belongs to humans",
+              "The earth is passive"
+            ],
+            "cm": "Niawenhkó:wa! Ionkwarihó:ten encodes reciprocity — the earth takes care of us AND it is our responsibility. The Thanksgiving Address is not passive gratitude but an acknowledgement of mutual obligation.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ta01",
+            "prompt": "Listen to the Thanksgiving Address",
+            "sub": "Visit the Resources tab to watch the Kontinónhstats animated version on YouTube. For now, try saying the title aloud.",
+            "word": "Ohén:ton Karihwatéhkwen",
+            "meaning": "The words before all else",
+            "hint": "Six syllables: o-HÉN-ton ka-rih-wa-TÉH-kwen. Two stressed syllables — HÉN and TÉH. The Address begins with these words at every gathering."
+          },
+          {
+            "type": "mc",
+            "wid": "ta02",
+            "prompt": "The Thanksgiving Address acknowledges beings in order: people, earth, waters, plants, animals, trees, birds, winds, thunderers, sun, moon, stars, Creator. What is significant about this sequence?",
+            "sub": "",
+            "correct": "The sequence moves from immediate/earthly to distant/celestial — it maps the world as it is experienced from the ground up",
+            "options": [
+              "The sequence moves from immediate/earthly to distant/celestial — it maps the world as it is experienced from the ground up",
+              "The order is arbitrary",
+              "The Creator comes first in all Haudenosaunee traditions",
+              "The sequence is borrowed from European religion"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The Address moves outward from the community — people first, then the ground beneath them, then the waters, then plants and animals, then up through the sky to the stars. It is a phenomenological map of the world as it is lived, from the earth up.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ta03",
+            "prompt": "An animated version of the Thanksgiving Address was produced by Kontinónhstats in Kanehsatà:ke. Why does a language revitalization organization invest in animated media?",
+            "sub": "",
+            "correct": "Media in the language creates new domains of use — children and families can access the language through familiar formats",
+            "options": [
+              "Media in the language creates new domains of use — children and families can access the language through familiar formats",
+              "Animation is only for entertainment",
+              "The words are too difficult to teach directly",
+              "Animated media is required by law"
+            ],
+            "cm": "Niawenhkó:wa! This is García & Li Wei's (2014) point about expanding language domains. When Kanien'kéha appears in animation, YouTube, podcasts, and apps, it gains new contexts of use — which is essential for revitalization.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "ta01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ohén:ton Karihwatéhkwen",
+            "meaning": "The words before all else",
+            "storyPrompt": "'The words that come before all else' — the idea that before any meeting, any learning, any gathering, we first acknowledge the world we are part of. What would it mean in your life to begin that way? What would you acknowledge, in your own words, before you began something that mattered?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Unit 6 — Animals, Shapes & Clans",
+    "desc": "Shapes, wild animals, domestic animals, and the Mohawk clan system",
+    "lessons": [
+      {
+        "id": "u5l0",
+        "title": "Lesson 19 — Shapes",
+        "icon": "🔷",
+        "sub": "The geometry of Kanien'kéha",
+        "intro": [
+          "Kanien'kéha has names for shapes — and many of them are <strong>descriptive compounds</strong> using vocabulary you already know. Triangle is literally <strong>Áhsen nikahióhsake</strong> — 'three sides'. Diamond is <strong>Kaié:ri nikahióhsake</strong> — 'four sides'.",
+          "This demonstrates one of Kanien'kéha's most productive features: new vocabulary is built from existing roots. You do not need to memorise a new arbitrary word — you combine pieces you already know.",
+          "The lesson also reviews the number words Áhsen (three) and Kaié:ri (four) from the Numbers lesson, showing spaced repetition in action."
+        ],
+        "ped": "<strong>Productive morphology:</strong> Mary McDonald explicitly highlights that shape vocabulary shows 'Mohawk is a productive language'. Productiveness — the ability to generate new words from known parts — is a key feature of language vitality (Mithun, 1999).",
+        "vocabIds": [
+          "sh01",
+          "sh02",
+          "sh03",
+          "sh04",
+          "sh05",
+          "sh06",
+          "sh07",
+          "sh08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "sh05",
+            "prompt": "Áhsen nikahióhsake means 'triangle'. You know Áhsen from the Numbers lesson. What does Áhsen mean?",
+            "sub": "",
+            "correct": "Three",
+            "options": [
+              "Three",
+              "Four",
+              "Five",
+              "Six"
+            ],
+            "cm": "Tho niioht! Áhsen = three. Triangle = three sides. Shape names in Kanien'kéha describe the shape using number roots you already know.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "sh07",
+            "prompt": "Kaié:ri nikahióhsake means 'diamond'. What does Kaié:ri mean?",
+            "sub": "",
+            "correct": "Four",
+            "options": [
+              "Three",
+              "Four",
+              "Five",
+              "Six"
+            ],
+            "cm": "Niawenhkó:wa! Kaié:ri = four. Diamond = four sides (in a rhombus). Knowing the numbers unlocks the shape names.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the shape names",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Otsísto",
+                "english": "Star",
+                "wids": [
+                  "sh01"
+                ]
+              },
+              {
+                "target": "Teiotokerón:te'",
+                "english": "Square",
+                "wids": [
+                  "sh03"
+                ]
+              },
+              {
+                "target": "Teionteriwaién:te'",
+                "english": "Circle",
+                "wids": [
+                  "sh06"
+                ]
+              },
+              {
+                "target": "Kakahkwén:tes",
+                "english": "Oval",
+                "wids": [
+                  "sh04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four shapes matched.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "sh06",
+            "prompt": "Teionteriwaién:te' (circle) uses the te- prefix you know from dual pronouns and dualic verbs. What does te- signal in circle?",
+            "sub": "",
+            "correct": "The te- prefix marks continuous/dual movement — a circle has no beginning or end",
+            "options": [
+              "The te- prefix marks continuous/dual movement — a circle has no beginning or end",
+              "te- means the shape is large",
+              "te- is only for verbs",
+              "te- signals an O-class noun"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The te- prefix signals dualic or continuous action. A circle is a shape that continuously returns to its starting point — the prefix captures that quality.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "sh03",
+            "prompt": "Complete the word for 'square'",
+            "sentence": "Square is Teiotokerón:te'___",
+            "correct": "",
+            "hint": "The word ends at te' — no suffix needed",
+            "alts": [
+              ""
+            ],
+            "cm": "Tho niioht! Teiotokerón:te' — square.",
+            "wm": "The word is complete as written — Teiotokerón:te'."
+          },
+          {
+            "type": "type",
+            "wid": "sh01",
+            "prompt": "How do you say 'Star'?",
+            "sub": "",
+            "correct": "Otsísto",
+            "alts": [
+              "otsísto",
+              "otsisto"
+            ],
+            "cm": "Niawenhkó:wa! Otsísto — star. The stars are the last beings acknowledged before the Creator in the Thanksgiving Address.",
+            "wm": "Please try again. Try: Otsísto"
+          },
+          {
+            "type": "mc",
+            "wid": "sh08",
+            "prompt": "You have now seen Karáhkwa (sun) in three different lessons. Where else did it appear?",
+            "sub": "",
+            "correct": "In the Kanehsatà:ke place names lesson and as a shape in this lesson",
+            "options": [
+              "In the Kanehsatà:ke place names lesson and as a shape in this lesson",
+              "Only in this lesson",
+              "In the kinship lesson",
+              "In the greetings lesson"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Karáhkwa has appeared as a place-name vocabulary word (Lesson 14), as a shape (this lesson), and in the Thanksgiving Address context. This is how vocabulary deepens — one word, many contexts.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "sh05",
+            "prompt": "Triangle and diamond are both named using number words + nikahióhsake (sides). What does this word-formation strategy tell you about Kanien'kéha?",
+            "sub": "",
+            "correct": "The language generates new words from existing parts — knowing roots unlocks vocabulary you have never explicitly learned",
+            "options": [
+              "The language generates new words from existing parts — knowing roots unlocks vocabulary you have never explicitly learned",
+              "These are borrowed words from French",
+              "Shapes are too complex to name originally",
+              "Only shapes use this strategy"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is what Mary McDonald means by 'productive language'. Knowing Áhsen, Kaié:ri, and nikahióhsake gives you triangle and diamond without memorising arbitrary new words.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "sh01",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Otsísto",
+            "meaning": "Star",
+            "hint": "Four syllables: o-tsís-to. Stress on the second syllable (tsís). Short and clear."
+          },
+          {
+            "type": "story",
+            "wid": "sh06",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Teionteriwaién:te'",
+            "meaning": "Circle",
+            "storyPrompt": "Teionteriwaién:te' — circle. The circle is a recurring symbol in Haudenosaunee tradition: the circle of the Confederacy, the circular design of the longhouse, the cycle of ceremonies through the year. What circles exist in your life — relationships, routines, returns? What keeps coming back around?"
+          }
+        ]
+      },
+      {
+        "id": "u5l1",
+        "title": "Lesson 20 — Wild Animals",
+        "icon": "🐻",
+        "sub": "The animals that share our territory",
+        "intro": [
+          "Wild animals are central to Kanien'kehá:ka life — in traditional diet, in the clan system, in ceremony, and in oral tradition. <strong>Bear</strong> (Ohkwá:ri), <strong>Turtle</strong> (A'nó:wara), and <strong>Wolf</strong> (Okwáho) are the three founding clans of the Kanien'kehá:ka.",
+          "Recognising the clan animals in Kanien'kéha is politically and socially important: when you know which clan someone belongs to, you understand their kinship obligations, their ceremonial roles, and their relational position in the community.",
+          "This lesson draws from Lesson 22 of the Kontinónhstats curriculum. The bear Ohkwá:ri is also the main character in the Tóta tánon Ohkwá:ri puppet series produced in Kahnawà:ke."
+        ],
+        "ped": "<strong>Animals and clan identity:</strong> Presenting wild animals in the context of the clan system follows Freire's (1970) principle of generative themes — the animals are not vocabulary items but social identifiers. Learning Ohkwá:ri (bear) also means learning who the Bear Clan people are.",
+        "vocabIds": [
+          "wa01",
+          "wa02",
+          "wa03",
+          "wa04",
+          "wa05",
+          "wa06",
+          "wa07",
+          "wa08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "wa01",
+            "prompt": "What does Ohkwá:ri mean?",
+            "sub": "",
+            "correct": "Bear",
+            "options": [
+              "Bear",
+              "Wolf",
+              "Turtle",
+              "Beaver"
+            ],
+            "cm": "Tho niioht! Ohkwá:ri — bear. The Bear Clan (Rotihskeré:wake) takes its name from this animal. Ohkwá:ri also appears in the Tóta tánon Ohkwá:ri puppet series from Kahnawà:ke.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "wa02",
+            "prompt": "A'nó:wara means turtle. In Haudenosaunee creation story, what role does the turtle play?",
+            "sub": "",
+            "correct": "North America (Turtle Island) is formed on the back of a great turtle",
+            "options": [
+              "North America (Turtle Island) is formed on the back of a great turtle",
+              "The turtle carries the sun across the sky",
+              "The turtle is the fastest animal",
+              "The turtle guards the longhouse"
+            ],
+            "cm": "Niawenhkó:wa! Turtle Island — the Haudenosaunee name for North America — rests on the back of a great turtle. A'nó:wara is not just a vocabulary word but a cosmological reference.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the three clan animals to their Kanien'kéha names",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ohkwá:ri",
+                "english": "Bear",
+                "wids": [
+                  "wa01"
+                ]
+              },
+              {
+                "target": "A'nó:wara",
+                "english": "Turtle",
+                "wids": [
+                  "wa02"
+                ]
+              },
+              {
+                "target": "Okwáho",
+                "english": "Wolf",
+                "wids": [
+                  "wa03"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The three founding clans of the Kanien'kehá:ka: Bear, Turtle, Wolf.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the other wild animals",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Tsaní:to",
+                "english": "Beaver",
+                "wids": [
+                  "wa04"
+                ]
+              },
+              {
+                "target": "Kwà'ien",
+                "english": "Rabbit",
+                "wids": [
+                  "wa05"
+                ]
+              },
+              {
+                "target": "Oskenhón:ton",
+                "english": "Deer",
+                "wids": [
+                  "wa06"
+                ]
+              },
+              {
+                "target": "Tsihnón:saron",
+                "english": "Moose",
+                "wids": [
+                  "wa07"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Beaver, rabbit, deer, moose — animals of the Kanehsatà:ke territory.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "wa04",
+            "prompt": "Tsaní:to (beaver) was historically important to Kanien'kehá:ka political life. Why?",
+            "sub": "",
+            "correct": "The fur trade in beaver pelts dramatically affected Kanien'kehá:ka alliances and territory in the 17th–18th centuries",
+            "options": [
+              "The fur trade in beaver pelts dramatically affected Kanien'kehá:ka alliances and territory in the 17th–18th centuries",
+              "Beavers were pets",
+              "Beavers were used in ceremony only",
+              "Beaver is only eaten in winter"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The beaver pelt trade was a primary driver of the Beaver Wars of the 17th century, in which Haudenosaunee nations competed for access to trade networks. Language, animals, and history are inseparable here.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "wa01",
+            "prompt": "How do you say 'Bear'?",
+            "sub": "",
+            "correct": "Ohkwá:ri",
+            "alts": [
+              "ohkwá:ri",
+              "ohkwari"
+            ],
+            "cm": "Niawenhkó:wa! Ohkwá:ri. Three syllables: oh-KWÁ-ri.",
+            "wm": "Please try again. Try: Ohkwá:ri"
+          },
+          {
+            "type": "fill",
+            "wid": "wa03",
+            "prompt": "Complete the word for 'wolf'",
+            "sentence": "Wolf is Okwá___",
+            "correct": "ho",
+            "hint": "h",
+            "alts": [
+              "ho"
+            ],
+            "cm": "Tho niioht! Okwáho — wolf. The Wolf Clan (Ronathahí:non) are associated with pathfinding.",
+            "wm": "Please try again — ends in 'ho'."
+          },
+          {
+            "type": "mc",
+            "wid": "wa08",
+            "prompt": "Ahwénsion means porcupine. Before European contact, what were porcupine quills used for?",
+            "sub": "",
+            "correct": "Traditional quillwork — an art form predating European glass beads",
+            "options": [
+              "Traditional quillwork — an art form predating European glass beads",
+              "Making weapons",
+              "Only food",
+              "Ceremonial drums"
+            ],
+            "cm": "Niawenhkó:wa! Porcupine quillwork is one of the oldest Haudenosaunee art traditions. When Europeans arrived with glass beads, quillwork gradually shifted to beadwork — though both traditions continue.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "wa01",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ohkwá:ri",
+            "meaning": "Bear",
+            "hint": "Three syllables: oh-KWÁ-ri. The stress falls on the second syllable. The long vowel (:) after kwá is slightly extended."
+          },
+          {
+            "type": "story",
+            "wid": "wa01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ohkwá:ri",
+            "meaning": "Bear",
+            "storyPrompt": "Ohkwá:ri — bear. One of the three founding clan animals. In Haudenosaunee tradition, knowing someone's clan means knowing your relationship to them — you cannot marry within your clan, and you have specific ceremonial obligations to your clan members. If you were to belong to a clan named after an animal, what animal would it be, and why? What qualities of that animal do you carry?"
+          }
+        ]
+      },
+      {
+        "id": "u5l2",
+        "title": "Lesson 21 — Domestic Animals",
+        "icon": "🐄",
+        "sub": "Animals that arrived with contact",
+        "intro": [
+          "When European settlers arrived in North America, they brought animals the Kanien'kehá:ka had never seen: horses, cows, sheep, pigs. Rather than borrowing European names, Kanien'kéha <strong>created new words</strong> using its own word-formation system.",
+          "<strong>Akohsá:tens</strong> (horse) is related to 'it carries on its back'. <strong>Teiotina'karontón:'a</strong> (sheep) is 'it has wool on its back'. These descriptive names demonstrate that the language did not need to borrow — it described.",
+          "This is exactly what Mary McDonald means when she says Kanien'kéha is a 'productive and creative language' in her Lesson 23 introduction."
+        ],
+        "ped": "<strong>Language contact and creativity:</strong> García & Li Wei (2014) note that all living languages encounter new words and adapt. Kanien'kéha's strategy of descriptive naming (rather than borrowing) shows a language with strong internal generative capacity — a mark of vitality.",
+        "vocabIds": [
+          "da01",
+          "da02",
+          "da03",
+          "da04",
+          "da05"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "da02",
+            "prompt": "Akohsá:tens (horse) is related to 'it carries on its back'. What does this tell you about how Kanien'kéha names new animals?",
+            "sub": "",
+            "correct": "New animals are named by describing their defining function or appearance — not by borrowing foreign words",
+            "options": [
+              "New animals are named by describing their defining function or appearance — not by borrowing foreign words",
+              "The word was borrowed from French",
+              "All animal names come from clan animals",
+              "Horses had Kanien'kéha names before contact"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Descriptive naming: horse = 'the thing that carries on its back', sheep = 'the thing with wool on its back'. The language generates new vocabulary from within its own system.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "da01",
+            "prompt": "What does Takós mean?",
+            "sub": "",
+            "correct": "Cat",
+            "options": [
+              "Cat",
+              "Dog",
+              "Horse",
+              "Cow"
+            ],
+            "cm": "Tho niioht! Takós — cat.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the domestic animals",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Takós",
+                "english": "Cat",
+                "wids": [
+                  "da01"
+                ]
+              },
+              {
+                "target": "Akohsá:tens",
+                "english": "Horse",
+                "wids": [
+                  "da02"
+                ]
+              },
+              {
+                "target": "Tiohnhónhskwaron",
+                "english": "Cow",
+                "wids": [
+                  "da03"
+                ]
+              },
+              {
+                "target": "Kaia'tákeras",
+                "english": "Goat",
+                "wids": [
+                  "da04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four domestic animals — all named using Kanien'kéha's own word-formation rules.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "da05",
+            "prompt": "Teiotina'karontón:'a (sheep) means 'it has wool on its back'. What other animal name uses the same descriptive strategy?",
+            "sub": "Think about what Akohsá:tens means",
+            "correct": "Akohsá:tens (horse = it carries on its back)",
+            "options": [
+              "Akohsá:tens (horse = it carries on its back)",
+              "Takós (cat)",
+              "Ohkwá:ri (bear)",
+              "A'nó:wara (turtle)"
+            ],
+            "cm": "Niawenhkó:wa! Both sheep and horse are named by describing a physical characteristic or function. Descriptive compound naming is the consistent strategy for post-contact animals.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "da01",
+            "prompt": "How do you say 'Cat'?",
+            "sub": "",
+            "correct": "Takós",
+            "alts": [
+              "takós",
+              "takos"
+            ],
+            "cm": "Tho niioht! Takós — one of the shorter domestic animal names.",
+            "wm": "Please try again. Try: Takós"
+          },
+          {
+            "type": "mc",
+            "wid": "da03",
+            "prompt": "Tiohnhónhskwaron (cow) contains the root 'hónhskwar'. The bull is Tiohnhónhskwaron rá:tsi'n. What does rá:tsi'n likely indicate?",
+            "sub": "",
+            "correct": "It marks the male form — rá:tsi'n is a masculine suffix/modifier",
+            "options": [
+              "It marks the male form — rá:tsi'n is a masculine suffix/modifier",
+              "It means 'large'",
+              "It means 'old'",
+              "It is a separate unrelated word"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! rá:tsi'n marks the male form of the animal. This parallels the Ra-/I- prefix system you know from person nouns — Kanien'kéha consistently marks gender.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "da02",
+            "prompt": "Kanien'kéha responded to European contact by creating new words from within its own grammatical system rather than borrowing. How does this compare to what English did with new concepts?",
+            "sub": "",
+            "correct": "English typically borrows words from other languages (e.g. 'potato' from Taíno, 'chocolate' from Nahuatl); Kanien'kéha describes new things using existing roots",
+            "options": [
+              "English typically borrows words from other languages (e.g. 'potato' from Taíno, 'chocolate' from Nahuatl); Kanien'kéha describes new things using existing roots",
+              "Both languages do exactly the same thing",
+              "Kanien'kéha borrows more than English",
+              "There is no difference"
+            ],
+            "cm": "Niawenhkó:wa! Different languages have different strategies for new vocabulary. Kanien'kéha's descriptive compounding strategy reflects a different philosophy of naming — you describe what something is, rather than adopting a foreign sound.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "da02",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Akohsá:tens",
+            "meaning": "Horse",
+            "hint": "Five syllables: a-koh-SÁ-tens. Stress on the third syllable. The colon (:) after sá extends the vowel slightly."
+          },
+          {
+            "type": "story",
+            "wid": "da02",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Akohsá:tens",
+            "meaning": "Horse (it carries on its back)",
+            "storyPrompt": "Akohsá:tens — horse — named for what it does: it carries. When Europeans arrived with horses, the Kanien'kehá:ka did not call them by a European name. They described what the animal does. Think of something new in your own life that you have had to find a name for. How did you name it — by borrowing someone else's word, or by describing what it is?"
+          }
+        ]
+      },
+      {
+        "id": "u5l3",
+        "title": "Lesson 22 — The Clan System",
+        "icon": "🐢",
+        "sub": "Who we are to each other",
+        "intro": [
+          "The Kanien'kehá:ka have <strong>three original clans</strong>: Bear (Rotihskeré:wake), Turtle (Rotiniáhton), and Wolf (Ronathahí:non). Clan membership is <strong>matrilineal</strong> — you belong to your mother's clan forever.",
+          "At Kanehsatà:ke specifically, two additional clans are present: Snipe (Roti'nehsí:io) and Eel (Rotineniotthró:non), both originally Onondaga clans. Their presence reflects the 1806 resettlement of Oswegatchie Onondaga people at Akwesasne, followed by intermarriage and migration.",
+          "The clan system governs who you can marry (never within your own clan), who attends your ceremonies, and who speaks at your funeral. The language and the social structure are inseparable."
+        ],
+        "ped": "<strong>Clans as social grammar:</strong> McCarty & Lee (2014) argue that language learning must honour cultural institutions. The clan system is not background knowledge — it is the social structure that the language serves. Teaching clan names without this context produces vocabulary without meaning.",
+        "vocabIds": [
+          "cl01",
+          "cl02",
+          "cl03",
+          "cl04",
+          "cl05"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "cl01",
+            "prompt": "What does Rotihskeré:wake mean?",
+            "sub": "",
+            "correct": "Bear Clan",
+            "options": [
+              "Bear Clan",
+              "Turtle Clan",
+              "Wolf Clan",
+              "Snipe Clan"
+            ],
+            "cm": "Tho niioht! Rotihskeré:wake — Bear Clan. The Bear Clan is associated with healing in oral tradition.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each clan name to its animal",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Rotihskeré:wake",
+                "english": "Bear Clan",
+                "wids": [
+                  "cl01"
+                ]
+              },
+              {
+                "target": "Rotiniáhton",
+                "english": "Turtle Clan",
+                "wids": [
+                  "cl02"
+                ]
+              },
+              {
+                "target": "Ronathahí:non",
+                "english": "Wolf Clan",
+                "wids": [
+                  "cl03"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The three founding Mohawk clans. You can verify your own clan by asking your mother's family.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cl04",
+            "prompt": "Roti'nehsí:io (Snipe Clan) is present at Kanehsatà:ke. Why?",
+            "sub": "",
+            "correct": "Oswegatchie Onondaga people resettled at Akwesasne in 1806 after being driven out by US troops; intermarriage brought these clans to Kanehsatà:ke",
+            "options": [
+              "Oswegatchie Onondaga people resettled at Akwesasne in 1806 after being driven out by US troops; intermarriage brought these clans to Kanehsatà:ke",
+              "Snipe Clan was always a Mohawk clan",
+              "The clan system is the same at all communities",
+              "Snipe Clan members moved to avoid the Bear Clan"
+            ],
+            "cm": "Niawenhkó:wa! The Kontinónhstats curriculum explicitly explains this history. The presence of Snipe and Eel Clans at Kanehsatà:ke is not an irregularity — it is evidence of the community's specific history of displacement, resettlement, and kinship.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cl01",
+            "prompt": "Clan membership is matrilineal. You belong to your mother's clan. What does this mean for the Kanien'kehá:ka kinship system you studied earlier?",
+            "sub": "",
+            "correct": "Your clan connects directly to the matrilineal kinship nouns — ista (mother), tota (grandmother) — because clan passes through the female line",
+            "options": [
+              "Your clan connects directly to the matrilineal kinship nouns — ista (mother), tota (grandmother) — because clan passes through the female line",
+              "Clan membership is separate from kinship vocabulary",
+              "Fathers determine clan",
+              "Only elders know their clan"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The entire vocabulary you learned in Unit 2 (kinship nouns, matrilineal family structure) connects directly to the clan system. The language is a map of the social structure.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "cl02",
+            "prompt": "How do you say 'Turtle Clan'?",
+            "sub": "",
+            "correct": "Rotiniáhton",
+            "alts": [
+              "rotiniáhton",
+              "rotiniahton"
+            ],
+            "cm": "Tho niioht! Rotiniáhton — Turtle Clan. The Turtle Clan carries leadership responsibilities in Haudenosaunee governance.",
+            "wm": "Please try again. Try: Rotiniáhton"
+          },
+          {
+            "type": "fill",
+            "wid": "cl03",
+            "prompt": "Complete the Wolf Clan name",
+            "sentence": "Wolf Clan is Ronathahí:___",
+            "correct": "non",
+            "hint": "n",
+            "alts": [
+              "non"
+            ],
+            "cm": "Niawenhkó:wa! Ronathahí:non — Wolf Clan. The Wolf Clan are the pathfinders, those who know the way.",
+            "wm": "Please try again — ends in 'non'."
+          },
+          {
+            "type": "mc",
+            "wid": "cl02",
+            "prompt": "'You cannot marry within your own clan' is a fundamental rule of Haudenosaunee society. How is this reflected in the kinship vocabulary you learned?",
+            "sub": "",
+            "correct": "Kinship terms mark every relationship — knowing your clan tells you which people are prohibited as marriage partners and which ceremonial roles you hold",
+            "options": [
+              "Kinship terms mark every relationship — knowing your clan tells you which people are prohibited as marriage partners and which ceremonial roles you hold",
+              "Marriage rules are unrelated to language",
+              "The kinship vocabulary only applies to blood relatives",
+              "Only elders must follow clan rules"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The kinship vocabulary from Unit 2 and the clan system from this lesson are the same social structure viewed from two angles. Language is social architecture.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "cl01",
+            "prompt": "Say this clan name aloud",
+            "sub": "",
+            "word": "Rotihskeré:wake",
+            "meaning": "Bear Clan",
+            "hint": "Five syllables: ro-tih-ske-RÉ-wake. Stress on the fourth syllable. A long, ceremonial-sounding word."
+          },
+          {
+            "type": "story",
+            "wid": "cl01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Rotihskeré:wake / Rotiniáhton / Ronathahí:non",
+            "meaning": "Bear / Turtle / Wolf Clan",
+            "storyPrompt": "The Kanien'kehá:ka have three founding clans — Bear, Turtle, Wolf. Belonging to a clan means belonging to a network of people across all Haudenosaunee communities, with specific rights and responsibilities. Many people learning this language are also discovering (or recovering) their own clan identity. Do you know your clan, or do you know where you might find out? What would it mean to know?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Unit 7 — Food, Land & Ceremony",
+    "desc": "Fruits, traditional foods, cultural items, household vocabulary, nature & seasons, and cultural heroes",
+    "lessons": [
+      {
+        "id": "u6l0",
+        "title": "Lesson 23 — Fruits & Traditional Foods",
+        "icon": "🍓",
+        "sub": "What the land gives us",
+        "intro": [
+          "Kanien'kéha has rich vocabulary for the fruits of the land. Many of these words appear in the <strong>Thanksgiving Address</strong> — the berries, plants, and fruits of the earth are acknowledged as gifts.",
+          "The <strong>Strawberry</strong> (Ken' niiohontésha') holds particular ceremonial importance as the first fruit of spring — the Strawberry Ceremony marks the return of sweetness to the world after winter.",
+          "The <strong>Three Sisters</strong> — corn (Onón:ta), beans (Ohsahéta'), and squash (Otá:ra) — are the agricultural foundation of Haudenosaunee life. They are companion plants: grown together, they sustain each other and the people."
+        ],
+        "ped": "<strong>Food as cultural knowledge:</strong> Chew, Leonard & Rosenblum (2023) emphasise that language revitalization must connect to land-based knowledge. Food vocabulary is not neutral — it maps the relationship between the people and their territory.",
+        "vocabIds": [
+          "fr01",
+          "fr02",
+          "fr03",
+          "fr04",
+          "fr05",
+          "fr06",
+          "fo01",
+          "fo02",
+          "fo04",
+          "fo05",
+          "fo06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "fr01",
+            "prompt": "What does Ken' niiohontésha' mean?",
+            "sub": "",
+            "correct": "Strawberries",
+            "options": [
+              "Strawberries",
+              "Cranberries",
+              "Blueberries",
+              "Cherries"
+            ],
+            "cm": "Tho niioht! Ken' niiohontésha' — strawberries. The first fruit of spring, celebrated in the Strawberry Ceremony.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "fo05",
+            "prompt": "Onón:ta means corn. What are the Three Sisters?",
+            "sub": "",
+            "correct": "Corn (Onón:ta), beans (Ohsahéta'), and squash (Otá:ra) — the three companion crops of Haudenosaunee agriculture",
+            "options": [
+              "Corn (Onón:ta), beans (Ohsahéta'), and squash (Otá:ra) — the three companion crops of Haudenosaunee agriculture",
+              "Corn, wheat, and rice",
+              "Potatoes, carrots, and onions",
+              "Strawberries, blueberries, and cranberries"
+            ],
+            "cm": "Niawenhkó:wa! The Three Sisters are companion crops: corn provides the trellis for beans, beans fix nitrogen in the soil, and squash shades the ground to retain moisture. They are grown together and named together.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the fruits",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ken' niiohontésha'",
+                "english": "Strawberries",
+                "wids": [
+                  "fr01"
+                ]
+              },
+              {
+                "target": "Á:io",
+                "english": "Cranberries",
+                "wids": [
+                  "fr02"
+                ]
+              },
+              {
+                "target": "Ori'kó:wa",
+                "english": "Cherries",
+                "wids": [
+                  "fr04"
+                ]
+              },
+              {
+                "target": "Kahrhata'ké:ha",
+                "english": "Blueberries",
+                "wids": [
+                  "fr05"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Four fruits of the Kanehsatà:ke territory.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the Three Sisters",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Onón:ta",
+                "english": "Corn",
+                "wids": [
+                  "fo05"
+                ]
+              },
+              {
+                "target": "Ohsahéta'",
+                "english": "Beans",
+                "wids": [
+                  "fo04"
+                ]
+              },
+              {
+                "target": "Otá:ra",
+                "english": "Squash",
+                "wids": [
+                  "fo06"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Onón:ta, Ohsahéta', Otá:ra — the Three Sisters. Grow them together and name them together.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "fr06",
+            "prompt": "Ohsi'tá:na means apples. The apple orchards at Kanehsatà:ke were historically significant. Why?",
+            "sub": "",
+            "correct": "The 1990 Oka Crisis partly involved the threatened destruction of orchards and a sacred pine grove for a golf course expansion",
+            "options": [
+              "The 1990 Oka Crisis partly involved the threatened destruction of orchards and a sacred pine grove for a golf course expansion",
+              "Apples were the most traded food",
+              "Apple orchards were introduced in the 1990s",
+              "Apples are not significant at Kanehsatà:ke"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The land that community defended in 1990 included orchards, a sacred pine grove, and a traditional burial ground. The word Ohsi'tá:na connects to that history.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "fr01",
+            "prompt": "How do you say 'Strawberries'?",
+            "sub": "",
+            "correct": "Ken' niiohontésha'",
+            "alts": [
+              "ken' niiohontesha'",
+              "ken niiohontesha"
+            ],
+            "cm": "Niawenhkó:wa! Ken' niiohontésha'. A beautiful and phonetically rich word for the first fruit of spring.",
+            "wm": "Please try again. Try: Ken' niiohontésha'"
+          },
+          {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Complete the word for 'corn'",
+            "sentence": "Corn is Onón:___",
+            "correct": "ta",
+            "hint": "t",
+            "alts": [
+              "ta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn. The most sacred of the Three Sisters.",
+            "wm": "Please try again — ends in 'ta'."
+          },
+          {
+            "type": "mc",
+            "wid": "fo04",
+            "prompt": "Ohsahéta' (beans), Onón:ta (corn), and Otá:ra (squash) are companion plants. How does growing them together mirror the Haudenosaunee social philosophy you have learned?",
+            "sub": "",
+            "correct": "Interdependence — different members of a community support each other, just as the Three Sisters support each other in the garden",
+            "options": [
+              "Interdependence — different members of a community support each other, just as the Three Sisters support each other in the garden",
+              "They are grown together only for convenience",
+              "The connection to social philosophy is metaphorical only",
+              "Only one of the three is important"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The Three Sisters are a living metaphor for confederacy — different nations, different strengths, working together. The clan system, the Great Law, and the Three Sisters are all expressions of the same underlying value.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "fo05",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Onón:ta",
+            "meaning": "Corn",
+            "hint": "Three syllables: o-NÓN-ta. Stress on the second syllable. The long vowel (:) after nón is held slightly."
+          },
+          {
+            "type": "story",
+            "wid": "fr01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ken' niiohontésha'",
+            "meaning": "Strawberries",
+            "storyPrompt": "Ken' niiohontésha' — strawberries, the first sweetness after winter. The Strawberry Ceremony marks their return. Think of something in your life that returns each year and signals renewal — a season, a food, a person, an activity. What does its return mean to you? What would you give thanks for when it arrives?"
+          }
+        ]
+      },
+      {
+        "id": "u6l1",
+        "title": "Lesson 24 — Foods of the Home",
+        "icon": "🌽",
+        "sub": "What we eat, and what it carries",
+        "intro": [
+          "Beyond the Three Sisters and fruits, Kanien'kéha vocabulary covers the broader range of foods in modern Kanien'kehá:ka households. This lesson covers everyday food nouns from Lesson 30 of the Kontinónhstats curriculum.",
+          "Several words here demonstrate <strong>noun compounding</strong> in action: <strong>Ohkwá:ri o'wá:ron</strong> (bear meat) combines Ohkwá:ri (bear, from the wild animals lesson) with o'wá:ron (meat) — you already know both halves.",
+          "Food vocabulary in Kanien'kéha also reflects the history of the community — some words are ancient, others adapted to post-contact ingredients."
+        ],
+        "ped": "<strong>Compounding as review:</strong> Presenting Ohkwá:ri o'wá:ron (bear meat) as a compound draws on vocabulary from two previous lessons (animals and food). This is spaced retrieval practice — encountering known words in new combinations strengthens long-term memory (Nation, 2001).",
+        "vocabIds": [
+          "fo01",
+          "fo02",
+          "fo03",
+          "fo07",
+          "fo08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "fo01",
+            "prompt": "What does Ohnenná:ta mean?",
+            "sub": "",
+            "correct": "Potatoes",
+            "options": [
+              "Potatoes",
+              "Corn",
+              "Meat",
+              "Bread"
+            ],
+            "cm": "Tho niioht! Ohnenná:ta — potatoes. An important staple in the modern Kanien'kehá:ka household.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "fo08",
+            "prompt": "Ohkwá:ri o'wá:ron means 'bear meat'. You already know both words separately. What is o'wá:ron?",
+            "sub": "",
+            "correct": "Meat (general term)",
+            "options": [
+              "Meat (general term)",
+              "Bear",
+              "Water",
+              "Corn"
+            ],
+            "cm": "Niawenhkó:wa! o'wá:ron = meat. Ohkwá:ri = bear. Together: bear meat. Kanien'kéha compounds nouns by placing them side by side — the same strategy you saw in shape names.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the food words",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ohnenná:ta",
+                "english": "Potatoes",
+                "wids": [
+                  "fo01"
+                ]
+              },
+              {
+                "target": "O'wá:ron",
+                "english": "Meat",
+                "wids": [
+                  "fo02"
+                ]
+              },
+              {
+                "target": "Kanà:taros",
+                "english": "Bread",
+                "wids": [
+                  "fo07"
+                ]
+              },
+              {
+                "target": "Owistóhsera",
+                "english": "Butter",
+                "wids": [
+                  "fo03"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Everyday food vocabulary for the home.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "fo02",
+            "prompt": "Complete the word for 'meat'",
+            "sentence": "Meat is O'wá:___",
+            "correct": "ron",
+            "hint": "r",
+            "alts": [
+              "ron"
+            ],
+            "cm": "Tho niioht! O'wá:ron — meat. The glottal stop (') at the beginning is part of the word.",
+            "wm": "Please try again — ends in 'ron'."
+          },
+          {
+            "type": "mc",
+            "wid": "fo07",
+            "prompt": "Kanà:taros means bread. Corn bread is Onón:ta kanà:taros. Based on this, what does the compound Onón:ta kanà:taros literally describe?",
+            "sub": "",
+            "correct": "Corn + bread = corn bread (a direct compound of the two noun roots)",
+            "options": [
+              "Corn + bread = corn bread (a direct compound of the two noun roots)",
+              "A special ceremony name",
+              "A new word with no connection to the parts",
+              "A verb phrase"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is the same compounding strategy as bear meat (Ohkwá:ri o'wá:ron). Kanien'kéha builds compound nouns by placing nouns side by side. Knowing the parts gives you the compound.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "fo05",
+            "prompt": "You learned corn in the previous lesson. How do you say it?",
+            "sub": "Spaced review",
+            "correct": "Onón:ta",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Niawenhkó:wa! Onón:ta — corn. The most sacred of the Three Sisters.",
+            "wm": "Please try again. Try: Onón:ta"
+          },
+          {
+            "type": "mc",
+            "wid": "fo02",
+            "prompt": "O'wá:ron (meat) in traditional diet primarily referred to game — deer, moose, bear. How does knowing the wild animal vocabulary from the previous unit connect to food vocabulary?",
+            "sub": "",
+            "correct": "Wild animal names + o'wá:ron (meat) generate compound food words: Oskenhón:ton o'wá:ron (deer meat), Ohkwá:ri o'wá:ron (bear meat)",
+            "options": [
+              "Wild animal names + o'wá:ron (meat) generate compound food words: Oskenhón:ton o'wá:ron (deer meat), Ohkwá:ri o'wá:ron (bear meat)",
+              "Animal names and food names are unrelated",
+              "Only bear meat has a Kanien'kéha name",
+              "Food vocabulary is a separate system"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is the power of systematic vocabulary learning — once you know the pattern (animal + o'wá:ron = that animal's meat), you can generate new compound words yourself.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "fo01",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ohnenná:ta",
+            "meaning": "Potatoes",
+            "hint": "Four syllables: oh-nen-NÁ-ta. Stress on the third syllable. The long vowel (:) before 'ta' is important."
+          },
+          {
+            "type": "story",
+            "wid": "fo05",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Onón:ta",
+            "meaning": "Corn",
+            "storyPrompt": "Onón:ta — corn. Sacred, central, sustaining. The Haudenosaunee Green Corn Ceremony gives thanks for the corn harvest. Think about a food that is central to your family or community — not just nutritionally but in terms of memory, identity, gathering. What would you give thanks for? What is your Onón:ta?"
+          }
+        ]
+      },
+      {
+        "id": "u6l2",
+        "title": "Lesson 25 — Cultural Items & Political Vocabulary",
+        "icon": "🏡",
+        "sub": "The objects that hold the culture",
+        "intro": [
+          "This lesson introduces vocabulary from Lesson 31 of the Kontinónhstats curriculum — cultural items and political vocabulary central to Kanien'kehá:ka identity.",
+          "The <strong>Longhouse</strong> (Kanonsesné:ha) is not only a building — it is the governing unit of the Haudenosaunee Confederacy. 'People of the Longhouse' is how the Haudenosaunee describe themselves.",
+          "The <strong>Great Law of Peace</strong> (Kaià:ner) is the constitution of the Confederacy. <strong>Peace</strong> (Skennón:'a), <strong>strength/righteousness</strong>, and <strong>good mind</strong> are its three principles. <strong>Native tobacco</strong> (Onkwatà:wen) carries prayers upward — it is ceremonial, not recreational.",
+          "The <strong>Two Dog Wampum Belt</strong> was repatriated to Kanehsatà:ke from the McCord Stewart Museum in 2024, a landmark act described on the Kontinónhstats website."
+        ],
+        "ped": "<strong>Political vocabulary as critical literacy:</strong> Freire (1970) argued that reading the word means reading the world. Learning Kaià:ner (Great Law), Skennón:'a (peace), Iakoiánehr (clan mother), and Rotiiánehr (longhouse chief) is reading the Haudenosaunee political world — its institutions, its principles, its structure.",
+        "vocabIds": [
+          "cu01",
+          "cu02",
+          "cu03",
+          "cu04",
+          "cu05",
+          "cu06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "cu01",
+            "prompt": "What does Kanonsesné:ha mean?",
+            "sub": "",
+            "correct": "Longhouse",
+            "options": [
+              "Longhouse",
+              "Wampum belt",
+              "Peace",
+              "Tobacco"
+            ],
+            "cm": "Tho niioht! Kanonsesné:ha — longhouse. The Haudenosaunee Confederacy is 'People of the Longhouse'. Clan mothers governed the longhouse.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cu02",
+            "prompt": "What does Kaià:ner mean?",
+            "sub": "",
+            "correct": "The Great Law of Peace / The Good Path",
+            "options": [
+              "The Great Law of Peace / The Good Path",
+              "Longhouse",
+              "Wampum belt",
+              "Clan mother"
+            ],
+            "cm": "Niawenhkó:wa! Kaià:ner — the Good Path, the Great Law of Peace. The three principles are peace (Skennón:'a), strength/righteousness, and good mind.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the cultural and political vocabulary",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Kanonsesné:ha",
+                "english": "Longhouse",
+                "wids": [
+                  "cu01"
+                ]
+              },
+              {
+                "target": "Kaià:ner",
+                "english": "The Great Law of Peace",
+                "wids": [
+                  "cu02"
+                ]
+              },
+              {
+                "target": "Teioháte",
+                "english": "Wampum belt",
+                "wids": [
+                  "cu03"
+                ]
+              },
+              {
+                "target": "Skennón:'a",
+                "english": "Peace",
+                "wids": [
+                  "cu04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Longhouse, Great Law, Wampum, Peace — the political architecture of the Haudenosaunee Confederacy named.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cu05",
+            "prompt": "Onkwatà:wen (native tobacco) is used ceremonially, not recreationally. What is its ceremonial function?",
+            "sub": "",
+            "correct": "Tobacco carries prayers upward — it is placed in fire, water, or earth as an offering and expression of thanks",
+            "options": [
+              "Tobacco carries prayers upward — it is placed in fire, water, or earth as an offering and expression of thanks",
+              "Tobacco is used for trade only",
+              "Tobacco is a food",
+              "Tobacco is only for men"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The ceremonial use of native tobacco (Onkwatà:wen) is distinct from commercial tobacco. It is an offering — a way of sending thanks and prayer into the world.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cu03",
+            "prompt": "The Two Dog Wampum Belt (Teioháte) was returned to Kanehsatà:ke from the McCord Stewart Museum in 2024. What does wampum repatriation represent?",
+            "sub": "",
+            "correct": "The return of cultural records and governance documents to the community they belong to",
+            "options": [
+              "The return of cultural records and governance documents to the community they belong to",
+              "A financial transaction",
+              "A museum policy change unrelated to community",
+              "Wampum has no political significance"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Wampum belts are records — of treaties, alliances, and history. Their repatriation is the return of a community's own documentary archive. The Kontinónhstats website covers this directly.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "cu04",
+            "prompt": "How do you say 'Peace'?",
+            "sub": "",
+            "correct": "Skennón:'a",
+            "alts": [
+              "skennón:'a",
+              "skennona",
+              "skenona"
+            ],
+            "cm": "Tho niioht! Skennón:'a — peace. One of the three principles of the Great Law of Peace.",
+            "wm": "Please try again. Try: Skennón:'a"
+          },
+          {
+            "type": "mc",
+            "wid": "cu06",
+            "prompt": "Ionkwaiénhton (corn husk doll) has no face in Haudenosaunee tradition. What does the oral tradition say about why?",
+            "sub": "",
+            "correct": "She gave her face to the people and was taught humility — she is not to look at her own reflection",
+            "options": [
+              "She gave her face to the people and was taught humility — she is not to look at her own reflection",
+              "The face was never added for practical reasons",
+              "Corn husk dolls are not ceremonial",
+              "The face was added later in history"
+            ],
+            "cm": "Niawenhkó:wa! The corn husk doll story is a teaching about humility and service. Learning these cultural items means learning the stories that give them meaning.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "cu04",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Skennón:'a",
+            "meaning": "Peace",
+            "hint": "Three syllables: sken-NÓN-'a. The glottal stop (') at the end gives it a soft, complete quality. A word that ends with intention."
+          },
+          {
+            "type": "story",
+            "wid": "cu04",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Skennón:'a",
+            "meaning": "Peace",
+            "storyPrompt": "Skennón:'a — peace. One of three principles that united five warring nations under the Great Law. Peace here is not the absence of conflict — it is an active choice, a political project, a word that required a whole confederacy to embody. What does peace mean in your own life, in your own community? Is it something you have, something you build, or something you carry?"
+          }
+        ]
+      },
+      {
+        "id": "u6l3",
+        "title": "Lesson 26 — Household Vocabulary",
+        "icon": "🏠",
+        "sub": "The language of everyday home life",
+        "intro": [
+          "Lesson 32 of the Kontinónhstats curriculum covers household items — the objects of daily domestic life. Like domestic animals, many household items arrived with European contact, and Kanien'kéha named them from within its own grammatical system.",
+          "Several of these words connect to the body part vocabulary you learned earlier: soap connects to washing, towel to the 'washing face' verb, bed to resting.",
+          "Knowing household vocabulary is essential for using Kanien'kéha in daily life — one of the goals of the Kontinónhstats curriculum is to make the language present in everyday domestic conversation."
+        ],
+        "ped": "<strong>Domain expansion:</strong> García & Li Wei (2014) identify domestic and household domains as critical for language vitality. When Kanien'kéha can be spoken in the kitchen and bathroom as well as in ceremony, it is truly a language of daily life.",
+        "vocabIds": [
+          "ho01",
+          "ho02",
+          "ho03"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "ho01",
+            "prompt": "What does Atsihnhétste' mean?",
+            "sub": "",
+            "correct": "Soap",
+            "options": [
+              "Soap",
+              "Bed",
+              "Towel",
+              "Shampoo"
+            ],
+            "cm": "Tho niioht! Atsihnhétste' — soap. Essential for the 'washing hands' and 'washing face' verbs you learned from the A-stem lesson.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ho02",
+            "prompt": "What does Ohkwáriyentha' mean?",
+            "sub": "",
+            "correct": "Bed",
+            "options": [
+              "Bed",
+              "Chair",
+              "Table",
+              "Sofa"
+            ],
+            "cm": "Niawenhkó:wa! Ohkwáriyentha' — bed. The -yentha' locative suffix marks 'the place where one does something'. Compare ani'tskwá:ra (chair) from the A-class nouns lesson.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the household items",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Atsihnhétste'",
+                "english": "Soap",
+                "wids": [
+                  "ho01"
+                ]
+              },
+              {
+                "target": "Ohkwáriyentha'",
+                "english": "Bed",
+                "wids": [
+                  "ho02"
+                ]
+              },
+              {
+                "target": "Atié:wen",
+                "english": "Towel / Face cloth",
+                "wids": [
+                  "ho03"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Three household items — each connected to a daily routine.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ho01",
+            "prompt": "Atsihnhétste' (soap) connects to two A-stem verbs you already learned. Which ones?",
+            "sub": "Think about what soap is used for",
+            "correct": "Washing hands (sato'nnenhstáhkwa's) and washing face — both body-care verbs from the A-stem lesson",
+            "options": [
+              "Washing hands (sato'nnenhstáhkwa's) and washing face — both body-care verbs from the A-stem lesson",
+              "Sitting and running",
+              "Listening and looking",
+              "Coughing and sweeping"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Household objects connect to the verbs that use them. Soap → washing hands/face. This is how vocabulary networks build — each word connects to others you already know.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "ho01",
+            "prompt": "How do you say 'Soap'?",
+            "sub": "",
+            "correct": "Atsihnhétste'",
+            "alts": [
+              "atsihnhétste'",
+              "atsihnhetste"
+            ],
+            "cm": "Tho niioht! Atsihnhétste' — soap. An A-class noun beginning with 'at'.",
+            "wm": "Please try again. Try: Atsihnhétste'"
+          },
+          {
+            "type": "mc",
+            "wid": "ho03",
+            "prompt": "Atié:wen (towel/face cloth) connects to which body part vocabulary from the Body Parts lesson?",
+            "sub": "",
+            "correct": "Ononkwa' (head/face) and the face-washing verb — towels are used after washing",
+            "options": [
+              "Ononkwa' (head/face) and the face-washing verb — towels are used after washing",
+              "Ohskenón:ni (arm) only",
+              "Onékahrha (teeth)",
+              "None — household and body vocabulary are separate"
+            ],
+            "cm": "Niawenhkó:wa! Vocabulary networks: towel connects to face, which connects to the face-washing verb, which connects to soap. Learning in networks is more efficient than learning isolated words.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ho02",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ohkwáriyentha'",
+            "meaning": "Bed",
+            "hint": "Five syllables: oh-kwá-ri-yen-tha'. The glottal stop (') at the end is the locative suffix '-yentha'' meaning 'the place of'. Stress on the second syllable."
+          },
+          {
+            "type": "story",
+            "wid": "ho02",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ohkwáriyentha'",
+            "meaning": "Bed (the place where one rests)",
+            "storyPrompt": "Ohkwáriyentha' — the place where one rests. The -yentha' suffix turns any activity into a place: the place of resting, the place of washing, the place of sitting. Think about the spaces in your home — each one is defined by what happens there. Which space in your home would you most want to be able to name in Kanien'kéha, and why?"
+          }
+        ]
+      },
+      {
+        "id": "u6l4",
+        "title": "Lesson 27 — The Natural World: Seasons & Land",
+        "icon": "🍁",
+        "sub": "The world we live in and move through",
+        "intro": [
+          "This lesson covers the vocabulary of the natural world from Lesson 33 of the Kontinónhstats curriculum: the moon, the earth, trees, rivers, mountains, and the four seasons.",
+          "Many of these words appear in the <strong>Thanksgiving Address</strong>. The moon (Tsí:tewen, 'Grandmother Moon') governs tides and the female cycle. The maple (Wahta:) marks the beginning of spring with its sap. The river (Kaniatarà:ke) is the St. Lawrence — the waterway of Kanehsatà:ke's history.",
+          "The four seasons in Kanien'kéha map onto a ceremonial calendar: spring (Sé:ske) brings the Strawberry Ceremony; summer (Ohiarí:ha) is the growing season; autumn (Ken'niká:ien) brings the Green Corn and Harvest Ceremonies; winter (Kenién:ke) is a time of storytelling."
+        ],
+        "ped": "<strong>Land-based vocabulary and seasonal ceremony:</strong> In Haudenosaunee pedagogy, the land is not background — it is the primary text. Learning the seasons means learning when to hold ceremonies, when to plant, when to harvest. This is what Chew, Leonard & Rosenblum (2023) mean by decolonizing language pedagogy: the curriculum should serve the community's relationship to the land.",
+        "vocabIds": [
+          "na01",
+          "na02",
+          "na03",
+          "na04",
+          "na05",
+          "na06",
+          "na07",
+          "na08",
+          "na09"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "na01",
+            "prompt": "What does Tsí:tewen mean?",
+            "sub": "",
+            "correct": "Moon",
+            "options": [
+              "Moon",
+              "Sun",
+              "Star",
+              "Earth"
+            ],
+            "cm": "Tho niioht! Tsí:tewen — moon, our Grandmother Moon. You already know Karáhkwa (sun) from the shapes lesson. Sun and moon — two celestial bodies now named.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the four seasons",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Kenién:ke",
+                "english": "Winter",
+                "wids": [
+                  "na06"
+                ]
+              },
+              {
+                "target": "Sé:ske",
+                "english": "Spring",
+                "wids": [
+                  "na07"
+                ]
+              },
+              {
+                "target": "Ohiarí:ha",
+                "english": "Summer",
+                "wids": [
+                  "na08"
+                ]
+              },
+              {
+                "target": "Ken'niká:ien",
+                "english": "Autumn",
+                "wids": [
+                  "na09"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The four seasons — each connected to ceremony, agriculture, and the natural world.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "na07",
+            "prompt": "Sé:ske (spring) is associated with which ceremony?",
+            "sub": "",
+            "correct": "The Strawberry Ceremony — celebrating the first fruit of spring",
+            "options": [
+              "The Strawberry Ceremony — celebrating the first fruit of spring",
+              "The Green Corn Ceremony",
+              "The Harvest Ceremony",
+              "The Midwinter Ceremony"
+            ],
+            "cm": "Niawenhkó:wa! Sé:ske → Strawberry Ceremony (Ken' niiohontésha'). You already know the word for strawberries from the food lesson. The vocabulary connects.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "na03",
+            "prompt": "Wahta: means maple tree. Why is the maple tree particularly significant at Kanehsatà:ke?",
+            "sub": "",
+            "correct": "The sugar bush tradition — gathering maple sap each spring — is a land-based practice connecting community to territory",
+            "options": [
+              "The sugar bush tradition — gathering maple sap each spring — is a land-based practice connecting community to territory",
+              "Maple trees are only decorative",
+              "Maple was used to make longhouses",
+              "The maple tree has no special significance"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The sugar bush (tapping maple trees for sap) is a spring ceremony and a community activity. The maple leaf appears on the Canadian flag — but for the Kanien'kehá:ka, Wahta: is much more than a national symbol.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the nature vocabulary",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Tsí:tewen",
+                "english": "Moon",
+                "wids": [
+                  "na01"
+                ]
+              },
+              {
+                "target": "Ohwén:tsia",
+                "english": "Earth",
+                "wids": [
+                  "na02"
+                ]
+              },
+              {
+                "target": "Wahta:",
+                "english": "Maple tree",
+                "wids": [
+                  "na03"
+                ]
+              },
+              {
+                "target": "Kaniatarà:ke",
+                "english": "River",
+                "wids": [
+                  "na04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Moon, earth, maple, river — the natural world named.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "na07",
+            "prompt": "How do you say 'Spring'?",
+            "sub": "",
+            "correct": "Sé:ske",
+            "alts": [
+              "sé:ske",
+              "seske"
+            ],
+            "cm": "Tho niioht! Sé:ske — spring. A short, clean word for renewal.",
+            "wm": "Please try again. Try: Sé:ske"
+          },
+          {
+            "type": "fill",
+            "wid": "na09",
+            "prompt": "Complete the word for autumn",
+            "sentence": "Autumn is Ken'niká:___",
+            "correct": "ien",
+            "hint": "i",
+            "alts": [
+              "ien"
+            ],
+            "cm": "Niawenhkó:wa! Ken'niká:ien — autumn. The season of the Green Corn and Harvest Ceremonies.",
+            "wm": "Please try again — ends in 'ien'."
+          },
+          {
+            "type": "mc",
+            "wid": "na01",
+            "prompt": "Tsí:tewen (moon) is called 'Grandmother Moon' in Haudenosaunee tradition. You already know the word for grandmother. What is it?",
+            "sub": "Spaced review from Unit 2",
+            "correct": "tota (base form) / Aksótha (my grandmother)",
+            "options": [
+              "tota (base form) / Aksótha (my grandmother)",
+              "ista (mother)",
+              "'sot (grandfather)",
+              "raónha (he)"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! tota / Aksótha — grandmother. The moon is Tsí:tewen, Grandmother Moon. The kinship vocabulary you learned in Unit 2 extends into the ceremonial and natural world.",
+            "wm": "Please try again — think back to the female kinship nouns."
+          },
+          {
+            "type": "audio",
+            "wid": "na09",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ken'niká:ien",
+            "meaning": "Autumn / Fall",
+            "hint": "Five syllables: ken'-ni-KÁ-ien. The glottal stop after Ken' is important. Stress on the third syllable."
+          },
+          {
+            "type": "story",
+            "wid": "na06",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Kenién:ke",
+            "meaning": "Winter",
+            "storyPrompt": "Kenién:ke — winter. In Haudenosaunee tradition, winter is the time for telling the old stories — the stories that can only be told when snow is on the ground. The language itself has rules about when certain things are said, sung, or told. What is the winter of your own life — a time of quiet, of inwardness, of stories? What do you hold during that season that you put down in others?"
+          }
+        ]
+      },
+      {
+        "id": "u6l5",
+        "title": "Lesson 28 — Cultural Heroes, Leaders & Legends",
+        "icon": "🌿",
+        "sub": "The people and stories that made the nation",
+        "intro": [
+          "The final lesson of this unit draws from Lesson 34 of the Kontinónhstats curriculum — the names of cultural figures, political roles, and legendary beings of the Haudenosaunee tradition.",
+          "<strong>Tekanawí:ta</strong> (the Peacemaker) and <strong>Aiionwátha</strong> (Hiawatha) founded the Haudenosaunee Confederacy. Their story is one of the most important political narratives in North American history — and yet most people outside the Haudenosaunee communities do not know it.",
+          "<strong>Iakoiánehr</strong> (clan mother) and <strong>Rotiiánehr</strong> (longhouse chief) are the two central political roles of the Confederacy. <strong>Shonkwaiá:tison</strong> (the Creator) closes the Thanksgiving Address.",
+          "Learning these names is learning a political and spiritual genealogy — the people and powers that made and sustain the community."
+        ],
+        "ped": "<strong>Cultural heroes as curriculum:</strong> Tuck & Yang (2012) argue that decolonization involves not just learning about the present but restoring a connection to the historical and spiritual lineage. These names — the Peacemaker, Hiawatha, clan mothers — are that lineage, made speakable in the language.",
+        "vocabIds": [
+          "le01",
+          "le02",
+          "le03",
+          "le04",
+          "le05",
+          "le06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "le01",
+            "prompt": "Tekanawí:ta is the Peacemaker. What did the Peacemaker accomplish?",
+            "sub": "",
+            "correct": "United five warring nations under the Great Law of Peace, founding the Haudenosaunee Confederacy",
+            "options": [
+              "United five warring nations under the Great Law of Peace, founding the Haudenosaunee Confederacy",
+              "Led a military campaign against European settlers",
+              "Established the first longhouse at Kanehsatà:ke",
+              "Wrote down the first Kanien'kéha dictionary"
+            ],
+            "cm": "Tho niioht! Tekanawí:ta — the Peacemaker. Together with Aiionwátha (Hiawatha), he brought the Great Law of Peace to the five founding nations.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "le04",
+            "prompt": "What does Iakoiánehr mean?",
+            "sub": "",
+            "correct": "Clan Mother",
+            "options": [
+              "Clan Mother",
+              "Longhouse Chief",
+              "The Creator",
+              "The Peacemaker"
+            ],
+            "cm": "Niawenhkó:wa! Iakoiánehr — clan mother. The most important political figure in the Haudenosaunee system, who selects and can remove chiefs.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the cultural and political figures",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Tekanawí:ta",
+                "english": "The Peacemaker",
+                "wids": [
+                  "le01"
+                ]
+              },
+              {
+                "target": "Aiionwátha",
+                "english": "Hiawatha",
+                "wids": [
+                  "le02"
+                ]
+              },
+              {
+                "target": "Iakoiánehr",
+                "english": "Clan Mother",
+                "wids": [
+                  "le04"
+                ]
+              },
+              {
+                "target": "Shonkwaiá:tison",
+                "english": "The Creator",
+                "wids": [
+                  "le05"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The founding figures and the central political roles of the Haudenosaunee Confederacy.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "le02",
+            "prompt": "Aiionwátha is often anglicised as 'Hiawatha'. What is important to note about the historical Aiionwátha?",
+            "sub": "",
+            "correct": "He is a real Mohawk political figure who worked alongside the Peacemaker — not the fictional character in Longfellow's poem",
+            "options": [
+              "He is a real Mohawk political figure who worked alongside the Peacemaker — not the fictional character in Longfellow's poem",
+              "He and the fictional Hiawatha are the same person",
+              "Longfellow's poem accurately depicts his life",
+              "Aiionwátha is a legendary figure with no historical basis"
+            ],
+            "cm": "Niawenhkó:wa! Longfellow's 1855 poem 'The Song of Hiawatha' is a work of fiction that appropriated the name from Haudenosaunee tradition and applied it to an Ojibwe setting. The historical Aiionwátha is a Mohawk political leader of immense importance.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "le03",
+            "prompt": "Rotiiánehr (longhouse chief) serves 'at the pleasure of the clan mother'. What does this mean?",
+            "sub": "",
+            "correct": "Clan mothers select chiefs and can remove them — chiefs serve the people, not themselves",
+            "options": [
+              "Clan mothers select chiefs and can remove them — chiefs serve the people, not themselves",
+              "Chiefs are elected by popular vote",
+              "Chiefs hold lifetime appointments",
+              "Only men can become clan mothers or chiefs"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is the structure of the Great Law: clan mothers (Iakoiánehr) hold the ultimate authority. They select chiefs (Rotiiánehr) and can 'dehorn' them — remove their chief's antlers — if they fail the people. The system has checks and balances.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "le05",
+            "prompt": "How do you say 'The Creator'?",
+            "sub": "",
+            "correct": "Shonkwaiá:tison",
+            "alts": [
+              "shonkwaiá:tison",
+              "shonkwaiatison"
+            ],
+            "cm": "Tho niioht! Shonkwaiá:tison — 'the one who created us'. Named last in the Thanksgiving Address, after all of creation has been acknowledged.",
+            "wm": "Please try again. Try: Shonkwaiá:tison"
+          },
+          {
+            "type": "fill",
+            "wid": "le01",
+            "prompt": "Complete the Peacemaker's name",
+            "sentence": "The Peacemaker is Tekanawí:___",
+            "correct": "ta",
+            "hint": "t",
+            "alts": [
+              "ta"
+            ],
+            "cm": "Niawenhkó:wa! Tekanawí:ta. A name spoken with respect.",
+            "wm": "Please try again — ends in 'ta'."
+          },
+          {
+            "type": "audio",
+            "wid": "le05",
+            "prompt": "Say this name aloud",
+            "sub": "",
+            "word": "Shonkwaiá:tison",
+            "meaning": "The Creator",
+            "hint": "Five syllables: shon-kwai-Á-ti-son. Stress on the third syllable. The colon (:) after á extends the vowel slightly. A weighty, complete word."
+          },
+          {
+            "type": "story",
+            "wid": "le01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Tekanawí:ta",
+            "meaning": "The Peacemaker",
+            "storyPrompt": "Tekanawí:ta — the Peacemaker. He brought a vision of peace to five nations that had been at war. The story of how he did this — the persuasion, the ceremony, the planting of the Great Tree of Peace — is one of the great political stories in human history. Think of a moment in your own life when peace had to be actively built, not just hoped for. What did it require?"
           }
         ]
       }

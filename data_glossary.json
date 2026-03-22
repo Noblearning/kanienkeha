@@ -1523,5 +1523,2126 @@
       "Iah"
     ],
     "forms": null
+  },
+  {
+    "id": "o01",
+    "target": "Ó:wise'",
+    "english": "Glass / Ice",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun beginning with Ó. Glass and ice share this word — the connection between transparency and cold is embedded in the language.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ó:wise'",
+      "o:wise'",
+      "owise"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o02",
+    "target": "Ostarò:kwa",
+    "english": "Necklace",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for necklace. Traditional beadwork and wampum are central to Kanien'kehá:ka cultural practice.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ostarò:kwa",
+      "ostaro:kwa",
+      "ostarokwa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o03",
+    "target": "Ohwísta",
+    "english": "Money",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for money. Ohwísta is mentioned in the Kontinónhstats curriculum opening — 'seeking funding' is expressed using this word. It reflects how Kanien'kéha has adapted to modern economic concepts.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ohwísta",
+      "ohwísta",
+      "ohwista"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o04",
+    "target": "Otsikhè:ta",
+    "english": "Sugar / Candy",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for sugar or candy. This word appears in the Lesson 1 curriculum example sentence: 'Shní:non thi otsikhè:ta' (You buy the candy).",
+    "cite": {
+      "text": "Kontinónhstats L8 & L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Otsikhè:ta",
+      "otsikhè:ta",
+      "otsikhe:ta",
+      "otsiketa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o05",
+    "target": "Ónhka",
+    "english": "Water",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for water. Water is one of the first beings acknowledged in the Thanksgiving Address — 'Onkwehshón:'a ne wáhi ne Ohén:ton Karihwatéhkwen' opens with gratitude to the waters.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ónhka",
+      "onhka",
+      "Onhka"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o06",
+    "target": "Ohón:ta",
+    "english": "Feather / Feathers",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for feather. Feathers carry ceremonial significance in Haudenosaunee culture — eagle feathers in particular.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ohón:ta",
+      "ohón:ta",
+      "ohonta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o07",
+    "target": "Ohwén:tsia",
+    "english": "Flower",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for flower. Also appears in the Thanksgiving Address — the flowers of the earth are acknowledged and thanked.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ohwén:tsia",
+      "ohwén:tsia",
+      "ohwentsia"
+    ],
+    "forms": null
+  },
+  {
+    "id": "o08",
+    "target": "Ohná:ken",
+    "english": "Leaf / Leaves",
+    "pos": "Noun — O-Class",
+    "unit": 3,
+    "lesson": 9,
+    "notes": "O-class noun for leaf. Part of the nature vocabulary that connects language to the land.",
+    "cite": {
+      "text": "Kontinónhstats L8 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-8/"
+    },
+    "accepts": [
+      "Ohná:ken",
+      "ohná:ken",
+      "ohna:ken",
+      "ohnaaken"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka01",
+    "target": "Kà:sere'",
+    "english": "Car / Automobile",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for car. A loanword concept — Kanien'kéha adapted the noun class system to name modern objects. The Ka- prefix marks this class.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Kà:sere'",
+      "ka:sere'",
+      "kasere"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka02",
+    "target": "Kahiatónhsera",
+    "english": "Paper / Book",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for paper or book. The root -hiatónhsera is related to writing — kahiatónhsera is literally 'writing-thing'. This is a good example of how Kanien'kéha forms nouns by describing function.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Kahiatónhsera",
+      "kahiatónhsera",
+      "kahiatonhsera"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka03",
+    "target": "Kanonhsatón:ni",
+    "english": "Door",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for door. One of the household vocabulary items in Mary McDonald's curriculum.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Kanonhsatón:ni",
+      "kanonhsaton:ni",
+      "kanonhsatonni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka04",
+    "target": "Kaná:tsihs",
+    "english": "Boat / Canoe",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for boat. Watercraft is historically significant for Kanien'kehá:ka people whose territory includes the St. Lawrence River and Lake of Two Mountains.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Kaná:tsihs",
+      "kana:tsihs",
+      "kanatsihs"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka05",
+    "target": "Kanén:tara",
+    "english": "Drum",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for drum. The drum is central to Haudenosaunee ceremony and social dance. Knowing this word connects language to cultural practice.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Kanén:tara",
+      "kanén:tara",
+      "kanen:tara",
+      "kanentara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ka06",
+    "target": "Ka'nikonhrhà:wi",
+    "english": "Flint / Arrowhead",
+    "pos": "Noun — Ka-Class",
+    "unit": 3,
+    "lesson": 10,
+    "notes": "Ka-class noun for flint or arrowhead. The Haudenosaunee confederacy — the 'People of the Flint' — takes its name from flint. Kanien'kehá:ka means 'People of the Place of Flint'.",
+    "cite": {
+      "text": "Kontinónhstats L9 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-9/"
+    },
+    "accepts": [
+      "Ka'nikonhrhà:wi",
+      "ka'nikonhrha:wi",
+      "kanikonhrhawi"
+    ],
+    "forms": null
+  },
+  {
+    "id": "pl01",
+    "target": "Kanehsatà:ke",
+    "english": "Kanehsatà:ke (the community)",
+    "pos": "Proper Noun — Place",
+    "unit": 3,
+    "lesson": 11,
+    "notes": "The name of the community — often anglicised as 'Oka'. Kanehsatà:ke means 'where the crust of snow on top of the earth is'. The 1990 Oka Crisis centred on this community's defence of their land, including a sacred pine grove. The community's name in its own language carries this history.",
+    "cite": {
+      "text": "Kontinónhstats L19 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-19/"
+    },
+    "accepts": [
+      "Kanehsatà:ke",
+      "Kanehsata:ke",
+      "kanehsatake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "pl02",
+    "target": "Karáhkwa",
+    "english": "Sun / The sun",
+    "pos": "Noun — Place/Nature",
+    "unit": 3,
+    "lesson": 11,
+    "notes": "The sun — also used in Kanehsatà:ke place and directional vocabulary. The sun appears in the Thanksgiving Address as one of the beings to be thanked.",
+    "cite": {
+      "text": "Kontinónhstats L19 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-19/"
+    },
+    "accepts": [
+      "Karáhkwa",
+      "karáhkwa",
+      "karahkwa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "pl03",
+    "target": "Awé:ri",
+    "english": "Down the bay / Toward the water",
+    "pos": "Directional",
+    "unit": 3,
+    "lesson": 11,
+    "notes": "Directional term used in Kanehsatà:ke geography — 'toward the bay' or 'down toward the water'. Place knowledge is encoded in the language.",
+    "cite": {
+      "text": "Kontinónhstats L19 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-19/"
+    },
+    "accepts": [
+      "Awé:ri",
+      "awe:ri",
+      "aweri"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col01",
+    "target": "Onekwénhtara",
+    "english": "Red",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Red. Colour nouns in Kanien'kéha are often O-class nouns. Onekwénhtara is related to the word for blood — the colour name is descriptive of what is red.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Onekwénhtara",
+      "onekwénhtara",
+      "onekwenhtara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col02",
+    "target": "Oròn:ia",
+    "english": "Blue",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Blue. Oròn:ia is related to the word for sky — blue is the colour of what is above.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Oròn:ia",
+      "oron:ia",
+      "oronia"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col03",
+    "target": "Óhonte'",
+    "english": "Green",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Green. Óhonte' is related to the word for grass or vegetation — green is the colour of what grows.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Óhonte'",
+      "ohonte'",
+      "ohonte"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col04",
+    "target": "Otsì:nekwahr",
+    "english": "Yellow",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Yellow. The long vowel (:) in Otsì:nekwahr is significant.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Otsì:nekwahr",
+      "otsi:nekwahr",
+      "otsinekwahr"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col05",
+    "target": "Kayé:ri",
+    "english": "Black",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Black. One of the basic colour terms.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Kayé:ri",
+      "kaye:ri",
+      "kayeri"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col06",
+    "target": "Ó:wira'",
+    "english": "White",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "White. Compare with Ó:wise' (glass/ice) — there may be a shared root related to transparency or paleness.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Ó:wira'",
+      "o:wira'",
+      "owira"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col07",
+    "target": "Athéhsa",
+    "english": "Brown",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Brown. The colour of earth and bark.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Athéhsa",
+      "athéhsa",
+      "athehsa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "col08",
+    "target": "Washén:ra",
+    "english": "Pink",
+    "pos": "Noun — Colour",
+    "unit": 4,
+    "lesson": 12,
+    "notes": "Pink.",
+    "cite": {
+      "text": "Kontinónhstats L21 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-21/"
+    },
+    "accepts": [
+      "Washén:ra",
+      "washen:ra",
+      "washenra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp01",
+    "target": "Ononkwa'",
+    "english": "Head",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Head. Body part vocabulary in Kanien'kéha is important for learning the middle-voice infix -at- that appears in reflexive verbs (washing one's face, brushing one's teeth, etc.).",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Ononkwa'",
+      "ononkwa'",
+      "ononkwa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp02",
+    "target": "Ononkwatón:'a",
+    "english": "Hair",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Hair — literally 'on the head'. Many body part words in Kanien'kéha are compound forms showing location.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Ononkwatón:'a",
+      "ononkwaton:'a",
+      "ononkwatona"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp03",
+    "target": "Ó:nen",
+    "english": "Eye / Eyes",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Eye. The root -nen appears in verb forms related to seeing.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Ó:nen",
+      "o:nen",
+      "onen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp04",
+    "target": "Oyén:ta",
+    "english": "Nose",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Nose. The -yén:ta root is related to smelling and appears in verb forms.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Oyén:ta",
+      "oyen:ta",
+      "oyenta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp05",
+    "target": "Ohsó:wa",
+    "english": "Lips",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Lips. Connected to speaking and eating verb roots.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Ohsó:wa",
+      "ohso:wa",
+      "ohsowa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp06",
+    "target": "Onékahrha",
+    "english": "Teeth",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Teeth. Appears in the verb 'to brush one's teeth' from the A-stem lesson: satkahnekáhrhons.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Onékahrha",
+      "onekahrha",
+      "onekahrhа"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp07",
+    "target": "Onenhstà:'a",
+    "english": "Hand / Hands",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Hand. The root -nhstà:'a is incorporated into the verb 'to wash one's hands' from the A-stem verbs: sato'nnenhstáhkwa's.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Onenhstà:'a",
+      "onenhsta:'a",
+      "onenhstaa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bp08",
+    "target": "Ohskenón:ni",
+    "english": "Arm",
+    "pos": "Noun — Body Part",
+    "unit": 4,
+    "lesson": 13,
+    "notes": "Arm.",
+    "cite": {
+      "text": "Kontinónhstats L26 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-26/"
+    },
+    "accepts": [
+      "Ohskenón:ni",
+      "ohskenon:ni",
+      "ohskenonni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num01",
+    "target": "Énska",
+    "english": "One (1)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "One. Numbers in Kanien'kéha are used for counting, telling time, and expressing quantities. Note that Énska is also the root seen in the word for 'one at a time'.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Énska",
+      "énska",
+      "enska"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num02",
+    "target": "Tékeni",
+    "english": "Two (2)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Two. You have already seen this root in the dual prefix tékeni- (two people). The connection is explicit — duality is built on the number two.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Tékeni",
+      "tékeni",
+      "tekeni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num03",
+    "target": "Áhsen",
+    "english": "Three (3)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Three. Plural person nouns (three or more) are named relative to this number — the plural threshold.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Áhsen",
+      "áhsen",
+      "ahsen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num04",
+    "target": "Kaié:ri",
+    "english": "Four (4)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Four. Also a common root in place names and time expressions.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Kaié:ri",
+      "kaié:ri",
+      "kaie:ri",
+      "kaieri"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num05",
+    "target": "Wísk",
+    "english": "Five (5)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Five. Wísk is a short, sharp word. Numbers 1–10 form the basis for all counting in Kanien'kéha.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Wísk",
+      "wísk",
+      "wisk"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num06",
+    "target": "Ià:ia'k",
+    "english": "Six (6)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Six. The Haudenosaunee confederacy is made up of Six Nations — Ia:ia'k Onkwehonwe ('six peoples').",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Ià:ia'k",
+      "ia:ia'k",
+      "iaia'k",
+      "iaiak"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num07",
+    "target": "Tsà:ta",
+    "english": "Seven (7)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Seven.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Tsà:ta",
+      "tsa:ta",
+      "tsata"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num08",
+    "target": "Sha'té:kon",
+    "english": "Eight (8)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Eight. The glottal stop (') in sha'té:kon is part of the word — do not drop it.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Sha'té:kon",
+      "sha'te:kon",
+      "shatekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num09",
+    "target": "Tióhton",
+    "english": "Nine (9)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Nine.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Tióhton",
+      "tiohton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "num10",
+    "target": "Óia'k",
+    "english": "Ten (10)",
+    "pos": "Number",
+    "unit": 4,
+    "lesson": 14,
+    "notes": "Ten. From ten onwards, numbers are formed by combining roots: eleven = ten + one (óia'k énska), twenty = two tens (tékeni óia'k), and so on.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Óia'k",
+      "oia'k",
+      "oiak"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ta01",
+    "target": "Ohén:ton Karihwatéhkwen",
+    "english": "Thanksgiving Address (lit. 'the words that come before all else')",
+    "pos": "Ceremonial — Oral Tradition",
+    "unit": 4,
+    "lesson": 15,
+    "notes": "The Haudenosaunee Thanksgiving Address — the most important oral text in Kanien'kéha. Recited at the opening and closing of all gatherings, it acknowledges every element of creation in order. The Kanehsatà:ke dialect version is the basis for the animated film produced by Kontinónhstats.",
+    "cite": {
+      "text": "Kontinónhstats animated film · Kanehsatà:ke community; NMAI PDF",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Ohén:ton Karihwatéhkwen",
+      "ohen:ton karihwatehkwen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ta02",
+    "target": "Onkwehshón:'a",
+    "english": "The people / Human beings",
+    "pos": "Noun — Ceremonial",
+    "unit": 4,
+    "lesson": 15,
+    "notes": "'The people' or 'all human beings' — the first group acknowledged in the Thanksgiving Address. Onkwehshón:'a = original/real people.",
+    "cite": {
+      "text": "Thanksgiving Address · Kanehsatà:ke tradition",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Onkwehshón:'a",
+      "onkwehshon:'a",
+      "onkwehshona"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ta03",
+    "target": "Ionkhi'nikonhraién:tase'",
+    "english": "It makes our minds happy / We give thanks",
+    "pos": "Verb Phrase — Ceremonial",
+    "unit": 4,
+    "lesson": 15,
+    "notes": "The closing refrain of each section of the Thanksgiving Address — 'and so our minds are made happy' or 'and so we give thanks'. The same root as Io'nikonhraién:ta'ne ('it makes my mind happy') but in the first person plural inclusive.",
+    "cite": {
+      "text": "Thanksgiving Address · Kanehsatà:ke tradition",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Ionkhi'nikonhraién:tase'",
+      "ionkhi'nikonhraien:tase'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ta04",
+    "target": "Ohwén:tsia ne Ionkwarihó:ten",
+    "english": "The earth that sustains us",
+    "pos": "Phrase — Ceremonial",
+    "unit": 4,
+    "lesson": 15,
+    "notes": "From the Thanksgiving Address — acknowledging the earth. Ohwén:tsia = earth/ground; Ionkwarihó:ten = it takes care of us / it is our responsibility.",
+    "cite": {
+      "text": "Thanksgiving Address · Kanehsatà:ke tradition",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Ohwén:tsia",
+      "ohwen:tsia",
+      "ohwentsia"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh01",
+    "target": "Otsísto",
+    "english": "Star",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Star — also appears in the night sky vocabulary of the Thanksgiving Address. The stars are the last beings acknowledged before the Creator.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Otsísto",
+      "otsísto",
+      "otsisto"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh02",
+    "target": "Ka'neróhkwes",
+    "english": "Rectangle",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Rectangle — Ka-class shape noun.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Ka'neróhkwes",
+      "ka'neróhkwes",
+      "kanerokwes"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh03",
+    "target": "Teiotokerón:te'",
+    "english": "Square",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Square — the te- prefix is the dualic prefix you already know, here marking equal sides.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Teiotokerón:te'",
+      "teiotokerón:te'",
+      "teiotokeronte"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh04",
+    "target": "Kakahkwén:tes",
+    "english": "Oval",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Oval — Ka-class shape noun.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Kakahkwén:tes",
+      "kakahkwén:tes",
+      "kakahkwentes"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh05",
+    "target": "Áhsen nikahióhsake",
+    "english": "Triangle (lit. three sides)",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Triangle — literally 'three sides'. You already know Áhsen (three) from the numbers lesson. Shape names in Kanien'kéha describe the shape's properties, not just name it.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Áhsen nikahióhsake",
+      "ahsen nikahiohsake",
+      "áhsen nikahiohsake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh06",
+    "target": "Teionteriwaién:te'",
+    "english": "Circle",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Circle — te- prefix + noun root. The circle is a sacred shape in Haudenosaunee tradition, representing the continuous cycle of life.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Teionteriwaién:te'",
+      "teionteriwaien:te'",
+      "teionteriwaiénte"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh07",
+    "target": "Kaié:ri nikahióhsake",
+    "english": "Diamond (lit. four sides)",
+    "pos": "Noun — Shape",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Diamond — literally 'four sides'. Kaié:ri (four) + nikahióhsake (sides). Another numerically-descriptive shape name.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Kaié:ri nikahióhsake",
+      "kaie:ri nikahiohsake",
+      "kaieri nikahiohsake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sh08",
+    "target": "Karáhkwa",
+    "english": "Sun (shape / celestial)",
+    "pos": "Noun — Celestial",
+    "unit": 5,
+    "lesson": 0,
+    "notes": "Sun — acknowledged in the Thanksgiving Address as 'our eldest brother who carries his face across the sky each day'. You first encountered this word in the Kanehsatà:ke place names lesson.",
+    "cite": {
+      "text": "Kontinónhstats L20 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-20/"
+    },
+    "accepts": [
+      "Karáhkwa",
+      "karáhkwa",
+      "karahkwa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa01",
+    "target": "Ohkwá:ri",
+    "english": "Bear",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Bear — one of the three Mohawk clan animals. The Bear Clan (Rotihskeré:wake) is one of the three clans of the Kanien'kehá:ka. The bear appears in the Tóta tánon Ohkwá:ri puppet show produced in Kahnawà:ke.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Ohkwá:ri",
+      "ohkwá:ri",
+      "ohkwari"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa02",
+    "target": "A'nó:wara",
+    "english": "Turtle",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Turtle — one of the three Mohawk clan animals. The Turtle Clan (Rotiniáhton). In Haudenosaunee creation story, Turtle Island (North America) is formed on the back of a great turtle.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "A'nó:wara",
+      "a'nó:wara",
+      "a'nowara",
+      "anowara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa03",
+    "target": "Okwáho",
+    "english": "Wolf",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Wolf — one of the three Mohawk clan animals. The Wolf Clan (Ronathahí:non). The three original Mohawk clans are Bear, Turtle, and Wolf.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Okwáho",
+      "okwáho",
+      "okwaho"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa04",
+    "target": "Tsaní:to",
+    "english": "Beaver",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Beaver. Historically important as a trade animal — the beaver pelt trade dramatically affected Kanien'kehá:ka life and politics in the 17th and 18th centuries.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Tsaní:to",
+      "tsaní:to",
+      "tsanito"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa05",
+    "target": "Kwà'ien",
+    "english": "Rabbit (wild)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Wild rabbit. A common animal in the Kanehsatà:ke region.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Kwà'ien",
+      "kwa'ien",
+      "kwàien"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa06",
+    "target": " Oskenhón:ton",
+    "english": "Deer",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Deer. Venison is a traditional food; deer hides were used for clothing. The deer appears in clan and ceremony vocabulary.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Oskenhón:ton",
+      "oskenhón:ton",
+      "oskenhoton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa07",
+    "target": "Tsihnón:saron",
+    "english": "Moose",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Moose — the largest land animal in the Kanehsatà:ke territory. The St. Lawrence lowlands and Laurentians have been moose territory for Kanien'kehá:ka hunters.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Tsihnón:saron",
+      "tsihnonsaron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "wa08",
+    "target": "Ahwénsion",
+    "english": "Porcupine",
+    "pos": "Noun — Animal (Wild)",
+    "unit": 5,
+    "lesson": 1,
+    "notes": "Porcupine. Porcupine quills are used in traditional quillwork — an art form predating European beads.",
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "accepts": [
+      "Ahwénsion",
+      "ahwénsion",
+      "ahwension"
+    ],
+    "forms": null
+  },
+  {
+    "id": "da01",
+    "target": "Takós",
+    "english": "Cat",
+    "pos": "Noun — Animal (Domestic)",
+    "unit": 5,
+    "lesson": 2,
+    "notes": "Cat. Domestic animals arrived with European contact — their names in Kanien'kéha were created using the language's own word-formation rules, not borrowed directly.",
+    "cite": {
+      "text": "Kontinónhstats L23 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-23/"
+    },
+    "accepts": [
+      "Takós",
+      "takós",
+      "takos"
+    ],
+    "forms": null
+  },
+  {
+    "id": "da02",
+    "target": "Akohsá:tens",
+    "english": "Horse",
+    "pos": "Noun — Animal (Domestic)",
+    "unit": 5,
+    "lesson": 2,
+    "notes": "Horse — literally related to 'it carries on its back'. The horse arrived with European contact in the 17th century; the word describes the animal's function rather than borrowing a foreign name.",
+    "cite": {
+      "text": "Kontinónhstats L23 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-23/"
+    },
+    "accepts": [
+      "Akohsá:tens",
+      "akohsá:tens",
+      "akohsatens"
+    ],
+    "forms": null
+  },
+  {
+    "id": "da03",
+    "target": "Tiohnhónhskwaron",
+    "english": "Cow",
+    "pos": "Noun — Animal (Domestic)",
+    "unit": 5,
+    "lesson": 2,
+    "notes": "Cow. Another post-contact domesticated animal. Compare Tiohnhónhskwaron rá:tsi'n (bull) — the bull is named as the male form of the cow.",
+    "cite": {
+      "text": "Kontinónhstats L23 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-23/"
+    },
+    "accepts": [
+      "Tiohnhónhskwaron",
+      "tiohnhonhskwaron",
+      "tiohnhonskwaron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "da04",
+    "target": "Kaia'tákeras",
+    "english": "Goat",
+    "pos": "Noun — Animal (Domestic)",
+    "unit": 5,
+    "lesson": 2,
+    "notes": "Goat. Ka-class domestic animal noun.",
+    "cite": {
+      "text": "Kontinónhstats L23 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-23/"
+    },
+    "accepts": [
+      "Kaia'tákeras",
+      "kaia'tákeras",
+      "kaiatakeras"
+    ],
+    "forms": null
+  },
+  {
+    "id": "da05",
+    "target": "Teiotina'karontón:'a",
+    "english": "Sheep",
+    "pos": "Noun — Animal (Domestic)",
+    "unit": 5,
+    "lesson": 2,
+    "notes": "Sheep — literally 'it has wool on its back'. Descriptive compound: the animal is named for its defining characteristic. This is Kanien'kéha's productive word-formation at work.",
+    "cite": {
+      "text": "Kontinónhstats L23 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-23/"
+    },
+    "accepts": [
+      "Teiotina'karontón:'a",
+      "teiotina'karontón:'a",
+      "teiotinakaron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cl01",
+    "target": "Rotihskeré:wake",
+    "english": "Bear Clan",
+    "pos": "Proper Noun — Clan",
+    "unit": 5,
+    "lesson": 3,
+    "notes": "Bear Clan — one of the three original Mohawk clans. Clan membership is matrilineal: you belong to your mother's clan. The Bear Clan is known in oral tradition for its strength and its role as healers.",
+    "cite": {
+      "text": "Kontinónhstats L28 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-28/"
+    },
+    "accepts": [
+      "Rotihskeré:wake",
+      "rotihskeré:wake",
+      "rotihskerewake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cl02",
+    "target": "Rotiniáhton",
+    "english": "Turtle Clan",
+    "pos": "Proper Noun — Clan",
+    "unit": 5,
+    "lesson": 3,
+    "notes": "Turtle Clan — one of the three original Mohawk clans. The Turtle Clan is associated with leadership and is connected to Turtle Island, the Haudenosaunee name for North America.",
+    "cite": {
+      "text": "Kontinónhstats L28 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-28/"
+    },
+    "accepts": [
+      "Rotiniáhton",
+      "rotiniáhton",
+      "rotiniahton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cl03",
+    "target": "Ronathahí:non",
+    "english": "Wolf Clan",
+    "pos": "Proper Noun — Clan",
+    "unit": 5,
+    "lesson": 3,
+    "notes": "Wolf Clan — one of the three original Mohawk clans. The Wolf Clan is associated with pathfinding and trail-keeping — those who know the way.",
+    "cite": {
+      "text": "Kontinónhstats L28 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-28/"
+    },
+    "accepts": [
+      "Ronathahí:non",
+      "ronathahí:non",
+      "ronathahínon",
+      "ronathahinon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cl04",
+    "target": "Roti'nehsí:io",
+    "english": "Snipe Clan",
+    "pos": "Proper Noun — Clan",
+    "unit": 5,
+    "lesson": 3,
+    "notes": "Snipe Clan — originally an Onondaga clan present in Kanehsatà:ke due to the historical resettlement of Oswegatchie Onondaga people by 1806. The presence of non-Mohawk clans at Kanehsatà:ke is part of the community's specific history.",
+    "cite": {
+      "text": "Kontinónhstats L28 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-28/"
+    },
+    "accepts": [
+      "Roti'nehsí:io",
+      "roti'nehsí:io",
+      "rotinehsiio"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cl05",
+    "target": "Rotineniotthró:non",
+    "english": "Eel Clan",
+    "pos": "Proper Noun — Clan",
+    "unit": 5,
+    "lesson": 3,
+    "notes": "Eel Clan — also originally Onondaga, present at Kanehsatà:ke through the same historical resettlement. The Eel Clan's presence at Kanehsatà:ke reflects the community's unique composition.",
+    "cite": {
+      "text": "Kontinónhstats L28 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-28/"
+    },
+    "accepts": [
+      "Rotineniotthró:non",
+      "rotineniotthró:non",
+      "rotineniotthronon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr01",
+    "target": "Ken' niiohontésha'",
+    "english": "Strawberries",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Strawberries — one of the first foods of the spring season, celebrated in the Strawberry Ceremony. Strawberries hold a special place in Haudenosaunee ceremonial life as the first fruit of the year.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Ken' niiohontésha'",
+      "ken' niiohontesha'",
+      "ken niiohontesha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr02",
+    "target": "Á:io",
+    "english": "Cranberries",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Cranberries — a traditional food of the Kanehsatà:ke region, found in the bogs and wet areas near the community.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Á:io",
+      "á:io",
+      "a:io",
+      "aio"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr03",
+    "target": "Skanekwen'tará:nen",
+    "english": "Raspberries",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Raspberries — a summer fruit gathered in the forests and clearings of the Kanehsatà:ke area.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Skanekwen'tará:nen",
+      "skanekwen'tara:nen",
+      "skanekwentaranen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr04",
+    "target": "Ori'kó:wa",
+    "english": "Cherries",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Cherries. The cherry tree is also part of traditional medicine knowledge.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Ori'kó:wa",
+      "ori'kó:wa",
+      "ori'kowa",
+      "orikowa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr05",
+    "target": "Kahrhata'ké:ha",
+    "english": "Blueberries",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Blueberries — abundant in the region and important in traditional diet. Blueberries are gathered in late summer.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Kahrhata'ké:ha",
+      "kahrhata'ke:ha",
+      "kahrhataké:ha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fr06",
+    "target": "Ohsi'tá:na",
+    "english": "Apples",
+    "pos": "Noun — Fruit",
+    "unit": 6,
+    "lesson": 0,
+    "notes": "Apples. Apple orchards were significant at Kanehsatà:ke — the 1990 Oka Crisis was partly triggered by a golf course development that would have destroyed orchards and a sacred pine grove on traditional territory.",
+    "cite": {
+      "text": "Kontinónhstats L29 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-29/"
+    },
+    "accepts": [
+      "Ohsi'tá:na",
+      "ohsi'tá:na",
+      "ohsi'tana",
+      "ohsitana"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo01",
+    "target": "Ohnenná:ta",
+    "english": "Potatoes",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Potatoes. An important staple food in modern Kanien'kehá:ka households.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Ohnenná:ta",
+      "ohnenná:ta",
+      "ohnennata"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo02",
+    "target": "O'wá:ron",
+    "english": "Meat",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Meat — general term. Wild game (deer, moose, rabbit) has been central to Kanien'kehá:ka diet alongside the Three Sisters.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "O'wá:ron",
+      "o'wá:ron",
+      "o'waron",
+      "owaron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo03",
+    "target": "Owistóhsera",
+    "english": "Butter",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Butter — a post-contact food item, named using Kanien'kéha word-formation principles rather than borrowed directly.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Owistóhsera",
+      "owistóhsera",
+      "owistohsera"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo04",
+    "target": "Ohsahéta'",
+    "english": "Beans",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Beans — one of the Three Sisters (corn, beans, squash), the foundation crops of Haudenosaunee agriculture. The Three Sisters are companion plants: corn provides the trellis, beans fix nitrogen, squash shades the ground.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Ohsahéta'",
+      "ohsahéta'",
+      "ohsaheta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo05",
+    "target": "Onón:ta",
+    "english": "Corn / Maize",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Corn — the most sacred of the Three Sisters. Corn is central to Haudenosaunee ceremony, agriculture, and creation stories. The word appears in compound forms throughout the vocabulary.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Onón:ta",
+      "onón:ta",
+      "ononta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo06",
+    "target": "Otá:ra",
+    "english": "Squash",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Squash — the third of the Three Sisters. Together, corn, beans, and squash (Onón:ta, Ohsahéta', Otá:ra) form the agricultural and ceremonial cornerstone of Haudenosaunee culture.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Otá:ra",
+      "otá:ra",
+      "otara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo07",
+    "target": "Kanà:taros",
+    "english": "Bread",
+    "pos": "Noun — Food",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Bread. Corn bread (onón:ta kanà:taros) is a traditional food.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Kanà:taros",
+      "kanà:taros",
+      "kanataros"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fo08",
+    "target": "Ohkwá:ri o'wá:ron",
+    "english": "Bear meat",
+    "pos": "Noun — Food (Compound)",
+    "unit": 6,
+    "lesson": 1,
+    "notes": "Bear meat — a compound noun: Ohkwá:ri (bear) + o'wá:ron (meat). This demonstrates how nouns combine in Kanien'kéha. You already know both component words.",
+    "cite": {
+      "text": "Kontinónhstats L30 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-30/"
+    },
+    "accepts": [
+      "Ohkwá:ri o'wá:ron",
+      "ohkwari owaron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu01",
+    "target": "Kanonsesné:ha",
+    "english": "Longhouse",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "Longhouse — the traditional communal dwelling and the social/political unit of Haudenosaunee life. The Haudenosaunee Confederacy is called 'People of the Longhouse'. Clan mothers governed the longhouse.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Kanonsesné:ha",
+      "kanonsesné:ha",
+      "kanonsesnéha",
+      "kanonsesneha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu02",
+    "target": "Kaià:ner",
+    "english": "The Great Law of Peace / The Good Path",
+    "pos": "Noun — Cultural/Political",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "The Great Law of Peace — the constitution of the Haudenosaunee Confederacy, brought by the Peacemaker. Kaià:ner means 'good path' or 'good way'. Haudenosaunee political philosophy expressed in this law influenced the US Constitution according to some historians.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Kaià:ner",
+      "kaià:ner",
+      "kaianer"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu03",
+    "target": "Teioháte",
+    "english": "Wampum belt",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "Wampum belt — teioháte. Wampum belts are records of treaties, alliances, and oral agreements. The Kanehsatà:ke Two Dog Wampum Belt was returned from the McCord Stewart Museum in 2024 — a major act of cultural repatriation. See the news item on the Kontinónhstats website.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Teioháte",
+      "teioháte",
+      "teiohate"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu04",
+    "target": "Skennón:'a",
+    "english": "Peace",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "Peace — central to Haudenosaunee identity. The Peacemaker (Tekanawí:ta) brought Skennón:'a, Kasastensera (strength/righteousness), and Kanikonhri:io (good mind) as the three principles of the Great Law.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Skennón:'a",
+      "skennón:'a",
+      "skennona",
+      "skenona"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu05",
+    "target": "Onkwatà:wen",
+    "english": "Native tobacco",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "Native tobacco — used ceremonially, not recreationally. Tobacco carries prayers upward to the Creator. It is placed in fire, water, or the earth as an offering and thanks.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Onkwatà:wen",
+      "onkwatà:wen",
+      "onkwatawen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cu06",
+    "target": "Ionkwaiénhton",
+    "english": "Corn husk doll",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 2,
+    "notes": "Corn husk doll — a traditional toy and cultural object made from dried corn husks. According to Haudenosaunee tradition, the corn husk doll has no face — she gave her face to the people and was taught humility.",
+    "cite": {
+      "text": "Kontinónhstats L31 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-31/"
+    },
+    "accepts": [
+      "Ionkwaiénhton",
+      "ionkwaiénhton",
+      "ionkwaienhton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ho01",
+    "target": "Atsihnhétste'",
+    "english": "Soap",
+    "pos": "Noun — Household",
+    "unit": 6,
+    "lesson": 3,
+    "notes": "Soap. Household vocabulary shows how Kanien'kéha has adapted to modern domestic life through its own word-formation system.",
+    "cite": {
+      "text": "Kontinónhstats L32 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-32/"
+    },
+    "accepts": [
+      "Atsihnhétste'",
+      "atsihnhétste'",
+      "atsihnhetste"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ho02",
+    "target": "Ohkwáriyentha'",
+    "english": "Bed",
+    "pos": "Noun — Household",
+    "unit": 6,
+    "lesson": 3,
+    "notes": "Bed — literally related to 'where one rests'. The -yentha' suffix is a locative indicating the place of the action.",
+    "cite": {
+      "text": "Kontinónhstats L32 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-32/"
+    },
+    "accepts": [
+      "Ohkwáriyentha'",
+      "ohkwáriyentha'",
+      "ohkwariyentha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ho03",
+    "target": "Atié:wen",
+    "english": "Towel / Face cloth",
+    "pos": "Noun — Household",
+    "unit": 6,
+    "lesson": 3,
+    "notes": "Towel or face cloth. Body-care vocabulary connects to the A-stem verbs you learned (washing face, brushing teeth).",
+    "cite": {
+      "text": "Kontinónhstats L32 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-32/"
+    },
+    "accepts": [
+      "Atié:wen",
+      "atié:wen",
+      "atiéwen",
+      "atiewen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na01",
+    "target": "Tsí:tewen",
+    "english": "Moon",
+    "pos": "Noun — Nature",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Moon — acknowledged in the Thanksgiving Address as our Grandmother Moon who governs the tides and the female cycle. The moon is feminine in Haudenosaunee tradition.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Tsí:tewen",
+      "tsí:tewen",
+      "tsitewen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na02",
+    "target": "Ohwén:tsia",
+    "english": "Earth / Ground",
+    "pos": "Noun — Nature",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Earth — the same root you saw in 'flower' (Ohwén:tsia). The earth and what grows from it share a root — the language encodes their relationship.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Ohwén:tsia",
+      "ohwén:tsia",
+      "ohwentsia"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na03",
+    "target": "Wahtá:",
+    "english": "Maple tree",
+    "pos": "Noun — Nature (Tree)",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Maple — the tree of the Kanehsatà:ke region and a cornerstone of the sugar bush tradition. Maple sap (ohsawén:ton wahta) is gathered each spring in a ceremony connecting the community to the land.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Wahtá:",
+      "wahta:",
+      "wahta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na04",
+    "target": "Kaniatarà:ke",
+    "english": "River / On the river",
+    "pos": "Noun — Nature / Place",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "River — literally 'on the river' or 'by the water'. The St. Lawrence River (Kaniatarà:ke) is central to Kanehsatà:ke geography and history. The Lake of Two Mountains is nearby.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Kaniatarà:ke",
+      "kaniatarà:ke",
+      "kaniatarake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na05",
+    "target": "Tsi iononté:nion",
+    "english": "Mountains",
+    "pos": "Noun — Nature",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Mountains — literally 'where they are tall'. The Blue Mountain (Karáhkwa, in local usage) is visible from Kanehsatà:ke and is part of the community's geographic identity.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Tsi iononté:nion",
+      "tsi iononte:nion",
+      "tsiionontenion"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na06",
+    "target": "Kenién:ke",
+    "english": "Winter",
+    "pos": "Noun — Season",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Winter. The four seasons in Kanien'kéha reflect the agricultural and ceremonial calendar of Haudenosaunee life.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Kenién:ke",
+      "kenién:ke",
+      "kenienke"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na07",
+    "target": "Sé:ske",
+    "english": "Spring",
+    "pos": "Noun — Season",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Spring — the season of renewal, first foods ceremonies, and the return of the maple sap. The Strawberry Ceremony follows shortly after.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Sé:ske",
+      "sé:ske",
+      "seske"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na08",
+    "target": "Ohiarí:ha",
+    "english": "Summer",
+    "pos": "Noun — Season",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Summer. The growing season — corn, beans, and squash are tended through the summer months.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Ohiarí:ha",
+      "ohiarí:ha",
+      "ohiariha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "na09",
+    "target": "Ken'niká:ien",
+    "english": "Autumn / Fall",
+    "pos": "Noun — Season",
+    "unit": 6,
+    "lesson": 4,
+    "notes": "Autumn — the harvest season. The Green Corn Ceremony and Harvest Ceremony mark this time of year.",
+    "cite": {
+      "text": "Kontinónhstats L33 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-33/"
+    },
+    "accepts": [
+      "Ken'niká:ien",
+      "ken'niká:ien",
+      "ken'nikaien",
+      "ken nikaien"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le01",
+    "target": "Tekanawí:ta",
+    "english": "The Peacemaker",
+    "pos": "Proper Noun — Cultural Hero",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "The Peacemaker — the founder of the Haudenosaunee Confederacy who brought together five warring nations under the Great Law of Peace. He is not named directly in many Haudenosaunee communities out of respect; here we use the respectful form Tekanawí:ta.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Tekanawí:ta",
+      "tekanawí:ta",
+      "tekawiita",
+      "tekanawita"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le02",
+    "target": "Aiionwátha",
+    "english": "Hiawatha",
+    "pos": "Proper Noun — Cultural Hero",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "Hiawatha (Aiionwátha) — the Mohawk chief who worked alongside the Peacemaker to unite the nations. Not to be confused with Longfellow's fictional 'Hiawatha' — the historical Aiionwátha is a Haudenosaunee political figure of immense importance.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Aiionwátha",
+      "aiionwátha",
+      "aiionwatha",
+      "aionwatha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le03",
+    "target": "Rotiiánehr",
+    "english": "Longhouse Chief",
+    "pos": "Noun — Political",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "Longhouse Chief — a male chief selected by the clan mother of his clan. Chiefs serve at the pleasure of the clan mothers and can be removed ('dehorned') if they do not serve the people well. This selection system is part of the Great Law.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Rotiiánehr",
+      "rotiiánehr",
+      "rotiianehr"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le04",
+    "target": "Iakoiánehr",
+    "english": "Clan Mother",
+    "pos": "Noun — Political",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "Clan Mother — the most important political figure in the Haudenosaunee system. Clan mothers select and remove chiefs, hold clan membership records, and are the keepers of the lineage. The language and the political system speak together here.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Iakoiánehr",
+      "iakoiánehr",
+      "iakoianehr"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le05",
+    "target": "Shonkwaiá:tison",
+    "english": "The Creator",
+    "pos": "Noun — Ceremonial",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "The Creator — acknowledged last in the Thanksgiving Address. Shonkwaiá:tison = 'the one who created us'. The Creator is named at the very end of the Address, after all of creation has been acknowledged.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Shonkwaiá:tison",
+      "shonkwaiá:tison",
+      "shonkwaiatison"
+    ],
+    "forms": null
+  },
+  {
+    "id": "le06",
+    "target": "Ratiwennahní:ion",
+    "english": "Singers",
+    "pos": "Noun — Cultural",
+    "unit": 6,
+    "lesson": 5,
+    "notes": "Singers — Ratiwennahní:ion. Song and ceremony are inseparable in Haudenosaunee tradition. Social dances, condolence ceremonies, and ceremonial cycles all have distinct songs.",
+    "cite": {
+      "text": "Kontinónhstats L34 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-34/"
+    },
+    "accepts": [
+      "Ratiwennahní:ion",
+      "ratiwennahní:ion",
+      "ratiwennahnion"
+    ],
+    "forms": null
   }
 ]
