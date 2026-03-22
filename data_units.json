@@ -1,0 +1,2068 @@
+[
+  {
+    "id": 0,
+    "title": "Unit 1 — Who We Are: Pronouns & People",
+    "desc": "Free pronouns (singular, dual, plural) and all singular, dual & plural people nouns",
+    "lessons": [
+      {
+        "id": "u0l0",
+        "title": "Lesson 1 — Singular Pronouns",
+        "icon": "👤",
+        "sub": "The five singular positions",
+        "intro": [
+          "Kanien'kéha sees the world in <strong>three sets of five pronouns</strong> — singular (one), dual (two), and plural (many). English collapses all of these into a single 'you'. Kanien'kéha does not.",
+          "This lesson covers the <strong>five singular pronouns</strong> and introduces one of the most important patterns in the language: <strong>Ra-/Ro- marks male; I-/Iak-/A- marks female</strong>. This prefix logic unlocks vocabulary across every unit.",
+          "A critical note on dialect: pronouns here follow the <strong>Kanehsatà:ke / Kahnawà:ke orthography</strong>. In Six Nations and Tyendinaga (Ontario), you will see <strong>y</strong> where this dialect uses <strong>i</strong>. In Akwesasne, <strong>r</strong> becomes <strong>l</strong>. All variants are accepted as correct in this app."
+        ],
+        "ped": "<strong>Why singular first?</strong> Following Freire's (1970) generative theme principle: we begin with who we are and who we speak to before we can speak about anything else. The pronoun system is a map of how Kanien'kéha encodes social position.",
+        "vocabIds": [
+          "p01",
+          "p02",
+          "p03",
+          "p04",
+          "p05"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "p01",
+            "prompt": "What does í:se' mean?",
+            "sub": "Choose the correct answer",
+            "correct": "You (singular)",
+            "options": [
+              "You (singular)",
+              "I / Me",
+              "He",
+              "She (respectful)"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! í:se' — 'you' (one person). In Six Nations/Tyendinaga this appears as ý:se' — both are correct.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "p02",
+            "prompt": "What does í:'i mean?",
+            "sub": "",
+            "correct": "I (singular)",
+            "options": [
+              "I (singular)",
+              "You (singular)",
+              "We two",
+              "She"
+            ],
+            "cm": "Tho niioht! í:'i — 'I'. The glottal stop (') between the vowels is a full consonant, not punctuation.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "p03",
+            "prompt": "Which pronoun is used for a respected woman — a mother or elder?",
+            "sub": "Think about the formal vs. informal distinction",
+            "correct": "akaónha",
+            "options": [
+              "aónha",
+              "akaónha",
+              "raónha",
+              "í:se'"
+            ],
+            "cm": "Niawenhkó:wa! akaónha is the formal, respectful female pronoun. Kanien'kéha encodes respect directly into grammar.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "p05",
+            "prompt": "aónha has three uses. Which of these is NOT one of them?",
+            "sub": "",
+            "correct": "A respected elder woman",
+            "options": [
+              "A female animal",
+              "A familiar female (sister/friend)",
+              "An inanimate object",
+              "A respected elder woman"
+            ],
+            "cm": "Tho niioht! akaónha is for respected women. aónha is for familiar females, animals, and objects.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each pronoun to its meaning",
+            "sub": "Tap a word on the left, then its match on the right",
+            "pairs": [
+              {
+                "target": "í:se'",
+                "english": "You (singular)",
+                "wids": [
+                  "p01"
+                ]
+              },
+              {
+                "target": "í:'i",
+                "english": "I / Me",
+                "wids": [
+                  "p02"
+                ]
+              },
+              {
+                "target": "raónha",
+                "english": "He",
+                "wids": [
+                  "p04"
+                ]
+              },
+              {
+                "target": "akaónha",
+                "english": "She (respectful)",
+                "wids": [
+                  "p03"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Ra- marks male, A-/Iak- marks female — this pattern runs through the whole language.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "p04",
+            "prompt": "Complete the pronoun",
+            "sentence": "'He' (third person male singular) is ___ónha",
+            "correct": "ra",
+            "hint": "r",
+            "alts": [
+              "ra"
+            ],
+            "cm": "Niawenhkó:wa! raónha — 'he'. The Ra- prefix marks male. In Akwesasne: laónha.",
+            "wm": "That answer is incorrect — the prefix starts with 'r' (or 'l' in Akwesasne)."
+          },
+          {
+            "type": "type",
+            "wid": "p01",
+            "prompt": "How do you say 'You (singular)'?",
+            "sub": "Dialect variants accepted",
+            "correct": "í:se'",
+            "alts": [
+              "i:se'",
+              "ise'",
+              "ý:se'",
+              "yse'"
+            ],
+            "cm": "Niawenhkó:wa! í:se' — or ý:se' in Ontario dialects. Both accepted.",
+            "wm": "That answer is incorrect — please try again. Try: í:se'"
+          },
+          {
+            "type": "audio",
+            "wid": "p01",
+            "prompt": "Say this pronoun aloud",
+            "sub": "Record, listen back, and self-assess",
+            "word": "í:se'",
+            "meaning": "You (singular)",
+            "hint": "Two syllables: Í-se'. Stress on the first. The apostrophe at the end is a glottal stop — a brief closure of the throat."
+          },
+          {
+            "type": "mc",
+            "wid": "p03",
+            "prompt": "Why does Kanien'kéha have separate pronouns for 'formal she' (akaónha) vs 'informal she' (aónha)?",
+            "sub": "A deeper reflection on language and social structure",
+            "correct": "Because respect and familiarity are grammatically encoded — the language requires you to decide your relationship before you speak",
+            "options": [
+              "Because respect and familiarity are grammatically encoded — the language requires you to decide your relationship before you speak",
+              "Because the language has too many pronouns",
+              "To make sentences longer",
+              "For historical reasons only"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is García & Li Wei's (2014) point about translanguaging: each language carries a unique architecture of social meaning. English has lost this distinction; Kanien'kéha has kept it.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "p03",
+            "prompt": "Connect to your life",
+            "sub": "A moment of reflection",
+            "word": "akaónha",
+            "meaning": "She (respectful)",
+            "storyPrompt": "This pronoun is reserved for women who command respect — mothers, elders, people of authority. In Kanien'kéha, respect isn't just a feeling; it's built into grammar. Who in your life would you address with this pronoun? Take a moment to bring them to mind."
+          }
+        ]
+      },
+      {
+        "id": "u0l1",
+        "title": "Lesson 2 — Dual Pronouns",
+        "icon": "👥",
+        "sub": "Speaking about two",
+        "intro": [
+          "Kanien'kéha maintains a <strong>three-way distinction</strong> in number — singular (one), dual (two), and plural (three or more) — throughout the entire grammar. This lesson focuses on the <strong>four dual pronouns</strong>.",
+          "The dual is not a curiosity; it reflects a world where the distinction between 'just two of us' and 'a group' matters grammatically. English speakers often find this precision striking.",
+          "Note the <strong>te-</strong> prefix that appears in all dual pronouns — it will reappear in dual noun forms and in dualic verbs as well."
+        ],
+        "ped": "<strong>Why separate dual and plural?</strong> Following Nation's (2001) pattern-based learning principle: introducing the te- dual prefix now prepares learners to recognise it in dualic verbs (te-s-aráhtat, you run) later. Grammatical patterns, not just vocabulary lists.",
+        "vocabIds": [
+          "p06",
+          "p07",
+          "p08",
+          "p09"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "p06",
+            "prompt": "What does teseniiáhshe mean?",
+            "sub": "",
+            "correct": "You two (dual)",
+            "options": [
+              "You two (dual)",
+              "You (singular)",
+              "We all",
+              "Two females"
+            ],
+            "cm": "Tho niioht! teseniiáhshe — 'you two'. Note the te- prefix marking duality.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "p07",
+            "prompt": "Which dual pronoun means 'you and I together'?",
+            "sub": "First person dual inclusive",
+            "correct": "teiakeniiáhshe",
+            "options": [
+              "teseniiáhshe",
+              "teiakeniiáhshe",
+              "teteniiáhshe",
+              "tehniiáhshe"
+            ],
+            "cm": "Niawenhkó:wa! teiakeniiáhshe — you and I. The teia- prefix marks the inclusive 'we two'.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each dual pronoun to its meaning",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "teseniiáhshe",
+                "english": "You two",
+                "wids": [
+                  "p06"
+                ]
+              },
+              {
+                "target": "teiakeniiáhshe",
+                "english": "You and I",
+                "wids": [
+                  "p07"
+                ]
+              },
+              {
+                "target": "teteniiáhshe",
+                "english": "Two females",
+                "wids": [
+                  "p08"
+                ]
+              },
+              {
+                "target": "tehniiáhshe",
+                "english": "Two males / one of each",
+                "wids": [
+                  "p09"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! All dual pronouns carry the te- prefix. This marks duality throughout the grammar.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "p09",
+            "prompt": "Complete the dual pronoun for 'two males'",
+            "sentence": "Two males is teh___áhshe",
+            "correct": "nii",
+            "hint": "n",
+            "alts": [
+              "nii"
+            ],
+            "cm": "Tho niioht! tehniiáhshe. The tehni- marks male dual — compare tekeniiáhshe (female dual).",
+            "wm": "That answer is incorrect — the missing part starts with 'n'."
+          },
+          {
+            "type": "type",
+            "wid": "p06",
+            "prompt": "How do you say 'you two'?",
+            "sub": "Type the dual pronoun",
+            "correct": "teseniiáhshe",
+            "alts": [
+              "teseniiahshe",
+              "teseniahshe"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! teseniiáhshe. The te- prefix marks duality.",
+            "wm": "That answer is incorrect — try again. Starts with te-."
+          },
+          {
+            "type": "mc",
+            "wid": "p08",
+            "prompt": "What distinguishes teteniiáhshe from teseniiáhshe?",
+            "sub": "A structural question about the dual system",
+            "correct": "teteniiáhshe is for two females; teseniiáhshe is 'you two' regardless of gender",
+            "options": [
+              "teteniiáhshe is for two females; teseniiáhshe is 'you two' regardless of gender",
+              "They mean the same thing",
+              "teteniiáhshe is plural; teseniiáhshe is dual",
+              "teseniiáhshe is older",
+              ""
+            ],
+            "cm": "Niawenhkó:wa! The dual system encodes gender — the same precision we saw in the singular pronouns carries through.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "p06",
+            "prompt": "Say this pronoun aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "teseniiáhshe",
+            "meaning": "You two (dual)",
+            "hint": "Four syllables: te-se-ni-ÁH-she. The te- is quick and unstressed; the stress falls on the áh syllable."
+          },
+          {
+            "type": "mc",
+            "wid": "p07",
+            "prompt": "The te- prefix appears in all dual pronouns AND in dualic verbs (like te-s-aráhtat, 'you run'). What does this tell you about Kanien'kéha grammar?",
+            "sub": "A language-structure reflection",
+            "correct": "Grammatical meaning is carried by prefixes that recur consistently — learning one prefix unlocks many words",
+            "options": [
+              "Grammatical meaning is carried by prefixes that recur consistently — learning one prefix unlocks many words",
+              "te- is just a coincidence",
+              "Verbs and pronouns are unrelated",
+              "Only pronouns use te-"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is the power of Kanien'kéha's prefix system. As Chew, Leonard & Rosenblum (2023) note, understanding the architecture of an Indigenous language — not just its vocabulary — is itself an act of reclamation.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "p07",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "teiakeniiáhshe",
+            "meaning": "You and I",
+            "storyPrompt": "'You and I' — teiakeniiáhshe — is a single word that holds a relationship. Think of someone with whom you would use this word. A partner, a sibling, a friend, a collaborator in this language work. Who comes to mind?"
+          }
+        ]
+      },
+      {
+        "id": "u0l2",
+        "title": "Lesson 3 — Plural Pronouns",
+        "icon": "👨‍👩‍👧‍👦",
+        "sub": "Speaking about groups",
+        "intro": [
+          "The third set of pronouns covers <strong>groups of three or more</strong>. Kanien'kéha encodes gender even in plural forms — there are separate pronouns for all-female groups, all-male/mixed groups, and inclusive 'we all'.",
+          "The <strong>-kwé:kon</strong> suffix signals plurality and will reappear in other grammatical contexts.",
+          "With this lesson complete, you will have all fifteen pronouns: five singular, four dual, and six plural."
+        ],
+        "ped": "<strong>Completing the paradigm:</strong> Research in morphology acquisition (Mithun, 1989) shows that polysynthetic language learners benefit from seeing complete paradigms — all forms of a category — before moving to nouns and verbs. This allows pattern recognition rather than rote memorisation.",
+        "vocabIds": [
+          "p10",
+          "p11",
+          "p12",
+          "p13"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "p10",
+            "prompt": "Which pronoun means 'you all' (plural)?",
+            "sub": "",
+            "correct": "sewakwé:kon",
+            "options": [
+              "sewakwé:kon",
+              "iakwakwé:kon",
+              "kontikwé:kon",
+              "ratikwé:kon"
+            ],
+            "cm": "Tho niioht! sewakwé:kon — 'you all'. The sewa- prefix marks 'you' in plural.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the plural pronouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "sewakwé:kon",
+                "english": "You all",
+                "wids": [
+                  "p10"
+                ]
+              },
+              {
+                "target": "iakwakwé:kon",
+                "english": "We all (inclusive)",
+                "wids": [
+                  "p11"
+                ]
+              },
+              {
+                "target": "kontikwé:kon",
+                "english": "All females",
+                "wids": [
+                  "p12"
+                ]
+              },
+              {
+                "target": "ratikwé:kon",
+                "english": "All males / everyone",
+                "wids": [
+                  "p13"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Notice that -kwé:kon marks plurality in all these forms — a consistent plural suffix.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "p11",
+            "prompt": "Complete the inclusive plural pronoun",
+            "sentence": "We all (inclusive) is iakwa___",
+            "correct": "kwé:kon",
+            "hint": "k",
+            "alts": [
+              "kwé:kon",
+              "kwe:kon",
+              "kwekon"
+            ],
+            "cm": "Niawenhkó:wa! iakwakwé:kon — 'we all'. The iakwa- marks inclusive we; -kwé:kon marks plurality.",
+            "wm": "That answer is incorrect — the suffix starts with 'k'."
+          },
+          {
+            "type": "mc",
+            "wid": "p12",
+            "prompt": "kontikwé:kon refers to all females. What prefix family does konti- belong to?",
+            "sub": "Connect to what you learned in Lessons 1 and 2",
+            "correct": "The female plural prefix family (Konti-, Kon-, Teken- mark female groups)",
+            "options": [
+              "The female plural prefix family (Konti-, Kon-, Teken- mark female groups)",
+              "The male prefix family",
+              "The dual prefix family",
+              "The negation family"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Konti- is the plural extension of the female prefix family. You saw Kon- in plural person nouns (Konón:kwe = women) and Teken- in dual (Tekenón:kwe = two women).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "p13",
+            "prompt": "How do you say 'all males / everyone' (plural pronoun)?",
+            "sub": "",
+            "correct": "ratikwé:kon",
+            "alts": [
+              "ratikwe:kon",
+              "ratikwekon"
+            ],
+            "cm": "Tho niioht! ratikwé:kon. The rati- marks male/mixed plural — the same Ra- root you saw in singular raónha and in plural person nouns (Ronón:kwe).",
+            "wm": "That answer is incorrect — try again. Starts with rati-."
+          },
+          {
+            "type": "mc",
+            "wid": "p11",
+            "prompt": "What is special about iakwakwé:kon compared to ratikwé:kon?",
+            "sub": "A structural question",
+            "correct": "iakwakwé:kon is inclusive — it includes the person being spoken to; ratikwé:kon excludes the speaker",
+            "options": [
+              "iakwakwé:kon is inclusive — it includes the person being spoken to; ratikwé:kon excludes the speaker",
+              "They are identical in meaning",
+              "iakwakwé:kon is only for women",
+              "ratikwé:kon is dual not plural"
+            ],
+            "cm": "Niawenhkó:wa! The inclusive/exclusive distinction is another example of Kanien'kéha encoding relational meaning — who is in the group — directly into the pronoun.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "p13",
+            "prompt": "Say this pronoun aloud",
+            "sub": "Record, listen, and self-assess",
+            "word": "ratikwé:kon",
+            "meaning": "All males / everyone (plural)",
+            "hint": "Four syllables: ra-ti-KWÉ-kon. The stress falls on kwé. The long vowel (:) is held slightly longer."
+          },
+          {
+            "type": "mc",
+            "wid": "p10",
+            "prompt": "You now know all 15 Kanien'kéha pronouns. How does this compare to English?",
+            "sub": "A comparative reflection",
+            "correct": "English has about 7 distinct pronouns; Kanien'kéha has 15, encoding gender, number (singular/dual/plural), and formality",
+            "options": [
+              "English has about 7 distinct pronouns; Kanien'kéha has 15, encoding gender, number (singular/dual/plural), and formality",
+              "Kanien'kéha and English have the same number of pronouns",
+              "Kanien'kéha has fewer pronouns because it is simpler",
+              "Kanien'kéha pronouns are identical to French"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Kanien'kéha's 15-pronoun system encodes social information English has lost. This is not complexity — it is precision. As Flores & Rosa (2015) argue, calling a language 'complex' often reflects unfamiliarity, not objective difficulty.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "p12",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "kontikwé:kon",
+            "meaning": "All females (plural)",
+            "storyPrompt": "kontikwé:kon — all the women. Think of the women in your life as a group, not as individuals. The women who shaped you, who surround you, who came before you. Kanien'kehá:ka society organises much of its life around female collective — the clan mothers, the longhouse. What does holding all of them in a single word feel like?"
+          }
+        ]
+      },
+      {
+        "id": "u0l3",
+        "title": "Lesson 4 — Singular People Nouns",
+        "icon": "🧑",
+        "sub": "Naming the people in our world",
+        "intro": [
+          "Kanien'kéha has <strong>eight core singular people nouns</strong>: four female, four male. Each covers a life stage — child, teenager, adult, elder.",
+          "The <strong>I-/Iak- prefix marks female; R- marks male</strong>. In Akwesasne, R- becomes L-. Both are correct. Once you recognise this pattern, it unlocks dozens of words across the language.",
+          "Notice that this lesson includes the word for 'elder woman' and 'elder man' — not simply 'old.' The difference matters. Elders in Kanien'kehá:ka culture are knowledge keepers and leaders."
+        ],
+        "ped": "<strong>Semantic set learning:</strong> Presenting vocabulary in age-graded pairs (child/teen/adult/elder × female/male) follows Nation's (2001) principle of meaningful grouping. The R/I prefix rule acts as a generative pattern learners can extend to new words they encounter.",
+        "vocabIds": [
+          "n01",
+          "n02",
+          "n03",
+          "n04",
+          "n05",
+          "n06",
+          "n07",
+          "n08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "n01",
+            "prompt": "What does Ieksá:'a mean?",
+            "sub": "",
+            "correct": "Girl",
+            "options": [
+              "Girl",
+              "Woman",
+              "Teenage girl",
+              "Elder woman"
+            ],
+            "cm": "Tho niioht! Ieksá:'a — girl. The I- prefix marks female. The glottal stop (') before the final 'a is part of the word.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "n07",
+            "prompt": "What does Rón:kwe mean?",
+            "sub": "",
+            "correct": "Man",
+            "options": [
+              "Boy",
+              "Teenage boy",
+              "Man",
+              "Elder man"
+            ],
+            "cm": "Shé:kon! Rón:kwe — man. R- marks male. In Akwesasne: Lón:kwe. Same -kwe root as Iakón:kwe (woman).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the female person nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Iakón:kwe",
+                "english": "Woman",
+                "wids": [
+                  "n03"
+                ]
+              },
+              {
+                "target": "Ieksá:'a",
+                "english": "Girl",
+                "wids": [
+                  "n01"
+                ]
+              },
+              {
+                "target": "Akokstén:ha",
+                "english": "Elder woman",
+                "wids": [
+                  "n04"
+                ]
+              },
+              {
+                "target": "Ieià:tase'",
+                "english": "Teenage girl",
+                "wids": [
+                  "n02"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Four female life stages — a complete picture of the community across generations.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the male person nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Rón:kwe",
+                "english": "Man",
+                "wids": [
+                  "n07"
+                ]
+              },
+              {
+                "target": "Raksá:'a",
+                "english": "Boy",
+                "wids": [
+                  "n05"
+                ]
+              },
+              {
+                "target": "Rokstén:ha",
+                "english": "Elder man",
+                "wids": [
+                  "n08"
+                ]
+              },
+              {
+                "target": "Ranekénhteron",
+                "english": "Teenage boy",
+                "wids": [
+                  "n06"
+                ]
+              }
+            ],
+            "cm": "Niawenhkó:wa! Compare the male and female sets — same age stages, different gender prefixes.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "n03",
+            "prompt": "How do you say 'Woman'?",
+            "sub": "Dialect variants accepted",
+            "correct": "Iakón:kwe",
+            "alts": [
+              "iakón:kwe",
+              "iakon:kwe",
+              "iakónkwe"
+            ],
+            "cm": "Tho niioht! Iakón:kwe. The Iak- prefix marks adult female. The long vowel (:) matters.",
+            "wm": "That answer is incorrect — try again. Try: Iakón:kwe"
+          },
+          {
+            "type": "type",
+            "wid": "n07",
+            "prompt": "How do you say 'Man'? (Akwesasne form also accepted)",
+            "sub": "",
+            "correct": "Rón:kwe",
+            "alts": [
+              "rón:kwe",
+              "ron:kwe",
+              "ronkwe",
+              "Lón:kwe",
+              "lon:kwe"
+            ],
+            "cm": "Shé:kon! Rón:kwe (Kanehsatà:ke) — or Lón:kwe in Akwesasne. Both correct.",
+            "wm": "That answer is incorrect — try again. Try: Rón:kwe"
+          },
+          {
+            "type": "fill",
+            "wid": "n04",
+            "prompt": "Complete the word",
+            "sentence": "The elder woman is Akokstén:___",
+            "correct": "ha",
+            "hint": "h",
+            "alts": [
+              "ha"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Akokstén:ha. The -stén:ha suffix marks eldership. Same root in Rokstén:ha (elder man).",
+            "wm": "That answer is incorrect — the suffix starts with 'h'."
+          },
+          {
+            "type": "audio",
+            "wid": "n07",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Rón:kwe",
+            "meaning": "Man",
+            "hint": "Two syllables: RÓN-kwe. The colon (:) means the n-vowel is held longer. The kwe rhymes with 'way'."
+          },
+          {
+            "type": "mc",
+            "wid": "n04",
+            "prompt": "Akokstén:ha means 'elder woman'. In Kanien'kehá:ka society, what role do elder women hold?",
+            "sub": "",
+            "correct": "Central authority — clan mothers select and depose chiefs; elder women are ceremony keepers",
+            "options": [
+              "Central authority — clan mothers select and depose chiefs; elder women are ceremony keepers",
+              "Primarily domestic roles only",
+              "The same roles as elder men, separately",
+              "No formal role"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! In Haudenosaunee political structure, clan mothers hold enormous authority. The word Akokstén:ha is not merely descriptive — it names a position of power.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "n04",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Akokstén:ha",
+            "meaning": "Elder woman",
+            "storyPrompt": "In Kanien'kéha, the word for elder woman carries authority, not just age. Think of an elder woman in your life, your family, or your community. What did she carry? What has she passed forward?"
+          }
+        ]
+      },
+      {
+        "id": "u0l4",
+        "title": "Lesson 5 — Dual & Plural People Nouns",
+        "icon": "👨‍👩‍👧",
+        "sub": "Groups of two and groups of many",
+        "intro": [
+          "Just as pronouns come in singular, dual, and plural, so do people nouns. The <strong>te-/tekeni- prefix marks dual (two)</strong>; the <strong>konti-/rati- prefix marks plural (three or more)</strong>.",
+          "Notice how the singular person noun roots are preserved in the dual and plural forms — the change happens in the prefix, not the root. This is the prefix system at work.",
+          "The parallel between singular, dual, and plural forms is one of the most regular patterns in Kanien'kéha. Once you learn one set, the others follow the same logic."
+        ],
+        "ped": "<strong>Pattern completion:</strong> By this point learners have seen the singular/dual/plural distinction in pronouns. Applying it to person nouns is spaced repetition of the grammatical pattern (not just the vocabulary), which research consistently shows improves retention (Nation, 2001; Webb, 2020).",
+        "vocabIds": [
+          "nd01",
+          "nd03",
+          "nd07",
+          "np03",
+          "np07"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "nd03",
+            "prompt": "What does Tekenón:kwe mean?",
+            "sub": "",
+            "correct": "Two women",
+            "options": [
+              "Two women",
+              "Women (plural)",
+              "Three women",
+              "One woman"
+            ],
+            "cm": "Tho niioht! Tekenón:kwe — two women. Teken- marks female dual. Compare singular Iakón:kwe and plural Konón:kwe.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "np03",
+            "prompt": "What does Konón:kwe mean?",
+            "sub": "",
+            "correct": "Women (three or more)",
+            "options": [
+              "Two women",
+              "Women (three or more)",
+              "One woman",
+              "Elder women"
+            ],
+            "cm": "Shé:kon! Konón:kwe — women (plural, 3+). Kon- marks female plural. The -kwe root is consistent across all three: Iakón:kwe / Tekenón:kwe / Konón:kwe.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the number forms of 'man/men'",
+            "sub": "Singular, dual, and plural",
+            "pairs": [
+              {
+                "target": "Rón:kwe",
+                "english": "One man",
+                "wids": [
+                  "n07"
+                ]
+              },
+              {
+                "target": "tehnón:kwe",
+                "english": "Two men",
+                "wids": [
+                  "nd07"
+                ]
+              },
+              {
+                "target": "Ronón:kwe",
+                "english": "Men (plural)",
+                "wids": [
+                  "np07"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Same -kwe root throughout: Rón:kwe → tehnón:kwe → Ronón:kwe. The prefix carries the number.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "nd01",
+            "prompt": "tekeniksá:'a means 'two girls'. What prefix marks female dual in this word?",
+            "sub": "",
+            "correct": "tekeni-",
+            "options": [
+              "tekeni-",
+              "konti-",
+              "rati-",
+              "te-"
+            ],
+            "cm": "Niawenhkó:wa! tekeni- is the female dual prefix. Compare tehni- for male dual (tehniksá:'a = two boys).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "np05",
+            "prompt": "Complete the plural form for boys",
+            "sentence": "Boys (plural, 3+): Ratiksa'___",
+            "correct": "okón:'a",
+            "hint": "o",
+            "alts": [
+              "okon:'a",
+              "okona",
+              "okón:'a"
+            ],
+            "cm": "Tho niioht! Ratiksa'okón:'a — boys (plural). Rati- marks male plural. In Akwesasne: Latiksa'okón:'a.",
+            "wm": "That answer is incorrect — the suffix starts with 'o'."
+          },
+          {
+            "type": "mc",
+            "wid": "nd07",
+            "prompt": "You know Rón:kwe (one man) and tehnón:kwe (two men). What prefix marks male dual?",
+            "sub": "",
+            "correct": "teh- / tehni-",
+            "options": [
+              "teh- / tehni-",
+              "ron-",
+              "rati-",
+              "roti-"
+            ],
+            "cm": "Niawenhkó:wa! The male dual prefix is tehni- (tehniksá:'a = two boys, tehninekénhteron = two teenage boys, tehnón:kwe = two men). This is the male counterpart to female tekeni-.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "np03",
+            "prompt": "How do you say 'Women' (plural, 3+)?",
+            "sub": "",
+            "correct": "Konón:kwe",
+            "alts": [
+              "konón:kwe",
+              "konon:kwe",
+              "kononkwe"
+            ],
+            "cm": "Shé:kon! Konón:kwe. Kon- marks female plural.",
+            "wm": "That answer is incorrect — try again. Try: Konón:kwe"
+          },
+          {
+            "type": "audio",
+            "wid": "np07",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ronón:kwe",
+            "meaning": "Men (plural)",
+            "hint": "Three syllables: ro-NÓN-kwe. Stress on the second syllable. The colon (:) marks a slightly longer vowel."
+          },
+          {
+            "type": "mc",
+            "wid": "np07",
+            "prompt": "The prefix system for person nouns follows a consistent three-number pattern. Fill in the gap: I-/Iak- (singular female) → Teken- (dual female) → ___- (plural female)",
+            "sub": "",
+            "correct": "Kon-",
+            "options": [
+              "Kon-",
+              "Rati-",
+              "Ron-",
+              "Te-"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Kon- is the female plural prefix. The full female paradigm: I-/Iak- (one) → Teken- (two) → Kon- (many). The male paradigm: R- (one) → Tehni- (two) → Rati-/Ron- (many).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "np03",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Konón:kwe",
+            "meaning": "Women (plural)",
+            "storyPrompt": "Konón:kwe — women, the group. Kanien'kehá:ka society organises around female collective: the longhouse, the clan, the decision-making circle. What does it mean to you to have a single word for all the women, as a group? Who does that word hold?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Unit 2 — Family, Kinship & Movement",
+    "desc": "All 22 kinship nouns with possessive forms, plus direction verbs for everyday navigation",
+    "lessons": [
+      {
+        "id": "u1l0",
+        "title": "Lesson 6 — Female Kinship Nouns",
+        "icon": "🌿",
+        "sub": "The women in our relational world",
+        "intro": [
+          "In Kanien'kéha, kinship words <strong>change their form depending on who is speaking</strong>. My mother, your mother, her mother, his mother are all different words. Relationship is grammatical structure.",
+          "This lesson covers the <strong>female kinship nouns</strong> from Lesson 5 of the Kontinónhstats curriculum: mother, older sister, grandmother, younger sister, daughter, step-daughter, granddaughter, sister-in-law, mother-in-law, female friend, and girlfriend.",
+          "Kanien'kehá:ka society is <strong>matrilineal</strong> — clan membership, land rights, and social identity pass through the mother's line. This vocabulary is not just grammar; it is a map of how the community sustains itself."
+        ],
+        "ped": "<strong>Kinship as cultural grammar:</strong> McCarty & Lee (2014) argue that culturally sustaining/revitalizing pedagogy must treat language as carrying a worldview, not just vocabulary. Presenting kinship terms within their matrilineal context honours this principle.",
+        "vocabIds": [
+          "k01",
+          "k04",
+          "k05",
+          "k07",
+          "k09"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "k01",
+            "prompt": "How do you say 'My mother'?",
+            "sub": "Remember: the possessive prefix changes the base word",
+            "correct": "Ake'nisténha",
+            "options": [
+              "Sa'nisténha",
+              "Ake'nisténha",
+              "Ro'nisténha",
+              "ista"
+            ],
+            "cm": "Niawenhkó:wa! Ake'nisténha — my mother. The ake- prefix marks 'my' for this female kinship term.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "k04",
+            "prompt": "Which word means 'My grandmother'?",
+            "sub": "",
+            "correct": "Aksótha",
+            "options": [
+              "Aksótha",
+              "Sasótha",
+              "tota",
+              "Rosótha"
+            ],
+            "cm": "Tho niioht! Aksótha — my grandmother. In a sentence: 'I am going to my grandmother's house' = Aksótha tsi tiakonónhsote' wà:ke'.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the possessive forms of 'Mother'",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Sa'nisténha",
+                "english": "Your mother",
+                "wids": [
+                  "k01"
+                ]
+              },
+              {
+                "target": "Ake'nisténha",
+                "english": "My mother",
+                "wids": [
+                  "k01"
+                ]
+              },
+              {
+                "target": "Ro'nisténha",
+                "english": "His mother",
+                "wids": [
+                  "k01"
+                ]
+              },
+              {
+                "target": "Ontate'nisténha",
+                "english": "Her mother",
+                "wids": [
+                  "k01"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four different words for one kinship relationship — the possessor is built into the word itself.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "k05",
+            "prompt": "Complete the form 'My older sister'",
+            "sentence": "My older sister is Akh___",
+            "correct": "tsí:'a",
+            "hint": "t",
+            "alts": [
+              "tsi:'a",
+              "tsia"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Akhtsí:'a — my older sister. The akh- marks 'my' in this female sibling term. Compare Sahtsí:'a (your older sister).",
+            "wm": "That answer is incorrect — the suffix starts with 'ts'."
+          },
+          {
+            "type": "mc",
+            "wid": "k07",
+            "prompt": "How do you say 'My daughter'?",
+            "sub": "",
+            "correct": "aksen'á:a",
+            "options": [
+              "aksen'á:a",
+              "saksén'a",
+              "akonsen'á:a",
+              "rosen'á:a"
+            ],
+            "cm": "Niawenhkó:wa! aksen'á:a — my daughter. The ak- marks 'my/first person' in this kinship term.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "k04",
+            "prompt": "How do you say 'My grandmother'?",
+            "sub": "",
+            "correct": "Aksótha",
+            "alts": [
+              "aksótha",
+              "aksotha"
+            ],
+            "cm": "Tho niioht! Aksótha. The full base form is tota; with 'my' it becomes Aksótha.",
+            "wm": "That answer is incorrect — try again. Try: Aksótha"
+          },
+          {
+            "type": "mc",
+            "wid": "k05",
+            "prompt": "Why do the forms Sahtsí:'a (your older sister) and Akhtsí:'a (my older sister) share the -htsí:'a root?",
+            "sub": "A structural question",
+            "correct": "The root -htsí:'a means 'older sister'; the prefix (sa-/akh-) changes who is speaking",
+            "options": [
+              "The root -htsí:'a means 'older sister'; the prefix (sa-/akh-) changes who is speaking",
+              "They are different words with the same sound by coincidence",
+              "The prefix changes the meaning of 'older'",
+              "The -htsí:'a is a suffix, not a root"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is the core of Kanien'kéha kinship grammar — the root carries the relationship category, the prefix carries the possessor. Learning the root unlocks all four possessive forms.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "k09",
+            "prompt": "Say this phrase aloud",
+            "sub": "",
+            "word": "Aksótha",
+            "meaning": "My grandmother",
+            "hint": "Three syllables: ak-SÓ-tha. Stress on the second. A warm, close word."
+          },
+          {
+            "type": "mc",
+            "wid": "k01",
+            "prompt": "Kanien'kehá:ka society is matrilineal. What does this mean for how 'mother' functions in the kinship system?",
+            "sub": "",
+            "correct": "Clan membership, land rights, and identity pass through the mother's line — the word 'mother' is structurally central to social organisation",
+            "options": [
+              "Clan membership, land rights, and identity pass through the mother's line — the word 'mother' is structurally central to social organisation",
+              "Mothers are important but have no formal role",
+              "It means only women can speak Kanien'kéha",
+              "Matrilineal means fathers are not acknowledged"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Tuck & Yang (2012) remind us that decolonization restores what colonization disrupted. Learning these kinship terms — in their matrilineal context — is itself a small act of that restoration.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "k09",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Aksótha",
+            "meaning": "My grandmother",
+            "storyPrompt": "Aksótha — my grandmother. A word you say in a sentence when you're going to her house, when you're asking about her, when you're thinking of her. What memory or person does this word call up for you? Take a moment with it."
+          }
+        ]
+      },
+      {
+        "id": "u1l1",
+        "title": "Lesson 7 — Male Kinship Nouns",
+        "icon": "🌿",
+        "sub": "The men in our relational world",
+        "intro": [
+          "This lesson covers the <strong>male kinship nouns</strong>: father, older brother, grandfather, younger brother, son, step-son, grandson, brother-in-law, father-in-law, male friend, and boyfriend — all with their four possessive forms.",
+          "Notice how the female and male kinship nouns are parallel in structure. The same prefix families (sa- = your, ake-/rake- = my, onto-/ro- = his/her) work across both sets.",
+          "Compare: <strong>Sahtsí:'a</strong> (your older sister) ↔ <strong>Iahtsí:'a</strong> (your older brother). Same -htsí:'a root, different gender-of-possessor prefix. The parallelism is consistent."
+        ],
+        "ped": "<strong>Contrastive learning:</strong> Presenting male kinship immediately after female kinship exploits the parallel structure for contrastive learning (Tinkham, 1997) — learners can map the prefix differences rather than memorising each form independently.",
+        "vocabIds": [
+          "k02",
+          "k03",
+          "k06",
+          "k08",
+          "k10"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "k02",
+            "prompt": "How do you say 'My father'?",
+            "sub": "",
+            "correct": "Rake'níha",
+            "options": [
+              "Ia'níha",
+              "Rake'níha",
+              "Ronwa'níha",
+              "Ro'níha"
+            ],
+            "cm": "Tho niioht! Rake'níha — my father. The rake- prefix marks 'my' for paternal kin.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "k03",
+            "prompt": "How do you say 'My grandfather'?",
+            "sub": "",
+            "correct": "Rake'sótha",
+            "options": [
+              "Rake'sótha",
+              "Sa'sótha",
+              "Ro'sótha",
+              "Ako'sótha"
+            ],
+            "cm": "Niawenhkó:wa! Rake'sótha — my grandfather. In a sentence: 'I am going to my grandfather's house' = Raksótha tsi thonónhsote' wà:ke'.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the possessive forms of 'Father'",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ia'níha",
+                "english": "Your father",
+                "wids": [
+                  "k02"
+                ]
+              },
+              {
+                "target": "Rake'níha",
+                "english": "My father",
+                "wids": [
+                  "k02"
+                ]
+              },
+              {
+                "target": "Ronwa'níha",
+                "english": "Her father",
+                "wids": [
+                  "k02"
+                ]
+              },
+              {
+                "target": "Ro'níha",
+                "english": "His father",
+                "wids": [
+                  "k02"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four possessive forms of one kinship relationship — the possessor is built in.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "k06",
+            "prompt": "How do you say 'Your older brother'?",
+            "sub": "",
+            "correct": "Iahtsí:'a",
+            "options": [
+              "Iahtsí:'a",
+              "Rakhtsí:'a",
+              "Ronwahtsí:'a",
+              "Rohtsí:'a"
+            ],
+            "cm": "Tho niioht! Iahtsí:'a — your older brother. Compare Sahtsí:'a (your older sister) — same -htsí:'a root, different possessor prefix.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "k08",
+            "prompt": "Complete 'His son'",
+            "sentence": "His son is ro'sén'___",
+            "correct": "a",
+            "hint": "a",
+            "alts": [
+              "a",
+              "'a"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! ro'sén'a — his son. The ro- prefix marks 'his' in this kinship term.",
+            "wm": "That answer is incorrect — the final syllable is 'a'."
+          },
+          {
+            "type": "type",
+            "wid": "k10",
+            "prompt": "How do you say 'My grandfather' (the possessed form used in sentences)?",
+            "sub": "",
+            "correct": "raksótha",
+            "alts": [
+              "Raksótha",
+              "raksotha"
+            ],
+            "cm": "Shé:kon! raksótha. Compare aksótha (my grandmother). The ra- marks male possession in elder kin terms.",
+            "wm": "That answer is incorrect — try again. Try: raksótha"
+          },
+          {
+            "type": "mc",
+            "wid": "k06",
+            "prompt": "Compare Sahtsí:'a (your older sister) and Iahtsí:'a (your older brother). What does this parallel structure tell you?",
+            "sub": "",
+            "correct": "The -htsí:'a root means 'older sibling'; sa- marks female-possessed 'your', ia- marks male-possessed 'your'",
+            "options": [
+              "The -htsí:'a root means 'older sibling'; sa- marks female-possessed 'your', ia- marks male-possessed 'your'",
+              "They are completely different words",
+              "Only the ending changes",
+              "The words are from different dialects"
+            ],
+            "cm": "Niawenhkó:wa! This is noun-root consistency — the same root -htsí:'a carries 'older sibling' in both terms. The prefix changes to encode both the gender of the sibling and the gender of the possessor.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "k10",
+            "prompt": "Say this phrase aloud",
+            "sub": "",
+            "word": "raksótha",
+            "meaning": "My grandfather",
+            "hint": "Three syllables: rak-SÓ-tha. Stress on the second. A word of respect."
+          },
+          {
+            "type": "mc",
+            "wid": "k02",
+            "prompt": "The Kontinónhstats curriculum (Mary McDonald) teaches 22 kinship nouns each with 4 possessive forms. How many total forms does that represent?",
+            "sub": "",
+            "correct": "88 unique kinship word forms",
+            "options": [
+              "88 unique kinship word forms",
+              "22",
+              "44",
+              "100"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! 22 × 4 = 88. This is why vocabulary lists alone are not enough — learning the <em>prefix system</em> means you can generate all 88 forms from a much smaller set of roots and prefixes.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "k03",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Rake'sótha",
+            "meaning": "My grandfather",
+            "storyPrompt": "Rake'sótha — my grandfather. Think of a grandfather figure in your life: a grandfather, a great-uncle, an elder man who played that role. What knowledge did he carry? What do you carry from him?"
+          }
+        ]
+      },
+      {
+        "id": "u1l2",
+        "title": "Lesson 8 — Direction Verbs & Going Places",
+        "icon": "🧭",
+        "sub": "Where are you going? Where did you come from?",
+        "intro": [
+          "Kanien'kéha has a rich system for expressing <strong>direction and movement</strong>. Lesson 18 of the Kontinónhstats curriculum introduces three essential direction question-and-answer pairs that connect kinship vocabulary to real daily life.",
+          "<strong>Ka' wáhse'?</strong> Where are you going? → <strong>wà:ke</strong> I am going (there).",
+          "<strong>Ka' nontáhse'?</strong> Where did you come from? → <strong>non nontà:ke</strong> I came from (there).",
+          "<strong>Ka' iéhse'skwe'?</strong> Where did you go? → <strong>iè:ke'skwe'</strong> I went (there).",
+          "These three frames also give you your first real sentences combining kinship nouns with verbs."
+        ],
+        "ped": "<strong>Functional language learning:</strong> Freire (1970) argued that generative vocabulary should be rooted in the learner's world. Direction verbs connected to family homes and community places make language immediately usable in daily life.",
+        "vocabIds": [
+          "dv01",
+          "dv02",
+          "dv03",
+          "dv04",
+          "k09",
+          "k10"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "dv01",
+            "prompt": "What does Ka' wáhse' mean?",
+            "sub": "",
+            "correct": "Where are you going?",
+            "options": [
+              "Where are you going?",
+              "Where did you come from?",
+              "Where did you go?",
+              "Who is going?"
+            ],
+            "cm": "Tho niioht! Ka' wáhse' — where are you going? Ka' = where; wáhse' = you go.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "dv02",
+            "prompt": "How do you say 'I am going (somewhere)'?",
+            "sub": "",
+            "correct": "wà:ke",
+            "options": [
+              "wà:ke",
+              "nontà:ke",
+              "iè:ke'skwe'",
+              "Ka' wáhse'"
+            ],
+            "cm": "Niawenhkó:wa! wà:ke — I am going. Used with a destination: 'Aksótha tsi tiakonónhsote' wà:ke'' = I am going to my grandmother's house.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the direction question to its meaning",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ka' wáhse'",
+                "english": "Where are you going?",
+                "wids": [
+                  "dv01"
+                ]
+              },
+              {
+                "target": "Ka' nontáhse'",
+                "english": "Where did you come from?",
+                "wids": [
+                  "dv03"
+                ]
+              },
+              {
+                "target": "Ka' iéhse'skwe'",
+                "english": "Where did you go?",
+                "wids": [
+                  "dv04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Three distinct verb forms: going (present), coming from (origin), went (past). The tense is built into the verb, not expressed with separate words like 'did' in English.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "dv01",
+            "prompt": "Complete the direction question",
+            "sentence": "Where are you going? Ka' ___hse'",
+            "correct": "wá:",
+            "hint": "w",
+            "alts": [
+              "wa:",
+              "wá:"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Ka' wáhse'. The stress on wá: is important.",
+            "wm": "That answer is incorrect — starts with 'w'."
+          },
+          {
+            "type": "type",
+            "wid": "dv02",
+            "prompt": "How do you say 'I am going'?",
+            "sub": "",
+            "correct": "wà:ke",
+            "alts": [
+              "wa:ke",
+              "wake"
+            ],
+            "cm": "Tho niioht! wà:ke — I am going. Use it with a destination.",
+            "wm": "That answer is incorrect — try again. Try: wà:ke"
+          },
+          {
+            "type": "mc",
+            "wid": "dv03",
+            "prompt": "Ka' iéhse'skwe' uses the suffix -skwe'. What does this suffix signal?",
+            "sub": "",
+            "correct": "Past tense — the action already happened",
+            "options": [
+              "Past tense — the action already happened",
+              "Future tense",
+              "Habitual action",
+              "Plural subject"
+            ],
+            "cm": "Niawenhkó:wa! The -skwe' suffix marks past tense in this direction verb. This is your first encounter with tense marking in Kanien'kéha — tense is encoded as a suffix on the verb itself.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "dv01",
+            "prompt": "In the sentence 'Aksótha tsi tiakonónhsote' wà:ke'', what does Aksótha mean?",
+            "sub": "You learned this in Lesson 6",
+            "correct": "My grandmother",
+            "options": [
+              "My grandmother",
+              "My grandfather",
+              "My mother",
+              "My home"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Aksótha = my grandmother. This is spaced repetition in action — kinship vocabulary from Lesson 6 reappearing in a direction verb sentence.",
+            "wm": "That answer is incorrect — think back to the female kinship nouns."
+          },
+          {
+            "type": "audio",
+            "wid": "dv01",
+            "prompt": "Say this phrase aloud",
+            "sub": "",
+            "word": "Ka' wáhse'",
+            "meaning": "Where are you going?",
+            "hint": "Three syllables: ka'-WÁH-se'. The stress is on the second syllable. The ' after Ka' is a glottal stop."
+          },
+          {
+            "type": "mc",
+            "wid": "dv04",
+            "prompt": "Ka' nontáhse' (where did you come from) and Ka' iéhse'skwe' (where did you go) both ask about the past, but are they asking the same thing?",
+            "sub": "",
+            "correct": "No — Ka' nontáhse' asks about origin/source; Ka' iéhse'skwe' asks about destination in the past",
+            "options": [
+              "No — Ka' nontáhse' asks about origin/source; Ka' iéhse'skwe' asks about destination in the past",
+              "Yes, they mean the same thing",
+              "Ka' nontáhse' is more formal",
+              "Ka' iéhse'skwe' is only used for long trips"
+            ],
+            "cm": "Niawenhkó:wa! This distinction — where you came FROM vs where you WENT — is encoded as separate verb forms in Kanien'kéha. English uses the same 'where did you...' frame for both; Kanien'kéha does not.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "dv02",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "wà:ke",
+            "meaning": "I am going",
+            "storyPrompt": "'I am going' — wà:ke — is one of the first complete verbs you have learned. Think of a place in your life you regularly go to: a family member's home, a community space, somewhere that matters. Try saying it in your mind: '[Name of that place] wà:ke' — I am going to [that place]. What does it feel like to hold that destination in this language?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Unit 3 — Objects, Verbs & Everyday Language",
+    "desc": "A-class nouns, A-stem verbs, articles, greetings, and negation",
+    "lessons": [
+      {
+        "id": "u2l0",
+        "title": "Lesson 9 — A-Class Nouns & Noun Incorporation",
+        "icon": "🧺",
+        "sub": "Naming the objects in our world",
+        "intro": [
+          "Kanien'kéha organises nouns into <strong>classes by their first sound</strong>. <strong>A-class nouns</strong> begin with the vowel 'a'. This lesson introduces 8 common A-class nouns from the everyday world.",
+          "A-class nouns come in two types: <strong>true</strong> (the root meaning has been lost over time, like à:there' = basket) and <strong>fake</strong> (the root is still identifiable as a verb root, like atià:tawi = shirt, from 'body cover').",
+          "The most important grammatical concept here is <strong>noun incorporation</strong> — in Kanien'kéha, nouns can be incorporated directly into verbs to create single complex words. Example: áhta' (shoe) + -owá:nen (big) → watahkowá:nen (a big shoe). One word carries what English expresses in three."
+        ],
+        "ped": "<strong>Noun incorporation awareness:</strong> Mithun (1984) identifies noun incorporation as a core feature of polysynthetic languages. Introducing it early — even before learners can use it — creates conceptual readiness (Krashen's comprehensible input +1) for later grammar lessons.",
+        "vocabIds": [
+          "a01",
+          "a02",
+          "a03",
+          "a04",
+          "a05",
+          "a06",
+          "a07",
+          "a08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "a01",
+            "prompt": "What does áhta' mean?",
+            "sub": "",
+            "correct": "Shoe / Shoes",
+            "options": [
+              "Shoe / Shoes",
+              "Pants",
+              "Chair",
+              "Ball"
+            ],
+            "cm": "Tho niioht! áhta' — shoe. This word was used in the noun incorporation example: watahkowá:nen = a big shoe.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the A-class nouns to their meanings",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "áhta'",
+                "english": "Shoe",
+                "wids": [
+                  "a01"
+                ]
+              },
+              {
+                "target": "atháhsteren",
+                "english": "Pants",
+                "wids": [
+                  "a02"
+                ]
+              },
+              {
+                "target": "ani'tskwá:ra",
+                "english": "Chair",
+                "wids": [
+                  "a06"
+                ]
+              },
+              {
+                "target": "ahthén:no",
+                "english": "Ball",
+                "wids": [
+                  "a07"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! All these words begin with 'a' — the defining feature of A-class nouns.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "a03",
+            "prompt": "atià:tawi (shirt/dress/coat) is a 'fake' A-class noun. What does 'fake' mean in this context?",
+            "sub": "",
+            "correct": "The root meaning (body cover) is still identifiable — it derives from a verb root",
+            "options": [
+              "The root meaning (body cover) is still identifiable — it derives from a verb root",
+              "The word is borrowed from another language",
+              "It is only used in dialects",
+              "It is not a real Kanien'kéha word"
+            ],
+            "cm": "Niawenhkó:wa! A 'fake' noun's root is still recognisably verbal — atià:tawi = body cover (verb root). A 'true' noun like à:there' (basket) has a root whose original meaning has been lost over time.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "a01",
+            "prompt": "How do you say 'Shoe'?",
+            "sub": "",
+            "correct": "áhta'",
+            "alts": [
+              "ahta'",
+              "ahta"
+            ],
+            "cm": "Tho niioht! áhta'. The apostrophe at the end is a glottal stop — part of the word.",
+            "wm": "That answer is incorrect — try again. Try: áhta'"
+          },
+          {
+            "type": "fill",
+            "wid": "a06",
+            "prompt": "Complete the word for 'chair'",
+            "sentence": "Chair is ani'tskwá:___",
+            "correct": "ra",
+            "hint": "r",
+            "alts": [
+              "ra"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! ani'tskwá:ra. The long vowel (:) before the final syllable is important.",
+            "wm": "That answer is incorrect — ends in 'ra'."
+          },
+          {
+            "type": "mc",
+            "wid": "a08",
+            "prompt": "à:there' (basket) is a 'true' A-class noun. What does 'true' mean here?",
+            "sub": "",
+            "correct": "The original root meaning has been lost — the word survives but its verb origin is no longer identifiable",
+            "options": [
+              "The original root meaning has been lost — the word survives but its verb origin is no longer identifiable",
+              "It is more grammatically correct than 'fake' nouns",
+              "It is the only correct form",
+              "It comes from a different language"
+            ],
+            "cm": "Niawenhkó:wa! In Kanien'kéha, 'true' A-class nouns are ancient words whose verbal origins have been lost to time. This is how languages evolve — words outlive their roots.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "a01",
+            "prompt": "The example 'áhta' + -owá:nen → watahkowá:nen (a big shoe)' demonstrates what grammatical process?",
+            "sub": "",
+            "correct": "Noun incorporation — a noun is merged with a verb suffix to form a single complex word",
+            "options": [
+              "Noun incorporation — a noun is merged with a verb suffix to form a single complex word",
+              "Simple adjective agreement",
+              "A borrowing from English",
+              "Verb conjugation only"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Noun incorporation is one of Kanien'kéha's most distinctive features. What English says in 2–3 words, Kanien'kéha can express in one. This is part of what Mary McDonald calls building a 'base vocabulary' — knowing nouns prepares you to incorporate them.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "a01",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "áhta'",
+            "meaning": "Shoe / Shoes",
+            "hint": "Two syllables: ÁH-ta'. Stress on the first syllable. The ' at the end is a glottal stop — hold it briefly."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match these A-class nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "atià:tawi",
+                "english": "Shirt / Coat",
+                "wids": [
+                  "a03"
+                ]
+              },
+              {
+                "target": "ate'wáhshare'",
+                "english": "Earrings",
+                "wids": [
+                  "a04"
+                ]
+              },
+              {
+                "target": "atkahráhnha'",
+                "english": "Glasses",
+                "wids": [
+                  "a05"
+                ]
+              },
+              {
+                "target": "à:there'",
+                "english": "Basket",
+                "wids": [
+                  "a08"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! A-class nouns cover body coverings, tools, and traditional items — the vocabulary of daily life.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "story",
+            "wid": "a08",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "à:there'",
+            "meaning": "Basket",
+            "storyPrompt": "à:there' — basket. This word is a 'true' noun: ancient enough that its original verb root has been forgotten. The word exists, carries meaning, but its history is partially obscured. What in your own life feels like that — present and meaningful, but with roots that are partially hidden or lost? How does reclaiming a language connect to recovering those roots?"
+          }
+        ]
+      },
+      {
+        "id": "u2l1",
+        "title": "Lesson 10 — A-Stem Verbs: Commands & First Person",
+        "icon": "⚡",
+        "sub": "Actions — sitting, running, listening",
+        "intro": [
+          "Kanien'kéha verbs are organised into <strong>six stem classes</strong> based on the first sound of their verb root. The first class is <strong>A-stem verbs</strong> — verbs whose root begins with 'a'.",
+          "There are two types of A-stem verbs: <strong>subjective</strong> (one-phase actions, like sitting) and <strong>dualic</strong> (two-phase actions, like running — first you're still, then you move). The dualic type takes a <strong>te- prefix</strong> — the same te- you already know from dual pronouns.",
+          "This lesson teaches the <strong>command form</strong> (telling someone to do something) and the <strong>first-person habitual form</strong> (saying 'I [regularly] do something'). Commands never have a suffix; habitual forms take the <strong>-s suffix</strong>."
+        ],
+        "ped": "<strong>Verb-stem classes as generative grammar:</strong> Mary McDonald's curriculum explicitly teaches verb stems as classes because knowing the stem class lets learners predict how pronouns attach. This is deductive grammar instruction within a communicative framework.",
+        "vocabIds": [
+          "v01",
+          "v02",
+          "v03",
+          "v04",
+          "v05",
+          "v06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "v01",
+            "prompt": "What does sá:tien mean?",
+            "sub": "",
+            "correct": "You sit (command)",
+            "options": [
+              "You sit (command)",
+              "I am sitting",
+              "We two sit",
+              "Sitting"
+            ],
+            "cm": "Tho niioht! sá:tien — you sit (command). Structure: s- (you) + á:tien (A-stem root). No suffix — it's a command.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "v02",
+            "prompt": "What does ká:tiens mean?",
+            "sub": "",
+            "correct": "I am sitting (habitual)",
+            "options": [
+              "You sit",
+              "I am sitting (habitual)",
+              "She sits",
+              "Two people sit"
+            ],
+            "cm": "Niawenhkó:wa! ká:tiens — I am sitting. Structure: k- (I) + á:tien (root) + -s (habitual suffix).",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the A-stem verb forms",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "sá:tien",
+                "english": "You sit (command)",
+                "wids": [
+                  "v01"
+                ]
+              },
+              {
+                "target": "ká:tiens",
+                "english": "I am sitting",
+                "wids": [
+                  "v02"
+                ]
+              },
+              {
+                "target": "tesaráhtat",
+                "english": "You run (command)",
+                "wids": [
+                  "v03"
+                ]
+              },
+              {
+                "target": "tekaráhtats",
+                "english": "I run (habitual)",
+                "wids": [
+                  "v04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Notice: s- = you, k- = I; no suffix = command, -s = habitual.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "v03",
+            "prompt": "tesaráhtat (you run) has the prefix te-. Why?",
+            "sub": "Think back to what te- means",
+            "correct": "Running is a dualic verb — it requires two phases (standing still → moving), so te- marks the dual action",
+            "options": [
+              "Running is a dualic verb — it requires two phases (standing still → moving), so te- marks the dual action",
+              "te- marks plural subjects",
+              "te- is required before all verbs",
+              "te- marks a different dialect"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Dualic verbs require two phases of action. Mary McDonald's explanation: to run, you are first standing still, then you move forward. Two actions → dualic prefix te-. You already know te- from dual pronouns — the same morpheme carries 'two-ness' in both contexts.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "v02",
+            "prompt": "Complete the habitual suffix",
+            "sentence": "I am sitting: ká:tien___",
+            "correct": "s",
+            "hint": "s",
+            "alts": [
+              "s"
+            ],
+            "cm": "Tho niioht! ká:tiens. The -s suffix marks habitual/repetitive action. It appears when the action is done regularly.",
+            "wm": "That answer is incorrect — the habitual suffix is a single letter."
+          },
+          {
+            "type": "type",
+            "wid": "v01",
+            "prompt": "How do you say 'You sit' (command)?",
+            "sub": "",
+            "correct": "sá:tien",
+            "alts": [
+              "sa:tien",
+              "satien"
+            ],
+            "cm": "Niawenhkó:wa! sá:tien. s- (you) + á:tien (root). No suffix — commands are bare.",
+            "wm": "That answer is incorrect — try again. Try: sá:tien"
+          },
+          {
+            "type": "mc",
+            "wid": "v05",
+            "prompt": "satkáhthons means 'you listen' (habitual). What is the pronoun prefix for 'you' in this form?",
+            "sub": "",
+            "correct": "s-",
+            "options": [
+              "s-",
+              "k-",
+              "r-",
+              "te-"
+            ],
+            "cm": "Tho niioht! s- is the 'you' subjective pronoun prefix for A-stem verbs. You see it in sá:tien (you sit), tesaráhtat (you run), satkáhthons (you listen). The same s- across all three.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "v06",
+            "prompt": "katkáhthons means 'I listen'. Which part is the verb root?",
+            "sub": "",
+            "correct": "-káhthon-",
+            "options": [
+              "-káhthon-",
+              "kat-",
+              "-s",
+              "k-"
+            ],
+            "cm": "Niawenhkó:wa! -káhthon- is the verb root meaning 'listen'. k- is the pronoun (I), at- is the middle-voice infix (body-related), and -s is the habitual suffix.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "v03",
+            "prompt": "Say this verb aloud",
+            "sub": "",
+            "word": "tesaráhtat",
+            "meaning": "You run (command)",
+            "hint": "Five syllables: te-sa-RÁH-tat. Stress on the third syllable. The te- prefix is quick and unstressed."
+          },
+          {
+            "type": "story",
+            "wid": "v01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "sá:tien / ká:tiens",
+            "meaning": "You sit / I am sitting",
+            "storyPrompt": "sá:tien — sit. ká:tiens — I am sitting. These are your first Kanien'kéha verbs. They are humble, everyday actions. In Freire's (1970) pedagogy, literacy begins with the words of daily life — not abstractions. What everyday actions in your life would you most want to be able to name in Kanien'kéha? Think of three and write them here."
+          }
+        ]
+      },
+      {
+        "id": "u2l2",
+        "title": "Lesson 11 — Articles, Greetings & Negation",
+        "icon": "💬",
+        "sub": "The glue of everyday conversation",
+        "intro": [
+          "This lesson covers three things you need to hold any real conversation: <strong>articles</strong> (the, a), <strong>common greetings and expressions</strong>, and <strong>negation</strong> (how to say 'no' or 'not').",
+          "The articles <strong>ne</strong> and <strong>thi</strong> work differently from English 'the' — they carry meaning about specificity and direction. In the Lesson 1 example from Kontinónhstats: <em>Wá:s skó:ha thi áhta'</em> (Go get the shoe) — thi signals motion toward the noun.",
+          "Negation in Kanien'kéha uses the particle <strong>Iáh</strong> before the verb: Iáh + ká:tiens = I am not sitting. It is a separate word, not a prefix on the verb itself."
+        ],
+        "ped": "<strong>Communicative chunks:</strong> García & Li Wei (2014) emphasise that translanguaging learners benefit from acquiring functional phrases as wholes before analysing them. Shé:kon, Niawenhkó:wa, Tho niioht, and Tó:ka' are essential communicative chunks that appear throughout this course.",
+        "vocabIds": [
+          "ar01",
+          "ar02",
+          "g01",
+          "g02",
+          "g03",
+          "g04",
+          "g05",
+          "g06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "g01",
+            "prompt": "What does Shé:kon mean?",
+            "sub": "",
+            "correct": "Hello / Greetings",
+            "options": [
+              "Hello / Greetings",
+              "Thank you",
+              "Goodbye",
+              "Well done"
+            ],
+            "cm": "Tho niioht! Shé:kon — hello. More literally 'still / yet' — an expression of ongoing life and presence.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "g02",
+            "prompt": "What does Niawenhkó:wa mean?",
+            "sub": "",
+            "correct": "Thank you very much",
+            "options": [
+              "Thank you very much",
+              "Hello",
+              "Well done",
+              "Wonderful"
+            ],
+            "cm": "Niawenhkó:wa! (And that's the word itself!) It carries more weight than a simple thank-you — it connects to the spirit of the Thanksgiving Address.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the expression to its meaning",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Shé:kon",
+                "english": "Hello",
+                "wids": [
+                  "g01"
+                ]
+              },
+              {
+                "target": "Niawenhkó:wa",
+                "english": "Thank you very much",
+                "wids": [
+                  "g02"
+                ]
+              },
+              {
+                "target": "Tho niioht",
+                "english": "That's right / Well done",
+                "wids": [
+                  "g03"
+                ]
+              },
+              {
+                "target": "Tó:ka'",
+                "english": "Not quite / No",
+                "wids": [
+                  "g05"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! These four expressions have appeared throughout this course — you've already been learning them in context.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "g06",
+            "prompt": "How do you form negation in Kanien'kéha?",
+            "sub": "",
+            "correct": "Place the particle Iáh before the verb: Iáh ká:tiens = I am not sitting",
+            "options": [
+              "Place the particle Iáh before the verb: Iáh ká:tiens = I am not sitting",
+              "Add -iáh to the end of the verb",
+              "Change the verb prefix to ia-",
+              "Kanien'kéha has no negation"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Iáh is a free particle — it stands before the verb to negate it. This is different from languages (like French) where negation wraps around the verb.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "g06",
+            "prompt": "Complete the negated sentence 'I am not sitting'",
+            "sentence": "I am not sitting: ___ ká:tiens",
+            "correct": "Iáh",
+            "hint": "I",
+            "alts": [
+              "iah",
+              "Iah",
+              "iáh"
+            ],
+            "cm": "Tho niioht! Iáh ká:tiens. The particle Iáh negates the verb that follows it.",
+            "wm": "That answer is incorrect — the negation particle starts with 'I'."
+          },
+          {
+            "type": "mc",
+            "wid": "ar02",
+            "prompt": "In 'Wá:s skó:ha thi áhta'' (Go get the shoe), what does thi signal?",
+            "sub": "",
+            "correct": "The article thi is used before nouns in directional/motion contexts",
+            "options": [
+              "The article thi is used before nouns in directional/motion contexts",
+              "thi means 'the' in all contexts",
+              "thi is a verb prefix",
+              "thi signals plural"
+            ],
+            "cm": "Niawenhkó:wa! thi is the directional article — it appears when you're going to get or interact with something. ne is used for simple identification.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "type",
+            "wid": "g01",
+            "prompt": "How do you say 'Hello'?",
+            "sub": "",
+            "correct": "Shé:kon",
+            "alts": [
+              "she:kon",
+              "shekon",
+              "Shékon"
+            ],
+            "cm": "Shé:kon! (Exactly.) You just greeted yourself.",
+            "wm": "That answer is incorrect — try again. Try: Shé:kon"
+          },
+          {
+            "type": "mc",
+            "wid": "g04",
+            "prompt": "Io'nikonhraién:ta'ne literally means 'it makes my mind happy'. What does this tell you about how Kanien'kéha expresses emotion?",
+            "sub": "",
+            "correct": "Emotions are described as embodied experiences — what happens to the mind/body — rather than abstract states",
+            "options": [
+              "Emotions are described as embodied experiences — what happens to the mind/body — rather than abstract states",
+              "Kanien'kéha has no words for emotions",
+              "This expression is borrowed from English",
+              "The word is only used in formal contexts"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is exactly the point. Kanien'kéha describes internal states as physical events — 'it makes the mind happy', not 'I am happy'. This reflects a different ontology of emotion and experience. As Chew, Leonard & Rosenblum (2023) note, reclaiming the language also means reclaiming these ways of knowing.",
+            "wm": "That answer is incorrect — please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "g01",
+            "prompt": "Say this greeting aloud",
+            "sub": "",
+            "word": "Shé:kon",
+            "meaning": "Hello / Greetings",
+            "hint": "Two syllables: SHÉ-kon. Stress on the first. The é is a mid front vowel with a long-ish quality. Warm and open."
+          },
+          {
+            "type": "story",
+            "wid": "g04",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Io'nikonhraién:ta'ne",
+            "meaning": "It makes my mind happy (Wonderful!)",
+            "storyPrompt": "Io'nikonhraién:ta'ne — it makes the mind happy. You have now completed Unit 3. What, in this course so far, has made your mind happy? What has surprised you? What has felt like coming home to something? Write freely — this reflection is just for you."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Unit 4 — O-Class & Ka-Class Nouns",
+    "desc": "Nouns beginning with O and Ka — nature, animals, and the land",
+    "lessons": [
+      {
+        "id": "u3l0",
+        "title": "Lesson — Coming Soon",
+        "icon": "🌲",
+        "sub": "Under development",
+        "intro": [
+          "This unit is coming soon."
+        ],
+        "ped": "",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "What would you want to learn?",
+            "sub": "Your voice matters",
+            "word": "",
+            "meaning": "",
+            "storyPrompt": "This unit is still being built. What words about the land, animals, and nature would you most want to learn? Write them here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Unit 5 — Story, Ceremony & Verb Conjugation",
+    "desc": "Oral tradition, the Thanksgiving Address, and full verb paradigms",
+    "lessons": [
+      {
+        "id": "u4l0",
+        "title": "Lesson — Coming Soon",
+        "icon": "📖",
+        "sub": "Under development",
+        "intro": [
+          "This unit is coming soon."
+        ],
+        "ped": "",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "What would you want to learn?",
+            "sub": "Your voice matters",
+            "word": "",
+            "meaning": "",
+            "storyPrompt": "This unit is still being built. What stories, ceremonies, or phrases from the Thanksgiving Address would you most want to understand? Write your response here."
+          }
+        ]
+      }
+    ]
+  }
+]

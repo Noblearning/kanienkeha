@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanien'kéha — Kanehsatà:ke</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ed:#2C1810;--em:#5C3A1E;--ew:#8B5E3C;
+  --clay:#C4784A;--sand:#E8C99A;--cream:#F5EDD8;
+  --sage:#7A8C6E;--sky:#6B8FA8;--skyl:#A8C4D4;
+  --birch:#F0E6CC;--smoke:#D4C9B0;--cor:#5A8A5A;--wrg:#9A4A3A;
+  --pb:rgba(44,24,16,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;font-family:'Crimson Pro',Georgia,serif;background:var(--cream);color:var(--ed);overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(139,94,60,.06),transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(92,58,30,.04),transparent 50%);pointer-events:none;z-index:0;}
+.bm{height:5px;flex-shrink:0;background:repeating-linear-gradient(90deg,var(--clay) 0 8px,var(--ew) 8px 16px,var(--sand) 16px 20px,var(--sage) 20px 28px,var(--sand) 28px 32px);}
+.screen{display:none;position:relative;z-index:1;min-height:100vh;flex-direction:column;}
+.screen.active{display:flex;}
+.pw{flex:1;overflow-y:auto;padding-bottom:5.5rem;}
+
+/* ── LOGIN ── */
+#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));}
+.lbox{background:white;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
+.lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;}
+.lhero .em{font-size:2.8rem;display:block;margin-bottom:.65rem;}
+.lhero h1{font-family:'Playfair Display',serif;color:var(--sand);font-size:1.5rem;line-height:1.2;}
+.lhero h1 em{color:var(--clay);}
+.lhero p{color:var(--smoke);font-size:.88rem;margin-top:.38rem;font-style:italic;}
+.lbody{padding:1.6rem;}
+.ltabs{display:flex;gap:.45rem;margin-bottom:1.3rem;}
+.ltab{flex:1;padding:.55rem;border:2px solid var(--smoke);border-radius:9px;background:transparent;font-family:'Crimson Pro',serif;font-size:.92rem;color:var(--ew);cursor:pointer;transition:all .14s;}
+.ltab.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.lf{margin-bottom:.85rem;}
+.lf label{display:block;font-size:.86rem;color:var(--ew);margin-bottom:.28rem;font-style:italic;}
+.lf input{width:100%;padding:.68rem .92rem;border:2px solid var(--smoke);border-radius:9px;font-family:'Crimson Pro',serif;font-size:.98rem;color:var(--ed);background:var(--cream);outline:none;transition:border-color .14s;}
+.lf input:focus{border-color:var(--clay);}
+.lerr{font-size:.84rem;color:var(--wrg);margin-bottom:.65rem;min-height:1.2em;font-style:italic;}
+.lbtn{width:100%;padding:.85rem;background:var(--ed);color:var(--sand);border:none;border-radius:11px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background .14s;}
+.lbtn:hover{background:var(--em);}
+.lnote{font-size:.78rem;color:var(--ew);text-align:center;margin-top:.85rem;font-style:italic;}
+
+/* ── BOTTOM NAV ── */
+.bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);}
+.nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.68rem;padding:.18rem .58rem;border-radius:8px;transition:color .13s;min-width:50px;}
+.nb .ni{font-size:1.18rem;line-height:1;}
+.nb.active{color:var(--sand);}
+.nb.active .ni{filter:drop-shadow(0 0 5px rgba(196,120,74,.6));}
+
+/* ── HOME ── */
+.hhero{background:linear-gradient(160deg,var(--ed) 0%,var(--em) 55%,var(--ew) 100%);padding:2.3rem 1.8rem 3.3rem;text-align:center;position:relative;overflow:hidden;}
+.hhero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:35px;background:var(--cream);clip-path:ellipse(55% 100% at 50% 100%);}
+.hhero .hi{font-size:2.7rem;margin-bottom:.65rem;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.28));}
+.hhero h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,5vw,2.4rem);color:var(--sand);letter-spacing:.03em;line-height:1.2;}
+.hhero h1 em{color:var(--clay);}
+.hhero p{color:var(--smoke);font-size:.95rem;margin-top:.52rem;font-style:italic;font-weight:300;}
+.hbody{padding:1.35rem 1.35rem 1.8rem;max-width:480px;margin:0 auto;width:100%;}
+.dbar{background:var(--birch);border:1px solid var(--smoke);border-radius:11px;padding:.82rem 1.15rem;display:flex;align-items:center;gap:.85rem;margin-bottom:1.5rem;box-shadow:0 2px 7px rgba(44,24,16,.07);}
+.dbar .di{font-size:1.75rem;}
+.dbar strong{display:block;font-size:.98rem;color:var(--ed);}
+.dbar span{font-size:.84rem;color:var(--ew);font-style:italic;}
+.sl{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--em);margin-bottom:.95rem;padding-bottom:.35rem;border-bottom:2px solid var(--sand);}
+.uc{background:white;border:1px solid var(--smoke);border-radius:15px;padding:1rem 1.3rem;margin-bottom:.75rem;cursor:pointer;transition:transform .14s,box-shadow .14s,border-color .14s;box-shadow:0 2px 5px rgba(44,24,16,.06);position:relative;overflow:hidden;}
+.uc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--clay);border-radius:15px 0 0 15px;}
+.uc:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(44,24,16,.11);border-color:var(--clay);}
+.uc.done::before{background:var(--sage);}
+.ut{display:flex;justify-content:space-between;align-items:flex-start;}
+.utitle{font-family:'Playfair Display',serif;font-size:1rem;color:var(--ed);flex:1;padding-right:.45rem;}
+.ubadge{font-size:.69rem;padding:2px 8px;border-radius:17px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
+.bn{background:var(--clay);color:white;}.bd{background:var(--sage);color:white;}.bl{background:var(--smoke);color:var(--ew);}.bp{background:var(--sky);color:white;}
+.udesc{font-size:.84rem;color:var(--ew);margin-top:.26rem;font-style:italic;}
+.pt{height:5px;background:var(--pb);border-radius:10px;overflow:hidden;margin-top:.58rem;}
+.pf{height:100%;background:var(--clay);border-radius:10px;transition:width .4s;}
+.pl{font-size:.73rem;color:var(--ew);margin-top:.2rem;}
+
+/* ── SECTION HEADER ── */
+.sh{background:var(--ed);padding:1.1rem 1.4rem;}
+.sh h2{font-family:'Playfair Display',serif;color:var(--sand);font-size:1.15rem;}
+.sh p{color:var(--smoke);font-size:.85rem;margin-top:.26rem;font-style:italic;}
+
+/* ── LESSON LIST ── */
+.llist-wrap{padding:1.2rem 1.35rem;max-width:540px;margin:0 auto;width:100%;}
+.llist-header{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--em);margin-bottom:.95rem;padding-bottom:.35rem;border-bottom:2px solid var(--sand);}
+.ll-card{background:white;border:1px solid var(--smoke);border-radius:13px;padding:.9rem 1.1rem;margin-bottom:.65rem;cursor:pointer;transition:border-color .13s,transform .12s;box-shadow:0 1px 5px rgba(44,24,16,.06);display:flex;align-items:center;gap:.85rem;}
+.ll-card:hover{border-color:var(--clay);transform:translateX(3px);}
+.ll-num{width:36px;height:36px;border-radius:50%;background:var(--birch);border:2px solid var(--sand);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;color:var(--ed);flex-shrink:0;}
+.ll-num.done{background:var(--sage);border-color:var(--sage);color:white;}
+.ll-info{flex:1;}
+.ll-title{font-family:'Playfair Display',serif;font-size:.98rem;color:var(--ed);}
+.ll-desc{font-size:.82rem;color:var(--ew);font-style:italic;margin-top:.12rem;}
+
+/* ── LESSON INTRO ── */
+.li-wrap{padding:1.2rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.li-card{background:white;border-radius:18px;border:1px solid var(--smoke);box-shadow:0 4px 16px rgba(44,24,16,.09);overflow:hidden;margin-bottom:1.2rem;}
+.li-head{background:linear-gradient(135deg,var(--ed),var(--em));padding:1.25rem;color:var(--sand);}
+.li-head .lci{font-size:1.9rem;margin-bottom:.35rem;display:block;}
+.li-head h2{font-family:'Playfair Display',serif;font-size:1.18rem;margin-bottom:.18rem;}
+.li-head p{font-size:.86rem;color:var(--smoke);font-style:italic;}
+.li-body{padding:1.1rem;}
+.li-body p{font-size:.95rem;line-height:1.72;color:var(--ed);margin-bottom:.75rem;}
+.li-body p:last-child{margin-bottom:0;}
+
+/* pedagogical notes */
+.ped-box{border-radius:0 9px 9px 0;padding:.72rem .95rem;margin:.75rem 0;font-size:.84rem;line-height:1.58;}
+.ped-box.sky{background:rgba(107,143,168,.1);border-left:4px solid var(--sky);}
+.ped-box.sage{background:rgba(122,140,110,.1);border-left:4px solid var(--sage);}
+.ped-box.clay{background:rgba(196,120,74,.1);border-left:4px solid var(--clay);}
+.ped-box strong{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.2rem;}
+.ped-box.sky strong{color:var(--sky);}
+.ped-box.sage strong{color:var(--sage);}
+.ped-box.clay strong{color:var(--clay);}
+
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:.8rem 0;}
+.vi{background:var(--birch);border:1px solid var(--sand);border-radius:9px;padding:.58rem;text-align:center;cursor:pointer;transition:border-color .13s;}
+.vi:hover{border-color:var(--clay);}
+.vi .vt{font-family:'Playfair Display',serif;font-size:.97rem;color:var(--ed);display:block;}
+.vi .ve{font-size:.78rem;color:var(--ew);display:block;margin-top:.1rem;font-style:italic;}
+
+/* proficiency bar */
+.prof-wrap{margin-top:.42rem;}
+.prof-label{font-size:.7rem;color:var(--ew);margin-bottom:.2rem;display:flex;justify-content:space-between;}
+.prof-track{height:6px;background:var(--pb);border-radius:10px;overflow:hidden;}
+.prof-fill{height:100%;border-radius:10px;transition:width .4s;}
+.pnone{background:var(--smoke);}.plow{background:#C4784A;}.pmid{background:#B5C4A8;}.phigh{background:#7A8C6E;}
+.prof-note{font-size:.68rem;color:var(--smoke);margin-top:.12rem;font-style:italic;}
+
+/* ── EXERCISE ── */
+.ex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.ex-topbar{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem;}
+.ex-pt{flex:1;height:7px;background:var(--smoke);border-radius:10px;overflow:hidden;}
+.ex-pf{height:100%;background:linear-gradient(90deg,var(--clay),var(--ew));border-radius:10px;transition:width .45s cubic-bezier(.4,0,.2,1);}
+.ex-ctr{font-size:.78rem;color:var(--ew);white-space:nowrap;font-weight:600;}
+.ex-close{background:none;border:none;font-size:1.1rem;color:var(--ew);cursor:pointer;padding:.2rem;line-height:1;}
+.retry-note{background:rgba(196,120,74,.12);border:1px solid rgba(196,120,74,.4);border-radius:9px;padding:.55rem .88rem;font-size:.82rem;color:var(--em);margin-bottom:.88rem;line-height:1.48;}
+.retry-note strong{color:var(--clay);}
+.ex-card{background:white;border-radius:16px;border:1px solid var(--smoke);box-shadow:0 3px 14px rgba(44,24,16,.09);overflow:hidden;}
+.ex-head{background:linear-gradient(135deg,var(--ed),var(--em));padding:.9rem 1.1rem;}
+.ex-type-lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.55);font-weight:700;margin-bottom:.25rem;}
+.ex-q{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--sand);line-height:1.3;}
+.ex-sub{font-size:.84rem;color:var(--smoke);font-style:italic;margin-top:.25rem;}
+.ex-body{padding:1.1rem;}
+
+/* mc */
+.mco{display:flex;flex-direction:column;gap:.55rem;margin-bottom:.88rem;}
+.mcb{background:var(--cream);border:2px solid var(--smoke);border-radius:10px;padding:.78rem .95rem;font-family:'Crimson Pro',serif;font-size:.97rem;color:var(--ed);cursor:pointer;text-align:left;transition:border-color .14s,background .14s;width:100%;}
+.mcb:hover:not(:disabled){border-color:var(--clay);background:white;}
+.mcb.sel{border-color:var(--sky);background:#EEF4F8;}
+.mcb.cor{border-color:var(--cor);background:#EEF4EE;}
+.mcb.wrg{border-color:var(--wrg);background:#F4EEEE;}
+
+/* type / fill */
+.tinput,.fbinp{width:100%;padding:.78rem .95rem;font-family:'Crimson Pro',serif;font-size:1.05rem;border:2px solid var(--smoke);border-radius:10px;background:white;color:var(--ed);outline:none;transition:border-color .14s;margin-bottom:.75rem;}
+.tinput:focus,.fbinp:focus{border-color:var(--clay);}
+.tinput.cor,.fbinp.cor{border-color:var(--cor);background:#EEF4EE;}
+.tinput.wrg,.fbinp.wrg{border-color:var(--wrg);background:#F4EEEE;}
+.kbdnote{background:rgba(107,143,168,.1);border:1px solid var(--skyl);border-radius:8px;padding:.52rem .78rem;font-size:.8rem;color:var(--em);line-height:1.5;margin-bottom:.75rem;}
+.kbdnote a{color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl);}
+
+/* fill-blank */
+.fbs{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--ed);margin-bottom:.55rem;line-height:1.7;}
+.fbi{display:inline-block;min-width:100px;border:none;border-bottom:3px solid var(--clay);font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--ed);background:transparent;outline:none;text-align:center;padding:0 .18rem;}
+.fbi.cor{border-color:var(--cor);}.fbi.wrg{border-color:var(--wrg);}
+
+/* match */
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-bottom:.88rem;}
+.mcol{display:flex;flex-direction:column;gap:.45rem;}
+.mi{background:white;border:2px solid var(--smoke);border-radius:9px;padding:.6rem .75rem;font-size:.9rem;cursor:pointer;transition:border-color .14s,background .13s;text-align:center;color:var(--ed);font-family:'Crimson Pro',serif;min-height:42px;display:flex;align-items:center;justify-content:center;}
+.mi:hover:not(.matched):not(.wm){border-color:var(--clay);}
+.mi.sel{border-color:var(--sky);background:#EEF4F8;}
+.mi.matched{border-color:var(--sage);background:#EEF4EE;opacity:.65;cursor:default;}
+.mi.wm{border-color:var(--wrg);background:#F4EEEE;}
+
+/* audio */
+.apbox{background:var(--birch);border:1px solid var(--sand);border-radius:13px;padding:1.15rem;text-align:center;margin-bottom:.9rem;}
+.apword{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--ed);margin-bottom:.18rem;display:block;}
+.aphint{font-size:.83rem;color:var(--ew);font-style:italic;}
+.rctrl{display:flex;gap:.55rem;justify-content:center;flex-wrap:wrap;margin-bottom:.72rem;}
+.rbtn{padding:.55rem 1.1rem;border-radius:26px;border:2px solid transparent;font-family:'Crimson Pro',serif;font-size:.92rem;cursor:pointer;font-weight:600;transition:all .13s;display:flex;align-items:center;gap:.35rem;}
+.rbtn.rs{background:var(--clay);color:white;}.rbtn.rs:hover{background:var(--ew);}
+.rbtn.rp{background:var(--wrg);color:white;}
+.rbtn.rl{background:var(--sage);color:white;}
+.rbtn:disabled{opacity:.38;cursor:not-allowed;}
+.rstatus{text-align:center;font-size:.83rem;color:var(--ew);font-style:italic;min-height:1.35em;}
+.sass{margin-top:.72rem;display:none;}
+.sass.vis{display:block;}
+.sass p{font-size:.88rem;color:var(--ed);margin-bottom:.55rem;text-align:center;}
+.sbtns{display:flex;gap:.55rem;justify-content:center;}
+.sab{padding:.48rem 1.1rem;border-radius:26px;border:2px solid transparent;font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;font-weight:600;transition:all .13s;}
+.sab.sy{background:var(--sage);color:white;}
+.sab.sn{background:var(--smoke);color:var(--ed);border-color:var(--sand);}
+
+/* story */
+.stcard{background:linear-gradient(135deg,rgba(139,94,60,.07),rgba(122,140,110,.07));border:1px solid var(--sand);border-radius:13px;padding:1.15rem;margin-bottom:.9rem;position:relative;}
+.sqm{font-family:'Playfair Display',serif;font-size:2.8rem;color:var(--clay);opacity:.15;position:absolute;top:.35rem;left:.8rem;line-height:1;}
+.stword{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--ed);display:block;margin-bottom:.18rem;}
+.stmean{font-size:.88rem;color:var(--ew);font-style:italic;}
+.stprompt{font-size:.93rem;color:var(--ed);line-height:1.65;margin-bottom:.75rem;}
+.starea{width:100%;padding:.75rem .88rem;font-family:'Crimson Pro',serif;font-size:.92rem;line-height:1.6;border:2px solid var(--sand);border-radius:10px;background:white;color:var(--ed);resize:vertical;min-height:82px;outline:none;transition:border-color .14s;}
+.starea:focus{border-color:var(--clay);}
+
+/* feedback — INLINE */
+.fb{padding:.82rem 1.05rem;border-radius:11px;margin-top:.82rem;display:none;align-items:flex-start;gap:.55rem;animation:fbin .22s ease;}
+.fb.show{display:flex;}
+.fb.corfb{background:#EEF5EE;border:1px solid var(--cor);}
+.fb.wrgfb{background:#F5EEEE;border:1px solid var(--wrg);}
+.fb.infofb{background:var(--birch);border:1px solid var(--sand);}
+.fb.tryfb{background:rgba(107,143,168,.1);border:1px solid var(--skyl);}
+@keyframes fbin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.fbi2{font-size:1.15rem;flex-shrink:0;}
+.fbt strong{display:block;font-size:.9rem;color:var(--ed);line-height:1.42;}
+.fbt span{font-size:.83rem;color:var(--ew);font-style:italic;display:block;margin-top:.18rem;line-height:1.45;}
+
+/* VARIANT NOTE */
+.var-note{background:rgba(122,140,110,.1);border:1px solid rgba(122,140,110,.4);border-radius:9px;padding:.65rem .88rem;margin-top:.68rem;font-size:.82rem;color:var(--em);line-height:1.52;}
+.var-note strong{color:var(--sage);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.2rem;}
+
+/* submit btn — INLINE */
+.sbtn{display:block;width:100%;padding:.9rem;border:none;border-radius:12px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background .14s,transform .1s;letter-spacing:.03em;margin-top:.9rem;}
+.sbtn.dark{background:var(--ed);color:var(--sand);}
+.sbtn.dark:hover{background:var(--em);transform:translateY(-1px);}
+.sbtn.succ{background:var(--sage);color:white;}
+.sbtn.cont{background:var(--clay);color:white;}
+.sbtn:disabled{opacity:.35;cursor:not-allowed;transform:none;}
+
+/* complete */
+.comp{padding:2rem 1.35rem;text-align:center;max-width:480px;margin:0 auto;width:100%;}
+.cring{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--clay),var(--ew));display:flex;align-items:center;justify-content:center;font-size:2.7rem;margin:0 auto 1.25rem;box-shadow:0 8px 26px rgba(196,120,74,.38);animation:popin .48s cubic-bezier(.34,1.56,.64,1);}
+@keyframes popin{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+.ctitle{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--ed);margin-bottom:.35rem;}
+.csub{font-size:.95rem;color:var(--ew);font-style:italic;margin-bottom:.65rem;}
+.ungrade-note{background:var(--birch);border:1px solid var(--sand);border-radius:11px;padding:.88rem 1.05rem;font-size:.88rem;color:var(--em);line-height:1.58;margin-bottom:1.4rem;}
+.ungrade-note strong{color:var(--clay);}
+.srow{display:flex;gap:.72rem;justify-content:center;margin-bottom:1.4rem;flex-wrap:wrap;}
+.spill{background:white;border:1px solid var(--smoke);border-radius:26px;padding:.48rem .92rem;box-shadow:0 2px 7px rgba(44,24,16,.07);}
+.spill strong{display:block;font-size:1.15rem;color:var(--clay);}
+.spill span{font-size:.74rem;color:var(--ew);}
+
+/* syllabary */
+.stip{background:var(--birch);border:1px solid var(--sand);border-radius:11px;padding:.88rem 1.3rem;margin:1rem 1.35rem .3rem;font-size:.88rem;color:var(--ed);line-height:1.6;}
+.stip strong{color:var(--clay);}
+.stabwrap{display:flex;gap:.42rem;padding:.75rem 1.35rem .38rem;flex-wrap:wrap;}
+.stab{padding:.34rem .88rem;border-radius:17px;border:2px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.87rem;color:var(--ew);cursor:pointer;transition:all .13s;}
+.stab.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:.6rem;padding:.68rem 1.35rem 1rem;}
+.scard{background:white;border:1px solid var(--smoke);border-radius:12px;padding:.8rem .58rem;text-align:center;cursor:pointer;transition:border-color .14s,transform .11s,box-shadow .14s;box-shadow:0 1px 4px rgba(44,24,16,.05);}
+.scard:hover{border-color:var(--clay);transform:translateY(-2px);box-shadow:0 4px 11px rgba(44,24,16,.09);}
+.sc{font-family:'Playfair Display',serif;font-size:1.62rem;color:var(--ed);display:block;line-height:1.1;}
+.sr{font-size:.77rem;color:var(--sky);font-weight:700;display:block;margin-top:.17rem;letter-spacing:.05em;}
+.ss{font-size:.71rem;color:var(--ew);font-style:italic;display:block;margin-top:.07rem;}
+.sipa{font-size:.78rem;color:var(--em);display:block;margin-top:.22rem;font-family:'Crimson Pro',serif;letter-spacing:.02em;}
+.sipa span{color:var(--smoke);font-size:.68rem;}
+.stts{display:inline-flex;align-items:center;gap:.28rem;margin-top:.32rem;background:var(--birch);border:1px solid var(--sand);border-radius:20px;padding:.22rem .62rem;font-size:.72rem;color:var(--ew);cursor:pointer;transition:background .13s,border-color .13s;font-family:'Crimson Pro',serif;}
+.stts:hover{background:var(--sand);border-color:var(--clay);color:var(--ed);}
+.stts.playing{background:var(--clay);border-color:var(--clay);color:white;}
+.tts-note{background:rgba(107,143,168,.1);border:1px solid var(--skyl);border-radius:10px;padding:.62rem .92rem;margin:0 1.35rem .5rem;font-size:.8rem;color:var(--em);line-height:1.52;}
+.tts-note strong{color:var(--sky);}
+
+/* glossary */
+.gswrap{position:relative;margin:.9rem 1.35rem .38rem;}
+.gsic{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);font-size:.92rem;color:var(--ew);}
+.gsearch{width:100%;padding:.7rem .9rem .7rem 2.5rem;border:2px solid var(--smoke);border-radius:11px;font-family:'Crimson Pro',serif;font-size:.96rem;background:white;color:var(--ed);outline:none;transition:border-color .14s;}
+.gsearch:focus{border-color:var(--clay);}
+.galpha{display:flex;flex-wrap:wrap;gap:.26rem;padding:.35rem 1.35rem .65rem;}
+.abtn{padding:.19rem .5rem;border-radius:7px;border:1px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.82rem;color:var(--ew);cursor:pointer;transition:all .11s;}
+.abtn.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.glist{padding:0 1.35rem 1rem;}
+.glg{margin-bottom:1.05rem;}
+.glh{font-family:'Playfair Display',serif;font-size:1rem;color:var(--clay);padding:.2rem 0;border-bottom:1px solid var(--sand);margin-bottom:.48rem;}
+.ge{padding:.62rem .8rem;border-radius:10px;background:white;border:1px solid var(--smoke);margin-bottom:.4rem;cursor:pointer;transition:border-color .14s,box-shadow .14s;}
+.ge:hover{border-color:var(--clay);box-shadow:0 2px 7px rgba(44,24,16,.08);}
+.ge-top{display:flex;align-items:center;gap:.58rem;}
+.gew{font-family:'Playfair Display',serif;font-size:.98rem;color:var(--ed);flex:1;}
+.gee{font-size:.84rem;color:var(--ew);font-style:italic;}
+.gear{color:var(--clay);font-size:.88rem;}
+
+/* resources */
+.rsec{padding:.8rem 1.35rem .18rem;}
+.rstitle{font-family:'Playfair Display',serif;font-size:.96rem;color:var(--em);margin-bottom:.62rem;}
+.rcard{background:white;border:1px solid var(--smoke);border-radius:12px;padding:.88rem .95rem;margin-bottom:.55rem;box-shadow:0 1px 5px rgba(44,24,16,.05);}
+.rctop{display:flex;align-items:flex-start;gap:.65rem;}
+.rci{font-size:1.3rem;flex-shrink:0;margin-top:.07rem;}
+.rct{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);}
+.rca{font-size:.8rem;color:var(--ew);font-style:italic;margin-top:.07rem;}
+.rcd{font-size:.83rem;color:var(--ed);margin-top:.4rem;line-height:1.55;}
+.rl{display:inline-block;margin-top:.45rem;font-size:.8rem;color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl);}
+.rl:hover{color:var(--ed);}
+.rtag{display:inline-block;font-size:.68rem;padding:2px 7px;border-radius:8px;background:var(--birch);border:1px solid var(--sand);color:var(--ew);margin-right:.26rem;margin-top:.3rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
+
+/* modal */
+.movl{display:none;position:fixed;inset:0;z-index:200;background:rgba(44,24,16,.55);backdrop-filter:blur(3px);align-items:flex-end;justify-content:center;}
+.movl.open{display:flex;}
+.mbox{background:var(--cream);border-radius:21px 21px 0 0;width:100%;max-width:560px;max-height:82vh;overflow-y:auto;animation:slideup .28s cubic-bezier(.34,1.2,.64,1);}
+@keyframes slideup{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.mdrag{width:34px;height:4px;background:var(--smoke);border-radius:4px;margin:.82rem auto .35rem;}
+.mhdr{padding:0 1.35rem .82rem;display:flex;align-items:flex-start;justify-content:space-between;}
+.mword{font-family:'Playfair Display',serif;font-size:1.72rem;color:var(--ed);}
+.mmean{font-size:.94rem;color:var(--ew);font-style:italic;margin-top:.1rem;}
+.mcl{background:none;border:none;font-size:1.4rem;color:var(--ew);cursor:pointer;padding:.18rem;}
+.msec{padding:.6rem 1.35rem;}
+.mstitle{font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--clay);font-weight:700;margin-bottom:.48rem;}
+.mbody{font-size:.92rem;color:var(--ed);line-height:1.65;}
+.mvars{margin-top:.65rem;}
+.mvartable{width:100%;border-collapse:collapse;font-size:.88rem;}
+.mvartable th{text-align:left;padding:.38rem .62rem;background:var(--em);color:var(--sand);font-size:.78rem;}
+.mvartable th:first-child{border-radius:7px 0 0 0;}.mvartable th:last-child{border-radius:0 7px 0 0;}
+.mvartable td{padding:.44rem .62rem;border-bottom:1px solid var(--sand);}
+.mvartable tr:last-child td{border-bottom:none;}
+.mvartable tr:nth-child(even) td{background:var(--birch);}
+.mvartable td:first-child{color:var(--sage);font-size:.8rem;font-weight:700;}
+.mvartable td:nth-child(2){font-family:'Playfair Display',serif;color:var(--ed);}
+.mvartable td:nth-child(3){color:var(--ew);font-size:.8rem;font-style:italic;}
+.ftable{width:100%;border-collapse:collapse;font-size:.9rem;}
+.ftable th{text-align:left;padding:.4rem .65rem;background:var(--ed);color:var(--sand);font-weight:600;font-size:.8rem;}
+.ftable th:first-child{border-radius:8px 0 0 0;}.ftable th:last-child{border-radius:0 8px 0 0;}
+.ftable td{padding:.46rem .65rem;border-bottom:1px solid var(--sand);}
+.ftable tr:last-child td{border-bottom:none;}
+.ftable tr:nth-child(even) td{background:var(--birch);}
+.ftable td:first-child{color:var(--ew);font-style:italic;font-size:.83rem;}
+.ftable td:last-child{font-family:'Playfair Display',serif;color:var(--ed);}
+.mdiv{height:1px;background:var(--sand);margin:.18rem 1.35rem;}
+.mcite{font-size:.78rem;color:var(--sky);margin-top:.5rem;font-style:italic;}
+.mcite a{color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl);}
+.mpad{padding-bottom:2rem;}
+
+@media(max-width:380px){.mi{font-size:.78rem;padding:.45rem;}.sgrid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr));}}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="screen active">
+  <div class="bm"></div>
+  <div class="lbox">
+    <div class="lhero">
+      <span class="em">🌿</span>
+      <h1>Kanien'kéha<br><em>Kanehsatà:ke Dialect</em></h1>
+      <p>Sign in to continue your journey</p>
+    </div>
+    <div class="lbody">
+      <div class="ltabs">
+        <button class="ltab active" id="tsi" onclick="switchTab('si')">Sign In</button>
+        <button class="ltab" id="treg" onclick="switchTab('reg')">Register</button>
+      </div>
+      <div id="bsi">
+        <div class="lf"><label>Name or username</label><input id="si-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username"></div>
+        <div class="lf"><label>Passcode (4+ characters)</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password"></div>
+        <div class="lerr" id="si-e"></div>
+        <button class="lbtn" onclick="doSignIn()">Enter the Language Path</button>
+      </div>
+      <div id="breg" style="display:none">
+        <div class="lf"><label>Choose a username</label><input id="reg-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username"></div>
+        <div class="lf"><label>Choose a passcode (4+)</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password"></div>
+        <div class="lerr" id="reg-e"></div>
+        <button class="lbtn" onclick="doRegister()">Begin My Journey</button>
+      </div>
+      <p class="lnote">Progress saved on this device only. No data leaves your browser.</p>
+    </div>
+  </div>
+</div>
+
+<!-- HOME -->
+<div id="home" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="hhero">
+      <span class="hi">🌿</span>
+      <h1>Kanien'kéha<br><em>Kanehsatà:ke</em></h1>
+      <p>Carry the language forward, one word at a time</p>
+    </div>
+    <div class="hbody">
+      <div class="dbar"><span class="di">📅</span><div><strong id="dc">0 days</strong><span id="du">Welcome</span></div></div>
+      <div class="sl">Your Journey</div>
+      <div class="uc" id="uc0" onclick="openUnit(0)">
+        <div class="ut"><span class="utitle">Unit 1 — Who We Are: Pronouns &amp; People</span><span class="ubadge bn" id="ub0">Start</span></div>
+        <p class="udesc">Free pronouns, singular people nouns — the foundation of every sentence</p>
+        <div class="pt"><div class="pf" id="uf0" style="width:0%"></div></div>
+        <div class="pl" id="ul0">Not started</div>
+      </div>
+      <div class="uc" id="uc1" onclick="openUnit(1)">
+        <div class="ut"><span class="utitle">Unit 2 — Family &amp; Kinship</span><span class="ubadge bl" id="ub1">Locked</span></div>
+        <p class="udesc">Kinship nouns in my/your/his/her forms — relationship as grammar</p>
+        <div class="pt"><div class="pf" id="uf1" style="width:0%"></div></div>
+        <div class="pl" id="ul1">Complete Unit 1 first</div>
+      </div>
+      <div class="uc" onclick="openUnit(2)">
+        <div class="ut"><span class="utitle">Unit 3 — The Land Around Us</span><span class="ubadge bn">Start</span></div>
+        <p class="udesc">Kanehsatà:ke geography, nature, colours, shapes</p>
+      </div>
+      <div class="uc" onclick="openUnit(3)">
+        <div class="ut"><span class="utitle">Unit 4 — Animals, Food &amp; Clans</span><span class="ubadge bn">Start</span></div>
+        <p class="udesc">Wild &amp; domestic animals, fruits, foods, and the clan system</p>
+      </div>
+      <div class="uc" onclick="openUnit(4)">
+        <div class="ut"><span class="utitle">Unit 5 — Story, Ceremony &amp; Verbs</span><span class="ubadge bn">Start</span></div>
+        <p class="udesc">Oral tradition, the Thanksgiving Address, and command verbs</p>
+      </div>
+
+      <div style="margin-top:1.4rem;background:var(--birch);border:1px solid var(--sand);border-radius:11px;padding:.85rem 1rem;">
+        <p style="font-size:.82rem;line-height:1.62;color:var(--ew);"><strong style="color:var(--clay);display:block;margin-bottom:.22rem;">About this content &amp; its foundations</strong>
+        Vocabulary drawn from the curriculum by <strong>Onwá:ri Tekahawáhkwen Mary McDonald</strong>, Mohawk Language Custodian Association (Kontinónhstats), Kanehsatà:ke — home of the oldest spoken Mohawk dialect. <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a><br><br>
+        This app draws on critical language pedagogy from <strong>García &amp; Li Wei</strong> (translanguaging), <strong>Flores &amp; Rosa</strong> (raciolinguistics), <strong>McCarty &amp; Lee</strong> (culturally sustaining/revitalizing pedagogy), <strong>Freire</strong> (literacy as liberation), and <strong>Chew, Leonard &amp; Rosenblum</strong> (decolonizing Indigenous language pedagogies). All dialect variants are treated as equally valid — see any word entry for community attribution.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UNIT LESSON LIST -->
+<div id="unit-screen" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh" id="unit-sh"><h2 id="unit-sh-h"></h2><p id="unit-sh-p"></p></div>
+    <div class="llist-wrap">
+      <div class="llist-header">Lessons in this unit</div>
+      <div id="lesson-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- LESSON INTRO -->
+<div id="lesson-screen" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2 id="ls-h"></h2><p id="ls-p"></p></div>
+    <div class="li-wrap">
+      <div class="li-card" id="li-card"></div>
+      <button class="sbtn cont" onclick="startExercises()">Begin Practice →</button>
+    </div>
+  </div>
+</div>
+
+<!-- EXERCISE -->
+<div id="exercise" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="ex-wrap">
+      <div class="ex-topbar">
+        <button class="ex-close" onclick="goHome()">✕</button>
+        <div class="ex-pt"><div class="ex-pf" id="epf" style="width:0%"></div></div>
+        <span class="ex-ctr" id="ectr">1/10</span>
+      </div>
+      <div id="retry-note" class="retry-note" style="display:none"></div>
+      <div class="ex-card">
+        <div class="ex-head">
+          <div class="ex-type-lbl" id="etlbl"></div>
+          <div class="ex-q" id="eq"></div>
+          <div class="ex-sub" id="esub"></div>
+        </div>
+        <div class="ex-body" id="exbody"></div>
+      </div>
+      <div class="fb" id="fbbar">
+        <span class="fbi2" id="fbic"></span>
+        <div class="fbt"><strong id="fbtitle"></strong><span id="fbdet"></span></div>
+      </div>
+      <div id="varnotediv"></div>
+      <button class="sbtn dark" id="actbtn" onclick="handleAction()" disabled>Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- COMPLETE -->
+<div id="complete" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="comp">
+      <div class="cring">🌿</div>
+      <h1 class="ctitle">Tho niioht!</h1>
+      <p class="csub" id="csub">Lesson complete</p>
+      <div class="ungrade-note" id="ungrade-msg"></div>
+      <div class="srow">
+        <div class="spill"><strong id="sacc">--%</strong><span>Self-reflection</span></div>
+        <div class="spill"><strong id="sdays">--</strong><span>Days learning</span></div>
+      </div>
+      <button class="sbtn dark" onclick="goHome()">Back to Journey</button>
+    </div>
+  </div>
+</div>
+
+<!-- SYLLABARY -->
+<div id="syllabary" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanehsatà:ke phonology — tap any card for a tip</p></div>
+    <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — e.g. Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>. No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
+    <div class="tts-note"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. <strong>No browser currently has a Kanien'kéha voice</strong> — these clips use carefully chosen phonetic approximations designed to produce the closest possible sound. They are a starting guide only. Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
+    <div class="stabwrap">
+      <button class="stab active" onclick="setSylTab('vowels',this)">Vowels</button>
+      <button class="stab" onclick="setSylTab('consonants',this)">Consonants</button>
+      <button class="stab" onclick="setSylTab('tone',this)">Tone &amp; Length</button>
+    </div>
+    <div class="sgrid" id="sgrid"></div>
+  </div>
+</div>
+
+<!-- GLOSSARY -->
+<div id="glossary" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2>Vocabulary</h2></div>
+    <div class="gswrap"><span class="gsic">🔍</span><input class="gsearch" id="gsearch" type="text" placeholder="Search Kanien'kéha or English…" oninput="filterGloss()" autocorrect="off" autocapitalize="off"></div>
+    <div class="galpha" id="galpha"></div>
+    <div class="glist" id="glist"></div>
+  </div>
+</div>
+
+<!-- RESOURCES -->
+<div id="resources" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2>Resources &amp; Further Learning</h2><p>Community-created, educator-curated — all links open in a new tab</p></div>
+    <div class="rsec">
+      <div class="rstitle">🌐 Interactive Learning</div>
+      <div class="rcard"><div class="rctop"><span class="rci">🌐</span><div><div class="rct">Kontinónhstats — 40 Online Lessons</div><div class="rca">Mary McDonald · Mohawk Language Custodian Association · Kanehsatà:ke</div></div></div><div class="rcd">Source of this app's vocabulary. 40 structured lessons with colour-coded syllables and audio from Kanehsatà:ke speakers.</div><a class="rl" href="https://www.kanehsatakevoices.com/lessons/lesson-1/" target="_blank" rel="noopener">Start at Lesson 1 ↗</a><br><span class="rtag">Free</span><span class="rtag">Audio</span><span class="rtag">Kanehsatà:ke</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🌐</span><div><div class="rct">FirstVoices — Kanien'kéha (Mohawk)</div><div class="rca">Kanien'kehá:ka community · International Indigenous language platform</div></div></div><div class="rcd">Community-driven archive with words, audio, stories, songs, games, and a keyboard for typing special characters.</div><a class="rl" href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener">firstvoices.com ↗</a> &nbsp;<a class="rl" href="https://www.firstvoices.com/kanienkeha-mohawk-en/stories" target="_blank" rel="noopener">Stories ↗</a> &nbsp;<a class="rl" href="https://www.firstvoices.com/kanienkeha-mohawk-en/keyboards" target="_blank" rel="noopener">Keyboard ↗</a><br><span class="rtag">Free</span><span class="rtag">Audio</span><span class="rtag">Stories</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🎮</span><div><div class="rct">Learning With Tsítha</div><div class="rca">TTO / Ontario Trillium Foundation</div></div></div><div class="rcd">Animated stories and word games for Kanyen'kehá:ka children and families. Best experienced together.</div><a class="rl" href="https://tsitha.ca" target="_blank" rel="noopener">tsitha.ca ↗</a><br><span class="rtag">Free</span><span class="rtag">Children</span><span class="rtag">Families</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🌐</span><div><div class="rct">Mohawk Language Learning Resources (OER)</div><div class="rca">eCampusOntario · Beginner level</div></div></div><a class="rl" href="https://ecampusontario.pressbooks.pub/mohawklanguageresource/" target="_blank" rel="noopener">ecampusontario.pressbooks.pub ↗</a><br><span class="rtag">Free</span><span class="rtag">OER</span><span class="rtag">Beginner</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🌐</span><div><div class="rct">Onkwawenna Kentyohkwa</div><div class="rca">Six Nations / Brantford, Ontario</div></div></div><div class="rcd">Adult immersion programs and online lessons. Six Nations territory.</div><a class="rl" href="https://onkwawenna.info/" target="_blank" rel="noopener">onkwawenna.info ↗</a><br><span class="rtag">Immersion</span><span class="rtag">Adults</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🌐</span><div><div class="rct">Kanien'kéha Online (KOR)</div><div class="rca">Kahnawà:ke (note: Kahnawà:ke dialect)</div></div></div><a class="rl" href="https://www.kanienkeha.net" target="_blank" rel="noopener">kanienkeha.net ↗</a><br><span class="rtag">Free</span><span class="rtag">Audio</span><span class="rtag">Kahnawà:ke</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🎮</span><div><div class="rct">Kingston Native Centre — Language Programs</div><div class="rca">KNCLN · Kingston, Ontario</div></div></div><a class="rl" href="https://www.kncln.ca/services/language-programs" target="_blank" rel="noopener">kncln.ca ↗</a><br><span class="rtag">Free</span><span class="rtag">Video</span></div>
+    </div>
+    <div class="rsec">
+      <div class="rstitle">📺 Video — Stories &amp; Cultural Content</div>
+      <div class="rcard"><div class="rctop"><span class="rci">📺</span><div><div class="rct">Tóta tánon Ohkwá:ri — Puppet Show</div><div class="rca">Kanien'kehá:ka Onkwawén:na Raotitióhkwa · Kahnawà:ke</div></div></div><a class="rl" href="https://www.youtube.com/playlist?list=PLprBHjQ0h6PDNiIbtKwxagKGXdb4Xwzkm" target="_blank" rel="noopener">Watch playlist ↗</a><br><span class="rtag">Free</span><span class="rtag">Kahnawà:ke</span><span class="rtag">Immersion</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">📺</span><div><div class="rct">Ohén:ton Karihwatéhkwen — Thanksgiving Address</div><div class="rca">Animated · Kontinónhstats · Kanehsatà:ke</div></div></div><a class="rl" href="https://www.youtube.com/watch?v=pqMomjdi-GQ" target="_blank" rel="noopener">Watch ↗</a> &nbsp;<a class="rl" href="https://www.youtube.com/watch?v=jNyUchJT8uk" target="_blank" rel="noopener">Creation Story ↗</a> &nbsp;<a class="rl" href="https://www.youtube.com/watch?v=7e_pO2VPjBE" target="_blank" rel="noopener">Beading with Tota ↗</a><br><span class="rtag">Free</span><span class="rtag">Oral Tradition</span></div>
+    </div>
+    <div class="rsec">
+      <div class="rstitle">🎙️ Audio &amp; Podcast</div>
+      <div class="rcard"><div class="rctop"><span class="rci">🎙️</span><div><div class="rct">Tsi Niiá:wens — All Kanien'kéha Radio Show</div><div class="rca">RKR / Kontinónhstats · Kanehsatà:ke</div></div></div><a class="rl" href="https://on.soundcloud.com/5FkRx3tVNYENVw6H9" target="_blank" rel="noopener">SoundCloud ↗</a><br><span class="rtag">Free</span><span class="rtag">Immersion</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🎙️</span><div><div class="rct">KOR Podcast</div><div class="rca">Kanien'kehá:ka Onkwawén:na Raotitióhkwa · Kahnawà:ke</div></div></div><a class="rl" href="https://www.korkahnawake.org/kor-podcast" target="_blank" rel="noopener">korkahnawake.org ↗</a><br><span class="rtag">Free</span><span class="rtag">Kahnawà:ke</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">📻</span><div><div class="rct">CKRK — La Voix du Peuple</div><div class="rca">Kahnawà:ke Community Radio</div></div></div><a class="rl" href="http://www.ckrk.com" target="_blank" rel="noopener">ckrk.com ↗</a><br><span class="rtag">Radio</span><span class="rtag">Immersion</span></div>
+    </div>
+    <div class="rsec">
+      <div class="rstitle">📖 Reference — Curated by Queen's University Library</div>
+      <div class="rcard"><div class="rctop"><span class="rci">📚</span><div><div class="rct">Kanyen'kéha (Mohawk) Resources Guide</div><div class="rca">Queen's University Library · Updated Feb 2026</div></div></div><a class="rl" href="https://guides.library.queensu.ca/indigenous-languages/mohawk" target="_blank" rel="noopener">guides.library.queensu.ca ↗</a><br><span class="rtag">Academic</span><span class="rtag">Curated</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">📖</span><div><div class="rct">Webster's Mohawk-English Thesaurus Dictionary (2008)</div></div></div><a class="rl" href="https://ocul-qu.primo.exlibrisgroup.com/permalink/01OCUL_QU/r9dor2/alma9952403668505158" target="_blank" rel="noopener">Queen's Library ↗</a><br><span class="rtag">Dictionary</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">📖</span><div><div class="rct">Kanyen'keha Tewatati — Let's Speak Mohawk (1993)</div><div class="rca">UWO Centre for Research &amp; Teaching of Canadian Native Languages</div></div></div><a class="rl" href="https://ocul-qu.primo.exlibrisgroup.com/permalink/01OCUL_QU/1bso4gg/alma9938040553405158" target="_blank" rel="noopener">Queen's Library ↗</a><br><span class="rtag">Book</span><span class="rtag">Beginner</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">📄</span><div><div class="rct">Ohén:ton Karihwatéhkwen — Thanksgiving Address (PDF)</div><div class="rca">Smithsonian / NMAI</div></div></div><a class="rl" href="https://www.americanindian.si.edu/sites/1/files/pdf/education/thanksgiving_address.pdf" target="_blank" rel="noopener">Download PDF ↗</a><br><span class="rtag">Oral Tradition</span><span class="rtag">Free</span></div>
+    </div>
+    <div class="rsec" style="padding-bottom:1.5rem;">
+      <div class="rstitle">🏫 Community Programs</div>
+      <div class="rcard"><div class="rctop"><span class="rci">🏫</span><div><div class="rct">Kanatsiohareke Mohawk Community</div><div class="rca">Mohawk Valley, New York</div></div></div><a class="rl" href="https://www.mohawkcommunity.com" target="_blank" rel="noopener">mohawkcommunity.com ↗</a><br><span class="rtag">Immersion</span><span class="rtag">Community</span></div>
+      <div class="rcard"><div class="rctop"><span class="rci">🏫</span><div><div class="rct">Akwesasne Freedom School</div></div></div><div class="rcd">Community school with full Kanien'kéha immersion, operating on Haudenosaunee values.</div><span class="rtag">School</span><span class="rtag">Immersion</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bnav" id="bnav" style="display:none">
+  <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni">🏠</span>Journey</button>
+  <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni">🔤</span>Sounds</button>
+  <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni">📖</span>Words</button>
+  <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni">📚</span>Resources</button>
+</nav>
+
+<!-- WORD MODAL -->
+<div class="movl" id="wmodal" onclick="closeModalOverlay(event)">
+  <div class="mbox">
+    <div class="mdrag"></div>
+    <div class="mhdr">
+      <div><div class="mword" id="mword"></div><div class="mmean" id="mmean"></div></div>
+      <button class="mcl" onclick="closeModal()">✕</button>
+    </div>
+    <div class="mdiv"></div>
+    <div class="msec"><div class="mstitle">About this word</div><div class="mbody" id="mnotes"></div>
+      <div id="mvars-container" style="display:none">
+        <div class="mstitle" style="margin-top:.75rem">Dialect variants</div>
+        <div class="mvars"><table class="mvartable"><thead><tr><th>Community</th><th>Form</th><th>Note</th></tr></thead><tbody id="mvarsbody"></tbody></table></div>
+      </div>
+      <div class="prof-wrap" id="mprofwrap" style="margin-top:.75rem"></div>
+      <div class="mcite" id="mcite"></div>
+    </div>
+    <div id="mformssec" style="display:none">
+      <div class="mdiv"></div>
+      <div class="msec"><div class="mstitle">Possessive forms</div><table class="ftable"><thead><tr><th>Relation</th><th>Kanien'kéha</th></tr></thead><tbody id="mformsbody"></tbody></table></div>
+    </div>
+    <div class="mpad"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LOCAL PROFILE SYSTEM
+   Migration to backend: replace getUsers/saveUsers with API calls.
+   All UI logic stays the same.
+   ══════════════════════════════════════════════════════════ */
+const SK='kk_v4',LK='kk_lu_v4';
+function getUsers(){try{return JSON.parse(localStorage.getItem(SK)||'{}')}catch{return{}}}
+function saveUsers(u){localStorage.setItem(SK,JSON.stringify(u));}
+function saveUD(n,d){const u=getUsers();u[n.toLowerCase()]=d;saveUsers(u);}
+let CU=null;
+
+function switchTab(t){
+  document.getElementById('bsi').style.display=t==='si'?'':'none';
+  document.getElementById('breg').style.display=t==='reg'?'':'none';
+  document.getElementById('tsi').classList.toggle('active',t==='si');
+  document.getElementById('treg').classList.toggle('active',t==='reg');
+}
+function doSignIn(){
+  const n=document.getElementById('si-n').value.trim(),p=document.getElementById('si-p').value,e=document.getElementById('si-e');
+  if(!n||p.length<4){e.textContent='Please enter your name and a passcode of 4+ characters.';return;}
+  const users=getUsers(),k=n.toLowerCase();
+  if(!users[k]){e.textContent='No account found — please register first.';return;}
+  if(users[k].passcode!==p){e.textContent='Incorrect passcode.';return;}
+  e.textContent='';loginAs(n,users[k]);
+}
+function doRegister(){
+  const n=document.getElementById('reg-n').value.trim(),p=document.getElementById('reg-p').value,e=document.getElementById('reg-e');
+  if(!n||p.length<4){e.textContent='Please choose a name and passcode of 4+ characters.';return;}
+  const users=getUsers(),k=n.toLowerCase();
+  if(users[k]){e.textContent='That name is taken — please choose another or sign in.';return;}
+  e.textContent='';
+  const d={passcode:p,daysLogged:[],unitProgress:{},lessonProgress:{},proficiency:{}};
+  users[k]=d;saveUsers(users);loginAs(n,d);
+}
+function loginAs(name,data){
+  CU={name,data};
+  localStorage.setItem(LK,name.toLowerCase());
+  if(!data.proficiency)data.proficiency={};
+  if(!data.lessonProgress)data.lessonProgress={};
+  const today=new Date().toDateString();
+  if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
+  document.getElementById('bnav').style.display='flex';
+  updateHomeUI();navTo('home');
+}
+
+/* ══════════════════════════════════════════════════════════
+   PROFICIENCY (running avg last 10)
+   ══════════════════════════════════════════════════════════ */
+function recProf(id,correct){
+  if(!CU)return;
+  const p=CU.data.proficiency;
+  if(!p[id])p[id]=[];
+  p[id].push(correct?1:0);
+  if(p[id].length>10)p[id]=p[id].slice(-10);
+  saveUD(CU.name,CU.data);
+}
+function getProf(id){
+  if(!CU||!CU.data.proficiency[id])return null;
+  const a=CU.data.proficiency[id];
+  return{pct:Math.round(a.reduce((x,y)=>x+y,0)/10*100),count:a.length};
+}
+function profHTML(id){
+  const p=getProf(id);
+  if(!p)return'<div class="prof-note">Not yet practiced</div>';
+  const cls=p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone';
+  return`<div class="prof-label"><span>Proficiency</span><span>${p.pct}%</span></div>
+  <div class="prof-track"><div class="prof-fill ${cls}" style="width:${p.pct}%"></div></div>
+  <div class="prof-note">${p.count} of 10 recent attempt${p.count!==1?'s':''} tracked</div>`;
+}
+
+/* ══════════════════════════════════════════════════════════
+   NAV
+   ══════════════════════════════════════════════════════════ */
+function navTo(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+  const nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('active');
+  window.scrollTo(0,0);
+  if(id==='glossary')renderGloss();
+  if(id==='syllabary')renderSyl('vowels');
+}
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+function goHome(){updateHomeUI();navTo('home');}
+
+/* ══════════════════════════════════════════════════════════
+   HOME UI
+   ══════════════════════════════════════════════════════════ */
+function updateHomeUI(){
+  if(!CU)return;
+  const days=CU.data.daysLogged.length;
+  document.getElementById('dc').textContent=days+(days===1?' day of learning':' days of learning');
+  document.getElementById('du').textContent='Welcome back, '+CU.name;
+  [0,1].forEach(i=>{
+    const p=CU.data.unitProgress[i]||0;
+    document.getElementById('uf'+i).style.width=p+'%';
+    const lp=CU.data.lessonProgress['u'+i]||{};
+    const dl=UNITS[i]?Object.values(lp).filter(v=>v>=100).length:0;
+    const tl=UNITS[i]?UNITS[i].lessons.length:0;
+    if(p<=0){document.getElementById('ul'+i).textContent='Not started';setBadge(i,'Start','bn');}
+    else if(dl>=tl&&tl>0){document.getElementById('ul'+i).textContent='Complete ✓';setBadge(i,'✓ Done','bd');}
+    else{document.getElementById('ul'+i).textContent=dl+' / '+tl+' lessons done';setBadge(i,'Continue','bp');}
+  });
+  // Unit 2 lock note (testing: show as accessible but note it)
+  document.getElementById('ul1').textContent=(CU.data.unitProgress[0]||0)<100?'Complete Unit 1 first':'';
+}
+function setBadge(i,t,c){const b=document.getElementById('ub'+i);if(b){b.textContent=t;b.className='ubadge '+c;}}
+
+/* ══════════════════════════════════════════════════════════
+   DATA — loaded from external JSON files at runtime.
+   ══════════════════════════════════════════════════════════
+   FILE LAYOUT (all files sit in the same folder as index.html):
+     data_variants.json   — dialect variant table
+     data_glossary.json   — vocabulary entries (GLOSS)
+     data_units.json      — unit/lesson/exercise structure (UNITS)
+     data_syllabary.json  — syllabary entries (SYL)
+
+   EDITING CONTENT:
+     Open any data_*.json file in a text editor to add words,
+     lessons, or exercises. The app reloads fresh data every time
+     the page loads — no recompile needed.
+
+   LOCAL FILE FALLBACK:
+     Browsers block fetch() for local file:// URLs (CORS policy).
+     If you open index.html directly from disk, the app detects
+     this and uses the inline FALLBACK_DATA below instead.
+     When served from any web server (even "npx serve ." locally),
+     the external JSON files are used automatically.
+
+   TO RUN LOCALLY WITH A SERVER (recommended):
+     Option A — Node:  npx serve .    (then open http://localhost:3000)
+     Option B — Python: python3 -m http.server 8000
+     Option C — VS Code: install "Live Server" extension, click "Go Live"
+   ══════════════════════════════════════════════════════════ */
+
+let VARIANTS={}, GLOSS=[], UNITS=[], SYL={};
+
+/* ── FALLBACK DATA (used when running as local file://) ── */
+/* This is a snapshot of the JSON files. If you edit the JSON files,
+   also update this fallback so local-file users see the same content. */
+const FALLBACK_DATA = null; // Set to object when needed — see README
+
+async function loadData() {
+  const isLocalFile = location.protocol === 'file:';
+  showLoadingScreen(true);
+  if (isLocalFile && FALLBACK_DATA) {
+    VARIANTS = FALLBACK_DATA.variants || {};
+    GLOSS    = FALLBACK_DATA.glossary || [];
+    UNITS    = FALLBACK_DATA.units    || [];
+    SYL      = FALLBACK_DATA.syllabary|| {};
+    showLoadingScreen(false);
+    return;
+  }
+  if (isLocalFile) {
+    // No fallback provided — show helpful message
+    showLoadingScreen(false);
+    showDataError();
+    return;
+  }
+  try {
+    const base = location.href.replace(/\/[^\/]*$/, '');
+    const [v, g, u, s] = await Promise.all([
+      fetch(base + '/data_variants.json').then(r => { if(!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch(base + '/data_glossary.json').then(r => { if(!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch(base + '/data_units.json').then(r    => { if(!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch(base + '/data_syllabary.json').then(r=> { if(!r.ok) throw new Error(r.status); return r.json(); }),
+    ]);
+    VARIANTS = v;
+    GLOSS    = g;
+    UNITS    = u;
+    SYL      = s;
+    showLoadingScreen(false);
+  } catch(err) {
+    console.error('Data load failed:', err);
+    showLoadingScreen(false);
+    showDataError(err.message);
+  }
+}
+
+function showLoadingScreen(show) {
+  let el = document.getElementById('loading-screen');
+  if (show) {
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'loading-screen';
+      el.style.cssText = [
+        'position:fixed','inset:0','z-index:500','display:flex',
+        'flex-direction:column','align-items:center','justify-content:center',
+        'background:linear-gradient(160deg,#2C1810,#5C3A1E)',
+        'color:#E8C99A','font-family:\'Crimson Pro\',serif','gap:1rem'
+      ].join(';');
+      el.innerHTML = '<div style="font-size:3rem">🌿</div>'
+        + '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem">Kanien\'kéha</div>'
+        + '<div style="font-size:.9rem;opacity:.7;font-style:italic">Loading content…</div>';
+      document.body.appendChild(el);
+    }
+    el.style.display = 'flex';
+  } else {
+    if (el) el.style.display = 'none';
+  }
+}
+
+function showDataError(detail) {
+  const isLocalFile = location.protocol === 'file:';
+  const el = document.getElementById('loading-screen') || document.createElement('div');
+  el.id = 'loading-screen';
+  el.style.cssText = [
+    'position:fixed','inset:0','z-index:500','display:flex',
+    'flex-direction:column','align-items:center','justify-content:center',
+    'background:linear-gradient(160deg,#2C1810,#5C3A1E)',
+    'padding:2rem','text-align:center'
+  ].join(';');
+  const msg = isLocalFile
+    ? `<p style="color:#E8C99A;font-size:1rem;line-height:1.7;max-width:360px">
+        To run this app, you need a local web server.<br><br>
+        <strong style="color:#C4784A">Easiest options:</strong><br>
+        • Open this folder in VS Code → click <em>Go Live</em><br>
+        • In a terminal: <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px">npx serve .</code><br>
+        • Or: <code style="background:rgba(255,255,255,.1);padding:2px 6px;border-radius:4px">python3 -m http.server 8000</code><br><br>
+        Then open <strong>http://localhost:3000</strong> (or :8000) in your browser.
+      </p>`
+    : `<p style="color:#E8C99A;font-size:1rem;line-height:1.7;max-width:360px">
+        Could not load content files.<br>
+        Make sure <em>data_*.json</em> files are in the same folder as index.html.<br>
+        <span style="opacity:.6;font-size:.85rem">${detail||''}</span>
+      </p>`;
+  el.innerHTML = '<div style="font-size:2.5rem;margin-bottom:.75rem">🌿</div>'
+    + '<div style="font-family:\'Playfair Display\',serif;font-size:1.3rem;color:#E8C99A;margin-bottom:.5rem">Kanien\'kéha</div>'
+    + msg;
+  if (!el.parentElement) document.body.appendChild(el);
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   EXERCISE ENGINE
+   ══════════════════════════════════════════════════════════ */
+let CUi=0,CLi=0;
+let EX={pool:[],rpool:[],done:0,total:0,current:null,
+        answered:false,attempts:0,correct:0,scoreable:0,
+        mr:null,chunks:[],aurl:null};
+let mSel=null,mPairs=0;
+let kbShown=false;
+
+function openUnit(idx){
+  CUi=idx;
+  const u=UNITS[idx];
+  document.getElementById('unit-sh-h').textContent=u.title;
+  document.getElementById('unit-sh-p').textContent=u.desc;
+  const lp=CU?CU.data.lessonProgress['u'+idx]||{}:{};
+  document.getElementById('lesson-list').innerHTML=u.lessons.map((l,i)=>{
+    const done=(lp[l.id]||0)>=100;
+    return`<div class="ll-card" onclick="openLesson(${idx},${i})">
+      <div class="ll-num${done?' done':''}">${done?'✓':(i+1)}</div>
+      <div class="ll-info"><div class="ll-title">${l.title}</div><div class="ll-desc">${l.sub}</div></div>
+      <span style="color:var(--clay);font-size:.9rem">›</span>
+    </div>`;
+  }).join('');
+  showScreen('unit-screen');
+}
+
+function openLesson(ui,li){
+  CUi=ui;CLi=li;
+  const u=UNITS[ui],l=u.lessons[li];
+  document.getElementById('ls-h').textContent=l.title;
+  document.getElementById('ls-p').textContent=u.title;
+  const vi=l.vocabIds.map(id=>{const w=GLOSS.find(g=>g.id===id);return w?`<div class="vi" onclick="openModal('${w.id}')"><span class="vt">${w.target}</span><span class="ve">${w.english}</span></div>`:''}).join('');
+  document.getElementById('li-card').innerHTML=`
+    <div class="li-head"><span class="lci">${l.icon}</span><h2>${l.title}</h2><p>${l.sub} · Tap any word to explore it. All words link to source lessons.</p></div>
+    <div class="li-body">
+      ${l.intro.map(p=>`<p>${p}</p>`).join('')}
+      ${l.ped?`<div class="ped-box sky"><strong>Why this sequence?</strong>${l.ped}</div>`:''}
+      ${vi?`<div class="vgrid">${vi}</div>`:''}
+      ${u.lessons[li].vocabIds.length?`<p style="font-size:.78rem;color:var(--ew);font-style:italic;margin-top:.5rem;">Vocabulary from <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Kontinónhstats ↗</a> · Kanehsatà:ke dialect · Curriculum: Onwá:ri Tekahawáhkwen Mary McDonald</p>`:''}
+    </div>`;
+  showScreen('lesson-screen');
+}
+
+function startExercises(){
+  const l=UNITS[CUi].lessons[CLi];
+  EX={pool:[...l.exercises],rpool:[],done:0,total:l.exercises.length,current:null,
+      answered:false,attempts:0,correct:0,scoreable:0,mr:null,chunks:[],aurl:null};
+  kbShown=false;
+  renderEx();showScreen('exercise');
+}
+
+function renderEx(){
+  let ex;
+  const rn=document.getElementById('retry-note');
+  if(EX.rpool.length>0){
+    ex=EX.rpool.shift();
+    rn.style.display='block';
+    rn.innerHTML=`<strong>Coming back around:</strong> You missed this question earlier. Here's another chance — take your time.`;
+  } else {
+    ex=EX.pool[EX.done];
+    rn.style.display='none';
+  }
+  EX.current=ex;EX.answered=false;EX.attempts=0;mSel=null;mPairs=0;
+
+  document.getElementById('epf').style.width=(EX.done/EX.total*100)+'%';
+  document.getElementById('ectr').textContent=(EX.done+1)+'/'+EX.total;
+  document.getElementById('fbbar').className='fb';
+  document.getElementById('varnotediv').innerHTML='';
+
+  const btn=document.getElementById('actbtn');
+  btn.className='sbtn dark';btn.disabled=true;btn.textContent='Submit';
+
+  document.getElementById('etlbl').textContent=tLabel(ex.type);
+  document.getElementById('eq').textContent=ex.prompt;
+  document.getElementById('esub').textContent=ex.sub||'';
+
+  let html='';
+  if((ex.type==='type'||ex.type==='fill')&&!kbShown){
+    kbShown=true;
+    html+=`<div class="kbdnote">💡 <strong>Typing special characters?</strong> Get the <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/keyboards" target="_blank" rel="noopener">FirstVoices keyboard ↗</a> — or type without accents for now; dialect variants are accepted.</div>`;
+  }
+  if(ex.type==='mc')html+=rMC(ex);
+  else if(ex.type==='match')html+=rMatch(ex);
+  else if(ex.type==='fill')html+=rFill(ex);
+  else if(ex.type==='type')html+=rType();
+  else if(ex.type==='audio')html+=rAudio(ex);
+  else if(ex.type==='story')html+=rStory(ex);
+  document.getElementById('exbody').innerHTML=html;
+
+  if(ex.type==='audio'||ex.type==='story'){
+    btn.textContent=ex.type==='story'?'Continue':'Skip';
+    btn.disabled=false;btn.className='sbtn cont';
+  }
+}
+
+function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment'}[t]||t;}
+function rMC(ex){return`<div class="mco">${ex.options.map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="pickMC(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')}</div>`;}
+function rMatch(ex){const sh=[...ex.pairs].sort(()=>Math.random()-.5);return`<div class="mgrid"><div class="mcol">${ex.pairs.map((p,i)=>`<div class="mi" data-id="${i}" data-side="L" onclick="pickMatch(this)">${p.target}</div>`).join('')}</div><div class="mcol">${sh.map(p=>{const i=ex.pairs.findIndex(x=>x.english===p.english);return`<div class="mi" data-id="${i}" data-side="R" onclick="pickMatch(this)">${p.english}</div>`;}).join('')}</div></div><div id="mst" style="text-align:center;margin-top:.55rem;font-style:italic;color:var(--ew);font-size:.82rem;">Tap a word on the left, then its match on the right</div>`;}
+function rFill(ex){return`<div class="fbs">${ex.sentence.replace('___',`<input class="fbi" id="fbi" type="text" placeholder="?" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)}</div><p style="font-size:.78rem;color:var(--ew);font-style:italic;">Hint: starts with <strong>${ex.hint}</strong></p>`;}
+function rType(){return`<input class="tinput" id="tinput" type="text" placeholder="Type in Kanien'kéha…" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;}
+function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</span><span class="aphint">${ex.meaning} — ${ex.hint}</span></div><div class="rctrl"><button class="rbtn rs" id="rs" onclick="startRec()">🎙️ Record</button><button class="rbtn rp" id="rp" onclick="stopRec()" disabled>⏹ Stop</button><button class="rbtn rl" id="rl" onclick="playRec()" disabled>▶️ Listen</button></div><div class="rstatus" id="rstatus">Press Record to begin</div><div class="sass" id="sass"><p>How did it sound to you?</p><div class="sbtns"><button class="sab sy" onclick="audioAssess(true)">✓ Felt right</button><button class="sab sn" onclick="audioAssess(false)">Still learning</button></div></div>`;}
+function rStory(ex){return`${ex.word?`<div class="stcard"><span class="sqm">"</span><span class="stword">${ex.word}</span><span class="stmean">${ex.meaning}</span></div>`:''}<p class="stprompt">${ex.storyPrompt}</p><textarea class="starea" id="starea" placeholder="Write your reflection here — stays on your device only…"></textarea>`;}
+function qs(s){return(s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');}
+
+function pickMC(btn,chosen,correct){
+  if(EX.answered)return;
+  document.querySelectorAll('.mcb').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+  const ab=document.getElementById('actbtn');
+  ab.disabled=false;ab._c=chosen;ab._r=correct;ab.textContent='Submit';
+}
+function pickMatch(el){
+  if(el.classList.contains('matched'))return;
+  const ex=EX.current;
+  if(!mSel){document.querySelectorAll('.mi').forEach(i=>i.classList.remove('sel'));el.classList.add('sel');mSel=el;}
+  else{
+    if(mSel.dataset.side===el.dataset.side){document.querySelectorAll('.mi').forEach(i=>i.classList.remove('sel'));el.classList.add('sel');mSel=el;return;}
+    if(mSel.dataset.id===el.dataset.id){
+      mSel.classList.replace('sel','matched');el.classList.replace('sel','matched');
+      const pair=ex.pairs[parseInt(mSel.dataset.id)];
+      if(pair&&pair.wids)pair.wids.forEach(id=>recProf(id,true));
+      mPairs++;
+      document.getElementById('mst').textContent=mPairs+' / '+ex.pairs.length+' matched';
+      if(mPairs===ex.pairs.length){
+        EX.answered=true;EX.correct++;EX.scoreable++;
+        showFB('cor',ex.cm,'');
+        const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn succ';
+      }
+    } else {
+      el.classList.add('wm');mSel.classList.add('wm');
+      setTimeout(()=>{el.classList.remove('wm','sel');mSel.classList.remove('wm','sel');mSel=null;},700);
+      EX.attempts++;
+      if(EX.attempts===1){
+        // First error: only "incorrect, try again"
+        showFB('try','Incorrect — please try again.','');
+      } else {
+        // Second error: detailed feedback + retry pool
+        EX.rpool.push({...ex});EX.scoreable++;
+        showFB('wrg',ex.wm||'Not quite — this one will come back.',getVariantNote(ex));
+        const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
+        EX.answered=true;
+      }
+      mSel=null;return;
+    }
+    mSel=null;
+  }
+}
+function onTyped(){const i=document.getElementById('fbi')||document.getElementById('tinput');document.getElementById('actbtn').disabled=!i||!i.value.trim();}
+
+function handleAction(){
+  const ex=EX.current;
+  if(EX.answered){advance();return;}
+  if(ex.type==='mc'){
+    const ab=document.getElementById('actbtn');
+    const isR=ab._c===ab._r;
+    EX.attempts++;
+    if(!isR&&EX.attempts===1){
+      // First error: silent "try again"
+      document.querySelectorAll('.mcb').forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
+      showFB('try','Incorrect — please try again.','');
+      return;
+    }
+    // Correct OR second attempt
+    document.querySelectorAll('.mcb').forEach(b=>{if(b.dataset.v===ab._r)b.classList.add('cor');else if(b.classList.contains('sel'))b.classList.add('wrg');b.disabled=true;});
+    if(ex.wid)recProf(ex.wid,isR);
+    EX.scoreable++;
+    if(isR){EX.correct++;finishEx(true,ex.cm,'');}
+    else{EX.rpool.push({...ex});finishEx(false,ex.wm||'Not quite.',getVariantNote(ex));}
+  } else if(ex.type==='fill'||ex.type==='type'){
+    const el=document.getElementById('fbi')||document.getElementById('tinput');
+    const v=(el.value||'').trim();
+    const alts=[ex.correct,...(ex.alts||[])];
+    const isR=alts.some(a=>norm(v)===norm(a));
+    EX.attempts++;
+    if(!isR&&EX.attempts===1){
+      // First error: silent "try again", clear field
+      el.value='';
+      showFB('try','Incorrect — please try again.','');
+      el.focus();
+      return;
+    }
+    el.classList.add(isR?'cor':'wrg');el.disabled=true;
+    if(ex.wid)recProf(ex.wid,isR);
+    EX.scoreable++;
+    if(isR){EX.correct++;finishEx(true,ex.cm,'');}
+    else{EX.rpool.push({...ex});finishEx(false,(ex.wm||'Not quite.')+' The answer is: '+ex.correct,getVariantNote(ex));}
+  } else if(ex.type==='audio'||ex.type==='story'){advance();}
+}
+
+function getVariantNote(ex){
+  if(!ex.wid||!VARIANTS[ex.wid])return'';
+  const vs=VARIANTS[ex.wid];
+  return''; // variant note shown separately below feedback
+}
+
+function showVariantNote(wid){
+  const vd=document.getElementById('varnotediv');
+  if(!wid||!VARIANTS[wid]){vd.innerHTML='';return;}
+  const vs=VARIANTS[wid];
+  vd.innerHTML=`<div class="var-note"><strong>Dialect variants — all are correct</strong>${vs.map(v=>`<div style="margin-top:.28rem"><strong style="color:var(--ed)">${v.c}:</strong> <span style="font-family:'Playfair Display',serif">${v.f}</span> <span style="color:var(--ew);font-size:.8rem">— ${v.n}</span></div>`).join('')}</div>`;
+}
+
+function finishEx(isR,msg,varnote){
+  EX.answered=true;
+  showFB(isR?'cor':'wrg',msg,'');
+  if(EX.current.wid)showVariantNote(EX.current.wid);
+  const btn=document.getElementById('actbtn');
+  btn.textContent='Continue';btn.disabled=false;
+  btn.className=isR?'sbtn succ':'sbtn cont';
+}
+function showFB(type,title,detail){
+  const bar=document.getElementById('fbbar');
+  const map={cor:'corfb',wrg:'wrgfb',try:'tryfb',info:'infofb'};
+  bar.className='fb show '+(map[type]||'infofb');
+  document.getElementById('fbic').textContent={cor:'✓',wrg:'✗',try:'↩',info:'🌿'}[type]||'';
+  document.getElementById('fbtitle').textContent=title;
+  document.getElementById('fbdet').textContent=detail;
+}
+function advance(){
+  if(!EX.rpool.length)EX.done++;
+  if(!EX.rpool.length&&EX.done>=EX.total)finishLesson();
+  else renderEx();
+}
+function finishLesson(){
+  const acc=EX.scoreable>0?Math.round(EX.correct/EX.scoreable*100):100;
+  document.getElementById('sacc').textContent=acc+'%';
+  document.getElementById('csub').textContent=UNITS[CUi].lessons[CLi].title+' — complete';
+  // Ungraded feedback message (critical assessment principle)
+  const msgs=[
+    "This number reflects how you did in this session — not who you are as a learner or as a speaker. Every attempt, including the wrong ones, is part of how language is acquired.",
+    "Language reclamation is not a test. This score shows patterns that might guide where you practise more — not whether you belong in this language.",
+    "In the spirit of formative learning: this number is feedback, not a grade. Your relationship to this language is yours, and it grows in its own time.",
+  ];
+  document.getElementById('ungrade-msg').innerHTML=`<strong>A note on this number:</strong> ${msgs[EX.done%msgs.length]}`;
+  if(CU){
+    if(!CU.data.lessonProgress['u'+CUi])CU.data.lessonProgress['u'+CUi]={};
+    CU.data.lessonProgress['u'+CUi][UNITS[CUi].lessons[CLi].id]=100;
+    const lp=CU.data.lessonProgress['u'+CUi];
+    const tl=UNITS[CUi].lessons.length;
+    const dl=Object.values(lp).filter(v=>v>=100).length;
+    CU.data.unitProgress[CUi]=Math.round(dl/tl*100);
+    const today=new Date().toDateString();
+    if(!CU.data.daysLogged.includes(today))CU.data.daysLogged.push(today);
+    document.getElementById('sdays').textContent=CU.data.daysLogged.length;
+    saveUD(CU.name,CU.data);
+  }
+  showScreen('complete');
+}
+function norm(s){return(s||'').toLowerCase().trim().replace(/['']/g,"'").replace(/[áàâ]/g,'a').replace(/[éèê]/g,'e').replace(/[íìî]/g,'i').replace(/[óòô]/g,'o').replace(/:/g,'').replace(/\s+/g,'');}
+
+/* audio */
+async function startRec(){
+  try{
+    const s=await navigator.mediaDevices.getUserMedia({audio:true});
+    EX.chunks=[];EX.mr=new MediaRecorder(s);
+    EX.mr.ondataavailable=e=>{if(e.data.size>0)EX.chunks.push(e.data);};
+    EX.mr.onstop=()=>{
+      const b=new Blob(EX.chunks,{type:'audio/webm'});
+      if(EX.aurl)URL.revokeObjectURL(EX.aurl);
+      EX.aurl=URL.createObjectURL(b);
+      document.getElementById('rl').disabled=false;
+      document.getElementById('rstatus').textContent='Saved ✓ — press ▶️ to listen';
+      document.getElementById('sass').classList.add('vis');
+      s.getTracks().forEach(t=>t.stop());
+    };
+    EX.mr.start();
+    document.getElementById('rs').disabled=true;document.getElementById('rp').disabled=false;
+    document.getElementById('rstatus').textContent='● Recording…';
+    setTimeout(()=>{if(EX.mr&&EX.mr.state==='recording')stopRec();},12000);
+  }catch(e){document.getElementById('rstatus').textContent='Mic access denied — allow microphone access to use this feature.';}
+}
+function stopRec(){if(EX.mr&&EX.mr.state==='recording'){EX.mr.stop();document.getElementById('rp').disabled=true;}}
+function playRec(){if(!EX.aurl)return;const a=new Audio(EX.aurl);a.play();document.getElementById('rstatus').textContent='▶ Playing…';a.onended=()=>document.getElementById('rstatus').textContent='How did it sound?';}
+function audioAssess(good){
+  if(EX.current&&EX.current.wid)recProf(EX.current.wid,good);
+  document.getElementById('sass').classList.remove('vis');
+  showFB('info',good?"You're building the voice of the language":'Every attempt is a seed planted','Speaking practice builds the deepest connection to a living language.');
+  EX.answered=true;
+  const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
+}
+
+/* glossary */
+let gL='all';
+function renderGloss(){
+  const letters=[...new Set(GLOSS.map(w=>w.english[0].toUpperCase()))].sort();
+  document.getElementById('galpha').innerHTML=`<button class="abtn ${gL==='all'?'active':''}" onclick="setAlpha('all',this)">All</button>`+letters.map(l=>`<button class="abtn ${gL===l?'active':''}" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
+  filterGloss();
+}
+function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
+function filterGloss(){
+  const q=(document.getElementById('gsearch').value||'').toLowerCase();
+  const words=GLOSS.filter(w=>{const mq=!q||w.target.toLowerCase().includes(q)||w.english.toLowerCase().includes(q);const ml=gL==='all'||w.english[0].toUpperCase()===gL;return mq&&ml;});
+  const groups={};words.forEach(w=>{const l=w.english[0].toUpperCase();if(!groups[l])groups[l]=[];groups[l].push(w);});
+  const list=document.getElementById('glist');
+  if(!words.length){list.innerHTML=`<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No words found.</p>`;return;}
+  list.innerHTML=Object.keys(groups).sort().map(l=>`<div class="glg"><div class="glh">${l}</div>${groups[l].map(w=>{const p=getProf(w.id);const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';return`<div class="ge" onclick="openModal('${w.id}')"><div class="ge-top"><div><div class="gew">${w.target}</div><div class="gee">${w.english}</div></div><span class="gear">›</span></div>${p?`<div class="prof-track" style="margin-top:.35rem"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:''}`;}).join('')}</div>`).join('');
+}
+
+/* modal */
+function openModal(wid){
+  if(wid==='dialects'){openDialectModal();return;}
+  const w=GLOSS.find(g=>g.id===wid);if(!w)return;
+  document.getElementById('mword').textContent=w.target;
+  document.getElementById('mmean').textContent=w.english+(w.pos?' · '+w.pos:'');
+  document.getElementById('mnotes').textContent=w.notes||'';
+  const vc=document.getElementById('mvars-container');
+  const vs=VARIANTS[w.id];
+  if(vs&&vs.length){
+    vc.style.display='';
+    document.getElementById('mvarsbody').innerHTML=vs.map(v=>`<tr><td>${v.c}</td><td>${v.f}</td><td>${v.n}</td></tr>`).join('');
+  } else vc.style.display='none';
+  document.getElementById('mprofwrap').innerHTML=profHTML(wid);
+  const cite=document.getElementById('mcite');
+  if(w.cite)cite.innerHTML=`Source: <a href="${w.cite.url}" target="_blank" rel="noopener">${w.cite.text} ↗</a>`;
+  else cite.textContent='';
+  const fs=document.getElementById('mformssec');
+  if(w.forms&&w.forms.length){fs.style.display='';document.getElementById('mformsbody').innerHTML=w.forms.map(f=>`<tr><td>${f.label}</td><td>${f.form}</td></tr>`).join('');}
+  else fs.style.display='none';
+  document.getElementById('wmodal').classList.add('open');
+}
+function openDialectModal(){
+  document.getElementById('mword').textContent='Dialect Variation';
+  document.getElementById('mmean').textContent='Why all forms are valid';
+  document.getElementById('mnotes').textContent="Kanien'kéha is spoken in six communities across Canada and the US. Each community's speech is equally valid — there is no single 'correct' dialect. The key community-level differences are:\n\n• r/l: Akwesasne uses l where other communities use r (e.g., Lón:kwe vs Rón:kwe)\n• y/i: Six Nations and Tyendinaga (Ontario) use y; Kanehsatà:ke and Kahnawà:ke use i (e.g., ý:se' vs í:se')\n• ts: Kahnawà:ke consistently uses ts as in tsunami; other communities may vary\n• k/t voicing: Tyendinaga voices these consonants differently before some vowels\n\nThis app uses the Kanehsatà:ke orthography as its base, but accepts all major dialect variants as correct answers. Sources: Bonvillain (1984), Pentangelo (2020), native-languages.org, CBC Original Voices.";
+  document.getElementById('mvars-container').style.display='none';
+  document.getElementById('mprofwrap').innerHTML='';
+  document.getElementById('mcite').innerHTML=`Sources: <a href="https://www.cbc.ca/newsinteractives/original-voices/kanienkeha" target="_blank" rel="noopener">CBC Original Voices ↗</a> · <a href="https://www.native-languages.org/mohawk_guide.htm" target="_blank" rel="noopener">native-languages.org ↗</a>`;
+  document.getElementById('mformssec').style.display='none';
+  document.getElementById('wmodal').classList.add('open');
+}
+function closeModal(){document.getElementById('wmodal').classList.remove('open');}
+function closeModalOverlay(e){if(e.target===document.getElementById('wmodal'))closeModal();}
+
+/* syllabary */
+function renderSyl(tab){
+  document.getElementById('sgrid').innerHTML=(SYL[tab]||[]).map(s=>{
+    const p=getProf(s.id);
+    const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
+    const ipaHtml=s.ipa?`<span class="sipa">${s.ipa} <span>${s.ipaNote}</span></span>`:'';
+    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
+    const profHtml=p?`<div class="prof-track" style="margin-top:.32rem"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:'';
+    return`<div class="scard" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')">
+      <span class="sc">${s.c}</span>
+      <span class="sr">${s.r}</span>
+      <span class="ss">${s.s}</span>
+      ${ipaHtml}
+      ${ttsHtml}
+      ${profHtml}
+    </div>`;
+  }).join('');
+}
+
+function setSylTab(tab,btn){document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderSyl(tab);}
+
+/* ── TTS FUNCTION ──
+   Uses Web Speech API with carefully tuned phonetic approximations.
+   No Kanien'kéha voice exists in any browser — these use English
+   phonetic strings designed to approximate each sound.
+   Rate and pitch are tuned per sound for best approximation.
+   The user is warned of this limitation in the UI.
+*/
+function speakSyl(sid){
+  if(!window.speechSynthesis){
+    alert("Text-to-speech is not supported in this browser. Try Chrome, Edge, or Safari.");
+    return;
+  }
+  // Find the sound entry across all tabs
+  let entry=null;
+  for(const tab of Object.values(SYL)){
+    entry=tab.find(s=>s.id===sid);
+    if(entry)break;
+  }
+  if(!entry||!entry.tts)return;
+
+  // Cancel any currently playing speech
+  window.speechSynthesis.cancel();
+
+  const btn=document.getElementById('tts-'+sid);
+  if(btn){btn.classList.add('playing');btn.textContent='🔊 …';}
+
+  const utt=new SpeechSynthesisUtterance(entry.tts.text);
+  utt.rate=entry.tts.rate||0.7;
+  utt.pitch=entry.tts.pitch||1;
+  utt.volume=1;
+
+  // Prefer a female English voice if available (closer to Kanien'kéha speaker range)
+  const voices=window.speechSynthesis.getVoices();
+  const preferred=voices.find(v=>v.lang.startsWith('en')&&v.name.toLowerCase().includes('female'))
+    ||voices.find(v=>v.lang.startsWith('en'))
+    ||null;
+  if(preferred)utt.voice=preferred;
+
+  utt.onend=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
+  utt.onerror=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
+  window.speechSynthesis.speak(utt);
+}
+
+// Voices may load async — pre-load them
+if(window.speechSynthesis){
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged=()=>window.speechSynthesis.getVoices();
+}
+
+function showSylTip(card,tip,sid){
+  const old=document.getElementById('stpop');if(old)old.remove();
+  const entry=Object.values(SYL).flat().find(s=>s.id===sid);
+  const d=document.createElement('div');d.id='stpop';
+  d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.78rem 1rem;border-radius:11px;font-size:.86rem;line-height:1.55;z-index:150;box-shadow:0 4px 18px rgba(44,24,16,.28);animation:fbin .2s ease;';
+  const p=getProf(sid);
+  const ipaLine=entry&&entry.ipa?`<div style="margin-top:.3rem;font-size:.78rem;color:var(--skyl)">IPA: <strong>${entry.ipa}</strong> · ${entry.ipaNote}</div>`:'';
+  const profLine=p?`<div style="margin-top:.35rem;font-size:.74rem;color:var(--smoke)">Proficiency: <span style="color:var(--clay)">${p.pct}%</span> (${p.count}/10)</div>`:'';
+  d.innerHTML=`<strong style="color:var(--clay)">${card.querySelector('.sr').textContent}</strong> — ${tip}${ipaLine}${profLine}<span style="float:right;cursor:pointer;color:var(--smoke);margin-left:.5rem;margin-top:-.1rem" onclick="this.parentElement.remove()">✕</span>`;
+  document.body.appendChild(d);
+  setTimeout(()=>{if(d.parentElement)d.remove();},7000);
+}
+
+/* init */
+loadData().then(() => {
+  const last=localStorage.getItem(LK);
+  if(last){const u=getUsers();if(u[last]){loginAs(last,u[last]);return;}}
+  showScreen('login');
+});
+</script>
+</body>
+</html>

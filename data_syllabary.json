@@ -1,0 +1,372 @@
+{
+  "vowels": [
+    {
+      "id": "sv-a",
+      "c": "a",
+      "r": "a",
+      "ipa": "[a]",
+      "ipaNote": "low central unrounded",
+      "tts": {
+        "text": "ah",
+        "rate": 0.65,
+        "pitch": 0.9
+      },
+      "s": "like 'a' in father",
+      "t": "Short open back vowel. Very common in Kanien'kéha words. Do not add an English r-colour after it. IPA: [a]."
+    },
+    {
+      "id": "sv-a2",
+      "c": "a:",
+      "r": "a:",
+      "ipa": "[aː]",
+      "ipaNote": "long low central",
+      "tts": {
+        "text": "aaah",
+        "rate": 0.45,
+        "pitch": 0.9
+      },
+      "s": "long a — held double length",
+      "t": "The colon (:) always marks vowel length. A long vowel can completely change a word's meaning — never shorten it. IPA: [aː]."
+    },
+    {
+      "id": "sv-e",
+      "c": "e",
+      "r": "e",
+      "ipa": "[e]",
+      "ipaNote": "mid front unrounded",
+      "tts": {
+        "text": "eh",
+        "rate": 0.65,
+        "pitch": 1
+      },
+      "s": "like 'e' in bed",
+      "t": "Short mid front vowel. Keep it pure — no gliding into 'ay' as in English. IPA: [e]."
+    },
+    {
+      "id": "sv-e2",
+      "c": "e:",
+      "r": "e:",
+      "ipa": "[eː]",
+      "ipaNote": "long mid front",
+      "tts": {
+        "text": "ehhh",
+        "rate": 0.45,
+        "pitch": 1
+      },
+      "s": "long e — held double length",
+      "t": "Held roughly twice as long as the short version. IPA: [eː]."
+    },
+    {
+      "id": "sv-i",
+      "c": "i",
+      "r": "i",
+      "ipa": "[i]",
+      "ipaNote": "high front unrounded",
+      "tts": {
+        "text": "ee",
+        "rate": 0.65,
+        "pitch": 1.1
+      },
+      "s": "like 'ee' in see",
+      "t": "High front vowel, like Spanish 'i'. Short and crisp. In Ontario dialects (Six Nations, Tyendinaga), some positions use 'y' where Kanehsatà:ke uses 'i' — both are valid. IPA: [i]."
+    },
+    {
+      "id": "sv-i2",
+      "c": "i:",
+      "r": "i:",
+      "ipa": "[iː]",
+      "ipaNote": "long high front",
+      "tts": {
+        "text": "eeee",
+        "rate": 0.45,
+        "pitch": 1.1
+      },
+      "s": "long i — held double length",
+      "t": "Sustained high front vowel. IPA: [iː]."
+    },
+    {
+      "id": "sv-o",
+      "c": "o",
+      "r": "o",
+      "ipa": "[o]",
+      "ipaNote": "mid back rounded",
+      "tts": {
+        "text": "oh",
+        "rate": 0.65,
+        "pitch": 0.9
+      },
+      "s": "like 'o' in go",
+      "t": "Rounded back vowel. Short unless marked with :. IPA: [o]."
+    },
+    {
+      "id": "sv-o2",
+      "c": "o:",
+      "r": "o:",
+      "ipa": "[oː]",
+      "ipaNote": "long mid back rounded",
+      "tts": {
+        "text": "ohhh",
+        "rate": 0.45,
+        "pitch": 0.9
+      },
+      "s": "long o — held double length",
+      "t": "Length here distinguishes verb forms and possession. Always honour the colon. IPA: [oː]."
+    },
+    {
+      "id": "sv-en",
+      "c": "ę",
+      "r": "ę",
+      "ipa": "[ã]",
+      "ipaNote": "nasalized low central",
+      "tts": {
+        "text": "an",
+        "rate": 0.65,
+        "pitch": 0.95
+      },
+      "s": "nasalized a — air through nose",
+      "t": "Air flows through both mouth and nose simultaneously. Nasal vowels are a key feature of Iroquoian languages. The TTS approximation uses \"an\" but the n should not be heard as a separate consonant — it just signals nasalization. IPA: [ã]."
+    },
+    {
+      "id": "sv-on",
+      "c": "ǫ",
+      "r": "ǫ",
+      "ipa": "[õ]",
+      "ipaNote": "nasalized mid back rounded",
+      "tts": {
+        "text": "on",
+        "rate": 0.65,
+        "pitch": 0.9
+      },
+      "s": "nasalized o — air through nose",
+      "t": "Nasalized rounded back vowel. ę [ã] and ǫ [õ] are distinct — both common in Kanehsatà:ke Kanien'kéha. IPA: [õ]."
+    }
+  ],
+  "consonants": [
+    {
+      "id": "sc-k",
+      "c": "k",
+      "r": "k",
+      "ipa": "[k]",
+      "ipaNote": "velar stop, unaspirated",
+      "tts": {
+        "text": "sk",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "unaspirated — like 'k' in sky",
+      "t": "Unaspirated velar stop — no puff of air after it, unlike English 'key'. Think of the 'k' in 'sky' or 'ski'. IPA: [k]."
+    },
+    {
+      "id": "sc-t",
+      "c": "t",
+      "r": "t",
+      "ipa": "[t]",
+      "ipaNote": "alveolar stop, unaspirated",
+      "tts": {
+        "text": "st",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "unaspirated — like 't' in stop",
+      "t": "Unaspirated alveolar stop. The 't' in 'stop', not 'top'. IPA: [t]."
+    },
+    {
+      "id": "sc-gs",
+      "c": "'",
+      "r": "ʔ (glottal stop)",
+      "ipa": "[ʔ]",
+      "ipaNote": "glottal stop",
+      "tts": {
+        "text": "uh oh",
+        "rate": 0.6,
+        "pitch": 1
+      },
+      "s": "throat closure — like pause in 'uh-oh'",
+      "t": "A full consonant in Kanien'kéha, not just punctuation. The throat closes briefly — exactly like the pause in English 'uh-oh'. It appears word-initially, mid-word, and word-finally, and changes meaning. IPA: [ʔ]."
+    },
+    {
+      "id": "sc-h",
+      "c": "h",
+      "r": "h",
+      "ipa": "[h]",
+      "ipaNote": "glottal fricative",
+      "tts": {
+        "text": "hh",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "breathy — like 'h' in help",
+      "t": "Glottal fricative. Breathy onset before vowels; can also appear between vowels. IPA: [h]."
+    },
+    {
+      "id": "sc-n",
+      "c": "n",
+      "r": "n",
+      "ipa": "[n]",
+      "ipaNote": "alveolar nasal",
+      "tts": {
+        "text": "nnn",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'n' in no",
+      "t": "Standard alveolar nasal consonant, similar to English. IPA: [n]."
+    },
+    {
+      "id": "sc-r",
+      "c": "r",
+      "r": "r  /  l (Akwesasne)",
+      "ipa": "[ɾ] / [l]",
+      "ipaNote": "alveolar flap or lateral",
+      "tts": {
+        "text": "rr",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "alveolar flap; l in Akwesasne",
+      "t": "Alveolar flap [ɾ] in Kanehsatà:ke and Kahnawà:ke; lateral [l] in Akwesasne. Both are valid community-level dialect features, not errors. IPA: [ɾ] or [l]."
+    },
+    {
+      "id": "sc-w",
+      "c": "w",
+      "r": "w",
+      "ipa": "[w]",
+      "ipaNote": "labial-velar approximant",
+      "tts": {
+        "text": "ww",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'w' in water",
+      "t": "Labial-velar approximant. Smooth glide into the following vowel, similar to English. IPA: [w]."
+    },
+    {
+      "id": "sc-y",
+      "c": "y  /  i",
+      "r": "y (Ontario)  /  i (Quebec)",
+      "ipa": "[j] / [i]",
+      "ipaNote": "palatal approximant or high vowel",
+      "tts": {
+        "text": "yy",
+        "rate": 0.7,
+        "pitch": 1.1
+      },
+      "s": "palatal glide; y in Ontario, i in Quebec",
+      "t": "Palatal approximant [j] in Six Nations/Tyendinaga; high front vocoid [i] in Kanehsatà:ke/Kahnawà:ke in the same positions. Both are correct dialect forms. IPA: [j] or [i]."
+    },
+    {
+      "id": "sc-ts",
+      "c": "ts",
+      "r": "ts",
+      "ipa": "[ts]",
+      "ipaNote": "alveolar affricate",
+      "tts": {
+        "text": "ts",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'ts' in cats",
+      "t": "Alveolar affricate — a stop immediately followed by a fricative. Particularly consistent in Kahnawà:ke. IPA: [ts]."
+    },
+    {
+      "id": "sc-tsh",
+      "c": "tsh",
+      "r": "tsh",
+      "ipa": "[tʃ]",
+      "ipaNote": "palato-alveolar affricate",
+      "tts": {
+        "text": "ch",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'ch' in church",
+      "t": "Palato-alveolar affricate, like English 'ch' in 'church'. IPA: [tʃ]."
+    }
+  ],
+  "tone": [
+    {
+      "id": "st-vl",
+      "c": "V:",
+      "r": "Long vowel",
+      "ipa": "[Vː]",
+      "ipaNote": "any vowel + length mark",
+      "tts": {
+        "text": "aaah",
+        "rate": 0.4,
+        "pitch": 0.9
+      },
+      "s": "held ~2× longer than short vowel",
+      "t": "The colon (:) in the orthography corresponds to the IPA length mark [ː]. Always write it; always pronounce it. A long vowel is held roughly twice as long as its short counterpart, and the distinction changes meaning. IPA: [Vː]."
+    },
+    {
+      "id": "st-gs",
+      "c": "ʔ",
+      "r": "Glottal stop",
+      "ipa": "[ʔ]",
+      "ipaNote": "glottal stop",
+      "tts": {
+        "text": "uh oh",
+        "rate": 0.6,
+        "pitch": 1
+      },
+      "s": "full consonant — written as ' in orthography",
+      "t": "The apostrophe (') in Kanien'kéha orthography represents the glottal stop [ʔ]. It appears mid-word and word-finally. í:'i (I) and í:se' (you) are different words partly because of its position. IPA: [ʔ]."
+    },
+    {
+      "id": "st-ac",
+      "c": "á",
+      "r": "Stress accent",
+      "ipa": "[ˈ]",
+      "ipaNote": "primary stress marker",
+      "tts": {
+        "text": "AH",
+        "rate": 0.6,
+        "pitch": 1.2
+      },
+      "s": "primary stress — higher pitch + louder",
+      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. In IPA, stress is marked with [ˈ] before the stressed syllable. Kanien'kéha pitch-stress patterns can change grammatical meaning."
+    },
+    {
+      "id": "st-ns",
+      "c": "ę / ǫ",
+      "r": "Nasal vowels",
+      "ipa": "[ã] / [õ]",
+      "ipaNote": "nasalized vowels",
+      "tts": {
+        "text": "an on",
+        "rate": 0.6,
+        "pitch": 0.95
+      },
+      "s": "nasalized — ę [ã] and ǫ [õ]",
+      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels distinctive to Kanien'kéha. Air passes through both mouth and nose. They are separate phonemes — ę is low and central, ǫ is rounded and back. Both are common in Kanehsatà:ke speech."
+    },
+    {
+      "id": "st-rm",
+      "c": "R-",
+      "r": "Male prefix  (R- / L-)",
+      "ipa": "[r] / [l]",
+      "ipaNote": "dialect-dependent",
+      "tts": {
+        "text": "r",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "marks male nouns and pronouns",
+      "t": "The prefix R- (Ro-, Ra-, Ron-, Rok-, Ran-) marks male person nouns and pronouns in Kanehsatà:ke/Kahnawà:ke. In Akwesasne this becomes L- (Lo-, La-, Lon-, Lok-, Lan-). Compare I-/Iak-/A-/Ako- for female."
+    },
+    {
+      "id": "st-if",
+      "c": "I-",
+      "r": "Female prefix  (I- / Iak- / A-)",
+      "ipa": "[i] / [iak] / [a]",
+      "ipaNote": "varies by noun class",
+      "tts": {
+        "text": "ee",
+        "rate": 0.7,
+        "pitch": 1.1
+      },
+      "s": "marks female nouns and pronouns",
+      "t": "The prefixes I-, Iak-, A-, and Ako- mark female person nouns and pronouns. The specific prefix depends on the noun class and social register — Ako- is formal/respectful (mothers, elders), aónha is informal. This system is fully systematic throughout the language."
+    }
+  ]
+}

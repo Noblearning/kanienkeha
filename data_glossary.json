@@ -1,0 +1,1527 @@
+[
+  {
+    "id": "p01",
+    "target": "í:se'",
+    "english": "You (singular)",
+    "pos": "Pronoun — Singular",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Singular 'you'. The glottal stop (') at the end is a full consonant. In Six Nations/Tyendinaga: ý:se'.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "í:se'",
+      "i:se'",
+      "ise'",
+      "ý:se'",
+      "yse'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p02",
+    "target": "í:'i",
+    "english": "I (singular)",
+    "pos": "Pronoun — Singular",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "First person singular. The glottal stop (') between the vowels is a full consonant, not punctuation. In Ontario dialects: ý:'i.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "í:'i",
+      "i:'i",
+      "i'i",
+      "ý:'i",
+      "y'i"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p03",
+    "target": "akaónha",
+    "english": "She (formal, respectful)",
+    "pos": "Pronoun — Singular",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Used for a female you respect — a mother, elder, or person of authority. Kanien'kéha encodes respect directly into the pronoun system.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "akaónha",
+      "akaonha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p04",
+    "target": "raónha",
+    "english": "He (singular)",
+    "pos": "Pronoun — Singular",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Third person singular male. Ra- marks male throughout Kanien'kéha. In Akwesasne: laónha (r→l alternation).",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "raónha",
+      "raonha",
+      "laónha",
+      "laonha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p05",
+    "target": "aónha",
+    "english": "It / She (informal/animal/object)",
+    "pos": "Pronoun — Singular",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Three uses: a female animal; a familiar female (sister, close friend); an inanimate object. Context makes the meaning clear.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "aónha",
+      "aonha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p06",
+    "target": "teseniiáhshe",
+    "english": "You two (dual)",
+    "pos": "Pronoun — Dual",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Dual 'you two'. Kanien'kéha maintains singular/dual/plural as distinct categories.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "teseniiáhshe",
+      "teseniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p07",
+    "target": "teiakeniiáhshe",
+    "english": "We two / You and I",
+    "pos": "Pronoun — Dual",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "First person dual inclusive — you and I together.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "teiakeniiáhshe",
+      "teiakeniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p08",
+    "target": "teteniiáhshe",
+    "english": "Two females (us two)",
+    "pos": "Pronoun — Dual",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Dual pronoun for two females.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "teteniiáhshe",
+      "teteniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p09",
+    "target": "tehniiáhshe",
+    "english": "Two males / one of each",
+    "pos": "Pronoun — Dual",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "For two males, or one male and one female together.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "tehniiáhshe",
+      "tehniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p10",
+    "target": "sewakwé:kon",
+    "english": "You all (plural)",
+    "pos": "Pronoun — Plural",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Plural 'you all'. The -kwé:kon suffix signals plurality throughout Kanien'kéha.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "sewakwé:kon",
+      "sewakwekon",
+      "sewakwé:kon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p11",
+    "target": "iakwakwé:kon",
+    "english": "We all (inclusive plural)",
+    "pos": "Pronoun — Plural",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Inclusive 'we all' — includes the person being spoken to. Contrast with ronwakwé:kon (all of them).",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "iakwakwé:kon",
+      "iakwakwekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p12",
+    "target": "kontikwé:kon",
+    "english": "All females (plural)",
+    "pos": "Pronoun — Plural",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Plural pronoun for all females / a group of women.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "kontikwé:kon",
+      "kontikwekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p13",
+    "target": "ratikwé:kon",
+    "english": "All males / everyone (plural)",
+    "pos": "Pronoun — Plural",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Plural pronoun for all males or a mixed group. Ra- marks male/mixed in plural.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "ratikwé:kon",
+      "ratikwekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n01",
+    "target": "Ieksá:'a",
+    "english": "Girl",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Singular female child. I- prefix marks female. The glottal stop (') before the final 'a is phonemically significant.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Ieksá:'a",
+      "ieksá:'a",
+      "ieksa'a"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n02",
+    "target": "Ieià:tase'",
+    "english": "Teenage girl",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Female adolescent. The long vowel (:) is critical — shortening it changes the word.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Ieià:tase'",
+      "ieia:tase'",
+      "ieiatase'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n03",
+    "target": "Iakón:kwe",
+    "english": "Woman",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Adult woman. Iak- prefix marks female. The root -kwe appears across Iroquoian languages, related to personhood.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Iakón:kwe",
+      "iakón:kwe",
+      "iakon:kwe",
+      "iakónkwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n04",
+    "target": "Akokstén:ha",
+    "english": "Elder woman",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Elder woman — not merely 'old woman'. In Kanien'kehá:ka matrilineal society, elder women hold central ceremonial and social authority.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Akokstén:ha",
+      "akokstén:ha",
+      "akoksten:ha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n05",
+    "target": "Raksá:'a",
+    "english": "Boy",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Singular male child. R- marks male. In Akwesasne: Laksá:'a.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Raksá:'a",
+      "raksa'a",
+      "Laksá:'a",
+      "laksa'a"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n06",
+    "target": "Ranekénhteron",
+    "english": "Teenage boy",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Male adolescent. Ra- prefix marks male. In Akwesasne: Lanekénhteron.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Ranekénhteron",
+      "ranekenhteron",
+      "Lanekénhteron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n07",
+    "target": "Rón:kwe",
+    "english": "Man",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Adult male. Compare Iakón:kwe (woman) — same -kwe root, different gender prefix. In Akwesasne: Lón:kwe.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Rón:kwe",
+      "rón:kwe",
+      "ron:kwe",
+      "Lón:kwe",
+      "lon:kwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n08",
+    "target": "Rokstén:ha",
+    "english": "Elder man",
+    "pos": "Noun — Person (Singular)",
+    "unit": 0,
+    "lesson": 1,
+    "notes": "Elder male. Same -stén:ha suffix as Akokstén:ha (elder woman). In Akwesasne: Lokstén:ha.",
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+    "accepts": [
+      "Rokstén:ha",
+      "rokstén:ha",
+      "roksten:ha",
+      "Lokstén:ha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd01",
+    "target": "tekeniksá:'a",
+    "english": "Two girls",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Dual female child. The te- prefix marks duality. Compare singular Ieksá:'a (girl).",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "tekeniksá:'a",
+      "tekeniksaa",
+      "tekeniksá:a"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd02",
+    "target": "tekeniià:tase",
+    "english": "Two teenage girls",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Dual female adolescent.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "tekeniià:tase",
+      "tekeniia:tase"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd03",
+    "target": "Tekenón:kwe",
+    "english": "Two women",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Two women. The Teken- prefix marks female dual. Compare singular Iakón:kwe and plural Konón:kwe.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "Tekenón:kwe",
+      "tekenón:kwe",
+      "tekenon:kwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd04",
+    "target": "otikstén:ha",
+    "english": "Two elder women",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Two elder women (dual form).",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "otikstén:ha",
+      "otikstén:há",
+      "otiksten:ha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd05",
+    "target": "tehniksá:'a",
+    "english": "Two boys",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Dual male child. Tehni- marks male dual.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "tehniksá:'a",
+      "tehniksa'a"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd06",
+    "target": "tehninekénhteron",
+    "english": "Two teenage boys",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Dual male adolescent.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "tehninekénhteron",
+      "tehninekenheron"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd07",
+    "target": "tehnón:kwe",
+    "english": "Two men",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Two men. Compare singular Rón:kwe and plural Ronón:kwe.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "tehnón:kwe",
+      "technón:kwe",
+      "tehnon:kwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "nd08",
+    "target": "rotikstén:ha",
+    "english": "Two elder men",
+    "pos": "Noun — Person (Dual)",
+    "unit": 0,
+    "lesson": 2,
+    "notes": "Dual elder male form.",
+    "cite": {
+      "text": "Kontinónhstats L3 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-3/"
+    },
+    "accepts": [
+      "rotikstén:ha",
+      "rotiksten:ha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np01",
+    "target": "Kontiksa'okón:'a",
+    "english": "Girls (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural female children (3+). Konti- marks female plural. Note the incorporation of -ksa'- (child root) into the word.",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Kontiksa'okón:'a",
+      "kontiksa'okon:'a",
+      "kontiksa'okona"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np02",
+    "target": "Kontiià:tase's",
+    "english": "Teenage girls (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural female adolescents (3+).",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Kontiià:tase's",
+      "kontiia:tase's",
+      "kontiiatase"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np03",
+    "target": "Konón:kwe",
+    "english": "Women (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural women (3+). Kon- marks female plural for adult person nouns. Compare singular Iakón:kwe, dual Tekenón:kwe.",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Konón:kwe",
+      "konón:kwe",
+      "konon:kwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np04",
+    "target": "Otikstenhokon:'a",
+    "english": "Elder women (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural elder women (3+).",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Otikstenhokon:'a",
+      "otikstenhokon:'a",
+      "otikstenhokon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np05",
+    "target": "Ratiksa'okón:'a",
+    "english": "Boys (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural male children (3+). Rati- marks male plural. In Akwesasne: Latiksa'okón:'a.",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Ratiksa'okón:'a",
+      "ratiksa'okon:'a",
+      "Latiksa'okón:'a"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np06",
+    "target": "Ratinekénhteron's",
+    "english": "Teenage boys (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural male adolescents (3+). The -'s suffix marks plurality/habituality here.",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Ratinekénhteron's",
+      "ratinekenhterons"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np07",
+    "target": "Ronón:kwe",
+    "english": "Men (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural men (3+). Ron- marks male plural. In Akwesasne: Lonón:kwe.",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Ronón:kwe",
+      "ronón:kwe",
+      "Lonón:kwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "np08",
+    "target": "Rotikstenhokón:'a",
+    "english": "Elder men (plural)",
+    "pos": "Noun — Person (Plural)",
+    "unit": 0,
+    "lesson": 3,
+    "notes": "Plural elder men (3+).",
+    "cite": {
+      "text": "Kontinónhstats L4 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-4/"
+    },
+    "accepts": [
+      "Rotikstenhokón:'a",
+      "rotikstenhokona"
+    ],
+    "forms": null
+  },
+  {
+    "id": "k01",
+    "target": "ista",
+    "english": "Mother",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Maternal kinship term. Kanien'kehá:ka society is matrilineal — clan membership passes through the mother's line. Possessive prefixes change the entire word.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "ista",
+      "akista",
+      "sista"
+    ],
+    "forms": [
+      {
+        "label": "Your mother",
+        "form": "Sa'nisténha"
+      },
+      {
+        "label": "My mother",
+        "form": "Ake'nisténha"
+      },
+      {
+        "label": "Her mother",
+        "form": "Ontate'nisténha"
+      },
+      {
+        "label": "His mother",
+        "form": "Ro'nisténha"
+      }
+    ]
+  },
+  {
+    "id": "k02",
+    "target": "'nisten'ha",
+    "english": "Father",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Paternal kinship term. The possessive prefix changes the entire word form.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "'nisten'ha",
+      "nisten'ha",
+      "nistenha"
+    ],
+    "forms": [
+      {
+        "label": "Your father",
+        "form": "Ia'níha"
+      },
+      {
+        "label": "My father",
+        "form": "Rake'níha"
+      },
+      {
+        "label": "Her father",
+        "form": "Ronwa'níha"
+      },
+      {
+        "label": "His father",
+        "form": "Ro'níha"
+      }
+    ]
+  },
+  {
+    "id": "k03",
+    "target": "'sot",
+    "english": "Grandfather",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Grandfather — a term of deep respect. The glottal stop begins the word.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "'sot",
+      "sot",
+      "rake'sot"
+    ],
+    "forms": [
+      {
+        "label": "My grandfather",
+        "form": "Rake'sótha"
+      },
+      {
+        "label": "Your grandfather",
+        "form": "Sa'sótha"
+      },
+      {
+        "label": "His grandfather",
+        "form": "Ro'sótha"
+      },
+      {
+        "label": "Her grandfather",
+        "form": "Ako'sótha"
+      }
+    ]
+  },
+  {
+    "id": "k04",
+    "target": "tota",
+    "english": "Grandmother",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Grandmother. Featured in the Kontinónhstats animated video 'Beading with Tota'. Elder women hold central ceremonial authority.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "tota",
+      "Tota",
+      "akotota"
+    ],
+    "forms": [
+      {
+        "label": "My grandmother",
+        "form": "Aksótha"
+      },
+      {
+        "label": "Your grandmother",
+        "form": "Sasótha"
+      },
+      {
+        "label": "Her grandmother",
+        "form": "Akosótha"
+      },
+      {
+        "label": "His grandmother",
+        "form": "Rosótha"
+      }
+    ]
+  },
+  {
+    "id": "k05",
+    "target": "Sahtsí:'a",
+    "english": "Older sister (your)",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Your older sister. Kinship terms encode the possessor and the relative age of siblings — English 'sister' carries none of this information.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "Sahtsí:'a",
+      "sahtsí:'a",
+      "sahtsia"
+    ],
+    "forms": [
+      {
+        "label": "Your older sister",
+        "form": "Sahtsí:'a"
+      },
+      {
+        "label": "My older sister",
+        "form": "Akhtsí:'a"
+      },
+      {
+        "label": "Her older sister",
+        "form": "Ontattsí:'a"
+      },
+      {
+        "label": "His older sister",
+        "form": "Rohtsí:'a"
+      }
+    ]
+  },
+  {
+    "id": "k06",
+    "target": "Iahtsí:'a",
+    "english": "Older brother (your)",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Your older brother. The Ia-/Ra- prefix alternation (female/male possessor) is consistent across the kinship system.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "Iahtsí:'a",
+      "iahtsí:'a",
+      "iahtsia"
+    ],
+    "forms": [
+      {
+        "label": "Your older brother",
+        "form": "Iahtsí:'a"
+      },
+      {
+        "label": "My older brother",
+        "form": "Rakhtsí:'a"
+      },
+      {
+        "label": "Her older brother",
+        "form": "Ronwahtsí:'a"
+      },
+      {
+        "label": "His older brother",
+        "form": "Rohtsí:'a"
+      }
+    ]
+  },
+  {
+    "id": "k07",
+    "target": "aksen'á:a",
+    "english": "Daughter (my)",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "My daughter. Kinship in Kanien'kéha is relational — the word changes based on whose daughter is being named.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "aksen'á:a",
+      "aksen'a:a",
+      "aksenaa"
+    ],
+    "forms": [
+      {
+        "label": "My daughter",
+        "form": "aksen'á:a"
+      },
+      {
+        "label": "Your daughter",
+        "form": "saksén'a"
+      },
+      {
+        "label": "Her daughter",
+        "form": "akonsen'á:a"
+      },
+      {
+        "label": "His daughter",
+        "form": "rosen'á:a"
+      }
+    ]
+  },
+  {
+    "id": "k08",
+    "target": "raksén'a",
+    "english": "Son (his)",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "His son. The R-/Ak- prefix alternation marks male/female possessor consistently in kinship nouns.",
+    "cite": {
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "raksén'a",
+      "raksen'a"
+    ],
+    "forms": [
+      {
+        "label": "My son",
+        "form": "raksén'a"
+      },
+      {
+        "label": "Your son",
+        "form": "saksén'a"
+      },
+      {
+        "label": "Her son",
+        "form": "akonsen'á:a"
+      },
+      {
+        "label": "His son",
+        "form": "ro'sén'a"
+      }
+    ]
+  },
+  {
+    "id": "k09",
+    "target": "aksótha",
+    "english": "My grandmother",
+    "pos": "Noun — Kinship (possessed)",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "My grandmother — the possessed form of tota. Aksótha is how you would say this in a sentence ('I am going to my grandmother's house').",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "aksótha",
+      "aksotha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "k10",
+    "target": "raksótha",
+    "english": "My grandfather",
+    "pos": "Noun — Kinship (possessed)",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "My grandfather — the possessed form of 'sot.",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "raksótha",
+      "raksotha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dv01",
+    "target": "Ka' wáhse'",
+    "english": "Where are you going?",
+    "pos": "Verb Phrase — Direction",
+    "unit": 1,
+    "lesson": 5,
+    "notes": "Direction question: where are you going? Ka' = where; wáhse' = you go. The direction verb system in Kanien'kéha is rich — 'go', 'come from', and 'went to' are grammatically distinct.",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "Ka' wáhse'",
+      "ka' wahse'",
+      "ka wahse"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dv02",
+    "target": "wà:ke",
+    "english": "I am going (somewhere)",
+    "pos": "Verb — Direction",
+    "unit": 1,
+    "lesson": 5,
+    "notes": "Response to 'where are you going?'. wà:ke = I am going. Used with a destination: 'Ake'nistén:ha tsi tiakonónhsote' wà:ke' (I am going to my mother's house).",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "wà:ke",
+      "wa:ke",
+      "wake"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dv03",
+    "target": "Ka' nontáhse'",
+    "english": "Where did you come from?",
+    "pos": "Verb Phrase — Direction",
+    "unit": 1,
+    "lesson": 5,
+    "notes": "Direction question: where did you come from? Distinguishes origin (where you came from) from destination (where you're going).",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "Ka' nontáhse'",
+      "ka' nontahse'",
+      "ka nontahse"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dv04",
+    "target": "Ka' iéhse'skwe'",
+    "english": "Where did you go?",
+    "pos": "Verb Phrase — Direction",
+    "unit": 1,
+    "lesson": 5,
+    "notes": "Direction question about a past action: where did you go? The -skwe' suffix marks past tense in this verb form.",
+    "cite": {
+      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
+    },
+    "accepts": [
+      "Ka' iéhse'skwe'",
+      "ka' iehse'skwe'",
+      "ka iehse skwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a01",
+    "target": "áhta'",
+    "english": "Shoe / Shoes",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun (begins with 'a'). The verb incorporation example: áhta' + -owá:nen → watahkowá:nen (a big shoe). This demonstrates noun incorporation, one of Kanien'kéha's most distinctive grammatical features.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "áhta'",
+      "ahta'",
+      "ahta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a02",
+    "target": "atháhsteren",
+    "english": "Pants / Trousers",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun. The at- prefix is common in A-class nouns and often indicates something worn on the body.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "atháhsteren",
+      "athahsteren"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a03",
+    "target": "atià:tawi",
+    "english": "Shirt / Dress / Coat",
+    "pos": "Noun — A-Class (Fake)",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A 'fake' A-class noun — the root meaning 'body cover' is still identifiable. When you can describe the root meaning it usually derives from a verb.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "atià:tawi",
+      "atia:tawi",
+      "atiatawi"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a04",
+    "target": "ate'wáhshare'",
+    "english": "Earrings",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun for earrings. The ate'- prefix appears in several items worn or attached to the body.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "ate'wáhshare'",
+      "ate'wahshare'",
+      "atewahshare"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a05",
+    "target": "atkahráhnha'",
+    "english": "Glasses / Eyeglasses",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun for glasses. The atk- cluster is characteristic of several A-class body-related nouns.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "atkahráhnha'",
+      "atkahrahnha'",
+      "atkarahnha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a06",
+    "target": "ani'tskwá:ra",
+    "english": "Chair",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun for chair. Household and everyday object vocabulary.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "ani'tskwá:ra",
+      "ani'tskwa:ra",
+      "anitskwara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a07",
+    "target": "ahthén:no",
+    "english": "Ball",
+    "pos": "Noun — A-Class",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A-class noun for ball. Note the long vowel (:) before the final syllable.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "ahthén:no",
+      "ahthén:no",
+      "ahthenno"
+    ],
+    "forms": null
+  },
+  {
+    "id": "a08",
+    "target": "à:there'",
+    "english": "Basket",
+    "pos": "Noun — A-Class (True)",
+    "unit": 2,
+    "lesson": 6,
+    "notes": "A 'true' A-class noun — the original root meaning has been lost over time, so only the word survives. This is described in the Kontinónhstats curriculum as an example of how language evolves.",
+    "cite": {
+      "text": "Kontinónhstats L7 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-7/"
+    },
+    "accepts": [
+      "à:there'",
+      "a:there'",
+      "athere"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v01",
+    "target": "sá:tien",
+    "english": "You sit (command)",
+    "pos": "Verb — A-Stem (Command)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "A-stem verb, subjective command form. Structure: s- (you, subjective pronoun) + á:tien (A-stem verb root). Commands never have a suffix because you are directing someone to act.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "sá:tien",
+      "sa:tien",
+      "satien"
+    ],
+    "forms": [
+      {
+        "label": "You sit (command)",
+        "form": "sá:tien"
+      },
+      {
+        "label": "I am sitting (habitual)",
+        "form": "ká:tiens"
+      }
+    ]
+  },
+  {
+    "id": "v02",
+    "target": "ká:tiens",
+    "english": "I am sitting (habitual)",
+    "pos": "Verb — A-Stem (Habitual)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "A-stem verb, first person habitual. Structure: k- (I, subjective) + á:tien (root) + -s (habitual suffix). The -s suffix appears when the action is repetitive.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "ká:tiens",
+      "ka:tiens",
+      "katiens"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v03",
+    "target": "tesaráhtat",
+    "english": "You run (command)",
+    "pos": "Verb — A-Stem Dualic (Command)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "Dualic A-stem verb — command form. Structure: te- (dualic prefix) + s- (you) + aráhtat (A-stem root). Dualic verbs describe two-phase actions: standing still THEN moving forward.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "tesaráhtat",
+      "tesarahtat"
+    ],
+    "forms": [
+      {
+        "label": "You run (command)",
+        "form": "tesaráhtat"
+      },
+      {
+        "label": "I run (habitual)",
+        "form": "tekaráhtats"
+      }
+    ]
+  },
+  {
+    "id": "v04",
+    "target": "tekaráhtats",
+    "english": "I run (habitual)",
+    "pos": "Verb — A-Stem Dualic (Habitual)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "Dualic A-stem, first person habitual. Structure: te- + k- (I) + aráhtat (root) + -s (habitual). The dualic te- prefix cannot be dropped.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "tekaráhtats",
+      "tekarahtats"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v05",
+    "target": "satkáhthons",
+    "english": "You listen (habitual)",
+    "pos": "Verb — A-Stem (Habitual)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "Habitual form — you listen (regularly). Note the at- middle voice infix that appears in reflexive and body-related verbs.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "satkáhthons",
+      "satkahthons"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v06",
+    "target": "katkáhthons",
+    "english": "I listen (habitual)",
+    "pos": "Verb — A-Stem (Habitual)",
+    "unit": 2,
+    "lesson": 7,
+    "notes": "I listen — habitual form. k- is the first-person subjective pronoun in A-stem verbs.",
+    "cite": {
+      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+    },
+    "accepts": [
+      "katkáhthons",
+      "katkahthons"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ar01",
+    "target": "ne",
+    "english": "the (article — specific)",
+    "pos": "Article",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "The definite article 'the' in Kanien'kéha. 'ne' marks a specific, identifiable noun. Unlike English, Kanien'kéha articles also signal animacy and social register in more complex sentences.",
+    "cite": {
+      "text": "Mithun (1982); Maracle (1993) One Thousand Useful Mohawk Words; Kontinónhstats curriculum structure",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "ne"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ar02",
+    "target": "thi",
+    "english": "the (article — motion/direction)",
+    "pos": "Article",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Used before nouns in directional contexts — 'the' when going to get something. From the Lesson 1 example: 'Wá:s skó:ha thi áhta' (Go get the shoe).",
+    "cite": {
+      "text": "Kontinónhstats L1 example · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "thi"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g01",
+    "target": "Shé:kon",
+    "english": "Hello / Greetings",
+    "pos": "Greeting",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Common greeting — 'hello', 'hi', or more literally 'still/yet' (an expression of ongoing life and presence). Used in both casual and formal contexts.",
+    "cite": {
+      "text": "Kontinónhstats curriculum · Maracle (1993)",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Shé:kon",
+      "she:kon",
+      "shekon",
+      "Shékon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g02",
+    "target": "Niawenhkó:wa",
+    "english": "Thank you very much",
+    "pos": "Expression",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Deep thanks — 'niawenhkó:wa' carries more weight than a simple 'thank you'. It connects to the spirit of the Thanksgiving Address (Ohén:ton Karihwatéhkwen).",
+    "cite": {
+      "text": "Kontinónhstats curriculum · Kanehsatà:ke community usage",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Niawenhkó:wa",
+      "niawenhko:wa",
+      "niawenhkowa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g03",
+    "target": "Tho niioht",
+    "english": "That's it / That's right / Well done",
+    "pos": "Expression",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Affirming expression — 'that's it', 'that's right', or 'well done'. Used in conversation and teaching to confirm understanding.",
+    "cite": {
+      "text": "Kontinónhstats curriculum · Kanehsatà:ke community usage",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Tho niioht",
+      "tho niioht",
+      "tho niiot"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g04",
+    "target": "Io'nikonhraién:ta'ne",
+    "english": "Wonderful / Excellent (lit. it pleases the mind)",
+    "pos": "Expression",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Literally: 'it makes my mind happy/satisfied'. Used to express genuine delight or approval. Demonstrates how Kanien'kéha describes internal states through embodied metaphor.",
+    "cite": {
+      "text": "Kanehsatà:ke community usage · Kontinónhstats curriculum",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Io'nikonhraién:ta'ne",
+      "io'nikonhraien:ta'ne",
+      "ionikonhraientane"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g05",
+    "target": "Tó:ka'",
+    "english": "Not quite / No",
+    "pos": "Expression",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "Mild negation or correction — 'not quite', 'no', or 'that's not right'. Softer than a flat 'no'.",
+    "cite": {
+      "text": "Kanehsatà:ke community usage",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Tó:ka'",
+      "to:ka'",
+      "toka"
+    ],
+    "forms": null
+  },
+  {
+    "id": "g06",
+    "target": "Iáh",
+    "english": "No / Not (negation)",
+    "pos": "Particle — Negation",
+    "unit": 2,
+    "lesson": 8,
+    "notes": "The primary negation particle. Iáh + verb = negated verb. Example: Iáh ká:tiens = I am not sitting. Negation is formed through a particle + verb structure rather than internal verb change.",
+    "cite": {
+      "text": "Mithun (1982); Maracle (1993)",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Iáh",
+      "iah",
+      "Iah"
+    ],
+    "forms": null
+  }
+]

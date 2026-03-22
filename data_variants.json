@@ -1,0 +1,86 @@
+{
+  "p04": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke / Six Nations",
+      "f": "raónha",
+      "n": "r is a full consonant"
+    },
+    {
+      "c": "Akwesasne",
+      "f": "laónha",
+      "n": "r→l alternation in Akwesasne dialect (Bonvillain 1984)"
+    }
+  ],
+  "n05": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "Raksá:'a",
+      "n": "r-initial"
+    },
+    {
+      "c": "Akwesasne",
+      "f": "Laksá:'a",
+      "n": "r→l alternation"
+    }
+  ],
+  "n07": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "Rón:kwe",
+      "n": "r-initial"
+    },
+    {
+      "c": "Akwesasne",
+      "f": "Lón:kwe",
+      "n": "r→l alternation"
+    }
+  ],
+  "n06": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "Ranekénhteron",
+      "n": "r-initial"
+    },
+    {
+      "c": "Akwesasne",
+      "f": "Lanekénhteron",
+      "n": "r→l alternation"
+    }
+  ],
+  "n08": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "Rokstén:ha",
+      "n": "r-initial"
+    },
+    {
+      "c": "Akwesasne",
+      "f": "Lokstén:ha",
+      "n": "r→l alternation"
+    }
+  ],
+  "p01": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "í:se'",
+      "n": "i-form (Eastern Quebec dialects)"
+    },
+    {
+      "c": "Six Nations / Tyendinaga",
+      "f": "ý:se'",
+      "n": "y-form (Ontario dialects; CBC Original Voices)"
+    }
+  ],
+  "p02": [
+    {
+      "c": "Kanehsatà:ke / Kahnawà:ke",
+      "f": "í:'i",
+      "n": "i-form"
+    },
+    {
+      "c": "Six Nations / Tyendinaga",
+      "f": "ý:'i",
+      "n": "y-form"
+    }
+  ]
+}
