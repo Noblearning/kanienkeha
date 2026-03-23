@@ -3644,5 +3644,1081 @@
       "ratiwennahnion"
     ],
     "forms": null
+  },
+  {
+    "id": "t01",
+    "target": "Iekwahrahnhá:ra'",
+    "english": "Hammer",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Hammer — a 'famine indefinite' noun beginning with Ie-. These verb-derived nouns describe what the object does: the hammer-thing.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Iekwahrahnhá:ra'",
+      "iekwahrahnhá:ra'",
+      "iekwahrahnhara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "t02",
+    "target": "Iekwáhhere'",
+    "english": "Shovel / Spade",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Shovel or spade — another Ie- class tool noun derived from a verb root meaning 'to dig'.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Iekwáhhere'",
+      "iekwáhhere'",
+      "iekwahhere"
+    ],
+    "forms": null
+  },
+  {
+    "id": "t03",
+    "target": "Ionkwarihón:ni",
+    "english": "Scissors",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Scissors — Ion- class noun, verb-derived: 'the thing that cuts things'. Note how the word describes the function.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Ionkwarihón:ni",
+      "ionkwarihón:ni",
+      "ionkwarihonn i"
+    ],
+    "forms": null
+  },
+  {
+    "id": "t04",
+    "target": "Ietkarihón:ni",
+    "english": "Knife",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Knife — Iet- class tool noun, verb-derived from a cutting root.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Ietkarihón:ni",
+      "ietkarihón:ni",
+      "ietkarihonn i"
+    ],
+    "forms": null
+  },
+  {
+    "id": "t05",
+    "target": "Iakoa'sháhen",
+    "english": "Awl / Hole puncher",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Awl or hole puncher — Iak- class tool noun. Traditional awls were used to punch holes in hides for sewing.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Iakoa'sháhen",
+      "iakoa'sháhen",
+      "iakoashahen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "t06",
+    "target": "Ietshennón:ni",
+    "english": "Screwdriver",
+    "pos": "Noun — Tool",
+    "unit": 7,
+    "lesson": 0,
+    "notes": "Screwdriver — modern tool named using the -hon:ni pattern (the thing that does X). The language generates names for new tools from existing verb roots.",
+    "cite": {
+      "text": "Kontinónhstats L10 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-10/"
+    },
+    "accepts": [
+      "Ietshennón:ni",
+      "ietshennón:ni",
+      "ietshennonni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv01",
+    "target": "skwe'tarón:ko",
+    "english": "You cut it up (command)",
+    "pos": "Verb — Consonant Stem (Command)",
+    "unit": 7,
+    "lesson": 1,
+    "notes": "Consonant-stem verb command form. Structure: s- (you) + kwe'tarón:ko (consonant-stem root). The root begins with a consonant (k), which distinguishes this class from A-stem verbs.",
+    "cite": {
+      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+    },
+    "accepts": [
+      "skwe'tarón:ko",
+      "skwe'taron:ko",
+      "skwetaronko"
+    ],
+    "forms": [
+      {
+        "label": "You cut it up (command)",
+        "form": "skwe'tarón:ko"
+      },
+      {
+        "label": "I cut it up (habitual)",
+        "form": "kkwe'tarón:kwas"
+      }
+    ]
+  },
+  {
+    "id": "cv02",
+    "target": "kkwe'tarón:kwas",
+    "english": "I cut it up (habitual)",
+    "pos": "Verb — Consonant Stem (Habitual)",
+    "unit": 7,
+    "lesson": 1,
+    "notes": "Consonant-stem verb, first person habitual. Structure: k- (I) + kwe'tarón:ko (root) + -s (habitual). Note that the pronoun k- doubles the initial consonant of the root — this is a key feature of the consonant stem class.",
+    "cite": {
+      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+    },
+    "accepts": [
+      "kkwe'tarón:kwas",
+      "kkwe'taron:kwas",
+      "kkwetaronkwas"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv03",
+    "target": "tetshon'ká:ria'k",
+    "english": "You saw the board (command — dualic)",
+    "pos": "Verb — Consonant Stem Dualic (Command)",
+    "unit": 7,
+    "lesson": 1,
+    "notes": "Dualic consonant-stem verb command. Structure: te- (dualic) + ts- (you) + hon'ká:ria'k (consonant root). Sawing requires two motions: push and pull — hence dualic.",
+    "cite": {
+      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+    },
+    "accepts": [
+      "tetshon'ká:ria'k",
+      "tetshon'ka:ria'k",
+      "tetshonkaria'k"
+    ],
+    "forms": [
+      {
+        "label": "You saw (command)",
+        "form": "tetshon'ká:ria'k"
+      },
+      {
+        "label": "I saw (habitual)",
+        "form": "tekshon'ká:ria'ks"
+      }
+    ]
+  },
+  {
+    "id": "cv04",
+    "target": "skáhere'",
+    "english": "You sweep (command)",
+    "pos": "Verb — Consonant Stem (Command)",
+    "unit": 7,
+    "lesson": 1,
+    "notes": "Sweeping — consonant-stem command. s- (you) + káhere' (root). A common household action verb.",
+    "cite": {
+      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+    },
+    "accepts": [
+      "skáhere'",
+      "skahere'",
+      "skahère'"
+    ],
+    "forms": [
+      {
+        "label": "You sweep (command)",
+        "form": "skáhere'"
+      },
+      {
+        "label": "I sweep (habitual)",
+        "form": "kkáhere's"
+      }
+    ]
+  },
+  {
+    "id": "cv05",
+    "target": "skahó:wi",
+    "english": "You give (command)",
+    "pos": "Verb — Consonant Stem (Command)",
+    "unit": 7,
+    "lesson": 1,
+    "notes": "You give — consonant-stem command. Used in everyday exchanges and in ceremonial contexts.",
+    "cite": {
+      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+    },
+    "accepts": [
+      "skahó:wi",
+      "skaho:wi",
+      "skahowi"
+    ],
+    "forms": [
+      {
+        "label": "You give (command)",
+        "form": "skahó:wi"
+      },
+      {
+        "label": "I give (habitual)",
+        "form": "kkahó:wis"
+      }
+    ]
+  },
+  {
+    "id": "iv01",
+    "target": "tsí'stenht",
+    "english": "You take scales off fish (command)",
+    "pos": "Verb — I-Stem (Command)",
+    "unit": 7,
+    "lesson": 2,
+    "notes": "I-stem verb command form. The I-stem is distinctive because the pronoun 'you' appears as ts- rather than s-. The verb root begins with i (or a sound that triggers the ts- pronoun). This class also contains a distinctive (sh) sound between consonants.",
+    "cite": {
+      "text": "Kontinónhstats L16 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-16/"
+    },
+    "accepts": [
+      "tsí'stenht",
+      "tsi'stenht"
+    ],
+    "forms": [
+      {
+        "label": "You take scales off fish (command)",
+        "form": "tsí'stenht"
+      },
+      {
+        "label": "I take scales off fish (habitual)",
+        "form": "kí'stenhtha'"
+      }
+    ]
+  },
+  {
+    "id": "iv02",
+    "target": "tenhsi'tstenhrhó:tha'",
+    "english": "You are a bricklayer (habitual)",
+    "pos": "Verb — I-Stem Dualic (Habitual)",
+    "unit": 7,
+    "lesson": 2,
+    "notes": "Dualic I-stem habitual. Bricklaying is dualic — you place a brick (one motion) and set it in mortar (second motion). The -rhó:tha' habitual suffix marks this as an ongoing occupation.",
+    "cite": {
+      "text": "Kontinónhstats L16 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-16/"
+    },
+    "accepts": [
+      "tenhsi'tstenhrhó:tha'",
+      "tenhsi'tstenh rho:tha'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "iv03",
+    "target": "sahsennón:ni",
+    "english": "You make a fire (command)",
+    "pos": "Verb — I-Stem (Command)",
+    "unit": 7,
+    "lesson": 2,
+    "notes": "Making fire — an I-stem command verb. The ability to make fire is a fundamental skill referenced throughout Haudenosaunee oral tradition.",
+    "cite": {
+      "text": "Kontinónhstats L16 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-16/"
+    },
+    "accepts": [
+      "sahsennón:ni",
+      "sahsennon:ni",
+      "sahsennonni"
+    ],
+    "forms": [
+      {
+        "label": "You make a fire (command)",
+        "form": "sahsennón:ni"
+      },
+      {
+        "label": "I make a fire (habitual)",
+        "form": "kahsennón:nis"
+      }
+    ]
+  },
+  {
+    "id": "ev01",
+    "target": "sé:ta",
+    "english": "You put it in (command)",
+    "pos": "Verb — True E-Stem (Command)",
+    "unit": 7,
+    "lesson": 3,
+    "notes": "True E-stem verb — the verb root begins with é. Structure: s- (you) + é:ta (root). Commands never have a suffix.",
+    "cite": {
+      "text": "Kontinónhstats L17 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-17/"
+    },
+    "accepts": [
+      "sé:ta",
+      "se:ta",
+      "seta"
+    ],
+    "forms": [
+      {
+        "label": "You put it in (command)",
+        "form": "sé:ta"
+      },
+      {
+        "label": "I put it in (habitual)",
+        "form": "ké:ta's"
+      }
+    ]
+  },
+  {
+    "id": "ev02",
+    "target": "ské:ta'",
+    "english": "Do you remember? / You remember (question)",
+    "pos": "Verb — True E-Stem (Question)",
+    "unit": 7,
+    "lesson": 3,
+    "notes": "Remember — True E-stem question/command form. Used in both questions ('Do you remember?') and affirmations.",
+    "cite": {
+      "text": "Kontinónhstats L17 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-17/"
+    },
+    "accepts": [
+      "ské:ta'",
+      "ske:ta'",
+      "sketa'"
+    ],
+    "forms": [
+      {
+        "label": "Do you remember?",
+        "form": "ské:ta'"
+      },
+      {
+        "label": "I remember (habitual)",
+        "form": "ké:ta'ne's"
+      }
+    ]
+  },
+  {
+    "id": "ev03",
+    "target": "sahshá:wi",
+    "english": "You want something (command / question)",
+    "pos": "Verb — True E-Stem",
+    "unit": 7,
+    "lesson": 3,
+    "notes": "You want — True E-stem verb expressing desire or want. Central to daily conversation.",
+    "cite": {
+      "text": "Kontinónhstats L17 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-17/"
+    },
+    "accepts": [
+      "sahshá:wi",
+      "sahsha:wi",
+      "sahshawi"
+    ],
+    "forms": [
+      {
+        "label": "You want (command/question)",
+        "form": "sahshá:wi"
+      },
+      {
+        "label": "I want (habitual)",
+        "form": "kahshá:wis"
+      }
+    ]
+  },
+  {
+    "id": "ev04",
+    "target": "sanerénhton",
+    "english": "You mow the lawn (command)",
+    "pos": "Verb — True E-Stem (Command)",
+    "unit": 7,
+    "lesson": 3,
+    "notes": "Mowing the lawn — E-stem command. A modern activity named using the language's existing verb-stem system.",
+    "cite": {
+      "text": "Kontinónhstats L17 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-17/"
+    },
+    "accepts": [
+      "sanerénhton",
+      "sanerenhton"
+    ],
+    "forms": [
+      {
+        "label": "You mow (command)",
+        "form": "sanerénhton"
+      },
+      {
+        "label": "I mow (habitual)",
+        "form": "kanerénhtons"
+      }
+    ]
+  },
+  {
+    "id": "fi01",
+    "target": "Namé:s",
+    "english": "Trout",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Trout — the general word for fish in some contexts. Trout were abundant in the rivers and streams of the Kanehsatà:ke territory.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Namé:s",
+      "namé:s",
+      "names"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi02",
+    "target": "Kahshakaié:ra'",
+    "english": "Sturgeon",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Sturgeon — a large, ancient fish of the St. Lawrence River. Lake sturgeon were a major food source and are now endangered due to overfishing and habitat loss.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Kahshakaié:ra'",
+      "kahshakaié:ra'",
+      "kahshakaiéra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi03",
+    "target": "Ohkwarí:",
+    "english": "Pike",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Pike — a predatory fish of the Great Lakes and St. Lawrence watershed. Note the similarity to Ohkwá:ri (bear) — both begin with ohkwa-, though they are distinct words.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Ohkwarí:",
+      "ohkwarí:",
+      "ohkwari:"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi04",
+    "target": "Kotihnawá:ra's",
+    "english": "Salmon",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Salmon — once abundant in the St. Lawrence, Atlantic salmon runs were dramatically reduced by dam construction and pollution. Their return is part of river restoration efforts.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Kotihnawá:ra's",
+      "kotihnawá:ra's",
+      "kotihnawara's"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi05",
+    "target": "Aterón:taks",
+    "english": "Eel",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Eel — the Eel Clan (Rotineniotthró:non) of Kanehsatà:ke takes its name from this fish. American eels migrate through the St. Lawrence; their populations have collapsed due to dams and pollution. Eel restoration is an environmental justice issue in Haudenosaunee territory.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Aterón:taks",
+      "aterón:taks",
+      "aterontaks"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi06",
+    "target": "Tsiskáwiia'k",
+    "english": "Bass",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Bass — smallmouth and largemouth bass are abundant in the Lake of Two Mountains near Kanehsatà:ke.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Tsiskáwiia'k",
+      "tsiskáwiia'k",
+      "tsiskawia'k"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fi07",
+    "target": "Atenà:tara",
+    "english": "Sunfish",
+    "pos": "Noun — Fish",
+    "unit": 8,
+    "lesson": 0,
+    "notes": "Sunfish — common in the shallow waters of the lakes and rivers around Kanehsatà:ke.",
+    "cite": {
+      "text": "Kontinónhstats L24 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-24/"
+    },
+    "accepts": [
+      "Atenà:tara",
+      "atenà:tara",
+      "atenatara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi01",
+    "target": "Á:kwe'ks",
+    "english": "Eagle",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Eagle — the eagle carries prayers upward to the Creator. Eagle feathers hold deep ceremonial significance in Haudenosaunee tradition. The eagle perches at the top of the Great Tree of Peace in the creation story of the Confederacy.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Á:kwe'ks",
+      "á:kwe'ks",
+      "a:kwe'ks",
+      "akweks"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi02",
+    "target": "Kwáwenhs",
+    "english": "Robin",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Robin — one of the first birds to return in spring, signalling the end of winter. The robin's arrival is part of the seasonal awareness encoded in Haudenosaunee ceremonial life.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Kwáwenhs",
+      "kwáwenhs",
+      "kwawenhs"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi03",
+    "target": "Sha'kowén:na'",
+    "english": "Hawk",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Hawk — a hunting bird of the Kanehsatà:ke territory. The hawk is acknowledged in the Thanksgiving Address among the birds.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Sha'kowén:na'",
+      "sha'kowén:na'",
+      "sha'kowenna'",
+      "sha'kowen:na"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi04",
+    "target": "Tsistí:keri",
+    "english": "Horned owl",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Great Horned Owl — in some Haudenosaunee traditions, the owl is associated with death or medicine. The owl's call at night carries significance beyond its literal sound.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Tsistí:keri",
+      "tsistí:keri",
+      "tsistikeri"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi05",
+    "target": "Kwareró:ha",
+    "english": "Owl",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Owl (general) — distinct from the Horned Owl. The owl's night vision and silent flight have long made it significant in oral tradition.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Kwareró:ha",
+      "kwareró:ha",
+      "kwarer oha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi06",
+    "target": "Káhonk",
+    "english": "Goose",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Goose — Canada geese (Káhonk) are abundant at Kanehsatà:ke. Their honking call in spring and autumn marks the changing of seasons as reliably as the calendar.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Káhonk",
+      "káhonk",
+      "kahonk"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi07",
+    "target": "Ohkwá:ri kahón:",
+    "english": "Loon",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Loon — the loon's call on the lake is one of the distinctive sounds of the Kanehsatà:ke territory. The loon dives deep — in some traditions it is associated with persistence and the ability to navigate between worlds.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Ohkwá:ri kahón:",
+      "ohkwári kahon:",
+      "ohkwari kahon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "bi08",
+    "target": "Ohskenón:ton o'wá:ron tsi ónhka táhnon",
+    "english": "Heron (the one who fishes)",
+    "pos": "Noun — Bird",
+    "unit": 8,
+    "lesson": 1,
+    "notes": "Heron — the heron's patience and precision in fishing make it a figure of stillness and skill in oral tradition. The heron stands motionless at the river's edge — a quality valued in hunters and healers alike.",
+    "cite": {
+      "text": "Kontinónhstats L25 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-25/"
+    },
+    "accepts": [
+      "Oheró:kon",
+      "oherokon",
+      "oherókon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc01",
+    "target": "seniá:tien",
+    "english": "You two sit (dual command)",
+    "pos": "Verb — A-Stem Dual Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Dual command — telling two people to sit. Structure: seni- (you two) + á:tien (A-stem root). You already know sá:tien (you [one] sit). The dual pronoun prefix seni- replaces the singular s-.",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "seniá:tien",
+      "senia:tien",
+      "seniatien"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc02",
+    "target": "sewá:tien",
+    "english": "You all sit (plural command)",
+    "pos": "Verb — A-Stem Plural Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Plural command — telling three or more people to sit. Structure: sewa- (you all) + á:tien (root). You already know sewakwé:kon (you all, pronoun). The sewa- pronoun prefix also appears in verb commands.",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "sewá:tien",
+      "sewa:tien",
+      "sewatien"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc03",
+    "target": "seniatkáhthon",
+    "english": "You two listen (dual command)",
+    "pos": "Verb — A-Stem Dual Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Dual command for listening. You know the singular form satkáhthons (you listen). The dual prefix seni- replaces sat-, giving seniatkáhthon.",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "seniatkáhthon",
+      "seniatkhthon",
+      "seniatkahtho n"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc04",
+    "target": "sewatkáhthon",
+    "english": "You all listen (plural command)",
+    "pos": "Verb — A-Stem Plural Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Plural command for listening. sewa- (you all) + atkáhthon (root). Plural commands, like all commands, never take the habitual -s suffix.",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "sewatkáhthon",
+      "sewatkahtho n",
+      "sewatkahthon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc05",
+    "target": "teseniaráhtat",
+    "english": "You two run (dual dualic command)",
+    "pos": "Verb — A-Stem Dual Dualic Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Dual dualic command — telling two people to run. Structure: te- (dualic) + seni- (you two) + aráhtat (root). Compare tesaráhtat (you [one] run).",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "teseniaráhtat",
+      "teseniara htat",
+      "teseniarahtat"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dc06",
+    "target": "tesewará:htat",
+    "english": "You all run (plural dualic command)",
+    "pos": "Verb — A-Stem Plural Dualic Command",
+    "unit": 8,
+    "lesson": 2,
+    "notes": "Plural dualic command — telling everyone to run. te- (dualic) + sewa- (you all) + ráhtat (root). All six combinations (singular/dual/plural × subjective/dualic) of command forms are now represented in your vocabulary.",
+    "cite": {
+      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
+    },
+    "accepts": [
+      "tesewará:htat",
+      "tesewara:htat",
+      "tesewarahtat"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n11",
+    "target": "Óia'k énska",
+    "english": "Eleven (11)",
+    "pos": "Number",
+    "unit": 8,
+    "lesson": 3,
+    "notes": "Eleven = ten + one. Óia'k (ten) + énska (one). All numbers above ten in Kanien'kéha are compound — built from the ten-base plus the units. This base-10 additive system is transparent and logical once you know 1–10.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Óia'k énska",
+      "oia'k énska",
+      "oiak enska"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n12",
+    "target": "Óia'k tékeni",
+    "english": "Twelve (12)",
+    "pos": "Number",
+    "unit": 8,
+    "lesson": 3,
+    "notes": "Twelve = ten + two. The number system is completely transparent: óia'k (10) + tékeni (2) = 12. No irregular forms to memorise.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Óia'k tékeni",
+      "oia'k tékeni",
+      "oiak tekeni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n20",
+    "target": "Tékeni óia'k",
+    "english": "Twenty (20)",
+    "pos": "Number",
+    "unit": 8,
+    "lesson": 3,
+    "notes": "Twenty = two tens. Tékeni (two) + óia'k (ten). Note the order reverses: for 11–19, ten comes first (óia'k énska). For multiples of ten (20, 30…), the multiplier comes first (tékeni óia'k).",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Tékeni óia'k",
+      "tékeni oia'k",
+      "tekeni oiak"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n50",
+    "target": "Wísk óia'k",
+    "english": "Fifty (50)",
+    "pos": "Number",
+    "unit": 8,
+    "lesson": 3,
+    "notes": "Fifty = five tens. Wísk (five) + óia'k (ten). The pattern is consistent: once you know 1–10, you can construct any number to 100.",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Wísk óia'k",
+      "wísk oia'k",
+      "wisk oiak"
+    ],
+    "forms": null
+  },
+  {
+    "id": "n100",
+    "target": "Tewá:sen",
+    "english": "One hundred (100)",
+    "pos": "Number",
+    "unit": 8,
+    "lesson": 3,
+    "notes": "One hundred — a single word rather than a compound. Tewá:sen is the base for 100; larger hundreds are formed by multiplying (tékeni tewá:sen = 200, áhsen tewá:sen = 300, etc.).",
+    "cite": {
+      "text": "Kontinónhstats L27 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-27/"
+    },
+    "accepts": [
+      "Tewá:sen",
+      "tewa:sen",
+      "tewasen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph01",
+    "target": "Shé:kon, tó:kens?",
+    "english": "Hello, how are you?",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "The standard greeting-and-inquiry pair. Shé:kon (hello) + tó:kens (how are you? / are you well?). The response is: Io'tenhró:ton (I am well) or Iah tó:kens (Not so well).",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Shé:kon, tó:kens?",
+      "she:kon, to:kens?",
+      "shekon tokens"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph02",
+    "target": "Io'tenhró:ton",
+    "english": "I am well / I am good",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "Response to 'how are you?' — I am well. Literally 'it is going along well with me'. Used in both casual and formal contexts.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Io'tenhró:ton",
+      "io'tenhró:ton",
+      "io'tenhroton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph03",
+    "target": "Iah tó:kens",
+    "english": "Not so well / Not really",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "Mild negation of wellbeing — 'not really', 'not so well'. You already know Iáh (negation particle) from Unit 3. Here tó:kens = well/OK, so Iáh tó:kens = not OK.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Iah tó:kens",
+      "iah to:kens",
+      "iah tokens"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph04",
+    "target": "Niawenhkó:wa na'teionkwarihón:ni",
+    "english": "Thank you for what you did",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "Extended thanks for a specific action. You know Niawenhkó:wa (thank you very much). na'teionkwarihón:ni = 'for what you/we did'. Useful in ceremonies and community contexts.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Niawenhkó:wa na'teionkwarihón:ni",
+      "niawenhkowa nateionkwari honni"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph05",
+    "target": "Kanié:ri iken'?",
+    "english": "What is your name?",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "What is your name? — literally 'what is it they call you?'. One of the first questions in any greeting sequence.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Kanié:ri iken'?",
+      "kanie:ri iken'?",
+      "kanierien iken"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph06",
+    "target": "[Tsiionkwe] akwé:kon",
+    "english": "My name is [Name] (lit. they call me [Name])",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "Response to 'what is your name?' — 'they call me [Name]'. Replace [Tsiionkwe] with your Kanien'kéha name or the name you wish to give.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "akwé:kon",
+      "akwe:kon",
+      "akwekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph07",
+    "target": "Onen' ki' wáhi",
+    "english": "That is all / I am finished (closing)",
+    "pos": "Ceremonial Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "'That is all / I am finished' — the closing phrase used at the end of a speech or a portion of the Thanksgiving Address. Onen' = now; ki' = just/only; wáhi = an affirmative particle. Together: 'now, that's it, truly'.",
+    "cite": {
+      "text": "Thanksgiving Address closing phrase · Kanehsatà:ke tradition",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Onen' ki' wáhi",
+      "onen' ki' wahi",
+      "onen ki wahi"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ph08",
+    "target": "Tsi niiohtonhátie?",
+    "english": "What time is it?",
+    "pos": "Conversational Phrase",
+    "unit": 8,
+    "lesson": 4,
+    "notes": "What time is it? — a key practical phrase for daily life. Tsi = where/when; niiohtonhátie = it is at what point (in the day). The numbers you learned feed directly into time-telling.",
+    "cite": {
+      "text": "Kontinónhstats dialogue curriculum · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Tsi niiohtonhátie?",
+      "tsi niiohtonhátie?",
+      "tsi niiohtonhatie"
+    ],
+    "forms": null
   }
 ]

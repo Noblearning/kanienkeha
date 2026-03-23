@@ -5077,5 +5077,1502 @@
         ]
       }
     ]
+  },
+  {
+    "id": 7,
+    "title": "Unit 8 — Tools, Verb Stems & More Grammar",
+    "desc": "Tool nouns, consonant-stem verbs, I-stem verbs, True E-stem verbs, and dual/plural commands",
+    "lessons": [
+      {
+        "id": "u7l0",
+        "title": "Lesson 29 — Tool Nouns (Famine Indefinite Class)",
+        "icon": "🔨",
+        "sub": "The things that do things",
+        "intro": [
+          "Lesson 10 of the Kontinónhstats curriculum introduces a special noun class called <strong>'famine indefinite nouns'</strong> — nouns beginning with the syllables <strong>ie-, ion-, iako-, teion-, tewa-</strong>. These are verb-derived nouns: the word describes what the object does.",
+          "<strong>Iekwahrahnhá:ra'</strong> (hammer) = the thing that pounds. <strong>Ionkwarihón:ni</strong> (scissors) = the thing that cuts things. <strong>Ietkarihón:ni</strong> (knife) = the cutting thing. This naming strategy — describing function — is consistent with the pattern you've seen throughout the course.",
+          "The famine indefinite class is one of the most productive noun classes for naming new objects, because any tool can be named by describing what it does."
+        ],
+        "ped": "<strong>Productive naming continued:</strong> The famine indefinite class demonstrates that Kanien'kéha's productivity (Mary McDonald's term) extends to tools and technology. A hammer is not just a hammer — it is 'the thing that pounds'. Learning the pattern means you can generate novel names.",
+        "vocabIds": [
+          "t01",
+          "t02",
+          "t03",
+          "t04",
+          "t05",
+          "t06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "t03",
+            "prompt": "Ionkwarihón:ni means scissors. The root -hon:ni appears in several tool words. What does it likely indicate?",
+            "sub": "",
+            "correct": "The object that does/makes something — a functional noun suffix",
+            "options": [
+              "The object that does/makes something — a functional noun suffix",
+              "A specific material (iron)",
+              "Only cutting tools",
+              "The colour of the tool"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! -hon:ni is a nominalising suffix meaning roughly 'the thing that does X'. You saw it in Ietkarihón:ni (knife = cutting-thing) and Ionkwarihón:ni (scissors = cuts-things). The suffix unlocks a whole category of tool naming.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "t01",
+            "prompt": "What does Iekwahrahnhá:ra' mean?",
+            "sub": "",
+            "correct": "Hammer",
+            "options": [
+              "Hammer",
+              "Shovel",
+              "Scissors",
+              "Screwdriver"
+            ],
+            "cm": "Tho niioht! Iekwahrahnhá:ra' — hammer. A famine indefinite noun describing the pounding action.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the tool nouns",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Iekwahrahnhá:ra'",
+                "english": "Hammer",
+                "wids": [
+                  "t01"
+                ]
+              },
+              {
+                "target": "Iekwáhhere'",
+                "english": "Shovel",
+                "wids": [
+                  "t02"
+                ]
+              },
+              {
+                "target": "Ionkwarihón:ni",
+                "english": "Scissors",
+                "wids": [
+                  "t03"
+                ]
+              },
+              {
+                "target": "Ietkarihón:ni",
+                "english": "Knife",
+                "wids": [
+                  "t04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four tools — each named by what it does.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "t05",
+            "prompt": "Iakoa'sháhen (awl / hole puncher) is described as a traditional tool. What was it traditionally used for?",
+            "sub": "",
+            "correct": "Punching holes in hides for sewing — before metal needles, bone or antler awls were used",
+            "options": [
+              "Punching holes in hides for sewing — before metal needles, bone or antler awls were used",
+              "Cooking",
+              "Building longhouses",
+              "Making wampum"
+            ],
+            "cm": "Niawenhkó:wa! The awl is one of the oldest tools in the archaeological record at Haudenosaunee sites. Before European metal needles, bone and antler awls were used to pierce hides for garment construction.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "t06",
+            "prompt": "Ietshennón:ni (screwdriver) is a modern tool given a Kanien'kéha name. How does this connect to what you learned about domestic animals and Ka-class nouns?",
+            "sub": "",
+            "correct": "All three cases show Kanien'kéha naming new objects from within its own grammatical system rather than borrowing foreign words",
+            "options": [
+              "All three cases show Kanien'kéha naming new objects from within its own grammatical system rather than borrowing foreign words",
+              "Screwdrivers are an ancient Haudenosaunee tool",
+              "Only animals get new names",
+              "Ka-class and famine indefinite nouns are the same"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The consistent thread: Kanien'kéha generates new vocabulary from existing patterns. Horse = 'it carries on its back'. Screwdriver = 'the thing that turns'. Car = Kà:sere' (Ka-class). Each new object gets a name grounded in what it does.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "t01",
+            "prompt": "How do you say 'Hammer'?",
+            "sub": "",
+            "correct": "Iekwahrahnhá:ra'",
+            "alts": [
+              "iekwahrahnhá:ra'",
+              "iekwahrahnhara"
+            ],
+            "cm": "Niawenhkó:wa! Iekwahrahnhá:ra' — the pounding thing.",
+            "wm": "Please try again. Try: Iekwahrahnhá:ra'"
+          },
+          {
+            "type": "fill",
+            "wid": "t03",
+            "prompt": "Complete the word for scissors",
+            "sentence": "Scissors is Ionkwarihón:___",
+            "correct": "ni",
+            "hint": "n",
+            "alts": [
+              "ni"
+            ],
+            "cm": "Tho niioht! Ionkwarihón:ni — the thing that cuts things.",
+            "wm": "Please try again — ends in 'ni'."
+          },
+          {
+            "type": "mc",
+            "wid": "t02",
+            "prompt": "Iekwáhhere' (shovel) begins with Ie- and describes digging. How does the Ie- prefix signal the noun class?",
+            "sub": "",
+            "correct": "Ie- (and Ion-, Iak-, Teion-, Tewa-) are the opening syllables that mark the famine indefinite class — verb-derived functional nouns",
+            "options": [
+              "Ie- (and Ion-, Iak-, Teion-, Tewa-) are the opening syllables that mark the famine indefinite class — verb-derived functional nouns",
+              "Ie- marks female nouns only",
+              "Ie- is only for tools",
+              "Ie- is a prefix borrowed from French"
+            ],
+            "cm": "Niawenhkó:wa! The famine indefinite class is identified by its initial syllables: ie-, ion-, iako-, teion-, tewa-. These syllables are the surface trace of underlying verb roots — the noun is built on a verb.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "t03",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Ionkwarihón:ni",
+            "meaning": "Scissors",
+            "hint": "Six syllables: ion-kwa-ri-HÓN-ni. Stress on the fourth syllable. The long vowel (:) before ni holds briefly."
+          },
+          {
+            "type": "story",
+            "wid": "t04",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Ietkarihón:ni",
+            "meaning": "Knife — the cutting thing",
+            "storyPrompt": "Ietkarihón:ni — knife — the cutting thing. In Haudenosaunee tradition, the knife is one of the oldest tools — used for hunting, preparing food, carving, and medicine. A language that names its tools by what they do encodes a different relationship to objects than one that gives them arbitrary names. Think about the tools in your own life: what would you call a hammer if you had to describe it rather than name it?"
+          }
+        ]
+      },
+      {
+        "id": "u7l1",
+        "title": "Lesson 30 — Consonant-Stem Verbs",
+        "icon": "✂️",
+        "sub": "The second verb stem class",
+        "intro": [
+          "You learned A-stem verbs in Unit 3. Now meet the <strong>consonant-stem class</strong> — verbs whose root begins with a consonant (h, s, t, k). These are among the most common action verbs in Kanien'kéha.",
+          "The key difference from A-stem verbs: when the pronoun 'I' (k-) attaches to a consonant-stem root, it <strong>doubles the initial consonant</strong>. So where A-stem gives you k-á:tien (I sit), consonant-stem gives you kk-we'tarón:ko (I cut it up). The doubled consonant is the diagnostic feature.",
+          "Dualic consonant-stem verbs again use the <strong>te-</strong> prefix you know from dual pronouns and A-stem dualic verbs — the same prefix carries the same meaning across all verb classes."
+        ],
+        "ped": "<strong>Cross-stem pattern recognition:</strong> Each new verb stem class reinforces the underlying grammar of Kanien'kéha. The te- dualic prefix, the -s habitual suffix, and the command-without-suffix rule all appear consistently. Learning the second stem class deepens the pattern rather than adding new rules.",
+        "vocabIds": [
+          "cv01",
+          "cv02",
+          "cv03",
+          "cv04",
+          "cv05"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "cv02",
+            "prompt": "kkwe'tarón:kwas means 'I cut it up (habitual)'. What is distinctive about the k- pronoun in consonant-stem verbs?",
+            "sub": "",
+            "correct": "The k- pronoun doubles the initial consonant of the root — giving kk- at the start",
+            "options": [
+              "The k- pronoun doubles the initial consonant of the root — giving kk- at the start",
+              "Nothing — it is the same as A-stem",
+              "The k- pronoun only appears in singular forms",
+              "The doubled k means plural"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! In consonant-stem verbs, k- (I) + a consonant root initial = doubled consonant. kk-we'tarón:kwas. This is the diagnostic feature that identifies the consonant-stem class.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cv01",
+            "prompt": "What does skwe'tarón:ko mean?",
+            "sub": "",
+            "correct": "You cut it up (command)",
+            "options": [
+              "You cut it up (command)",
+              "I cut it up",
+              "Two people cut",
+              "The cutting thing"
+            ],
+            "cm": "Tho niioht! skwe'tarón:ko — you cut it up. Command form: s- (you) + root. No habitual suffix.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the consonant-stem verb forms",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "skwe'tarón:ko",
+                "english": "You cut it up",
+                "wids": [
+                  "cv01"
+                ]
+              },
+              {
+                "target": "kkwe'tarón:kwas",
+                "english": "I cut it up (habitual)",
+                "wids": [
+                  "cv02"
+                ]
+              },
+              {
+                "target": "tetshon'ká:ria'k",
+                "english": "You saw the board",
+                "wids": [
+                  "cv03"
+                ]
+              },
+              {
+                "target": "skáhere'",
+                "english": "You sweep",
+                "wids": [
+                  "cv04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Consonant-stem verbs in four forms. Notice the doubled kk- in the first-person form.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cv03",
+            "prompt": "tetshon'ká:ria'k (you saw the board) is dualic. Why would sawing be a dualic verb?",
+            "sub": "",
+            "correct": "Sawing requires two motions — pushing and pulling — so it takes the te- dualic prefix",
+            "options": [
+              "Sawing requires two motions — pushing and pulling — so it takes the te- dualic prefix",
+              "Dualic means two people are sawing",
+              "All tool verbs are dualic",
+              "The te- prefix marks consonant-stem verbs"
+            ],
+            "cm": "Niawenhkó:wa! You've seen this logic before: tesaráhtat (run) is dualic because running requires two phases (standing → moving). Sawing: push + pull = two actions = te-. The same grammatical logic applies across verb classes.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "cv04",
+            "prompt": "Complete the sweeping verb",
+            "sentence": "You sweep: skáhere'___",
+            "correct": "",
+            "hint": "The command form ends at skáhere' — no suffix added",
+            "alts": [
+              ""
+            ],
+            "cm": "Tho niioht! skáhere' — you sweep. Commands never take a suffix. The word is complete.",
+            "wm": "The word skáhere' is already complete — it's a command form."
+          },
+          {
+            "type": "type",
+            "wid": "cv05",
+            "prompt": "How do you say 'You give' (command)?",
+            "sub": "",
+            "correct": "skahó:wi",
+            "alts": [
+              "skaho:wi",
+              "skahowi"
+            ],
+            "cm": "Niawenhkó:wa! skahó:wi — you give. A consonant-stem command used in daily exchange and ceremony.",
+            "wm": "Please try again. Try: skahó:wi"
+          },
+          {
+            "type": "mc",
+            "wid": "cv01",
+            "prompt": "The consonant-stem class has s- for 'you' in commands (like A-stem). But what makes the first-person form visibly different?",
+            "sub": "",
+            "correct": "The kk- doubled consonant at the start: kkwe'tarón:kwas vs ká:tiens",
+            "options": [
+              "The kk- doubled consonant at the start: kkwe'tarón:kwas vs ká:tiens",
+              "The habitual suffix is different",
+              "The word order reverses",
+              "There is no difference"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! A-stem first person: k-á:tiens (single k). Consonant-stem first person: kk-we'tarón:kwas (doubled kk). This doubling is the surface signal of the consonant-stem class.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "cv04",
+            "prompt": "You now know two verb stem classes (A-stem and consonant-stem) out of six total. What are the six stem classes in Mary McDonald's curriculum?",
+            "sub": "",
+            "correct": "A stem, consonant stem, fake E stem, O/On stem, I stem, True E stem",
+            "options": [
+              "A stem, consonant stem, fake E stem, O/On stem, I stem, True E stem",
+              "Past, present, future, command, habitual, dualic",
+              "Singular, dual, plural, male, female, neutral",
+              "Subjective, objective, reflexive, causative, passive, middle"
+            ],
+            "cm": "Niawenhkó:wa! The six verb stem classes are the core organising principle of Kanien'kéha verb morphology. You've now seen A-stem (Units 3 and 10) and consonant-stem (this lesson). I-stem and True E-stem are in the next two lessons.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "cv01",
+            "prompt": "Say this verb aloud",
+            "sub": "",
+            "word": "skwe'tarón:ko",
+            "meaning": "You cut it up (command)",
+            "hint": "Five syllables: skwe'-ta-RÓN-ko. Stress on the fourth syllable. The initial skw- cluster is a quick consonant blend."
+          },
+          {
+            "type": "story",
+            "wid": "cv04",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "skáhere'",
+            "meaning": "You sweep",
+            "storyPrompt": "skáhere' — you sweep. Sweeping is a daily household action — humble, repetitive, essential. In the Freire (1970) tradition of literacy, the most generative words are those rooted in daily life. Sweeping, cutting, giving. These are the actions that fill the hours of any life. Which everyday action in your life would you most want to be able to name in Kanien'kéha?"
+          }
+        ]
+      },
+      {
+        "id": "u7l2",
+        "title": "Lesson 31 — I-Stem & True E-Stem Verbs",
+        "icon": "⚡",
+        "sub": "The remaining verb stem classes",
+        "intro": [
+          "Two more verb stem classes complete your verb vocabulary toolkit. The <strong>I-stem</strong> class has verb roots beginning with 'i' — the distinctive feature is that the pronoun 'you' appears as <strong>ts-</strong> rather than s-. You also hear a distinctive (sh) sound when s falls between h and i.",
+          "The <strong>True E-stem</strong> class has roots beginning with 'é'. These are common in everyday speech — expressing putting, remembering, wanting, and mowing. The pronoun 'you' is s- as in A-stem.",
+          "Together with A-stem and consonant-stem, these bring you to four of the six verb classes. With all four, you can produce commands and habitual forms for the most common verbs in Kanien'kéha."
+        ],
+        "ped": "<strong>Completing the verb system:</strong> Mary McDonald's curriculum teaches all six stem classes in Lessons 12–17. By lesson 31, you have seen A-stem (L12), consonant-stem (L13), I-stem (L16), and True E-stem (L17). The pattern is consistent: s- or ts- for 'you', k- or ki- for 'I', -s for habitual, te- for dualic.",
+        "vocabIds": [
+          "iv01",
+          "iv02",
+          "iv03",
+          "ev01",
+          "ev02",
+          "ev03",
+          "ev04"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "iv01",
+            "prompt": "tsí'stenht (you take scales off fish) uses ts- for 'you'. Why ts- instead of s-?",
+            "sub": "",
+            "correct": "I-stem verbs use ts- as the 'you' pronoun — this is the diagnostic feature of the I-stem class",
+            "options": [
+              "I-stem verbs use ts- as the 'you' pronoun — this is the diagnostic feature of the I-stem class",
+              "ts- means plural",
+              "ts- is only used with fish verbs",
+              "ts- is a dialect variant of s-"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The I-stem class is identified by ts- (you) instead of s-. When the s falls between h and i, you also get the English 'sh' sound. This is a phonological feature of the class, not a random variation.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ev01",
+            "prompt": "What does sé:ta mean?",
+            "sub": "",
+            "correct": "You put it in (command)",
+            "options": [
+              "You put it in (command)",
+              "I put it in",
+              "You take it out",
+              "Something is put"
+            ],
+            "cm": "Tho niioht! sé:ta — you put it in. True E-stem command: s- (you) + é:ta (E-stem root).",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the verb forms",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "tsí'stenht",
+                "english": "You take scales off fish",
+                "wids": [
+                  "iv01"
+                ]
+              },
+              {
+                "target": "sahsennón:ni",
+                "english": "You make a fire",
+                "wids": [
+                  "iv03"
+                ]
+              },
+              {
+                "target": "sé:ta",
+                "english": "You put it in",
+                "wids": [
+                  "ev01"
+                ]
+              },
+              {
+                "target": "ské:ta'",
+                "english": "Do you remember?",
+                "wids": [
+                  "ev02"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! I-stem and E-stem verbs — four common actions.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ev02",
+            "prompt": "ské:ta' means 'do you remember?' The same root appears in ké:ta'ne's (I remember, habitual). What does this tell you about how questions and statements relate in Kanien'kéha?",
+            "sub": "",
+            "correct": "Questions and statements use the same verb root — the difference is in the pronoun and context, not in a special question word like English 'do'",
+            "options": [
+              "Questions and statements use the same verb root — the difference is in the pronoun and context, not in a special question word like English 'do'",
+              "Questions always use a different verb",
+              "ské:ta' only means 'remember' not 'do you remember'",
+              "Questions require a special suffix"
+            ],
+            "cm": "Niawenhkó:wa! English uses auxiliary verbs ('do you remember?') to form questions. Kanien'kéha does not — the same verb form can be a command ('remember!') or a question ('do you remember?') depending on intonation and context.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ev03",
+            "prompt": "sahshá:wi means 'you want'. What is the habitual form 'I want'?",
+            "sub": "Based on the pattern: s- → k-; command → habitual adds -s",
+            "correct": "kahshá:wis",
+            "options": [
+              "kahshá:wis",
+              "sahshá:wis",
+              "kkahshá:wis",
+              "skahshá:wi"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! s- (you) → k- (I), command → habitual adds -s: kahshá:wis (I want, habitually). The same pattern works across all E-stem verbs.",
+            "wm": "Please try again — apply the k- pronoun and -s suffix."
+          },
+          {
+            "type": "fill",
+            "wid": "ev04",
+            "prompt": "Complete the mowing verb",
+            "sentence": "You mow the lawn: sanerénhton ___",
+            "correct": "",
+            "hint": "The command ends at sanerénhton",
+            "alts": [
+              ""
+            ],
+            "cm": "Tho niioht! sanerénhton — you mow the lawn. Command form — no suffix.",
+            "wm": "The verb is complete as sanerénhton."
+          },
+          {
+            "type": "type",
+            "wid": "iv03",
+            "prompt": "How do you say 'You make a fire' (command)?",
+            "sub": "",
+            "correct": "sahsennón:ni",
+            "alts": [
+              "sahsennon:ni",
+              "sahsennonni"
+            ],
+            "cm": "Niawenhkó:wa! sahsennón:ni — you make a fire. An I-stem command.",
+            "wm": "Please try again. Try: sahsennón:ni"
+          },
+          {
+            "type": "mc",
+            "wid": "iv02",
+            "prompt": "tenhsi'tstenhrhó:tha' means 'you are a bricklayer'. What does the -rhó:tha' suffix indicate?",
+            "sub": "",
+            "correct": "It is the habitual suffix marking an ongoing occupation or repeated action",
+            "options": [
+              "It is the habitual suffix marking an ongoing occupation or repeated action",
+              "It means you learned bricklaying",
+              "It is a directional suffix",
+              "It marks the past tense"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The habitual suffix (-s in simple forms, -rhó:tha' in longer dualic forms) marks actions done repeatedly or professionally. 'You are a bricklayer' = you habitually lay bricks. Occupations in Kanien'kéha are expressed as habitual verbs.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ev01",
+            "prompt": "Say this verb aloud",
+            "sub": "",
+            "word": "sé:ta",
+            "meaning": "You put it in (command)",
+            "hint": "Two syllables: SÉ-ta. Very short. Stress on the first syllable. The colon (:) extends the é slightly. A common, useful verb."
+          },
+          {
+            "type": "story",
+            "wid": "ev02",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "ské:ta'",
+            "meaning": "Do you remember?",
+            "storyPrompt": "ské:ta' — do you remember? Memory is the vessel that carries language. For many learners of Kanien'kéha, 'do you remember?' is also a question about cultural memory — of ceremonies half-forgotten, of grandparents' phrases, of a childhood word heard once. What do you remember? What are you trying not to forget?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Unit 9 — Fish, Birds, Numbers & Conversation",
+    "desc": "Fish and bird vocabulary, numbers to 100, dual/plural commands, and everyday conversation",
+    "lessons": [
+      {
+        "id": "u8l0",
+        "title": "Lesson 32 — Fish of the Waters",
+        "icon": "🐟",
+        "sub": "Aquatic life of the Kanehsatà:ke territory",
+        "intro": [
+          "Kanien'kéha has rich vocabulary for the fish of the Great Lakes and St. Lawrence watershed. Lesson 24 of the Kontinónhstats curriculum introduces 12 species, reflecting the depth of Haudenosaunee ecological knowledge.",
+          "Several fish in this lesson carry environmental and political significance. <strong>Eel</strong> (Aterón:taks) gives its name to the Eel Clan. American eel populations in the St. Lawrence have collapsed due to hydroelectric dams — their restoration is an environmental justice issue tied directly to Haudenosaunee territory.",
+          "<strong>Sturgeon</strong> (Kahshakaié:ra') was a major food source in the St. Lawrence — the fish can live over 100 years and grow to enormous size. Lake sturgeon are now threatened.",
+          "Learning fish vocabulary is learning a map of the waters — and the threats those waters now face."
+        ],
+        "ped": "<strong>Language and environmental knowledge:</strong> Chew, Leonard & Rosenblum (2023) emphasise that Indigenous languages carry ecological knowledge. Fish vocabulary encodes what species are present, which are significant, and which carry social identity (the Eel Clan). This is not just biology — it is a relational inventory of the watershed.",
+        "vocabIds": [
+          "fi01",
+          "fi02",
+          "fi03",
+          "fi04",
+          "fi05",
+          "fi06",
+          "fi07"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "fi05",
+            "prompt": "Aterón:taks means eel. Which clan takes its name from this fish?",
+            "sub": "",
+            "correct": "The Eel Clan (Rotineniotthró:non) — present at Kanehsatà:ke through the historical Onondaga resettlement",
+            "options": [
+              "The Eel Clan (Rotineniotthró:non) — present at Kanehsatà:ke through the historical Onondaga resettlement",
+              "The Turtle Clan",
+              "The Bear Clan",
+              "No clan uses the eel name"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Aterón:taks (eel) → Rotineniotthró:non (Eel Clan). You learned the clan names in Unit 6. The fish vocabulary and the clan vocabulary are the same words in different grammatical contexts.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "fi02",
+            "prompt": "Kahshakaié:ra' means sturgeon. Why is the sturgeon significant to Haudenosaunee communities today?",
+            "sub": "",
+            "correct": "Lake sturgeon are now threatened due to dams, pollution, and overfishing — their restoration is an environmental and territorial justice issue",
+            "options": [
+              "Lake sturgeon are now threatened due to dams, pollution, and overfishing — their restoration is an environmental and territorial justice issue",
+              "Sturgeon are only used in ceremony",
+              "Sturgeon are now very abundant",
+              "Sturgeon were never a food source"
+            ],
+            "cm": "Niawenhkó:wa! The sturgeon can live over a century — some alive today were born before the Indian Act. Their near-disappearance from the St. Lawrence is part of the same colonial disruption as the near-disappearance of Kanien'kéha.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the fish to their names",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Namé:s",
+                "english": "Trout",
+                "wids": [
+                  "fi01"
+                ]
+              },
+              {
+                "target": "Kahshakaié:ra'",
+                "english": "Sturgeon",
+                "wids": [
+                  "fi02"
+                ]
+              },
+              {
+                "target": "Kotihnawá:ra's",
+                "english": "Salmon",
+                "wids": [
+                  "fi04"
+                ]
+              },
+              {
+                "target": "Aterón:taks",
+                "english": "Eel",
+                "wids": [
+                  "fi05"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Trout, sturgeon, salmon, eel — four species of the Kanehsatà:ke watershed.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match more fish",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Ohkwarí:",
+                "english": "Pike",
+                "wids": [
+                  "fi03"
+                ]
+              },
+              {
+                "target": "Tsiskáwiia'k",
+                "english": "Bass",
+                "wids": [
+                  "fi06"
+                ]
+              },
+              {
+                "target": "Atenà:tara",
+                "english": "Sunfish",
+                "wids": [
+                  "fi07"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Pike, bass, sunfish — three more species of the local waters.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "fi01",
+            "prompt": "How do you say 'Trout'?",
+            "sub": "",
+            "correct": "Namé:s",
+            "alts": [
+              "namé:s",
+              "names"
+            ],
+            "cm": "Tho niioht! Namé:s — trout. Two syllables: na-MÉ-s.",
+            "wm": "Please try again. Try: Namé:s"
+          },
+          {
+            "type": "mc",
+            "wid": "fi04",
+            "prompt": "Kotihnawá:ra's (salmon) once ran in great numbers through the St. Lawrence. What happened to Atlantic salmon runs?",
+            "sub": "",
+            "correct": "Dams, pollution, and overfishing dramatically reduced salmon populations in the St. Lawrence watershed",
+            "options": [
+              "Dams, pollution, and overfishing dramatically reduced salmon populations in the St. Lawrence watershed",
+              "Salmon migrated to another river",
+              "Salmon populations are at record highs",
+              "Salmon were never in the St. Lawrence"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The same colonial infrastructure (dams, industrial pollutants, commercial overfishing) that disrupted Haudenosaunee territorial rights also disrupted the fish runs that sustained their diet. Language, land, water, and food are the same system.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "fi05",
+            "prompt": "Complete the word for eel",
+            "sentence": "Eel is Aterón:ta___",
+            "correct": "ks",
+            "hint": "k",
+            "alts": [
+              "ks"
+            ],
+            "cm": "Tho niioht! Aterón:taks — eel. The Eel Clan fish.",
+            "wm": "Please try again — ends in 'ks'."
+          },
+          {
+            "type": "mc",
+            "wid": "fi01",
+            "prompt": "Learning fish vocabulary, clan names, and environmental history together reflects which pedagogical principle?",
+            "sub": "",
+            "correct": "Language cannot be separated from cultural knowledge and relational accountability to the land (Chew, Leonard & Rosenblum, 2023)",
+            "options": [
+              "Language cannot be separated from cultural knowledge and relational accountability to the land (Chew, Leonard & Rosenblum, 2023)",
+              "Vocabulary should be taught in isolated categories",
+              "Environmental history is not relevant to language learning",
+              "Only ceremonial vocabulary matters"
+            ],
+            "cm": "Niawenhkó:wa! This is the heart of decolonizing language pedagogy — the fish, the clan, the watershed, and the colonial history are all present in the word Aterón:taks (eel). Learning the word honestly requires learning all of this.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "fi04",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Kotihnawá:ra's",
+            "meaning": "Salmon",
+            "hint": "Five syllables: ko-tih-na-WÁ-ra's. Stress on the fourth syllable. The glottal stop at the end (ra's) is part of the word."
+          },
+          {
+            "type": "story",
+            "wid": "fi05",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Aterón:taks",
+            "meaning": "Eel",
+            "storyPrompt": "Aterón:taks — eel. A fish that gives a clan its name. American eels migrate thousands of kilometres from the Sargasso Sea to the St. Lawrence and its tributaries to grow, before returning to spawn and die. Hydroelectric dams now block that journey for most of them. The eel's story is about obstruction, persistence, and the long way home. What obstruction in your own life are you finding a way around?"
+          }
+        ]
+      },
+      {
+        "id": "u8l1",
+        "title": "Lesson 33 — Birds of the Sky",
+        "icon": "🦅",
+        "sub": "The winged ones of Kanehsatà:ke",
+        "intro": [
+          "The Thanksgiving Address acknowledges the birds collectively — 'the birds who use their songs to please us daily'. Lesson 25 of the Kontinónhstats curriculum introduces 12 birds of the Kanehsatà:ke territory.",
+          "The <strong>eagle</strong> (Á:kwe'ks) holds the highest ceremonial significance — eagle feathers mark achievement and carry prayers. In the founding story of the Confederacy, an eagle perches at the top of the Great Tree of Peace, watching for danger.",
+          "The <strong>goose</strong> (Káhonk) is the most visible seasonal marker in the region — their V-formations in spring and autumn are the clearest sign of seasonal change.",
+          "Bird knowledge is ecological knowledge: knowing which bird arrives when, which sings in which season, which nests where — this is the language of the land."
+        ],
+        "ped": "<strong>Birds in the Thanksgiving Address:</strong> The birds are acknowledged as a collective in the Ohén:ton Karihwatéhkwen — their songs 'please us daily'. Learning individual bird names enriches understanding of the Address: when you hear 'the birds', you now know specific birds that word includes.",
+        "vocabIds": [
+          "bi01",
+          "bi02",
+          "bi03",
+          "bi04",
+          "bi05",
+          "bi06",
+          "bi07"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "bi01",
+            "prompt": "Á:kwe'ks means eagle. In the founding story of the Haudenosaunee Confederacy, where does the eagle perch?",
+            "sub": "",
+            "correct": "At the top of the Great Tree of Peace, watching for danger",
+            "options": [
+              "At the top of the Great Tree of Peace, watching for danger",
+              "In the longhouse",
+              "On the wampum belt",
+              "Beside the Peacemaker"
+            ],
+            "cm": "Tho niioht! The eagle (Á:kwe'ks) perches at the top of the Great Tree of Peace (Kaienrekówa / White Pine), watching for threats to the Confederacy. Eagle feathers mark achievement and carry prayers upward.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the birds",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Á:kwe'ks",
+                "english": "Eagle",
+                "wids": [
+                  "bi01"
+                ]
+              },
+              {
+                "target": "Kwáwenhs",
+                "english": "Robin",
+                "wids": [
+                  "bi02"
+                ]
+              },
+              {
+                "target": "Sha'kowén:na'",
+                "english": "Hawk",
+                "wids": [
+                  "bi03"
+                ]
+              },
+              {
+                "target": "Káhonk",
+                "english": "Goose",
+                "wids": [
+                  "bi06"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Eagle, robin, hawk, goose — four birds of the Kanehsatà:ke territory.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the owl names",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Tsistí:keri",
+                "english": "Horned owl",
+                "wids": [
+                  "bi04"
+                ]
+              },
+              {
+                "target": "Kwareró:ha",
+                "english": "Owl (general)",
+                "wids": [
+                  "bi05"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Two different owl words — specific (horned owl) and general. Kanien'kéha maintains this distinction.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "bi06",
+            "prompt": "Káhonk (goose) is named for what?",
+            "sub": "Think about what is distinctive about geese",
+            "correct": "The sound they make — 'honk' is an onomatopoeic representation of the goose call",
+            "options": [
+              "The sound they make — 'honk' is an onomatopoeic representation of the goose call",
+              "The colour of their feathers",
+              "Their migration distance",
+              "Their connection to the Turtle Clan"
+            ],
+            "cm": "Niawenhkó:wa! Káhonk is onomatopoeic — the word imitates the sound. This is the same naming strategy as the English word 'honk'. Many bird names across languages are onomatopoeic — the sound becomes the name.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "bi02",
+            "prompt": "Kwáwenhs (robin) returns each spring. How does this connect to the ceremonial vocabulary you learned?",
+            "sub": "",
+            "correct": "The robin's return signals Sé:ske (spring) — which triggers the Strawberry Ceremony. Bird, season, and ceremony are connected",
+            "options": [
+              "The robin's return signals Sé:ske (spring) — which triggers the Strawberry Ceremony. Bird, season, and ceremony are connected",
+              "Robins have no ceremonial significance",
+              "The robin is associated with autumn only",
+              "Only eagles have ceremonial significance"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Kwáwenhs (robin) → Sé:ske (spring) → Ken' niiohontésha' (strawberries) → Strawberry Ceremony. The natural world, the language, and the ceremonial calendar are the same system.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "bi01",
+            "prompt": "How do you say 'Eagle'?",
+            "sub": "",
+            "correct": "Á:kwe'ks",
+            "alts": [
+              "á:kwe'ks",
+              "a:kwe'ks",
+              "akweks"
+            ],
+            "cm": "Niawenhkó:wa! Á:kwe'ks — eagle. Two syllables: Á-kwe'ks. The glottal stop (') is part of the word.",
+            "wm": "Please try again. Try: Á:kwe'ks"
+          },
+          {
+            "type": "fill",
+            "wid": "bi06",
+            "prompt": "Complete the word for goose",
+            "sentence": "Goose is Káho___",
+            "correct": "nk",
+            "hint": "n",
+            "alts": [
+              "nk"
+            ],
+            "cm": "Tho niioht! Káhonk — goose. Onomatopoeic — it sounds like what it names.",
+            "wm": "Please try again — ends in 'nk'."
+          },
+          {
+            "type": "mc",
+            "wid": "bi04",
+            "prompt": "Tsistí:keri (horned owl) is associated with death or medicine in some Haudenosaunee traditions. What does learning this tell you about how Kanien'kéha vocabulary works?",
+            "sub": "",
+            "correct": "Words carry cultural associations — learning the word without the story gives you only half the knowledge",
+            "options": [
+              "Words carry cultural associations — learning the word without the story gives you only half the knowledge",
+              "Owls are only vocabulary items",
+              "Cultural associations are not relevant to language learning",
+              "The word and the story are separate things"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! This is what García & Li Wei (2014) mean when they say that translanguaging involves the full linguistic and cultural repertoire. The word Tsistí:keri carries the owl story with it. Vocabulary without context is an empty container.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "bi01",
+            "prompt": "Say this word aloud",
+            "sub": "",
+            "word": "Á:kwe'ks",
+            "meaning": "Eagle",
+            "hint": "Two syllables: Á-kwe'ks. The long vowel on Á: is important. The final kwe'ks is a cluster — kw-glottal-ks."
+          },
+          {
+            "type": "story",
+            "wid": "bi01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Á:kwe'ks",
+            "meaning": "Eagle",
+            "storyPrompt": "Á:kwe'ks — eagle. Perched at the top of the Great Tree of Peace, watching for danger. In ceremony, eagle feathers mark those who have served the community. Think of someone in your life who watches — who keeps the long view, who sees what others miss. Who is your eagle?"
+          }
+        ]
+      },
+      {
+        "id": "u8l2",
+        "title": "Lesson 34 — Dual & Plural Commands",
+        "icon": "👥",
+        "sub": "Directing groups — the full command paradigm",
+        "intro": [
+          "You have learned the singular command form throughout the course: <strong>sá:tien</strong> (you sit), <strong>tesaráhtat</strong> (you run). Lesson 35 of the Kontinónhstats curriculum extends this to dual and plural commands.",
+          "The pattern is consistent across all verb stems: replace the singular pronoun <strong>s-</strong> with <strong>seni-</strong> (you two) or <strong>sewa-</strong> (you all). You already know seni- and sewa- from the dual and plural pronoun lessons.",
+          "This is the moment the whole pronoun system pays off: the same seni- you learned as a standalone pronoun (teseniiáhshe = you two) now attaches to verbs to tell two people to act."
+        ],
+        "ped": "<strong>Paradigm completion as mastery:</strong> Nation (2001) identifies 'productive control' — being able to generate the full paradigm from knowledge of its parts — as a key marker of vocabulary mastery. Dual and plural commands complete the command paradigm you have been building since Unit 1.",
+        "vocabIds": [
+          "dc01",
+          "dc02",
+          "dc03",
+          "dc04",
+          "dc05",
+          "dc06"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "dc01",
+            "prompt": "seniá:tien means 'you two sit'. You know sá:tien (you [one] sit). What changed?",
+            "sub": "",
+            "correct": "The singular pronoun s- was replaced by the dual pronoun prefix seni-",
+            "options": [
+              "The singular pronoun s- was replaced by the dual pronoun prefix seni-",
+              "The verb root changed",
+              "The habitual suffix was added",
+              "The dualic te- prefix was added"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! s- (you, singular) → seni- (you two, dual). The verb root á:tien stays the same. You already know seni- from teseniiáhshe (you two, pronoun). The same prefix appears in commands.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "dc02",
+            "prompt": "sewá:tien means 'you all sit'. Which pronoun root does sewa- correspond to?",
+            "sub": "Think back to the plural pronoun lesson",
+            "correct": "sewakwé:kon — the 'you all' plural pronoun",
+            "options": [
+              "sewakwé:kon — the 'you all' plural pronoun",
+              "teseniiáhshe — you two",
+              "iakwakwé:kon — we all",
+              "ratikwé:kon — all males"
+            ],
+            "cm": "Niawenhkó:wa! sewakwé:kon (you all, pronoun) → sewa- (you all, verb prefix). The pronoun prefix is the first part of the full pronoun. The pattern is systematic across every pronoun.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the command forms of 'sit'",
+            "sub": "Singular, dual, plural",
+            "pairs": [
+              {
+                "target": "sá:tien",
+                "english": "You sit (one person)",
+                "wids": [
+                  "v01"
+                ]
+              },
+              {
+                "target": "seniá:tien",
+                "english": "You two sit",
+                "wids": [
+                  "dc01"
+                ]
+              },
+              {
+                "target": "sewá:tien",
+                "english": "You all sit",
+                "wids": [
+                  "dc02"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The complete command paradigm for sitting: singular s-, dual seni-, plural sewa-. Same root á:tien throughout.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the command forms of 'listen'",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "satkáhthon",
+                "english": "You listen (one person)",
+                "wids": [
+                  "v05"
+                ]
+              },
+              {
+                "target": "seniatkáhthon",
+                "english": "You two listen",
+                "wids": [
+                  "dc03"
+                ]
+              },
+              {
+                "target": "sewatkáhthon",
+                "english": "You all listen",
+                "wids": [
+                  "dc04"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Singular, dual, plural — the same pattern for listening as for sitting.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "dc05",
+            "prompt": "teseniaráhtat means 'you two run'. You know tesaráhtat (you [one] run). What two changes happened?",
+            "sub": "",
+            "correct": "s- became seni- (singular → dual) AND the te- dualic prefix remains — running is still dualic regardless of number",
+            "options": [
+              "s- became seni- (singular → dual) AND the te- dualic prefix remains — running is still dualic regardless of number",
+              "The te- prefix was added for duality of people",
+              "The root changed",
+              "seni- replaced te-"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! tesaráhtat → teseniaráhtat. The te- prefix stays because running is inherently dualic (two phases of motion). The pronoun s- → seni- because you are now directing two people. Both changes are independent.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "dc02",
+            "prompt": "How do you tell a group of people to sit?",
+            "sub": "",
+            "correct": "sewá:tien",
+            "alts": [
+              "sewa:tien",
+              "sewatien"
+            ],
+            "cm": "Tho niioht! sewá:tien — you all sit. The plural command.",
+            "wm": "Please try again. Try: sewá:tien"
+          },
+          {
+            "type": "mc",
+            "wid": "dc06",
+            "prompt": "tesewará:htat (you all run) uses sewa-. You now know the full command paradigm: singular s-, dual seni-, plural sewa-. Where have you seen these three roots before?",
+            "sub": "",
+            "correct": "As standalone pronouns: í:se' (you, singular), teseniiáhshe (you two), sewakwé:kon (you all)",
+            "options": [
+              "As standalone pronouns: í:se' (you, singular), teseniiáhshe (you two), sewakwé:kon (you all)",
+              "Only in verb forms",
+              "Only in kinship terms",
+              "Only in the numbers lesson"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The pronoun roots you learned in Unit 1 (Lessons 1–3) are the same roots that now appear as verb command prefixes. Everything connects. Kanien'kéha grammar is a system, not a list.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "dc01",
+            "prompt": "Complete the dual command 'you two sit'",
+            "sentence": "You two sit: seni___tien",
+            "correct": "á:",
+            "hint": "á",
+            "alts": [
+              "á:",
+              "a:"
+            ],
+            "cm": "Niawenhkó:wa! seniá:tien — you two sit. seni- (you two) + á:tien (root).",
+            "wm": "Please try again — the root begins with á:."
+          },
+          {
+            "type": "audio",
+            "wid": "dc02",
+            "prompt": "Say this command aloud",
+            "sub": "Imagine addressing a group",
+            "word": "sewá:tien",
+            "meaning": "You all sit (plural command)",
+            "hint": "Four syllables: se-WÁ-ti-en. Stress on the second syllable. A clear, direct command."
+          },
+          {
+            "type": "story",
+            "wid": "dc01",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "seniá:tien / sewá:tien",
+            "meaning": "You two sit / You all sit",
+            "storyPrompt": "seniá:tien — you two sit. sewá:tien — you all sit. Commands directed at groups. Think of a moment when you needed to direct a group — when you were a teacher, a parent, an elder, an organiser. What is the feeling of being the one who says 'sit, listen, stand, run'? What responsibility does that grammatical position carry?"
+          }
+        ]
+      },
+      {
+        "id": "u8l3",
+        "title": "Lesson 35 — Numbers to 100",
+        "icon": "🔢",
+        "sub": "Counting further in Kanien'kéha",
+        "intro": [
+          "You learned numbers 1–10 in Unit 4. Now the system extends: Kanien'kéha uses a <strong>base-10 additive system</strong> — all numbers above 10 are compounds of the numbers you already know.",
+          "The pattern is transparent: <strong>eleven = ten + one</strong> (Óia'k énska), <strong>twelve = ten + two</strong> (Óia'k tékeni). For tens: <strong>twenty = two tens</strong> (Tékeni óia'k), <strong>fifty = five tens</strong> (Wísk óia'k). One hundred is a single word: <strong>Tewá:sen</strong>.",
+          "This system is completely regular — no irregular numbers (compare English 'eleven', 'twelve', 'thirteen'). Once you know 1–10, you can construct every number to 100."
+        ],
+        "ped": "<strong>Transparent number systems:</strong> Kanien'kéha's base-10 additive system is more transparent than English (which has irregular forms from 11–19). Research in mathematical linguistics (Miura et al., 1993) shows that speakers of languages with regular number systems have advantages in early arithmetic. The number system reflects the language's general productivity principle.",
+        "vocabIds": [
+          "num01",
+          "num02",
+          "num03",
+          "num04",
+          "num05",
+          "num06",
+          "num07",
+          "num08",
+          "num09",
+          "num10",
+          "n11",
+          "n12",
+          "n20",
+          "n50",
+          "n100"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "n11",
+            "prompt": "Óia'k énska means eleven. You know both words separately. What does Óia'k mean?",
+            "sub": "",
+            "correct": "Ten",
+            "options": [
+              "Ten",
+              "One",
+              "Two",
+              "Hundred"
+            ],
+            "cm": "Tho niioht! Óia'k = ten, énska = one. Ten + one = eleven. The system is completely additive.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "n20",
+            "prompt": "Tékeni óia'k means twenty. Why does the order reverse — the multiplier (tékeni = two) comes first, whereas for 11–19 the ten (óia'k) comes first?",
+            "sub": "",
+            "correct": "For 11–19, ten is the base and the units are added: óia'k + unit. For multiples of 10, the multiplier precedes the ten: multiplier + óia'k",
+            "options": [
+              "For 11–19, ten is the base and the units are added: óia'k + unit. For multiples of 10, the multiplier precedes the ten: multiplier + óia'k",
+              "The order is random",
+              "Both orders mean the same thing",
+              "Only tékeni reverses"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! óia'k énska (10+1=11) vs tékeni óia'k (2×10=20). The position of óia'k signals the operation: final position = addition, initial position = multiplication. The grammar encodes arithmetic.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the compound numbers",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Óia'k énska",
+                "english": "Eleven",
+                "wids": [
+                  "n11"
+                ]
+              },
+              {
+                "target": "Óia'k tékeni",
+                "english": "Twelve",
+                "wids": [
+                  "n12"
+                ]
+              },
+              {
+                "target": "Tékeni óia'k",
+                "english": "Twenty",
+                "wids": [
+                  "n20"
+                ]
+              },
+              {
+                "target": "Wísk óia'k",
+                "english": "Fifty",
+                "wids": [
+                  "n50"
+                ]
+              }
+            ],
+            "cm": "Shé:kon! Four compound numbers — all built from the 1–10 vocabulary you already know.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "n100",
+            "prompt": "Tewá:sen means one hundred. How do you say two hundred?",
+            "sub": "Apply the multiplication pattern",
+            "correct": "Tékeni tewá:sen",
+            "options": [
+              "Tékeni tewá:sen",
+              "Óia'k tewá:sen",
+              "Tewá:sen tékeni",
+              "Óia'k óia'k"
+            ],
+            "cm": "Niawenhkó:wa! Tékeni (two) + tewá:sen (hundred) = tékeni tewá:sen (two hundred). The same multiplication pattern as for tens: multiplier + base.",
+            "wm": "Please try again — apply multiplier + base."
+          },
+          {
+            "type": "type",
+            "wid": "n11",
+            "prompt": "How do you say 'Eleven'?",
+            "sub": "",
+            "correct": "Óia'k énska",
+            "alts": [
+              "oia'k énska",
+              "oiak enska",
+              "óia'k enska"
+            ],
+            "cm": "Tho niioht! Óia'k énska — eleven. Ten + one.",
+            "wm": "Please try again. Try: Óia'k énska"
+          },
+          {
+            "type": "type",
+            "wid": "n20",
+            "prompt": "How do you say 'Twenty'?",
+            "sub": "",
+            "correct": "Tékeni óia'k",
+            "alts": [
+              "tékeni oia'k",
+              "tekeni oiak",
+              "tékeni óia'k"
+            ],
+            "cm": "Niawenhkó:wa! Tékeni óia'k — twenty. Two × ten.",
+            "wm": "Please try again. Try: Tékeni óia'k"
+          },
+          {
+            "type": "mc",
+            "wid": "n50",
+            "prompt": "The Kanien'kéha number system is described as 'base-10 additive/multiplicative'. How does this compare to English?",
+            "sub": "",
+            "correct": "English has irregular forms for 11 (eleven), 12 (twelve), and 13–19 (thirteen etc.); Kanien'kéha is fully regular above 10",
+            "options": [
+              "English has irregular forms for 11 (eleven), 12 (twelve), and 13–19 (thirteen etc.); Kanien'kéha is fully regular above 10",
+              "Both systems are equally regular",
+              "Kanien'kéha has more irregular forms",
+              "English is fully regular from 11 onwards"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Eleven and twelve do not transparently mean 'ten + one' and 'ten + two' in English. Kanien'kéha's Óia'k énska and Óia'k tékeni do. This is another example of what Mary McDonald calls the language's productive architecture.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "n100",
+            "prompt": "Complete the word for one hundred",
+            "sentence": "One hundred is Tewá:___",
+            "correct": "sen",
+            "hint": "s",
+            "alts": [
+              "sen"
+            ],
+            "cm": "Tho niioht! Tewá:sen — one hundred. A single uncompounded word for the base hundred.",
+            "wm": "Please try again — ends in 'sen'."
+          },
+          {
+            "type": "audio",
+            "wid": "n20",
+            "prompt": "Say these numbers aloud in sequence",
+            "sub": "Count by tens: ten, twenty, thirty, forty, fifty",
+            "word": "Tékeni óia'k",
+            "meaning": "Twenty — try: Óia'k, Tékeni óia'k, Áhsen óia'k, Kaié:ri óia'k, Wísk óia'k",
+            "hint": "Each multiple of ten is: [number 1–10] + óia'k. Counting by tens is a good way to lock in both the number words and the multiplication pattern."
+          },
+          {
+            "type": "story",
+            "wid": "n100",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Tewá:sen",
+            "meaning": "One hundred",
+            "storyPrompt": "Tewá:sen — one hundred. A single word that names the limit of what you can count on your hands ten times. The lake sturgeon you learned about earlier can live past 100 years — Tewá:sen winters. Some of the oldest white pines in the Kanehsatà:ke territory are centuries old. What in your world has outlasted a hundred years? What would you want to outlast you?"
+          }
+        ]
+      },
+      {
+        "id": "u8l4",
+        "title": "Lesson 36 — Everyday Conversation",
+        "icon": "💬",
+        "sub": "Speaking Kanien'kéha in daily life",
+        "intro": [
+          "All the grammar and vocabulary you have learned comes together in everyday conversation. This lesson covers the essential conversational phrases: <strong>greetings, responses, introductions, questions about time, and ceremonial closings</strong>.",
+          "You already know <strong>Shé:kon</strong> (hello) and <strong>Niawenhkó:wa</strong> (thank you very much). Now you add: <em>how are you?</em> (tó:kens?), <em>I am well</em> (Io'tenhró:ton), <em>what is your name?</em> (Kanié:ri iken'?), and the ceremonial closing phrase that ends speeches and sections of the Thanksgiving Address.",
+          "The negation particle <strong>Iáh</strong> you learned in Unit 3 appears here in context: <strong>Iah tó:kens</strong> (not so well). Everything connects."
+        ],
+        "ped": "<strong>Functional language integration:</strong> Freire (1970) argued that literacy — and by extension language learning — must be functional in the learner's daily world. A greeting exchange, an introduction, a question about time — these are the moments when the language becomes real. This lesson is the integration point for all previous learning.",
+        "vocabIds": [
+          "ph01",
+          "ph02",
+          "ph03",
+          "ph04",
+          "ph05",
+          "ph06",
+          "ph07",
+          "ph08"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "ph01",
+            "prompt": "What does tó:kens mean in Shé:kon, tó:kens?",
+            "sub": "",
+            "correct": "How are you? / Are you well?",
+            "options": [
+              "How are you? / Are you well?",
+              "What is your name?",
+              "Where are you going?",
+              "Thank you"
+            ],
+            "cm": "Tho niioht! tó:kens = how are you? / are you well? Used after Shé:kon as a standard greeting pair. You know Tó:ka' (not quite/no) from the expressions lesson — the root -kens relates to condition or state.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ph02",
+            "prompt": "What is the response to tó:kens (how are you?) when you are well?",
+            "sub": "",
+            "correct": "Io'tenhró:ton",
+            "options": [
+              "Io'tenhró:ton",
+              "Iáh tó:kens",
+              "Niawenhkó:wa",
+              "Tho niioht"
+            ],
+            "cm": "Niawenhkó:wa! Io'tenhró:ton — I am well. Literally 'it is going along well with me'. Compare Io'nikonhraién:ta'ne (it makes my mind happy) — both use the io'- prefix marking a state of being.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Build a greeting exchange",
+            "sub": "Put the phrases in order",
+            "pairs": [
+              {
+                "target": "Shé:kon, tó:kens?",
+                "english": "Hello, how are you?",
+                "wids": [
+                  "ph01"
+                ]
+              },
+              {
+                "target": "Io'tenhró:ton",
+                "english": "I am well",
+                "wids": [
+                  "ph02"
+                ]
+              },
+              {
+                "target": "Kanié:ri iken'?",
+                "english": "What is your name?",
+                "wids": [
+                  "ph05"
+                ]
+              },
+              {
+                "target": "Niawenhkó:wa",
+                "english": "Thank you",
+                "wids": [
+                  "g02"
+                ]
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! A complete greeting sequence: hello → how are you → I am well → what is your name → thank you.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ph03",
+            "prompt": "Iah tó:kens means 'not so well'. You already know Iáh from Unit 3. What is Iáh?",
+            "sub": "",
+            "correct": "The negation particle — Iáh + verb/adjective = negation",
+            "options": [
+              "The negation particle — Iáh + verb/adjective = negation",
+              "A greeting",
+              "A question word",
+              "A pronoun"
+            ],
+            "cm": "Niawenhkó:wa! Iáh is the negation particle you learned in Unit 3 (Lesson 11). Iáh ká:tiens = I am not sitting. Iah tó:kens = not well. The same particle negates across contexts.",
+            "wm": "Please try again — think back to the greetings and negation lesson."
+          },
+          {
+            "type": "mc",
+            "wid": "ph07",
+            "prompt": "Onen' ki' wáhi closes each section of the Thanksgiving Address. You now know the Thanksgiving Address vocabulary from Unit 5. What does this closing phrase do?",
+            "sub": "",
+            "correct": "It signals completion — 'now, that's it, truly' — before the next section of the Address begins",
+            "options": [
+              "It signals completion — 'now, that's it, truly' — before the next section of the Address begins",
+              "It negates what was just said",
+              "It is a question",
+              "It is a greeting"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Onen' ki' wáhi is the hinge of the Thanksgiving Address — it closes each acknowledgement and readies the listener for the next. Learning it connects your conversational vocabulary to ceremonial practice.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "ph02",
+            "prompt": "How do you say 'I am well'?",
+            "sub": "",
+            "correct": "Io'tenhró:ton",
+            "alts": [
+              "io'tenhró:ton",
+              "io'tenhroton"
+            ],
+            "cm": "Tho niioht! Io'tenhró:ton — I am well.",
+            "wm": "Please try again. Try: Io'tenhró:ton"
+          },
+          {
+            "type": "fill",
+            "wid": "ph01",
+            "prompt": "Complete the greeting",
+            "sentence": "Hello, how are you? Shé:kon, tó:ke___?",
+            "correct": "ns",
+            "hint": "n",
+            "alts": [
+              "ns"
+            ],
+            "cm": "Niawenhkó:wa! Shé:kon, tó:kens? — hello, how are you?",
+            "wm": "Please try again — ends in 'ns'."
+          },
+          {
+            "type": "mc",
+            "wid": "ph08",
+            "prompt": "Tsi niiohtonhátie? means 'what time is it?'. How does knowing the numbers 1–12 prepare you to answer this question?",
+            "sub": "",
+            "correct": "The answer uses the numbers to state the hour: Énska niiohtonhátie = it is one o'clock",
+            "options": [
+              "The answer uses the numbers to state the hour: Énska niiohtonhátie = it is one o'clock",
+              "Numbers are only used for counting objects",
+              "Time is expressed differently in Kanien'kéha and numbers are not used",
+              "Only tékeni is used for telling time"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Your number vocabulary directly feeds into time expressions. Énska (1), Tékeni (2), Áhsen (3)... + niiohtonhátie (o'clock) = telling time in Kanien'kéha. Every lesson has prepared you for this.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ph01",
+            "prompt": "Say this greeting aloud",
+            "sub": "",
+            "word": "Shé:kon, tó:kens?",
+            "meaning": "Hello, how are you?",
+            "hint": "Shé:kon (2 syllables: SHÉ-kon) pause tó:kens (3 syllables: TÓ-kens with rising intonation for the question). Natural, warm, open."
+          },
+          {
+            "type": "story",
+            "wid": "ph07",
+            "prompt": "Connect to your life",
+            "sub": "",
+            "word": "Onen' ki' wáhi",
+            "meaning": "That is all / I am finished",
+            "storyPrompt": "Onen' ki' wáhi — that is all, I am finished. The closing phrase of each section of the Thanksgiving Address. You have now completed nine units of this course. You have learned pronouns and people nouns, kinship and direction, objects and verbs, colours and body parts, numbers and nature, animals and birds, tools and grammar, cultural history and ceremony. Onen' ki' wáhi. Take a moment. What has this language opened in you?"
+          }
+        ]
+      }
+    ]
   }
 ]

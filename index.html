@@ -410,7 +410,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <div id="unit-screen" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh" id="unit-sh"><h2 id="unit-sh-h"></h2><p id="unit-sh-p"></p></div>
+    <div class="sh" id="unit-sh">
+      <button onclick="goHome()" style="background:none;border:none;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;padding:0;margin-bottom:.45rem;display:flex;align-items:center;gap:.3rem;opacity:.8;">← Back to Journey</button>
+      <h2 id="unit-sh-h"></h2><p id="unit-sh-p"></p>
+    </div>
     <div class="llist-wrap">
       <div class="llist-header">Lessons in this unit</div>
       <div id="lesson-list"></div>
@@ -422,7 +425,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <div id="lesson-screen" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh"><h2 id="ls-h"></h2><p id="ls-p"></p></div>
+    <div class="sh">
+      <button onclick="openUnit(CUi)" style="background:none;border:none;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;padding:0;margin-bottom:.45rem;display:flex;align-items:center;gap:.3rem;opacity:.8;">← Back to Unit</button>
+      <h2 id="ls-h"></h2><p id="ls-p"></p>
+    </div>
     <div class="li-wrap">
       <div class="li-card" id="li-card"></div>
       <button class="sbtn cont" onclick="startExercises()">Begin Practice →</button>
@@ -858,21 +864,20 @@ function openLesson(ui,li){
 
 function startExercises(){
   const l=UNITS[CUi].lessons[CLi];
-  EX={pool:[...l.exercises],rpool:[],done:0,total:l.exercises.length,current:null,
+  EX={pool:[...l.exercises],rpool:[],done:0,total:l.exercises.length,originalTotal:l.exercises.length,current:null,
       answered:false,attempts:0,correct:0,scoreable:0,mr:null,chunks:[],aurl:null};
   kbShown=false;
   renderEx();showScreen('exercise');
 }
 
 function renderEx(){
-  let ex;
+  const ex=EX.pool[EX.done];
   const rn=document.getElementById('retry-note');
-  if(EX.rpool.length>0){
-    ex=EX.rpool.shift();
+  // Show retry banner only when we've looped back to retry exercises
+  if(EX.done>=EX.originalTotal){
     rn.style.display='block';
     rn.innerHTML=`<strong>Coming back around:</strong> You missed this question earlier. Here's another chance — take your time.`;
   } else {
-    ex=EX.pool[EX.done];
     rn.style.display='none';
   }
   EX.current=ex;EX.answered=false;EX.attempts=0;mSel=null;mPairs=0;
@@ -1032,9 +1037,22 @@ function showFB(type,title,detail){
   document.getElementById('fbdet').textContent=detail;
 }
 function advance(){
-  if(!EX.rpool.length)EX.done++;
-  if(!EX.rpool.length&&EX.done>=EX.total)finishLesson();
-  else renderEx();
+  // Always move forward in the main pool
+  EX.done++;
+  // If the main pool is exhausted, check for retries, then finish
+  if(EX.done>=EX.total){
+    if(EX.rpool.length>0){
+      // Append all retry exercises to the end of the pool and extend total
+      EX.pool=EX.pool.concat(EX.rpool);
+      EX.total=EX.pool.length;
+      EX.rpool=[];
+      renderEx();
+    } else {
+      finishLesson();
+    }
+  } else {
+    renderEx();
+  }
 }
 function finishLesson(){
   const acc=EX.scoreable>0?Math.round(EX.correct/EX.scoreable*100):100;
@@ -1104,12 +1122,52 @@ function renderGloss(){
 function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
 function filterGloss(){
   const q=(document.getElementById('gsearch').value||'').toLowerCase();
-  const words=GLOSS.filter(w=>{const mq=!q||w.target.toLowerCase().includes(q)||w.english.toLowerCase().includes(q);const ml=gL==='all'||w.english[0].toUpperCase()===gL;return mq&&ml;});
-  const groups={};words.forEach(w=>{const l=w.english[0].toUpperCase();if(!groups[l])groups[l]=[];groups[l].push(w);});
+  const words=GLOSS.filter(w=>{
+    const mq=!q||w.target.toLowerCase().includes(q)||w.english.toLowerCase().includes(q);
+    const ml=gL==='all'||w.english[0].toUpperCase()===gL;
+    return mq&&ml;
+  });
+  const groups={};
+  words.forEach(w=>{const l=w.english[0].toUpperCase();if(!groups[l])groups[l]=[];groups[l].push(w);});
   const list=document.getElementById('glist');
-  if(!words.length){list.innerHTML=`<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No words found.</p>`;return;}
-  list.innerHTML=Object.keys(groups).sort().map(l=>`<div class="glg"><div class="glh">${l}</div>${groups[l].map(w=>{const p=getProf(w.id);const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';return`<div class="ge" onclick="openModal('${w.id}')"><div class="ge-top"><div><div class="gew">${w.target}</div><div class="gee">${w.english}</div></div><span class="gear">›</span></div>${p?`<div class="prof-track" style="margin-top:.35rem"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:''}`;}).join('')}</div>`).join('');
+  if(!words.length){list.innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No words found.</p>';return;}
+  list.innerHTML=Object.keys(groups).sort().map(letter=>{
+    const entries=groups[letter].map(w=>{
+      const p=getProf(w.id);
+      const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
+      const profBar=p?'<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:4px;border-radius:6px"></div></div>':'';
+      const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
+      const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead><tr><th>Relation</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
+      const citeHtml=w.cite?'<div style="margin-top:.5rem;font-size:.77rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
+      const notesHtml=w.notes?'<div style="font-size:.87rem;color:var(--ed);line-height:1.65;margin-bottom:.3rem">'+w.notes+'</div>':'';
+      return '<div class="ge" id="ge-'+w.id+'" onclick="toggleGlossEntry(\''+w.id+'\')">'+
+        '<div class="ge-top">'+
+          '<div style="flex:1">'+
+            '<div class="gew">'+w.target+'</div>'+
+            '<div class="gee">'+w.english+'</div>'+
+            (w.pos?'<div style="font-size:.7rem;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:.1rem">'+w.pos+'</div>':'')+
+          '</div>'+
+          '<span class="gear" id="ge-arr-'+w.id+'">&#8250;</span>'+
+        '</div>'+
+        profBar+
+        '<div class="ge-detail" id="ge-detail-'+w.id+'" style="display:none;margin-top:.65rem;padding-top:.65rem;border-top:1px solid var(--sand)">'+
+          notesHtml+formsHtml+citeHtml+
+        '</div>'+
+      '</div>';
+    }).join('');
+    return '<div class="glg"><div class="glh">'+letter+'</div>'+entries+'</div>';
+  }).join('');
 }
+
+function toggleGlossEntry(id){
+  const detail=document.getElementById('ge-detail-'+id);
+  const arrow=document.getElementById('ge-arr-'+id);
+  if(!detail)return;
+  const open=detail.style.display==='none';
+  detail.style.display=open?'block':'none';
+  if(arrow)arrow.textContent=open?'\u2228':'\u203a';
+}
+
 
 /* modal */
 function openModal(wid){
