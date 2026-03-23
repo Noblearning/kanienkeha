@@ -505,7 +505,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="pw">
     <div class="sh"><h2>Vocabulary</h2></div>
     <div class="gswrap"><span class="gsic">🔍</span><input class="gsearch" id="gsearch" type="text" placeholder="Search Kanien'kéha or English…" oninput="filterGloss()" autocorrect="off" autocapitalize="off"></div>
-    <div class="galpha" id="galpha"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.2rem 1.35rem .1rem;">
+      <div class="galpha" id="galpha" style="padding:0;flex:1;flex-wrap:wrap;display:flex;gap:.26rem;"></div>
+      <label style="display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:var(--ew);white-space:nowrap;margin-left:.75rem;cursor:pointer;flex-shrink:0;">
+        <span id="sort-lbl">A–Z English</span>
+        <div onclick="toggleSort()" id="sort-toggle" style="width:38px;height:20px;border-radius:10px;background:var(--smoke);position:relative;cursor:pointer;transition:background .18s;flex-shrink:0;">
+          <div id="sort-knob" style="position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:white;transition:left .18s;box-shadow:0 1px 3px rgba(44,24,16,.2);"></div>
+        </div>
+      </label>
+    </div>
     <div class="glist" id="glist"></div>
   </div>
 </div>
@@ -954,7 +962,8 @@ function pickMatch(el){
         // First error: only "incorrect, try again"
         showFB('try','Incorrect — please try again.','');
       } else {
-        // Second error: detailed feedback + retry pool
+        // Second error: record wrong proficiency for all wids in this exercise
+        if(ex.pairs)ex.pairs.forEach(pair=>{if(pair.wids)pair.wids.forEach(id=>recProf(id,false));});
         EX.rpool.push({...ex});EX.scoreable++;
         showFB('wrg',ex.wm||'Not quite — this one will come back.',getVariantNote(ex));
         const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
@@ -1114,54 +1123,202 @@ function audioAssess(good){
 
 /* glossary */
 let gL='all';
+let sortByKanien=false;
+
+function toggleSort(){
+  sortByKanien=!sortByKanien;
+  const tog=document.getElementById('sort-toggle');
+  const knob=document.getElementById('sort-knob');
+  const lbl=document.getElementById('sort-lbl');
+  if(tog) tog.style.background=sortByKanien?'var(--clay)':'var(--smoke)';
+  if(knob) knob.style.left=sortByKanien?'20px':'2px';
+  if(lbl) lbl.textContent=sortByKanien?"A–Z Kanien'kéha":'A–Z English';
+  renderGloss();
+}
 function renderGloss(){
-  const letters=[...new Set(GLOSS.map(w=>w.english[0].toUpperCase()))].sort();
-  document.getElementById('galpha').innerHTML=`<button class="abtn ${gL==='all'?'active':''}" onclick="setAlpha('all',this)">All</button>`+letters.map(l=>`<button class="abtn ${gL===l?'active':''}" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
+  // Build letter list based on current sort mode
+  const letters=[...new Set(GLOSS.map(w=>{
+    if(sortByKanien){
+      // Use first letter of Kanien'kéha word (strip accents for sorting)
+      return w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
+    }
+    return (w.groupLabel||w.english)[0].toUpperCase();
+  }))].sort();
+  gL='all'; // reset filter on sort change
+  document.getElementById('galpha').innerHTML=
+    `<button class="abtn active" onclick="setAlpha('all',this)">All</button>`+
+    letters.map(l=>`<button class="abtn" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
   filterGloss();
 }
 function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
 function filterGloss(){
   const q=(document.getElementById('gsearch').value||'').toLowerCase();
-  const words=GLOSS.filter(w=>{
-    const mq=!q||w.target.toLowerCase().includes(q)||w.english.toLowerCase().includes(q);
-    const ml=gL==='all'||w.english[0].toUpperCase()===gL;
+
+  // Filter entries
+  const matching=GLOSS.filter(w=>{
+    const mq=!q||
+      w.target.toLowerCase().includes(q)||
+      w.english.toLowerCase().includes(q)||
+      (w.groupLabel||'').toLowerCase().includes(q)||
+      (w.subLabel||'').toLowerCase().includes(q);
+    // Letter filter: depends on sort mode
+    const sortKey = sortByKanien
+      ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
+      : (w.groupLabel||w.english)[0].toUpperCase();
+    const ml=gL==='all'||sortKey===gL;
     return mq&&ml;
   });
-  const groups={};
-  words.forEach(w=>{const l=w.english[0].toUpperCase();if(!groups[l])groups[l]=[];groups[l].push(w);});
+
+  if(!matching.length){
+    document.getElementById('glist').innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No words found.</p>';
+    return;
+  }
+
+  // Build group map
+  const groupOrder=[];
+  const groupMap={};
+  matching.forEach(w=>{
+    const key=w.group||('solo_'+w.id);
+    const label=w.groupLabel||w.english;
+    if(!groupMap[key]){
+      // For sort key in Kanien'kéha mode: use first entry's target word
+      const kSort=w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
+      groupMap[key]={label, letter:label[0].toUpperCase(), kLetter:kSort, entries:[]};
+      groupOrder.push(key);
+    }
+    groupMap[key].entries.push(w);
+  });
+
+  // Sort groups by chosen mode
+  if(sortByKanien){
+    groupOrder.sort((a,b)=>{
+      const wa=groupMap[a].entries[0].target.toLowerCase();
+      const wb=groupMap[b].entries[0].target.toLowerCase();
+      return wa.localeCompare(wb,'fr'); // use fr locale for accent handling
+    });
+  } else {
+    groupOrder.sort((a,b)=>groupMap[a].label.localeCompare(groupMap[b].label,'en'));
+  }
+
+  // Group by section letter
+  const byLetter={};
+  groupOrder.forEach(key=>{
+    const l=sortByKanien?groupMap[key].kLetter:groupMap[key].letter;
+    if(!byLetter[l])byLetter[l]=[];
+    byLetter[l].push(key);
+  });
+
   const list=document.getElementById('glist');
-  if(!words.length){list.innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No words found.</p>';return;}
-  list.innerHTML=Object.keys(groups).sort().map(letter=>{
-    const entries=groups[letter].map(w=>{
-      const p=getProf(w.id);
-      const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
-      const profBar=p?'<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:4px;border-radius:6px"></div></div>':'';
-      const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
-      const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead><tr><th>Relation</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
-      const citeHtml=w.cite?'<div style="margin-top:.5rem;font-size:.77rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
-      const notesHtml=w.notes?'<div style="font-size:.87rem;color:var(--ed);line-height:1.65;margin-bottom:.3rem">'+w.notes+'</div>':'';
-      return '<div class="ge" id="ge-'+w.id+'" onclick="toggleGlossEntry(\''+w.id+'\')">'+
+  list.innerHTML=Object.keys(byLetter).sort().map(letter=>{
+    const groupCards=byLetter[letter].map(key=>{
+      const grp=groupMap[key];
+      const entries=grp.entries;
+
+      // If group has only one entry, render flat (no subentry structure)
+      if(entries.length===1){
+        const w=entries[0];
+        return renderFlatEntry(w);
+      }
+
+      // Multi-entry group: render as parent card with subentries
+      const gid='grp_'+key;
+      const subHtml=entries.map(w=>renderSubEntry(w)).join('');
+      // Show proficiency summary across all entries in group
+      const profs=entries.map(w=>getProf(w.id)).filter(Boolean);
+      const avgPct=profs.length?Math.round(profs.reduce((s,p)=>s+p.pct,0)/profs.length):null;
+      const cls=avgPct!=null?(avgPct>=80?'phigh':avgPct>=40?'pmid':avgPct>0?'plow':'pnone'):'';
+      const profBar=avgPct!=null?
+        '<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+avgPct+'%;height:4px;border-radius:6px"></div></div>':'';
+
+      return '<div class="ge" id="grp-card-'+gid+'" onclick="toggleGroup(\''+gid+'\')" style="border-left:3px solid var(--clay)">'+
         '<div class="ge-top">'+
           '<div style="flex:1">'+
-            '<div class="gew">'+w.target+'</div>'+
-            '<div class="gee">'+w.english+'</div>'+
-            (w.pos?'<div style="font-size:.7rem;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:.1rem">'+w.pos+'</div>':'')+
+            '<div class="gew">'+grp.label+'</div>'+
+            '<div class="gee" style="font-size:.75rem;color:var(--ew)">'+(entries.length)+' forms</div>'+
           '</div>'+
-          '<span class="gear" id="ge-arr-'+w.id+'">&#8250;</span>'+
+          '<span class="gear" id="grp-arr-'+gid+'">&#8250;</span>'+
         '</div>'+
         profBar+
-        '<div class="ge-detail" id="ge-detail-'+w.id+'" style="display:none;margin-top:.65rem;padding-top:.65rem;border-top:1px solid var(--sand)">'+
-          notesHtml+formsHtml+citeHtml+
+        '<div id="grp-body-'+gid+'" style="display:none;margin-top:.6rem;border-top:1px solid var(--sand);padding-top:.55rem">'+
+          subHtml+
         '</div>'+
       '</div>';
     }).join('');
-    return '<div class="glg"><div class="glh">'+letter+'</div>'+entries+'</div>';
+
+    return '<div class="glg"><div class="glh">'+letter+'</div>'+groupCards+'</div>';
   }).join('');
+}
+
+function renderFlatEntry(w){
+  const p=getProf(w.id);
+  const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
+  const profBar=p?'<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:4px;border-radius:6px"></div></div>':'';
+  const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
+  const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead><tr><th>form</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
+  const citeHtml=w.cite?'<div style="margin-top:.5rem;font-size:.77rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
+  const posHtml=w.pos?'<div style="font-size:.7rem;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:.1rem">'+w.pos+'</div>':'';
+  return '<div class="ge" id="ge-'+w.id+'" onclick="toggleGlossEntry(\''+w.id+'\')">'+
+    '<div class="ge-top">'+
+      '<div style="flex:1">'+
+        '<div class="gew">'+w.target+'</div>'+
+        '<div class="gee">'+w.english+'</div>'+
+        posHtml+
+      '</div>'+
+      '<span class="gear" id="ge-arr-'+w.id+'">\u203a</span>'+
+    '</div>'+
+    profBar+
+    '<div class="ge-detail" id="ge-detail-'+w.id+'" style="display:none;margin-top:.65rem;padding-top:.65rem;border-top:1px solid var(--sand)">'+
+      (w.notes?'<div style="font-size:.87rem;color:var(--ed);line-height:1.65;margin-bottom:.3rem">'+w.notes+'</div>':'')+
+      formsHtml+citeHtml+
+    '</div>'+
+  '</div>';
+}
+
+function renderSubEntry(w){
+  const p=getProf(w.id);
+  const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
+  const profBar=p?'<div class="prof-track" style="margin-top:.28rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:3px;border-radius:4px"></div></div>':'';
+  const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
+  const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.5rem"><table class="ftable" style="font-size:.82rem"><thead><tr><th>form</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
+  const citeHtml=w.cite?'<div style="margin-top:.4rem;font-size:.75rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
+  return '<div style="padding:.55rem .7rem;border-radius:8px;background:var(--birch);border:1px solid var(--sand);margin-bottom:.42rem;cursor:pointer" id="sub-'+w.id+'" onclick="event.stopPropagation();toggleSubEntry(\''+w.id+'\')">'+
+    '<div style="display:flex;align-items:flex-start;gap:.5rem">'+
+      '<div style="flex:1">'+
+        (w.subLabel?'<div style="font-size:.72rem;color:var(--clay);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.18rem">'+w.subLabel+'</div>':'')+
+        '<div style="font-family:\'Playfair Display\',serif;font-size:.95rem;color:var(--ed)">'+w.target+'</div>'+
+        '<div style="font-size:.8rem;color:var(--ew);font-style:italic">'+w.english+'</div>'+
+      '</div>'+
+      '<span style="color:var(--clay);font-size:.85rem" id="sub-arr-'+w.id+'">\u203a</span>'+
+    '</div>'+
+    profBar+
+    '<div id="sub-detail-'+w.id+'" style="display:none;margin-top:.55rem;padding-top:.55rem;border-top:1px solid var(--sand)">'+
+      (w.notes?'<div style="font-size:.84rem;color:var(--ed);line-height:1.62;margin-bottom:.28rem">'+w.notes+'</div>':'')+
+      formsHtml+citeHtml+
+    '</div>'+
+  '</div>';
+}
+
+function toggleGroup(gid){
+  const body=document.getElementById('grp-body-'+gid);
+  const arrow=document.getElementById('grp-arr-'+gid);
+  if(!body)return;
+  const open=body.style.display==='none';
+  body.style.display=open?'block':'none';
+  if(arrow)arrow.textContent=open?'\u2228':'\u203a';
 }
 
 function toggleGlossEntry(id){
   const detail=document.getElementById('ge-detail-'+id);
   const arrow=document.getElementById('ge-arr-'+id);
+  if(!detail)return;
+  const open=detail.style.display==='none';
+  detail.style.display=open?'block':'none';
+  if(arrow)arrow.textContent=open?'\u2228':'\u203a';
+}
+
+function toggleSubEntry(id){
+  const detail=document.getElementById('sub-detail-'+id);
+  const arrow=document.getElementById('sub-arr-'+id);
   if(!detail)return;
   const open=detail.style.display==='none';
   detail.style.display=open?'block':'none';
@@ -1237,7 +1394,6 @@ function speakSyl(sid){
     alert("Text-to-speech is not supported in this browser. Try Chrome, Edge, or Safari.");
     return;
   }
-  // Find the sound entry across all tabs
   let entry=null;
   for(const tab of Object.values(SYL)){
     entry=tab.find(s=>s.id===sid);
@@ -1245,7 +1401,6 @@ function speakSyl(sid){
   }
   if(!entry||!entry.tts)return;
 
-  // Cancel any currently playing speech
   window.speechSynthesis.cancel();
 
   const btn=document.getElementById('tts-'+sid);
@@ -1256,16 +1411,62 @@ function speakSyl(sid){
   utt.pitch=entry.tts.pitch||1;
   utt.volume=1;
 
-  // Prefer a female English voice if available (closer to Kanien'kéha speaker range)
   const voices=window.speechSynthesis.getVoices();
   const preferred=voices.find(v=>v.lang.startsWith('en')&&v.name.toLowerCase().includes('female'))
     ||voices.find(v=>v.lang.startsWith('en'))
     ||null;
   if(preferred)utt.voice=preferred;
 
-  utt.onend=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
+  utt.onend=()=>{
+    if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}
+    // After playback, show inline self-assessment so proficiency can be recorded
+    showSylAssess(sid, entry);
+  };
   utt.onerror=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
   window.speechSynthesis.speak(utt);
+}
+
+function showSylAssess(sid, entry){
+  // Remove any existing assess popup
+  const old=document.getElementById('syl-assess');if(old)old.remove();
+  const d=document.createElement('div');
+  d.id='syl-assess';
+  d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.82rem 1rem;border-radius:11px;font-size:.88rem;line-height:1.55;z-index:151;box-shadow:0 4px 18px rgba(44,24,16,.3);animation:fbin .22s ease;text-align:center;';
+  const label=entry?entry.r:'this sound';
+  d.innerHTML=
+    `<div style="margin-bottom:.6rem;color:var(--smoke)">How did <strong style="color:var(--sand)">${label}</strong> sound to you?</div>`+
+    `<div style="display:flex;gap:.65rem;justify-content:center;">`+
+      `<button onclick="recordSylProf('${sid}',true)" style="flex:1;padding:.48rem .5rem;border:none;border-radius:8px;background:var(--sage);color:white;font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;font-weight:600;">✓ Got it</button>`+
+      `<button onclick="recordSylProf('${sid}',false)" style="flex:1;padding:.48rem .5rem;border:none;border-radius:8px;background:var(--smoke);color:var(--ed);font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;">Still learning</button>`+
+      `<button onclick="document.getElementById('syl-assess').remove()" style="padding:.48rem .6rem;border:none;border-radius:8px;background:transparent;color:var(--smoke);cursor:pointer;font-size:.9rem;">✕</button>`+
+    `</div>`;
+  document.body.appendChild(d);
+  setTimeout(()=>{if(d.parentElement)d.remove();},12000);
+}
+
+function recordSylProf(sid,correct){
+  recProf(sid,correct);
+  const d=document.getElementById('syl-assess');if(d)d.remove();
+  // Refresh the syllabary card's proficiency bar
+  const card=document.getElementById('sgrid');
+  if(card){
+    // Find current active tab and re-render
+    const activeTab=document.querySelector('.stab.active');
+    if(activeTab){
+      const tab=activeTab.textContent.toLowerCase().replace(/[^a-z]/g,'');
+      const tabKey=tab==='vowels'?'vowels':tab==='consonants'?'consonants':'tone';
+      renderSyl(tabKey);
+    }
+  }
+  // Brief confirmation
+  const p=getProf(sid);
+  if(p){
+    const note=document.createElement('div');
+    note.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--sage);color:white;padding:.6rem 1rem;border-radius:11px;font-size:.85rem;text-align:center;z-index:151;animation:fbin .2s ease;';
+    note.textContent=(correct?'Recorded ✓ — ':'Noted — ') + 'proficiency: '+p.pct+'%';
+    document.body.appendChild(note);
+    setTimeout(()=>{if(note.parentElement)note.remove();},2200);
+  }
 }
 
 // Voices may load async — pre-load them
@@ -1277,14 +1478,31 @@ if(window.speechSynthesis){
 function showSylTip(card,tip,sid){
   const old=document.getElementById('stpop');if(old)old.remove();
   const entry=Object.values(SYL).flat().find(s=>s.id===sid);
+
+  // Mark as seen: initialise proficiency record if this is the first tap
+  // (doesn't change the score, just ensures the bar appears)
+  if(CU&&!CU.data.proficiency[sid]){
+    CU.data.proficiency[sid]=[];
+    // Don't push a 0 or 1 — leave empty so bar shows "not yet practiced" still
+    // but the entry exists for tracking purposes
+  }
+
   const d=document.createElement('div');d.id='stpop';
   d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.78rem 1rem;border-radius:11px;font-size:.86rem;line-height:1.55;z-index:150;box-shadow:0 4px 18px rgba(44,24,16,.28);animation:fbin .2s ease;';
   const p=getProf(sid);
   const ipaLine=entry&&entry.ipa?`<div style="margin-top:.3rem;font-size:.78rem;color:var(--skyl)">IPA: <strong>${entry.ipa}</strong> · ${entry.ipaNote}</div>`:'';
-  const profLine=p?`<div style="margin-top:.35rem;font-size:.74rem;color:var(--smoke)">Proficiency: <span style="color:var(--clay)">${p.pct}%</span> (${p.count}/10)</div>`:'';
+  const profLine=p&&p.count>0
+    ?`<div style="margin-top:.42rem">
+        <div style="display:flex;justify-content:space-between;font-size:.73rem;color:var(--smoke);margin-bottom:.2rem"><span>proficiency</span><span>${p.pct}%</span></div>
+        <div style="height:5px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:${p.pct}%;background:${p.pct>=80?'#7A8C6E':p.pct>=40?'#B5C4A8':'#C4784A'};border-radius:4px;transition:width .4s"></div>
+        </div>
+        <div style="font-size:.7rem;color:var(--smoke);margin-top:.15rem">${p.count} of 10 recent attempts tracked — press 🔊 Play to practice</div>
+      </div>`
+    :`<div style="margin-top:.35rem;font-size:.72rem;color:var(--smoke);font-style:italic">press 🔊 Play after reading, then self-assess to track proficiency</div>`;
   d.innerHTML=`<strong style="color:var(--clay)">${card.querySelector('.sr').textContent}</strong> — ${tip}${ipaLine}${profLine}<span style="float:right;cursor:pointer;color:var(--smoke);margin-left:.5rem;margin-top:-.1rem" onclick="this.parentElement.remove()">✕</span>`;
   document.body.appendChild(d);
-  setTimeout(()=>{if(d.parentElement)d.remove();},7000);
+  setTimeout(()=>{if(d.parentElement)d.remove();},8000);
 }
 
 /* init */

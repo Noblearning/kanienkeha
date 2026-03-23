@@ -18,7 +18,10 @@
       "ý:se'",
       "yse'"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_you",
+    "groupLabel": "You",
+    "subLabel": "singular"
   },
   {
     "id": "p02",
@@ -39,7 +42,10 @@
       "ý:'i",
       "y'i"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_i",
+    "groupLabel": "I / We",
+    "subLabel": "singular"
   },
   {
     "id": "p03",
@@ -57,7 +63,10 @@
       "akaónha",
       "akaonha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_she",
+    "groupLabel": "She / Her",
+    "subLabel": "formal / respectful"
   },
   {
     "id": "p04",
@@ -77,7 +86,10 @@
       "laónha",
       "laonha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_he",
+    "groupLabel": "He / They (male)",
+    "subLabel": "singular"
   },
   {
     "id": "p05",
@@ -95,7 +107,10 @@
       "aónha",
       "aonha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_she",
+    "groupLabel": "She / Her",
+    "subLabel": "informal / animal / object"
   },
   {
     "id": "p06",
@@ -113,7 +128,10 @@
       "teseniiáhshe",
       "teseniiahshe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_you",
+    "groupLabel": "You",
+    "subLabel": "dual"
   },
   {
     "id": "p07",
@@ -131,7 +149,10 @@
       "teiakeniiáhshe",
       "teiakeniiahshe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_i",
+    "groupLabel": "I / We",
+    "subLabel": "dual (you and I)"
   },
   {
     "id": "p08",
@@ -149,7 +170,10 @@
       "teteniiáhshe",
       "teteniiahshe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_he",
+    "groupLabel": "He / They (male)",
+    "subLabel": "dual (two females)"
   },
   {
     "id": "p09",
@@ -167,7 +191,10 @@
       "tehniiáhshe",
       "tehniiahshe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_he",
+    "groupLabel": "He / They (male)",
+    "subLabel": "dual (two males or mixed)"
   },
   {
     "id": "p10",
@@ -186,7 +213,10 @@
       "sewakwekon",
       "sewakwé:kon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_you",
+    "groupLabel": "You",
+    "subLabel": "plural"
   },
   {
     "id": "p11",
@@ -204,7 +234,10 @@
       "iakwakwé:kon",
       "iakwakwekon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_i",
+    "groupLabel": "I / We",
+    "subLabel": "plural (inclusive — we all)"
   },
   {
     "id": "p12",
@@ -222,7 +255,10 @@
       "kontikwé:kon",
       "kontikwekon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_she",
+    "groupLabel": "She / Her",
+    "subLabel": "plural (all females)"
   },
   {
     "id": "p13",
@@ -240,7 +276,10 @@
       "ratikwé:kon",
       "ratikwekon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pron_he",
+    "groupLabel": "He / They (male)",
+    "subLabel": "plural (all males / mixed)"
   },
   {
     "id": "n01",
@@ -259,7 +298,10 @@
       "ieksá:'a",
       "ieksa'a"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_girl",
+    "groupLabel": "Girl",
+    "subLabel": "singular"
   },
   {
     "id": "n02",
@@ -278,7 +320,10 @@
       "ieia:tase'",
       "ieiatase'"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teengirl",
+    "groupLabel": "Teenage girl",
+    "subLabel": "singular"
   },
   {
     "id": "n03",
@@ -298,7 +343,10 @@
       "iakon:kwe",
       "iakónkwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_woman",
+    "groupLabel": "Woman",
+    "subLabel": "singular"
   },
   {
     "id": "n04",
@@ -317,7 +365,10 @@
       "akokstén:ha",
       "akoksten:ha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderw",
+    "groupLabel": "Elder woman",
+    "subLabel": "singular"
   },
   {
     "id": "n05",
@@ -337,7 +388,10 @@
       "Laksá:'a",
       "laksa'a"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_boy",
+    "groupLabel": "Boy",
+    "subLabel": "singular"
   },
   {
     "id": "n06",
@@ -356,7 +410,10 @@
       "ranekenhteron",
       "Lanekénhteron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teenboy",
+    "groupLabel": "Teenage boy",
+    "subLabel": "singular"
   },
   {
     "id": "n07",
@@ -377,7 +434,10 @@
       "Lón:kwe",
       "lon:kwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_man",
+    "groupLabel": "Man",
+    "subLabel": "singular"
   },
   {
     "id": "n08",
@@ -397,7 +457,10 @@
       "roksten:ha",
       "Lokstén:ha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderm",
+    "groupLabel": "Elder man",
+    "subLabel": "singular"
   },
   {
     "id": "nd01",
@@ -416,7 +479,10 @@
       "tekeniksaa",
       "tekeniksá:a"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_girl",
+    "groupLabel": "Girl",
+    "subLabel": "dual"
   },
   {
     "id": "nd02",
@@ -434,7 +500,10 @@
       "tekeniià:tase",
       "tekeniia:tase"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teengirl",
+    "groupLabel": "Teenage girl",
+    "subLabel": "dual"
   },
   {
     "id": "nd03",
@@ -453,7 +522,10 @@
       "tekenón:kwe",
       "tekenon:kwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_woman",
+    "groupLabel": "Woman",
+    "subLabel": "dual"
   },
   {
     "id": "nd04",
@@ -472,7 +544,10 @@
       "otikstén:há",
       "otiksten:ha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderw",
+    "groupLabel": "Elder woman",
+    "subLabel": "dual"
   },
   {
     "id": "nd05",
@@ -490,7 +565,10 @@
       "tehniksá:'a",
       "tehniksa'a"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_boy",
+    "groupLabel": "Boy",
+    "subLabel": "dual"
   },
   {
     "id": "nd06",
@@ -508,7 +586,10 @@
       "tehninekénhteron",
       "tehninekenheron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teenboy",
+    "groupLabel": "Teenage boy",
+    "subLabel": "dual"
   },
   {
     "id": "nd07",
@@ -527,7 +608,10 @@
       "technón:kwe",
       "tehnon:kwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_man",
+    "groupLabel": "Man",
+    "subLabel": "dual"
   },
   {
     "id": "nd08",
@@ -545,7 +629,10 @@
       "rotikstén:ha",
       "rotiksten:ha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderm",
+    "groupLabel": "Elder man",
+    "subLabel": "dual"
   },
   {
     "id": "np01",
@@ -564,7 +651,10 @@
       "kontiksa'okon:'a",
       "kontiksa'okona"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_girl",
+    "groupLabel": "Girl",
+    "subLabel": "plural"
   },
   {
     "id": "np02",
@@ -583,7 +673,10 @@
       "kontiia:tase's",
       "kontiiatase"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teengirl",
+    "groupLabel": "Teenage girl",
+    "subLabel": "plural"
   },
   {
     "id": "np03",
@@ -602,7 +695,10 @@
       "konón:kwe",
       "konon:kwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_woman",
+    "groupLabel": "Woman",
+    "subLabel": "plural"
   },
   {
     "id": "np04",
@@ -621,7 +717,10 @@
       "otikstenhokon:'a",
       "otikstenhokon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderw",
+    "groupLabel": "Elder woman",
+    "subLabel": "plural"
   },
   {
     "id": "np05",
@@ -640,7 +739,10 @@
       "ratiksa'okon:'a",
       "Latiksa'okón:'a"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_boy",
+    "groupLabel": "Boy",
+    "subLabel": "plural"
   },
   {
     "id": "np06",
@@ -658,7 +760,10 @@
       "Ratinekénhteron's",
       "ratinekenhterons"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_teenboy",
+    "groupLabel": "Teenage boy",
+    "subLabel": "plural"
   },
   {
     "id": "np07",
@@ -677,7 +782,10 @@
       "ronón:kwe",
       "Lonón:kwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_man",
+    "groupLabel": "Man",
+    "subLabel": "plural"
   },
   {
     "id": "np08",
@@ -695,7 +803,10 @@
       "Rotikstenhokón:'a",
       "rotikstenhokona"
     ],
-    "forms": null
+    "forms": null,
+    "group": "pn_elderm",
+    "groupLabel": "Elder man",
+    "subLabel": "plural"
   },
   {
     "id": "k01",
@@ -716,22 +827,25 @@
     ],
     "forms": [
       {
-        "label": "Your mother",
+        "label": "your mother",
         "form": "Sa'nisténha"
       },
       {
-        "label": "My mother",
+        "label": "my mother",
         "form": "Ake'nisténha"
       },
       {
-        "label": "Her mother",
+        "label": "her mother",
         "form": "Ontate'nisténha"
       },
       {
-        "label": "His mother",
+        "label": "his mother",
         "form": "Ro'nisténha"
       }
-    ]
+    ],
+    "group": "kin_mother",
+    "groupLabel": "Mother (ista)",
+    "subLabel": "base / possessive forms in entry"
   },
   {
     "id": "k02",
@@ -752,22 +866,25 @@
     ],
     "forms": [
       {
-        "label": "Your father",
+        "label": "your father",
         "form": "Ia'níha"
       },
       {
-        "label": "My father",
+        "label": "my father",
         "form": "Rake'níha"
       },
       {
-        "label": "Her father",
+        "label": "her father",
         "form": "Ronwa'níha"
       },
       {
-        "label": "His father",
+        "label": "his father",
         "form": "Ro'níha"
       }
-    ]
+    ],
+    "group": "kin_father",
+    "groupLabel": "Father ('nisten'ha)",
+    "subLabel": "base / possessive forms in entry"
   },
   {
     "id": "k03",
@@ -788,22 +905,25 @@
     ],
     "forms": [
       {
-        "label": "My grandfather",
+        "label": "my grandfather",
         "form": "Rake'sótha"
       },
       {
-        "label": "Your grandfather",
+        "label": "your grandfather",
         "form": "Sa'sótha"
       },
       {
-        "label": "His grandfather",
+        "label": "his grandfather",
         "form": "Ro'sótha"
       },
       {
-        "label": "Her grandfather",
+        "label": "her grandfather",
         "form": "Ako'sótha"
       }
-    ]
+    ],
+    "group": "kin_grandfather",
+    "groupLabel": "Grandfather ('sot)",
+    "subLabel": "base form"
   },
   {
     "id": "k04",
@@ -824,22 +944,25 @@
     ],
     "forms": [
       {
-        "label": "My grandmother",
+        "label": "my grandmother",
         "form": "Aksótha"
       },
       {
-        "label": "Your grandmother",
+        "label": "your grandmother",
         "form": "Sasótha"
       },
       {
-        "label": "Her grandmother",
+        "label": "her grandmother",
         "form": "Akosótha"
       },
       {
-        "label": "His grandmother",
+        "label": "his grandmother",
         "form": "Rosótha"
       }
-    ]
+    ],
+    "group": "kin_grandmother",
+    "groupLabel": "Grandmother (tota)",
+    "subLabel": "base form"
   },
   {
     "id": "k05",
@@ -860,22 +983,25 @@
     ],
     "forms": [
       {
-        "label": "Your older sister",
+        "label": "your older sister",
         "form": "Sahtsí:'a"
       },
       {
-        "label": "My older sister",
+        "label": "my older sister",
         "form": "Akhtsí:'a"
       },
       {
-        "label": "Her older sister",
+        "label": "her older sister",
         "form": "Ontattsí:'a"
       },
       {
-        "label": "His older sister",
+        "label": "his older sister",
         "form": "Rohtsí:'a"
       }
-    ]
+    ],
+    "group": "kin_oldsister",
+    "groupLabel": "Older sister",
+    "subLabel": "possessive forms in entry"
   },
   {
     "id": "k06",
@@ -896,22 +1022,25 @@
     ],
     "forms": [
       {
-        "label": "Your older brother",
+        "label": "your older brother",
         "form": "Iahtsí:'a"
       },
       {
-        "label": "My older brother",
+        "label": "my older brother",
         "form": "Rakhtsí:'a"
       },
       {
-        "label": "Her older brother",
+        "label": "her older brother",
         "form": "Ronwahtsí:'a"
       },
       {
-        "label": "His older brother",
+        "label": "his older brother",
         "form": "Rohtsí:'a"
       }
-    ]
+    ],
+    "group": "kin_oldbro",
+    "groupLabel": "Older brother",
+    "subLabel": "possessive forms in entry"
   },
   {
     "id": "k07",
@@ -932,22 +1061,25 @@
     ],
     "forms": [
       {
-        "label": "My daughter",
+        "label": "my daughter",
         "form": "aksen'á:a"
       },
       {
-        "label": "Your daughter",
+        "label": "your daughter",
         "form": "saksén'a"
       },
       {
-        "label": "Her daughter",
+        "label": "her daughter",
         "form": "akonsen'á:a"
       },
       {
-        "label": "His daughter",
+        "label": "his daughter",
         "form": "rosen'á:a"
       }
-    ]
+    ],
+    "group": "kin_daughter",
+    "groupLabel": "Daughter",
+    "subLabel": "possessive forms in entry"
   },
   {
     "id": "k08",
@@ -967,22 +1099,25 @@
     ],
     "forms": [
       {
-        "label": "My son",
+        "label": "my son",
         "form": "raksén'a"
       },
       {
-        "label": "Your son",
+        "label": "your son",
         "form": "saksén'a"
       },
       {
-        "label": "Her son",
+        "label": "her son",
         "form": "akonsen'á:a"
       },
       {
-        "label": "His son",
+        "label": "his son",
         "form": "ro'sén'a"
       }
-    ]
+    ],
+    "group": "kin_son",
+    "groupLabel": "Son",
+    "subLabel": "possessive forms in entry"
   },
   {
     "id": "k09",
@@ -1000,7 +1135,10 @@
       "aksótha",
       "aksotha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "kin_grandmother",
+    "groupLabel": "Grandmother (tota)",
+    "subLabel": "possessed form (my grandmother)"
   },
   {
     "id": "k10",
@@ -1018,7 +1156,10 @@
       "raksótha",
       "raksotha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "kin_grandfather",
+    "groupLabel": "Grandfather ('sot)",
+    "subLabel": "possessed form (my grandfather)"
   },
   {
     "id": "dv01",
@@ -1037,7 +1178,35 @@
       "ka' wahse'",
       "ka wahse"
     ],
-    "forms": null
+    "forms": [
+      {
+        "label": "where are you going?",
+        "form": "Ka' wáhse'"
+      },
+      {
+        "label": "I am going (answer)",
+        "form": "wà:ke"
+      },
+      {
+        "label": "where did you come from?",
+        "form": "Ka' nontáhse'"
+      },
+      {
+        "label": "I came from (answer)",
+        "form": "non nontà:ke"
+      },
+      {
+        "label": "where did you go?",
+        "form": "Ka' iéhse'skwe'"
+      },
+      {
+        "label": "I went (answer)",
+        "form": "iè:ke'skwe'"
+      }
+    ],
+    "group": "direction",
+    "groupLabel": "Direction verbs",
+    "subLabel": "question — destination"
   },
   {
     "id": "dv02",
@@ -1056,7 +1225,10 @@
       "wa:ke",
       "wake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "direction",
+    "groupLabel": "Direction verbs",
+    "subLabel": "response — going"
   },
   {
     "id": "dv03",
@@ -1075,7 +1247,10 @@
       "ka' nontahse'",
       "ka nontahse"
     ],
-    "forms": null
+    "forms": null,
+    "group": "direction",
+    "groupLabel": "Direction verbs",
+    "subLabel": "question — origin"
   },
   {
     "id": "dv04",
@@ -1094,7 +1269,10 @@
       "ka' iehse'skwe'",
       "ka iehse skwe"
     ],
-    "forms": null
+    "forms": null,
+    "group": "direction",
+    "groupLabel": "Direction verbs",
+    "subLabel": "question — past destination"
   },
   {
     "id": "a01",
@@ -1113,7 +1291,10 @@
       "ahta'",
       "ahta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "clothing / footwear"
   },
   {
     "id": "a02",
@@ -1131,7 +1312,10 @@
       "atháhsteren",
       "athahsteren"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "clothing"
   },
   {
     "id": "a03",
@@ -1150,7 +1334,10 @@
       "atia:tawi",
       "atiatawi"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "clothing (fake A-class)"
   },
   {
     "id": "a04",
@@ -1169,7 +1356,10 @@
       "ate'wahshare'",
       "atewahshare"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "jewellery"
   },
   {
     "id": "a05",
@@ -1188,7 +1378,10 @@
       "atkahrahnha'",
       "atkarahnha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "eyewear"
   },
   {
     "id": "a06",
@@ -1207,7 +1400,10 @@
       "ani'tskwa:ra",
       "anitskwara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "furniture"
   },
   {
     "id": "a07",
@@ -1226,7 +1422,10 @@
       "ahthén:no",
       "ahthenno"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "object / toy"
   },
   {
     "id": "a08",
@@ -1245,7 +1444,10 @@
       "a:there'",
       "athere"
     ],
-    "forms": null
+    "forms": null,
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "container (true A-class)"
   },
   {
     "id": "v01",
@@ -1266,14 +1468,37 @@
     ],
     "forms": [
       {
-        "label": "You sit (command)",
+        "label": "you (singular) — command",
         "form": "sá:tien"
       },
       {
-        "label": "I am sitting (habitual)",
+        "label": "you two — dual command",
+        "form": "seniá:tien"
+      },
+      {
+        "label": "you all — plural command",
+        "form": "sewá:tien"
+      },
+      {
+        "label": "I — habitual",
         "form": "ká:tiens"
+      },
+      {
+        "label": "she — habitual",
+        "form": "iakká:tiens"
+      },
+      {
+        "label": "he — habitual",
+        "form": "raká:tiens"
+      },
+      {
+        "label": "they — habitual",
+        "form": "ronká:tiens"
       }
-    ]
+    ],
+    "group": "v_sit",
+    "groupLabel": "Sit",
+    "subLabel": "singular command"
   },
   {
     "id": "v02",
@@ -1292,7 +1517,10 @@
       "ka:tiens",
       "katiens"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_sit",
+    "groupLabel": "Sit",
+    "subLabel": "first person habitual"
   },
   {
     "id": "v03",
@@ -1312,14 +1540,25 @@
     ],
     "forms": [
       {
-        "label": "You run (command)",
+        "label": "you (singular) — command",
         "form": "tesaráhtat"
       },
       {
-        "label": "I run (habitual)",
+        "label": "you two — dual command",
+        "form": "teseniaráhtat"
+      },
+      {
+        "label": "you all — plural command",
+        "form": "tesewará:htat"
+      },
+      {
+        "label": "I — habitual",
         "form": "tekaráhtats"
       }
-    ]
+    ],
+    "group": "v_run",
+    "groupLabel": "Run",
+    "subLabel": "singular command (dualic)"
   },
   {
     "id": "v04",
@@ -1337,7 +1576,10 @@
       "tekaráhtats",
       "tekarahtats"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_run",
+    "groupLabel": "Run",
+    "subLabel": "first person habitual (dualic)"
   },
   {
     "id": "v05",
@@ -1355,7 +1597,27 @@
       "satkáhthons",
       "satkahthons"
     ],
-    "forms": null
+    "forms": [
+      {
+        "label": "you (singular) — command",
+        "form": "satkáhthon"
+      },
+      {
+        "label": "you two — dual command",
+        "form": "seniatkáhthon"
+      },
+      {
+        "label": "you all — plural command",
+        "form": "sewatkáhthon"
+      },
+      {
+        "label": "I — habitual",
+        "form": "katkáhthons"
+      }
+    ],
+    "group": "v_listen",
+    "groupLabel": "Listen",
+    "subLabel": "singular habitual"
   },
   {
     "id": "v06",
@@ -1373,7 +1635,10 @@
       "katkáhthons",
       "katkahthons"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_listen",
+    "groupLabel": "Listen",
+    "subLabel": "first person habitual"
   },
   {
     "id": "ar01",
@@ -1390,7 +1655,10 @@
     "accepts": [
       "ne"
     ],
-    "forms": null
+    "forms": null,
+    "group": "articles",
+    "groupLabel": "Articles",
+    "subLabel": "definite (specific)"
   },
   {
     "id": "ar02",
@@ -1407,7 +1675,10 @@
     "accepts": [
       "thi"
     ],
-    "forms": null
+    "forms": null,
+    "group": "articles",
+    "groupLabel": "Articles",
+    "subLabel": "definite (directional)"
   },
   {
     "id": "g01",
@@ -1427,7 +1698,10 @@
       "shekon",
       "Shékon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "hello"
   },
   {
     "id": "g02",
@@ -1446,7 +1720,10 @@
       "niawenhko:wa",
       "niawenhkowa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "thank you"
   },
   {
     "id": "g03",
@@ -1465,7 +1742,10 @@
       "tho niioht",
       "tho niiot"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "affirmation"
   },
   {
     "id": "g04",
@@ -1484,7 +1764,10 @@
       "io'nikonhraien:ta'ne",
       "ionikonhraientane"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "delight"
   },
   {
     "id": "g05",
@@ -1503,7 +1786,10 @@
       "to:ka'",
       "toka"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "mild negation"
   },
   {
     "id": "g06",
@@ -1522,7 +1808,10 @@
       "iah",
       "Iah"
     ],
-    "forms": null
+    "forms": null,
+    "group": "greetings",
+    "groupLabel": "Greetings & expressions",
+    "subLabel": "negation particle"
   },
   {
     "id": "o01",
@@ -1541,7 +1830,10 @@
       "o:wise'",
       "owise"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "object"
   },
   {
     "id": "o02",
@@ -1560,7 +1852,10 @@
       "ostaro:kwa",
       "ostarokwa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "jewellery"
   },
   {
     "id": "o03",
@@ -1579,7 +1874,10 @@
       "ohwísta",
       "ohwista"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "modern concept"
   },
   {
     "id": "o04",
@@ -1599,7 +1897,10 @@
       "otsikhe:ta",
       "otsiketa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "food"
   },
   {
     "id": "o05",
@@ -1618,7 +1919,10 @@
       "onhka",
       "Onhka"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "nature — water"
   },
   {
     "id": "o06",
@@ -1637,7 +1941,10 @@
       "ohón:ta",
       "ohonta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "nature — bird"
   },
   {
     "id": "o07",
@@ -1656,7 +1963,10 @@
       "ohwén:tsia",
       "ohwentsia"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "nature — plant"
   },
   {
     "id": "o08",
@@ -1676,7 +1986,10 @@
       "ohna:ken",
       "ohnaaken"
     ],
-    "forms": null
+    "forms": null,
+    "group": "o_class",
+    "groupLabel": "O-class nouns (nature & objects)",
+    "subLabel": "nature — plant"
   },
   {
     "id": "ka01",
@@ -1695,7 +2008,10 @@
       "ka:sere'",
       "kasere"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "modern (vehicle)"
   },
   {
     "id": "ka02",
@@ -1714,7 +2030,10 @@
       "kahiatónhsera",
       "kahiatonhsera"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "writing / knowledge"
   },
   {
     "id": "ka03",
@@ -1733,7 +2052,10 @@
       "kanonhsaton:ni",
       "kanonhsatonni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "building"
   },
   {
     "id": "ka04",
@@ -1752,7 +2074,10 @@
       "kana:tsihs",
       "kanatsihs"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "watercraft"
   },
   {
     "id": "ka05",
@@ -1772,7 +2097,10 @@
       "kanen:tara",
       "kanentara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "instrument / ceremony"
   },
   {
     "id": "ka06",
@@ -1791,7 +2119,10 @@
       "ka'nikonhrha:wi",
       "kanikonhrhawi"
     ],
-    "forms": null
+    "forms": null,
+    "group": "ka_class",
+    "groupLabel": "Ka-class nouns (tools & vehicles)",
+    "subLabel": "traditional — flint"
   },
   {
     "id": "pl01",
@@ -1810,7 +2141,10 @@
       "Kanehsata:ke",
       "kanehsatake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places",
+    "subLabel": "community name"
   },
   {
     "id": "pl02",
@@ -1829,7 +2163,10 @@
       "karáhkwa",
       "karahkwa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places",
+    "subLabel": "celestial — sun"
   },
   {
     "id": "pl03",
@@ -1848,7 +2185,10 @@
       "awe:ri",
       "aweri"
     ],
-    "forms": null
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places",
+    "subLabel": "directional"
   },
   {
     "id": "col01",
@@ -1867,7 +2207,10 @@
       "onekwénhtara",
       "onekwenhtara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Red"
   },
   {
     "id": "col02",
@@ -1886,7 +2229,10 @@
       "oron:ia",
       "oronia"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Blue"
   },
   {
     "id": "col03",
@@ -1905,7 +2251,10 @@
       "ohonte'",
       "ohonte"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Green"
   },
   {
     "id": "col04",
@@ -1924,7 +2273,10 @@
       "otsi:nekwahr",
       "otsinekwahr"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Yellow"
   },
   {
     "id": "col05",
@@ -1943,7 +2295,10 @@
       "kaye:ri",
       "kayeri"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Black"
   },
   {
     "id": "col06",
@@ -1962,7 +2317,10 @@
       "o:wira'",
       "owira"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "White"
   },
   {
     "id": "col07",
@@ -1981,7 +2339,10 @@
       "athéhsa",
       "athehsa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Brown"
   },
   {
     "id": "col08",
@@ -2000,7 +2361,10 @@
       "washen:ra",
       "washenra"
     ],
-    "forms": null
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "Colours",
+    "subLabel": "Pink"
   },
   {
     "id": "bp01",
@@ -2019,7 +2383,10 @@
       "ononkwa'",
       "ononkwa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "head"
   },
   {
     "id": "bp02",
@@ -2038,7 +2405,10 @@
       "ononkwaton:'a",
       "ononkwatona"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "hair"
   },
   {
     "id": "bp03",
@@ -2057,7 +2427,10 @@
       "o:nen",
       "onen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "eye"
   },
   {
     "id": "bp04",
@@ -2076,7 +2449,10 @@
       "oyen:ta",
       "oyenta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "nose"
   },
   {
     "id": "bp05",
@@ -2095,7 +2471,10 @@
       "ohso:wa",
       "ohsowa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "lips"
   },
   {
     "id": "bp06",
@@ -2114,7 +2493,10 @@
       "onekahrha",
       "onekahrhа"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "teeth"
   },
   {
     "id": "bp07",
@@ -2133,7 +2515,10 @@
       "onenhsta:'a",
       "onenhstaa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "hand"
   },
   {
     "id": "bp08",
@@ -2152,7 +2537,10 @@
       "ohskenon:ni",
       "ohskenonni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "body",
+    "groupLabel": "Body parts",
+    "subLabel": "arm"
   },
   {
     "id": "num01",
@@ -2171,7 +2559,10 @@
       "énska",
       "enska"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "1"
   },
   {
     "id": "num02",
@@ -2190,7 +2581,10 @@
       "tékeni",
       "tekeni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "2"
   },
   {
     "id": "num03",
@@ -2209,7 +2603,10 @@
       "áhsen",
       "ahsen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "3"
   },
   {
     "id": "num04",
@@ -2229,7 +2626,10 @@
       "kaie:ri",
       "kaieri"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "4"
   },
   {
     "id": "num05",
@@ -2248,7 +2648,10 @@
       "wísk",
       "wisk"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "5"
   },
   {
     "id": "num06",
@@ -2268,7 +2671,10 @@
       "iaia'k",
       "iaiak"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "6"
   },
   {
     "id": "num07",
@@ -2287,7 +2693,10 @@
       "tsa:ta",
       "tsata"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "7"
   },
   {
     "id": "num08",
@@ -2306,7 +2715,10 @@
       "sha'te:kon",
       "shatekon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "8"
   },
   {
     "id": "num09",
@@ -2324,7 +2736,10 @@
       "Tióhton",
       "tiohton"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "9"
   },
   {
     "id": "num10",
@@ -2343,7 +2758,10 @@
       "oia'k",
       "oiak"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers 1–10",
+    "subLabel": "10"
   },
   {
     "id": "ta01",
@@ -2361,7 +2779,10 @@
       "Ohén:ton Karihwatéhkwen",
       "ohen:ton karihwatehkwen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "thanks_address",
+    "groupLabel": "Thanksgiving Address",
+    "subLabel": "the full Address"
   },
   {
     "id": "ta02",
@@ -2380,7 +2801,10 @@
       "onkwehshon:'a",
       "onkwehshona"
     ],
-    "forms": null
+    "forms": null,
+    "group": "thanks_address",
+    "groupLabel": "Thanksgiving Address",
+    "subLabel": "first acknowledgement"
   },
   {
     "id": "ta03",
@@ -2398,7 +2822,10 @@
       "Ionkhi'nikonhraién:tase'",
       "ionkhi'nikonhraien:tase'"
     ],
-    "forms": null
+    "forms": null,
+    "group": "thanks_address",
+    "groupLabel": "Thanksgiving Address",
+    "subLabel": "closing refrain"
   },
   {
     "id": "ta04",
@@ -2417,7 +2844,10 @@
       "ohwen:tsia",
       "ohwentsia"
     ],
-    "forms": null
+    "forms": null,
+    "group": "thanks_address",
+    "groupLabel": "Thanksgiving Address",
+    "subLabel": "earth acknowledgement"
   },
   {
     "id": "sh01",
@@ -2436,7 +2866,10 @@
       "otsísto",
       "otsisto"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Star"
   },
   {
     "id": "sh02",
@@ -2455,7 +2888,10 @@
       "ka'neróhkwes",
       "kanerokwes"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Rectangle"
   },
   {
     "id": "sh03",
@@ -2474,7 +2910,10 @@
       "teiotokerón:te'",
       "teiotokeronte"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Square"
   },
   {
     "id": "sh04",
@@ -2493,7 +2932,10 @@
       "kakahkwén:tes",
       "kakahkwentes"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Oval"
   },
   {
     "id": "sh05",
@@ -2512,7 +2954,10 @@
       "ahsen nikahiohsake",
       "áhsen nikahiohsake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Triangle"
   },
   {
     "id": "sh06",
@@ -2531,7 +2976,10 @@
       "teionteriwaien:te'",
       "teionteriwaiénte"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Circle"
   },
   {
     "id": "sh07",
@@ -2550,7 +2998,10 @@
       "kaie:ri nikahiohsake",
       "kaieri nikahiohsake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Diamond"
   },
   {
     "id": "sh08",
@@ -2569,7 +3020,10 @@
       "karáhkwa",
       "karahkwa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "shapes",
+    "groupLabel": "Shapes",
+    "subLabel": "Sun"
   },
   {
     "id": "wa01",
@@ -2588,7 +3042,10 @@
       "ohkwá:ri",
       "ohkwari"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "Bear"
   },
   {
     "id": "wa02",
@@ -2608,7 +3065,10 @@
       "a'nowara",
       "anowara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "Turtle"
   },
   {
     "id": "wa03",
@@ -2627,7 +3087,10 @@
       "okwáho",
       "okwaho"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "Wolf"
   },
   {
     "id": "wa04",
@@ -2646,7 +3109,10 @@
       "tsaní:to",
       "tsanito"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "beaver"
   },
   {
     "id": "wa05",
@@ -2665,7 +3131,10 @@
       "kwa'ien",
       "kwàien"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "rabbit"
   },
   {
     "id": "wa06",
@@ -2684,7 +3153,10 @@
       "oskenhón:ton",
       "oskenhoton"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "deer"
   },
   {
     "id": "wa07",
@@ -2702,7 +3174,10 @@
       "Tsihnón:saron",
       "tsihnonsaron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "moose"
   },
   {
     "id": "wa08",
@@ -2721,7 +3196,10 @@
       "ahwénsion",
       "ahwension"
     ],
-    "forms": null
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals",
+    "subLabel": "porcupine"
   },
   {
     "id": "da01",
@@ -2740,7 +3218,10 @@
       "takós",
       "takos"
     ],
-    "forms": null
+    "forms": null,
+    "group": "domesticanimals",
+    "groupLabel": "Domestic animals",
+    "subLabel": "cat"
   },
   {
     "id": "da02",
@@ -2759,7 +3240,10 @@
       "akohsá:tens",
       "akohsatens"
     ],
-    "forms": null
+    "forms": null,
+    "group": "domesticanimals",
+    "groupLabel": "Domestic animals",
+    "subLabel": "horse"
   },
   {
     "id": "da03",
@@ -2778,7 +3262,10 @@
       "tiohnhonhskwaron",
       "tiohnhonskwaron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "domesticanimals",
+    "groupLabel": "Domestic animals",
+    "subLabel": "cow"
   },
   {
     "id": "da04",
@@ -2797,7 +3284,10 @@
       "kaia'tákeras",
       "kaiatakeras"
     ],
-    "forms": null
+    "forms": null,
+    "group": "domesticanimals",
+    "groupLabel": "Domestic animals",
+    "subLabel": "goat"
   },
   {
     "id": "da05",
@@ -2816,7 +3306,10 @@
       "teiotina'karontón:'a",
       "teiotinakaron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "domesticanimals",
+    "groupLabel": "Domestic animals",
+    "subLabel": "sheep"
   },
   {
     "id": "cl01",
@@ -2835,7 +3328,10 @@
       "rotihskeré:wake",
       "rotihskerewake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans",
+    "subLabel": "Bear Clan"
   },
   {
     "id": "cl02",
@@ -2854,7 +3350,10 @@
       "rotiniáhton",
       "rotiniahton"
     ],
-    "forms": null
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans",
+    "subLabel": "Turtle Clan"
   },
   {
     "id": "cl03",
@@ -2874,7 +3373,10 @@
       "ronathahínon",
       "ronathahinon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans",
+    "subLabel": "Wolf Clan"
   },
   {
     "id": "cl04",
@@ -2893,7 +3395,10 @@
       "roti'nehsí:io",
       "rotinehsiio"
     ],
-    "forms": null
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans",
+    "subLabel": "Snipe Clan"
   },
   {
     "id": "cl05",
@@ -2912,7 +3417,10 @@
       "rotineniotthró:non",
       "rotineniotthronon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans",
+    "subLabel": "Eel Clan"
   },
   {
     "id": "fr01",
@@ -2931,7 +3439,10 @@
       "ken' niiohontesha'",
       "ken niiohontesha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "strawberries"
   },
   {
     "id": "fr02",
@@ -2951,7 +3462,10 @@
       "a:io",
       "aio"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "cranberries"
   },
   {
     "id": "fr03",
@@ -2970,7 +3484,10 @@
       "skanekwen'tara:nen",
       "skanekwentaranen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "raspberries"
   },
   {
     "id": "fr04",
@@ -2990,7 +3507,10 @@
       "ori'kowa",
       "orikowa"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "cherries"
   },
   {
     "id": "fr05",
@@ -3009,7 +3529,10 @@
       "kahrhata'ke:ha",
       "kahrhataké:ha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "blueberries"
   },
   {
     "id": "fr06",
@@ -3029,7 +3552,10 @@
       "ohsi'tana",
       "ohsitana"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fruits",
+    "groupLabel": "Fruits",
+    "subLabel": "apples"
   },
   {
     "id": "fo01",
@@ -3048,7 +3574,10 @@
       "ohnenná:ta",
       "ohnennata"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "potatoes"
   },
   {
     "id": "fo02",
@@ -3068,7 +3597,10 @@
       "o'waron",
       "owaron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "meat"
   },
   {
     "id": "fo03",
@@ -3087,7 +3619,10 @@
       "owistóhsera",
       "owistohsera"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "butter"
   },
   {
     "id": "fo04",
@@ -3106,7 +3641,10 @@
       "ohsahéta'",
       "ohsaheta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "beans"
   },
   {
     "id": "fo05",
@@ -3125,7 +3663,10 @@
       "onón:ta",
       "ononta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "corn"
   },
   {
     "id": "fo06",
@@ -3144,7 +3685,10 @@
       "otá:ra",
       "otara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "squash"
   },
   {
     "id": "fo07",
@@ -3163,7 +3707,10 @@
       "kanà:taros",
       "kanataros"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "bread"
   },
   {
     "id": "fo08",
@@ -3181,7 +3728,10 @@
       "Ohkwá:ri o'wá:ron",
       "ohkwari owaron"
     ],
-    "forms": null
+    "forms": null,
+    "group": "food",
+    "groupLabel": "Food",
+    "subLabel": "compound noun — bear meat"
   },
   {
     "id": "cu01",
@@ -3201,7 +3751,10 @@
       "kanonsesnéha",
       "kanonsesneha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "architecture / governance"
   },
   {
     "id": "cu02",
@@ -3220,7 +3773,10 @@
       "kaià:ner",
       "kaianer"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "political document"
   },
   {
     "id": "cu03",
@@ -3239,7 +3795,10 @@
       "teioháte",
       "teiohate"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "diplomatic record"
   },
   {
     "id": "cu04",
@@ -3259,7 +3818,10 @@
       "skennona",
       "skenona"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "core value"
   },
   {
     "id": "cu05",
@@ -3278,7 +3840,10 @@
       "onkwatà:wen",
       "onkwatawen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "ceremonial plant"
   },
   {
     "id": "cu06",
@@ -3297,7 +3862,10 @@
       "ionkwaiénhton",
       "ionkwaienhton"
     ],
-    "forms": null
+    "forms": null,
+    "group": "cultural",
+    "groupLabel": "Cultural items",
+    "subLabel": "traditional object"
   },
   {
     "id": "ho01",
@@ -3316,7 +3884,10 @@
       "atsihnhétste'",
       "atsihnhetste"
     ],
-    "forms": null
+    "forms": null,
+    "group": "household",
+    "groupLabel": "Household items",
+    "subLabel": "soap"
   },
   {
     "id": "ho02",
@@ -3335,7 +3906,10 @@
       "ohkwáriyentha'",
       "ohkwariyentha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "household",
+    "groupLabel": "Household items",
+    "subLabel": "bed"
   },
   {
     "id": "ho03",
@@ -3355,7 +3929,10 @@
       "atiéwen",
       "atiewen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "household",
+    "groupLabel": "Household items",
+    "subLabel": "towel"
   },
   {
     "id": "na01",
@@ -3374,7 +3951,10 @@
       "tsí:tewen",
       "tsitewen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "nature",
+    "groupLabel": "Nature",
+    "subLabel": "moon"
   },
   {
     "id": "na02",
@@ -3393,7 +3973,10 @@
       "ohwén:tsia",
       "ohwentsia"
     ],
-    "forms": null
+    "forms": null,
+    "group": "nature",
+    "groupLabel": "Nature",
+    "subLabel": "earth"
   },
   {
     "id": "na03",
@@ -3412,7 +3995,10 @@
       "wahta:",
       "wahta"
     ],
-    "forms": null
+    "forms": null,
+    "group": "nature",
+    "groupLabel": "Nature",
+    "subLabel": "maple tree"
   },
   {
     "id": "na04",
@@ -3431,7 +4017,10 @@
       "kaniatarà:ke",
       "kaniatarake"
     ],
-    "forms": null
+    "forms": null,
+    "group": "nature",
+    "groupLabel": "Nature",
+    "subLabel": "river"
   },
   {
     "id": "na05",
@@ -3450,7 +4039,10 @@
       "tsi iononte:nion",
       "tsiionontenion"
     ],
-    "forms": null
+    "forms": null,
+    "group": "nature",
+    "groupLabel": "Nature",
+    "subLabel": "mountains"
   },
   {
     "id": "na06",
@@ -3469,7 +4061,10 @@
       "kenién:ke",
       "kenienke"
     ],
-    "forms": null
+    "forms": null,
+    "group": "seasons",
+    "groupLabel": "Seasons",
+    "subLabel": "winter"
   },
   {
     "id": "na07",
@@ -3488,7 +4083,10 @@
       "sé:ske",
       "seske"
     ],
-    "forms": null
+    "forms": null,
+    "group": "seasons",
+    "groupLabel": "Seasons",
+    "subLabel": "spring"
   },
   {
     "id": "na08",
@@ -3507,7 +4105,10 @@
       "ohiarí:ha",
       "ohiariha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "seasons",
+    "groupLabel": "Seasons",
+    "subLabel": "summer"
   },
   {
     "id": "na09",
@@ -3527,7 +4128,10 @@
       "ken'nikaien",
       "ken nikaien"
     ],
-    "forms": null
+    "forms": null,
+    "group": "seasons",
+    "groupLabel": "Seasons",
+    "subLabel": "autumn"
   },
   {
     "id": "le01",
@@ -3547,7 +4151,10 @@
       "tekawiita",
       "tekanawita"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "The Peacemaker"
   },
   {
     "id": "le02",
@@ -3567,7 +4174,10 @@
       "aiionwatha",
       "aionwatha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "Hiawatha"
   },
   {
     "id": "le03",
@@ -3586,7 +4196,10 @@
       "rotiiánehr",
       "rotiianehr"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "Longhouse Chief"
   },
   {
     "id": "le04",
@@ -3605,7 +4218,10 @@
       "iakoiánehr",
       "iakoianehr"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "Clan Mother"
   },
   {
     "id": "le05",
@@ -3624,7 +4240,10 @@
       "shonkwaiá:tison",
       "shonkwaiatison"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "The Creator"
   },
   {
     "id": "le06",
@@ -3643,7 +4262,10 @@
       "ratiwennahní:ion",
       "ratiwennahnion"
     ],
-    "forms": null
+    "forms": null,
+    "group": "heroes",
+    "groupLabel": "Cultural figures",
+    "subLabel": "Singers"
   },
   {
     "id": "t01",
@@ -3662,7 +4284,10 @@
       "iekwahrahnhá:ra'",
       "iekwahrahnhara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "hammer"
   },
   {
     "id": "t02",
@@ -3681,7 +4306,10 @@
       "iekwáhhere'",
       "iekwahhere"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "shovel"
   },
   {
     "id": "t03",
@@ -3700,7 +4328,10 @@
       "ionkwarihón:ni",
       "ionkwarihonn i"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "scissors"
   },
   {
     "id": "t04",
@@ -3719,7 +4350,10 @@
       "ietkarihón:ni",
       "ietkarihonn i"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "knife"
   },
   {
     "id": "t05",
@@ -3738,7 +4372,10 @@
       "iakoa'sháhen",
       "iakoashahen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "awl"
   },
   {
     "id": "t06",
@@ -3757,7 +4394,10 @@
       "ietshennón:ni",
       "ietshennonni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "tools",
+    "groupLabel": "Tools",
+    "subLabel": "screwdriver"
   },
   {
     "id": "cv01",
@@ -3778,14 +4418,25 @@
     ],
     "forms": [
       {
-        "label": "You cut it up (command)",
+        "label": "you (singular) — command",
         "form": "skwe'tarón:ko"
       },
       {
-        "label": "I cut it up (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kkwe'tarón:kwas"
       }
-    ]
+    ],
+    "group": "v_cut",
+    "groupLabel": "Cut",
+    "subLabel": "command"
   },
   {
     "id": "cv02",
@@ -3804,7 +4455,10 @@
       "kkwe'taron:kwas",
       "kkwetaronkwas"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_cut",
+    "groupLabel": "Cut",
+    "subLabel": "first person habitual"
   },
   {
     "id": "cv03",
@@ -3825,14 +4479,25 @@
     ],
     "forms": [
       {
-        "label": "You saw (command)",
+        "label": "you (singular) — command",
         "form": "tetshon'ká:ria'k"
       },
       {
-        "label": "I saw (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "tekshon'ká:ria'ks"
       }
-    ]
+    ],
+    "group": "v_saw",
+    "groupLabel": "Saw (wood)",
+    "subLabel": "command (dualic)"
   },
   {
     "id": "cv04",
@@ -3853,14 +4518,25 @@
     ],
     "forms": [
       {
-        "label": "You sweep (command)",
+        "label": "you (singular) — command",
         "form": "skáhere'"
       },
       {
-        "label": "I sweep (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kkáhere's"
       }
-    ]
+    ],
+    "group": "v_sweep",
+    "groupLabel": "Sweep",
+    "subLabel": "command"
   },
   {
     "id": "cv05",
@@ -3881,14 +4557,25 @@
     ],
     "forms": [
       {
-        "label": "You give (command)",
+        "label": "you (singular) — command",
         "form": "skahó:wi"
       },
       {
-        "label": "I give (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kkahó:wis"
       }
-    ]
+    ],
+    "group": "v_give",
+    "groupLabel": "Give",
+    "subLabel": "command"
   },
   {
     "id": "iv01",
@@ -3908,14 +4595,25 @@
     ],
     "forms": [
       {
-        "label": "You take scales off fish (command)",
+        "label": "you (singular) — command",
         "form": "tsí'stenht"
       },
       {
-        "label": "I take scales off fish (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kí'stenhtha'"
       }
-    ]
+    ],
+    "group": "v_istem",
+    "groupLabel": "I-stem verbs",
+    "subLabel": "command"
   },
   {
     "id": "iv02",
@@ -3933,7 +4631,19 @@
       "tenhsi'tstenhrhó:tha'",
       "tenhsi'tstenh rho:tha'"
     ],
-    "forms": null
+    "forms": [
+      {
+        "label": "you are a bricklayer (habitual)",
+        "form": "tenhsi'tstenhrhó:tha'"
+      },
+      {
+        "label": "I am a bricklayer (habitual)",
+        "form": ""
+      }
+    ],
+    "group": "v_istem",
+    "groupLabel": "I-stem verbs",
+    "subLabel": "habitual (occupation)"
   },
   {
     "id": "iv03",
@@ -3954,14 +4664,25 @@
     ],
     "forms": [
       {
-        "label": "You make a fire (command)",
+        "label": "you (singular) — command",
         "form": "sahsennón:ni"
       },
       {
-        "label": "I make a fire (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kahsennón:nis"
       }
-    ]
+    ],
+    "group": "v_istem",
+    "groupLabel": "I-stem verbs",
+    "subLabel": "command"
   },
   {
     "id": "ev01",
@@ -3982,14 +4703,25 @@
     ],
     "forms": [
       {
-        "label": "You put it in (command)",
+        "label": "you (singular) — command",
         "form": "sé:ta"
       },
       {
-        "label": "I put it in (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "ké:ta's"
       }
-    ]
+    ],
+    "group": "v_estem",
+    "groupLabel": "True E-stem verbs",
+    "subLabel": "command"
   },
   {
     "id": "ev02",
@@ -4010,14 +4742,25 @@
     ],
     "forms": [
       {
-        "label": "Do you remember?",
+        "label": "you (singular) — command",
         "form": "ské:ta'"
       },
       {
-        "label": "I remember (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "ké:ta'ne's"
       }
-    ]
+    ],
+    "group": "v_estem",
+    "groupLabel": "True E-stem verbs",
+    "subLabel": "question / command"
   },
   {
     "id": "ev03",
@@ -4038,14 +4781,25 @@
     ],
     "forms": [
       {
-        "label": "You want (command/question)",
+        "label": "you (singular) — command",
         "form": "sahshá:wi"
       },
       {
-        "label": "I want (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kahshá:wis"
       }
-    ]
+    ],
+    "group": "v_estem",
+    "groupLabel": "True E-stem verbs",
+    "subLabel": "command / question"
   },
   {
     "id": "ev04",
@@ -4065,14 +4819,25 @@
     ],
     "forms": [
       {
-        "label": "You mow (command)",
+        "label": "you (singular) — command",
         "form": "sanerénhton"
       },
       {
-        "label": "I mow (habitual)",
+        "label": "you two — dual command",
+        "form": ""
+      },
+      {
+        "label": "you all — plural command",
+        "form": ""
+      },
+      {
+        "label": "I — habitual",
         "form": "kanerénhtons"
       }
-    ]
+    ],
+    "group": "v_estem",
+    "groupLabel": "True E-stem verbs",
+    "subLabel": "command"
   },
   {
     "id": "fi01",
@@ -4091,7 +4856,10 @@
       "namé:s",
       "names"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "trout"
   },
   {
     "id": "fi02",
@@ -4110,7 +4878,10 @@
       "kahshakaié:ra'",
       "kahshakaiéra"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "sturgeon"
   },
   {
     "id": "fi03",
@@ -4129,7 +4900,10 @@
       "ohkwarí:",
       "ohkwari:"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "pike"
   },
   {
     "id": "fi04",
@@ -4148,7 +4922,10 @@
       "kotihnawá:ra's",
       "kotihnawara's"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "salmon"
   },
   {
     "id": "fi05",
@@ -4167,7 +4944,10 @@
       "aterón:taks",
       "aterontaks"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "eel"
   },
   {
     "id": "fi06",
@@ -4186,7 +4966,10 @@
       "tsiskáwiia'k",
       "tsiskawia'k"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "bass"
   },
   {
     "id": "fi07",
@@ -4205,7 +4988,10 @@
       "atenà:tara",
       "atenatara"
     ],
-    "forms": null
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish",
+    "subLabel": "sunfish"
   },
   {
     "id": "bi01",
@@ -4225,7 +5011,10 @@
       "a:kwe'ks",
       "akweks"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Eagle"
   },
   {
     "id": "bi02",
@@ -4244,7 +5033,10 @@
       "kwáwenhs",
       "kwawenhs"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Robin"
   },
   {
     "id": "bi03",
@@ -4264,7 +5056,10 @@
       "sha'kowenna'",
       "sha'kowen:na"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Hawk"
   },
   {
     "id": "bi04",
@@ -4283,7 +5078,10 @@
       "tsistí:keri",
       "tsistikeri"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Horned owl"
   },
   {
     "id": "bi05",
@@ -4302,7 +5100,10 @@
       "kwareró:ha",
       "kwarer oha"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Owl"
   },
   {
     "id": "bi06",
@@ -4321,7 +5122,10 @@
       "káhonk",
       "kahonk"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Goose"
   },
   {
     "id": "bi07",
@@ -4340,7 +5144,10 @@
       "ohkwári kahon:",
       "ohkwari kahon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Loon"
   },
   {
     "id": "bi08",
@@ -4359,7 +5166,10 @@
       "oherokon",
       "oherókon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds",
+    "subLabel": "Heron"
   },
   {
     "id": "dc01",
@@ -4378,7 +5188,10 @@
       "senia:tien",
       "seniatien"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_sit",
+    "groupLabel": "Sit",
+    "subLabel": "dual command"
   },
   {
     "id": "dc02",
@@ -4397,7 +5210,10 @@
       "sewa:tien",
       "sewatien"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_sit",
+    "groupLabel": "Sit",
+    "subLabel": "plural command"
   },
   {
     "id": "dc03",
@@ -4416,7 +5232,10 @@
       "seniatkhthon",
       "seniatkahtho n"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_listen",
+    "groupLabel": "Listen",
+    "subLabel": "dual command"
   },
   {
     "id": "dc04",
@@ -4435,7 +5254,10 @@
       "sewatkahtho n",
       "sewatkahthon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_listen",
+    "groupLabel": "Listen",
+    "subLabel": "plural command"
   },
   {
     "id": "dc05",
@@ -4454,7 +5276,10 @@
       "teseniara htat",
       "teseniarahtat"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_run",
+    "groupLabel": "Run",
+    "subLabel": "dual command (dualic)"
   },
   {
     "id": "dc06",
@@ -4473,7 +5298,10 @@
       "tesewara:htat",
       "tesewarahtat"
     ],
-    "forms": null
+    "forms": null,
+    "group": "v_run",
+    "groupLabel": "Run",
+    "subLabel": "plural command (dualic)"
   },
   {
     "id": "n11",
@@ -4492,7 +5320,10 @@
       "oia'k énska",
       "oiak enska"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers 11–100",
+    "subLabel": "11"
   },
   {
     "id": "n12",
@@ -4511,7 +5342,10 @@
       "oia'k tékeni",
       "oiak tekeni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers 11–100",
+    "subLabel": "12"
   },
   {
     "id": "n20",
@@ -4530,7 +5364,10 @@
       "tékeni oia'k",
       "tekeni oiak"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers 11–100",
+    "subLabel": "20"
   },
   {
     "id": "n50",
@@ -4549,7 +5386,10 @@
       "wísk oia'k",
       "wisk oiak"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers 11–100",
+    "subLabel": "50"
   },
   {
     "id": "n100",
@@ -4568,7 +5408,10 @@
       "tewa:sen",
       "tewasen"
     ],
-    "forms": null
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers 11–100",
+    "subLabel": "100"
   },
   {
     "id": "ph01",
@@ -4587,7 +5430,10 @@
       "she:kon, to:kens?",
       "shekon tokens"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "opening greeting"
   },
   {
     "id": "ph02",
@@ -4606,7 +5452,10 @@
       "io'tenhró:ton",
       "io'tenhroton"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "positive response"
   },
   {
     "id": "ph03",
@@ -4625,7 +5474,10 @@
       "iah to:kens",
       "iah tokens"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "negative response"
   },
   {
     "id": "ph04",
@@ -4643,7 +5495,10 @@
       "Niawenhkó:wa na'teionkwarihón:ni",
       "niawenhkowa nateionkwari honni"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "extended thanks"
   },
   {
     "id": "ph05",
@@ -4662,7 +5517,10 @@
       "kanie:ri iken'?",
       "kanierien iken"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "name question"
   },
   {
     "id": "ph06",
@@ -4681,7 +5539,10 @@
       "akwe:kon",
       "akwekon"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "name response"
   },
   {
     "id": "ph07",
@@ -4700,7 +5561,10 @@
       "onen' ki' wahi",
       "onen ki wahi"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "ceremonial closing"
   },
   {
     "id": "ph08",
@@ -4719,6 +5583,9 @@
       "tsi niiohtonhátie?",
       "tsi niiohtonhatie"
     ],
-    "forms": null
+    "forms": null,
+    "group": "conversation",
+    "groupLabel": "Everyday conversation",
+    "subLabel": "time question"
   }
 ]
