@@ -827,20 +827,28 @@
     ],
     "forms": [
       {
-        "label": "your mother",
-        "form": "Sa'nisténha"
-      },
-      {
         "label": "my mother",
-        "form": "Ake'nisténha"
+        "form": "ake'nihsténha"
       },
       {
-        "label": "her mother",
-        "form": "Ontate'nisténha"
+        "label": "your mother",
+        "form": "sa'nihsténha"
       },
       {
         "label": "his mother",
-        "form": "Ro'nisténha"
+        "form": "ro'nihsténha"
+      },
+      {
+        "label": "her mother",
+        "form": "ako'nihsténha"
+      },
+      {
+        "label": "our mother",
+        "form": "onkwa'nihsténha"
+      },
+      {
+        "label": "your (pl) mother",
+        "form": "sewa'nihsténha"
       }
     ],
     "group": "kin_mother",
@@ -866,20 +874,24 @@
     ],
     "forms": [
       {
-        "label": "your father",
-        "form": "Ia'níha"
-      },
-      {
         "label": "my father",
-        "form": "Rake'níha"
+        "form": "rake'níha"
       },
       {
-        "label": "her father",
-        "form": "Ronwa'níha"
+        "label": "your father",
+        "form": "ya'níha"
       },
       {
         "label": "his father",
-        "form": "Ro'níha"
+        "form": "ro'níha"
+      },
+      {
+        "label": "her father",
+        "form": "shako'níha"
+      },
+      {
+        "label": "our father",
+        "form": "shonkwa'níha"
       }
     ],
     "group": "kin_father",
@@ -906,19 +918,23 @@
     "forms": [
       {
         "label": "my grandfather",
-        "form": "Rake'sótha"
+        "form": "rakhsótha"
       },
       {
         "label": "your grandfather",
-        "form": "Sa'sótha"
+        "form": "yahsótha"
       },
       {
         "label": "his grandfather",
-        "form": "Ro'sótha"
+        "form": "rohsótha"
       },
       {
         "label": "her grandfather",
-        "form": "Ako'sótha"
+        "form": "shakohsótha"
+      },
+      {
+        "label": "our grandfather",
+        "form": "shonkwahsótha"
       }
     ],
     "group": "kin_grandfather",
@@ -945,19 +961,27 @@
     "forms": [
       {
         "label": "my grandmother",
-        "form": "Aksótha"
+        "form": "akhsótha"
       },
       {
         "label": "your grandmother",
-        "form": "Sasótha"
-      },
-      {
-        "label": "her grandmother",
-        "form": "Akosótha"
+        "form": "sahsótha"
       },
       {
         "label": "his grandmother",
-        "form": "Rosótha"
+        "form": "rohsótha"
+      },
+      {
+        "label": "her grandmother",
+        "form": "akohsótha"
+      },
+      {
+        "label": "our grandmother",
+        "form": "onkwahsótha"
+      },
+      {
+        "label": "grandmother of all of you",
+        "form": "sewahsótha"
       }
     ],
     "group": "kin_grandmother",
@@ -983,20 +1007,24 @@
     ],
     "forms": [
       {
-        "label": "your older sister",
-        "form": "Sahtsí:'a"
-      },
-      {
         "label": "my older sister",
-        "form": "Akhtsí:'a"
+        "form": "akhtsí:'a"
       },
       {
-        "label": "her older sister",
-        "form": "Ontattsí:'a"
+        "label": "your older sister",
+        "form": "sahtsí:'a"
       },
       {
         "label": "his older sister",
-        "form": "Rohtsí:'a"
+        "form": "rohtsí:'a"
+      },
+      {
+        "label": "her older sister",
+        "form": "akohtsí:'a"
+      },
+      {
+        "label": "our older sister",
+        "form": "onkwahtsí:'a"
       }
     ],
     "group": "kin_oldsister",
@@ -1022,20 +1050,24 @@
     ],
     "forms": [
       {
-        "label": "your older brother",
-        "form": "Iahtsí:'a"
-      },
-      {
         "label": "my older brother",
-        "form": "Rakhtsí:'a"
+        "form": "rakhtsí:'a"
       },
       {
-        "label": "her older brother",
-        "form": "Ronwahtsí:'a"
+        "label": "your older brother",
+        "form": "yahtsí:'a"
       },
       {
         "label": "his older brother",
-        "form": "Rohtsí:'a"
+        "form": "rohtsí:'a"
+      },
+      {
+        "label": "her older brother",
+        "form": "shakohtsí:'a"
+      },
+      {
+        "label": "our older brother",
+        "form": "shonkwahtsí:'a"
       }
     ],
     "group": "kin_oldbro",
@@ -12270,6 +12302,4763 @@
     "accepts": [
       "Sénha",
       "senha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day01",
+    "target": "Awentatokenhtí:ke",
+    "english": "Sunday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Sunday",
+    "notes": "Sunday — Awentatokenhtí:ke, literally 'the holy/set-apart day'. The day name reflects the influence of Christian missionaries on the Haudenosaunee calendar.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Awentatokenhtí:ke",
+      "awentatokenhti:ke",
+      "sunday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day02",
+    "target": "Awententaón:ke",
+    "english": "Monday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Monday",
+    "notes": "Monday — Awententaón:ke, literally 'the day after the holy day'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Awententaón:ke",
+      "awententa on:ke",
+      "monday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day03",
+    "target": "Ratironhia'kehronón:ke",
+    "english": "Tuesday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Tuesday",
+    "notes": "Tuesday — Ratironhia'kehronón:ke.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ratironhia'kehronón:ke",
+      "tuesday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day04",
+    "target": "Soséhne",
+    "english": "Wednesday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Wednesday",
+    "notes": "Wednesday — Soséhne.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Soséhne",
+      "sosehne",
+      "wednesday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day05",
+    "target": "Okarihstiiáhne",
+    "english": "Thursday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Thursday",
+    "notes": "Thursday — Okarihstiiáhne.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Okarihstiiáhne",
+      "okarihstiahne",
+      "thursday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day06",
+    "target": "Ronwaia'tanontaktónhne",
+    "english": "Friday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Friday",
+    "notes": "Friday — Ronwaia'tanontaktónhne.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ronwaia'tanontaktónhne",
+      "friday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "day07",
+    "target": "Awentákta",
+    "english": "Saturday",
+    "pos": "noun — day",
+    "group": "days",
+    "groupLabel": "days of the week",
+    "subLabel": "Saturday",
+    "notes": "Saturday — Awentákta.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Awentákta",
+      "awentakta",
+      "saturday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo01",
+    "target": "Tsiothorhkó:wa",
+    "english": "January (the great cold month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "January",
+    "notes": "January — Tsiothorhkó:wa, literally 'the great cold'. The coldest month of winter. Compare kenién:ke (winter) you already know.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsiothorhkó:wa",
+      "tsiothorhkowa",
+      "january"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo02",
+    "target": "Enníska",
+    "english": "February",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "February",
+    "notes": "February — Enníska. The month when winter begins to loosen its grip.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Enníska",
+      "enniska",
+      "february"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo03",
+    "target": "Enniskó:wa",
+    "english": "March (the great February / lengthening days)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "March",
+    "notes": "March — Enniskó:wa, 'the great Enniska'. The lengthening days of early spring.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Enniskó:wa",
+      "enniskowa",
+      "march"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo04",
+    "target": "Onerahtókha",
+    "english": "April (buds opening month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "April",
+    "notes": "April — Onerahtókha, 'when the buds open'. The month when trees begin to bud — connected to Sé:ske (spring) and the sugar bush season.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Onerahtókha",
+      "onerahtoha",
+      "april"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo05",
+    "target": "Onerahtohkó:wa",
+    "english": "May (great buds month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "May",
+    "notes": "May — Onerahtohkó:wa, 'the great buds month'. Full spring — planting season begins.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Onerahtohkó:wa",
+      "onerahtohkowa",
+      "may"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo06",
+    "target": "Ohiaríha",
+    "english": "June (early summer)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "June",
+    "notes": "June — Ohiaríha. You already know Ohiarí:ha as the word for summer (the season). June is the beginning of that season.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ohiaríha",
+      "ohiariha",
+      "june"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo07",
+    "target": "Ohyarihkó:wa",
+    "english": "July (great summer month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "July",
+    "notes": "July — Ohyarihkó:wa, 'the great summer'. Peak growing season — corn, beans, and squash are tended.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ohyarihkó:wa",
+      "ohyarihkowa",
+      "july"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo08",
+    "target": "Seskéha",
+    "english": "August (green corn month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "August",
+    "notes": "August — Seskéha. The month of the Green Corn Ceremony. The corn (onón:ta) begins to be ready for first harvest.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Seskéha",
+      "seskeha",
+      "august"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo09",
+    "target": "Seskehkó:wa",
+    "english": "September (great green corn month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "September",
+    "notes": "September — Seskehkó:wa. Full harvest season. The Harvest Ceremony takes place this month.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Seskehkó:wa",
+      "seskehkowa",
+      "september"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo10",
+    "target": "Kenténha",
+    "english": "October (autumn / harvest winding down)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "October",
+    "notes": "October — Kenténha. The leaves turn (Ken'niká:ien = autumn) and harvest concludes.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kenténha",
+      "kentenha",
+      "october"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo11",
+    "target": "Kentenhkó:wa",
+    "english": "November (great autumn month)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "November",
+    "notes": "November — Kentenhkó:wa. Late autumn; preparation for winter. The Midwinter Ceremony approaches.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kentenhkó:wa",
+      "kentenhkowa",
+      "november"
+    ],
+    "forms": null
+  },
+  {
+    "id": "mo12",
+    "target": "Tsiothórha",
+    "english": "December (beginning of winter)",
+    "pos": "noun — month",
+    "group": "months",
+    "groupLabel": "months",
+    "subLabel": "December",
+    "notes": "December — Tsiothórha. The beginning of winter (Kenién:ke). Storytelling season begins — stories can only be told when snow is on the ground.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsiothórha",
+      "tsiothorha",
+      "december"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env01",
+    "target": "Karón:ta",
+    "english": "Tree / log / trunk",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "tree / log / trunk",
+    "notes": "Tree, log, or tree trunk — Karón:ta. A generic tree word. Compare with the specific tree names you already know: wahtá: (maple), oká:ratsi (elm), ohnhó:ten (pine).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Karón:ta",
+      "karon:ta",
+      "karonta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env02",
+    "target": "Ókwire",
+    "english": "Bush / shrub / small tree",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "bush / shrub",
+    "notes": "Bush, shrub, or whip — Ókwire. The smaller vegetation of the forest understory.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ókwire",
+      "okwire"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env03",
+    "target": "O'kèn:ra",
+    "english": "Dirt / dust / soil",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "dirt / soil / dust",
+    "notes": "Dirt, dust, or soil — O'kèn:ra. The material of the earth itself. Compare with Onhwéntsia (land/earth as a concept).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "O'kèn:ra",
+      "o'ken:ra",
+      "oken:ra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env04",
+    "target": "Oháha",
+    "english": "Road / street",
+    "pos": "noun — environment",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "road / street",
+    "notes": "Road or street — Oháha. Essential for directions and daily navigation vocabulary.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oháha",
+      "ohaha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env05",
+    "target": "Ostèn:ra",
+    "english": "Rock / stone / pavement",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "rock / stone",
+    "notes": "Rock, stone, or pavement — Ostèn:ra. You know flint (Ka'nikonhrhà:wi) — this is the general term for stone. The Kanien'kehá:ka are the People of the Flint (stone).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ostèn:ra",
+      "osten:ra",
+      "ostenra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env06",
+    "target": "Onawà:tsta",
+    "english": "Mud",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "mud",
+    "notes": "Mud — Onawà:tsta. Wet earth. Relevant to spring vocabulary (Sé:ske).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Onawà:tsta",
+      "onawa:tsta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env07",
+    "target": "Onehsarónhkwa",
+    "english": "Sand",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "sand",
+    "notes": "Sand — Onehsarónhkwa. The material of beaches and riverbanks.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Onehsarónhkwa",
+      "onehsaronhkwa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env08",
+    "target": "Kahiónha",
+    "english": "River / stream",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "river / stream (generic)",
+    "notes": "River or stream — Kahiónha. You already have Kaniatarà:ke (the St. Lawrence River specifically). This is the generic river/stream word.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kahiónha",
+      "kahionha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env09",
+    "target": "Kaniá:tara",
+    "english": "Lake",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "lake",
+    "notes": "Lake — Kaniá:tara. Used for lakes in general. Kanehsatà:ke is located near the Lake of Two Mountains (Kaniá:tara tsi tékeni karáhkwa).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kaniá:tara",
+      "kania:tara"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env10",
+    "target": "Káhna:wa",
+    "english": "Rapids",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "rapids",
+    "notes": "Rapids — Kah[n]á:wa. The rapids that give Kahnawà:ke its name. 'At the rapids.'",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kah[n]á:wa",
+      "kahnawa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env11",
+    "target": "Kaná:wa",
+    "english": "Swamp / marsh / wetland",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "swamp / marsh",
+    "notes": "Swamp, marsh, or wetland — Kaná:wa. The wetlands near Kanehsatà:ke are home to many species including the eel (Aterón:taks) whose population has collapsed.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kaná:wa",
+      "kana:wa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env12",
+    "target": "Ata'èn:ra",
+    "english": "Fence",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "fence",
+    "notes": "Fence — Ata'èn:ra. A boundary-marking structure. Post-contact word for the concept of enclosure.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ata'èn:ra",
+      "ata'en:ra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env13",
+    "target": "Karonhià:ke",
+    "english": "Sky / heaven",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "sky / heaven",
+    "notes": "Sky or heaven — Karonhià:ke. Literally 'in the sky'. The sky world (otsikonhríhson) of Haudenosaunee cosmology — where Sky Woman lived before falling through the hole.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Karonhià:ke",
+      "karonhia:ke"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env14",
+    "target": "Óniehte",
+    "english": "Snow",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "snow",
+    "notes": "Snow — Óniehte. The presence of snow on the ground marks the storytelling season. Kanehsatà:ke — 'where the crust of snow on the earth is' — takes its name from this substance.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Óniehte",
+      "oniehte"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env15",
+    "target": "Kahéhta",
+    "english": "Field / garden",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "field / garden",
+    "notes": "Field or garden — Kahéhta. The cultivated land where the Three Sisters grow. You already know kahentà:ke (field/meadow) — this is the general term.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kahéhta",
+      "kahehta"
+    ],
+    "forms": null
+  },
+  {
+    "id": "env16",
+    "target": "O'tá:ra",
+    "english": "Clay / pottery / chimney",
+    "pos": "noun — environment",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "clay",
+    "notes": "Clay, pottery, or chimney — O'tá:ra. Clay is the material of traditional Haudenosaunee pottery. The same root names both the material and the objects made from it.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "O'tá:ra",
+      "o'ta:ra"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc01",
+    "target": "tsi yontaweya'táhkwa",
+    "english": "school (at the school)",
+    "pos": "noun — place (locative)",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "school (locative)",
+    "notes": "At the school — tsi yontaweya'táhkwa. The locative phrase for school. You already have ionteriwahrónnion (school as an institution) — this is the directional/locative form used when saying 'going to school'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi yontaweya'táhkwa",
+      "to school"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc02",
+    "target": "tsi yehyatonhserayentáhkwa",
+    "english": "library",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "library",
+    "notes": "Library — tsi yehyatonhserayentáhkwa, literally 'the place where writings are kept'. You know kahiatónhsera (paper/book) — the library is where books are stored.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi yehyatonhserayentáhkwa",
+      "library"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc03",
+    "target": "tsi yontenhninon'tha'kó:wa",
+    "english": "mall / large store",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "mall",
+    "notes": "Mall or large store — tsi yontenhninon'tha'kó:wa, 'the big place where things are bought'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi yontenhninon'tha'kó:wa",
+      "mall"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc04",
+    "target": "tsi thatitsyénhayens",
+    "english": "band office",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "band office / community office",
+    "notes": "Band office or community office — tsi thatitsyénhayens. The administrative centre of a First Nations community.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi thatitsyénhayens",
+      "band office"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc05",
+    "target": "tsi waterennótha",
+    "english": "radio station",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "radio station",
+    "notes": "Radio station — tsi waterennótha. CKRK (91.9 FM) is Kahnawà:ke's Kanien'kéha language radio station. CKON broadcasts from Akwesasne. Radio is a key Kanien'kéha language domain.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi waterennótha",
+      "radio station"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc06",
+    "target": "tsi tyakenheyontayentáhkwa",
+    "english": "hospital",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "hospital",
+    "notes": "Hospital — tsi tyakenheyontayentáhkwa, 'the place where people are healed'. An important modern vocabulary item.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi tyakenheyontayentáhkwa",
+      "hospital"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc07",
+    "target": "kanonhséhsne",
+    "english": "longhouse (locative — at the longhouse)",
+    "pos": "noun — place (locative)",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "at the longhouse",
+    "notes": "At the longhouse — kanonhséhsne. The locative form of Kanonsesné:ha (longhouse). Used when saying 'I am going to the longhouse'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanonhséhsne",
+      "at the longhouse"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc08",
+    "target": "tsi teyontska'hónhkwa",
+    "english": "restaurant",
+    "pos": "noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "restaurant",
+    "notes": "Restaurant — tsi teyontska'hónhkwa, 'the place where one eats'. The eating verb root tsk- you know from sátskhwa' (you eat).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi teyontska'hónhkwa",
+      "restaurant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc09",
+    "target": "Ohswé:ken",
+    "english": "Six Nations Grand River Territory",
+    "pos": "proper noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "Six Nations Grand River",
+    "notes": "Six Nations Grand River Territory — Ohswé:ken. Home of the largest population of Haudenosaunee people, located near Brantford, Ontario. The Six Nations Polytechnic that produced the eCampusOntario OER is located here.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ohswé:ken",
+      "ohswe:ken",
+      "Six Nations"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc10",
+    "target": "Tyohtyà:ke",
+    "english": "Montreal / Tiohtià:ke",
+    "pos": "proper noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "Montréal",
+    "notes": "Montréal — Tyohtyà:ke (or Tiohtià:ke in some orthographies), 'where the group split'. Kanehsatà:ke is located approximately 60km west of Montréal. The city's Kanien'kéha name refers to a historical division point.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tyohtyà:ke",
+      "Tiohtia:ke",
+      "montreal"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc11",
+    "target": "Tsi tkarón:to",
+    "english": "Toronto",
+    "pos": "proper noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "Toronto",
+    "notes": "Toronto — Tsi tkarón:to, 'where trees stand in water'. The Kanien'kéha name for the city refers to the fish weirs or trees that once stood in the bay.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsi tkarón:to",
+      "Tkarón:to",
+      "toronto"
+    ],
+    "forms": null
+  },
+  {
+    "id": "loc12",
+    "target": "Kanà:tsyo",
+    "english": "Ottawa",
+    "pos": "proper noun — place",
+    "group": "places",
+    "groupLabel": "places",
+    "subLabel": "Ottawa",
+    "notes": "Ottawa — Kanà:tsyo. The capital of Canada, named from an Algonquian word; this is the Kanien'kéha form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kanà:tsyo",
+      "kana:tsyo",
+      "ottawa"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins01",
+    "target": "tsi'nhontstókhi",
+    "english": "ant",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "ant",
+    "notes": "Ant — tsi'nhontstókhi. The industrious ant appears in Haudenosaunee teaching stories.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi'nhontstókhi",
+      "ant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins02",
+    "target": "katsikhe'tón:nis",
+    "english": "bee (honey)",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "honey bee",
+    "notes": "Honey bee — katsikhe'tón:nis. Bees and their honey are referenced in food vocabulary. The honey bee is a post-contact introduction to North America — the Haudenosaunee called it 'the white man's fly'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katsikhe'tón:nis",
+      "bee"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins03",
+    "target": "tsiktsinón:nawen",
+    "english": "butterfly",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "butterfly",
+    "notes": "Butterfly — tsiktsinón:nawen. Butterflies appear in oral tradition as symbols of transformation.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsiktsinón:nawen",
+      "butterfly"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins04",
+    "target": "tewatsirókwas",
+    "english": "firefly / lightning bug",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "firefly",
+    "notes": "Firefly — tewatsirókwas, 'the one that flashes twice'. The te- dualic prefix marks the two-phase flash pattern of the firefly.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tewatsirókwas",
+      "firefly"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins05",
+    "target": "tsiks",
+    "english": "fly",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "fly",
+    "notes": "Fly — tsiks. One of the shortest words in Kanien'kéha vocabulary. Flies are part of the natural world acknowledged in the Thanksgiving Address.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsiks",
+      "fly"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins06",
+    "target": "tsikerentányaks",
+    "english": "frog",
+    "pos": "noun — insect/amphibian",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "frog",
+    "notes": "Frog (or amphibian more generally) — tsikerentányaks.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsikerentányaks",
+      "frog"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins07",
+    "target": "okaryahtà:ne",
+    "english": "mosquito",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "mosquito",
+    "notes": "Mosquito — okaryahtà:ne. A familiar presence in the Kanehsatà:ke wetlands.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "okaryahtà:ne",
+      "mosquito"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins08",
+    "target": "takwa'áhson",
+    "english": "spider",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "spider",
+    "notes": "Spider — takwa'áhson. Spiders appear in Haudenosaunee oral tradition as weavers and trap-makers.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "takwa'áhson",
+      "spider"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins09",
+    "target": "ohséhton",
+    "english": "tick",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "tick / woodtick",
+    "notes": "Tick — ohséhton. A forest parasite relevant to health vocabulary in the Kanehsatà:ke woodland territory.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohséhton",
+      "tick"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ins10",
+    "target": "otsi'nonwanhè:ta",
+    "english": "worm",
+    "pos": "noun — insect",
+    "group": "insects",
+    "groupLabel": "insects",
+    "subLabel": "worm",
+    "notes": "Worm — otsi'nonwanhè:ta. Earthworms are connected to the soil and composting vocabulary.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otsi'nonwanhè:ta",
+      "worm"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani01",
+    "target": "tsinó:wen",
+    "english": "mouse",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "mouse",
+    "notes": "Mouse — tsinó:wen. Compare tsinowen'kó:wa (rat = big mouse).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsinó:wen",
+      "tsinon:wen",
+      "mouse"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani02",
+    "target": "tsinowen'kó:wa",
+    "english": "rat",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "rat",
+    "notes": "Rat — tsinowen'kó:wa, literally 'big mouse'. You know tsinó:wen (mouse) — the augmentative -kó:wa makes it the large version.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsinowen'kó:wa",
+      "rat"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani03",
+    "target": "waniheyà:tha",
+    "english": "opossum",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "opossum",
+    "notes": "Opossum — waniheyà:tha. North America's only marsupial. Its playing-dead defence strategy is referenced in some oral tradition.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "waniheyà:tha",
+      "opossum"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani04",
+    "target": "tawí:ne",
+    "english": "otter",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "otter (alternate form)",
+    "notes": "Otter — tawí:ne (Six Nations form). You have enia'tarón:nis in the glossary from Kontinónhstats — this is the variant form from the eCampusOntario OER, representing a different dialect.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tawí:ne",
+      "tawi:ne"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani05",
+    "target": "tehahonhtané:ken",
+    "english": "jackrabbit",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "jackrabbit",
+    "notes": "Jackrabbit — tehahonhtané:ken. A larger hare species, distinct from kwà'ien (wild rabbit).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tehahonhtané:ken",
+      "jackrabbit"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani06",
+    "target": "ska'nyónhsa",
+    "english": "moose (variant form)",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "moose (Six Nations variant)",
+    "notes": "Moose — ska'nyónhsa (Six Nations dialect form). You have tsihnón:saron from Kontinónhstats. This variant from eCampusOntario represents the Six Nations/Tyendinaga dialect.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ska'nyónhsa",
+      "moose variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani07",
+    "target": "atíhron",
+    "english": "raccoon",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "raccoon",
+    "notes": "Raccoon — atíhron. The raccoon's masked face is referenced in oral tradition and children's stories.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atíhron",
+      "atihron",
+      "raccoon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "ani08",
+    "target": "kén:reks",
+    "english": "cougar / lynx",
+    "pos": "noun — animal",
+    "group": "wildanimals",
+    "groupLabel": "wild animals",
+    "subLabel": "cougar / lynx",
+    "notes": "Cougar or lynx — kén:reks. A large wild cat of the northeastern forests. Rarely seen today in the Kanehsatà:ke territory but historically present.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kén:reks",
+      "ken:reks",
+      "cougar"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd01",
+    "target": "tsiktsiré:re",
+    "english": "chickadee",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "chickadee",
+    "notes": "Chickadee — tsiktsiré:re. The name is onomatopoeic — it echoes the chickadee's call. One of the most common year-round birds in the Kanehsatà:ke region.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsiktsiré:re",
+      "tsiktsirere",
+      "chickadee"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd02",
+    "target": "ká:ka",
+    "english": "crow",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "crow",
+    "notes": "Crow — ká:ka. Crows are intelligent birds prominent in Haudenosaunee oral tradition. The crow's call warns of danger.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ká:ka",
+      "ka:ka",
+      "crow"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd03",
+    "target": "so:ra",
+    "english": "duck (variant)",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "duck (Six Nations variant)",
+    "notes": "Duck — so:ra (Six Nations form). You have sísowat from Kontinónhstats. This is the variant form from the eCampusOntario OER.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "so:ra",
+      "sora",
+      "duck variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd04",
+    "target": "ohkwé:sen",
+    "english": "grouse",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "grouse",
+    "notes": "Grouse — ohkwé:sen. A ground-nesting bird hunted in the forests around Kanehsatà:ke. The ruffed grouse is common in the region.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohkwé:sen",
+      "ohkwesen",
+      "grouse"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd05",
+    "target": "raónraon",
+    "english": "hummingbird",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "hummingbird",
+    "notes": "Hummingbird — raónraon. The name may be onomatopoeic of the hummingbird's wing sound. Hummingbirds arrive in May and depart in September.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "raónraon",
+      "raonraon",
+      "hummingbird"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd06",
+    "target": "tawístawis",
+    "english": "killdeer / sandpiper",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "killdeer",
+    "notes": "Killdeer or sandpiper — tawístawis. Also the name of one of the four Kanehsatà:ke clan animal symbols shown on the kanienkeha.org site.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tawístawis",
+      "tawistawis",
+      "killdeer"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd07",
+    "target": "tsyonya'tarèn:ton",
+    "english": "loon (variant)",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "loon (variant form)",
+    "notes": "Loon — tsyonya'tarèn:ton (Six Nations form). You have Ohkwá:ri kahón: in the glossary. This is the variant from the eCampusOntario OER.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsyonya'tarèn:ton",
+      "loon variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd08",
+    "target": "karontároks",
+    "english": "woodpecker",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "woodpecker",
+    "notes": "Woodpecker — karontároks, 'the one that pecks/knocks on trees'. The root karón:ta (tree) you just learned + the knocking action.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "karontároks",
+      "karontaroks",
+      "woodpecker"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd09",
+    "target": "kanekwenhtárha",
+    "english": "cardinal",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "cardinal",
+    "notes": "Cardinal — kanekwenhtárha. The brilliant red male cardinal is a striking winter presence in the Kanehsatà:ke region.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanekwenhtárha",
+      "kanekwentarha",
+      "cardinal"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd10",
+    "target": "tsiskó:ko",
+    "english": "robin (variant)",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "robin (Six Nations variant)",
+    "notes": "Robin — tsiskó:ko (Six Nations form). You have Kwáwenhs from Kontinónhstats. This variant from the eCampusOntario OER.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsiskó:ko",
+      "tsiskoko",
+      "robin variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "brd11",
+    "target": "onahsakèn:ra",
+    "english": "swan",
+    "pos": "noun — bird",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "swan",
+    "notes": "Swan — onahsakèn:ra. White swans migrate through the Lake of Two Mountains area near Kanehsatà:ke.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onahsakèn:ra",
+      "onahsakenra",
+      "swan"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr01",
+    "target": "rinó:ronhkwa",
+    "english": "I love him",
+    "pos": "verb — relational",
+    "group": "rel_prefix",
+    "groupLabel": "relational prefixes",
+    "subLabel": "I love him (ri- = I→him)",
+    "notes": "I love him — ri- (I→him) + nó:ronhkwa (love root). The root -nó:ronhkwa is the love/affection root. Compare konwá:tsire' (I love her) which you already know. Different prefixes for different relationships.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "rinó:ronhkwa",
+      "rinoronhkwa"
+    ],
+    "forms": [
+      {
+        "label": "I love him",
+        "form": "rinó:ronhkwa"
+      },
+      {
+        "label": "I love her",
+        "form": "konwá:tsire'"
+      },
+      {
+        "label": "she loves him",
+        "form": "yakwá:tsire'"
+      },
+      {
+        "label": "he loves her",
+        "form": "shakwá:tsire'"
+      }
+    ]
+  },
+  {
+    "id": "vr02",
+    "target": "katerí:waks",
+    "english": "I am working (habitual)",
+    "pos": "verb — stative/active",
+    "group": "v_work",
+    "groupLabel": "work verbs",
+    "subLabel": "I am working",
+    "notes": "I am working — kate- (I, stative) + rí:waks (work root). The work verb is essential for daily conversation. Note the wa- stative prefix pattern you know from aspect.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katerí:waks",
+      "kateriwaks"
+    ],
+    "forms": [
+      {
+        "label": "I am working",
+        "form": "katerí:waks"
+      },
+      {
+        "label": "you are working",
+        "form": "saterí:waks"
+      },
+      {
+        "label": "she is working",
+        "form": "iakaterí:waks"
+      }
+    ]
+  },
+  {
+    "id": "vr03",
+    "target": "rí:waks",
+    "english": "he is working",
+    "pos": "verb — stative",
+    "group": "v_work",
+    "groupLabel": "work verbs",
+    "subLabel": "he is working",
+    "notes": "He is working — ra- (he) + í:waks (work). The masculine third-person prefix with the work root.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "rí:waks",
+      "riwaks"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr04",
+    "target": "katerí:henta'",
+    "english": "I am learning",
+    "pos": "verb — active",
+    "group": "v_learn",
+    "groupLabel": "learning verbs",
+    "subLabel": "I am learning",
+    "notes": "I am learning — kate- (I) + rí:henta' (learning root). An important self-referential verb for language learners. 'Kanien'kéha katerí:henta'' = I am learning Kanien'kéha.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katerí:henta'",
+      "katerihhenta'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr05",
+    "target": "kaná:ton",
+    "english": "I say / I speak",
+    "pos": "verb — active",
+    "group": "v_speak",
+    "groupLabel": "speaking verbs",
+    "subLabel": "I say / I speak",
+    "notes": "I say / I speak — ka- (I) + ná:ton (speaking root). Essential for any conversation. Compare with the writing root -hiá:ton.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kaná:ton",
+      "kanaton"
+    ],
+    "forms": [
+      {
+        "label": "I say / speak",
+        "form": "kaná:ton"
+      },
+      {
+        "label": "you say / speak",
+        "form": "saná:ton"
+      },
+      {
+        "label": "she says / speaks",
+        "form": "iakaná:ton"
+      }
+    ]
+  },
+  {
+    "id": "vr06",
+    "target": "kahiátons",
+    "english": "I write (habitual)",
+    "pos": "verb — habitual",
+    "group": "v_write",
+    "groupLabel": "writing verbs",
+    "subLabel": "I write (habitual)",
+    "notes": "I write — ka- (I) + hiá:ton (writing root) + -s (habitual). You know kahiatónhsera (paper/book = the writing-thing) — this is the verb from which that noun is derived.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kahiátons",
+      "kahiatons"
+    ],
+    "forms": [
+      {
+        "label": "you write (command)",
+        "form": "sahiáton"
+      },
+      {
+        "label": "I write (habitual)",
+        "form": "kahiátons"
+      }
+    ]
+  },
+  {
+    "id": "vr07",
+    "target": "sathahkwatáhkwa's",
+    "english": "you are swimming (habitual)",
+    "pos": "verb — A-stem habitual",
+    "group": "v_swim",
+    "groupLabel": "swimming verbs",
+    "subLabel": "you swim",
+    "notes": "You swim — s- (you) + athahkwatáhkwa's (swimming root + habitual). An important recreational and practical verb for a community on the water.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "sathahkwatáhkwa's",
+      "you swim"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr08",
+    "target": "kateronní:io",
+    "english": "I am cooking (habitual)",
+    "pos": "verb — O-stem habitual",
+    "group": "v_cook",
+    "groupLabel": "O/On-stem verbs",
+    "subLabel": "I am cooking (habitual)",
+    "notes": "I am cooking — kate- (I) + ronní:io (cooking root). You know satorá:wen (you cook, command) — this is the habitual 'I am cooking' form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kateronní:io",
+      "kateronnio"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr09",
+    "target": "katonnhétons",
+    "english": "I am sick (habitual)",
+    "pos": "verb — stative",
+    "group": "v_sick",
+    "groupLabel": "health verbs",
+    "subLabel": "I am sick",
+    "notes": "I am sick — katonnhétons. A key health vocabulary verb.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katonnhétons",
+      "katonnhetons"
+    ],
+    "forms": [
+      {
+        "label": "I am sick",
+        "form": "katonnhétons"
+      },
+      {
+        "label": "you are sick",
+        "form": "satonnhétons"
+      },
+      {
+        "label": "she is sick",
+        "form": "iakatonnhétons"
+      }
+    ]
+  },
+  {
+    "id": "vr10",
+    "target": "kawennaién:tas",
+    "english": "I am speaking / making words (habitual)",
+    "pos": "verb — habitual",
+    "group": "v_speak",
+    "groupLabel": "speaking verbs",
+    "subLabel": "I am speaking / making words",
+    "notes": "I am making words / speaking — ka- (I) + wennaién:tas (word-making root). The root -wenna- is related to words and language. Compare onkwawenna (our language/words).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kawennaién:tas",
+      "kawennaientas"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr11",
+    "target": "tewatkahráthos",
+    "english": "it is raining",
+    "pos": "verb — weather",
+    "group": "weather_verbs",
+    "groupLabel": "weather verbs",
+    "subLabel": "it is raining",
+    "notes": "It is raining — tewatkahráthos. The weather verb for rain. The te- dualic prefix suggests rain as a two-phase action (falling + landing).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tewatkahráthos",
+      "tewatkahrathos"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr12",
+    "target": "tewatníehton",
+    "english": "it is snowing",
+    "pos": "verb — weather",
+    "group": "weather_verbs",
+    "groupLabel": "weather verbs",
+    "subLabel": "it is snowing",
+    "notes": "It is snowing — tewatníehton. The weather verb for snow. You know Óniehte (snow, noun).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tewatníehton",
+      "tewatniehton"
+    ],
+    "forms": null
+  },
+  {
+    "id": "vr14",
+    "target": "iokahrónhkwa",
+    "english": "it is windy",
+    "pos": "verb — weather",
+    "group": "weather_verbs",
+    "groupLabel": "weather verbs",
+    "subLabel": "it is windy",
+    "notes": "It is windy — iokahrónhkwa. The wind (Orénta) vocabulary you know from nature, expressed as a verb state.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "iokahrónhkwa",
+      "iokahrohnkwa",
+      "windy"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv06",
+    "target": "Sathahkwí:ios",
+    "english": "You are good / you are well (colloquial)",
+    "pos": "phrase",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "you are well (colloquial)",
+    "notes": "You are well / you are good — sathahkwí:ios. A more colloquial version of the wellness expression used in greetings.",
+    "cite": {
+      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Sathahkwí:ios",
+      "sathahkwiios"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv07",
+    "target": "Ha' ki'",
+    "english": "Okay then / alright then",
+    "pos": "discourse particle",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "okay then / alright",
+    "notes": "Okay then — Ha' ki'. Ha' = okay/well; ki' = just/only. Together a soft affirmative transition: 'okay then, let's go', 'alright then'. Appears frequently in natural speech.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "Ha' ki'",
+      "ha ki'"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv08",
+    "target": "asé'tsi",
+    "english": "it is new / newly",
+    "pos": "particle — quality",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "new / newly",
+    "notes": "New or newly — asé'tsi. A quality particle. 'Áhsirasé'tsi ne thi' = that is a new blanket (from the Deering & Harries-Delisle wordlist).",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "asé'tsi",
+      "ase'tsi",
+      "new"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv09",
+    "target": "ón:ne'",
+    "english": "It's finished / it's done / that's it",
+    "pos": "particle — completion",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is finished / done",
+    "notes": "It is finished — ón:ne'. Marks completion of an action or situation. Compare Onen' ki' wáhi (that is all, speech closing) — both mark endings.",
+    "cite": {
+      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "ón:ne'",
+      "on:ne'",
+      "done"
+    ],
+    "forms": null
+  },
+  {
+    "id": "cv10",
+    "target": "Khnekíra ken...?",
+    "english": "Will you drink...? / Would you like to drink...?",
+    "pos": "conversational phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "will you drink…?",
+    "notes": "Will you drink...? — Khnekíra ken...? From Deering & Harries-Delisle: 'Enhsnekíra ken káwhe?' (will you drink a coffee?). A polite offering formula.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "Enhsnekíra ken",
+      "khnekira ken",
+      "will you drink"
+    ],
+    "forms": null
+  },
+  {
+    "id": "kin01",
+    "target": "riyén:'a / kheyén:'a",
+    "english": "my son / my daughter",
+    "pos": "noun — kinship (possessed)",
+    "group": "kin_child",
+    "groupLabel": "children",
+    "subLabel": "my son / my daughter",
+    "notes": "My son (riyén:'a, masculine speaker) / my daughter (kheyén:'a, feminine speaker). The eCampusOntario OER provides the full paradigm showing how parent's gender affects the word for their child.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "riyén:'a",
+      "kheyén:'a",
+      "my child"
+    ],
+    "forms": [
+      {
+        "label": "my son (male speaker)",
+        "form": "riyén:'a"
+      },
+      {
+        "label": "my daughter (female speaker)",
+        "form": "kheyén:'a"
+      },
+      {
+        "label": "your son",
+        "form": "etshyén:'a"
+      },
+      {
+        "label": "your daughter",
+        "form": "sheyén:'a"
+      },
+      {
+        "label": "his child",
+        "form": "royén:'a"
+      },
+      {
+        "label": "her child",
+        "form": "yontatyén:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin02",
+    "target": "onkyara'sé:'a",
+    "english": "my cousin",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my cousin",
+    "notes": "My cousin — onkyara'sé:'a. In Haudenosaunee society, cousins of the same clan are considered more like siblings. Cross-clan cousins are the appropriate marriage partners.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onkyara'sé:'a",
+      "onkyara'se:'a",
+      "my cousin"
+    ],
+    "forms": [
+      {
+        "label": "my cousin",
+        "form": "onkyara'sé:'a"
+      },
+      {
+        "label": "your cousin",
+        "form": "tsyara'sé:'a"
+      },
+      {
+        "label": "his cousin",
+        "form": "ronara'sé:'a"
+      },
+      {
+        "label": "her cousin",
+        "form": "(y)onara'sé:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin03",
+    "target": "onkyatén:ron",
+    "english": "my friend (male)",
+    "pos": "noun — kinship/social (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my friend (male)",
+    "notes": "My friend (male) — onkyatén:ron. Friendship in Kanien'kéha is expressed using gendered terms. The eCampusOntario OER shows that 'friend' changes based on the gender of the friend.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onkyatén:ron",
+      "onkyaten:ron",
+      "my friend (m)"
+    ],
+    "forms": [
+      {
+        "label": "my male friend",
+        "form": "onkyatén:ron"
+      },
+      {
+        "label": "my female friend",
+        "form": "onkyátshi"
+      },
+      {
+        "label": "your friend",
+        "form": "tsyatén:ron"
+      }
+    ]
+  },
+  {
+    "id": "kin04",
+    "target": "rakenohá:'a",
+    "english": "my uncle",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my uncle",
+    "notes": "My uncle — rakenohá:'a (maternal uncle, from a male speaker). The maternal uncle has a particular responsibility in Haudenosaunee society — teaching his sister's children. You had rakhén:ha earlier; this is an alternate form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "rakenohá:'a",
+      "rakennoha:'a",
+      "my uncle"
+    ],
+    "forms": [
+      {
+        "label": "my uncle (male speaker)",
+        "form": "rakenohá:'a"
+      },
+      {
+        "label": "your uncle",
+        "form": "yanohá:'a"
+      },
+      {
+        "label": "his uncle",
+        "form": "ronohá:'a"
+      },
+      {
+        "label": "her uncle",
+        "form": "shakonohá:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin05",
+    "target": "riyonhwatén:'a",
+    "english": "my nephew",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my nephew",
+    "notes": "My nephew — riyonhwatén:'a. The nephew (sister's son) relationship is significant in Haudenosaunee society — he learns from his maternal uncle.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "riyonhwatén:'a",
+      "my nephew"
+    ],
+    "forms": [
+      {
+        "label": "my nephew (male speaker)",
+        "form": "riyonhwatén:'a"
+      },
+      {
+        "label": "my niece (female speaker)",
+        "form": "kheyonhwatén:'a"
+      },
+      {
+        "label": "your nephew",
+        "form": "etshonhwatén:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin06",
+    "target": "riyateré:'a / kheyateré:'a",
+    "english": "my grandson / my granddaughter",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my grandchild (gendered)",
+    "notes": "My grandchild — riyateré:'a (grandson, male speaker) / kheyateré:'a (granddaughter, female speaker). The grandparent-grandchild relationship is described as the closest in Haudenosaunee society.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "riyateré:'a",
+      "kheyateré:'a",
+      "my grandchild"
+    ],
+    "forms": [
+      {
+        "label": "my grandson (male speaker)",
+        "form": "riyateré:'a"
+      },
+      {
+        "label": "my granddaughter (female speaker)",
+        "form": "kheyateré:'a"
+      },
+      {
+        "label": "your grandchild",
+        "form": "etshateré:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin07",
+    "target": "ri'kén:'a / khe'kén:'a",
+    "english": "my younger brother / my younger sister",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my younger sibling",
+    "notes": "My younger sibling — ri'kén:'a (younger brother, male speaker) / khe'kén:'a (younger sister, female speaker). Sibling terms in Kanien'kéha encode both relative age (older/younger) and gender of both the sibling and the speaker.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ri'kén:'a",
+      "khe'kén:'a",
+      "younger sibling"
+    ],
+    "forms": [
+      {
+        "label": "my younger brother (male speaker)",
+        "form": "ri'kén:'a"
+      },
+      {
+        "label": "my younger sister (female speaker)",
+        "form": "khe'kén:'a"
+      },
+      {
+        "label": "your younger sibling",
+        "form": "etshe'kén:'a"
+      }
+    ]
+  },
+  {
+    "id": "kin08",
+    "target": "akhtsì:son",
+    "english": "my older siblings (plural)",
+    "pos": "noun — kinship (possessed)",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "my older siblings (plural)",
+    "notes": "My older siblings (plural) — akhtsì:son. The collective form of the older sibling term. When multiple siblings are referred to together.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "akhtsì:son",
+      "akhtsi:son",
+      "older siblings"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh01",
+    "target": "áhsire'",
+    "english": "blanket",
+    "pos": "noun — object (A-class)",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "blanket",
+    "notes": "Blanket — áhsire'. An A-class noun. 'Áhsirasé'tsi ne thi' = that is a new blanket. Blankets are significant both as everyday objects and as ceremonial gifts.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "áhsire'",
+      "ahsire'",
+      "blanket"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh02",
+    "target": "atekhwá:ra'",
+    "english": "table",
+    "pos": "noun — object (A-class)",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "table",
+    "notes": "Table — atekhwá:ra'. An A-class household noun. 'Atekhwá:ra ken ne thi?' = Is that a table?",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atekhwá:ra'",
+      "atekhwara'",
+      "table"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh03",
+    "target": "ato:ken'",
+    "english": "axe",
+    "pos": "noun — tool",
+    "group": "tools",
+    "groupLabel": "tools",
+    "subLabel": "axe",
+    "notes": "Axe — ato:ken'. A traditional and post-contact tool. The axe root appears in compound tool names.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "ato:ken'",
+      "atoken'",
+      "axe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh04",
+    "target": "atókwa'",
+    "english": "spoon",
+    "pos": "noun — object",
+    "group": "household",
+    "groupLabel": "household items",
+    "subLabel": "spoon",
+    "notes": "Spoon — atókwa'. A kitchen utensil. The verb for eating (sátskhwa') shares a root with the spoon.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atókwa'",
+      "atokwa'",
+      "spoon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh05",
+    "target": "a'niá:nawen",
+    "english": "gloves / mittens",
+    "pos": "noun — clothing",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "gloves / mittens",
+    "notes": "Gloves or mittens — a'niá:nawen. Winter handwear, relevant to cold-weather vocabulary.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "a'niá:nawen",
+      "a'nia:nawen",
+      "gloves",
+      "mittens"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh06",
+    "target": "anón:warore'",
+    "english": "hat / cap",
+    "pos": "noun — clothing",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "hat / cap",
+    "notes": "Hat or cap — anón:warore'. A post-contact head covering. The word possibly relates to the turtle shell (a'nó:wara = turtle) due to the dome shape.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "anón:warore'",
+      "anon:warore'",
+      "hat",
+      "cap"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh07",
+    "target": "atáthken'",
+    "english": "mirror",
+    "pos": "noun — object",
+    "group": "household",
+    "groupLabel": "household items",
+    "subLabel": "mirror",
+    "notes": "Mirror — atáthken'. A post-contact reflective object given a descriptive Kanien'kéha name.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atáthken'",
+      "atathken'",
+      "mirror"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh08",
+    "target": "aón:ta'",
+    "english": "pail / container",
+    "pos": "noun — object",
+    "group": "household",
+    "groupLabel": "household items",
+    "subLabel": "pail / container",
+    "notes": "Pail or container — aón:ta'. A general container noun, useful for kitchen and outdoor vocabulary.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "aón:ta'",
+      "aon:ta'",
+      "pail",
+      "container"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh09",
+    "target": "atenen'tsháhna'",
+    "english": "bracelet",
+    "pos": "noun — jewellery",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "bracelet",
+    "notes": "Bracelet — atenen'tsháhna'. Silver bracelets are a significant Haudenosaunee art form, closely associated with the Kanehsatà:ke and Kahnawà:ke silversmithing tradition.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atenen'tsháhna'",
+      "atenen'tshahna'",
+      "bracelet"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh10",
+    "target": "atenró:sera",
+    "english": "friendship",
+    "pos": "noun — abstract",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "friendship",
+    "notes": "Friendship — atenró:sera. An abstract noun for the quality of friendship. Related to the friend terms (onkyatén:ron etc.) — the same root.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atenró:sera",
+      "atenro:sera",
+      "friendship"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh11",
+    "target": "atsá:kta",
+    "english": "riverbank / beside water",
+    "pos": "locative noun",
+    "group": "nature",
+    "groupLabel": "nature",
+    "subLabel": "riverbank / beside water",
+    "notes": "Riverside, on the edge of a river — atsá:kta. A locative noun for being beside a body of water. Kanehsatà:ke's geography makes this a common expression.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atsá:kta",
+      "atsa:kta",
+      "riverbank"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh12",
+    "target": "atsherón:nia'",
+    "english": "clothing (collective)",
+    "pos": "noun — clothing",
+    "group": "a_class",
+    "groupLabel": "A-class nouns (clothing & objects)",
+    "subLabel": "clothing (collective)",
+    "notes": "Clothing — atsherón:nia'. The collective term for all clothing. Compare atahkwénnia' (clothes, another collective form). You know individual clothing items; this groups them.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "atsherón:nia'",
+      "atsheronia'",
+      "clothing"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh13",
+    "target": "enhnísera",
+    "english": "day (a day)",
+    "pos": "noun — temporal",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "a day / daytime",
+    "notes": "A day — enhnísera. The unit of a day. Compare onia'karéhson (daytime) — enhnísera is more the countable unit ('three days = áhsen enhnísera').",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "enhnísera",
+      "enhnisera",
+      "a day"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh14",
+    "target": "eniorhén'ne",
+    "english": "tomorrow",
+    "pos": "temporal adverb",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "tomorrow",
+    "notes": "Tomorrow — eniorhén'ne. An essential daily planning word. 'Eniorhén'ne ohron'ké:ne' = tomorrow morning.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "eniorhén'ne",
+      "eniórhen'ne",
+      "tomorrow"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh15",
+    "target": "enió:karahwe'",
+    "english": "tonight",
+    "pos": "temporal adverb",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "tonight",
+    "notes": "Tonight — enió:karahwe'. 'Enió:karahwe' thoién:ke' = I'll go there tonight.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "enió:karahwe'",
+      "enio:karahwe'",
+      "tonight"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh16",
+    "target": "ohron'ké:ne",
+    "english": "in the morning / morning (adverbial)",
+    "pos": "temporal adverb",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "in the morning (adverbial)",
+    "notes": "In the morning — ohron'ké:ne. Compare tsi ká:nenhste' (another form for morning). Both are used in time expressions.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "ohron'ké:ne",
+      "ohron'ke:ne",
+      "morning"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh17",
+    "target": "ahsón'then",
+    "english": "at midnight",
+    "pos": "temporal adverb",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "at midnight",
+    "notes": "At midnight — ahsón'then. The exact middle of the night.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "ahsón'then",
+      "ahson'then",
+      "midnight"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh18",
+    "target": "ón:tie'",
+    "english": "at noon / midday",
+    "pos": "temporal adverb",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "at noon",
+    "notes": "At noon — ón:tie'. The exact middle of the day.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "ón:tie'",
+      "on:tie'",
+      "noon",
+      "midday"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh19",
+    "target": "aká:we'",
+    "english": "paddle (canoe paddle)",
+    "pos": "noun — tool",
+    "group": "tools",
+    "groupLabel": "tools",
+    "subLabel": "paddle (canoe)",
+    "notes": "Paddle — aká:we'. The canoe paddle. You know Kaná:tsihs (canoe/boat) — now you have the paddle that drives it.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "aká:we'",
+      "aka:we'",
+      "paddle"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh20",
+    "target": "ákskere'",
+    "english": "lover / romantic partner",
+    "pos": "noun — relationship",
+    "group": "kinship",
+    "groupLabel": "kinship",
+    "subLabel": "lover / romantic partner",
+    "notes": "Lover or romantic partner — ákskere'. A term for a romantic companion. Related to the friend and companion vocabulary.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "ákskere'",
+      "akskere'",
+      "lover",
+      "partner"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh21",
+    "target": "ón:ne enió:karahwe'",
+    "english": "tomorrow night",
+    "pos": "temporal phrase",
+    "group": "time_expr",
+    "groupLabel": "time expressions",
+    "subLabel": "tomorrow night",
+    "notes": "Tomorrow night — eniorhén'ne enió:karahwe'. A combination of tomorrow (eniorhén'ne) and tonight (enió:karahwe').",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "eniorhén'ne enió:karahwe'",
+      "tomorrow night"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh22",
+    "target": "á:iase'",
+    "english": "fresh fruit",
+    "pos": "noun — food",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "fresh fruit",
+    "notes": "Fresh fruit — á:iase'. A general term for fresh/raw fruit as opposed to dried or processed fruit.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "á:iase'",
+      "a:iase'",
+      "fresh fruit"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh23",
+    "target": "onontákeri",
+    "english": "beer / fermented drink",
+    "pos": "noun — food/drink",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "beer / fermented drink",
+    "notes": "Beer or fermented drink — onontákeri. 'Enhsnekíra ken onontákeri?' = Will you drink a beer? A post-contact item.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "onontákeri",
+      "onontakeri",
+      "beer"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh24",
+    "target": "káwhe",
+    "english": "coffee",
+    "pos": "noun — food/drink",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "coffee",
+    "notes": "Coffee — káwhe. 'Enhsnekíra ken káwhe?' = Will you drink a coffee? A post-contact drink.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "káwhe",
+      "kawhe",
+      "coffee"
+    ],
+    "forms": null
+  },
+  {
+    "id": "dh25",
+    "target": "nikawístake",
+    "english": "dollar(s) / money amount",
+    "pos": "noun — money",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "dollars / money unit",
+    "notes": "Dollar(s) — nikawístake. 'Ahsen nikawístake' = three dollars. The money-counting expression. You know Ohwísta (money) — this is the unit used in counting amounts.",
+    "cite": {
+      "text": "Deering & Harries-Delisle, Mohawk: A Teaching Grammar (via kanienkeha.org)",
+      "url": "https://www.kanienkeha.org/kanienkeha-vocabulary"
+    },
+    "accepts": [
+      "nikawístake",
+      "nikawistake",
+      "dollars"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sb01",
+    "target": "kenní:io",
+    "english": "it is good / it is beautiful",
+    "pos": "stative verb",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is good / beautiful",
+    "notes": "It is good / beautiful — kenní:io. A general positive quality stative verb. One of the most commonly heard expressions of approval.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kenní:io",
+      "kennio",
+      "it is good"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sb04",
+    "target": "asé:tsion",
+    "english": "it is new / fresh",
+    "pos": "stative verb",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is new / fresh",
+    "notes": "It is new or fresh — asé:tsion. Compare asé'tsi from Deering & Harries-Delisle. A quality stative verb.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "asé:tsion",
+      "ase:tsion",
+      "new"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sb05",
+    "target": "ratón:kwe",
+    "english": "it is old / ancient",
+    "pos": "stative verb",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is old / ancient",
+    "notes": "It is old or ancient — ratón:kwe. Used of objects and situations, not people (for old people you have Rokstén:ha / Akokstén:ha).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ratón:kwe",
+      "raton:kwe",
+      "it is old"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sb07",
+    "target": "iowen'niáton",
+    "english": "it is expensive / dear",
+    "pos": "stative verb",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is expensive",
+    "notes": "It is expensive — iowen'niáton. A useful shopping and commerce vocabulary item.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "iowen'niáton",
+      "iowen'niaton",
+      "expensive"
+    ],
+    "forms": null
+  },
+  {
+    "id": "sb08",
+    "target": "io'tiesénha",
+    "english": "it is cheap / inexpensive",
+    "pos": "stative verb",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "it is cheap / inexpensive",
+    "notes": "It is cheap or inexpensive — io'tiesénha. The complement to expensive. Useful in market and shopping contexts.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "io'tiesénha",
+      "iotiesenha",
+      "cheap"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fp01",
+    "target": "okawè:tshera",
+    "english": "fin (fish)",
+    "pos": "noun — anatomy",
+    "group": "fish",
+    "groupLabel": "fish",
+    "subLabel": "fin (fish)",
+    "notes": "Fin — okawè:tshera. Fish anatomy vocabulary useful for fishing and food preparation contexts.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "okawè:tshera",
+      "okawetshera",
+      "fin"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fp02",
+    "target": "watonryéhtha",
+    "english": "gill (fish)",
+    "pos": "noun — anatomy",
+    "group": "fish",
+    "groupLabel": "fish",
+    "subLabel": "gill",
+    "notes": "Gill — watonryéhtha. Fish anatomy. The gill is how fish breathe underwater.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "watonryéhtha",
+      "watonryehtha",
+      "gill"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fp03",
+    "target": "ótsta",
+    "english": "scale (fish)",
+    "pos": "noun — anatomy",
+    "group": "fish",
+    "groupLabel": "fish",
+    "subLabel": "fish scale",
+    "notes": "Scale — ótsta. Fish scales. You know the verb for removing scales (tsí'stenht) from the I-stem verb lesson.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ótsta",
+      "otsta",
+      "scale",
+      "fish scale"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fp04",
+    "target": "ohstò:sera",
+    "english": "feather (generic)",
+    "pos": "noun — anatomy",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "feather (generic)",
+    "notes": "Feather (generic) — ohstò:sera. You already have Ohón:ta (feather/feathers) in the glossary. This is the more specific anatomical term for a single feather.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohstò:sera",
+      "ohsto:sera",
+      "feather generic"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fp05",
+    "target": "onerahóntsha",
+    "english": "wing",
+    "pos": "noun — anatomy",
+    "group": "birds",
+    "groupLabel": "birds",
+    "subLabel": "wing",
+    "notes": "Wing — onerahóntsha. Bird wing anatomy. The wing root appears in flight and flying verbs.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onerahóntsha",
+      "onerahontsha",
+      "wing"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st01",
+    "target": "Wakhterón:ni",
+    "english": "I am afraid",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "afraid",
+    "notes": "I am afraid — Wakhterón:ni. An emotional state verb. The wak- prefix marks first-person stative. The root -terón:ni expresses fear.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakhterón:ni",
+      "wakhteronni",
+      "I am afraid"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st02",
+    "target": "Wakena'khwén:'on",
+    "english": "I am angry",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "angry",
+    "notes": "I am angry — Wakena'khwén:'on. The root -na'khwén:'on expresses anger. Awareness of emotional vocabulary is central to LaFever's emotional domain of learning.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakena'khwén:'on",
+      "wakena'khwen:'on",
+      "I am angry"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st03",
+    "target": "Tewakeweiénhare",
+    "english": "I am busy",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "busy",
+    "notes": "I am busy — Tewakeweiénhare. The te- dualic prefix suggests the 'split attention' of being busy.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tewakeweiénhare",
+      "tewakeweienhare",
+      "I am busy"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st04",
+    "target": "Wake'nikonhrí:io",
+    "english": "I am content / I feel good (inside)",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "content / feel good inside",
+    "notes": "I am content, I feel good inside — Wake'nikonhrí:io. The -nikonhr- root is the mind/heart root you know from Io'nikonhraién:ta'ne. -í:io means good. Literally: my mind/heart is good.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wake'nikonhrí:io",
+      "wake'nikonhriio",
+      "content",
+      "feel good"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st05",
+    "target": "Wake'nikonhrén:ton",
+    "english": "I am depressed / heavy-hearted",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "depressed / heavy-hearted",
+    "notes": "I am depressed or heavy-hearted — Wake'nikonhrén:ton. The -nikonhr- (mind/heart) root + -én:ton (heavy/laden). Literally: my heart/mind is heavy.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wake'nikonhrén:ton",
+      "wake'nikonhrenton",
+      "depressed"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st06",
+    "target": "Wakatshennón:ni",
+    "english": "I am happy",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "happy",
+    "notes": "I am happy — Wakatshennón:ni. One of the most important emotional state verbs. The -tshennón:ni root expresses happiness and celebration.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakatshennón:ni",
+      "wakatshennon:ni",
+      "I am happy",
+      "happy"
+    ],
+    "forms": [
+      {
+        "label": "I am happy",
+        "form": "Wakatshennón:ni"
+      },
+      {
+        "label": "you are happy",
+        "form": "Satshennón:ni"
+      },
+      {
+        "label": "she is happy",
+        "form": "Yakatshennón:ni"
+      }
+    ]
+  },
+  {
+    "id": "st07",
+    "target": "Wake'nikonhráksen",
+    "english": "I am sad",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "sad",
+    "notes": "I am sad — Wake'nikonhráksen. Mind/heart (-nikonhr-) + dark/bad (-áksen). Literally: my heart is darkened.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wake'nikonhráksen",
+      "wake'nikonhraksen",
+      "I am sad",
+      "sad"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st08",
+    "target": "Wakenáktote",
+    "english": "I have time / I am free",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "I have time",
+    "notes": "I have time — Wakenáktote. A useful practical phrase for making plans and social arrangements.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakenáktote",
+      "wakenaktote",
+      "I have time"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st09",
+    "target": "Wakerhá:re",
+    "english": "I am waiting",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "waiting",
+    "notes": "I am waiting — Wakerhá:re. Essential for everyday situations: waiting for someone, waiting in line.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakerhá:re",
+      "wakerha:re",
+      "I am waiting",
+      "waiting"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st10",
+    "target": "Wakatera'swí:io",
+    "english": "I am lucky",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "lucky",
+    "notes": "I am lucky — Wakatera'swí:io. Luck/fortune as a state of being.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakatera'swí:io",
+      "wakatera'swiio",
+      "I am lucky"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st11",
+    "target": "Wakatera'swáksen",
+    "english": "I am unlucky",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "unlucky",
+    "notes": "I am unlucky — Wakatera'swáksen. The complement to being lucky. -áksen (dark/bad) suffix you saw in 'I am sad'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakatera'swáksen",
+      "wakatera'swaksen",
+      "I am unlucky"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st12",
+    "target": "Kattókha",
+    "english": "I am smart / clever",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "smart / clever",
+    "notes": "I am smart or clever — Kattókha.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kattókha",
+      "kattokha",
+      "I am smart"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st13",
+    "target": "Kentórha",
+    "english": "I am lazy",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "lazy",
+    "notes": "I am lazy — Kentórha. One of those honestly useful everyday state verbs.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kentórha",
+      "kentorha",
+      "I am lazy"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st14",
+    "target": "Wakatateweiennentà:'on",
+    "english": "I am ready / prepared",
+    "pos": "stative verb — state",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "ready / prepared",
+    "notes": "I am ready or prepared — Wakatateweiennentà:'on. An important practical phrase before starting activities.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakatateweiennentà:'on",
+      "wakatateweiennenta:'on",
+      "I am ready",
+      "ready"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st15",
+    "target": "Wakatonháhere",
+    "english": "I am thrilled / excited",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "thrilled / excited",
+    "notes": "I am thrilled or excited — Wakatonháhere.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakatonháhere",
+      "wakatonhahere",
+      "I am thrilled",
+      "excited"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st16",
+    "target": "Wakenehrákwas",
+    "english": "I am surprised",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "surprised",
+    "notes": "I am surprised — Wakenehrákwas.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakenehrákwas",
+      "wakenehrakwas",
+      "I am surprised",
+      "surprised"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st17",
+    "target": "Ikhseróhen",
+    "english": "I am mean / nasty",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "mean / nasty",
+    "notes": "I am mean or nasty — Ikhseróhen. A state verb for negative interpersonal disposition.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ikhseróhen",
+      "ikhserohen",
+      "I am mean"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st18",
+    "target": "Kentón:nis",
+    "english": "I am lonesome / lonely",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "lonesome / lonely",
+    "notes": "I am lonesome or lonely — Kentón:nis. An important emotional state, particularly relevant to language revitalization conversations about cultural isolation.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kentón:nis",
+      "kenton:nis",
+      "I am lonely",
+      "lonely"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st19",
+    "target": "Tewake'nikonhrhare",
+    "english": "I am worried / concerned",
+    "pos": "stative verb — emotional",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "worried / concerned",
+    "notes": "I am worried or concerned — Tewake'nikonhrhare. Mind/heart (-nikonhr-) + worried. The te- dualic marks divided/troubled attention.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tewake'nikonhrhare",
+      "tewake'nikonhrhare",
+      "I am worried"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st20",
+    "target": "Ióthteron",
+    "english": "It is dangerous",
+    "pos": "stative verb — quality",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "dangerous",
+    "notes": "It is dangerous — Ióthteron. An important safety and warning vocabulary item.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ióthteron",
+      "iothteron",
+      "dangerous",
+      "it is dangerous"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st21",
+    "target": "Wakhsté:rihst",
+    "english": "I am funny",
+    "pos": "stative verb — quality",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "funny / humorous",
+    "notes": "I am funny — Wakhsté:rihst. Compare Iohsté:rihst (it is funny — impersonal). The same root with different prefixes.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakhsté:rihst",
+      "wakhsterishst",
+      "I am funny"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st22",
+    "target": "Wakaterién:tare",
+    "english": "I am aware / I know (general)",
+    "pos": "stative verb — cognitive",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "aware / I know (general)",
+    "notes": "I am aware, I know — Wakaterién:tare. Compare Kienté:ri (I know something specific). Awareness vs specific knowledge are distinguished.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakaterién:tare",
+      "wakateriéntare",
+      "I am aware",
+      "I know general"
+    ],
+    "forms": null
+  },
+  {
+    "id": "st23",
+    "target": "Kienté:ri",
+    "english": "I know (something specific)",
+    "pos": "stative verb — cognitive",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "I know (specific)",
+    "notes": "I know something specific — Kienté:ri. Compare Wakaterién:tare (general awareness). The distinction between knowing-in-general and knowing-a-specific-thing is grammatically marked.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kienté:ri",
+      "kienteri",
+      "I know specific"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q06",
+    "target": "E'tho ká:yen",
+    "english": "It is there",
+    "pos": "locative response",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "it is there",
+    "notes": "It is there — E'tho ká:yen. The response when the thing is away from the speaker. Compare tho (there) you know as a standalone particle.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "E'tho ká:yen",
+      "e'tho ka:yen",
+      "it is there",
+      "there"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q07",
+    "target": "Wake'nikonhrayén:ta's",
+    "english": "I understand",
+    "pos": "cognitive phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I understand",
+    "notes": "I understand — Wake'nikonhrayén:ta's. The mind/heart (-nikonhr-) root + understanding suffix. Literally: my mind/heart grasps it. A crucial phrase for any language learner.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wake'nikonhrayén:ta's",
+      "wake'nikonhrayenta's",
+      "I understand",
+      "understand"
+    ],
+    "forms": [
+      {
+        "label": "I understand",
+        "form": "Wake'nikonhrayén:ta's"
+      },
+      {
+        "label": "I don't understand",
+        "form": "Yah tewake'nikonhrayén:ta's"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "target": "Yah tewake'nikonhrayén:ta's",
+    "english": "I don't understand",
+    "pos": "cognitive phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I don't understand",
+    "notes": "I don't understand — Yah tewake'nikonhrayén:ta's. Yah = no/not + te- (dualic negation) + the understanding verb. One of the most important phrases for a language learner.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yah tewake'nikonhrayén:ta's",
+      "yah tewake'nikonhrayenta's",
+      "I don't understand"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q09",
+    "target": "Wakateryén:tare",
+    "english": "I know (I am aware)",
+    "pos": "cognitive phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I know",
+    "notes": "I know — Wakateryén:tare. A general knowledge confirmation phrase. Slightly different from Wakaterién:tare (states of being) — this is the conversational form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wakateryén:tare",
+      "wakateryentare",
+      "I know"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q10",
+    "target": "Yah tewakateryén:tare",
+    "english": "I don't know",
+    "pos": "cognitive phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I don't know",
+    "notes": "I don't know — Yah tewakateryén:tare. The negation of I know. One of the most commonly needed phrases in any language.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yah tewakateryén:tare",
+      "yah tewakateryentare",
+      "I don't know"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q11",
+    "target": "Oh ni:ioht tsi enshi:ron ___?",
+    "english": "How do you say ___?",
+    "pos": "metalinguistic question",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "how do you say ___?",
+    "notes": "How do you say ___? — Oh ni:ioht tsi enshi:ron ___? A metalinguistic question indispensable for language learners. ni:ioht = how is it; tsi = that; enshi:ron = you will say.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oh ni:ioht tsi enshi:ron",
+      "how do you say",
+      "how do you say ___"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q12",
+    "target": "Oh naho:ten ken:ton ne ___?",
+    "english": "What does ___ mean?",
+    "pos": "metalinguistic question",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "what does ___ mean?",
+    "notes": "What does ___ mean? — Oh naho:ten ken:ton ne ___? Another essential metalinguistic question for language learning.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oh naho:ten ken:ton ne",
+      "what does ___ mean",
+      "what does it mean"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q13",
+    "target": "Seshi:ron",
+    "english": "Say it again",
+    "pos": "imperative phrase",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "say it again",
+    "notes": "Say it again — Seshi:ron. An important learning phrase when you haven't heard something clearly. se- (you, command) + shi:ron (say it).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Seshi:ron",
+      "seshiron",
+      "say it again"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q14",
+    "target": "í:kehre",
+    "english": "I want (it)",
+    "pos": "stative verb — desire",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I want",
+    "notes": "I want — í:kehre. You know sahshá:wi (you want, command) from the true E-stem lesson. This is the first-person stative 'I want' form used in conversation.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "í:kehre",
+      "i:kehre",
+      "I want",
+      "want"
+    ],
+    "forms": [
+      {
+        "label": "I want",
+        "form": "í:kehre"
+      },
+      {
+        "label": "I don't want",
+        "form": "yah té:kehre"
+      },
+      {
+        "label": "do you want?",
+        "form": "sahshá:wi ken?"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "target": "yah té:kehre",
+    "english": "I don't want (it)",
+    "pos": "stative verb — desire (negated)",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I don't want",
+    "notes": "I don't want — yah té:kehre. Negation of í:kehre (I want). Yah (no/not) + te- (dualic negation prefix) + é:kehre.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yah té:kehre",
+      "yah te:kehre",
+      "I don't want"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q16",
+    "target": "Kátke",
+    "english": "When?",
+    "pos": "particle — question word",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "when? (question word)",
+    "notes": "When? — Kátke. The question word for time. You had Nahò:ten iohrhó:ten as a when-expression from L11; this is the shorter direct question word from the eCampusOntario OER.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kátke",
+      "katke",
+      "when?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q17",
+    "target": "To nihá:ti",
+    "english": "How many?",
+    "pos": "particle — question word",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "how many?",
+    "notes": "How many? — To nihá:ti. The quantity question word. Appears in counting contexts: 'To nihá:ti ratiksa'okón:'a?' (how many boys?).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "To nihá:ti",
+      "to niha:ti",
+      "how many?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "q18",
+    "target": "Oh nontyé:ren",
+    "english": "Why?",
+    "pos": "particle — question word",
+    "group": "particles",
+    "groupLabel": "particles & connectors",
+    "subLabel": "why? (alternate form)",
+    "notes": "Why? — Oh nontyé:ren. Alternate form from the eCampusOntario question words chapter. You have Nahò:ten ohén:ton (why?) from L11 — this is a variant used in Six Nations dialect.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oh nontyé:ren",
+      "oh nontyeren",
+      "why?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat01",
+    "target": "Satonhkaria'ks ken?",
+    "english": "Are you hungry?",
+    "pos": "question phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "are you hungry?",
+    "notes": "Are you hungry? — Satonhkaria'ks ken? sa- (you) + tonhkaria'ks (hungry root) + ken? (question particle). One of the most practical daily questions.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Satonhkaria'ks ken?",
+      "satonhkaria'ks ken?",
+      "are you hungry?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat02",
+    "target": "Katonhkaria'ks",
+    "english": "I am hungry",
+    "pos": "stative verb — food/body",
+    "group": "states_being",
+    "groupLabel": "states of being",
+    "subLabel": "I am hungry",
+    "notes": "I am hungry — Katonhkaria'ks. ka- (I) + tonhkaria'ks (hungry root). A body-state verb relating to food.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Katonhkaria'ks",
+      "katonhkaria'ks",
+      "I am hungry",
+      "hungry"
+    ],
+    "forms": [
+      {
+        "label": "I am hungry",
+        "form": "Katonhkaria'ks"
+      },
+      {
+        "label": "are you hungry?",
+        "form": "Satonhkaria'ks ken?"
+      },
+      {
+        "label": "I am not hungry yet",
+        "form": "I:iah sotsi arok tekatonhkaria'ks"
+      }
+    ]
+  },
+  {
+    "id": "eat03",
+    "target": "I:iah sotsi arok tekatonhkaria'ks",
+    "english": "I'm not hungry yet",
+    "pos": "phrase — food/negation",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "not hungry yet",
+    "notes": "I'm not hungry yet — I:iah (no/not) + sotsi (so much) + arok (yet) + tekatonhkaria'ks (not hungry). A useful mealtime refusal phrase.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "I:iah sotsi arok tekatonhkaria'ks",
+      "not hungry yet"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat04",
+    "target": "O:nen ni:'i wakekhwenta:on",
+    "english": "I have already eaten",
+    "pos": "phrase — food/completion",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "I have already eaten",
+    "notes": "I have already eaten — O:nen (already/now) + ni:'i (I) + wakekhwenta:on (I ate/have eaten). The perfect aspect 'have eaten' form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "O:nen ni:'i wakekhwenta:on",
+      "I have already eaten",
+      "already eaten"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat05",
+    "target": "Naho:ten ni:se' enseke?",
+    "english": "What will you eat?",
+    "pos": "question phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "what will you eat?",
+    "notes": "What will you eat? — Naho:ten (what) + ni:se' (you) + enseke (you will eat, future form). The en- prefix marks future tense — the first time the future prefix appears in conversation.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Naho:ten ni:se' enseke?",
+      "what will you eat?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat06",
+    "target": "Naho:ten ensneki:ra?",
+    "english": "What do you want to drink?",
+    "pos": "question phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "what do you want to drink?",
+    "notes": "What do you want to drink? — Naho:ten (what) + ensneki:ra (you will drink, future form). The drinking question at a meal.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Naho:ten ensneki:ra?",
+      "what do you want to drink?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat07",
+    "target": "Se:kas ken ne ___",
+    "english": "Do you like the taste of ___?",
+    "pos": "question phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "do you like the taste of ___?",
+    "notes": "Do you like the taste of ___? — Se:kas ken ne ___. A food appreciation question. The tasting/liking-the-taste-of root -e:kas-.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Se:kas ken ne",
+      "do you like the taste of",
+      "do you like"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat08",
+    "target": "Hen, wakekas ne ___",
+    "english": "Yes, I like the taste of ___",
+    "pos": "response phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "yes, I like the taste",
+    "notes": "Yes, I like the taste of ___ — Hen (yes) + wakekas (I like the taste) + ne (the/that). A positive food response.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Hen, wakekas ne",
+      "yes I like the taste",
+      "wakekas"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat09",
+    "target": "I:iah tewakekas ne ___",
+    "english": "No, I don't like the taste of ___",
+    "pos": "response phrase — food (negated)",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "no, I don't like the taste",
+    "notes": "No, I don't like the taste of ___ — I:iah (no/not) + te- (dualic negation) + wakekas (I like the taste). A polite food refusal.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "I:iah tewakekas ne",
+      "I don't like the taste",
+      "tewakekas"
+    ],
+    "forms": null
+  },
+  {
+    "id": "eat10",
+    "target": "Iawekon ken?",
+    "english": "Is it delicious? / Is it good?",
+    "pos": "question phrase — food",
+    "group": "conversation",
+    "groupLabel": "everyday conversation",
+    "subLabel": "is it delicious?",
+    "notes": "Is it delicious? — Iawekon ken? iawekon (it is delicious) + ken? (question particle). From the food description vocabulary.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Iawekon ken?",
+      "iawekon ken?",
+      "is it delicious?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd01",
+    "target": "kákhwa",
+    "english": "food (ready-to-eat)",
+    "pos": "noun — food (generic)",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "food (ready to eat)",
+    "notes": "Food (ready-to-eat) — kákhwa. A general term for prepared, ready-to-eat food. Compare atennà:tshera (groceries/lunch).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kákhwa",
+      "kakhwa",
+      "food"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd02",
+    "target": "káhik",
+    "english": "fruit (generic)",
+    "pos": "noun — food",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "fruit (generic)",
+    "notes": "Fruit — káhik. A general term for fruit. Compare the specific fruit names you already know.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "káhik",
+      "kahik",
+      "fruit generic"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd03",
+    "target": "atennà:tshera",
+    "english": "groceries / lunch",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "groceries / lunch",
+    "notes": "Groceries or lunch — atennà:tshera. A food-parcel noun. Also appears in kinship vocabulary (akotenná:tshera' = her food).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "atennà:tshera",
+      "atenna:tshera",
+      "groceries",
+      "lunch"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd04",
+    "target": "owihstóhsera",
+    "english": "bread",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "bread",
+    "notes": "Bread — owihstóhsera. The general bread term. You have serihwahsótha (you make bread, fake E-stem verb) — this is the noun.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "owihstóhsera",
+      "owihstohsera",
+      "bread"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd05",
+    "target": "onon'ónsera",
+    "english": "squash (generic)",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "squash (generic)",
+    "notes": "Squash — onon'ónsera. You know Otá:ra (squash, one of the Three Sisters) from unit 7. This is a variant/generic form from the eCampusOntario Six Nations dialect.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onon'ónsera",
+      "onon'onsera",
+      "squash generic"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd06",
+    "target": "ohnennà:ta",
+    "english": "potato",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "potato",
+    "notes": "Potato — ohnennà:ta. A post-contact root vegetable that became central to Haudenosaunee and broader northeastern diets. Its Kanien'kéha name is descriptive.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohnennà:ta",
+      "ohnenna:ta",
+      "potato"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd07",
+    "target": "onon'ónsera súkhar",
+    "english": "soup",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "soup (generic)",
+    "notes": "Soup — onon'ónsera súkhar (or onon'ónsera alone in some dialects). You know onenhstóhkwa (corn soup specifically). This is the general soup word.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onon:tara",
+      "onontara",
+      "soup"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd08",
+    "target": "wahtá: óhses",
+    "english": "maple syrup",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "maple syrup",
+    "notes": "Maple syrup — wahtá: (maple tree, which you know) + óhses (sap/syrup). The product of the sugar bush. A central food and ceremony item.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wahtá: óhses",
+      "wahta: ohses",
+      "maple syrup"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd09",
+    "target": "yawékon",
+    "english": "it is delicious",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "delicious",
+    "notes": "It is delicious — yawékon. A food quality stative verb. Used in the eating conversation: 'Iawekon ken?' (is it delicious?)",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yawékon",
+      "yawekon",
+      "delicious",
+      "it is delicious"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd10",
+    "target": "yó:ri",
+    "english": "it is cooked / done",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "cooked / done",
+    "notes": "It is cooked or done — yó:ri. A food state verb. 'Iah teio:ri ki:ken ___' = this food is not cooked all the way.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yó:ri",
+      "yo:ri",
+      "cooked",
+      "done"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd11",
+    "target": "okáhte",
+    "english": "it is raw / uncooked",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "raw / uncooked",
+    "notes": "It is raw or uncooked — okáhte. The complement to yó:ri (cooked). Food safety and preparation vocabulary.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "okáhte",
+      "okahte",
+      "raw",
+      "uncooked"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd12",
+    "target": "yo'taríhen",
+    "english": "it is hot (food/drink)",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "hot (food/drink)",
+    "notes": "It is hot (temperature) — yo'taríhen. Applied to food or drink that is hot to the touch/taste. Compare iotontátsion (it is hot weather).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yo'taríhen",
+      "yo'tarihen",
+      "hot (food)"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd13",
+    "target": "yowíhsto",
+    "english": "it is cool / cold (food/drink)",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "cool / cold (food)",
+    "notes": "It is cool or cold — yowíhsto. Applied to cold food or drink. Compare ionkwahró:ri (cold weather).",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yowíhsto",
+      "yowihsto",
+      "cool",
+      "cold (food)"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd14",
+    "target": "yotsha'áhton",
+    "english": "it is burnt",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "burnt",
+    "notes": "It is burnt — yotsha'áhton. 'Iotshon ki:ken ___' = this food is burnt. A food quality warning.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yotsha'áhton",
+      "yotsha'ahton",
+      "burnt"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd15",
+    "target": "teyohnekontyéhton",
+    "english": "it is boiled",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "boiled",
+    "notes": "It is boiled — teyohnekontyéhton. Boiling is a primary traditional cooking method. The te- dualic reflects the two-phase process.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "teyohnekontyéhton",
+      "teyohnekontyehton",
+      "boiled"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd16",
+    "target": "kakerì:ten",
+    "english": "it is fried / deep-fried",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "fried",
+    "notes": "It is fried or deep-fried — kakerì:ten. Post-contact cooking method named descriptively.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kakerì:ten",
+      "kakeri:ten",
+      "fried"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd17",
+    "target": "yawenhyé:nare",
+    "english": "it is greasy",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "greasy",
+    "notes": "It is greasy — yawenhyé:nare. A food texture/quality description.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yawenhyé:nare",
+      "yawenhye:nare",
+      "greasy"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd18",
+    "target": "teyotskara'kó:wa",
+    "english": "it is spicy / hot (taste)",
+    "pos": "food description — stative",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "spicy / hot (taste)",
+    "notes": "It is spicy or hot-tasting — teyotskara'kó:wa. Distinguishes temperature-hot (yo'taríhen) from spice-hot.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "teyotskara'kó:wa",
+      "teyotskara'kowa",
+      "spicy",
+      "hot taste"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd19",
+    "target": "niyohontéhsha",
+    "english": "strawberry (Six Nations form)",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "strawberry (Six Nations variant)",
+    "notes": "Strawberry — niyohontéhsha (Six Nations OER form). You have Ken' niiohontésha' from Kontinónhstats. This Six Nations variant represents the dialect variation across communities.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "niyohontéhsha",
+      "niyohontesha",
+      "strawberry variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd20",
+    "target": "sewahyó:wane",
+    "english": "apple (generic)",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "apple (generic form)",
+    "notes": "Apple — sewahyó:wane. You have Kakhwá:yen (apple) from Kontinónhstats. This is the alternate Six Nations form. Both are correct in their respective dialects.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "sewahyó:wane",
+      "sewahyowane",
+      "apple"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd21",
+    "target": "wáhta óhses",
+    "english": "maple syrup / sap",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "maple syrup / sap",
+    "notes": "Maple syrup/sap — wáhta (maple) + óhses (flows/drips). The sap that flows from the maple tree in spring. The Sugar Bush (Tsi Wahta' Iontewahronkón:ni) is the ceremonial gathering around this flow.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wáhta óhses",
+      "wahta ohses",
+      "maple syrup"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fd22",
+    "target": "kahwatstón:ni",
+    "english": "beer (Six Nations form)",
+    "pos": "noun — drink",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "beer (Six Nations form)",
+    "notes": "Beer — kahwatstón:ni, literally 'the foamy thing'. Compare onontákeri (beer, Deering form). Dialect variation in naming post-contact substances.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kahwatstón:ni",
+      "kahwatstonni",
+      "beer variant"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr01",
+    "target": "Shé:kon, skennenkó: ken?",
+    "english": "Hello, is everything peaceful?",
+    "pos": "greeting — full form",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "hello, is everything peaceful?",
+    "notes": "Hello, is everything peaceful? — Shé:kon (again/hello) + skennenkó: (great peace) + ken? (question). The full formal greeting from the eCampusOntario OER, showing that 'how are you?' in Kanien'kéha is literally asking about the state of peace.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Shé:kon, skennenkó: ken?",
+      "she:kon skennen ko: ken?",
+      "is everything peaceful"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr02",
+    "target": "Skennen'kó:wa ní:'i",
+    "english": "Great peace for me / I am well (full form)",
+    "pos": "greeting response — full form",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "great peace for me / I am well",
+    "notes": "Great peace for me — Skennen'kó:wa (great peace) + ní:'i (for me/I). The full formal wellness response. You know skén:nen (peace/peacefully) — Skennen'kó:wa is the augmented 'great peace' form.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Skennen'kó:wa ní:'i",
+      "skennen kowa ni:'i",
+      "great peace",
+      "I am well"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr03",
+    "target": "Nok ní:se?",
+    "english": "And you?",
+    "pos": "greeting phrase",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "and you? (after wellness exchange)",
+    "notes": "And you? — Nok (and/then) + ní:se? (you). The follow-up question after someone says how they are. You know ní:se (you) from the pronouns lesson.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Nok ní:se?",
+      "nok ni:se?",
+      "and you?"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr04",
+    "target": "Yoyanerátye",
+    "english": "It is going well",
+    "pos": "greeting response",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "it is going well",
+    "notes": "It is going well — Yoyanerátye. A common wellness response. Io'tenhró:ton (I am well) from Kontinónhstats is the version you know; this eCampusOntario form means roughly 'things are going well / it is proceeding nicely'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yoyanerátye",
+      "yoyanerátye",
+      "it is going well",
+      "going well"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr05",
+    "target": "Oh nahò:ten yesá:ya'ts?",
+    "english": "What is your name? (Six Nations form)",
+    "pos": "question phrase — introduction",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "what is your name? (Six Nations form)",
+    "notes": "What is your name? — Oh nahò:ten yesá:ya'ts? (Six Nations OER form). You know Kanié:ri iken'? from the Kontinónhstats/Kanehsatà:ke form. This eCampusOntario variant means 'what do they call you?' with a different verb root.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oh nahò:ten yesá:ya'ts?",
+      "oh naho:ten yesa:ya'ts?",
+      "what is your name SN"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr06",
+    "target": "___ yónkya'ts",
+    "english": "___ is my name (Six Nations form)",
+    "pos": "response phrase — introduction",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "___ is my name (Six Nations form)",
+    "notes": "___ is my name — ___ yónkya'ts. Six Nations OER name introduction. Compare [Name] akwé:kon (Kanehsatà:ke form). The root -ya'ts relates to naming/calling.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "yónkya'ts",
+      "yonkya'ts",
+      "my name is SN"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr07",
+    "target": "___ wakhsenná:sere",
+    "english": "___ is my last name",
+    "pos": "response phrase — introduction",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "___ is my last name",
+    "notes": "___ is my last name — ___ wakhsenná:sere. A surname introduction. Most Kanien'kehá:ka families have both a traditional name and a family surname.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wakhsenná:sere",
+      "wakhsenna:sere",
+      "my last name"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr08",
+    "target": "Kateweyénhstha Kanyen'kéha",
+    "english": "I am studying Mohawk / I am learning Kanien'kéha",
+    "pos": "learning phrase",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "I am studying Kanien'kéha",
+    "notes": "I am studying Kanien'kéha — Kateweyénhstha (I am studying/learning) + Kanyen'kéha (the language, Six Nations orthographic form). Note Kanyen'kéha vs Kanien'kéha — the y/i variation is a dialect difference between Six Nations and Kanehsatà:ke. Both are correct.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kateweyénhstha Kanyen'kéha",
+      "I am studying Kanien'keha",
+      "I am learning Mohawk"
+    ],
+    "forms": null
+  },
+  {
+    "id": "gr10",
+    "target": "Shé:kon, yoyanerátye ken?",
+    "english": "Hello, is it going well?",
+    "pos": "greeting — variant",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "hello, is it going well?",
+    "notes": "Hello, is it going well? — An alternate greeting combining the hello + wellness question in one phrase.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Shé:kon, yoyanerátye ken?",
+      "she:kon yoyanerátye ken?",
+      "hello is it going well"
+    ],
+    "forms": null
+  },
+  {
+    "id": "in01",
+    "target": "___ na'tewakohseriyá:konh",
+    "english": "___ is my age",
+    "pos": "introduction phrase — age",
+    "group": "greetings",
+    "groupLabel": "greetings & expressions",
+    "subLabel": "___ is my age",
+    "notes": "___ is my age — ___ na'tewakohseriyá:konh. The full formal age introduction formula from the eCampusOntario OER. Compare Tsi niiá:wen ní:'i? (how old are you?) which you know.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "na'tewakohseriyá:konh",
+      "na'tewakohseriyakonh",
+      "my age is"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx01",
+    "target": "teyokháhon",
+    "english": "garlic",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "garlic",
+    "notes": "Garlic — teyokháhon. A flavouring plant used in cooking.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "teyokháhon",
+      "teyokhahon",
+      "garlic"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx02",
+    "target": "otsíhskwa",
+    "english": "oatmeal / cornmush / pudding",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "oatmeal / cornmush",
+    "notes": "Oatmeal, cornmush, or pudding — otsíhskwa. A cooked grain or corn dish. Cornmush (otsíhskwa made with onón:ta) is a traditional Haudenosaunee food.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otsíhskwa",
+      "otsihskwa",
+      "oatmeal",
+      "cornmush"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx03",
+    "target": "kanennyo'kóhare",
+    "english": "ice cream",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "ice cream",
+    "notes": "Ice cream — kanennyo'kóhare, literally 'frozen snow food'. The root -nennyo'kw- = frozen snow. A descriptive post-contact food name.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanennyo'kóhare",
+      "kanennyo'kohare",
+      "ice cream"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx04",
+    "target": "onenhstóhkwa",
+    "english": "corn soup",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "corn soup",
+    "notes": "Corn soup — onenhstóhkwa. You know onón:ta (corn) and onon:tara (soup). Corn soup is a central traditional Haudenosaunee dish, made from dried white corn treated with hardwood ash lye.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onenhstóhkwa",
+      "onenhstohkwa",
+      "corn soup"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx05",
+    "target": "awenhétsha",
+    "english": "sausage / hot dog",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "sausage / hot dog",
+    "notes": "Sausage, hot dog, or baloney — awenhétsha. Post-contact processed meat.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "awenhétsha",
+      "awenhetsha",
+      "sausage",
+      "hot dog"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx06",
+    "target": "tekarihstó:yen",
+    "english": "fried bread / bannock",
+    "pos": "noun — food",
+    "group": "food",
+    "groupLabel": "food",
+    "subLabel": "fried bread / bannock",
+    "notes": "Fried bread or bannock — tekarihstó:yen, 'stove-top bread'. The root -rihst- = stove. Fried bread became prevalent after contact and is now a significant community food, though its origins are tied to colonialism and food displacement.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tekarihstó:yen",
+      "tekarihstoyen",
+      "fried bread",
+      "bannock"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx07",
+    "target": "tó:kwahre",
+    "english": "cranberry",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "cranberry",
+    "notes": "Cranberry — tó:kwahre. A wild berry traditionally harvested in bogs and wetlands near Kanehsatà:ke.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tó:kwahre",
+      "to:kwahre",
+      "cranberry"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx08",
+    "target": "skanekwenhtará:yen",
+    "english": "raspberries",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "raspberries",
+    "notes": "Raspberries — skanekwenhtará:yen. A wild berry gathered in summer.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "skanekwenhtará:yen",
+      "skanekwentarayen",
+      "raspberries"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx09",
+    "target": "wahyá:ris",
+    "english": "watermelon",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "watermelon",
+    "notes": "Watermelon — wahyá:ris. A post-contact fruit given a Kanien'kéha name.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wahyá:ris",
+      "wahyaris",
+      "watermelon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx10",
+    "target": "shá:yehse",
+    "english": "blackberry",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "blackberry",
+    "notes": "Blackberry — shá:yehse. A wild berry of the forests and field edges.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "shá:yehse",
+      "shayehse",
+      "blackberry"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx11",
+    "target": "karha'takéha",
+    "english": "blueberry",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "blueberry",
+    "notes": "Blueberry — karha'takéha, 'forest one'. The -rha- root = forest (kárha), so blueberry = 'the one from the forest'.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "karha'takéha",
+      "karha'takeha",
+      "blueberry"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx12",
+    "target": "é:ri",
+    "english": "cherry",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "cherry",
+    "notes": "Cherry — é:ri. Wild cherries were gathered traditionally. The augmented form eri'kó:wa = big cherry.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "é:ri",
+      "e:ri",
+      "cherry"
+    ],
+    "forms": null
+  },
+  {
+    "id": "fx13",
+    "target": "wíhson káhik",
+    "english": "plum (OER form)",
+    "pos": "noun — fruit",
+    "group": "fruits",
+    "groupLabel": "fruits",
+    "subLabel": "plum (OER variant)",
+    "notes": "Plum — wíhson káhik (OER form, 'plum fruit'). You have wíhshon from Kontinónhstats. This compound form clarifies it as a fruit category.",
+    "cite": {
+      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wíhson káhik",
+      "wihson kahik",
+      "plum variant"
     ],
     "forms": null
   }
