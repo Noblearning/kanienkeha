@@ -1139,12 +1139,11 @@ function renderGloss(){
   // Build letter list based on current sort mode
   const letters=[...new Set(GLOSS.map(w=>{
     if(sortByKanien){
-      // Use first letter of Kanien'kéha word (strip accents for sorting)
       return w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
     }
-    return (w.groupLabel||w.english)[0].toUpperCase();
+    return w.english[0].toUpperCase();
   }))].sort();
-  gL='all'; // reset filter on sort change
+  gL='all';
   document.getElementById('galpha').innerHTML=
     `<button class="abtn active" onclick="setAlpha('all',this)">All</button>`+
     letters.map(l=>`<button class="abtn" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
@@ -1154,17 +1153,18 @@ function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.cl
 function filterGloss(){
   const q=(document.getElementById('gsearch').value||'').toLowerCase();
 
-  // Filter entries
+  // Filter entries — group/groupLabel/subLabel are search metadata only
   const matching=GLOSS.filter(w=>{
     const mq=!q||
       w.target.toLowerCase().includes(q)||
       w.english.toLowerCase().includes(q)||
       (w.groupLabel||'').toLowerCase().includes(q)||
-      (w.subLabel||'').toLowerCase().includes(q);
-    // Letter filter: depends on sort mode
-    const sortKey = sortByKanien
+      (w.subLabel||'').toLowerCase().includes(q)||
+      (w.group||'').toLowerCase().includes(q)||
+      (w.forms||[]).some(f=>f.form.toLowerCase().includes(q)||f.label.toLowerCase().includes(q));
+    const sortKey=sortByKanien
       ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
-      : (w.groupLabel||w.english)[0].toUpperCase();
+      : w.english[0].toUpperCase();
     const ml=gL==='all'||sortKey===gL;
     return mq&&ml;
   });
@@ -1174,78 +1174,28 @@ function filterGloss(){
     return;
   }
 
-  // Build group map
-  const groupOrder=[];
-  const groupMap={};
-  matching.forEach(w=>{
-    const key=w.group||('solo_'+w.id);
-    const label=w.groupLabel||w.english;
-    if(!groupMap[key]){
-      // For sort key in Kanien'kéha mode: use first entry's target word
-      const kSort=w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
-      groupMap[key]={label, letter:label[0].toUpperCase(), kLetter:kSort, entries:[]};
-      groupOrder.push(key);
-    }
-    groupMap[key].entries.push(w);
-  });
-
-  // Sort groups by chosen mode
+  // Sort entries individually — every entry is its own headword
+  const sorted=[...matching];
   if(sortByKanien){
-    groupOrder.sort((a,b)=>{
-      const wa=groupMap[a].entries[0].target.toLowerCase();
-      const wb=groupMap[b].entries[0].target.toLowerCase();
-      return wa.localeCompare(wb,'fr'); // use fr locale for accent handling
-    });
+    sorted.sort((a,b)=>a.target.toLowerCase().localeCompare(b.target.toLowerCase(),'fr'));
   } else {
-    groupOrder.sort((a,b)=>groupMap[a].label.localeCompare(groupMap[b].label,'en'));
+    sorted.sort((a,b)=>a.english.toLowerCase().localeCompare(b.english.toLowerCase(),'en'));
   }
 
-  // Group by section letter
+  // Bucket by first letter
   const byLetter={};
-  groupOrder.forEach(key=>{
-    const l=sortByKanien?groupMap[key].kLetter:groupMap[key].letter;
+  sorted.forEach(w=>{
+    const l=sortByKanien
+      ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
+      : w.english[0].toUpperCase();
     if(!byLetter[l])byLetter[l]=[];
-    byLetter[l].push(key);
+    byLetter[l].push(w);
   });
 
   const list=document.getElementById('glist');
   list.innerHTML=Object.keys(byLetter).sort().map(letter=>{
-    const groupCards=byLetter[letter].map(key=>{
-      const grp=groupMap[key];
-      const entries=grp.entries;
-
-      // If group has only one entry, render flat (no subentry structure)
-      if(entries.length===1){
-        const w=entries[0];
-        return renderFlatEntry(w);
-      }
-
-      // Multi-entry group: render as parent card with subentries
-      const gid='grp_'+key;
-      const subHtml=entries.map(w=>renderSubEntry(w)).join('');
-      // Show proficiency summary across all entries in group
-      const profs=entries.map(w=>getProf(w.id)).filter(Boolean);
-      const avgPct=profs.length?Math.round(profs.reduce((s,p)=>s+p.pct,0)/profs.length):null;
-      const cls=avgPct!=null?(avgPct>=80?'phigh':avgPct>=40?'pmid':avgPct>0?'plow':'pnone'):'';
-      const profBar=avgPct!=null?
-        '<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+avgPct+'%;height:4px;border-radius:6px"></div></div>':'';
-
-      return '<div class="ge" id="grp-card-'+gid+'" onclick="toggleGroup(\''+gid+'\')" style="border-left:3px solid var(--clay)">'+
-        '<div class="ge-top">'+
-          '<div style="flex:1">'+
-            '<div class="gew">'+grp.label+'</div>'+
-            '<div class="gee" style="font-size:.75rem;color:var(--ew)">'+(entries.length)+' forms</div>'+
-          '</div>'+
-          '<span class="gear" id="grp-arr-'+gid+'">&#8250;</span>'+
-        '</div>'+
-        profBar+
-        '<div id="grp-body-'+gid+'" style="display:none;margin-top:.6rem;border-top:1px solid var(--sand);padding-top:.55rem">'+
-          subHtml+
-        '</div>'+
-      '</div>';
-    }).join('');
-
-    return '<div class="glg"><div class="glh">'+letter+'</div>'+groupCards+'</div>';
+    const cards=byLetter[letter].map(w=>renderFlatEntry(w)).join('');
+    return '<div class="glg"><div class="glh">'+letter+'</div>'+cards+'</div>';
   }).join('');
 }
 
@@ -1253,8 +1203,14 @@ function renderFlatEntry(w){
   const p=getProf(w.id);
   const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
   const profBar=p?'<div class="prof-track" style="margin-top:.38rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:4px;border-radius:6px"></div></div>':'';
-  const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
-  const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead><tr><th>form</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
+  const hasDialect=w.forms&&w.forms.some(f=>f.dialect);
+  const formsRows=w.forms&&w.forms.length?w.forms.map(f=>{
+    const dialectCell=hasDialect?'<td style="font-size:.75rem;color:var(--sky)">'+(f.dialect||'')+'</td>':'';
+    const formVal=f.form||'<span style="color:var(--smoke);font-style:italic">—</span>';
+    return'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+formVal+'</td>'+dialectCell+'</tr>';
+  }).join(''):'';
+  const formsHeader=hasDialect?'<tr><th>form</th><th>Kanien\'k\u00e9ha</th><th>dialect</th></tr>':'<tr><th>form</th><th>Kanien\'k\u00e9ha</th></tr>';
+  const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead>'+formsHeader+'</thead><tbody>'+formsRows+'</tbody></table></div>':'';
   const citeHtml=w.cite?'<div style="margin-top:.5rem;font-size:.77rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
   const posHtml=w.pos?'<div style="font-size:.7rem;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:.1rem">'+w.pos+'</div>':'';
   return '<div class="ge" id="ge-'+w.id+'" onclick="toggleGlossEntry(\''+w.id+'\')">'+
@@ -1344,8 +1300,17 @@ function openModal(wid){
   if(w.cite)cite.innerHTML=`Source: <a href="${w.cite.url}" target="_blank" rel="noopener">${w.cite.text} ↗</a>`;
   else cite.textContent='';
   const fs=document.getElementById('mformssec');
-  if(w.forms&&w.forms.length){fs.style.display='';document.getElementById('mformsbody').innerHTML=w.forms.map(f=>`<tr><td>${f.label}</td><td>${f.form}</td></tr>`).join('');}
-  else fs.style.display='none';
+  if(w.forms&&w.forms.length){
+    fs.style.display='';
+    const hasD=w.forms.some(f=>f.dialect);
+    document.getElementById('mformsbody').innerHTML=w.forms.map(f=>{
+      const fv=f.form||'<span style="color:var(--smoke);font-style:italic">—</span>';
+      return`<tr><td>${f.label}</td><td>${fv}</td>${hasD?`<td style="font-size:.8rem;color:var(--sky)">${f.dialect||''}</td>`:''}</tr>`;
+    }).join('');
+    // Update header if dialect column present
+    const thead=document.querySelector('#mformssec thead tr');
+    if(thead)thead.innerHTML=hasD?'<th>Form</th><th>Kanien\'k\u00e9ha</th><th>Dialect</th>':'<th>Relation</th><th>Kanien\'k\u00e9ha</th>';
+  } else fs.style.display='none';
   document.getElementById('wmodal').classList.add('open');
 }
 function openDialectModal(){
