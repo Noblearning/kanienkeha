@@ -6574,5 +6574,1257 @@
         ]
       }
     ]
+  },
+  {
+    "id": 9,
+    "title": "Unit 10 — The Verb System I: Active, Stative & Aspect",
+    "desc": "Active vs stative verb forms; habitual aspect; the -s suffix; applying the full verb stem system to daily actions",
+    "lessons": [
+      {
+        "id": "u9l0",
+        "title": "Lesson — Coming Soon",
+        "icon": "🔜",
+        "sub": "This unit is under development",
+        "intro": [
+          "Unit 10 is under development. It covers active vs stative verb forms, the habitual aspect (-s suffix), and full conjugation of known verbs across all pronoun positions."
+        ],
+        "ped": "<strong>Unit 10 scope:</strong> By this point learners have encountered A-stem, consonant-stem, I-stem, and True E-stem verbs across Units 3 and 8. Unit 10 systematises what they have seen implicitly: the active/stative distinction (sitting vs being seated), the habitual suffix -s (I always sit vs I am sitting), and full paradigm production across singular, dual, and plural pronouns. Following Mithun (1984), the active/stative distinction is treated not as an irregularity but as a core feature of Iroquoian aspect — a fundamentally different way of encoding the relationship between subject and predicate than English tense. Nation's (2001) productive control principle applies: learners should be able to generate any person-form of any known verb before proceeding to Unit 11.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u9l1",
+        "title": "Lesson 37 — Active vs Stative: The Core Distinction",
+        "icon": "⚡",
+        "sub": "Two ways a verb can describe the world",
+        "intro": [
+          "Kanien'kéha verbs come in two fundamental forms: <strong>active</strong> (describing something happening) and <strong>stative</strong> (describing a state of being). English collapses this distinction; Kanien'kéha makes it grammatically mandatory.",
+          "<em>Ká:tiens</em> — I am sitting (active, happening now). <em>Ká:tate'</em> — I am seated (stative, a condition I am in). The difference is not subtle — they are different verb forms. Choosing the wrong one changes the meaning of what you are saying.",
+          "You have already encountered this distinction without being told its name. In this lesson, you learn to see it clearly across all the verbs you know."
+        ],
+        "ped": "<strong>Active/stative as conceptual foundation:</strong> Mithun (1982) identifies the active/stative distinction as one of the most important structural features of polysynthetic Iroquoian languages. Krashen's comprehensible input principle applies here: learners have absorbed the distinction through exposure in earlier units; this lesson makes the underlying rule visible. LaFever's Mental domain is primary; the Physical domain is activated through production exercises requiring learners to choose the correct form in context.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u9l2",
+        "title": "Lesson 38 — The Habitual: -s and What It Does",
+        "icon": "🔁",
+        "sub": "Expressing what you always do",
+        "intro": [
+          "The <strong>habitual suffix -s</strong> attaches to active verbs to express repeated, regular, or customary action. <em>Ká:tiens</em> = I sit (now, active). <em>Ká:tiens</em> with habitual marking = I always sit, I sit (regularly). The suffix is subtle but the meaning shift is significant.",
+          "You have already seen -s in verb forms throughout the course. This lesson names and systematises the pattern so you can use it productively across all known verbs.",
+          "The habitual is how you describe routines, customs, and the seasonal practices you encountered in the Thanksgiving Address unit. Language of ceremony and daily life share the same grammatical structure."
+        ],
+        "ped": "<strong>Habitual as culturally significant category:</strong> The habitual aspect is not a minor grammatical detail — it is the aspect of ceremony, custom, and the seasonal round. Following Chew, Leonard & Rosenblum (2023), this lesson grounds the grammar in culturally meaningful practice: the habitual is how you say 'we always give thanks', 'we always plant in spring', 'the clan mothers always decide'. Nation's (2001) spaced retrieval principle applies: the -s suffix has appeared repeatedly since Unit 3; this lesson consolidates and names it.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u9l3",
+        "title": "Lesson 39 — Full Paradigm Practice: All Persons, All Stems",
+        "icon": "📊",
+        "sub": "Generating every form of known verbs",
+        "intro": [
+          "This lesson is a production challenge. You know four verb stem classes — A-stem, consonant-stem, I-stem, True E-stem — and all fifteen pronoun positions. This lesson asks you to produce any form of any known verb.",
+          "This is Nation's (2001) productive control in practice. Recognising a form is not the same as being able to generate it. Generation is what speaking requires.",
+          "Work through systematically. If a form is unfamiliar, return to the stem class lesson where you first encountered it."
+        ],
+        "ped": "<strong>Productive control as milestone:</strong> Nation (2001) distinguishes receptive knowledge (recognising a word) from productive knowledge (generating it correctly). Full paradigm generation is the threshold for productive control. This lesson is a consolidation checkpoint before Unit 11 introduces relational prefixes — which require confident mastery of the base paradigm to apply correctly. LaFever's Physical domain dominates; the Emotional domain is addressed through a final reflection on what it means to be able to speak across all grammatical persons.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u9l4",
+        "title": "Lesson 40 — Commands Revisited: Full Singular, Dual & Plural",
+        "icon": "📣",
+        "sub": "Commanding in all number forms",
+        "intro": [
+          "You learned singular commands in Unit 3 and dual/plural commands in Unit 9. This lesson consolidates the full command paradigm across all stem classes — so that you can command one person, two people, or a group using any verb you know.",
+          "Commands are not merely directive. In ceremony, in the longhouse, in teaching — the imperative form is the form of instruction, invitation, and care.",
+          "Every command paradigm follows the same underlying logic. By the end of this lesson, that logic should feel automatic."
+        ],
+        "ped": "<strong>Paradigm completion before transition:</strong> Unit 11 requires confident command forms in order to teach relational prefixes correctly — the relational prefix system interacts with command morphology in specific ways. Completing the command paradigm here prevents confusion later. Following Nation (2001), this is deliberate spaced retrieval: commands from Units 3 and 9 reappear in a new consolidation context, strengthening retention before new complexity is introduced.",
+        "vocabIds": [],
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Unit 11 — The Verb System II: Relational Prefixes & Speaking About Others",
+    "desc": "How Kanien'kéha verbs encode who does what to whom — the relational prefix system that makes transitive meaning possible",
+    "lessons": [
+      {
+        "id": "u10l0",
+        "title": "Lesson — Coming Soon",
+        "icon": "🔜",
+        "sub": "This unit is under development",
+        "intro": [
+          "Unit 11 is under development. It introduces the relational prefix system — the grammatical mechanism by which Kanien'kéha verbs encode both actor and recipient, making English-style object pronouns unnecessary."
+        ],
+        "ped": "<strong>Unit 11 scope:</strong> The relational prefix system is one of the most structurally distinctive features of Kanien'kéha. Where English uses separate object pronouns ('I see him', 'she helps me'), Kanien'kéha encodes the relationship between actor and recipient directly in the verb prefix. Following Mithun (1984), this unit treats relational prefixes not as exceptions grafted onto known verb forms but as a coherent system with its own internal logic. The shako-/yako- prefix pair (male-to-female / female-to-male action) is the entry point; the full paradigm is introduced gradually across the unit's lessons. Nation's (2001) pattern-based learning principle applies throughout: once learners see the underlying actor-recipient logic, they can extend it to new verbs. LaFever's Emotional domain is activated by the fact that relational verbs — helping, seeing, loving, teaching — are the grammar of relationship.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u10l1",
+        "title": "Lesson 41 — What Is a Relational Prefix?",
+        "icon": "🔗",
+        "sub": "The grammar of who acts on whom",
+        "intro": [
+          "In English, you say 'I see <em>him</em>' — the object is a separate word. In Kanien'kéha, the entire relationship is encoded in the verb prefix. There is no separate object pronoun. The prefix changes to show who is doing what to whom.",
+          "This is the <strong>relational prefix system</strong> — one of the most elegant structural features of the language. Learning it changes how you read every verb you have already encountered.",
+          "This lesson introduces the concept and the first prefix pair: <em>shako-</em> (male actor, female recipient) and <em>yako-</em> (female actor, male or female recipient)."
+        ],
+        "ped": "<strong>Conceptual introduction before production:</strong> Mithun (1984) emphasises that polysynthetic language learners benefit from understanding the structural logic of a system before being asked to produce it. This lesson is primarily conceptual — LaFever's Mental domain — before subsequent lessons move into Physical production. The choice of relational verbs of perception and care (seeing, helping, loving) as the first practice verbs follows Freire's (1970) generative theme principle: relationship verbs are immediately meaningful in the learner's world.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u10l2",
+        "title": "Lesson 42 — He Sees Her / She Sees Him",
+        "icon": "👁️",
+        "sub": "Perception verbs with relational prefixes",
+        "intro": [
+          "The verb 'to see' is the canonical teaching verb for relational prefixes because it is simple, concrete, and requires a perceiver and a perceived.",
+          "<em>Shakoniá:wen</em> — he sees her. <em>Yakononiá:wen</em> — she sees him (or her). The prefix changes; the verb root stays the same. This is the relational prefix logic in its clearest form.",
+          "This lesson drills the perception paradigm — see, hear, notice — across the most common person combinations. By the end you should be able to express any combination of who perceives whom."
+        ],
+        "ped": "<strong>Canonical verb as learning anchor:</strong> Nation (2001) identifies the value of high-frequency, semantically transparent verbs as anchors for new grammatical patterns — learners can focus on the pattern (relational prefix) without being distracted by unfamiliar vocabulary. Perception verbs are also physically enactable, supporting the Physical domain (LaFever). The drill structure of this lesson is intentional: controlled, repetitive production before open-ended use.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u10l3",
+        "title": "Lesson 43 — He Helps Her / She Helps Him",
+        "icon": "🤝",
+        "sub": "Care and assistance with relational prefixes",
+        "intro": [
+          "Having established the relational prefix system with perception verbs, this lesson applies it to verbs of care and assistance: helping, giving, showing.",
+          "These are the verbs of daily community life — the language of mutual aid, of the longhouse, of family. Learning them as relational verbs — encoded with who is helping whom — anchors the grammar in its social meaning.",
+          "The reciprocal form — 'we help each other' — is introduced here. Kanien'kéha has a specific prefix for reciprocal action, and verbs of care are its natural home."
+        ],
+        "ped": "<strong>Grammar through relationship:</strong> Maracle (1993) observes that reclaiming a language means reclaiming the relationships encoded in it. Verbs of care and assistance are not neutral vocabulary — they are the grammar of community obligation and love. LaFever's Emotional domain is primary in this lesson. The introduction of the reciprocal prefix also anticipates Unit 12's Lesson 5, where reciprocal relationship verbs appear in the context of clan and community introductions.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u10l4",
+        "title": "Lesson 44 — Love, Knowledge & Memory: Relational Verbs of the Mind and Heart",
+        "icon": "💛",
+        "sub": "The grammar of knowing someone and caring for them",
+        "intro": [
+          "The relational prefix system extends to verbs of knowing, remembering, and loving. These are not metaphorical extensions of the system — they are among its most important members.",
+          "<em>Shakwá:tsire'</em> — he loves her. <em>Yakwá:tsire'</em> — she loves him. You have seen these forms before. Now you understand exactly what their prefixes mean and how to extend the pattern.",
+          "This lesson connects the grammar of relationship to its emotional meaning. The prefix system is not an abstraction — it is how the language makes love visible in structure."
+        ],
+        "ped": "<strong>Emotional domain as primary:</strong> LaFever (2016) identifies the Emotional domain as the site where language connects to identity and relationship. This lesson is explicitly designed around that domain. The verbs here — love, know, remember — are also generative in Freire's (1970) sense: they are words that name what matters most in a learner's world. Mithun's (1984) point that relational verbs in Iroquoian languages encode social relationships structurally — not just semantically — gives the grammar lesson its cultural weight.",
+        "vocabIds": [],
+        "exercises": []
+      },
+      {
+        "id": "u10l5",
+        "title": "Lesson 45 — Teaching and Learning: The Language of Language Learning",
+        "icon": "📚",
+        "sub": "Verbs of instruction with relational prefixes",
+        "intro": [
+          "The verbs of teaching and learning are relational verbs — there is always someone who teaches and someone who learns. In Kanien'kéha this relationship is encoded in the verb itself.",
+          "This lesson also pauses to name what you have been doing across eleven units: you have been learning Kanien'kéha. The language has a word for that act, and for the people involved in it.",
+          "This is a bridging lesson. The relational system is now consolidated. Unit 12 begins."
+        ],
+        "ped": "<strong>Metacognitive closing:</strong> McCarty & Lee (2014) argue that learners benefit from understanding themselves as participants in revitalization, not just as language students. This final lesson of Unit 11 names the act of learning Kanien'kéha as a relational act — between learner and teacher, between learner and community, between the learner and the language itself. LaFever's Spiritual domain is activated: the act of learning an ancestral language after colonial interruption has a dimension that is beyond the merely cognitive or communicative. The lesson prepares learners for Unit 12's full four-domain framework by giving them language for their own experience.",
+        "vocabIds": [],
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Unit 12 — Telling Your Story: Introductions & Identity",
+    "desc": "The full introduction sequence a Kanien'kehá:ka speaker uses when meeting someone: name, clan, community, family, and where you come from",
+    "lessons": [
+      {
+        "id": "u11l0",
+        "title": "Lesson 46 — What Is Your Name?",
+        "icon": "🗣️",
+        "sub": "Kanié:ri iken'? — the first question of every meeting",
+        "intro": [
+          "Every meeting between Kanien'kehá:ka people begins the same way: <em>Kanié:ri iken'?</em> — What is your name? The answer follows a specific form. Learning this exchange is learning how to enter a conversation as a Kanien'kehá:ka speaker.",
+          "The question uses <strong>iken'</strong> — a question particle that marks information questions in Kanien'kéha. You have already encountered the answer vocabulary: the pronouns <em>í:'i</em> (I) and <em>í:se'</em> (you), which you learned in Unit 1.",
+          "Note that in Kanien'kéha, introducing yourself is not merely giving information — it is establishing a relationship. The name exchange is the first step in a longer sequence that includes clan, community, and family."
+        ],
+        "ped": "<strong>Freire's generative theme principle:</strong> Who we are is the first generative theme — the most immediate and meaningful content for any learner. This lesson is placed first in Unit 12 not because names are grammatically simple but because they are personally significant. LaFever's four domains are present: knowing the question and answer structure (Mental); producing it aloud and in writing (Physical); connecting one's name to identity and belonging (Emotional); situating naming within the Kanien'kehá:ka protocol of introduction (Spiritual). García & Li Wei (2014) note that names are often the first site where linguistic identity is asserted or erased — in residential schools, names were taken. Reclaiming your name in your language is a political act.",
+        "vocabIds": [
+          "ph05"
+        ],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": "ph05",
+            "prompt": "What does Kanié:ri iken'? mean?",
+            "sub": "",
+            "correct": "What is your name?",
+            "options": [
+              "What is your name?",
+              "Where are you from?",
+              "How are you?",
+              "What is your clan?"
+            ],
+            "cm": "Tho niioht! Kanié:ri iken'? — 'What is your name?' The particle iken' marks this as an information question. You will encounter iken' again in other question forms throughout this unit.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": "ph05",
+            "prompt": "You want to say 'My name is [your name]'. Which pronoun from Unit 1 anchors this sentence?",
+            "sub": "Think about who is speaking",
+            "correct": "í:'i — I / Me (first person singular)",
+            "options": [
+              "í:'i — I / Me (first person singular)",
+              "í:se' — You (second person singular)",
+              "raónha — He (third person male)",
+              "akaónha — She (third person female, respectful)"
+            ],
+            "cm": "Niawenhkó:wa! í:'i — I. Your name introduction is a first-person statement. The pronoun you learned in Lesson 1 of Unit 1 is the anchor of everything you say about yourself.",
+            "wm": "Please try again — who is speaking?"
+          },
+          {
+            "type": "fill",
+            "wid": "ph05",
+            "prompt": "Complete the question 'What is your name?'",
+            "sentence": "Kanié:ri ___?",
+            "correct": "iken'",
+            "hint": "ik",
+            "alts": [
+              "iken'",
+              "iken"
+            ],
+            "cm": "Tho niioht! Kanié:ri iken'? — the particle iken' turns a statement into an information question. It appears in many question forms in Kanien'kéha.",
+            "wm": "Please try again — the question particle starts with 'ik'."
+          },
+          {
+            "type": "mc",
+            "wid": "ph05",
+            "prompt": "In Kanien'kehá:ka protocol, giving your name is the first step in a longer introduction. What comes next after names are exchanged?",
+            "sub": "Think about what Kanien'kehá:ka introductions include",
+            "correct": "Clan, then community, then family connections",
+            "options": [
+              "Clan, then community, then family connections",
+              "Age, then occupation, then place of birth",
+              "Nothing — name exchange is the complete introduction",
+              "Greeting, then farewell, then departure"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! A full Kanien'kehá:ka introduction moves through name → clan → community → family. This unit covers the whole sequence. The structure reflects how Kanien'kehá:ka society is organised: clan membership and community belonging are not background details — they are who you are.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": "ph05",
+            "prompt": "Say this question aloud",
+            "sub": "Say it as a warm, genuine question — not a drill",
+            "word": "Kanié:ri iken'?",
+            "meaning": "What is your name?",
+            "hint": "Three syllables in the first word: Ka-NÍ-:ri. The long vowel on 'ni' is held. iken' is two syllables: Í-ken'. Rising intonation at the end signals the question."
+          },
+          {
+            "type": "story",
+            "wid": "ph05",
+            "prompt": "Your name in Kanien'kéha",
+            "sub": "",
+            "word": "Kanié:ri iken'?",
+            "meaning": "What is your name?",
+            "storyPrompt": "Kanié:ri iken'? — What is your name? In residential schools across Canada, Indigenous children were given English names and forbidden to use their own. Many Kanien'kehá:ka people today have both an English name and a Kanien'kéha name — a ceremonial name given at a naming ceremony, held within the clan. If you know your Kanien'kéha name, say it now. If you don't know it yet, that is part of the story this language is part of. What does it mean to be asked your name in a language that was taken from your family?"
+          }
+        ]
+      },
+      {
+        "id": "u11l1",
+        "title": "Lesson 47 — I Am From…",
+        "icon": "📍",
+        "sub": "Ka' nontáhse'? — naming where you come from",
+        "intro": [
+          "<em>Ka' nontáhse'?</em> — Where are you from? This question follows the name exchange in every Kanien'kehá:ka introduction. Community identity is not incidental — it tells the person you are meeting which longhouse, which political tradition, which dialect of the language you carry.",
+          "The answer draws on direction verbs and place vocabulary you have already encountered. The place name <em>Kanehsatà:ke</em> — which you studied in Unit 3, Lesson 14 — is one possible answer. <em>Kahnawà:ke</em>, <em>Akwesasne</em>, <em>Tyendinaga</em>, <em>Six Nations of the Grand River</em> are others.",
+          "Each community name is itself a Kanien'kéha word with a meaning. Knowing the etymology is knowing the history."
+        ],
+        "ped": "<strong>Place as identity:</strong> Tuck & Yang (2012) argue that land is not a metaphor for relationship — it is the relationship. Community names in Kanien'kéha encode geography, history, and belonging. This lesson treats place-naming as culturally primary rather than as conversational filler. LaFever's Spiritual domain is activated through the etymologies of community names; the Emotional domain through the personal significance of naming where you come from. Flores & Rosa (2015) are relevant here: the practice of replacing Indigenous place names with colonial ones is a raciolinguistic act — learning and using the Kanien'kéha names is a form of resistance.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "What does Ka' nontáhse'? mean?",
+            "sub": "",
+            "correct": "Where are you from?",
+            "options": [
+              "Where are you from?",
+              "Where are you going?",
+              "What is your name?",
+              "What is your clan?"
+            ],
+            "cm": "Tho niioht! Ka' nontáhse'? — Where are you from? The verb root -táhse' relates to origin and coming-from. You saw direction verbs in Unit 2 — this question draws on the same root.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Kanehsatà:ke is the Kanien'kéha name of a community often called by a colonial name in English. What is that colonial name?",
+            "sub": "This name matters — both of them",
+            "correct": "Oka",
+            "options": [
+              "Oka",
+              "Kahnawake",
+              "Cornwall",
+              "Châteauguay"
+            ],
+            "cm": "Niawenhkó:wa. Kanehsatà:ke — 'where the crust is on the sand' — is the Kanien'kéha name of the community known in colonial records as Oka. The 1990 Oka Crisis, in which Kanien'kehá:ka people defended their land and burial grounds against a golf course expansion, was named after the colonial place name. Using Kanehsatà:ke is an act of naming that belongs to the people who live there.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each Kanien'kehá:ka community to its location",
+            "sub": "All are places where Kanien'kéha is spoken today",
+            "pairs": [
+              {
+                "target": "Kanehsatà:ke",
+                "english": "Quebec, west of Montréal",
+                "wids": []
+              },
+              {
+                "target": "Kahnawà:ke",
+                "english": "Quebec, south shore of Montréal",
+                "wids": []
+              },
+              {
+                "target": "Akwesasne",
+                "english": "Ontario/Quebec/New York border",
+                "wids": []
+              },
+              {
+                "target": "Six Nations of the Grand River",
+                "english": "Ontario, near Brantford",
+                "wids": []
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Each community carries its own dialect features, its own political history, and its own revitalization programs. When someone tells you where they are from, they are giving you context for how they speak and who they are.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Kanien'kehá:ka communities span what is now the Canada-US border — Akwesasne sits in Ontario, Quebec, and New York simultaneously. What does this tell you about the border in relation to Kanien'kehá:ka territory?",
+            "sub": "A question about land and political geography",
+            "correct": "The border was drawn through Kanien'kehá:ka territory — it is a colonial imposition on a people whose land predates it",
+            "options": [
+              "The border was drawn through Kanien'kehá:ka territory — it is a colonial imposition on a people whose land predates it",
+              "Kanien'kehá:ka people chose to live in multiple countries",
+              "The border has always separated these communities",
+              "Akwesasne is an American community that extended into Canada"
+            ],
+            "cm": "Tho niioht. The Jay Treaty (1794) theoretically protects the right of Indigenous peoples to cross the Canada-US border freely. In practice, Akwesasne residents cross a national border imposed on their territory daily. The language — Kanien'kéha — does not stop at the border. The community does not stop at the border.",
+            "wm": "Please try again — think about who drew the border and when."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say this question aloud",
+            "sub": "",
+            "word": "Ka' nontáhse'?",
+            "meaning": "Where are you from?",
+            "hint": "Three syllables: Ka' non-TÁH-se'. The glottal stop after Ka' is a brief throat closure — do not skip it. The stress falls on táh."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Where are you from?",
+            "sub": "",
+            "word": "Ka' nontáhse'?",
+            "meaning": "Where are you from?",
+            "storyPrompt": "Ka' nontáhse'? — Where are you from? This question has more than one kind of answer. There is the community where you were born or raised. There is the territory your family comes from. There is the land your ancestors were removed from, or remained on against pressure to leave. For Kanien'kehá:ka people, 'where are you from' often holds all of these at once. Where are you from — in all the ways that question can be asked?"
+          }
+        ]
+      },
+      {
+        "id": "u11l2",
+        "title": "Lesson 48 — My Clan Is…",
+        "icon": "🐢",
+        "sub": "Ónia'karé:'a — the first thing that makes you who you are",
+        "intro": [
+          "In Kanien'kehá:ka society, your clan is not a hobby or an interest — it is the fundamental social identity you are born into. Clan membership is inherited matrilineally (through your mother), determines who you can marry, and organises political and ceremonial life in the longhouse.",
+          "<em>Ónia'karé:'a</em> — my clan. The three Kanien'kehá:ka clans are Turtle (<em>A'nó:wara</em>), Bear (<em>Ohkwá:ri</em>), and Wolf (<em>Okwáho</em>). You already know these animal words from Unit 6. Now you understand what it means that they are also people.",
+          "Introducing your clan is the third element of a full Kanien'kehá:ka introduction. It tells the person you are meeting your social position, your longhouse affiliation, and your ceremonial responsibilities."
+        ],
+        "ped": "<strong>Clan as social grammar:</strong> McCarty & Lee (2014) argue that language learning must honour the cultural institutions that give a language its social meaning. The clan system is not background information — it is the architecture of Kanien'kehá:ka society. This lesson treats clan vocabulary as socially primary. LaFever's Emotional and Spiritual domains are both activated: belonging to a clan is an emotional identity, and clan membership is the basis for ceremonial participation. Flores & Rosa (2015) are relevant in a different register: the matrilineal clan system — in which identity passes through women — directly challenges the patrilineal assumptions encoded in colonial legal structures (including the Indian Act's historical definition of 'status Indian').",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "How many clans do the Kanien'kehá:ka (Mohawk) have?",
+            "sub": "",
+            "correct": "Three — Turtle, Bear, and Wolf",
+            "options": [
+              "Three — Turtle, Bear, and Wolf",
+              "Six — one for each nation of the Haudenosaunee",
+              "Nine — three per moiety",
+              "One — the Turtle clan"
+            ],
+            "cm": "Tho niioht! Three clans: A'nó:wara (Turtle), Ohkwá:ri (Bear), Okwáho (Wolf). You learned all three animal names in Unit 6. Each nation of the Haudenosaunee Confederacy has its own set of clans; some clans (Turtle, Bear, Wolf) appear across multiple nations.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each clan name to its animal",
+            "sub": "You learned these animals in Unit 6 — now you know what else they are",
+            "pairs": [
+              {
+                "target": "A'nó:wara",
+                "english": "Turtle",
+                "wids": []
+              },
+              {
+                "target": "Ohkwá:ri",
+                "english": "Bear",
+                "wids": []
+              },
+              {
+                "target": "Okwáho",
+                "english": "Wolf",
+                "wids": []
+              }
+            ],
+            "cm": "Niawenhkó:wa! A'nó:wara, Ohkwá:ri, Okwáho — Turtle, Bear, Wolf. These words carry double weight: they name an animal and a people. When you say 'I am Bear Clan', you are speaking across the boundary between the human and animal worlds that the Haudenosaunee do not draw the way English speakers do.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Clan membership in Kanien'kehá:ka society is inherited through the mother's line (matrilineal). What does this mean for a child's clan identity?",
+            "sub": "",
+            "correct": "A child belongs to their mother's clan, regardless of their father's clan",
+            "options": [
+              "A child belongs to their mother's clan, regardless of their father's clan",
+              "A child belongs to their father's clan",
+              "A child can choose their clan at adolescence",
+              "Clan membership is assigned by the chief"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Matrilineal descent means identity passes through women. This is not a detail — it is the architecture of Kanien'kehá:ka political and social life. Clan mothers hold significant authority in the longhouse government. The Indian Act historically undermined this by imposing patrilineal 'status' definitions on Indigenous communities — a direct conflict with Kanien'kehá:ka social structure.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Why can two people of the same clan not marry each other in traditional Kanien'kehá:ka society?",
+            "sub": "This rule structures the entire social fabric",
+            "correct": "Clan members are considered family — the same clan is the same extended family, making marriage within the clan incest",
+            "options": [
+              "Clan members are considered family — the same clan is the same extended family, making marriage within the clan incest",
+              "It is an arbitrary rule with no social function",
+              "Only chiefs can decide who marries",
+              "The rule only applies to the Turtle clan"
+            ],
+            "cm": "Tho niioht. The clan exogamy rule — marrying outside your clan — ensures that every marriage creates a bond between different clan families, weaving the community together. The clans are the kinship grid of Kanien'kehá:ka society. When you know someone's clan, you know your relationship to them — even if you have never met.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": null,
+            "prompt": "Complete the phrase 'my clan'",
+            "sentence": "My clan is Ónia'karé:___",
+            "correct": "'a",
+            "hint": "'",
+            "alts": [
+              "'a",
+              "a"
+            ],
+            "cm": "Tho niioht! Ónia'karé:'a — my clan. The possessive prefix Ónia- marks 'my'; -karé:'a is the clan root. The glottal stop (') before the final 'a is part of the word.",
+            "wm": "Please try again — ends with a glottal stop and 'a."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say your clan affiliation aloud",
+            "sub": "Use whichever clan name applies to you — or practice all three",
+            "word": "Ónia'karé:'a A'nó:wara / Ohkwá:ri / Okwáho",
+            "meaning": "My clan is Turtle / Bear / Wolf",
+            "hint": "Ónia'karé:'a: OH-nia-ka-RÉ:-'a. The long vowel on ré: is held. Then name the clan: A'no:wara, Ohkwá:ri, or Okwáho."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Your clan",
+            "sub": "",
+            "word": "Ónia'karé:'a",
+            "meaning": "My clan",
+            "storyPrompt": "Ónia'karé:'a — my clan. If you know your Kanien'kehá:ka clan, you carry something specific and irreplaceable: a social identity that colonial governments tried to legislate out of existence through the Indian Act's definition of 'status', through residential school erasure of kinship knowledge, through the disruption of matrilineal transmission. If you know your clan — say it. If you don't know it yet — that too is part of this story. Who in your family might know? Who holds that knowledge for your family?"
+          }
+        ]
+      },
+      {
+        "id": "u11l3",
+        "title": "Lesson 49 — My Family",
+        "icon": "👨‍👩‍👧",
+        "sub": "Introducing the people you belong to",
+        "intro": [
+          "The fourth element of a Kanien'kehá:ka introduction is family. Not the nuclear family of the English-language tradition — but the extended family organised through the clan: your mother, her sisters (also your mothers), their children (your brothers and sisters), your grandmothers.",
+          "You learned kinship terms in Unit 2. This lesson puts them into the introduction sequence — into sentences, into first-person possession, into the context of meeting someone for the first time.",
+          "The conjunction <em>tánon</em> (and) appears here to connect family members: <em>iakóha tánon raóha</em> — my mother and my father. This is the first complex sentence structure you will use in a real introduction."
+        ],
+        "ped": "<strong>Kinship as relational grammar:</strong> García & Li Wei (2014) identify the family domain as one of the most significant for language vitality — when a language can be spoken across generations within families, it survives. This lesson reconnects Unit 2 kinship vocabulary to its social function: the introduction. Krashen's comprehensible input (+1) principle is active: familiar vocabulary (kinship terms) appears in a new, slightly more complex sentence structure (introduction sequence with tánon conjunction), giving learners the +1 challenge without overwhelming new vocabulary. LaFever's Emotional domain is primary — naming your family in Kanien'kéha is a relational act.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "What does tánon mean?",
+            "sub": "You have seen this word before",
+            "correct": "And — it joins two words or phrases",
+            "options": [
+              "And — it joins two words or phrases",
+              "But — it contrasts two ideas",
+              "Or — it offers a choice",
+              "Because — it gives a reason"
+            ],
+            "cm": "Tho niioht! tánon — and. It joins nouns, phrases, and clauses. iakóha tánon raóha = my mother and my father. You will use tánon throughout this introduction unit whenever you list more than one thing.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the kinship terms you learned in Unit 2",
+            "sub": "These are the words you need for a family introduction",
+            "pairs": [
+              {
+                "target": "iakóha",
+                "english": "My mother",
+                "wids": []
+              },
+              {
+                "target": "raóha",
+                "english": "My father",
+                "wids": []
+              },
+              {
+                "target": "iakní:ha",
+                "english": "My grandmother (maternal)",
+                "wids": []
+              },
+              {
+                "target": "raktsi'",
+                "english": "My brother (male speaker)",
+                "wids": []
+              }
+            ],
+            "cm": "Niawenhkó:wa! All kinship terms carry the possessive prefix — they are always 'my mother', 'my father', not free-standing nouns. This is the possessive system you learned in Unit 2 in action.",
+            "wm": "Please try again — these are from Unit 2."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "In Kanien'kehá:ka kinship, your mother's sisters are also considered your mothers — not your aunts. What does this tell you about how kinship works in Kanien'kehá:ka culture?",
+            "sub": "Think about what the kinship system encodes",
+            "correct": "Kinship categories are broader than the nuclear family — the clan functions as an extended family with shared responsibilities",
+            "options": [
+              "Kinship categories are broader than the nuclear family — the clan functions as an extended family with shared responsibilities",
+              "Kanien'kéha has no word for aunt",
+              "The language makes an error by calling aunts 'mothers'",
+              "This only applies to ceremonial contexts"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The iroquoian kinship system (sometimes called the Iroquois kinship system by anthropologists) groups parallel relatives together — your mother and her sisters are all 'mothers'; your father and his brothers are all 'fathers'. This is not a linguistic accident — it reflects a social system where childrearing, responsibility, and belonging are distributed across a clan family, not confined to one household.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": null,
+            "prompt": "Complete the phrase 'my mother and my father'",
+            "sentence": "iakóha ___ raóha",
+            "correct": "tánon",
+            "hint": "t",
+            "alts": [
+              "tánon",
+              "tanon"
+            ],
+            "cm": "Tho niioht! iakóha tánon raóha — my mother and my father. tánon is the conjunction that joins any two elements in Kanien'kéha.",
+            "wm": "Please try again — the conjunction starts with 't'."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say this phrase aloud",
+            "sub": "",
+            "word": "iakóha tánon raóha",
+            "meaning": "My mother and my father",
+            "hint": "ia-KÓ-ha TÁ-non ra-Ó-ha. Three words with natural pauses between them. The stress on each falls on the capitalised syllable."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Your family in this language",
+            "sub": "",
+            "word": "iakóha tánon raóha",
+            "meaning": "My mother and my father",
+            "storyPrompt": "iakóha tánon raóha — my mother and my father. Think about the family members you would name in an introduction. Who are the people you belong to? For many Kanien'kehá:ka families, the transmission of language was interrupted — grandparents or great-grandparents who were forbidden to speak it, parents who never learned it, knowledge that skipped a generation or two. Saying these words in Kanien'kéha may be something no one in your family has done for decades. What does that feel like?"
+          }
+        ]
+      },
+      {
+        "id": "u11l4",
+        "title": "Lesson 50 — How Old Are You?",
+        "icon": "🌿",
+        "sub": "Kahiatónhkwa tsi ní:se'? — counting winters",
+        "intro": [
+          "Kanien'kéha does not count years of age — it counts <strong>winters</strong>. <em>Kahiatónhkwa tsi ní:se'?</em> — How many winters are you? The word for winter here encodes the seasonal cycle that structures Haudenosaunee ceremonial life.",
+          "You learned numbers 1–100 in Units 4 and 9. Answering this question means combining number vocabulary with the winter-counting construction. The numbers are the same; the frame is new.",
+          "This is also a lesson about how a language's vocabulary reveals its relationship to the world. Counting winters — not years — is not a linguistic accident. It reflects which part of the seasonal cycle marks the passage of time."
+        ],
+        "ped": "<strong>Number vocabulary in cultural context:</strong> Nation (2001) identifies contextualised reuse of known vocabulary as a high-value acquisition activity — learners consolidate number knowledge while acquiring new sentence structure. The winter-counting frame is also a direct application of LaFever's Spiritual domain: the concept of counting winters rather than years situates age within the ceremonial and seasonal cycle. Chew, Leonard & Rosenblum (2023) argue that Indigenous language pedagogy should reveal the worldview encoded in vocabulary — this lesson does exactly that.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "What does Kahiatónhkwa tsi ní:se'? mean?",
+            "sub": "",
+            "correct": "How many winters are you? (How old are you?)",
+            "options": [
+              "How many winters are you? (How old are you?)",
+              "What season is it?",
+              "How are you?",
+              "Where are you going?"
+            ],
+            "cm": "Tho niioht! Kahiatónhkwa tsi ní:se'? — literally 'how many winters are you?' Kanien'kéha counts age in winters. The word Kahiatónhkwa means 'how many'; tsi ní:se' is 'that you are'. You already know ní:se' — it is the second-person singular pronoun from Unit 1.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Why does Kanien'kéha count age in winters rather than years?",
+            "sub": "Think about the Haudenosaunee ceremonial calendar",
+            "correct": "Winter marks the beginning of the ceremonial year — the Midwinter Ceremony is the Haudenosaunee New Year, making winter the most significant seasonal threshold",
+            "options": [
+              "Winter marks the beginning of the ceremonial year — the Midwinter Ceremony is the Haudenosaunee New Year, making winter the most significant seasonal threshold",
+              "It is an error in the language",
+              "There was no word for 'year' in Kanien'kéha",
+              "It is only used in formal contexts"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! The Midwinter Ceremony — Tsiothorákson — marks the Haudenosaunee New Year. Counting winters is counting ceremonial cycles. The choice of winter as the unit of time is not arbitrary — it encodes the ceremonial calendar into everyday speech. When you say how old you are, you are locating yourself in the seasonal and spiritual cycle.",
+            "wm": "Please try again — think about which ceremony marks the new year."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "You are 30 years old. Which number from Unit 4 / Unit 9 do you use to answer Kahiatónhkwa tsi ní:se'?",
+            "sub": "The numbers work the same way — only the frame changes",
+            "correct": "Áhsen niáhte (30)",
+            "options": [
+              "Áhsen niáhte (30)",
+              "Oiá:ner (9)",
+              "Tékeni (2)",
+              "Énska (1)"
+            ],
+            "cm": "Tho niioht! Áhsen niáhte — 30 winters. The number system you learned in Units 4 and 9 applies directly to age. The frame is Kanien'kehá:ka; the numbers you already know.",
+            "wm": "Please try again — which number means 30?"
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say the age question aloud",
+            "sub": "",
+            "word": "Kahiatónhkwa tsi ní:se'?",
+            "meaning": "How many winters are you?",
+            "hint": "Ka-hia-TÓN-hkwa (4 syllables) — tsi NÍ:-se' (3 syllables). The long vowel on NÍ: is held. Rising intonation at the end for the question."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Counting your winters",
+            "sub": "",
+            "word": "Kahiatónhkwa tsi ní:se'?",
+            "meaning": "How many winters are you?",
+            "storyPrompt": "Kahiatónhkwa tsi ní:se'? — how many winters are you? Think of your age not as a number of years but as a number of winters survived, of Midwinter Ceremonies passed, of seasons turned. What does your age feel like when counted in winters? The language does not just give you a different word for 'year' — it gives you a different relationship to time."
+          }
+        ]
+      },
+      {
+        "id": "u11l5",
+        "title": "Lesson 51 — Where Do You Live?",
+        "icon": "🏡",
+        "sub": "Locative expressions and the language of home",
+        "intro": [
+          "'Where do you live?' is the fifth element of a full introduction. In Kanien'kéha, location is expressed through <strong>locative suffixes</strong> — added to place names or nouns to mean 'at', 'in', or 'on'.",
+          "You already know several place names: <em>Kanehsatà:ke</em>, <em>Kahnawà:ke</em>, <em>Akwesasne</em>. Adding the locative suffix <em>-ke</em> produces 'at Kanehsatà:ke', 'at Kahnawà:ke'. This suffix is already visible in the place names themselves — <em>Kanehsatà:ke</em> ends in -ke.",
+          "This lesson introduces the locative suffix system and the question <em>tsi niakonónhsoten</em> — where I live. It is a short lesson with a specific grammatical focus, completing the introduction sequence."
+        ],
+        "ped": "<strong>Locative morphology as place-name analysis:</strong> Mithun (1982) identifies the locative suffix as one of the most productive and transparent morphological features of Kanien'kéha — learners who understand it can immediately analyse dozens of place names they have already encountered. This lesson therefore does double work: it teaches a grammatical rule and it deepens understanding of vocabulary from earlier units. LaFever's Mental domain is primary; the Spiritual domain is activated through the observation that place names themselves carry the locative — the land has already been named, and the language encodes presence on it.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "The locative suffix -ke means 'at' or 'in'. Look at the place name Kanehsatà:ke. What does this tell you?",
+            "sub": "Use your morphological analysis skills",
+            "correct": "Kanehsatà:ke already contains the locative suffix — the place name means 'at/in the place where the crust is on the sand'",
+            "options": [
+              "Kanehsatà:ke already contains the locative suffix — the place name means 'at/in the place where the crust is on the sand'",
+              "The -ke ending is decorative",
+              "The -ke suffix only appears on verbs",
+              "Kanehsatà:ke is not a Kanien'kéha word"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Many Kanien'kéha place names end in -ke — they are already locative expressions. You are not adding 'at Kanehsatà:ke'; the word already means 'at this place'. The locative is built into the landscape's name.",
+            "wm": "Please try again — look at the ending of the place name."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "How do you express 'at Kahnawà:ke' using the locative suffix?",
+            "sub": "Apply the -ke rule",
+            "correct": "Kahnawà:ke — it already ends in the locative suffix",
+            "options": [
+              "Kahnawà:ke — it already ends in the locative suffix",
+              "Kahnawà:ke-ke",
+              "Kahnawà:ke-ake",
+              "You cannot use the locative with Kahnawà:ke"
+            ],
+            "cm": "Tho niioht! Like Kanehsatà:ke, Kahnawà:ke already ends in -ke. The locative is part of the name. You do not add another -ke.",
+            "wm": "Please try again — look at the ending."
+          },
+          {
+            "type": "fill",
+            "wid": null,
+            "prompt": "Complete the phrase 'where I live'",
+            "sentence": "tsi niakonón___",
+            "correct": "hsoten",
+            "hint": "h",
+            "alts": [
+              "hsoten"
+            ],
+            "cm": "Tho niioht! tsi niakonónhsoten — where I live. The verb root -nónhso- relates to the house or home; -ten marks a locative condition. You first saw -nónhso- in household vocabulary in Unit 7.",
+            "wm": "Please try again — starts with 'h'."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say this phrase aloud",
+            "sub": "",
+            "word": "tsi niakonónhsoten",
+            "meaning": "Where I live",
+            "hint": "tsi nia-ko-NÓN-hso-ten. Five syllables. The stress falls on NÓN. The -hso- cluster is produced as a single smooth unit."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Home",
+            "sub": "",
+            "word": "tsi niakonónhsoten",
+            "meaning": "Where I live",
+            "storyPrompt": "tsi niakonónhsoten — where I live. Home is not neutral. For Kanien'kehá:ka people, the question of where you live is also the question of where your community is, where your land is, where you were allowed to remain or forced to leave. Many Kanien'kehá:ka families were displaced from their original territories and resettled in the communities that exist today. Where you live now may not be where your family originally lived. What is the relationship between 'where I live' and 'where I am from'?"
+          }
+        ]
+      },
+      {
+        "id": "u11l6",
+        "title": "Lesson 52 — Introduction at a Gathering",
+        "icon": "🌿",
+        "sub": "The full sequence in ceremonial and community context",
+        "intro": [
+          "A Kanien'kehá:ka introduction is not casual small talk. In a gathering — at the longhouse, at a community meeting, at a ceremony — introducing yourself fully is a protocol. It tells the people present who you are in every way that matters: your name, your community, your clan, your family, your home.",
+          "This lesson brings together all five elements you have learned and places them in context. The sequence is not arbitrary — it follows a social logic. Name first because that is how you are known. Clan next because that is your social position. Community because that is your political home. Family because that is your kinship web. Location because that is where you stand.",
+          "Practising the full introduction sequence is practising what it means to be present as a Kanien'kehá:ka person."
+        ],
+        "ped": "<strong>Integration as the goal of the unit:</strong> Freire (1970) argued that language learning becomes real when it serves a genuine communicative function in the learner's world. The full introduction sequence is exactly that: a function that Kanien'kehá:ka people use, that has a specific social context, and that a learner can deploy in a real community setting. LaFever's four domains converge here: the learner must know the vocabulary (Mental), produce it fluently (Physical), connect it to their own identity (Emotional), and understand its ceremonial and social weight (Spiritual). Nation's (2001) principle of productive control is the measure: can the learner produce the full sequence without support?",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "What is the correct order for a full Kanien'kehá:ka introduction?",
+            "sub": "You have learned all five elements — put them in order",
+            "correct": "Name → Clan → Community → Family → Location",
+            "options": [
+              "Name → Clan → Community → Family → Location",
+              "Age → Name → Clan → Location → Family",
+              "Greeting → Name → Age → Clan → Farewell",
+              "Community → Name → Family → Clan → Greeting"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Name → Clan → Community → Family → Location. This sequence has a social logic: you move from personal identity (name) to social category (clan) to political home (community) to relational web (family) to physical location (where I live). The sequence itself encodes how Kanien'kehá:ka society is organised.",
+            "wm": "Please try again — think about what comes first in a Kanien'kehá:ka introduction."
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match each introduction element to its question",
+            "sub": "You have learned all of these questions",
+            "pairs": [
+              {
+                "target": "Kanié:ri iken'?",
+                "english": "What is your name?",
+                "wids": []
+              },
+              {
+                "target": "Ka' nontáhse'?",
+                "english": "Where are you from?",
+                "wids": []
+              },
+              {
+                "target": "Kahiatónhkwa tsi ní:se'?",
+                "english": "How many winters are you?",
+                "wids": []
+              }
+            ],
+            "cm": "Tho niioht! You now know the three core questions of a Kanien'kehá:ka introduction. These questions, asked and answered, are the beginning of every real conversation.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "At a community gathering, you hear someone begin their introduction with their clan rather than their name. What might this tell you?",
+            "sub": "Think about context and social meaning",
+            "correct": "They may be speaking in a formal or ceremonial register where clan identity is the most socially relevant introduction",
+            "options": [
+              "They may be speaking in a formal or ceremonial register where clan identity is the most socially relevant introduction",
+              "They have forgotten their own name",
+              "The introduction order is random",
+              "Clans are always introduced before names in Kanien'kéha"
+            ],
+            "cm": "Niawenhkó:wa. Register matters in Kanien'kéha as in all languages. The introduction sequence we have learned is standard; specific contexts (condolence ceremony, political address, introducing an elder) may require adjustments. Being a fluent speaker means knowing the standard and knowing when and how it shifts.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Deliver your full introduction aloud",
+            "sub": "All five elements — name, community, clan, family, location",
+            "word": "[Your name] — [your community] — [your clan] — [your family] — [where you live]",
+            "meaning": "A complete Kanien'kehá:ka introduction",
+            "hint": "Take your time. This is not a speed exercise. Each element of the introduction deserves a breath before it. In a real gathering, you would speak slowly and clearly so everyone present can hear and receive what you are saying."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Introducing yourself",
+            "sub": "",
+            "word": "Shé:kon",
+            "meaning": "Hello / I greet you",
+            "storyPrompt": "You have now learned to introduce yourself in Kanien'kéha — your name, your community, your clan, your family, where you live. This is not a rehearsed script. It is who you are, said in the language of the people you come from. If you are Kanien'kehá:ka, this introduction connects you to every person who has given this same introduction in this language for centuries. If you are not Kanien'kehá:ka and you are learning this language, you are bearing witness to a form of human identity that colonial history tried to erase. What does it mean to be able to say this — or to hear it said?"
+          }
+        ]
+      },
+      {
+        "id": "u11l7",
+        "title": "Lesson 53 — Introducing Others",
+        "icon": "🤝",
+        "sub": "Third-person introductions using relational prefixes",
+        "intro": [
+          "You can now introduce yourself. The next skill is introducing someone else — a family member, a friend, a visitor to a gathering. This requires the <strong>third-person forms</strong> you have been building since Unit 1 and the <strong>relational prefix system</strong> from Unit 11.",
+          "Introducing someone else is also a social act with protocol. In Kanien'kehá:ka communities, introducing an elder or a visitor to a gathering is done with care — you give their name, their clan, their community. You are establishing who they are in the room.",
+          "The question <em>Ónhka ne ráonha?</em> — Who is he? — uses the pronoun <em>raónha</em> (he) from Unit 1. You have everything you need."
+        ],
+        "ped": "<strong>Third-person forms as relational grammar:</strong> Nation (2001) identifies productive extension of a known pattern to new contexts as a key consolidation activity. The third-person introduction draws on pronouns (Unit 1), kinship terms (Unit 2), relational prefixes (Unit 11), and the introduction sequence (this unit). It is a convergence exercise. LaFever's Emotional domain is activated by the social weight of introducing someone — you are responsible for how they are received in the room.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "What does Ónhka ne ráonha? mean?",
+            "sub": "You know ráonha from Unit 1",
+            "correct": "Who is he?",
+            "options": [
+              "Who is he?",
+              "Who is she?",
+              "Where is he?",
+              "What is his name?"
+            ],
+            "cm": "Tho niioht! Ónhka ne ráonha? — Who is he? Ónhka is the question word for 'who'; ne is a particle linking the question word to the predicate; ráonha is 'he' from Unit 1. The same structure with akaónha or aónha gives you 'who is she?'",
+            "wm": "Please try again — what pronoun do you know from Unit 1?"
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "To introduce a woman respectfully, which pronoun from Unit 1 do you use?",
+            "sub": "Think about the formal/informal distinction",
+            "correct": "akaónha — she (respectful, for elders and people of authority)",
+            "options": [
+              "akaónha — she (respectful, for elders and people of authority)",
+              "aónha — she (informal, for familiars and animals)",
+              "raónha — he",
+              "í:'i — I"
+            ],
+            "cm": "Niawenhkó:wa! akaónha is the respectful third-person female pronoun — the one you use for elders, clan mothers, and people of authority. In an introduction at a gathering, choosing akaónha rather than aónha signals respect. The grammar encodes the relationship you are establishing.",
+            "wm": "Please try again — which she-pronoun marks respect?"
+          },
+          {
+            "type": "fill",
+            "wid": null,
+            "prompt": "Complete the question 'Who is she?'",
+            "sentence": "Ónhka ne ___ónha?",
+            "correct": "aka",
+            "hint": "a",
+            "alts": [
+              "aka"
+            ],
+            "cm": "Tho niioht! Ónhka ne akaónha? — Who is she (respectful)? The prefix aka- marks the respectful female form. You learned this in Lesson 1 of Unit 1.",
+            "wm": "Please try again — the respectful female prefix starts with 'a'."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say this question aloud",
+            "sub": "",
+            "word": "Ónhka ne ráonha?",
+            "meaning": "Who is he?",
+            "hint": "ÓN-hka (2 syllables) — ne (1 syllable) — rá-ON-ha (3 syllables). The stress in ráonha falls on ON. Rising intonation for the question."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Introducing someone",
+            "sub": "",
+            "word": "Ónhka ne ráonha?",
+            "meaning": "Who is he?",
+            "storyPrompt": "Ónhka ne ráonha? — Who is he? Think of someone in your life you would want to introduce in Kanien'kéha — at a gathering, to your family, to a community. What would you say about them? Their name, their community, their clan if you know it, their relationship to you. To introduce someone is to bring them into a community of recognition. Who do you want to bring in?"
+          }
+        ]
+      },
+      {
+        "id": "u11l8",
+        "title": "Lesson 54 — Responding to Introductions",
+        "icon": "👂",
+        "sub": "Listening, affirming, and asking follow-up questions",
+        "intro": [
+          "An introduction is a dialogue, not a monologue. When someone introduces themselves, you respond — with recognition, with affirmation, with follow-up questions. This lesson covers the listening and response side of the introduction exchange.",
+          "You already know the response vocabulary: <em>Niawenhkó:wa</em> (thank you), <em>Io'nikonhraién:ta'ne</em> (it makes my mind happy / I am pleased), <em>Tho niioht</em> (that is right / good). These phrases do double work: they affirm what you have heard and they keep the conversation moving.",
+          "Echo questions — repeating back part of what someone said as a question — are a natural feature of Kanien'kéha conversation. This lesson introduces them."
+        ],
+        "ped": "<strong>Listening comprehension as active production:</strong> Krashen (1982) identifies comprehensible input as the primary driver of acquisition, but input must be processed actively to be acquired. Response strategies — affirmation, echo questions, follow-up — are the learner's tools for making input comprehensible and for signalling that communication is happening. LaFever's Emotional domain is central: responding to an introduction is a relational act, not just a linguistic one. García & Li Wei (2014) note that translanguaging learners often have strong receptive skills before productive ones — this lesson meets learners where they are and gives them tools to participate even when full production is not yet available.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Someone has just introduced themselves and told you their clan. Which response phrase signals both acknowledgement and appreciation?",
+            "sub": "You know these phrases from earlier units",
+            "correct": "Io'nikonhraién:ta'ne — it makes my mind happy / I am pleased to know you",
+            "options": [
+              "Io'nikonhraién:ta'ne — it makes my mind happy / I am pleased to know you",
+              "Iáh tó:kens — not so well",
+              "Onen' ki' wáhi — that is all",
+              "Tó:ka' — not quite / no"
+            ],
+            "cm": "Tho niioht! Io'nikonhraién:ta'ne — this phrase, which you first saw in Unit 1, means 'it makes my mind happy'. Used in response to an introduction, it acknowledges what you have heard and expresses genuine pleasure at the meeting. It is a warm, relational response — not just 'ok'.",
+            "wm": "Please try again — which phrase expresses being pleased?"
+          },
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Match the response phrase to its function in a conversation",
+            "sub": "",
+            "pairs": [
+              {
+                "target": "Niawenhkó:wa",
+                "english": "Thank you — acknowledging what was shared",
+                "wids": []
+              },
+              {
+                "target": "Tho niioht",
+                "english": "That's right / Good — affirming understanding",
+                "wids": []
+              },
+              {
+                "target": "Io'nikonhraién:ta'ne",
+                "english": "It makes my mind happy — expressing pleasure at the introduction",
+                "wids": []
+              },
+              {
+                "target": "Shé:kon",
+                "english": "Hello — re-opening the greeting after the introduction",
+                "wids": []
+              }
+            ],
+            "cm": "Niawenhkó:wa! These four phrases are your response toolkit. Every one of them appeared in earlier units — this lesson gives them a new social context: the introduction exchange.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "Someone tells you they are Wolf Clan (Okwáho). You want to ask a follow-up question about their family. Which question from this unit would you use?",
+            "sub": "Think about what you want to know",
+            "correct": "Kanié:ri iken'? — to ask the name of a family member they mentioned",
+            "options": [
+              "Kanié:ri iken'? — to ask the name of a family member they mentioned",
+              "Kahiatónhkwa tsi ní:se'? — to ask their age",
+              "Ka' nontáhse'? — to ask where they are from again",
+              "Tho niioht — no question, just affirm"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Follow-up questions move the conversation forward. Kanié:ri iken'? — what is your name? — can be directed at a family member they mentioned. Follow-up questions show you were listening. They are the difference between a formal exchange and a real conversation.",
+            "wm": "Please try again — what do you want to learn more about?"
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Say this response aloud",
+            "sub": "Warm, genuine, unhurried",
+            "word": "Io'nikonhraién:ta'ne",
+            "meaning": "It makes my mind happy / I am very pleased",
+            "hint": "io'-ni-kon-hraién-ta'-ne — six syllables. The stress falls on hraién. This is a long word, but one you have seen many times. Say it slowly and mean it."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Receiving an introduction",
+            "sub": "",
+            "word": "Io'nikonhraién:ta'ne",
+            "meaning": "It makes my mind happy",
+            "storyPrompt": "Io'nikonhraién:ta'ne — it makes my mind happy. When you receive an introduction in Kanien'kéha — when someone tells you their name, their clan, their community — what are you being given? You are being trusted with who they are. In a language that was forbidden, that was beaten out of children, that colonial governments tried to silence — hearing someone introduce themselves in Kanien'kéha is not small. What does it feel like to receive that?"
+          }
+        ]
+      },
+      {
+        "id": "u11l9",
+        "title": "Lesson 55 — Full Introduction Dialogue",
+        "icon": "💬",
+        "sub": "Two people meeting — the complete exchange",
+        "intro": [
+          "This lesson is a production challenge. Everything you have learned in Unit 12 comes together in a single dialogue: two people meeting, exchanging the full introduction sequence — name, community, clan, family, location — and responding to each other.",
+          "You will not be given new vocabulary here. You will be asked to produce what you know in a coherent, connected sequence. This is what speaking Kanien'kéha looks like.",
+          "If parts of the sequence are still uncertain, return to the relevant lesson. The goal is fluency in this sequence — not perfection, but flow."
+        ],
+        "ped": "<strong>Productive synthesis as unit endpoint:</strong> Nation (2001) identifies the ability to use vocabulary in extended, contextualised discourse as the highest level of productive control. This lesson is the unit's endpoint: learners demonstrate productive mastery of the full introduction sequence by producing it in a dialogue context. LaFever's all four domains are present simultaneously: knowing what to say (Mental), saying it (Physical), meaning it — connecting it to real identity (Emotional), and understanding the social and ceremonial weight of the exchange (Spiritual). Freire's (1970) principle that language learning must be real and functional is the measure: can the learner actually do this in a community context?",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "match",
+            "wid": null,
+            "prompt": "Build the opening of a full introduction dialogue",
+            "sub": "Put the exchanges in the correct order",
+            "pairs": [
+              {
+                "target": "Shé:kon, tó:kens?",
+                "english": "Hello, how are you?",
+                "wids": []
+              },
+              {
+                "target": "Io'tenhró:ton",
+                "english": "I am well",
+                "wids": []
+              },
+              {
+                "target": "Kanié:ri iken'?",
+                "english": "What is your name?",
+                "wids": []
+              },
+              {
+                "target": "Ka' nontáhse'?",
+                "english": "Where are you from?",
+                "wids": []
+              }
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Greeting → wellbeing → name → community. This is the opening sequence of any Kanien'kehá:ka introduction. You have just produced the first four moves of a real conversation.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "After names and communities have been exchanged, which element comes next in the introduction sequence?",
+            "sub": "",
+            "correct": "Clan — Ónia'karé:'a [clan name]",
+            "options": [
+              "Clan — Ónia'karé:'a [clan name]",
+              "Age — Kahiatónhkwa tsi ní:se'?",
+              "Farewell — Onen' ki' wáhi",
+              "Family — kinship terms"
+            ],
+            "cm": "Tho niioht! After community comes clan — the social category that tells the person you are meeting your longhouse affiliation and your kinship position. Ónia'karé:'a [clan name] — my clan is [Turtle / Bear / Wolf].",
+            "wm": "Please try again — what comes after community?"
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "You have just completed your full introduction. The person you are speaking with responds: Io'nikonhraién:ta'ne. What do they mean?",
+            "sub": "",
+            "correct": "They are pleased to meet you — 'it makes my mind happy'",
+            "options": [
+              "They are pleased to meet you — 'it makes my mind happy'",
+              "They did not understand you",
+              "They want you to repeat your introduction",
+              "They are ending the conversation"
+            ],
+            "cm": "Niawenhkó:wa! Io'nikonhraién:ta'ne — it makes my mind happy. This is the warmest possible response to an introduction. You have been received. The exchange is complete.",
+            "wm": "Please try again."
+          },
+          {
+            "type": "audio",
+            "wid": null,
+            "prompt": "Deliver your complete introduction aloud",
+            "sub": "All five elements, in sequence, at a natural pace",
+            "word": "Shé:kon — [name] — [community] — [clan] — [family] — [location]",
+            "meaning": "A complete Kanien'kehá:ka self-introduction",
+            "hint": "Take a breath before each element. In a real community context, each part of the introduction would be said clearly and distinctly, with space for the listener to receive it. This is not a race. You are introducing yourself as a Kanien'kehá:ka person."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "The full exchange",
+            "sub": "",
+            "word": "Shé:kon",
+            "meaning": "Hello / I greet you",
+            "storyPrompt": "You have learned to introduce yourself in Kanien'kéha. You have learned the five elements that make up who you are in Kanien'kehá:ka social life — name, community, clan, family, home. You have learned to ask those questions of someone else, and to receive their answers with warmth. This is not a small thing. Across Canada, in residential schools, children were punished for speaking this language and stripped of the names, clans, and community connections you have been practicing in this unit. Every time this introduction is given in Kanien'kéha, something is being restored. Onen' ki' wáhi."
+          }
+        ]
+      },
+      {
+        "id": "u11l10",
+        "title": "Lesson 56 — Dialect Variation in Introductions",
+        "icon": "🗺️",
+        "sub": "How introduction phrases vary across Kanien'kehá:ka communities",
+        "intro": [
+          "The introduction sequence you have learned follows Kanehsatà:ke / Kahnawà:ke conventions. Across Kanien'kehá:ka communities, pronunciation, vocabulary, and even some structures vary.",
+          "In Akwesasne, the <strong>r → l</strong> alternation you have seen throughout the course appears throughout introduction vocabulary: <em>raónha</em> becomes <em>laónha</em>, <em>ráonha</em> becomes <em>láonha</em>. In Ontario dialects (Six Nations, Tyendinaga), <strong>i → y</strong> alternations appear.",
+          "All of these are correct. None is more standard than another. A speaker of any Kanien'kehá:ka dialect who hears you give this introduction will understand you and will know you have learned their language — not a colonial substitute for it."
+        ],
+        "ped": "<strong>Dialect as asset:</strong> García & Li Wei (2014) argue that treating dialect variation as a resource rather than a problem is central to a translanguaging pedagogy. Flores & Rosa (2015) are relevant here too: the ideology that positions one dialect as 'correct' and others as 'errors' is a raciolinguistic construction. This lesson explicitly names and validates all Kanien'kehá:ka dialect variants and positions the learner as someone who navigates this variation — not as a judge of which form is right. LaFever's Spiritual domain is present: dialects are the living expression of distinct community histories.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "In Akwesasne Kanien'kéha, raónha (he) becomes what?",
+            "sub": "You have seen this alternation throughout the course",
+            "correct": "laónha — the r → l alternation in Akwesasne",
+            "options": [
+              "laónha — the r → l alternation in Akwesasne",
+              "waónha",
+              "naónha",
+              "raónha — it stays the same"
+            ],
+            "cm": "Tho niioht! The r → l alternation in Akwesasne is a systematic dialect feature, not an error. Bonvillain (1984) documents this as a consistent, community-wide phonological pattern. Laónha is as correct as raónha — they are the same word in two dialects of the same language.",
+            "wm": "Please try again — what does r become in Akwesasne?"
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "In Six Nations and Tyendinaga (Ontario) dialects, í:'i (I) sometimes appears as what?",
+            "sub": "Think about the i/y alternation you have seen in the course",
+            "correct": "ý:'i — the i → y alternation in Ontario dialects",
+            "options": [
+              "ý:'i — the i → y alternation in Ontario dialects",
+              "é:'i",
+              "á:'i",
+              "í:'i — it stays the same everywhere"
+            ],
+            "cm": "Niawenhkó:wa! ý:'i — the i → y alternation in Ontario dialects is documented in CBC Original Voices materials and Six Nations curriculum resources. If you learned í:'i, you are correct. If you learned ý:'i, you are also correct. Both are accepted throughout this app.",
+            "wm": "Please try again — what does i become in Ontario dialects?"
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "A learner from Kahnawà:ke hears an Akwesasne speaker say laónha instead of raónha. They think the Akwesasne speaker has made an error. What is wrong with this response?",
+            "sub": "Apply the framework of dialect as asset",
+            "correct": "laónha is not an error — it is the correct form in Akwesasne dialect, a systematic community-level phonological feature",
+            "options": [
+              "laónha is not an error — it is the correct form in Akwesasne dialect, a systematic community-level phonological feature",
+              "The Akwesasne speaker has made an error",
+              "Only one form can be correct",
+              "Akwesasne Kanien'kéha is a different language"
+            ],
+            "cm": "Io'nikonhraién:ta'ne! Treating a dialect feature as an error applies the logic of standardisation — the idea that one variety is 'correct' and others are deviations. This is a raciolinguistic ideology (Flores & Rosa, 2015) that has been used to delegitimise Indigenous speech communities. Akwesasne Kanien'kéha is fully valid. laónha is fully correct.",
+            "wm": "Please try again — is a dialect feature an error?"
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Dialect and belonging",
+            "sub": "",
+            "word": "raónha / laónha",
+            "meaning": "He (Kanehsatà:ke / Akwesasne)",
+            "storyPrompt": "raónha or laónha — the same word in two communities, two dialects, two histories. Akwesasne straddles the Canada-US border; Kanehsatà:ke is west of Montréal; Kahnawà:ke is on the south shore. These communities have different political histories, different relationships to Quebec and Ontario and New York, different language revitalization programs. And yet they speak the same language — with variation that reflects their distinct histories. When you hear a Kanien'kéha speaker whose dialect differs from what you have learned, what do you hear — difference or relation?"
+          }
+        ]
+      },
+      {
+        "id": "u11l11",
+        "title": "Lesson 57 — Writing & Reading Introductions",
+        "icon": "✍️",
+        "sub": "Recognising and producing introduction vocabulary in Kanien'kéha orthography",
+        "intro": [
+          "You have been reading Kanien'kéha throughout this course. This lesson makes the orthography of introduction vocabulary explicit — the accent marks, glottal stops, long vowels, and nasal vowels that distinguish meaning.",
+          "Introduction vocabulary contains several orthographic challenges: the glottal stop in <em>Kanié:ri iken'</em>, the long vowel in <em>Ónia'karé:'a</em>, the nasal vowel in <em>tánon</em>. Getting these right in writing is part of respecting the language — the marks are not decorative.",
+          "This lesson prepares you for Unit 30, which covers the full Kanien'kéha orthographic system. For now, the focus is on the specific orthographic features of introduction vocabulary."
+        ],
+        "ped": "<strong>Orthography as respect:</strong> The decision to teach orthography carefully — not to strip accent marks for 'simplicity' — follows the position of Kanien'kehá:ka language custodians that accurate orthography is part of language respect. Mithun (1982) notes that Kanien'kéha orthographic distinctions (length, nasalisation, glottalization) are phonemically contrastive — they change meaning, not just sound. Flores & Rosa (2015) are relevant: the practice of simplifying Indigenous language orthography for learners often reflects an assumption that the 'complexity' is an obstacle rather than a feature. LaFever's Mental and Physical domains are primary in this lesson.",
+        "vocabIds": [],
+        "exercises": [
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "In Kanié:ri iken'?, there is an apostrophe at the end of iken'. What does this apostrophe represent?",
+            "sub": "You learned this in the Sounds & Syllables section",
+            "correct": "A glottal stop — a full consonant, not punctuation",
+            "options": [
+              "A glottal stop — a full consonant, not punctuation",
+              "A possessive marker",
+              "A punctuation mark with no pronunciation",
+              "An accent mark"
+            ],
+            "cm": "Tho niioht! The apostrophe in Kanien'kéha orthography represents the glottal stop [ʔ] — a full consonant produced by briefly closing the throat, like the pause in English 'uh-oh'. It is not punctuation. In iken', the glottal stop closes the word. Omitting it changes the word.",
+            "wm": "Please try again — what does the apostrophe represent in Kanien'kéha?"
+          },
+          {
+            "type": "mc",
+            "wid": null,
+            "prompt": "In Ónia'karé:'a, what does the colon (:) after ré indicate?",
+            "sub": "The colon appears throughout Kanien'kéha vocabulary",
+            "correct": "A long vowel — the e is held approximately twice as long as a short vowel",
+            "options": [
+              "A long vowel — the e is held approximately twice as long as a short vowel",
+              "A pause in speech",
+              "A stress mark",
+              "The end of a word"
+            ],
+            "cm": "Niawenhkó:wa! The colon (:) in Kanien'kéha orthography marks vowel length — the vowel before it is held approximately twice as long as its short counterpart. Vowel length is phonemically contrastive in Kanien'kéha: changing the length of a vowel can completely change the meaning of a word. Always honour the colon.",
+            "wm": "Please try again — what does : do to a vowel?"
+          },
+          {
+            "type": "type",
+            "wid": null,
+            "prompt": "Type the question 'What is your name?' correctly, including all accent marks",
+            "sub": "Pay attention to every mark",
+            "correct": "Kanié:ri iken'?",
+            "alts": [
+              "Kanie:ri iken'",
+              "kanie:ri iken'",
+              "Kanié:ri iken'"
+            ],
+            "cm": "Tho niioht! Kanié:ri iken'? — the acute accent on Ká marks stress; the colon after é marks length; the apostrophe in iken' is the glottal stop. Every mark is there for a reason.",
+            "wm": "Please try again — check each accent mark carefully."
+          },
+          {
+            "type": "type",
+            "wid": null,
+            "prompt": "Type 'my clan' correctly",
+            "sub": "",
+            "correct": "Ónia'karé:'a",
+            "alts": [
+              "Onia'kare:'a",
+              "onia'karé:'a",
+              "Ónia'kare:'a"
+            ],
+            "cm": "Tho niioht! Ónia'karé:'a — the acute accent on Ó marks stress; the apostrophe is a glottal stop; the colon marks vowel length; the final 'a is also preceded by a glottal stop. Each mark is meaningful.",
+            "wm": "Please try again — check for the glottal stop and the long vowel."
+          },
+          {
+            "type": "story",
+            "wid": null,
+            "prompt": "Why orthography matters",
+            "sub": "",
+            "word": "Kanien'kéha",
+            "meaning": "The Kanien'kehá:ka language",
+            "storyPrompt": "Kanien'kéha — even the name of the language contains a glottal stop (the apostrophe in Kanien') and a length mark (the colon in kéha). The orthography of Kanien'kéha was developed by community members and linguists working together to write the language in a way that reflects its actual sound system. Getting the marks right is not about passing a test — it is about honouring the precision of the language and the work of the people who made it writable. What does it mean to write a language that was once forbidden to speak?"
+          }
+        ]
+      }
+    ]
   }
 ]
