@@ -276,19 +276,20 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .gear{color:var(--clay);font-size:.88rem;}
 
 /* advanced search */
-.adv-toggle{display:flex;align-items:center;gap:.45rem;padding:.1rem 1.35rem .55rem;font-size:.82rem;color:var(--sky);cursor:pointer;background:none;border:none;font-family:'Crimson Pro',serif;text-decoration:underline;text-decoration-style:dashed;text-underline-offset:3px;}
-.adv-panel{display:none;background:var(--birch);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);padding:.85rem 1.35rem;margin-bottom:.35rem;}
+.adv-toggle{display:inline-flex;align-items:center;gap:.38rem;padding:.28rem .72rem;border-radius:17px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.8rem;color:var(--ew);cursor:pointer;transition:border-color .13s,color .13s;margin:0 1.35rem .55rem;}
+.adv-toggle:hover,.adv-toggle.active{border-color:var(--clay);color:var(--clay);}
+.adv-panel{display:none;background:var(--birch);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);padding:.85rem 1.35rem;margin-bottom:.4rem;}
 .adv-panel.open{display:block;}
 .adv-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:flex-start;}
-.adv-field{flex:1;min-width:140px;}
-.adv-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--clay);font-weight:700;margin-bottom:.35rem;}
-.adv-select{width:100%;border:1.5px solid var(--smoke);border-radius:8px;background:white;font-family:'Crimson Pro',serif;font-size:.85rem;color:var(--ed);padding:.32rem .5rem;max-height:120px;outline:none;}
+.adv-field{flex:1;min-width:130px;}
+.adv-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--clay);font-weight:700;margin-bottom:.3rem;}
+.adv-select{width:100%;border:1.5px solid var(--smoke);border-radius:8px;background:white;font-family:'Crimson Pro',serif;font-size:.82rem;color:var(--ed);padding:.28rem .45rem;height:108px;outline:none;}
 .adv-select:focus{border-color:var(--clay);}
-.adv-clear{margin-top:.72rem;padding:.38rem .9rem;border-radius:8px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.83rem;color:var(--ew);cursor:pointer;}
+.adv-clear{margin-top:.65rem;padding:.32rem .85rem;border-radius:8px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.8rem;color:var(--ew);cursor:pointer;}
 .adv-clear:hover{border-color:var(--clay);color:var(--ed);}
-.adv-active-tags{display:flex;flex-wrap:wrap;gap:.32rem;padding:0 1.35rem .5rem;}
-.adv-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;padding:.2rem .55rem;border-radius:17px;background:var(--ed);color:var(--sand);cursor:pointer;}
-.adv-tag span{opacity:.65;font-size:.8rem;}
+.adv-active-tags{display:flex;flex-wrap:wrap;gap:.32rem;padding:0 1.35rem .45rem;}
+.adv-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.74rem;padding:.18rem .52rem;border-radius:17px;background:var(--ed);color:var(--sand);cursor:pointer;}
+.adv-tag span{opacity:.65;font-size:.78rem;}
 
 /* resources */
 .rsec{padding:.8rem 1.35rem .18rem;}
@@ -520,26 +521,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="pw">
     <div class="sh"><h2>Vocabulary</h2></div>
     <div class="gswrap"><span class="gsic">🔍</span><input class="gsearch" id="gsearch" type="text" placeholder="Search Kanien'kéha or English…" oninput="filterGloss()" autocorrect="off" autocapitalize="off"></div>
-    <button class="adv-toggle" onclick="toggleAdvSearch()">⚙ Advanced search</button>
-    <div class="adv-panel" id="adv-panel">
-      <div class="adv-row">
-        <div class="adv-field">
-          <div class="adv-label">Tags</div>
-          <select class="adv-select" id="adv-tags" multiple size="5" onchange="filterGloss()"></select>
-        </div>
-        <div class="adv-field">
-          <div class="adv-label">Word type</div>
-          <select class="adv-select" id="adv-pos" multiple size="5" onchange="filterGloss()"></select>
-        </div>
-        <div class="adv-field">
-          <div class="adv-label">Unit</div>
-          <select class="adv-select" id="adv-unit" multiple size="5" onchange="filterGloss()"></select>
-        </div>
-      </div>
-      <button class="adv-clear" onclick="clearAdvSearch()">Clear filters</button>
-    </div>
-    <div class="adv-active-tags" id="adv-active-tags"></div>
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:.2rem 1.35rem .1rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.3rem 1.35rem .45rem;">
       <div class="galpha" id="galpha" style="padding:0;flex:1;flex-wrap:wrap;display:flex;gap:.26rem;"></div>
       <label style="display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:var(--ew);white-space:nowrap;margin-left:.75rem;cursor:pointer;flex-shrink:0;">
         <span id="sort-lbl">A–Z English</span>
@@ -548,6 +530,25 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
       </label>
     </div>
+    <button class="adv-toggle" id="adv-toggle-btn" onclick="toggleAdvSearch()">⚙ Advanced search</button>
+    <div class="adv-panel" id="adv-panel">
+      <div class="adv-row">
+        <div class="adv-field">
+          <div class="adv-label">Tags</div>
+          <select class="adv-select" id="adv-tags" multiple onchange="filterGloss()"></select>
+        </div>
+        <div class="adv-field">
+          <div class="adv-label">Word type</div>
+          <select class="adv-select" id="adv-pos" multiple onchange="filterGloss()"></select>
+        </div>
+        <div class="adv-field">
+          <div class="adv-label">Unit</div>
+          <select class="adv-select" id="adv-unit" multiple onchange="filterGloss()"></select>
+        </div>
+      </div>
+      <button class="adv-clear" onclick="clearAdvSearch()">Clear filters</button>
+    </div>
+    <div class="adv-active-tags" id="adv-active-tags"></div>
     <div class="glist" id="glist"></div>
   </div>
 </div>
@@ -1160,49 +1161,75 @@ let gL='all';
 let sortByKanien=false;
 let advOpen=false;
 
+// Kanien'kéha accent ordering: accented letters sort immediately after their base
+const ACCENT_BASE={
+  'à':'a','á':'a','â':'a','ä':'a',
+  'è':'e','é':'e','ê':'e',
+  'ì':'i','í':'i','î':'i',
+  'ò':'o','ó':'o','ô':'o',
+  'ù':'u','ú':'u','û':'u',
+  'ę':'e','ǫ':'o',
+};
+// Order for Kanien'kéha first-letter bucketing: base letter then its accented forms
+const KAN_LETTER_ORDER=['A','À','Á','E','É','Ę','I','Í','O','Ó','Ǫ',
+  'H','K','N','R','S','T','W','Y','\''];
+
+function kanFirstLetter(str){
+  const c=str.replace(/^\s+/,'')[0]||'?';
+  return c.toUpperCase();
+}
+function sortLetterKey(letter){
+  const idx=KAN_LETTER_ORDER.indexOf(letter.toUpperCase());
+  return idx>=0?String(idx).padStart(3,'0'):letter.toUpperCase();
+}
+function baseLetterGroup(letter){
+  // For Kanien'kéha mode: group accented letters under their base for the alpha bar
+  const up=letter.toUpperCase();
+  const base=ACCENT_BASE[letter.toLowerCase()];
+  return base?base.toUpperCase():up;
+}
+
 function toggleAdvSearch(){
   advOpen=!advOpen;
   document.getElementById('adv-panel').classList.toggle('open',advOpen);
+  document.getElementById('adv-toggle-btn').classList.toggle('active',advOpen);
 }
 
 function populateAdvSearch(){
-  // Tags — derive human-readable labels from groupLabel, deduplicate
+  // Tags
   const tagMap={};
   GLOSS.forEach(w=>{
-    if(w.group&&w.groupLabel){
-      // Use a clean label: prefer groupLabel, strip pn_/pron_ prefixes
-      const label=w.groupLabel||w.group;
-      tagMap[w.group]=label;
-    }
+    if(w.group&&w.groupLabel) tagMap[w.group]=w.groupLabel;
   });
   const tagSel=document.getElementById('adv-tags');
+  const prevTags=[...tagSel.selectedOptions].map(o=>o.value);
   tagSel.innerHTML=Object.entries(tagMap)
     .sort((a,b)=>a[1].localeCompare(b[1],'en'))
-    .map(([g,l])=>`<option value="${g}">${l}</option>`)
+    .map(([g,l])=>`<option value="${g}"${prevTags.includes(g)?' selected':''}>${l}</option>`)
     .join('');
 
-  // POS — collapse to broad categories
-  const posCategories={
-    'noun':'Noun',
-    'verb':'Verb',
-    'pronoun':'Pronoun',
-    'particle':'Particle',
-    'phrase':'Phrase',
-    'number':'Number',
-    'proper noun':'Proper noun',
-    'qualifier':'Qualifier',
-    'article':'Article',
-    'expression':'Expression',
-  };
+  // POS broad categories
+  const posCategories=[
+    ['noun','Noun'],['verb','Verb'],['pronoun','Pronoun'],
+    ['particle','Particle'],['phrase','Phrase'],['number','Number'],
+    ['proper noun','Proper noun'],['qualifier','Qualifier'],
+    ['article','Article'],['expression','Expression'],
+  ];
   const posSel=document.getElementById('adv-pos');
-  posSel.innerHTML=Object.entries(posCategories)
-    .map(([k,l])=>`<option value="${k}">${l}</option>`)
+  const prevPos=[...posSel.selectedOptions].map(o=>o.value);
+  posSel.innerHTML=posCategories
+    .map(([k,l])=>`<option value="${k}"${prevPos.includes(k)?' selected':''}>${l}</option>`)
     .join('');
 
   // Units
   const unitSel=document.getElementById('adv-unit');
-  const units=[...new Set(GLOSS.map(w=>w.unit).filter(u=>u!==undefined&&u!==null&&u!==''))].sort((a,b)=>Number(a)-Number(b));
-  unitSel.innerHTML=units.map(u=>`<option value="${u}">Unit ${Number(u)+1}</option>`).join('');
+  const prevUnits=[...unitSel.selectedOptions].map(o=>o.value);
+  const units=[...new Set(GLOSS.map(w=>w.unit)
+    .filter(u=>u!==undefined&&u!==null&&u!==''))]
+    .sort((a,b)=>Number(a)-Number(b));
+  unitSel.innerHTML=units
+    .map(u=>`<option value="${u}"${prevUnits.includes(String(u))?' selected':''}>Unit ${Number(u)+1}</option>`)
+    .join('');
 }
 
 function getAdvFilters(){
@@ -1212,8 +1239,7 @@ function getAdvFilters(){
 
 function clearAdvSearch(){
   ['adv-tags','adv-pos','adv-unit'].forEach(id=>{
-    const el=document.getElementById(id);
-    [...el.options].forEach(o=>o.selected=false);
+    [...document.getElementById(id).options].forEach(o=>o.selected=false);
   });
   updateAdvActiveTags();
   filterGloss();
@@ -1222,12 +1248,12 @@ function clearAdvSearch(){
 function updateAdvActiveTags(){
   const f=getAdvFilters();
   const all=[
-    ...f.tags.map(t=>{const o=document.querySelector(`#adv-tags option[value="${t}"]`);return o?{label:o.textContent,type:'tags',val:t}:null;}),
-    ...f.pos.map(t=>{const o=document.querySelector(`#adv-pos option[value="${t}"]`);return o?{label:o.textContent,type:'pos',val:t}:null;}),
-    ...f.units.map(t=>{const o=document.querySelector(`#adv-unit option[value="${t}"]`);return o?{label:o.textContent,type:'unit',val:t}:null;}),
+    ...f.tags.map(t=>{const o=document.querySelector(`#adv-tags option[value="${CSS.escape(t)}"]`)||[...document.getElementById('adv-tags').options].find(o=>o.value===t);return o?{label:o.textContent,type:'tags',val:t}:null;}),
+    ...f.pos.map(t=>{const o=[...document.getElementById('adv-pos').options].find(o=>o.value===t);return o?{label:o.textContent,type:'pos',val:t}:null;}),
+    ...f.units.map(t=>{const o=[...document.getElementById('adv-unit').options].find(o=>o.value===t);return o?{label:o.textContent,type:'unit',val:t}:null;}),
   ].filter(Boolean);
   document.getElementById('adv-active-tags').innerHTML=all.map(t=>
-    `<div class="adv-tag" onclick="removeAdvFilter('${t.type}','${t.val}')">${t.label} <span>✕</span></div>`
+    `<div class="adv-tag" onclick="removeAdvFilter('${t.type}','${qs(t.val)}')">${t.label} <span>✕</span></div>`
   ).join('');
 }
 
@@ -1235,7 +1261,7 @@ function removeAdvFilter(type,val){
   const map={tags:'adv-tags',pos:'adv-pos',unit:'adv-unit'};
   const el=document.getElementById(map[type]);
   if(!el)return;
-  const opt=el.querySelector(`option[value="${val}"]`);
+  const opt=[...el.options].find(o=>o.value===val);
   if(opt)opt.selected=false;
   updateAdvActiveTags();
   filterGloss();
@@ -1254,55 +1280,60 @@ function toggleSort(){
 
 function renderGloss(){
   populateAdvSearch();
-  const letters=[...new Set(GLOSS.map(w=>{
-    if(sortByKanien){
-      return w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
-    }
-    return w.english[0].toUpperCase();
-  }))].sort();
-  gL='all';
-  document.getElementById('galpha').innerHTML=
-    `<button class="abtn active" onclick="setAlpha('all',this)">All</button>`+
-    letters.map(l=>`<button class="abtn" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
   filterGloss();
 }
 
-function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
+function setAlpha(l,btn){
+  gL=l;
+  document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  filterGloss();
+}
+
+function buildAlphaBar(entries){
+  if(sortByKanien){
+    // Collect actual first letters present, sort by KAN_LETTER_ORDER
+    const letters=[...new Set(entries.map(w=>kanFirstLetter(w.target)))];
+    letters.sort((a,b)=>sortLetterKey(a)-sortLetterKey(b)||a.localeCompare(b));
+    document.getElementById('galpha').innerHTML=
+      `<button class="abtn${gL==='all'?' active':''}" onclick="setAlpha('all',this)">All</button>`+
+      letters.map(l=>`<button class="abtn${gL===l?' active':''}" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
+  } else {
+    const letters=[...new Set(entries.map(w=>w.english[0].toUpperCase()))].sort();
+    document.getElementById('galpha').innerHTML=
+      `<button class="abtn${gL==='all'?' active':''}" onclick="setAlpha('all',this)">All</button>`+
+      letters.map(l=>`<button class="abtn${gL===l?' active':''}" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
+  }
+}
 
 function filterGloss(){
   updateAdvActiveTags();
   const q=(document.getElementById('gsearch').value||'').toLowerCase();
   const f=getAdvFilters();
 
-  const matching=GLOSS.filter(w=>{
-    // Text search — includes group metadata and form contents
+  // First pass: apply all filters except letter (for building the alpha bar)
+  const preFilter=GLOSS.filter(w=>{
     const mq=!q||
       w.target.toLowerCase().includes(q)||
       w.english.toLowerCase().includes(q)||
       (w.groupLabel||'').toLowerCase().includes(q)||
       (w.group||'').toLowerCase().includes(q)||
-      (w.forms||[]).some(fm=>
-        (fm.form||'').toLowerCase().includes(q)||
-        (fm.label||'').toLowerCase().includes(q)
-      );
-
-    // Advanced: tags
+      (w.forms||[]).some(fm=>(fm.form||'').toLowerCase().includes(q)||(fm.label||'').toLowerCase().includes(q));
     const mTags=!f.tags.length||f.tags.includes(w.group||'');
-
-    // Advanced: pos (broad category match)
     const posLow=(w.pos||'').toLowerCase();
     const mPos=!f.pos.length||f.pos.some(p=>posLow.startsWith(p)||posLow.includes(p));
-
-    // Advanced: unit
     const mUnit=!f.units.length||f.units.includes(String(w.unit));
+    return mq&&mTags&&mPos&&mUnit;
+  });
 
-    // Letter index
-    const sortKey=sortByKanien
-      ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
-      : w.english[0].toUpperCase();
-    const ml=gL==='all'||sortKey===gL;
+  buildAlphaBar(preFilter);
 
-    return mq&&mTags&&mPos&&mUnit&&ml;
+  // Second pass: apply letter filter
+  const matching=preFilter.filter(w=>{
+    if(gL==='all') return true;
+    return sortByKanien
+      ? kanFirstLetter(w.target)===gL
+      : w.english[0].toUpperCase()===gL;
   });
 
   if(!matching.length){
@@ -1310,7 +1341,7 @@ function filterGloss(){
     return;
   }
 
-  // Sort individually — every entry is its own headword
+  // Sort
   const sorted=[...matching];
   if(sortByKanien){
     sorted.sort((a,b)=>a.target.toLowerCase().localeCompare(b.target.toLowerCase(),'fr'));
@@ -1318,22 +1349,23 @@ function filterGloss(){
     sorted.sort((a,b)=>a.english.toLowerCase().localeCompare(b.english.toLowerCase(),'en'));
   }
 
-  // Bucket by first letter
+  // Bucket by first letter — Kanien'kéha mode uses accent-aware ordering
   const byLetter={};
+  const letterOrder=[];
   sorted.forEach(w=>{
-    const l=sortByKanien
-      ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
-      : w.english[0].toUpperCase();
-    if(!byLetter[l])byLetter[l]=[];
+    const l=sortByKanien?kanFirstLetter(w.target):w.english[0].toUpperCase();
+    if(!byLetter[l]){byLetter[l]=[];letterOrder.push(l);}
     byLetter[l].push(w);
   });
 
-  const list=document.getElementById('glist');
-  list.innerHTML=Object.keys(byLetter).sort().map(letter=>{
+  // Sort letter buckets
+  const sortedLetters=sortByKanien
+    ? letterOrder.sort((a,b)=>sortLetterKey(a)-sortLetterKey(b)||a.localeCompare(b))
+    : letterOrder.sort();
+
+  document.getElementById('glist').innerHTML=sortedLetters.map(letter=>{
     const cards=byLetter[letter].map(w=>renderFlatEntry(w)).join('');
     return '<div class="glg"><div class="glh">'+letter+'</div>'+cards+'</div>';
-  }).join('');
-}
   }).join('');
 }
 
@@ -1351,11 +1383,16 @@ function renderFlatEntry(w){
   const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.6rem"><table class="ftable" style="font-size:.84rem"><thead>'+formsHeader+'</thead><tbody>'+formsRows+'</tbody></table></div>':'';
   const citeHtml=w.cite?'<div style="margin-top:.5rem;font-size:.77rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
   const posHtml=w.pos?'<div style="font-size:.7rem;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-top:.1rem">'+w.pos+'</div>':'';
+  // Swap primary/secondary display based on sort mode
+  const primaryWord=sortByKanien?w.target:w.english;
+  const secondaryWord=sortByKanien?w.english:w.target;
+  const primaryStyle=sortByKanien?"font-family:'Playfair Display',serif;font-size:.98rem;color:var(--ed)":"font-size:.98rem;color:var(--ed)";
+  const secondaryStyle=sortByKanien?"font-size:.84rem;color:var(--ew);font-style:italic":"font-family:'Playfair Display',serif;font-size:.84rem;color:var(--ew)";
   return '<div class="ge" id="ge-'+w.id+'" onclick="toggleGlossEntry(\''+w.id+'\')">'+
     '<div class="ge-top">'+
       '<div style="flex:1">'+
-        '<div class="gew">'+w.target+'</div>'+
-        '<div class="gee">'+w.english+'</div>'+
+        '<div style="'+primaryStyle+'">'+primaryWord+'</div>'+
+        '<div style="'+secondaryStyle+'">'+secondaryWord+'</div>'+
         posHtml+
       '</div>'+
       '<span class="gear" id="ge-arr-'+w.id+'">\u203a</span>'+
