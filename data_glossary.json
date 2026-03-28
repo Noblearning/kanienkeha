@@ -2,11 +2,11 @@
   {
     "id": "p01",
     "target": "í:se'",
-    "english": "You (singular)",
-    "pos": "Pronoun — Singular",
+    "english": "you",
+    "pos": "Pronoun",
     "unit": 0,
     "lesson": 0,
-    "notes": "Singular 'you'. The glottal stop (') at the end is a full consonant. In Six Nations/Tyendinaga: ý:se'.",
+    "notes": "Kanien'kéha distinguishes singular, dual, and plural 'you'. In Six Nations/Tyendinaga dialects í:se' becomes ý:se' (y-form).",
     "cite": {
       "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
@@ -16,21 +16,37 @@
       "i:se'",
       "ise'",
       "ý:se'",
-      "yse'"
+      "yse'",
+      "teseniiáhshe",
+      "teseniiahshe",
+      "sewakwé:kon",
+      "sewakwekon"
     ],
-    "forms": null,
+    "forms": [
+      {
+        "label": "singular (you)",
+        "form": "í:se'"
+      },
+      {
+        "label": "dual (you two)",
+        "form": "teseniiáhshe"
+      },
+      {
+        "label": "plural (you all)",
+        "form": "sewakwé:kon"
+      }
+    ],
     "group": "pron_you",
-    "groupLabel": "You",
-    "subLabel": "singular"
+    "groupLabel": "You"
   },
   {
     "id": "p02",
     "target": "í:'i",
-    "english": "I (singular)",
-    "pos": "Pronoun — Singular",
+    "english": "I / we",
+    "pos": "Pronoun",
     "unit": 0,
     "lesson": 0,
-    "notes": "First person singular. The glottal stop (') between the vowels is a full consonant, not punctuation. In Ontario dialects: ý:'i.",
+    "notes": "First person pronouns. Kanien'kéha has three numbers: singular, dual (you and I), and plural (we all, inclusive). In Ontario dialects: ý:'i.",
     "cite": {
       "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
@@ -40,42 +56,78 @@
       "i:'i",
       "i'i",
       "ý:'i",
-      "y'i"
+      "y'i",
+      "teiakeniiáhshe",
+      "teiakeniiahshe",
+      "iakwakwé:kon",
+      "iakwakwekon"
     ],
-    "forms": null,
+    "forms": [
+      {
+        "label": "singular (I)",
+        "form": "í:'i"
+      },
+      {
+        "label": "dual (you and I)",
+        "form": "teiakeniiáhshe"
+      },
+      {
+        "label": "plural (we all)",
+        "form": "iakwakwé:kon"
+      }
+    ],
     "group": "pron_i",
-    "groupLabel": "I / We",
-    "subLabel": "singular"
+    "groupLabel": "I / We"
   },
   {
     "id": "p03",
     "target": "akaónha",
-    "english": "She (formal, respectful)",
-    "pos": "Pronoun — Singular",
+    "english": "she / her",
+    "pos": "Pronoun",
     "unit": 0,
     "lesson": 0,
-    "notes": "Used for a female you respect — a mother, elder, or person of authority. Kanien'kéha encodes respect directly into the pronoun system.",
+    "notes": "Female third-person pronouns. Kanien'kéha encodes social register directly into the pronoun: akaónha for respected females (mothers, elders); aónha for familiar females, animals, or objects.",
     "cite": {
       "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
     },
     "accepts": [
       "akaónha",
-      "akaonha"
+      "akaonha",
+      "aónha",
+      "aonha",
+      "kontikwé:kon",
+      "kontikwekon"
     ],
-    "forms": null,
+    "forms": [
+      {
+        "label": "singular — formal / respectful",
+        "form": "akaónha"
+      },
+      {
+        "label": "singular — informal / animal",
+        "form": "aónha"
+      },
+      {
+        "label": "dual (two females)",
+        "form": ""
+      },
+      {
+        "label": "plural (all females)",
+        "form": "kontikwé:kon"
+      }
+    ],
     "group": "pron_she",
-    "groupLabel": "She / Her",
-    "subLabel": "formal / respectful"
+    "groupLabel": "She / Her"
   },
   {
     "id": "p04",
     "target": "raónha",
-    "english": "He (singular)",
-    "pos": "Pronoun — Singular",
+    "english": "he / him",
+    "pos": "Pronoun",
     "unit": 0,
     "lesson": 0,
-    "notes": "Third person singular male. Ra- marks male throughout Kanien'kéha. In Akwesasne: laónha (r→l alternation).",
+    "notes": "Male third-person pronouns. Ra- marks male throughout Kanien'kéha. In Akwesasne: laónha (r→l alternation). The dual forms cover two-female (teteniiáhshe) and two-male/mixed (tehniiáhshe) pairs.",
     "cite": {
       "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
@@ -84,33 +136,34 @@
       "raónha",
       "raonha",
       "laónha",
-      "laonha"
+      "laonha",
+      "teteniiáhshe",
+      "teteniiahshe",
+      "tehniiáhshe",
+      "tehniiahshe",
+      "ratikwé:kon",
+      "ratikwekon"
     ],
-    "forms": null,
+    "forms": [
+      {
+        "label": "singular (he)",
+        "form": "raónha"
+      },
+      {
+        "label": "dual — two females",
+        "form": "teteniiáhshe"
+      },
+      {
+        "label": "dual — two males / mixed",
+        "form": "tehniiáhshe"
+      },
+      {
+        "label": "plural (all males / mixed)",
+        "form": "ratikwé:kon"
+      }
+    ],
     "group": "pron_he",
-    "groupLabel": "He / They (male)",
-    "subLabel": "singular"
-  },
-  {
-    "id": "p05",
-    "target": "aónha",
-    "english": "It / She (informal/animal/object)",
-    "pos": "Pronoun — Singular",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "Three uses: a female animal; a familiar female (sister, close friend); an inanimate object. Context makes the meaning clear.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "aónha",
-      "aonha"
-    ],
-    "forms": null,
-    "group": "pron_she",
-    "groupLabel": "She / Her",
-    "subLabel": "informal / animal / object"
+    "groupLabel": "He / They (male)"
   },
   {
     "id": "p06",
@@ -134,69 +187,6 @@
     "subLabel": "dual"
   },
   {
-    "id": "p07",
-    "target": "teiakeniiáhshe",
-    "english": "We two / You and I",
-    "pos": "Pronoun — Dual",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "First person dual inclusive — you and I together.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "teiakeniiáhshe",
-      "teiakeniiahshe"
-    ],
-    "forms": null,
-    "group": "pron_i",
-    "groupLabel": "I / We",
-    "subLabel": "dual (you and I)"
-  },
-  {
-    "id": "p08",
-    "target": "teteniiáhshe",
-    "english": "Two females (us two)",
-    "pos": "Pronoun — Dual",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "Dual pronoun for two females.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "teteniiáhshe",
-      "teteniiahshe"
-    ],
-    "forms": null,
-    "group": "pron_he",
-    "groupLabel": "He / They (male)",
-    "subLabel": "dual (two females)"
-  },
-  {
-    "id": "p09",
-    "target": "tehniiáhshe",
-    "english": "Two males / one of each",
-    "pos": "Pronoun — Dual",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "For two males, or one male and one female together.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "tehniiáhshe",
-      "tehniiahshe"
-    ],
-    "forms": null,
-    "group": "pron_he",
-    "groupLabel": "He / They (male)",
-    "subLabel": "dual (two males or mixed)"
-  },
-  {
     "id": "p10",
     "target": "sewakwé:kon",
     "english": "You all (plural)",
@@ -217,69 +207,6 @@
     "group": "pron_you",
     "groupLabel": "You",
     "subLabel": "plural"
-  },
-  {
-    "id": "p11",
-    "target": "iakwakwé:kon",
-    "english": "We all (inclusive plural)",
-    "pos": "Pronoun — Plural",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "Inclusive 'we all' — includes the person being spoken to. Contrast with ronwakwé:kon (all of them).",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "iakwakwé:kon",
-      "iakwakwekon"
-    ],
-    "forms": null,
-    "group": "pron_i",
-    "groupLabel": "I / We",
-    "subLabel": "plural (inclusive — we all)"
-  },
-  {
-    "id": "p12",
-    "target": "kontikwé:kon",
-    "english": "All females (plural)",
-    "pos": "Pronoun — Plural",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "Plural pronoun for all females / a group of women.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "kontikwé:kon",
-      "kontikwekon"
-    ],
-    "forms": null,
-    "group": "pron_she",
-    "groupLabel": "She / Her",
-    "subLabel": "plural (all females)"
-  },
-  {
-    "id": "p13",
-    "target": "ratikwé:kon",
-    "english": "All males / everyone (plural)",
-    "pos": "Pronoun — Plural",
-    "unit": 0,
-    "lesson": 0,
-    "notes": "Plural pronoun for all males or a mixed group. Ra- marks male/mixed in plural.",
-    "cite": {
-      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
-    },
-    "accepts": [
-      "ratikwé:kon",
-      "ratikwekon"
-    ],
-    "forms": null,
-    "group": "pron_he",
-    "groupLabel": "He / They (male)",
-    "subLabel": "plural (all males / mixed)"
   },
   {
     "id": "n01",
@@ -901,7 +828,7 @@
   {
     "id": "k03",
     "target": "'sot",
-    "english": "Grandfather",
+    "english": "grandfather",
     "pos": "Noun — Kinship",
     "unit": 1,
     "lesson": 4,
@@ -938,13 +865,12 @@
       }
     ],
     "group": "kin_grandfather",
-    "groupLabel": "Grandfather ('sot)",
-    "subLabel": "base form"
+    "groupLabel": "Grandfather ('sot)"
   },
   {
     "id": "k04",
     "target": "tota",
-    "english": "Grandmother",
+    "english": "grandmother",
     "pos": "Noun — Kinship",
     "unit": 1,
     "lesson": 4,
@@ -985,8 +911,7 @@
       }
     ],
     "group": "kin_grandmother",
-    "groupLabel": "Grandmother (tota)",
-    "subLabel": "base form"
+    "groupLabel": "Grandmother (tota)"
   },
   {
     "id": "k05",
@@ -1076,122 +1001,125 @@
   },
   {
     "id": "k07",
-    "target": "aksen'á:a",
-    "english": "Daughter (my)",
+    "target": "aksen'á:a / kheyén:'a",
+    "english": "daughter",
     "pos": "Noun — Kinship",
     "unit": 1,
     "lesson": 4,
-    "notes": "My daughter. Kinship in Kanien'kéha is relational — the word changes based on whose daughter is being named.",
+    "notes": "Kinship nouns are always possessed in Kanien'kéha. Two dialect forms: Kanehsatà:ke/Kahnawà:ke uses the -ksen'a root; Six Nations uses the -yén:'a root.",
     "cite": {
-      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
     },
     "accepts": [
       "aksen'á:a",
       "aksen'a:a",
-      "aksenaa"
+      "aksenaa",
+      "kheyén:'a",
+      "kheyen:'a"
     ],
     "forms": [
       {
         "label": "my daughter",
-        "form": "aksen'á:a"
+        "form": "aksen'á:a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "my daughter",
+        "form": "kheyén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "your daughter",
-        "form": "saksén'a"
+        "form": "saksén'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
       },
       {
-        "label": "her daughter",
-        "form": "akonsen'á:a"
+        "label": "your daughter",
+        "form": "sheyén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "his daughter",
-        "form": "rosen'á:a"
+        "form": "rosen'á:a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "her daughter",
+        "form": "akonsen'á:a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "her child",
+        "form": "yontatyén:'a",
+        "dialect": "Six Nations"
       }
     ],
     "group": "kin_daughter",
-    "groupLabel": "Daughter",
-    "subLabel": "possessive forms in entry"
+    "groupLabel": "daughter"
   },
   {
     "id": "k08",
-    "target": "raksén'a",
-    "english": "Son (his)",
+    "target": "raksén'a / riyén:'a",
+    "english": "son",
     "pos": "Noun — Kinship",
     "unit": 1,
     "lesson": 4,
-    "notes": "His son. The R-/Ak- prefix alternation marks male/female possessor consistently in kinship nouns.",
+    "notes": "Kinship nouns in Kanien'kéha are always possessed — the prefix changes to mark whose son is being named. Two dialect forms: Kanehsatà:ke/Kahnawà:ke uses the -ksen'a root; Six Nations uses the -yén:'a root.",
     "cite": {
-      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
+      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
     },
     "accepts": [
       "raksén'a",
-      "raksen'a"
+      "raksen'a",
+      "riyén:'a",
+      "riyen:'a"
     ],
     "forms": [
       {
         "label": "my son",
-        "form": "raksén'a"
+        "form": "raksén'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "my son",
+        "form": "riyén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "your son",
-        "form": "saksén'a"
+        "form": "saksén'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
       },
       {
-        "label": "her son",
-        "form": "akonsen'á:a"
+        "label": "your son",
+        "form": "etshyén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "his son",
-        "form": "ro'sén'a"
+        "form": "ro'sén'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "his son",
+        "form": "royén:'a",
+        "dialect": "Six Nations"
+      },
+      {
+        "label": "her son",
+        "form": "akonsen'á:a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "her son",
+        "form": "yontatyén:'a",
+        "dialect": "Six Nations"
       }
     ],
     "group": "kin_son",
-    "groupLabel": "Son",
-    "subLabel": "possessive forms in entry"
-  },
-  {
-    "id": "k09",
-    "target": "aksótha",
-    "english": "My grandmother",
-    "pos": "Noun — Kinship (possessed)",
-    "unit": 1,
-    "lesson": 4,
-    "notes": "My grandmother — the possessed form of tota. Aksótha is how you would say this in a sentence ('I am going to my grandmother's house').",
-    "cite": {
-      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
-    },
-    "accepts": [
-      "aksótha",
-      "aksotha"
-    ],
-    "forms": null,
-    "group": "kin_grandmother",
-    "groupLabel": "Grandmother (tota)",
-    "subLabel": "possessed form (my grandmother)"
-  },
-  {
-    "id": "k10",
-    "target": "raksótha",
-    "english": "My grandfather",
-    "pos": "Noun — Kinship (possessed)",
-    "unit": 1,
-    "lesson": 4,
-    "notes": "My grandfather — the possessed form of 'sot.",
-    "cite": {
-      "text": "Kontinónhstats L18 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-18/"
-    },
-    "accepts": [
-      "raksótha",
-      "raksotha"
-    ],
-    "forms": null,
-    "group": "kin_grandfather",
-    "groupLabel": "Grandfather ('sot)",
-    "subLabel": "possessed form (my grandfather)"
+    "groupLabel": "son"
   },
   {
     "id": "dv01",
@@ -1483,194 +1411,117 @@
   },
   {
     "id": "v01",
-    "target": "sá:tien",
-    "english": "You sit (command)",
-    "pos": "Verb — A-Stem (Command)",
+    "target": "á:tien",
+    "english": "to sit",
+    "pos": "Verb",
     "unit": 2,
     "lesson": 7,
-    "notes": "A-stem verb, subjective command form. Structure: s- (you, subjective pronoun) + á:tien (A-stem verb root). Commands never have a suffix because you are directing someone to act.",
+    "notes": "A-stem verb. Command: s- (you) + á:tien. Habitual: k- (I) + á:tien + -s. Dual and plural command forms use the seni-/sewa- prefixes.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "sá:tien",
-      "sa:tien",
-      "satien"
+      "ká:tiens",
+      "seniá:tien",
+      "sewá:tien"
     ],
     "forms": [
       {
-        "label": "you (singular) — command",
+        "label": "you sit (command)",
         "form": "sá:tien"
       },
       {
-        "label": "you two — dual command",
-        "form": "seniá:tien"
-      },
-      {
-        "label": "you all — plural command",
-        "form": "sewá:tien"
-      },
-      {
-        "label": "I — habitual",
+        "label": "I sit (habitual)",
         "form": "ká:tiens"
       },
       {
-        "label": "she — habitual",
-        "form": "iakká:tiens"
+        "label": "you two sit (command)",
+        "form": "seniá:tien"
       },
       {
-        "label": "he — habitual",
-        "form": "raká:tiens"
-      },
-      {
-        "label": "they — habitual",
-        "form": "ronká:tiens"
+        "label": "you all sit (command)",
+        "form": "sewá:tien"
       }
     ],
-    "group": "v_sit",
-    "groupLabel": "Sit",
-    "subLabel": "singular command"
-  },
-  {
-    "id": "v02",
-    "target": "ká:tiens",
-    "english": "I am sitting (habitual)",
-    "pos": "Verb — A-Stem (Habitual)",
-    "unit": 2,
-    "lesson": 7,
-    "notes": "A-stem verb, first person habitual. Structure: k- (I, subjective) + á:tien (root) + -s (habitual suffix). The -s suffix appears when the action is repetitive.",
-    "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
-    },
-    "accepts": [
-      "ká:tiens",
-      "ka:tiens",
-      "katiens"
-    ],
-    "forms": null,
-    "group": "v_sit",
-    "groupLabel": "Sit",
-    "subLabel": "first person habitual"
+    "group": "v_sit"
   },
   {
     "id": "v03",
-    "target": "tesaráhtat",
-    "english": "You run (command)",
-    "pos": "Verb — A-Stem Dualic (Command)",
+    "target": "aráhtat",
+    "english": "to run",
+    "pos": "Verb",
     "unit": 2,
     "lesson": 7,
-    "notes": "Dualic A-stem verb — command form. Structure: te- (dualic prefix) + s- (you) + aráhtat (A-stem root). Dualic verbs describe two-phase actions: standing still THEN moving forward.",
+    "notes": "Dualic A-stem verb. The te- dualic prefix is obligatory — it cannot be dropped. Describes a two-phase motion: stopping then moving forward.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "tesaráhtat",
-      "tesarahtat"
+      "tekaráhtats",
+      "teseniaráhtat",
+      "tesewará:htat"
     ],
     "forms": [
       {
-        "label": "you (singular) — command",
+        "label": "you run (command)",
         "form": "tesaráhtat"
       },
       {
-        "label": "you two — dual command",
+        "label": "I run (habitual)",
+        "form": "tekaráhtats"
+      },
+      {
+        "label": "you two run (command)",
         "form": "teseniaráhtat"
       },
       {
-        "label": "you all — plural command",
+        "label": "you all run (command)",
         "form": "tesewará:htat"
-      },
-      {
-        "label": "I — habitual",
-        "form": "tekaráhtats"
       }
     ],
-    "group": "v_run",
-    "groupLabel": "Run",
-    "subLabel": "singular command (dualic)"
-  },
-  {
-    "id": "v04",
-    "target": "tekaráhtats",
-    "english": "I run (habitual)",
-    "pos": "Verb — A-Stem Dualic (Habitual)",
-    "unit": 2,
-    "lesson": 7,
-    "notes": "Dualic A-stem, first person habitual. Structure: te- + k- (I) + aráhtat (root) + -s (habitual). The dualic te- prefix cannot be dropped.",
-    "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
-    },
-    "accepts": [
-      "tekaráhtats",
-      "tekarahtats"
-    ],
-    "forms": null,
-    "group": "v_run",
-    "groupLabel": "Run",
-    "subLabel": "first person habitual (dualic)"
+    "group": "v_run"
   },
   {
     "id": "v05",
-    "target": "satkáhthons",
-    "english": "You listen (habitual)",
-    "pos": "Verb — A-Stem (Habitual)",
+    "target": "atkáhthon",
+    "english": "to listen",
+    "pos": "Verb",
     "unit": 2,
     "lesson": 7,
-    "notes": "Habitual form — you listen (regularly). Note the at- middle voice infix that appears in reflexive and body-related verbs.",
+    "notes": "A-stem verb with the at- middle voice infix, common in body-related and reflexive verbs. Habitual suffix -s marks repeated action.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "satkáhthons",
-      "satkahthons"
+      "katkáhthons",
+      "seniatkáhthon",
+      "sewatkáhthon"
     ],
     "forms": [
       {
-        "label": "you (singular) — command",
-        "form": "satkáhthon"
+        "label": "you listen (habitual)",
+        "form": "satkáhthons"
       },
       {
-        "label": "you two — dual command",
+        "label": "I listen (habitual)",
+        "form": "katkáhthons"
+      },
+      {
+        "label": "you two listen (command)",
         "form": "seniatkáhthon"
       },
       {
-        "label": "you all — plural command",
+        "label": "you all listen (command)",
         "form": "sewatkáhthon"
-      },
-      {
-        "label": "I — habitual",
-        "form": "katkáhthons"
       }
     ],
-    "group": "v_listen",
-    "groupLabel": "Listen",
-    "subLabel": "singular habitual"
-  },
-  {
-    "id": "v06",
-    "target": "katkáhthons",
-    "english": "I listen (habitual)",
-    "pos": "Verb — A-Stem (Habitual)",
-    "unit": 2,
-    "lesson": 7,
-    "notes": "I listen — habitual form. k- is the first-person subjective pronoun in A-stem verbs.",
-    "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
-    },
-    "accepts": [
-      "katkáhthons",
-      "katkahthons"
-    ],
-    "forms": null,
-    "group": "v_listen",
-    "groupLabel": "Listen",
-    "subLabel": "first person habitual"
+    "group": "v_listen"
   },
   {
     "id": "ar01",
@@ -4433,64 +4284,39 @@
   },
   {
     "id": "cv01",
-    "target": "skwe'tarón:ko",
-    "english": "You cut it up (command)",
-    "pos": "Verb — Consonant Stem (Command)",
+    "target": "kwe'tarón:ko",
+    "english": "to cut",
+    "pos": "Verb",
     "unit": 7,
     "lesson": 1,
-    "notes": "Consonant-stem verb command form. Structure: s- (you) + kwe'tarón:ko (consonant-stem root). The root begins with a consonant (k), which distinguishes this class from A-stem verbs.",
+    "notes": "Consonant-stem verb. The root begins with k-, so the first-person habitual doubles the initial consonant: k- + kwe'... → kkwe'tarón:kwas.",
     "cite": {
-      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "skwe'tarón:ko",
-      "skwe'taron:ko",
-      "skwetaronko"
+      "kkwe'tarón:kwas"
     ],
     "forms": [
       {
-        "label": "you (singular) — command",
+        "label": "you cut (command)",
         "form": "skwe'tarón:ko"
       },
       {
-        "label": "you two — dual command",
-        "form": ""
-      },
-      {
-        "label": "you all — plural command",
-        "form": ""
-      },
-      {
-        "label": "I — habitual",
+        "label": "I cut (habitual)",
         "form": "kkwe'tarón:kwas"
+      },
+      {
+        "label": "you two cut (command)",
+        "form": ""
+      },
+      {
+        "label": "you all cut (command)",
+        "form": ""
       }
     ],
-    "group": "v_cut",
-    "groupLabel": "Cut",
-    "subLabel": "command"
-  },
-  {
-    "id": "cv02",
-    "target": "kkwe'tarón:kwas",
-    "english": "I cut it up (habitual)",
-    "pos": "Verb — Consonant Stem (Habitual)",
-    "unit": 7,
-    "lesson": 1,
-    "notes": "Consonant-stem verb, first person habitual. Structure: k- (I) + kwe'tarón:ko (root) + -s (habitual). Note that the pronoun k- doubles the initial consonant of the root — this is a key feature of the consonant stem class.",
-    "cite": {
-      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
-    },
-    "accepts": [
-      "kkwe'tarón:kwas",
-      "kkwe'taron:kwas",
-      "kkwetaronkwas"
-    ],
-    "forms": null,
-    "group": "v_cut",
-    "groupLabel": "Cut",
-    "subLabel": "first person habitual"
+    "group": "v_cut"
   },
   {
     "id": "cv03",
@@ -4533,42 +4359,40 @@
   },
   {
     "id": "cv04",
-    "target": "skáhere'",
-    "english": "You sweep (command)",
-    "pos": "Verb — Consonant Stem (Command)",
+    "target": "káhere'",
+    "english": "to sweep",
+    "pos": "Verb",
     "unit": 7,
     "lesson": 1,
-    "notes": "Sweeping — consonant-stem command. s- (you) + káhere' (root). A common household action verb.",
+    "notes": "Consonant-stem command: s- + káhere'. Dual and plural forms use the áhseron root variant.",
     "cite": {
-      "text": "Kontinónhstats L13 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-13/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "skáhere'",
-      "skahere'",
-      "skahère'"
+      "seniáhseron",
+      "sewáhseron"
     ],
     "forms": [
       {
-        "label": "you (singular) — command",
+        "label": "you sweep (command)",
         "form": "skáhere'"
       },
       {
-        "label": "you two — dual command",
+        "label": "I sweep (habitual)",
         "form": ""
       },
       {
-        "label": "you all — plural command",
-        "form": ""
+        "label": "you two sweep (command)",
+        "form": "seniáhseron"
       },
       {
-        "label": "I — habitual",
-        "form": "kkáhere's"
+        "label": "you all sweep (command)",
+        "form": "sewáhseron"
       }
     ],
-    "group": "v_sweep",
-    "groupLabel": "Sweep",
-    "subLabel": "command"
+    "group": "v_sweep"
   },
   {
     "id": "cv05",
@@ -5202,138 +5026,6 @@
     "group": "birds",
     "groupLabel": "Birds",
     "subLabel": "Heron"
-  },
-  {
-    "id": "dc01",
-    "target": "seniá:tien",
-    "english": "You two sit (dual command)",
-    "pos": "Verb — A-Stem Dual Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Dual command — telling two people to sit. Structure: seni- (you two) + á:tien (A-stem root). You already know sá:tien (you [one] sit). The dual pronoun prefix seni- replaces the singular s-.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "seniá:tien",
-      "senia:tien",
-      "seniatien"
-    ],
-    "forms": null,
-    "group": "v_sit",
-    "groupLabel": "Sit",
-    "subLabel": "dual command"
-  },
-  {
-    "id": "dc02",
-    "target": "sewá:tien",
-    "english": "You all sit (plural command)",
-    "pos": "Verb — A-Stem Plural Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Plural command — telling three or more people to sit. Structure: sewa- (you all) + á:tien (root). You already know sewakwé:kon (you all, pronoun). The sewa- pronoun prefix also appears in verb commands.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewá:tien",
-      "sewa:tien",
-      "sewatien"
-    ],
-    "forms": null,
-    "group": "v_sit",
-    "groupLabel": "Sit",
-    "subLabel": "plural command"
-  },
-  {
-    "id": "dc03",
-    "target": "seniatkáhthon",
-    "english": "You two listen (dual command)",
-    "pos": "Verb — A-Stem Dual Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Dual command for listening. You know the singular form satkáhthons (you listen). The dual prefix seni- replaces sat-, giving seniatkáhthon.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "seniatkáhthon",
-      "seniatkhthon",
-      "seniatkahtho n"
-    ],
-    "forms": null,
-    "group": "v_listen",
-    "groupLabel": "Listen",
-    "subLabel": "dual command"
-  },
-  {
-    "id": "dc04",
-    "target": "sewatkáhthon",
-    "english": "You all listen (plural command)",
-    "pos": "Verb — A-Stem Plural Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Plural command for listening. sewa- (you all) + atkáhthon (root). Plural commands, like all commands, never take the habitual -s suffix.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewatkáhthon",
-      "sewatkahtho n",
-      "sewatkahthon"
-    ],
-    "forms": null,
-    "group": "v_listen",
-    "groupLabel": "Listen",
-    "subLabel": "plural command"
-  },
-  {
-    "id": "dc05",
-    "target": "teseniaráhtat",
-    "english": "You two run (dual dualic command)",
-    "pos": "Verb — A-Stem Dual Dualic Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Dual dualic command — telling two people to run. Structure: te- (dualic) + seni- (you two) + aráhtat (root). Compare tesaráhtat (you [one] run).",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "teseniaráhtat",
-      "teseniara htat",
-      "teseniarahtat"
-    ],
-    "forms": null,
-    "group": "v_run",
-    "groupLabel": "Run",
-    "subLabel": "dual command (dualic)"
-  },
-  {
-    "id": "dc06",
-    "target": "tesewará:htat",
-    "english": "You all run (plural dualic command)",
-    "pos": "Verb — A-Stem Plural Dualic Command",
-    "unit": 8,
-    "lesson": 2,
-    "notes": "Plural dualic command — telling everyone to run. te- (dualic) + sewa- (you all) + ráhtat (root). All six combinations (singular/dual/plural × subjective/dualic) of command forms are now represented in your vocabulary.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "tesewará:htat",
-      "tesewara:htat",
-      "tesewarahtat"
-    ],
-    "forms": null,
-    "group": "v_run",
-    "groupLabel": "Run",
-    "subLabel": "plural command (dualic)"
   },
   {
     "id": "n11",
@@ -6615,79 +6307,104 @@
   {
     "id": "k11",
     "target": "sa'nitskwé:'a",
-    "english": "your younger sister",
+    "english": "younger sister",
     "pos": "noun — kinship",
     "unit": 1,
     "lesson": 4,
     "notes": "Younger sister (addressed to someone). Kanien'kéha distinguishes older and younger siblings — the relative age is grammatically encoded. Compare Sahtsí:'a (your older sister).",
     "cite": {
-      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "sa'nitskwé:'a",
-      "sa'nitskwe:'a",
-      "sanitskwea"
+      "ak'nitskwé:'a",
+      "khe'kén:'a",
+      "khe'ken:'a"
     ],
     "forms": [
       {
-        "label": "your younger sister",
-        "form": "sa'nitskwé:'a"
+        "label": "my younger sister",
+        "form": "ak'nitskwé:'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
       },
       {
         "label": "my younger sister",
-        "form": "ak'nitskwé:'a"
+        "form": "khe'kén:'a",
+        "dialect": "Six Nations"
       },
       {
-        "label": "her younger sister",
-        "form": "ontat'nitskwé:'a"
+        "label": "your younger sister",
+        "form": "sa'nitskwé:'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "your younger sister",
+        "form": "etshe'kén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "his younger sister",
         "form": "ro'nitskwé:'a"
+      },
+      {
+        "label": "her younger sister",
+        "form": "ontat'nitskwé:'a"
       }
     ],
     "group": "kin_youngsister",
-    "groupLabel": "younger sister",
-    "subLabel": "possessive forms below"
+    "groupLabel": "younger sister"
   },
   {
     "id": "k12",
     "target": "se'niha",
-    "english": "your younger brother",
+    "english": "younger brother",
     "pos": "noun — kinship",
     "unit": 1,
     "lesson": 4,
     "notes": "Younger brother (addressed to someone). The younger-sibling terms encode age relative to the speaker's clan position.",
     "cite": {
-      "text": "Kontinónhstats L5 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "se'niha",
-      "seniha"
+      "rake'niha",
+      "ri'kén:'a",
+      "ri'ken:'a"
     ],
     "forms": [
       {
-        "label": "your younger brother",
-        "form": "se'niha"
+        "label": "my younger brother",
+        "form": "rake'niha",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
       },
       {
         "label": "my younger brother",
-        "form": "rake'niha"
+        "form": "ri'kén:'a",
+        "dialect": "Six Nations"
       },
       {
-        "label": "her younger brother",
-        "form": "ronwa'niha"
+        "label": "your younger brother",
+        "form": "se'niha",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "your younger brother",
+        "form": "etshe'kén:'a",
+        "dialect": "Six Nations"
       },
       {
         "label": "his younger brother",
         "form": "ro'niha"
+      },
+      {
+        "label": "her younger brother",
+        "form": "ronwa'niha"
       }
     ],
     "group": "kin_youngbro",
-    "groupLabel": "younger brother",
-    "subLabel": "possessive forms below"
+    "groupLabel": "younger brother"
   },
   {
     "id": "k13",
@@ -6770,8 +6487,8 @@
   {
     "id": "k15",
     "target": "saksénha",
-    "english": "your granddaughter / grandchild (female)",
-    "pos": "noun — kinship",
+    "english": "granddaughter",
+    "pos": "Noun — Kinship",
     "unit": 1,
     "lesson": 4,
     "notes": "Granddaughter. The grandchild terms in Kanien'kéha encode gender, continuing the systematic gender-marking through the full kinship system.",
@@ -6802,8 +6519,7 @@
       }
     ],
     "group": "kin_granddaughter",
-    "groupLabel": "granddaughter",
-    "subLabel": "possessive forms below"
+    "groupLabel": "granddaughter"
   },
   {
     "id": "o09",
@@ -7942,13 +7658,11 @@
   },
   {
     "id": "av01",
-    "target": "sénha",
-    "english": "You put on a shirt / dress (command)",
-    "pos": "verb — A-stem (command)",
+    "target": "énha",
+    "english": "to put on (clothing)",
+    "pos": "Verb",
     "group": "v_dress",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you put on a shirt (command)",
-    "notes": "Put on a shirt/dress — A-stem command. s- (you) + énha (A-stem root).",
+    "notes": "A-stem dressing verb. s- (you) + énha (root). Command form only in source material.",
     "cite": {
       "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
       "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
@@ -7959,12 +7673,20 @@
     ],
     "forms": [
       {
-        "label": "you put on a shirt (command)",
+        "label": "you put it on (command)",
         "form": "sénha"
       },
       {
-        "label": "I put on a shirt (habitual)",
-        "form": "kénhas"
+        "label": "I put it on (habitual)",
+        "form": ""
+      },
+      {
+        "label": "you two put it on (command)",
+        "form": ""
+      },
+      {
+        "label": "you all put it on (command)",
+        "form": ""
       }
     ]
   },
@@ -8015,49 +7737,20 @@
     "forms": null
   },
   {
-    "id": "av04",
-    "target": "satkátho'n",
-    "english": "You watch / look at it (command)",
-    "pos": "verb — A-stem (command)",
-    "group": "v_sit",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you watch / look (command)",
-    "notes": "Watch or look — A-stem command. Related to the listening root (-katkáhthon-) you already know. Seeing and watching share the same verb root as listening.",
-    "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
-    },
-    "accepts": [
-      "satkátho'n",
-      "satkathon"
-    ],
-    "forms": [
-      {
-        "label": "you watch (command)",
-        "form": "satkátho'n"
-      },
-      {
-        "label": "I watch (habitual)",
-        "form": "katkátho'ns"
-      }
-    ]
-  },
-  {
     "id": "av05",
-    "target": "sátskhwa'",
-    "english": "You eat (command)",
-    "pos": "verb — A-stem (command)",
+    "target": "átskhwa'",
+    "english": "to eat",
+    "pos": "Verb",
     "group": "v_eat",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you eat (command)",
-    "notes": "Eat — A-stem command. s- (you) + átskhwa' (eating root). One of the most fundamental daily verbs.",
+    "notes": "A-stem verb. Command: s- + átskhwa'. Dual and plural command forms use seni-/sewa- prefixes.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "sátskhwa'",
-      "satskhwa'"
+      "seniatskhwa'",
+      "sewátskhwa'"
     ],
     "forms": [
       {
@@ -8066,34 +7759,33 @@
       },
       {
         "label": "I eat (habitual)",
-        "form": "kátskhwa's"
+        "form": ""
       },
       {
-        "label": "you two eat (dual command)",
-        "form": "senátskhwa'"
+        "label": "you two eat (command)",
+        "form": "seniatskhwa'"
       },
       {
-        "label": "you all eat (plural command)",
+        "label": "you all eat (command)",
         "form": "sewátskhwa'"
       }
     ]
   },
   {
     "id": "av06",
-    "target": "saié:res",
-    "english": "You walk (habitual)",
-    "pos": "verb — A-stem (habitual)",
+    "target": "aié:re",
+    "english": "to walk",
+    "pos": "Verb",
     "group": "v_walk",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you walk (habitual)",
-    "notes": "Walk — A-stem habitual. s- (you) + aié:re (walking root) + -s (habitual). One of the most common motion verbs.",
+    "notes": "A-stem motion verb. Habitual: s- (you) + aié:re + -s. One of the most common motion verbs in daily conversation.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "saié:res",
-      "saie:res"
+      "seniá:re'",
+      "sewá:re'"
     ],
     "forms": [
       {
@@ -8102,30 +7794,33 @@
       },
       {
         "label": "I walk (habitual)",
-        "form": "kaié:res"
+        "form": ""
       },
       {
-        "label": "you walk (command)",
-        "form": "aié:re'"
+        "label": "you two walk (command)",
+        "form": "seniá:re'"
+      },
+      {
+        "label": "you all walk (command)",
+        "form": "sewá:re'"
       }
     ]
   },
   {
     "id": "av07",
-    "target": "sanón:wes",
-    "english": "You sleep (habitual)",
-    "pos": "verb — A-stem (habitual)",
+    "target": "anón:we",
+    "english": "to sleep",
+    "pos": "Verb",
     "group": "v_sleep",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you sleep (habitual)",
-    "notes": "Sleep — A-stem habitual. A fundamental daily routine verb.",
+    "notes": "A-stem verb for sleep. A fundamental daily routine verb.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "sanón:wes",
-      "sanon:wes"
+      "senianón:we'",
+      "sewanón:we'"
     ],
     "forms": [
       {
@@ -8134,30 +7829,33 @@
       },
       {
         "label": "I sleep (habitual)",
-        "form": "kanón:wes"
+        "form": ""
       },
       {
-        "label": "you sleep (command)",
-        "form": "anón:we'"
+        "label": "you two sleep (command)",
+        "form": "senianón:we'"
+      },
+      {
+        "label": "you all sleep (command)",
+        "form": "sewanón:we'"
       }
     ]
   },
   {
     "id": "av09",
-    "target": "satkatón:nis",
-    "english": "You study / read (habitual)",
-    "pos": "verb — A-stem (habitual)",
+    "target": "atkatón:ni",
+    "english": "to study / to read",
+    "pos": "Verb",
     "group": "v_study",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you study / read",
-    "notes": "Study or read — A-stem habitual. katkatón:nis (I study). A key educational verb.",
+    "notes": "A-stem study/read verb. Habitual suffix -s and command form without suffix. A key educational verb.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
       "satkatón:nis",
-      "satkaton:nis"
+      "Satkatón:ni",
+      "katkatón:nis"
     ],
     "forms": [
       {
@@ -8165,12 +7863,20 @@
         "form": "satkatón:nis"
       },
       {
+        "label": "you study (command)",
+        "form": "Satkatón:ni"
+      },
+      {
         "label": "I study (habitual)",
         "form": "katkatón:nis"
       },
       {
-        "label": "you study (command)",
-        "form": "satkatón:ni"
+        "label": "you two study (command)",
+        "form": ""
+      },
+      {
+        "label": "you all study (command)",
+        "form": ""
       }
     ]
   },
@@ -8230,21 +7936,38 @@
   },
   {
     "id": "av13",
-    "target": "satohsaré:ko",
-    "english": "You wipe the table (command)",
-    "pos": "verb — A-stem (command)",
+    "target": "atohsaré:ko",
+    "english": "to wipe",
+    "pos": "Verb",
     "group": "v_wipe",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you wipe the table",
-    "notes": "Wipe the table — A-stem command incorporating the table surface root.",
+    "notes": "A-stem wipe verb. Note the object incorporation differs between singular (table root) and dual/plural (window root) forms in the source material.",
     "cite": {
-      "text": "Kontinónhstats L12 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-12/"
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
-      "satohsaré:ko"
+      "satohsaré:ko",
+      "teseníatskwárak",
+      "tesewátskhwárak"
     ],
-    "forms": null
+    "forms": [
+      {
+        "label": "you wipe (command)",
+        "form": "satohsaré:ko"
+      },
+      {
+        "label": "I wipe (habitual)",
+        "form": ""
+      },
+      {
+        "label": "you two wipe (command)",
+        "form": "teseníatskwárak"
+      },
+      {
+        "label": "you all wipe (command)",
+        "form": "tesewátskhwárak"
+      }
+    ]
   },
   {
     "id": "av14",
@@ -11423,192 +11146,6 @@
     "forms": null
   },
   {
-    "id": "dc07",
-    "target": "seniatskhwa'",
-    "english": "You two eat (dual command)",
-    "pos": "verb — A-stem dual command",
-    "group": "v_eat",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you two eat",
-    "notes": "Dual eat command — seni- (you two) + átskhwa' (eat root). You know sátskhwa' (you eat) and the dual prefix seni- from Unit 1.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "seniatskhwa'",
-      "seniatskhwa"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc08",
-    "target": "sewátskhwa'",
-    "english": "You all eat (plural command)",
-    "pos": "verb — A-stem plural command",
-    "group": "v_eat",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you all eat",
-    "notes": "Plural eat command — sewa- (you all) + átskhwa' (eat root).",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewátskhwa'",
-      "sewatskhwa'"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc09",
-    "target": "seniá:re'",
-    "english": "You two walk (dual command)",
-    "pos": "verb — A-stem dual command",
-    "group": "v_walk",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you two walk",
-    "notes": "Dual walk command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "seniá:re'",
-      "senia:re'"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc10",
-    "target": "sewá:re'",
-    "english": "You all walk (plural command)",
-    "pos": "verb — A-stem plural command",
-    "group": "v_walk",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you all walk",
-    "notes": "Plural walk command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewá:re'",
-      "sewa:re'"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc11",
-    "target": "senianón:we'",
-    "english": "You two sleep (dual command)",
-    "pos": "verb — A-stem dual command",
-    "group": "v_sleep",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you two sleep",
-    "notes": "Dual sleep command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "senianón:we'",
-      "senianon:we'"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc12",
-    "target": "sewanón:we'",
-    "english": "You all sleep (plural command)",
-    "pos": "verb — A-stem plural command",
-    "group": "v_sleep",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you all sleep",
-    "notes": "Plural sleep command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewanón:we'",
-      "sewanon:we'"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc13",
-    "target": "teseníatskwárak",
-    "english": "You two wipe the window (dual command)",
-    "pos": "verb — A-stem dual command",
-    "group": "v_wipe",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you two wipe the window",
-    "notes": "Dual wipe-window command. Incorporates the window/glass root.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "teseníatskwárak"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc14",
-    "target": "tesewátskhwárak",
-    "english": "You all wipe the window (plural command)",
-    "pos": "verb — A-stem plural command",
-    "group": "v_wipe",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you all wipe the window",
-    "notes": "Plural wipe-window command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "tesewátskhwárak"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc15",
-    "target": "seniáhseron",
-    "english": "You two sweep (dual command)",
-    "pos": "verb — A-stem dual command",
-    "group": "v_sweep",
-    "groupLabel": "v_sweep",
-    "subLabel": "you two sweep",
-    "notes": "Dual sweep command — seni- + áhseron (sweep root).",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "seniáhseron"
-    ],
-    "forms": null
-  },
-  {
-    "id": "dc16",
-    "target": "sewáhseron",
-    "english": "You all sweep (plural command)",
-    "pos": "verb — A-stem plural command",
-    "group": "v_sweep",
-    "groupLabel": "v_sweep",
-    "subLabel": "you all sweep",
-    "notes": "Plural sweep command.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "sewáhseron"
-    ],
-    "forms": null
-  },
-  {
     "id": "pp06",
     "target": "sa'tarò:ten",
     "english": "your pants (A-class possessed)",
@@ -11753,48 +11290,15 @@
     "forms": null
   },
   {
-    "id": "k16",
-    "target": "raksén'a",
-    "english": "My son",
-    "pos": "noun — kinship (possessed)",
-    "group": "kin_son",
-    "groupLabel": "son",
-    "subLabel": "my son",
-    "notes": "My son — raksén'a. Already partially in the glossary as k08 'son (his)', but the first-person form is the canonical entry.",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "raksén'a",
-      "raksen'a"
-    ],
-    "forms": [
-      {
-        "label": "my son",
-        "form": "raksén'a"
-      },
-      {
-        "label": "your son",
-        "form": "saksén'a"
-      },
-      {
-        "label": "his son",
-        "form": "ro'sén'a"
-      }
-    ]
-  },
-  {
     "id": "k17",
     "target": "akwenhsón:'a",
-    "english": "My grandchild",
-    "pos": "noun — kinship (possessed)",
+    "english": "grandchild",
+    "pos": "Noun — Kinship",
     "group": "kin_grandchild",
     "groupLabel": "grandchild",
-    "subLabel": "my grandchild",
-    "notes": "My grandchild — akwenhsón:'a. The reciprocal relationship to tota/aksótha (grandmother/grandfather). Grandparents and grandchildren share a special close relationship in Haudenosaunee families.",
+    "notes": "Gender-neutral grandchild term. For gendered forms see 'grandson' and 'granddaughter'. The grandparent-grandchild relationship is described as the closest in Haudenosaunee society.",
     "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
@@ -11809,26 +11313,83 @@
       {
         "label": "your grandchild",
         "form": "sakwenhsón:'a"
+      },
+      {
+        "label": "your grandchild",
+        "form": "etshateré:'a",
+        "dialect": "Six Nations"
       }
     ]
   },
   {
-    "id": "k18",
-    "target": "aksen'okon:'a",
-    "english": "My niece / nephew (sister's child)",
-    "pos": "noun — kinship (possessed)",
-    "group": "kin_niece",
-    "groupLabel": "niece / nephew",
-    "subLabel": "my niece / nephew",
-    "notes": "My niece or nephew (sister's child) — aksen'okon:'a. In Haudenosaunee kinship, a woman's sister's children are classified differently from a man's sister's children. This is the woman's perspective.",
+    "id": "k19",
+    "target": "riyateré:'a",
+    "english": "grandson",
+    "pos": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 4,
+    "notes": "Six Nations form from eCampusOntario OER. For the gender-neutral grandchild term see 'grandchild'.",
     "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
+      "text": "eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "riyateré:'a",
+      "riyatere:'a"
+    ],
+    "forms": [
+      {
+        "label": "my grandson",
+        "form": "riyateré:'a"
+      },
+      {
+        "label": "your grandson",
+        "form": "etshateré:'a"
+      }
+    ],
+    "group": "kin_grandson",
+    "groupLabel": "grandson"
+  },
+  {
+    "id": "k18",
+    "target": "aksen'okon:'a / riyonhwatén:'a",
+    "english": "niece / nephew",
+    "pos": "noun — kinship (possessed)",
+    "group": "kin_niece_nephew",
+    "groupLabel": "niece / nephew",
+    "notes": "In Haudenosaunee kinship, a woman's sister's children are classified differently from a man's sister's children. aksen'okon:'a is the Kanehsatà:ke form (woman's perspective); riyonhwatén:'a is the Six Nations form (male speaker).",
+    "cite": {
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke; eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://www.kanehsatakevoices.com/"
     },
     "accepts": [
-      "aksen'okon:'a"
+      "aksen'okon:'a",
+      "riyonhwatén:'a",
+      "riyonhwaten:'a",
+      "kheyonhwatén:'a"
     ],
-    "forms": null
+    "forms": [
+      {
+        "label": "my niece / nephew",
+        "form": "aksen'okon:'a",
+        "dialect": "Kanehsatà:ke · Kahnawà:ke"
+      },
+      {
+        "label": "my nephew",
+        "form": "riyonhwatén:'a",
+        "dialect": "Six Nations"
+      },
+      {
+        "label": "my niece",
+        "form": "kheyonhwatén:'a",
+        "dialect": "Six Nations"
+      },
+      {
+        "label": "your nephew",
+        "form": "etshonhwatén:'a",
+        "dialect": "Six Nations"
+      }
+    ]
   },
   {
     "id": "ex01",
@@ -12097,25 +11658,6 @@
     "forms": null
   },
   {
-    "id": "ex15",
-    "target": "Satkatón:ni",
-    "english": "You study / practise (command)",
-    "pos": "verb — A-stem (command)",
-    "group": "v_study",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you study / practise (command)",
-    "notes": "Study, practise — command form. Related to satkatón:nis (you study, habitual). The command form you can use to encourage yourself or others.",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "Satkatón:ni",
-      "satkaton:ni"
-    ],
-    "forms": null
-  },
-  {
     "id": "ex16",
     "target": "Ioiá:ner",
     "english": "It is good / it is right",
@@ -12131,82 +11673,6 @@
     "accepts": [
       "Ioiá:ner",
       "ioianer"
-    ],
-    "forms": null
-  },
-  {
-    "id": "ex17",
-    "target": "Sewakwé:kon",
-    "english": "You all (emphatic plural pronoun)",
-    "pos": "pronoun — plural",
-    "group": "pron_you",
-    "groupLabel": "you",
-    "subLabel": "plural emphatic — you all",
-    "notes": "You all — sewakwé:kon. You know this from the pronoun lessons. Here as a standalone emphatic address: 'Shé:kon sewakwé:kon!' (Hello everyone!)",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "Sewakwé:kon",
-      "sewakwe:kon"
-    ],
-    "forms": null
-  },
-  {
-    "id": "ex18",
-    "target": "Iakwakwé:kon",
-    "english": "We all (first person plural inclusive)",
-    "pos": "pronoun — plural",
-    "group": "pron_i",
-    "groupLabel": "I / we",
-    "subLabel": "we all (inclusive plural)",
-    "notes": "We all — iakwakwé:kon. First person plural inclusive. Compare sewakwé:kon (you all). The -kwé:kon suffix marks totality/all in both cases.",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "Iakwakwé:kon",
-      "iakwakwe:kon"
-    ],
-    "forms": null
-  },
-  {
-    "id": "ex19",
-    "target": "Ratikwé:kon",
-    "english": "They all / all the men (third person plural)",
-    "pos": "pronoun — plural",
-    "group": "pron_he",
-    "groupLabel": "he / they (male)",
-    "subLabel": "they all (third person plural)",
-    "notes": "They all (male/mixed) — ratikwé:kon. Third person plural. The full pronoun you saw in the plural lesson.",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "Ratikwé:kon",
-      "ratikwe:kon"
-    ],
-    "forms": null
-  },
-  {
-    "id": "ex20",
-    "target": "Kontikwé:kon",
-    "english": "They all / all the women (third person plural feminine)",
-    "pos": "pronoun — plural",
-    "group": "pron_she",
-    "groupLabel": "she / her",
-    "subLabel": "they all (feminine plural)",
-    "notes": "They all (female) — kontikwé:kon. Third person plural feminine. Parallel to ratikwé:kon.",
-    "cite": {
-      "text": "Kanehsatà:ke community usage; Maracle (1993) One Thousand Useful Mohawk Words",
-      "url": "https://www.kanehsatakevoices.com/"
-    },
-    "accepts": [
-      "Kontikwé:kon",
-      "kontikwe:kon"
     ],
     "forms": null
   },
@@ -12283,25 +11749,6 @@
     "accepts": [
       "Tsi ionnhéhton",
       "tsi ionnhehton"
-    ],
-    "forms": null
-  },
-  {
-    "id": "ex25",
-    "target": "Sénha",
-    "english": "You put it on / dress it (command)",
-    "pos": "verb — A-stem",
-    "group": "v_dress",
-    "groupLabel": "A-stem verbs",
-    "subLabel": "you put it on / dress (command)",
-    "notes": "Put on (clothing command) — sénha. The key dressing verb from Lesson 35.",
-    "cite": {
-      "text": "Kontinónhstats L35 · Mary McDonald, Kanehsatà:ke",
-      "url": "https://www.kanehsatakevoices.com/lessons/lesson-35/"
-    },
-    "accepts": [
-      "Sénha",
-      "senha"
     ],
     "forms": null
   },
@@ -13824,54 +13271,37 @@
   },
   {
     "id": "vr02",
-    "target": "katerí:waks",
-    "english": "I am working (habitual)",
-    "pos": "verb — stative/active",
+    "target": "rí:waks",
+    "english": "to work",
+    "pos": "Verb",
     "group": "v_work",
-    "groupLabel": "work verbs",
-    "subLabel": "I am working",
-    "notes": "I am working — kate- (I, stative) + rí:waks (work root). The work verb is essential for daily conversation. Note the wa- stative prefix pattern you know from aspect.",
+    "notes": "Work verb. kate- (I, stative) + rí:waks; ra- (he) + í:waks. Essential for daily conversation.",
     "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "text": "eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
     },
     "accepts": [
       "katerí:waks",
-      "kateriwaks"
+      "rí:waks"
     ],
     "forms": [
       {
-        "label": "I am working",
+        "label": "I work (habitual)",
         "form": "katerí:waks"
       },
       {
-        "label": "you are working",
-        "form": "saterí:waks"
+        "label": "you work (habitual)",
+        "form": ""
       },
       {
-        "label": "she is working",
-        "form": "iakaterí:waks"
+        "label": "he works (habitual)",
+        "form": "rí:waks"
+      },
+      {
+        "label": "she works (habitual)",
+        "form": ""
       }
     ]
-  },
-  {
-    "id": "vr03",
-    "target": "rí:waks",
-    "english": "he is working",
-    "pos": "verb — stative",
-    "group": "v_work",
-    "groupLabel": "work verbs",
-    "subLabel": "he is working",
-    "notes": "He is working — ra- (he) + í:waks (work). The masculine third-person prefix with the work root.",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "rí:waks",
-      "riwaks"
-    ],
-    "forms": null
   },
   {
     "id": "vr04",
@@ -13894,33 +13324,35 @@
   },
   {
     "id": "vr05",
-    "target": "kaná:ton",
-    "english": "I say / I speak",
-    "pos": "verb — active",
+    "target": "ná:ton",
+    "english": "to speak / to say",
+    "pos": "Verb",
     "group": "v_speak",
-    "groupLabel": "speaking verbs",
-    "subLabel": "I say / I speak",
-    "notes": "I say / I speak — ka- (I) + ná:ton (speaking root). Essential for any conversation. Compare with the writing root -hiá:ton.",
+    "notes": "Two related speaking roots: ná:ton (to say/speak) and -wenna- (word-making). The root -wenna- is related to words and language — compare onkwawenna (our language).",
     "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
+      "text": "eCampusOntario OER (CC BY 4.0) · Six Nations Polytechnic",
       "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
     },
     "accepts": [
       "kaná:ton",
-      "kanaton"
+      "kawennaién:tas"
     ],
     "forms": [
       {
-        "label": "I say / speak",
+        "label": "I say / I speak",
         "form": "kaná:ton"
       },
       {
-        "label": "you say / speak",
-        "form": "saná:ton"
+        "label": "I am speaking / making words",
+        "form": "kawennaién:tas"
       },
       {
-        "label": "she says / speaks",
-        "form": "iakaná:ton"
+        "label": "you speak",
+        "form": ""
+      },
+      {
+        "label": "he speaks",
+        "form": ""
       }
     ]
   },
@@ -14021,25 +13453,6 @@
         "form": "iakatonnhétons"
       }
     ]
-  },
-  {
-    "id": "vr10",
-    "target": "kawennaién:tas",
-    "english": "I am speaking / making words (habitual)",
-    "pos": "verb — habitual",
-    "group": "v_speak",
-    "groupLabel": "speaking verbs",
-    "subLabel": "I am speaking / making words",
-    "notes": "I am making words / speaking — ka- (I) + wennaién:tas (word-making root). The root -wenna- is related to words and language. Compare onkwawenna (our language/words).",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "kawennaién:tas",
-      "kawennaientas"
-    ],
-    "forms": null
   },
   {
     "id": "vr11",
@@ -14198,51 +13611,6 @@
     "forms": null
   },
   {
-    "id": "kin01",
-    "target": "riyén:'a / kheyén:'a",
-    "english": "my son / my daughter",
-    "pos": "noun — kinship (possessed)",
-    "group": "kin_child",
-    "groupLabel": "children",
-    "subLabel": "my son / my daughter",
-    "notes": "My son (riyén:'a, masculine speaker) / my daughter (kheyén:'a, feminine speaker). The eCampusOntario OER provides the full paradigm showing how parent's gender affects the word for their child.",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "riyén:'a",
-      "kheyén:'a",
-      "my child"
-    ],
-    "forms": [
-      {
-        "label": "my son (male speaker)",
-        "form": "riyén:'a"
-      },
-      {
-        "label": "my daughter (female speaker)",
-        "form": "kheyén:'a"
-      },
-      {
-        "label": "your son",
-        "form": "etshyén:'a"
-      },
-      {
-        "label": "your daughter",
-        "form": "sheyén:'a"
-      },
-      {
-        "label": "his child",
-        "form": "royén:'a"
-      },
-      {
-        "label": "her child",
-        "form": "yontatyén:'a"
-      }
-    ]
-  },
-  {
     "id": "kin02",
     "target": "onkyara'sé:'a",
     "english": "my cousin",
@@ -14346,104 +13714,6 @@
       {
         "label": "her uncle",
         "form": "shakonohá:'a"
-      }
-    ]
-  },
-  {
-    "id": "kin05",
-    "target": "riyonhwatén:'a",
-    "english": "my nephew",
-    "pos": "noun — kinship (possessed)",
-    "group": "kinship",
-    "groupLabel": "kinship",
-    "subLabel": "my nephew",
-    "notes": "My nephew — riyonhwatén:'a. The nephew (sister's son) relationship is significant in Haudenosaunee society — he learns from his maternal uncle.",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "riyonhwatén:'a",
-      "my nephew"
-    ],
-    "forms": [
-      {
-        "label": "my nephew (male speaker)",
-        "form": "riyonhwatén:'a"
-      },
-      {
-        "label": "my niece (female speaker)",
-        "form": "kheyonhwatén:'a"
-      },
-      {
-        "label": "your nephew",
-        "form": "etshonhwatén:'a"
-      }
-    ]
-  },
-  {
-    "id": "kin06",
-    "target": "riyateré:'a / kheyateré:'a",
-    "english": "my grandson / my granddaughter",
-    "pos": "noun — kinship (possessed)",
-    "group": "kinship",
-    "groupLabel": "kinship",
-    "subLabel": "my grandchild (gendered)",
-    "notes": "My grandchild — riyateré:'a (grandson, male speaker) / kheyateré:'a (granddaughter, female speaker). The grandparent-grandchild relationship is described as the closest in Haudenosaunee society.",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "riyateré:'a",
-      "kheyateré:'a",
-      "my grandchild"
-    ],
-    "forms": [
-      {
-        "label": "my grandson (male speaker)",
-        "form": "riyateré:'a"
-      },
-      {
-        "label": "my granddaughter (female speaker)",
-        "form": "kheyateré:'a"
-      },
-      {
-        "label": "your grandchild",
-        "form": "etshateré:'a"
-      }
-    ]
-  },
-  {
-    "id": "kin07",
-    "target": "ri'kén:'a / khe'kén:'a",
-    "english": "my younger brother / my younger sister",
-    "pos": "noun — kinship (possessed)",
-    "group": "kinship",
-    "groupLabel": "kinship",
-    "subLabel": "my younger sibling",
-    "notes": "My younger sibling — ri'kén:'a (younger brother, male speaker) / khe'kén:'a (younger sister, female speaker). Sibling terms in Kanien'kéha encode both relative age (older/younger) and gender of both the sibling and the speaker.",
-    "cite": {
-      "text": "eCampusOntario OER — Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic",
-      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
-    },
-    "accepts": [
-      "ri'kén:'a",
-      "khe'kén:'a",
-      "younger sibling"
-    ],
-    "forms": [
-      {
-        "label": "my younger brother (male speaker)",
-        "form": "ri'kén:'a"
-      },
-      {
-        "label": "my younger sister (female speaker)",
-        "form": "khe'kén:'a"
-      },
-      {
-        "label": "your younger sibling",
-        "form": "etshe'kén:'a"
       }
     ]
   },
