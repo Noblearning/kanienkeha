@@ -275,6 +275,21 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .gee{font-size:.84rem;color:var(--ew);font-style:italic;}
 .gear{color:var(--clay);font-size:.88rem;}
 
+/* advanced search */
+.adv-toggle{display:flex;align-items:center;gap:.45rem;padding:.1rem 1.35rem .55rem;font-size:.82rem;color:var(--sky);cursor:pointer;background:none;border:none;font-family:'Crimson Pro',serif;text-decoration:underline;text-decoration-style:dashed;text-underline-offset:3px;}
+.adv-panel{display:none;background:var(--birch);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);padding:.85rem 1.35rem;margin-bottom:.35rem;}
+.adv-panel.open{display:block;}
+.adv-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:flex-start;}
+.adv-field{flex:1;min-width:140px;}
+.adv-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--clay);font-weight:700;margin-bottom:.35rem;}
+.adv-select{width:100%;border:1.5px solid var(--smoke);border-radius:8px;background:white;font-family:'Crimson Pro',serif;font-size:.85rem;color:var(--ed);padding:.32rem .5rem;max-height:120px;outline:none;}
+.adv-select:focus{border-color:var(--clay);}
+.adv-clear{margin-top:.72rem;padding:.38rem .9rem;border-radius:8px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.83rem;color:var(--ew);cursor:pointer;}
+.adv-clear:hover{border-color:var(--clay);color:var(--ed);}
+.adv-active-tags{display:flex;flex-wrap:wrap;gap:.32rem;padding:0 1.35rem .5rem;}
+.adv-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.76rem;padding:.2rem .55rem;border-radius:17px;background:var(--ed);color:var(--sand);cursor:pointer;}
+.adv-tag span{opacity:.65;font-size:.8rem;}
+
 /* resources */
 .rsec{padding:.8rem 1.35rem .18rem;}
 .rstitle{font-family:'Playfair Display',serif;font-size:.96rem;color:var(--em);margin-bottom:.62rem;}
@@ -505,6 +520,25 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="pw">
     <div class="sh"><h2>Vocabulary</h2></div>
     <div class="gswrap"><span class="gsic">🔍</span><input class="gsearch" id="gsearch" type="text" placeholder="Search Kanien'kéha or English…" oninput="filterGloss()" autocorrect="off" autocapitalize="off"></div>
+    <button class="adv-toggle" onclick="toggleAdvSearch()">⚙ Advanced search</button>
+    <div class="adv-panel" id="adv-panel">
+      <div class="adv-row">
+        <div class="adv-field">
+          <div class="adv-label">Tags</div>
+          <select class="adv-select" id="adv-tags" multiple size="5" onchange="filterGloss()"></select>
+        </div>
+        <div class="adv-field">
+          <div class="adv-label">Word type</div>
+          <select class="adv-select" id="adv-pos" multiple size="5" onchange="filterGloss()"></select>
+        </div>
+        <div class="adv-field">
+          <div class="adv-label">Unit</div>
+          <select class="adv-select" id="adv-unit" multiple size="5" onchange="filterGloss()"></select>
+        </div>
+      </div>
+      <button class="adv-clear" onclick="clearAdvSearch()">Clear filters</button>
+    </div>
+    <div class="adv-active-tags" id="adv-active-tags"></div>
     <div style="display:flex;align-items:center;justify-content:space-between;padding:.2rem 1.35rem .1rem;">
       <div class="galpha" id="galpha" style="padding:0;flex:1;flex-wrap:wrap;display:flex;gap:.26rem;"></div>
       <label style="display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:var(--ew);white-space:nowrap;margin-left:.75rem;cursor:pointer;flex-shrink:0;">
@@ -1124,6 +1158,88 @@ function audioAssess(good){
 /* glossary */
 let gL='all';
 let sortByKanien=false;
+let advOpen=false;
+
+function toggleAdvSearch(){
+  advOpen=!advOpen;
+  document.getElementById('adv-panel').classList.toggle('open',advOpen);
+}
+
+function populateAdvSearch(){
+  // Tags — derive human-readable labels from groupLabel, deduplicate
+  const tagMap={};
+  GLOSS.forEach(w=>{
+    if(w.group&&w.groupLabel){
+      // Use a clean label: prefer groupLabel, strip pn_/pron_ prefixes
+      const label=w.groupLabel||w.group;
+      tagMap[w.group]=label;
+    }
+  });
+  const tagSel=document.getElementById('adv-tags');
+  tagSel.innerHTML=Object.entries(tagMap)
+    .sort((a,b)=>a[1].localeCompare(b[1],'en'))
+    .map(([g,l])=>`<option value="${g}">${l}</option>`)
+    .join('');
+
+  // POS — collapse to broad categories
+  const posCategories={
+    'noun':'Noun',
+    'verb':'Verb',
+    'pronoun':'Pronoun',
+    'particle':'Particle',
+    'phrase':'Phrase',
+    'number':'Number',
+    'proper noun':'Proper noun',
+    'qualifier':'Qualifier',
+    'article':'Article',
+    'expression':'Expression',
+  };
+  const posSel=document.getElementById('adv-pos');
+  posSel.innerHTML=Object.entries(posCategories)
+    .map(([k,l])=>`<option value="${k}">${l}</option>`)
+    .join('');
+
+  // Units
+  const unitSel=document.getElementById('adv-unit');
+  const units=[...new Set(GLOSS.map(w=>w.unit).filter(u=>u!==undefined&&u!==null&&u!==''))].sort((a,b)=>Number(a)-Number(b));
+  unitSel.innerHTML=units.map(u=>`<option value="${u}">Unit ${Number(u)+1}</option>`).join('');
+}
+
+function getAdvFilters(){
+  const sel=id=>[...document.getElementById(id).selectedOptions].map(o=>o.value);
+  return{tags:sel('adv-tags'),pos:sel('adv-pos'),units:sel('adv-unit')};
+}
+
+function clearAdvSearch(){
+  ['adv-tags','adv-pos','adv-unit'].forEach(id=>{
+    const el=document.getElementById(id);
+    [...el.options].forEach(o=>o.selected=false);
+  });
+  updateAdvActiveTags();
+  filterGloss();
+}
+
+function updateAdvActiveTags(){
+  const f=getAdvFilters();
+  const all=[
+    ...f.tags.map(t=>{const o=document.querySelector(`#adv-tags option[value="${t}"]`);return o?{label:o.textContent,type:'tags',val:t}:null;}),
+    ...f.pos.map(t=>{const o=document.querySelector(`#adv-pos option[value="${t}"]`);return o?{label:o.textContent,type:'pos',val:t}:null;}),
+    ...f.units.map(t=>{const o=document.querySelector(`#adv-unit option[value="${t}"]`);return o?{label:o.textContent,type:'unit',val:t}:null;}),
+  ].filter(Boolean);
+  document.getElementById('adv-active-tags').innerHTML=all.map(t=>
+    `<div class="adv-tag" onclick="removeAdvFilter('${t.type}','${t.val}')">${t.label} <span>✕</span></div>`
+  ).join('');
+}
+
+function removeAdvFilter(type,val){
+  const map={tags:'adv-tags',pos:'adv-pos',unit:'adv-unit'};
+  const el=document.getElementById(map[type]);
+  if(!el)return;
+  const opt=el.querySelector(`option[value="${val}"]`);
+  if(opt)opt.selected=false;
+  updateAdvActiveTags();
+  filterGloss();
+}
 
 function toggleSort(){
   sortByKanien=!sortByKanien;
@@ -1135,8 +1251,9 @@ function toggleSort(){
   if(lbl) lbl.textContent=sortByKanien?"A–Z Kanien'kéha":'A–Z English';
   renderGloss();
 }
+
 function renderGloss(){
-  // Build letter list based on current sort mode
+  populateAdvSearch();
   const letters=[...new Set(GLOSS.map(w=>{
     if(sortByKanien){
       return w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?';
@@ -1149,24 +1266,43 @@ function renderGloss(){
     letters.map(l=>`<button class="abtn" onclick="setAlpha('${l}',this)">${l}</button>`).join('');
   filterGloss();
 }
-function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
-function filterGloss(){
-  const q=(document.getElementById('gsearch').value||'').toLowerCase();
 
-  // Filter entries — group/groupLabel/subLabel are search metadata only
+function setAlpha(l,btn){gL=l;document.querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filterGloss();}
+
+function filterGloss(){
+  updateAdvActiveTags();
+  const q=(document.getElementById('gsearch').value||'').toLowerCase();
+  const f=getAdvFilters();
+
   const matching=GLOSS.filter(w=>{
+    // Text search — includes group metadata and form contents
     const mq=!q||
       w.target.toLowerCase().includes(q)||
       w.english.toLowerCase().includes(q)||
       (w.groupLabel||'').toLowerCase().includes(q)||
-      (w.subLabel||'').toLowerCase().includes(q)||
       (w.group||'').toLowerCase().includes(q)||
-      (w.forms||[]).some(f=>f.form.toLowerCase().includes(q)||f.label.toLowerCase().includes(q));
+      (w.forms||[]).some(fm=>
+        (fm.form||'').toLowerCase().includes(q)||
+        (fm.label||'').toLowerCase().includes(q)
+      );
+
+    // Advanced: tags
+    const mTags=!f.tags.length||f.tags.includes(w.group||'');
+
+    // Advanced: pos (broad category match)
+    const posLow=(w.pos||'').toLowerCase();
+    const mPos=!f.pos.length||f.pos.some(p=>posLow.startsWith(p)||posLow.includes(p));
+
+    // Advanced: unit
+    const mUnit=!f.units.length||f.units.includes(String(w.unit));
+
+    // Letter index
     const sortKey=sortByKanien
       ? w.target.replace(/[^a-zA-ZÀ-žÁáÉéÍíÓóÚú'ʔ:]/g,'')[0]?.toUpperCase()||'?'
       : w.english[0].toUpperCase();
     const ml=gL==='all'||sortKey===gL;
-    return mq&&ml;
+
+    return mq&&mTags&&mPos&&mUnit&&ml;
   });
 
   if(!matching.length){
@@ -1174,7 +1310,7 @@ function filterGloss(){
     return;
   }
 
-  // Sort entries individually — every entry is its own headword
+  // Sort individually — every entry is its own headword
   const sorted=[...matching];
   if(sortByKanien){
     sorted.sort((a,b)=>a.target.toLowerCase().localeCompare(b.target.toLowerCase(),'fr'));
@@ -1196,6 +1332,8 @@ function filterGloss(){
   list.innerHTML=Object.keys(byLetter).sort().map(letter=>{
     const cards=byLetter[letter].map(w=>renderFlatEntry(w)).join('');
     return '<div class="glg"><div class="glh">'+letter+'</div>'+cards+'</div>';
+  }).join('');
+}
   }).join('');
 }
 
@@ -1230,38 +1368,9 @@ function renderFlatEntry(w){
   '</div>';
 }
 
-function renderSubEntry(w){
-  const p=getProf(w.id);
-  const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
-  const profBar=p?'<div class="prof-track" style="margin-top:.28rem"><div class="prof-fill '+cls+'" style="width:'+p.pct+'%;height:3px;border-radius:4px"></div></div>':'';
-  const formsRows=w.forms&&w.forms.length?w.forms.map(f=>'<tr><td>'+f.label+'</td><td style="font-family:\'Playfair Display\',serif">'+f.form+'</td></tr>').join(''):'';
-  const formsHtml=formsRows?'<div class="ge-forms" style="margin-top:.5rem"><table class="ftable" style="font-size:.82rem"><thead><tr><th>form</th><th>Kanien\'k\u00e9ha</th></tr></thead><tbody>'+formsRows+'</tbody></table></div>':'';
-  const citeHtml=w.cite?'<div style="margin-top:.4rem;font-size:.75rem"><a href="'+w.cite.url+'" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl)">'+w.cite.text+' \u2197</a></div>':'';
-  return '<div style="padding:.55rem .7rem;border-radius:8px;background:var(--birch);border:1px solid var(--sand);margin-bottom:.42rem;cursor:pointer" id="sub-'+w.id+'" onclick="event.stopPropagation();toggleSubEntry(\''+w.id+'\')">'+
-    '<div style="display:flex;align-items:flex-start;gap:.5rem">'+
-      '<div style="flex:1">'+
-        (w.subLabel?'<div style="font-size:.72rem;color:var(--clay);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.18rem">'+w.subLabel+'</div>':'')+
-        '<div style="font-family:\'Playfair Display\',serif;font-size:.95rem;color:var(--ed)">'+w.target+'</div>'+
-        '<div style="font-size:.8rem;color:var(--ew);font-style:italic">'+w.english+'</div>'+
-      '</div>'+
-      '<span style="color:var(--clay);font-size:.85rem" id="sub-arr-'+w.id+'">\u203a</span>'+
-    '</div>'+
-    profBar+
-    '<div id="sub-detail-'+w.id+'" style="display:none;margin-top:.55rem;padding-top:.55rem;border-top:1px solid var(--sand)">'+
-      (w.notes?'<div style="font-size:.84rem;color:var(--ed);line-height:1.62;margin-bottom:.28rem">'+w.notes+'</div>':'')+
-      formsHtml+citeHtml+
-    '</div>'+
-  '</div>';
-}
 
-function toggleGroup(gid){
-  const body=document.getElementById('grp-body-'+gid);
-  const arrow=document.getElementById('grp-arr-'+gid);
-  if(!body)return;
-  const open=body.style.display==='none';
-  body.style.display=open?'block':'none';
-  if(arrow)arrow.textContent=open?'\u2228':'\u203a';
-}
+
+
 
 function toggleGlossEntry(id){
   const detail=document.getElementById('ge-detail-'+id);
@@ -1272,14 +1381,7 @@ function toggleGlossEntry(id){
   if(arrow)arrow.textContent=open?'\u2228':'\u203a';
 }
 
-function toggleSubEntry(id){
-  const detail=document.getElementById('sub-detail-'+id);
-  const arrow=document.getElementById('sub-arr-'+id);
-  if(!detail)return;
-  const open=detail.style.display==='none';
-  detail.style.display=open?'block':'none';
-  if(arrow)arrow.textContent=open?'\u2228':'\u203a';
-}
+
 
 
 /* modal */
