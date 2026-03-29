@@ -381,6 +381,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="bm"></div>
   <div class="pw">
     <div class="hhero">
+      <button onclick="doLogout()" style="position:absolute;top:.75rem;right:1rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:8px;color:rgba(232,201,154,.75);font-family:'Crimson Pro',serif;font-size:.75rem;padding:.28rem .65rem;cursor:pointer;">Sign out</button>
       <span class="hi">🌿</span>
       <h1>Kanien'kéha<br><em>Kanehsatà:ke</em></h1>
       <p>Carry the language forward, one word at a time</p>
@@ -671,6 +672,16 @@ function loginAs(name,data){
   if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
   document.getElementById('bnav').style.display='flex';
   updateHomeUI();navTo('home');
+}
+
+function doLogout(){
+  CU=null;
+  localStorage.removeItem(LK);
+  document.getElementById('bnav').style.display='none';
+  document.getElementById('si-n').value='';
+  document.getElementById('si-p').value='';
+  document.getElementById('si-e').textContent='';
+  showScreen('login');
 }
 
 /* ══════════════════════════════════════════════════════════
