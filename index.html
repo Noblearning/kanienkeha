@@ -291,6 +291,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .adv-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.74rem;padding:.18rem .52rem;border-radius:17px;background:var(--ed);color:var(--sand);cursor:pointer;}
 .adv-tag span{opacity:.65;font-size:.78rem;}
 
+.btn-signout{position:absolute;top:.85rem;right:1rem;background:var(--ed);border:1.5px solid var(--sand);border-radius:9px;color:var(--sand);font-family:'Crimson Pro',serif;font-size:.88rem;font-weight:600;padding:.48rem 1rem;cursor:pointer;letter-spacing:.02em;transition:background .14s,color .14s;}
+.btn-signout:hover{background:var(--em);color:white;}
+
 /* resources */
 .rsec{padding:.8rem 1.35rem .18rem;}
 .rstitle{font-family:'Playfair Display',serif;font-size:.96rem;color:var(--em);margin-bottom:.62rem;}
@@ -381,7 +384,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="bm"></div>
   <div class="pw">
     <div class="hhero">
-      <button onclick="doLogout()" style="position:absolute;top:.75rem;right:1rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:8px;color:rgba(232,201,154,.75);font-family:'Crimson Pro',serif;font-size:.75rem;padding:.28rem .65rem;cursor:pointer;">Sign out</button>
+      <button onclick="doLogout()" class="btn-signout">Sign Out</button>
       <span class="hi">🌿</span>
       <h1>Kanien'kéha<br><em>Kanehsatà:ke</em></h1>
       <p>Carry the language forward, one word at a time</p>
@@ -389,30 +392,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div class="hbody">
       <div class="dbar"><span class="di">📅</span><div><strong id="dc">0 days</strong><span id="du">Welcome</span></div></div>
       <div class="sl">Your Journey</div>
-      <div class="uc" id="uc0" onclick="openUnit(0)">
-        <div class="ut"><span class="utitle">Unit 1 — Who We Are: Pronouns &amp; People</span><span class="ubadge bn" id="ub0">Start</span></div>
-        <p class="udesc">Free pronouns, singular people nouns — the foundation of every sentence</p>
-        <div class="pt"><div class="pf" id="uf0" style="width:0%"></div></div>
-        <div class="pl" id="ul0">Not started</div>
-      </div>
-      <div class="uc" id="uc1" onclick="openUnit(1)">
-        <div class="ut"><span class="utitle">Unit 2 — Family &amp; Kinship</span><span class="ubadge bl" id="ub1">Locked</span></div>
-        <p class="udesc">Kinship nouns in my/your/his/her forms — relationship as grammar</p>
-        <div class="pt"><div class="pf" id="uf1" style="width:0%"></div></div>
-        <div class="pl" id="ul1">Complete Unit 1 first</div>
-      </div>
-      <div class="uc" onclick="openUnit(2)">
-        <div class="ut"><span class="utitle">Unit 3 — The Land Around Us</span><span class="ubadge bn">Start</span></div>
-        <p class="udesc">Kanehsatà:ke geography, nature, colours, shapes</p>
-      </div>
-      <div class="uc" onclick="openUnit(3)">
-        <div class="ut"><span class="utitle">Unit 4 — Animals, Food &amp; Clans</span><span class="ubadge bn">Start</span></div>
-        <p class="udesc">Wild &amp; domestic animals, fruits, foods, and the clan system</p>
-      </div>
-      <div class="uc" onclick="openUnit(4)">
-        <div class="ut"><span class="utitle">Unit 5 — Story, Ceremony &amp; Verbs</span><span class="ubadge bn">Start</span></div>
-        <p class="udesc">Oral tradition, the Thanksgiving Address, and command verbs</p>
-      </div>
+      <div id="unit-cards"></div>
 
       <div style="margin-top:1.4rem;background:var(--birch);border:1px solid var(--sand);border-radius:11px;padding:.85rem 1rem;">
         <p style="font-size:.82rem;line-height:1.62;color:var(--ew);"><strong style="color:var(--clay);display:block;margin-bottom:.22rem;">About this content &amp; its foundations</strong>
@@ -727,25 +707,35 @@ function goHome(){updateHomeUI();navTo('home');}
 /* ══════════════════════════════════════════════════════════
    HOME UI
    ══════════════════════════════════════════════════════════ */
+function renderHomeUnits(){
+  if(!UNITS.length) return;
+  document.getElementById('unit-cards').innerHTML=UNITS.map((u,i)=>{
+    const p=CU?CU.data.unitProgress[i]||0:0;
+    const lp=CU?CU.data.lessonProgress['u'+i]||{}:{};
+    const dl=Object.values(lp).filter(v=>v>=100).length;
+    const tl=u.lessons.length;
+    const prevDone=i===0||((CU?CU.data.unitProgress[i-1]||0:0)>=100);
+    let badgeCls='bn', badgeTxt='Start', statusTxt='Not started';
+    if(!prevDone){badgeCls='bl';badgeTxt='Locked';statusTxt='Complete Unit '+(i)+' first';}
+    else if(p<=0){badgeCls='bn';badgeTxt='Start';statusTxt='Not started';}
+    else if(dl>=tl&&tl>0){badgeCls='bd';badgeTxt='✓ Done';statusTxt='Complete ✓';}
+    else{badgeCls='bp';badgeTxt='Continue';statusTxt=dl+' / '+tl+' lessons done';}
+    return `<div class="uc" id="uc${i}" onclick="openUnit(${i})">
+      <div class="ut"><span class="utitle">${u.title}</span><span class="ubadge ${badgeCls}" id="ub${i}">${badgeTxt}</span></div>
+      <p class="udesc">${u.desc}</p>
+      <div class="pt"><div class="pf" id="uf${i}" style="width:${p}%"></div></div>
+      <div class="pl" id="ul${i}">${statusTxt}</div>
+    </div>`;
+  }).join('');
+}
+
 function updateHomeUI(){
   if(!CU)return;
   const days=CU.data.daysLogged.length;
   document.getElementById('dc').textContent=days+(days===1?' day of learning':' days of learning');
   document.getElementById('du').textContent='Welcome back, '+CU.name;
-  [0,1].forEach(i=>{
-    const p=CU.data.unitProgress[i]||0;
-    document.getElementById('uf'+i).style.width=p+'%';
-    const lp=CU.data.lessonProgress['u'+i]||{};
-    const dl=UNITS[i]?Object.values(lp).filter(v=>v>=100).length:0;
-    const tl=UNITS[i]?UNITS[i].lessons.length:0;
-    if(p<=0){document.getElementById('ul'+i).textContent='Not started';setBadge(i,'Start','bn');}
-    else if(dl>=tl&&tl>0){document.getElementById('ul'+i).textContent='Complete ✓';setBadge(i,'✓ Done','bd');}
-    else{document.getElementById('ul'+i).textContent=dl+' / '+tl+' lessons done';setBadge(i,'Continue','bp');}
-  });
-  // Unit 2 lock note (testing: show as accessible but note it)
-  document.getElementById('ul1').textContent=(CU.data.unitProgress[0]||0)<100?'Complete Unit 1 first':'';
+  renderHomeUnits();
 }
-function setBadge(i,t,c){const b=document.getElementById('ub'+i);if(b){b.textContent=t;b.className='ubadge '+c;}}
 
 /* ══════════════════════════════════════════════════════════
    DATA — loaded from external JSON files at runtime.
