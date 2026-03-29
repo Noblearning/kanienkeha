@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ed:#2C1810;--em:#5C3A1E;--ew:#8B5E3C;
-  --clay:#C4784A;--sand:#E8C99A;--cream:#F5EDD8;
-  --sage:#7A8C6E;--sky:#6B8FA8;--skyl:#A8C4D4;
-  --birch:#F0E6CC;--smoke:#D4C9B0;--cor:#5A8A5A;--wrg:#9A4A3A;
+  --ed:#2C1810;--em:#5C3A1E;--ew:#7A4F2A;
+  --clay:#9E5C28;--sand:#E8C99A;--cream:#F5EDD8;
+  --sage:#4A6E40;--sky:#2E6A8E;--skyl:#A8C4D4;
+  --birch:#F0E6CC;--smoke:#D4C9B0;--cor:#3A7A3A;--wrg:#9A4A3A;
   --pb:rgba(44,24,16,.12);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -42,12 +42,17 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .lbtn:hover{background:var(--em);}
 .lnote{font-size:.78rem;color:var(--ew);text-align:center;margin-top:.85rem;font-style:italic;}
 
+/* skip nav */
+.skip-link{position:absolute;top:-999px;left:0;z-index:9999;background:var(--ed);color:var(--sand);padding:.6rem 1.2rem;border-radius:0 0 8px 0;font-family:'Crimson Pro',serif;font-size:.95rem;text-decoration:none;}
+.skip-link:focus{top:0;}
+
 /* ── BOTTOM NAV ── */
 .bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);}
-.nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.68rem;padding:.18rem .58rem;border-radius:8px;transition:color .13s;min-width:50px;}
+.nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.68rem;padding:.55rem .58rem;border-radius:8px;transition:color .13s;min-width:56px;min-height:44px;}
 .nb .ni{font-size:1.18rem;line-height:1;}
 .nb.active{color:var(--sand);}
 .nb.active .ni{filter:drop-shadow(0 0 5px rgba(196,120,74,.6));}
+.nb:focus-visible{outline:2px solid var(--sand);outline-offset:2px;}
 
 /* ── HOME ── */
 .hhero{background:linear-gradient(160deg,var(--ed) 0%,var(--em) 55%,var(--ew) 100%);padding:2.3rem 1.8rem 3.3rem;text-align:center;position:relative;overflow:hidden;}
@@ -68,8 +73,12 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .uc.done::before{background:var(--sage);}
 .ut{display:flex;justify-content:space-between;align-items:flex-start;}
 .utitle{font-family:'Playfair Display',serif;font-size:1rem;color:var(--ed);flex:1;padding-right:.45rem;}
-.ubadge{font-size:.69rem;padding:2px 8px;border-radius:17px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
-.bn{background:var(--clay);color:white;}.bd{background:var(--sage);color:white;}.bl{background:var(--smoke);color:var(--ew);}.bp{background:var(--sky);color:white;}
+.ubadge{font-size:.72rem;padding:3px 10px;border-radius:17px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
+.bn{background:#FFE8D0;color:#7A3800;border:1px solid #D4956A;}
+.bd{background:#DFF0D8;color:#2A5020;border:1px solid #6A9A60;}
+.bl{background:var(--smoke);color:#5C3A1E;border:1px solid #B8A888;}
+.bp{background:#D0E8F5;color:#1A4A6A;border:1px solid #6A9AC4;}
+*:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:3px;}
 .udesc{font-size:.84rem;color:var(--ew);margin-top:.26rem;font-style:italic;}
 .pt{height:5px;background:var(--pb);border-radius:10px;overflow:hidden;margin-top:.58rem;}
 .pf{height:100%;background:var(--clay);border-radius:10px;transition:width .4s;}
@@ -294,6 +303,46 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .btn-signout{position:absolute;top:.85rem;right:1rem;background:var(--ed);border:1.5px solid var(--sand);border-radius:9px;color:var(--sand);font-family:'Crimson Pro',serif;font-size:.88rem;font-weight:600;padding:.48rem 1rem;cursor:pointer;letter-spacing:.02em;transition:background .14s,color .14s;}
 .btn-signout:hover{background:var(--em);color:white;}
 
+/* syllabary practice */
+.sp-section{padding:.9rem 1.35rem .3rem;}
+.sp-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--em);margin-bottom:.7rem;padding-bottom:.32rem;border-bottom:2px solid var(--sand);}
+.sp-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:.6rem;margin-bottom:.9rem;}
+.sp-card{background:white;border:1px solid var(--smoke);border-radius:13px;padding:.88rem .95rem;cursor:pointer;transition:border-color .13s,transform .12s,box-shadow .13s;box-shadow:0 1px 5px rgba(44,24,16,.05);position:relative;overflow:hidden;}
+.sp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--clay);border-radius:13px 0 0 13px;}
+.sp-card:hover{border-color:var(--clay);transform:translateY(-2px);box-shadow:0 5px 14px rgba(44,24,16,.1);}
+.sp-card:focus-visible{outline:3px solid var(--sky);outline-offset:2px;}
+.sp-card-title{font-family:'Playfair Display',serif;font-size:.96rem;color:var(--ed);margin-bottom:.18rem;}
+.sp-card-sub{font-size:.78rem;color:var(--ew);font-style:italic;}
+.sp-card-prog{margin-top:.55rem;}
+.sp-card-prog-bar{height:4px;background:var(--pb);border-radius:4px;overflow:hidden;}
+.sp-card-prog-fill{height:100%;border-radius:4px;background:var(--clay);transition:width .4s;}
+.sp-card-count{font-size:.68rem;color:var(--ew);margin-top:.18rem;}
+
+/* practice exercise screen */
+.spex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.spex-topbar{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem;}
+.spex-pt{flex:1;height:7px;background:var(--smoke);border-radius:10px;overflow:hidden;}
+.spex-pf{height:100%;background:linear-gradient(90deg,var(--clay),var(--ew));border-radius:10px;transition:width .45s cubic-bezier(.4,0,.2,1);}
+.spex-ctr{font-size:.78rem;color:var(--ew);white-space:nowrap;font-weight:600;}
+.spex-close{background:none;border:none;font-size:1.1rem;color:var(--ew);cursor:pointer;padding:.2rem;line-height:1;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;border-radius:8px;}
+.spex-close:hover{background:var(--birch);}
+.spex-card{background:white;border-radius:16px;border:1px solid var(--smoke);box-shadow:0 3px 14px rgba(44,24,16,.09);overflow:hidden;}
+.spex-head{background:linear-gradient(135deg,var(--ed),var(--em));padding:.9rem 1.1rem;}
+.spex-type{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.55);font-weight:700;margin-bottom:.25rem;}
+.spex-q{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--sand);line-height:1.3;}
+.spex-body{padding:1.1rem;}
+.spex-char{font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--ed);text-align:center;display:block;padding:1rem 0 .5rem;line-height:1;}
+.spex-opts{display:flex;flex-direction:column;gap:.52rem;margin-bottom:.85rem;}
+.spex-opt{background:var(--cream);border:2px solid var(--smoke);border-radius:10px;padding:.78rem .95rem;font-family:'Crimson Pro',serif;font-size:.97rem;color:var(--ed);cursor:pointer;text-align:left;transition:border-color .14s,background .14s;width:100%;min-height:44px;}
+.spex-opt:hover:not(:disabled){border-color:var(--clay);background:white;}
+.spex-opt.sel{border-color:var(--sky);background:#EEF4F8;}
+.spex-opt.cor{border-color:var(--cor);background:#EEF4EE;}
+.spex-opt.wrg{border-color:var(--wrg);background:#F4EEEE;}
+.spex-audio-box{background:var(--birch);border:2px dashed var(--smoke);border-radius:13px;padding:1.4rem;text-align:center;margin-bottom:.9rem;}
+.spex-audio-icon{font-size:2.5rem;display:block;margin-bottom:.5rem;opacity:.4;}
+.spex-audio-label{font-size:.88rem;color:var(--ew);font-style:italic;line-height:1.55;}
+.spex-audio-ph{display:inline-block;margin-top:.65rem;padding:.38rem .9rem;border-radius:20px;background:var(--smoke);color:var(--em);font-size:.78rem;font-family:'Crimson Pro',serif;}
+
 /* resources */
 .rsec{padding:.8rem 1.35rem .18rem;}
 .rstitle{font-family:'Playfair Display',serif;font-size:.96rem;color:var(--em);margin-bottom:.62rem;}
@@ -347,8 +396,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 </style>
 </head>
 <body>
-
-<!-- LOGIN -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<main id="main-content">
 <div id="login" class="screen active">
   <div class="bm"></div>
   <div class="lbox">
@@ -363,15 +412,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <button class="ltab" id="treg" onclick="switchTab('reg')">Register</button>
       </div>
       <div id="bsi">
-        <div class="lf"><label>Name or username</label><input id="si-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username"></div>
-        <div class="lf"><label>Passcode (4+ characters)</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password"></div>
-        <div class="lerr" id="si-e"></div>
+        <div class="lf"><label for="si-n">Name or username</label><input id="si-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="si-p">Passcode (4+ characters)</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password" aria-required="true"></div>
+        <div class="lerr" id="si-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doSignIn()">Enter the Language Path</button>
       </div>
       <div id="breg" style="display:none">
-        <div class="lf"><label>Choose a username</label><input id="reg-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username"></div>
-        <div class="lf"><label>Choose a passcode (4+)</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password"></div>
-        <div class="lerr" id="reg-e"></div>
+        <div class="lf"><label for="reg-n">Choose a username</label><input id="reg-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="reg-p">Choose a passcode (4+)</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password" aria-required="true"></div>
+        <div class="lerr" id="reg-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doRegister()">Begin My Journey</button>
       </div>
       <p class="lnote">Progress saved on this device only. No data leaves your browser.</p>
@@ -484,15 +533,48 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <div id="syllabary" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanehsatà:ke phonology — tap any card for a tip</p></div>
+    <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanehsatà:ke phonology</p></div>
+
+    <!-- Practice lessons section -->
+    <div class="sp-section">
+      <div class="sp-title">Practice lessons</div>
+      <div class="sp-cards" id="sp-cards"></div>
+    </div>
+
     <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — e.g. Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>. No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
     <div class="tts-note"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. <strong>No browser currently has a Kanien'kéha voice</strong> — these clips use carefully chosen phonetic approximations designed to produce the closest possible sound. They are a starting guide only. Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
-    <div class="stabwrap">
-      <button class="stab active" onclick="setSylTab('vowels',this)">Vowels</button>
-      <button class="stab" onclick="setSylTab('consonants',this)">Consonants</button>
-      <button class="stab" onclick="setSylTab('tone',this)">Tone &amp; Length</button>
+    <div class="stabwrap" role="tablist" aria-label="Sound categories">
+      <button class="stab active" role="tab" aria-selected="true" onclick="setSylTab('vowels',this)">Vowels</button>
+      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('consonants',this)">Consonants</button>
+      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('tone',this)">Tone &amp; Length</button>
     </div>
-    <div class="sgrid" id="sgrid"></div>
+    <div class="sgrid" id="sgrid" role="list"></div>
+  </div>
+</div>
+
+<!-- SYLLABARY PRACTICE EXERCISE -->
+<div id="syl-practice" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="spex-wrap">
+      <div class="spex-topbar">
+        <button class="spex-close" onclick="navTo('syllabary')" aria-label="Close practice">✕</button>
+        <div class="spex-pt" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="spex-pt"><div class="spex-pf" id="spex-pf" style="width:0%"></div></div>
+        <span class="spex-ctr" id="spex-ctr" aria-live="polite">1/8</span>
+      </div>
+      <div class="spex-card">
+        <div class="spex-head">
+          <div class="spex-type" id="spex-type"></div>
+          <div class="spex-q" id="spex-q"></div>
+        </div>
+        <div class="spex-body" id="spex-body"></div>
+      </div>
+      <div class="fb" id="spex-fb">
+        <span class="fbi2" id="spex-fbic"></span>
+        <div class="fbt"><strong id="spex-fbtitle"></strong><span id="spex-fbdet"></span></div>
+      </div>
+      <button class="sbtn dark" id="spex-actbtn" onclick="handleSpexAction()" disabled>Submit</button>
+    </div>
   </div>
 </div>
 
@@ -607,6 +689,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div class="mpad"></div>
   </div>
 </div>
+</main>
 
 <script>
 /* ══════════════════════════════════════════════════════════
@@ -640,13 +723,14 @@ function doRegister(){
   const users=getUsers(),k=n.toLowerCase();
   if(users[k]){e.textContent='That name is taken — please choose another or sign in.';return;}
   e.textContent='';
-  const d={passcode:p,daysLogged:[],unitProgress:{},lessonProgress:{},proficiency:{}};
+  const d={passcode:p,daysLogged:[],unitProgress:{},lessonProgress:{},proficiency:{},sylProficiency:{}};
   users[k]=d;saveUsers(users);loginAs(n,d);
 }
 function loginAs(name,data){
   CU={name,data};
   localStorage.setItem(LK,name.toLowerCase());
   if(!data.proficiency)data.proficiency={};
+  if(!data.sylProficiency)data.sylProficiency={};
   if(!data.lessonProgress)data.lessonProgress={};
   const today=new Date().toDateString();
   if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
@@ -680,6 +764,22 @@ function getProf(id){
   const a=CU.data.proficiency[id];
   return{pct:Math.round(a.reduce((x,y)=>x+y,0)/10*100),count:a.length};
 }
+
+/* Syllabary proficiency — separate from vocabulary proficiency */
+function recSylProf(id,correct){
+  if(!CU)return;
+  if(!CU.data.sylProficiency)CU.data.sylProficiency={};
+  const p=CU.data.sylProficiency;
+  if(!p[id])p[id]=[];
+  p[id].push(correct?1:0);
+  if(p[id].length>10)p[id]=p[id].slice(-10);
+  saveUD(CU.name,CU.data);
+}
+function getSylProf(id){
+  if(!CU||!CU.data.sylProficiency||!CU.data.sylProficiency[id])return null;
+  const a=CU.data.sylProficiency[id];
+  return{pct:Math.round(a.reduce((x,y)=>x+y,0)/10*100),count:a.length};
+}
 function profHTML(id){
   const p=getProf(id);
   if(!p)return'<div class="prof-note">Not yet practiced</div>';
@@ -699,7 +799,7 @@ function navTo(id){
   const nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('active');
   window.scrollTo(0,0);
   if(id==='glossary')renderGloss();
-  if(id==='syllabary')renderSyl('vowels');
+  if(id==='syllabary'){renderSylPracticeCards();renderSyl('vowels');}
 }
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function goHome(){updateHomeUI();navTo('home');}
@@ -714,16 +814,14 @@ function renderHomeUnits(){
     const lp=CU?CU.data.lessonProgress['u'+i]||{}:{};
     const dl=Object.values(lp).filter(v=>v>=100).length;
     const tl=u.lessons.length;
-    const prevDone=i===0||((CU?CU.data.unitProgress[i-1]||0:0)>=100);
     let badgeCls='bn', badgeTxt='Start', statusTxt='Not started';
-    if(!prevDone){badgeCls='bl';badgeTxt='Locked';statusTxt='Complete Unit '+(i)+' first';}
-    else if(p<=0){badgeCls='bn';badgeTxt='Start';statusTxt='Not started';}
+    if(p<=0){badgeCls='bn';badgeTxt='Start';statusTxt='Not started';}
     else if(dl>=tl&&tl>0){badgeCls='bd';badgeTxt='✓ Done';statusTxt='Complete ✓';}
     else{badgeCls='bp';badgeTxt='Continue';statusTxt=dl+' / '+tl+' lessons done';}
-    return `<div class="uc" id="uc${i}" onclick="openUnit(${i})">
+    return `<div class="uc" id="uc${i}" onclick="openUnit(${i})" role="button" tabindex="0" aria-label="${u.title}">
       <div class="ut"><span class="utitle">${u.title}</span><span class="ubadge ${badgeCls}" id="ub${i}">${badgeTxt}</span></div>
       <p class="udesc">${u.desc}</p>
-      <div class="pt"><div class="pf" id="uf${i}" style="width:${p}%"></div></div>
+      <div class="pt" role="progressbar" aria-valuenow="${p}" aria-valuemin="0" aria-valuemax="100" aria-label="Unit progress"><div class="pf" id="uf${i}" style="width:${p}%"></div></div>
       <div class="pl" id="ul${i}">${statusTxt}</div>
     </div>`;
   }).join('');
@@ -1466,15 +1564,15 @@ function openDialectModal(){
 function closeModal(){document.getElementById('wmodal').classList.remove('open');}
 function closeModalOverlay(e){if(e.target===document.getElementById('wmodal'))closeModal();}
 
-/* syllabary */
+/* syllabary reference grid */
 function renderSyl(tab){
   document.getElementById('sgrid').innerHTML=(SYL[tab]||[]).map(s=>{
-    const p=getProf(s.id);
+    const p=getSylProf(s.id);
     const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
     const ipaHtml=s.ipa?`<span class="sipa">${s.ipa} <span>${s.ipaNote}</span></span>`:'';
-    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
-    const profHtml=p?`<div class="prof-track" style="margin-top:.32rem"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:'';
-    return`<div class="scard" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')">
+    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" aria-label="Play ${s.r}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
+    const profHtml=p?`<div class="prof-track" style="margin-top:.32rem" role="progressbar" aria-valuenow="${p.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Proficiency ${p.pct}%"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:'';
+    return`<div class="scard" role="button" tabindex="0" aria-label="${s.c} — ${s.s}" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')showSylTip(this,'${qs(s.t)}','${s.id}')">
       <span class="sc">${s.c}</span>
       <span class="sr">${s.r}</span>
       <span class="ss">${s.s}</span>
@@ -1486,6 +1584,24 @@ function renderSyl(tab){
 }
 
 function setSylTab(tab,btn){document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderSyl(tab);}
+
+function recordSylProf(sid,correct){
+  recSylProf(sid,correct);
+  const d=document.getElementById('syl-assess');if(d)d.remove();
+  const activeTab=document.querySelector('.stab.active');
+  if(activeTab){
+    const tab=activeTab.textContent.toLowerCase().replace(/[^a-z]/g,'');
+    renderSyl(tab==='vowels'?'vowels':tab==='consonants'?'consonants':'tone');
+  }
+  const p=getSylProf(sid);
+  if(p){
+    const note=document.createElement('div');
+    note.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--sage);color:white;padding:.6rem 1rem;border-radius:11px;font-size:.85rem;text-align:center;z-index:151;animation:fbin .2s ease;';
+    note.textContent=(correct?'Recorded ✓ — ':'Noted — ')+'proficiency: '+p.pct+'%';
+    document.body.appendChild(note);
+    setTimeout(()=>{if(note.parentElement)note.remove();},2200);
+  }
+}
 
 /* ── TTS FUNCTION ──
    Uses Web Speech API with carefully tuned phonetic approximations.
@@ -1549,30 +1665,7 @@ function showSylAssess(sid, entry){
   setTimeout(()=>{if(d.parentElement)d.remove();},12000);
 }
 
-function recordSylProf(sid,correct){
-  recProf(sid,correct);
-  const d=document.getElementById('syl-assess');if(d)d.remove();
-  // Refresh the syllabary card's proficiency bar
-  const card=document.getElementById('sgrid');
-  if(card){
-    // Find current active tab and re-render
-    const activeTab=document.querySelector('.stab.active');
-    if(activeTab){
-      const tab=activeTab.textContent.toLowerCase().replace(/[^a-z]/g,'');
-      const tabKey=tab==='vowels'?'vowels':tab==='consonants'?'consonants':'tone';
-      renderSyl(tabKey);
-    }
-  }
-  // Brief confirmation
-  const p=getProf(sid);
-  if(p){
-    const note=document.createElement('div');
-    note.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--sage);color:white;padding:.6rem 1rem;border-radius:11px;font-size:.85rem;text-align:center;z-index:151;animation:fbin .2s ease;';
-    note.textContent=(correct?'Recorded ✓ — ':'Noted — ') + 'proficiency: '+p.pct+'%';
-    document.body.appendChild(note);
-    setTimeout(()=>{if(note.parentElement)note.remove();},2200);
-  }
-}
+
 
 // Voices may load async — pre-load them
 if(window.speechSynthesis){
@@ -1594,20 +1687,290 @@ function showSylTip(card,tip,sid){
 
   const d=document.createElement('div');d.id='stpop';
   d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.78rem 1rem;border-radius:11px;font-size:.86rem;line-height:1.55;z-index:150;box-shadow:0 4px 18px rgba(44,24,16,.28);animation:fbin .2s ease;';
-  const p=getProf(sid);
+  const p=getSylProf(sid);
   const ipaLine=entry&&entry.ipa?`<div style="margin-top:.3rem;font-size:.78rem;color:var(--skyl)">IPA: <strong>${entry.ipa}</strong> · ${entry.ipaNote}</div>`:'';
   const profLine=p&&p.count>0
     ?`<div style="margin-top:.42rem">
         <div style="display:flex;justify-content:space-between;font-size:.73rem;color:var(--smoke);margin-bottom:.2rem"><span>proficiency</span><span>${p.pct}%</span></div>
         <div style="height:5px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden">
-          <div style="height:100%;width:${p.pct}%;background:${p.pct>=80?'#7A8C6E':p.pct>=40?'#B5C4A8':'#C4784A'};border-radius:4px;transition:width .4s"></div>
+          <div style="height:100%;width:${p.pct}%;background:${p.pct>=80?'var(--sage)':p.pct>=40?'var(--sky)':'var(--clay)'};border-radius:4px;transition:width .4s"></div>
         </div>
-        <div style="font-size:.7rem;color:var(--smoke);margin-top:.15rem">${p.count} of 10 recent attempts tracked — press 🔊 Play to practice</div>
+        <div style="font-size:.7rem;color:var(--smoke);margin-top:.15rem">${p.count} of 10 recent attempts tracked — practice in lessons above</div>
       </div>`
-    :`<div style="margin-top:.35rem;font-size:.72rem;color:var(--smoke);font-style:italic">press 🔊 Play after reading, then self-assess to track proficiency</div>`;
+    :`<div style="margin-top:.35rem;font-size:.72rem;color:var(--smoke);font-style:italic">not yet practiced — use Practice Lessons above to build proficiency</div>`;
   d.innerHTML=`<strong style="color:var(--clay)">${card.querySelector('.sr').textContent}</strong> — ${tip}${ipaLine}${profLine}<span style="float:right;cursor:pointer;color:var(--smoke);margin-left:.5rem;margin-top:-.1rem" onclick="this.parentElement.remove()">✕</span>`;
   document.body.appendChild(d);
   setTimeout(()=>{if(d.parentElement)d.remove();},8000);
+}
+
+/* ══════════════════════════════════════════════════════════
+   SYLLABARY PRACTICE ENGINE
+   ══════════════════════════════════════════════════════════ */
+
+const SP_LESSONS=[
+  {id:'sp-vowels',    title:'Vowels',          tab:'vowels',      icon:'🔤', desc:'Practice all vowel sounds'},
+  {id:'sp-nasals',    title:'Nasal vowels',     tab:'vowels',      icon:'👃', desc:'ę and ǫ — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
+  {id:'sp-long',      title:'Long vs. short',   tab:'vowels',      icon:'⏱', desc:'Vowel length changes meaning', filter:s=>s.id.endsWith('2')||['sv-a','sv-e','sv-i','sv-o'].includes(s.id)},
+  {id:'sp-consonants',title:'Consonants',       tab:'consonants',  icon:'🔠', desc:'Practice all consonants'},
+  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants', icon:'🛑', desc:'k, t, ts, tsh — unaspirated stops', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
+  {id:'sp-glottal',   title:'Glottal stop',     tab:'consonants',  icon:'✋', desc:"The ' consonant — uh-oh", filter:s=>s.id==='sc-gs'},
+  {id:'sp-tone',      title:'Tone & length',    tab:'tone',        icon:'🎵', desc:'Stress, length, and nasal vowels'},
+];
+
+let SPEX={lesson:null,pool:[],done:0,total:0,current:null,answered:false,attempts:0};
+
+function getSylAll(){return Object.values(SYL).flat();}
+
+function renderSylPracticeCards(){
+  const container=document.getElementById('sp-cards');
+  if(!container||!Object.keys(SYL).length)return;
+  container.innerHTML=SP_LESSONS.map(lesson=>{
+    const tab=SYL[lesson.tab]||[];
+    const entries=lesson.filter?tab.filter(lesson.filter):tab;
+    if(!entries.length)return'';
+    const profs=entries.map(s=>getSylProf(s.id)).filter(Boolean);
+    const pct=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
+    const practiced=profs.length;
+    return`<div class="sp-card" role="button" tabindex="0"
+        aria-label="Practice ${lesson.title}"
+        onclick="startSylPractice('${lesson.id}')"
+        onkeydown="if(event.key==='Enter'||event.key===' ')startSylPractice('${lesson.id}')">
+      <div class="sp-card-title">${lesson.icon} ${lesson.title}</div>
+      <div class="sp-card-sub">${lesson.desc}</div>
+      <div class="sp-card-prog">
+        <div class="sp-card-prog-bar"><div class="sp-card-prog-fill" style="width:${pct}%"></div></div>
+        <div class="sp-card-count">${practiced?pct+'% · '+practiced+' sound'+(practiced!==1?'s':'')+'  practiced':'Not yet started'}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function startSylPractice(lessonId){
+  const lesson=SP_LESSONS.find(l=>l.id===lessonId);
+  if(!lesson)return;
+  const tab=SYL[lesson.tab]||[];
+  const entries=lesson.filter?tab.filter(lesson.filter):tab;
+  if(!entries.length)return;
+
+  // Build a pool of 8 exercises mixing all 4 types
+  // Prioritise less-practiced sounds for spaced repetition
+  const sorted=[...entries].sort((a,b)=>{
+    const pa=getSylProf(a.id),pb=getSylProf(b.id);
+    return (pa?pa.pct:0)-(pb?pb.pct:0);
+  });
+  const allSounds=getSylAll();
+  const pool=[];
+
+  sorted.forEach((entry,i)=>{
+    if(pool.length>=8)return;
+    const type=spexChooseType(i,entry,allSounds);
+    const ex=spexBuild(type,entry,entries,allSounds);
+    if(ex)pool.push(ex);
+  });
+  // If fewer than 8 unique questions, cycle round again with different types
+  let safety=0;
+  while(pool.length<8&&safety++<30){
+    const entry=sorted[pool.length%sorted.length];
+    const types=['identify','recall','discriminate','audio'];
+    const type=types[(pool.length)%types.length];
+    const ex=spexBuild(type,entry,entries,allSounds);
+    if(ex)pool.push(ex);
+  }
+
+  SPEX={lesson,pool,done:0,total:pool.length,current:null,answered:false,attempts:0};
+  showScreen('syl-practice');
+  renderSpex();
+}
+
+function spexChooseType(idx,entry,allSounds){
+  // Vary types; for purely visual entries (no IPA note for discriminate) fall back
+  const types=['identify','recall','discriminate','audio'];
+  return types[idx%types.length];
+}
+
+function spexBuild(type,entry,lessonEntries,allSounds){
+  const distractors=allSounds.filter(s=>s.id!==entry.id);
+  const shuffle=arr=>[...arr].sort(()=>Math.random()-.5);
+
+  if(type==='identify'){
+    // Show the character, pick the correct sound description
+    const wrongs=shuffle(distractors).slice(0,3).map(d=>d.s);
+    const opts=shuffle([entry.s,...wrongs]);
+    return{type,sid:entry.id,
+      qtype:'Identify the sound',
+      q:`What sound does  ${entry.c}  make?`,
+      char:entry.c,
+      opts,correct:entry.s};
+  }
+  if(type==='recall'){
+    // See the description, pick the correct character
+    const wrongs=shuffle(distractors.filter(d=>d.c!==entry.c)).slice(0,3).map(d=>d.c);
+    const opts=shuffle([entry.c,...wrongs]);
+    return{type,sid:entry.id,
+      qtype:'Find the character',
+      q:`Which character makes this sound?\n"${entry.s}"`,
+      opts,correct:entry.c};
+  }
+  if(type==='discriminate'){
+    // Two characters — which one matches a description?
+    const distractor=shuffle(distractors)[0];
+    if(!distractor)return spexBuild('identify',entry,lessonEntries,allSounds);
+    const pair=shuffle([entry,distractor]);
+    return{type,sid:entry.id,
+      qtype:'Which matches?',
+      q:`Which character is the ${entry.s.split('—')[0].trim()}?`,
+      opts:pair.map(p=>p.c),correct:entry.c};
+  }
+  if(type==='audio'){
+    // Audio placeholder exercise — show IPA, confirm you know it
+    return{type,sid:entry.id,
+      qtype:'Audio — listen & confirm',
+      q:`Practice the sound: ${entry.c} (${entry.ipa||entry.r})`,
+      char:entry.c,
+      desc:entry.t,
+      isAudio:true};
+  }
+  return null;
+}
+
+function renderSpex(){
+  const ex=SPEX.pool[SPEX.done];
+  if(!ex)return;
+  SPEX.current=ex;SPEX.answered=false;SPEX.attempts=0;
+
+  const pct=Math.round(SPEX.done/SPEX.total*100);
+  document.getElementById('spex-pf').style.width=pct+'%';
+  document.getElementById('spex-pt').setAttribute('aria-valuenow',pct);
+  document.getElementById('spex-ctr').textContent=(SPEX.done+1)+'/'+SPEX.total;
+  document.getElementById('spex-fb').className='fb';
+
+  const btn=document.getElementById('spex-actbtn');
+  btn.className='sbtn dark';btn.disabled=true;btn.textContent='Submit';
+
+  document.getElementById('spex-type').textContent=
+    {identify:'🔤 Identify the sound',recall:'🔠 Find the character',
+     discriminate:'🔍 Which matches?',audio:'🎵 Audio practice'}[ex.type]||ex.qtype;
+  document.getElementById('spex-q').textContent=ex.q;
+
+  let html='';
+  if(ex.isAudio){
+    html=`<span class="spex-char" aria-hidden="true">${ex.char}</span>
+    <div class="spex-audio-box" role="note" aria-label="Audio placeholder">
+      <span class="spex-audio-icon" aria-hidden="true">🎵</span>
+      <div class="spex-audio-label">
+        <strong style="display:block;margin-bottom:.3rem;color:var(--ed)">${ex.char} — ${SPEX.pool[SPEX.done]&&Object.values(SYL).flat().find(s=>s.id===ex.sid)?Object.values(SYL).flat().find(s=>s.id===ex.sid).r:''}</strong>
+        ${ex.desc}
+      </div>
+      <span class="spex-audio-ph">🔊 Audio file needed — placeholder</span>
+    </div>
+    <p style="font-size:.85rem;color:var(--ew);text-align:center;margin-bottom:.75rem">Read the description above carefully, then mark whether you feel confident with this sound.</p>
+    <div style="display:flex;gap:.55rem;">
+      <button class="spex-opt" style="text-align:center;font-weight:600;" onclick="handleSpexAudio(true)">✓ I know this sound</button>
+      <button class="spex-opt" onclick="handleSpexAudio(false)">Still learning</button>
+    </div>`;
+    btn.style.display='none';
+  } else {
+    btn.style.display='block';
+    if(ex.char){
+      html+=`<span class="spex-char" aria-hidden="true">${ex.char}</span>`;
+    }
+    html+=`<div class="spex-opts" role="group" aria-label="Answer options">`+
+      ex.opts.map(o=>`<button class="spex-opt" data-v="${qs(o)}" onclick="pickSpexOpt(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')+
+    `</div>`;
+  }
+  document.getElementById('spex-body').innerHTML=html;
+}
+
+function pickSpexOpt(btn,chosen,correct){
+  if(SPEX.answered)return;
+  document.querySelectorAll('.spex-opt').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+  const ab=document.getElementById('spex-actbtn');
+  ab.disabled=false;ab._c=chosen;ab._r=correct;
+}
+
+function handleSpexAudio(confident){
+  recSylProf(SPEX.current.sid,confident);
+  advanceSpex(confident,confident?'Recorded ✓':'Noted — keep practicing','');
+}
+
+function handleSpexAction(){
+  const ex=SPEX.current;
+  if(SPEX.answered){advanceSpexNext();return;}
+  const ab=document.getElementById('spex-actbtn');
+  const isR=ab._c===ab._r;
+  SPEX.attempts++;
+  if(!isR&&SPEX.attempts===1){
+    document.querySelectorAll('.spex-opt').forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
+    spexShowFB('try','Incorrect — try again','');
+    return;
+  }
+  document.querySelectorAll('.spex-opt').forEach(b=>{
+    if(b.dataset.v===ab._r)b.classList.add('cor');
+    else if(b.classList.contains('sel'))b.classList.add('wrg');
+    b.disabled=true;
+  });
+  recSylProf(ex.sid,isR);
+  if(isR){
+    spexShowFB('cor','Correct ✓','');
+  } else {
+    const entry=getSylAll().find(s=>s.id===ex.sid);
+    spexShowFB('wrg','Not quite','Correct: '+ab._r+(entry?' — '+entry.s:''));
+  }
+  SPEX.answered=true;
+  ab.textContent='Continue';ab.disabled=false;
+  ab.className=isR?'sbtn succ':'sbtn cont';
+}
+
+function spexShowFB(type,title,detail){
+  const bar=document.getElementById('spex-fb');
+  const map={cor:'corfb',wrg:'wrgfb',try:'tryfb'};
+  bar.className='fb show '+(map[type]||'infofb');
+  document.getElementById('spex-fbic').textContent={cor:'✓',wrg:'✗',try:'↩'}[type]||'';
+  document.getElementById('spex-fbtitle').textContent=title;
+  document.getElementById('spex-fbdet').textContent=detail;
+}
+
+function advanceSpex(correct,title,detail){
+  spexShowFB(correct?'cor':'wrg',title,detail);
+  SPEX.answered=true;
+  const ab=document.getElementById('spex-actbtn');
+  ab.textContent='Continue';ab.disabled=false;ab.style.display='block';
+  ab.className=correct?'sbtn succ':'sbtn cont';
+  ab.onclick=()=>advanceSpexNext();
+}
+
+function advanceSpexNext(){
+  SPEX.done++;
+  document.getElementById('spex-actbtn').onclick=()=>handleSpexAction();
+  if(SPEX.done>=SPEX.total){
+    finishSylPractice();
+  } else {
+    renderSpex();
+  }
+}
+
+function finishSylPractice(){
+  // Refresh practice cards with updated proficiency then go back
+  renderSylPracticeCards();
+  const lesson=SPEX.lesson;
+  const tab=SYL[lesson.tab]||[];
+  const entries=lesson.filter?tab.filter(lesson.filter):tab;
+  const profs=entries.map(s=>getSylProf(s.id)).filter(Boolean);
+  const avg=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
+
+  // Show brief completion note then return to syllabary
+  const note=document.createElement('div');
+  note.style.cssText='position:fixed;inset:0;z-index:300;background:rgba(44,24,16,.6);display:flex;align-items:center;justify-content:center;';
+  note.innerHTML=`<div style="background:white;border-radius:18px;padding:2rem 1.8rem;max-width:320px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(44,24,16,.22);">
+    <div style="font-size:2.5rem;margin-bottom:.65rem">🌿</div>
+    <div style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--ed);margin-bottom:.4rem">Lesson complete</div>
+    <div style="font-size:.9rem;color:var(--ew);margin-bottom:.3rem">${lesson.title}</div>
+    <div style="font-size:1.1rem;color:var(--clay);font-weight:600;margin-bottom:1.2rem">${avg}% average proficiency</div>
+    <button style="width:100%;padding:.85rem;background:var(--ed);color:var(--sand);border:none;border-radius:11px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;"
+      onclick="this.closest('div[style]').remove();navTo('syllabary')">Back to Sounds</button>
+  </div>`;
+  document.body.appendChild(note);
 }
 
 /* init */
