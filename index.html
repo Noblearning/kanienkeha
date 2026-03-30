@@ -1708,13 +1708,13 @@ function showSylTip(card,tip,sid){
    ══════════════════════════════════════════════════════════ */
 
 const SP_LESSONS=[
-  {id:'sp-vowels',    title:'Vowels',          tab:'vowels',      icon:'🔤', desc:'Practice all vowel sounds'},
-  {id:'sp-nasals',    title:'Nasal vowels',     tab:'vowels',      icon:'👃', desc:'ę and ǫ — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
-  {id:'sp-long',      title:'Long vs. short',   tab:'vowels',      icon:'⏱', desc:'Vowel length changes meaning', filter:s=>s.id.endsWith('2')||['sv-a','sv-e','sv-i','sv-o'].includes(s.id)},
-  {id:'sp-consonants',title:'Consonants',       tab:'consonants',  icon:'🔠', desc:'Practice all consonants'},
-  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants', icon:'🛑', desc:'k, t, ts, tsh — unaspirated stops', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
-  {id:'sp-glottal',   title:'Glottal stop',     tab:'consonants',  icon:'✋', desc:"The ' consonant — uh-oh", filter:s=>s.id==='sc-gs'},
-  {id:'sp-tone',      title:'Tone & length',    tab:'tone',        icon:'🎵', desc:'Stress, length, and nasal vowels'},
+  {id:'sp-vowels',    title:'Vowels',           tab:'vowels',      icon:'🔤', desc:'All vowel sounds'},
+  {id:'sp-nasals',    title:'Nasal vowels',      tab:'vowels',      icon:'👃', desc:'ę and ǫ — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
+  {id:'sp-long',      title:'Long vs. short',    tab:'vowels',      icon:'⏱', desc:'Vowel length changes meaning', filter:s=>s.id.endsWith('2')||['sv-a','sv-e','sv-i','sv-o'].includes(s.id)},
+  {id:'sp-consonants',title:'Consonants',        tab:'consonants',  icon:'🔠', desc:'All consonants'},
+  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants',  icon:'🛑', desc:'k, t, ts, tsh — unaspirated', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
+  {id:'sp-glottal',   title:'Glottal stop',      tab:'consonants',  icon:'✋', desc:"The ' consonant — like uh-oh", filter:s=>s.id==='sc-gs'},
+  {id:'sp-tone',      title:'Tone & length',     tab:'tone',        icon:'🎵', desc:'Stress, length, nasal vowels'},
 ];
 
 let SPEX={lesson:null,pool:[],done:0,total:0,current:null,answered:false,attempts:0};
@@ -1745,6 +1745,8 @@ function renderSylPracticeCards(){
   }).join('');
 }
 
+function shuffle(arr){return [...arr].sort(()=>Math.random()-.5);}
+
 function startSylPractice(lessonId){
   const lesson=SP_LESSONS.find(l=>l.id===lessonId);
   if(!lesson)return;
@@ -1752,28 +1754,31 @@ function startSylPractice(lessonId){
   const entries=lesson.filter?tab.filter(lesson.filter):tab;
   if(!entries.length)return;
 
-  // Build a pool of 8 exercises mixing all 4 types
-  // Prioritise less-practiced sounds for spaced repetition
+  const allSounds=getSylAll();
+
+  // Sort by ascending proficiency (prioritise less-practiced sounds)
   const sorted=[...entries].sort((a,b)=>{
     const pa=getSylProf(a.id),pb=getSylProf(b.id);
     return (pa?pa.pct:0)-(pb?pb.pct:0);
   });
-  const allSounds=getSylAll();
+
+  // Build exactly 8 exercises cycling through 4 types
+  // Type sequence: identify → word-in-context → recall → audio (×2 rounds)
+  const typeSeq=['identify','word','recall','audio','identify','word','recall','audio'];
   const pool=[];
 
-  sorted.forEach((entry,i)=>{
-    if(pool.length>=8)return;
-    const type=spexChooseType(i,entry,allSounds);
+  typeSeq.forEach((type,i)=>{
+    const entry=sorted[i%sorted.length];
     const ex=spexBuild(type,entry,entries,allSounds);
     if(ex)pool.push(ex);
   });
-  // If fewer than 8 unique questions, cycle round again with different types
+
+  // Safety: if pool < 8 (e.g. single-sound lessons) cycle more
   let safety=0;
-  while(pool.length<8&&safety++<30){
+  while(pool.length<8&&safety++<20){
     const entry=sorted[pool.length%sorted.length];
-    const types=['identify','recall','discriminate','audio'];
-    const type=types[(pool.length)%types.length];
-    const ex=spexBuild(type,entry,entries,allSounds);
+    const types=['identify','word','recall','audio'];
+    const ex=spexBuild(types[pool.length%4],entry,entries,allSounds);
     if(ex)pool.push(ex);
   }
 
@@ -1782,54 +1787,69 @@ function startSylPractice(lessonId){
   renderSpex();
 }
 
-function spexChooseType(idx,entry,allSounds){
-  // Vary types; for purely visual entries (no IPA note for discriminate) fall back
-  const types=['identify','recall','discriminate','audio'];
-  return types[idx%types.length];
-}
-
 function spexBuild(type,entry,lessonEntries,allSounds){
   const distractors=allSounds.filter(s=>s.id!==entry.id);
-  const shuffle=arr=>[...arr].sort(()=>Math.random()-.5);
 
   if(type==='identify'){
-    // Show the character, pick the correct sound description
+    // Show the character → pick the correct sound description
     const wrongs=shuffle(distractors).slice(0,3).map(d=>d.s);
     const opts=shuffle([entry.s,...wrongs]);
     return{type,sid:entry.id,
       qtype:'Identify the sound',
-      q:`What sound does  ${entry.c}  make?`,
+      q:`What sound does this character make?`,
       char:entry.c,
-      opts,correct:entry.s};
+      opts,correct:entry.s,
+      hint:entry.r};
   }
+
+  if(type==='word'){
+    // Show a word example → identify which sound in it matches this lesson sound
+    const words=entry.words||[];
+    const word=words.length?words[Math.floor(Math.random()*words.length)]:null;
+    if(!word){
+      // Fall back to identify if no words available
+      return spexBuild('identify',entry,lessonEntries,allSounds);
+    }
+    // Multiple choice: which sound does the highlighted character represent?
+    const wrongs=shuffle(distractors).slice(0,3).map(d=>d.s);
+    const opts=shuffle([entry.s,...wrongs]);
+    return{type,sid:entry.id,
+      qtype:'Word in context',
+      q:`You see this word: "${word.word}" (${word.english})\nWhat sound does the character  ${entry.c}  make in this word?`,
+      char:entry.c,
+      word,
+      opts,correct:entry.s,
+      hint:entry.r};
+  }
+
   if(type==='recall'){
-    // See the description, pick the correct character
+    // Read description → pick the correct character
     const wrongs=shuffle(distractors.filter(d=>d.c!==entry.c)).slice(0,3).map(d=>d.c);
     const opts=shuffle([entry.c,...wrongs]);
     return{type,sid:entry.id,
       qtype:'Find the character',
-      q:`Which character makes this sound?\n"${entry.s}"`,
-      opts,correct:entry.c};
+      q:`Which character represents this sound?\n"${entry.s}"`,
+      opts,correct:entry.c,
+      hint:`IPA: ${entry.ipa||entry.r}`};
   }
-  if(type==='discriminate'){
-    // Two characters — which one matches a description?
-    const distractor=shuffle(distractors)[0];
-    if(!distractor)return spexBuild('identify',entry,lessonEntries,allSounds);
-    const pair=shuffle([entry,distractor]);
-    return{type,sid:entry.id,
-      qtype:'Which matches?',
-      q:`Which character is the ${entry.s.split('—')[0].trim()}?`,
-      opts:pair.map(p=>p.c),correct:entry.c};
-  }
+
   if(type==='audio'){
-    // Audio placeholder exercise — show IPA, confirm you know it
+    // Audio placeholder — show word context + description, learner self-assesses
+    const words=entry.words||[];
+    const word=words.length?words[Math.floor(Math.random()*words.length)]:null;
+    // Pick a random audio voice if files are present
+    const audioFiles=entry.audioFiles||[];
+    const audioFile=audioFiles.length?audioFiles[Math.floor(Math.random()*audioFiles.length)]:null;
     return{type,sid:entry.id,
-      qtype:'Audio — listen & confirm',
-      q:`Practice the sound: ${entry.c} (${entry.ipa||entry.r})`,
+      qtype:'Listen & confirm',
+      q:`Listen to the sound: ${entry.c} — ${entry.r}`,
       char:entry.c,
       desc:entry.t,
+      word,
+      audioFile,
       isAudio:true};
   }
+
   return null;
 }
 
@@ -1846,39 +1866,81 @@ function renderSpex(){
 
   const btn=document.getElementById('spex-actbtn');
   btn.className='sbtn dark';btn.disabled=true;btn.textContent='Submit';
+  btn.style.display='block';
+  btn.onclick=()=>handleSpexAction();
 
-  document.getElementById('spex-type').textContent=
-    {identify:'🔤 Identify the sound',recall:'🔠 Find the character',
-     discriminate:'🔍 Which matches?',audio:'🎵 Audio practice'}[ex.type]||ex.qtype;
+  const typeLabels={
+    identify:'🔤 Identify the sound',
+    word:'📖 Word in context',
+    recall:'🔠 Find the character',
+    audio:'🎵 Listen & confirm'
+  };
+  document.getElementById('spex-type').textContent=typeLabels[ex.type]||ex.qtype;
   document.getElementById('spex-q').textContent=ex.q;
 
   let html='';
+
   if(ex.isAudio){
+    const af=ex.audioFile;
+    const voiceLabel=af?af.label:'Community speaker';
+    const dialectLabel=af?af.dialect:'';
+    const wordHtml=ex.word?`<div style="margin-top:.6rem;font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--ed)">${ex.word.word} <span style="font-size:.85rem;color:var(--ew);font-style:italic">— ${ex.word.english}</span></div>`:'';
+
     html=`<span class="spex-char" aria-hidden="true">${ex.char}</span>
-    <div class="spex-audio-box" role="note" aria-label="Audio placeholder">
+    <div class="spex-audio-box" role="note">
       <span class="spex-audio-icon" aria-hidden="true">🎵</span>
       <div class="spex-audio-label">
-        <strong style="display:block;margin-bottom:.3rem;color:var(--ed)">${ex.char} — ${SPEX.pool[SPEX.done]&&Object.values(SYL).flat().find(s=>s.id===ex.sid)?Object.values(SYL).flat().find(s=>s.id===ex.sid).r:''}</strong>
-        ${ex.desc}
+        <strong style="display:block;margin-bottom:.22rem;color:var(--ed)">${ex.char} — ${ex.r||''}</strong>
+        ${ex.desc||''}
+        ${wordHtml}
       </div>
-      <span class="spex-audio-ph">🔊 Audio file needed — placeholder</span>
+      ${af?`
+        <div style="margin-top:.75rem">
+          <button class="spex-audio-ph" onclick="playAudioFile('${af.file}')" aria-label="Play audio from ${voiceLabel}">
+            🔊 Play — ${voiceLabel}${dialectLabel?' ('+dialectLabel+')':''}
+          </button>
+          <div style="font-size:.72rem;color:var(--ew);margin-top:.32rem;font-style:italic">Place file at: ${af.file}</div>
+        </div>`
+        :`<span class="spex-audio-ph" aria-label="Audio file not yet available">🔊 Audio file needed — placeholder</span>`
+      }
     </div>
-    <p style="font-size:.85rem;color:var(--ew);text-align:center;margin-bottom:.75rem">Read the description above carefully, then mark whether you feel confident with this sound.</p>
+    <p style="font-size:.85rem;color:var(--ew);text-align:center;margin-bottom:.75rem">Study the description above, then mark your confidence.</p>
     <div style="display:flex;gap:.55rem;">
-      <button class="spex-opt" style="text-align:center;font-weight:600;" onclick="handleSpexAudio(true)">✓ I know this sound</button>
-      <button class="spex-opt" onclick="handleSpexAudio(false)">Still learning</button>
+      <button class="spex-opt" style="text-align:center;font-weight:600;min-height:44px;" onclick="handleSpexAudio(true)">✓ I know this sound</button>
+      <button class="spex-opt" style="min-height:44px;" onclick="handleSpexAudio(false)">Still learning</button>
     </div>`;
     btn.style.display='none';
+
   } else {
-    btn.style.display='block';
     if(ex.char){
       html+=`<span class="spex-char" aria-hidden="true">${ex.char}</span>`;
     }
+    if(ex.word&&ex.type==='word'){
+      html+=`<div style="font-size:.82rem;color:var(--ew);text-align:center;margin-bottom:.75rem;font-style:italic">
+        The character <strong style="font-family:'Playfair Display',serif;color:var(--ed)">${ex.char}</strong> appears in this word
+      </div>`;
+    }
+    if(ex.hint){
+      html+=`<div style="font-size:.78rem;color:var(--ew);text-align:center;margin-bottom:.6rem">Hint: ${ex.hint}</div>`;
+    }
     html+=`<div class="spex-opts" role="group" aria-label="Answer options">`+
-      ex.opts.map(o=>`<button class="spex-opt" data-v="${qs(o)}" onclick="pickSpexOpt(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')+
+      ex.opts.map(o=>`<button class="spex-opt" data-v="${qs(o)}" onclick="pickSpexOpt(this,'${qs(o)}','${qs(ex.correct)}')" style="min-height:44px;">${o}</button>`).join('')+
     `</div>`;
   }
+
   document.getElementById('spex-body').innerHTML=html;
+}
+
+function playAudioFile(filePath){
+  const audio=new Audio(filePath);
+  audio.onerror=()=>{
+    const note=document.createElement('div');
+    note.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--wrg);color:white;padding:.6rem 1rem;border-radius:11px;font-size:.85rem;text-align:center;z-index:151;';
+    note.textContent='Audio file not found. Place the file at: '+filePath;
+    document.body.appendChild(note);
+    setTimeout(()=>{if(note.parentElement)note.remove();},3500);
+  };
+  audio.play().catch(()=>{});
 }
 
 function pickSpexOpt(btn,chosen,correct){
@@ -1911,11 +1973,11 @@ function handleSpexAction(){
     b.disabled=true;
   });
   recSylProf(ex.sid,isR);
+  const entry=getSylAll().find(s=>s.id===ex.sid);
   if(isR){
-    spexShowFB('cor','Correct ✓','');
+    spexShowFB('cor','Correct ✓',entry?entry.s:'');
   } else {
-    const entry=getSylAll().find(s=>s.id===ex.sid);
-    spexShowFB('wrg','Not quite','Correct: '+ab._r+(entry?' — '+entry.s:''));
+    spexShowFB('wrg','Not quite','Correct: '+ab._r);
   }
   SPEX.answered=true;
   ab.textContent='Continue';ab.disabled=false;
@@ -1951,7 +2013,6 @@ function advanceSpexNext(){
 }
 
 function finishSylPractice(){
-  // Refresh practice cards with updated proficiency then go back
   renderSylPracticeCards();
   const lesson=SPEX.lesson;
   const tab=SYL[lesson.tab]||[];
@@ -1959,16 +2020,19 @@ function finishSylPractice(){
   const profs=entries.map(s=>getSylProf(s.id)).filter(Boolean);
   const avg=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
 
-  // Show brief completion note then return to syllabary
   const note=document.createElement('div');
   note.style.cssText='position:fixed;inset:0;z-index:300;background:rgba(44,24,16,.6);display:flex;align-items:center;justify-content:center;';
+  note.setAttribute('role','dialog');
+  note.setAttribute('aria-modal','true');
+  note.setAttribute('aria-label','Lesson complete');
   note.innerHTML=`<div style="background:white;border-radius:18px;padding:2rem 1.8rem;max-width:320px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(44,24,16,.22);">
-    <div style="font-size:2.5rem;margin-bottom:.65rem">🌿</div>
+    <div style="font-size:2.5rem;margin-bottom:.65rem" aria-hidden="true">🌿</div>
     <div style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--ed);margin-bottom:.4rem">Lesson complete</div>
     <div style="font-size:.9rem;color:var(--ew);margin-bottom:.3rem">${lesson.title}</div>
     <div style="font-size:1.1rem;color:var(--clay);font-weight:600;margin-bottom:1.2rem">${avg}% average proficiency</div>
-    <button style="width:100%;padding:.85rem;background:var(--ed);color:var(--sand);border:none;border-radius:11px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;"
-      onclick="this.closest('div[style]').remove();navTo('syllabary')">Back to Sounds</button>
+    <div style="font-size:.82rem;color:var(--ew);font-style:italic;margin-bottom:1.2rem;line-height:1.55">This number reflects patterns in this session — not your relationship to the language, which grows in its own time.</div>
+    <button style="width:100%;padding:.85rem;background:var(--ed);color:var(--sand);border:none;border-radius:11px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;min-height:44px;"
+      onclick="this.closest('[role=dialog]').remove();navTo('syllabary')">Back to Sounds</button>
   </div>`;
   document.body.appendChild(note);
 }

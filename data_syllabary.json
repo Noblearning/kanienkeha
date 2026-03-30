@@ -12,7 +12,54 @@
         "pitch": 0.9
       },
       "s": "like 'a' in father",
-      "t": "Short open back vowel. Very common in Kanien'kéha words. Do not add an English r-colour after it. IPA: [a]."
+      "t": "Short open back vowel. Very common in Kanien'kéha words. Do not add an English r-colour after it. IPA: [a].",
+      "words": [
+        {
+          "id": "k01",
+          "word": "ista",
+          "english": "mother"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        },
+        {
+          "id": "da01",
+          "word": "Takós",
+          "english": "cat"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        },
+        {
+          "id": "wa01",
+          "word": "Ohkwá:ri",
+          "english": "bear"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-a_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-a_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-a_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-a2",
@@ -26,7 +73,54 @@
         "pitch": 0.9
       },
       "s": "long a — held double length",
-      "t": "The colon (:) always marks vowel length. A long vowel can completely change a word's meaning — never shorten it. IPA: [aː]."
+      "t": "The colon (:) always marks vowel length. A long vowel can completely change a word's meaning — never shorten it. IPA: [aː].",
+      "words": [
+        {
+          "id": "v01",
+          "word": "á:tien",
+          "english": "to sit"
+        },
+        {
+          "id": "a08",
+          "word": "à:there'",
+          "english": "basket"
+        },
+        {
+          "id": "na03",
+          "word": "Wahtá:",
+          "english": "maple tree"
+        },
+        {
+          "id": "fo07",
+          "word": "Kanà:taros",
+          "english": "bread"
+        },
+        {
+          "id": "ka04",
+          "word": "Kaná:tsihs",
+          "english": "canoe"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-a2_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-a2_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-a2_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-e",
@@ -40,7 +134,54 @@
         "pitch": 1
       },
       "s": "like 'e' in bed",
-      "t": "Short mid front vowel. Keep it pure — no gliding into 'ay' as in English. IPA: [e]."
+      "t": "Short mid front vowel. Keep it pure — no gliding into 'ay' as in English. IPA: [e].",
+      "words": [
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "bp03",
+          "word": "Ó:nen",
+          "english": "eye"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        },
+        {
+          "id": "dh24",
+          "word": "káwhe",
+          "english": "coffee"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-e_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-e_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-e_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-e2",
@@ -54,7 +195,54 @@
         "pitch": 1
       },
       "s": "long e — held double length",
-      "t": "Held roughly twice as long as the short version. IPA: [eː]."
+      "t": "Held roughly twice as long as the short version. IPA: [eː].",
+      "words": [
+        {
+          "id": "col05",
+          "word": "Kayé:ri",
+          "english": "black"
+        },
+        {
+          "id": "fi01",
+          "word": "Namé:s",
+          "english": "trout"
+        },
+        {
+          "id": "na07",
+          "word": "Sé:ske",
+          "english": "spring"
+        },
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        },
+        {
+          "id": "av06",
+          "word": "aié:re",
+          "english": "to walk"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-e2_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-e2_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-e2_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-i",
@@ -68,7 +256,54 @@
         "pitch": 1.1
       },
       "s": "like 'ee' in see",
-      "t": "High front vowel, like Spanish 'i'. Short and crisp. In Ontario dialects (Six Nations, Tyendinaga), some positions use 'y' where Kanehsatà:ke uses 'i' — both are valid. IPA: [i]."
+      "t": "High front vowel, like Spanish 'i'. Short and crisp. In Ontario dialects (Six Nations, Tyendinaga), some positions use 'y' where Kanehsatà:ke uses 'i' — both are valid. IPA: [i].",
+      "words": [
+        {
+          "id": "p02",
+          "word": "í:'i",
+          "english": "I"
+        },
+        {
+          "id": "k01",
+          "word": "ista",
+          "english": "mother"
+        },
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        },
+        {
+          "id": "wa03",
+          "word": "Okwáho",
+          "english": "wolf"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-i_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-i_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-i_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-i2",
@@ -82,7 +317,54 @@
         "pitch": 1.1
       },
       "s": "long i — held double length",
-      "t": "Sustained high front vowel. IPA: [iː]."
+      "t": "Sustained high front vowel. IPA: [iː].",
+      "words": [
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "p02",
+          "word": "í:'i",
+          "english": "I"
+        },
+        {
+          "id": "na01",
+          "word": "Tsí:tewen",
+          "english": "moon"
+        },
+        {
+          "id": "wa04",
+          "word": "Tsaní:to",
+          "english": "beaver"
+        },
+        {
+          "id": "q14",
+          "word": "í:kehre",
+          "english": "I want it"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-i2_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-i2_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-i2_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-o",
@@ -96,7 +378,54 @@
         "pitch": 0.9
       },
       "s": "like 'o' in go",
-      "t": "Rounded back vowel. Short unless marked with :. IPA: [o]."
+      "t": "Rounded back vowel. Short unless marked with :. IPA: [o].",
+      "words": [
+        {
+          "id": "k03",
+          "word": "'sot",
+          "english": "grandfather"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        },
+        {
+          "id": "wa03",
+          "word": "Okwáho",
+          "english": "wolf"
+        },
+        {
+          "id": "brd03",
+          "word": "so:ra",
+          "english": "duck"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-o_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-o_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-o_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-o2",
@@ -110,7 +439,54 @@
         "pitch": 0.9
       },
       "s": "long o — held double length",
-      "t": "Length here distinguishes verb forms and possession. Always honour the colon. IPA: [oː]."
+      "t": "Length here distinguishes verb forms and possession. Always honour the colon. IPA: [oː].",
+      "words": [
+        {
+          "id": "brd03",
+          "word": "so:ra",
+          "english": "duck"
+        },
+        {
+          "id": "dh03",
+          "word": "ato:ken'",
+          "english": "axe"
+        },
+        {
+          "id": "bp05",
+          "word": "Ohsó:wa",
+          "english": "lips"
+        },
+        {
+          "id": "wa02",
+          "word": "A'nó:wara",
+          "english": "turtle"
+        },
+        {
+          "id": "fi03",
+          "word": "Ohkwarí:",
+          "english": "pike"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-o2_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-o2_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-o2_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-en",
@@ -124,7 +500,54 @@
         "pitch": 0.95
       },
       "s": "nasalized a — air through nose",
-      "t": "Air flows through both mouth and nose simultaneously. Nasal vowels are a key feature of Iroquoian languages. The TTS approximation uses \"an\" but the n should not be heard as a separate consonant — it just signals nasalization. IPA: [ã]."
+      "t": "Air flows through both mouth and nose simultaneously. Nasal vowels are a key feature of Iroquoian languages. The TTS approximation uses \"an\" but the n should not be heard as a separate consonant — it just signals nasalization. IPA: [ã].",
+      "words": [
+        {
+          "id": "n07",
+          "word": "Rón:kwe",
+          "english": "man (contains nasal quality)"
+        },
+        {
+          "id": "n03",
+          "word": "Iakón:kwe",
+          "english": "woman"
+        },
+        {
+          "id": "p10",
+          "word": "sewakwé:kon",
+          "english": "you all"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-en_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-en_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-en_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-on",
@@ -138,7 +561,54 @@
         "pitch": 0.9
       },
       "s": "nasalized o — air through nose",
-      "t": "Nasalized rounded back vowel. ę [ã] and ǫ [õ] are distinct — both common in Kanehsatà:ke Kanien'kéha. IPA: [õ]."
+      "t": "Nasalized rounded back vowel. ę [ã] and ǫ [õ] are distinct — both common in Kanehsatà:ke Kanien'kéha. IPA: [õ].",
+      "words": [
+        {
+          "id": "n07",
+          "word": "Rón:kwe",
+          "english": "man"
+        },
+        {
+          "id": "wa03",
+          "word": "Okwáho",
+          "english": "wolf"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        },
+        {
+          "id": "bp05",
+          "word": "Ohsó:wa",
+          "english": "lips"
+        },
+        {
+          "id": "wa04",
+          "word": "Tsaní:to",
+          "english": "beaver"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-on_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-on_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-on_akwesasne-speaker.mp3"
+        }
+      ]
     }
   ],
   "consonants": [
@@ -154,7 +624,54 @@
         "pitch": 1
       },
       "s": "unaspirated — like 'k' in sky",
-      "t": "Unaspirated velar stop — no puff of air after it, unlike English 'key'. Think of the 'k' in 'sky' or 'ski'. IPA: [k]."
+      "t": "Unaspirated velar stop — no puff of air after it, unlike English 'key'. Think of the 'k' in 'sky' or 'ski'. IPA: [k].",
+      "words": [
+        {
+          "id": "num05",
+          "word": "Wísk",
+          "english": "five"
+        },
+        {
+          "id": "o05",
+          "word": "Ónhka",
+          "english": "water"
+        },
+        {
+          "id": "num01",
+          "word": "Énska",
+          "english": "one"
+        },
+        {
+          "id": "da01",
+          "word": "Takós",
+          "english": "cat"
+        },
+        {
+          "id": "ka04",
+          "word": "Kaná:tsihs",
+          "english": "canoe"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-k_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-k_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-k_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-t",
@@ -168,7 +685,54 @@
         "pitch": 1
       },
       "s": "unaspirated — like 't' in stop",
-      "t": "Unaspirated alveolar stop. The 't' in 'stop', not 'top'. IPA: [t]."
+      "t": "Unaspirated alveolar stop. The 't' in 'stop', not 'top'. IPA: [t].",
+      "words": [
+        {
+          "id": "k01",
+          "word": "ista",
+          "english": "mother"
+        },
+        {
+          "id": "k03",
+          "word": "'sot",
+          "english": "grandfather"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        },
+        {
+          "id": "da01",
+          "word": "Takós",
+          "english": "cat"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-t_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-t_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-t_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-gs",
@@ -182,7 +746,54 @@
         "pitch": 1
       },
       "s": "throat closure — like pause in 'uh-oh'",
-      "t": "A full consonant in Kanien'kéha, not just punctuation. The throat closes briefly — exactly like the pause in English 'uh-oh'. It appears word-initially, mid-word, and word-finally, and changes meaning. IPA: [ʔ]."
+      "t": "A full consonant in Kanien'kéha, not just punctuation. The throat closes briefly — exactly like the pause in English 'uh-oh'. It appears word-initially, mid-word, and word-finally, and changes meaning. IPA: [ʔ].",
+      "words": [
+        {
+          "id": "p02",
+          "word": "í:'i",
+          "english": "I"
+        },
+        {
+          "id": "k03",
+          "word": "'sot",
+          "english": "grandfather"
+        },
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        },
+        {
+          "id": "n01",
+          "word": "Ieksá:'a",
+          "english": "girl"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-gs_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-gs_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-gs_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-h",
@@ -196,7 +807,54 @@
         "pitch": 1
       },
       "s": "breathy — like 'h' in help",
-      "t": "Glottal fricative. Breathy onset before vowels; can also appear between vowels. IPA: [h]."
+      "t": "Glottal fricative. Breathy onset before vowels; can also appear between vowels. IPA: [h].",
+      "words": [
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        },
+        {
+          "id": "o05",
+          "word": "Ónhka",
+          "english": "water"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        },
+        {
+          "id": "av01",
+          "word": "énha",
+          "english": "to put on"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-h_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-h_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-h_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-n",
@@ -210,7 +868,54 @@
         "pitch": 1
       },
       "s": "like 'n' in no",
-      "t": "Standard alveolar nasal consonant, similar to English. IPA: [n]."
+      "t": "Standard alveolar nasal consonant, similar to English. IPA: [n].",
+      "words": [
+        {
+          "id": "av01",
+          "word": "énha",
+          "english": "to put on"
+        },
+        {
+          "id": "o05",
+          "word": "Ónhka",
+          "english": "water"
+        },
+        {
+          "id": "bp03",
+          "word": "Ó:nen",
+          "english": "eye"
+        },
+        {
+          "id": "num01",
+          "word": "Énska",
+          "english": "one"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-n_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-n_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-n_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-r",
@@ -224,7 +929,54 @@
         "pitch": 1
       },
       "s": "alveolar flap; l in Akwesasne",
-      "t": "Alveolar flap [ɾ] in Kanehsatà:ke and Kahnawà:ke; lateral [l] in Akwesasne. Both are valid community-level dialect features, not errors. IPA: [ɾ] or [l]."
+      "t": "Alveolar flap [ɾ] in Kanehsatà:ke and Kahnawà:ke; lateral [l] in Akwesasne. Both are valid community-level dialect features, not errors. IPA: [ɾ] or [l].",
+      "words": [
+        {
+          "id": "p04",
+          "word": "raónha",
+          "english": "he"
+        },
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        },
+        {
+          "id": "brd03",
+          "word": "so:ra",
+          "english": "duck"
+        },
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        },
+        {
+          "id": "wa01",
+          "word": "Ohkwá:ri",
+          "english": "bear"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-r_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-r_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-r_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-w",
@@ -238,7 +990,54 @@
         "pitch": 1
       },
       "s": "like 'w' in water",
-      "t": "Labial-velar approximant. Smooth glide into the following vowel, similar to English. IPA: [w]."
+      "t": "Labial-velar approximant. Smooth glide into the following vowel, similar to English. IPA: [w].",
+      "words": [
+        {
+          "id": "num05",
+          "word": "Wísk",
+          "english": "five"
+        },
+        {
+          "id": "dh24",
+          "word": "káwhe",
+          "english": "coffee"
+        },
+        {
+          "id": "wa03",
+          "word": "Okwáho",
+          "english": "wolf"
+        },
+        {
+          "id": "na03",
+          "word": "Wahtá:",
+          "english": "maple tree"
+        },
+        {
+          "id": "dv02",
+          "word": "wà:ke",
+          "english": "I am going"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-w_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-w_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-w_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-y",
@@ -252,7 +1051,54 @@
         "pitch": 1.1
       },
       "s": "palatal glide; y in Ontario, i in Quebec",
-      "t": "Palatal approximant [j] in Six Nations/Tyendinaga; high front vocoid [i] in Kanehsatà:ke/Kahnawà:ke in the same positions. Both are correct dialect forms. IPA: [j] or [i]."
+      "t": "Palatal approximant [j] in Six Nations/Tyendinaga; high front vocoid [i] in Kanehsatà:ke/Kahnawà:ke in the same positions. Both are correct dialect forms. IPA: [j] or [i].",
+      "words": [
+        {
+          "id": "fd10",
+          "word": "yó:ri",
+          "english": "it is cooked"
+        },
+        {
+          "id": "col05",
+          "word": "Kayé:ri",
+          "english": "black"
+        },
+        {
+          "id": "bp04",
+          "word": "Oyén:ta",
+          "english": "nose"
+        },
+        {
+          "id": "fd09",
+          "word": "yawékon",
+          "english": "it is delicious"
+        },
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-y_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-y_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-y_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-ts",
@@ -266,7 +1112,54 @@
         "pitch": 1
       },
       "s": "like 'ts' in cats",
-      "t": "Alveolar affricate — a stop immediately followed by a fricative. Particularly consistent in Kahnawà:ke. IPA: [ts]."
+      "t": "Alveolar affricate — a stop immediately followed by a fricative. Particularly consistent in Kahnawà:ke. IPA: [ts].",
+      "words": [
+        {
+          "id": "ins05",
+          "word": "tsiks",
+          "english": "fly"
+        },
+        {
+          "id": "wa18",
+          "word": "Tsitsi",
+          "english": "chipmunk"
+        },
+        {
+          "id": "num07",
+          "word": "Tsà:ta",
+          "english": "seven"
+        },
+        {
+          "id": "wa04",
+          "word": "Tsaní:to",
+          "english": "beaver"
+        },
+        {
+          "id": "w02",
+          "word": "ó:iats",
+          "english": "it is raining"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-ts_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-ts_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-ts_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sc-tsh",
@@ -280,7 +1173,54 @@
         "pitch": 1
       },
       "s": "like 'ch' in church",
-      "t": "Palato-alveolar affricate, like English 'ch' in 'church'. IPA: [tʃ]."
+      "t": "Palato-alveolar affricate, like English 'ch' in 'church'. IPA: [tʃ].",
+      "words": [
+        {
+          "id": "bp15",
+          "word": "Otshén:ta",
+          "english": "elbow"
+        },
+        {
+          "id": "fx05",
+          "word": "awenhétsha",
+          "english": "sausage"
+        },
+        {
+          "id": "fp05",
+          "word": "onerahóntsha",
+          "english": "wing"
+        },
+        {
+          "id": "fp01",
+          "word": "okawè:tshera",
+          "english": "fin"
+        },
+        {
+          "id": "cu14",
+          "word": "Okwéskons",
+          "english": "rattle"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-tsh_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-tsh_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-tsh_akwesasne-speaker.mp3"
+        }
+      ]
     }
   ],
   "tone": [
@@ -296,7 +1236,54 @@
         "pitch": 0.9
       },
       "s": "held ~2× longer than short vowel",
-      "t": "The colon (:) in the orthography corresponds to the IPA length mark [ː]. Always write it; always pronounce it. A long vowel is held roughly twice as long as its short counterpart, and the distinction changes meaning. IPA: [Vː]."
+      "t": "The colon (:) in the orthography corresponds to the IPA length mark [ː]. Always write it; always pronounce it. A long vowel is held roughly twice as long as its short counterpart, and the distinction changes meaning. IPA: [Vː].",
+      "words": [
+        {
+          "id": "v01",
+          "word": "á:tien",
+          "english": "to sit (long á:)"
+        },
+        {
+          "id": "na03",
+          "word": "Wahtá:",
+          "english": "maple tree (long á:)"
+        },
+        {
+          "id": "brd03",
+          "word": "so:ra",
+          "english": "duck (long o:)"
+        },
+        {
+          "id": "fi01",
+          "word": "Namé:s",
+          "english": "trout (long é:)"
+        },
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you (long í:)"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-vl_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-vl_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-vl_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "st-gs",
@@ -310,7 +1297,54 @@
         "pitch": 1
       },
       "s": "full consonant — written as ' in orthography",
-      "t": "The apostrophe (') in Kanien'kéha orthography represents the glottal stop [ʔ]. It appears mid-word and word-finally. í:'i (I) and í:se' (you) are different words partly because of its position. IPA: [ʔ]."
+      "t": "The apostrophe (') in Kanien'kéha orthography represents the glottal stop [ʔ]. It appears mid-word and word-finally. í:'i (I) and í:se' (you) are different words partly because of its position. IPA: [ʔ].",
+      "words": [
+        {
+          "id": "p02",
+          "word": "í:'i",
+          "english": "I (mid-word glottal)"
+        },
+        {
+          "id": "k03",
+          "word": "'sot",
+          "english": "grandfather (word-initial)"
+        },
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you (word-final)"
+        },
+        {
+          "id": "n01",
+          "word": "Ieksá:'a",
+          "english": "girl (pre-final)"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe (word-final)"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-gs_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-gs_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-gs_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "st-ac",
@@ -324,7 +1358,54 @@
         "pitch": 1.2
       },
       "s": "primary stress — higher pitch + louder",
-      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. In IPA, stress is marked with [ˈ] before the stressed syllable. Kanien'kéha pitch-stress patterns can change grammatical meaning."
+      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. In IPA, stress is marked with [ˈ] before the stressed syllable. Kanien'kéha pitch-stress patterns can change grammatical meaning.",
+      "words": [
+        {
+          "id": "wa01",
+          "word": "Ohkwá:ri",
+          "english": "bear (stress on kwá)"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three (stress on Áh)"
+        },
+        {
+          "id": "fo07",
+          "word": "Kanà:taros",
+          "english": "bread (stress on nà:)"
+        },
+        {
+          "id": "da01",
+          "word": "Takós",
+          "english": "cat (stress on kós)"
+        },
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you (stress on í:)"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-ac_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-ac_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-ac_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "st-ns",
@@ -338,7 +1419,54 @@
         "pitch": 0.95
       },
       "s": "nasalized — ę [ã] and ǫ [õ]",
-      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels distinctive to Kanien'kéha. Air passes through both mouth and nose. They are separate phonemes — ę is low and central, ǫ is rounded and back. Both are common in Kanehsatà:ke speech."
+      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels distinctive to Kanien'kéha. Air passes through both mouth and nose. They are separate phonemes — ę is low and central, ǫ is rounded and back. Both are common in Kanehsatà:ke speech.",
+      "words": [
+        {
+          "id": "n07",
+          "word": "Rón:kwe",
+          "english": "man"
+        },
+        {
+          "id": "n03",
+          "word": "Iakón:kwe",
+          "english": "woman"
+        },
+        {
+          "id": "p10",
+          "word": "sewakwé:kon",
+          "english": "you all"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-ns_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-ns_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-ns_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "st-rm",
@@ -352,7 +1480,54 @@
         "pitch": 1
       },
       "s": "marks male nouns and pronouns",
-      "t": "The prefix R- (Ro-, Ra-, Ron-, Rok-, Ran-) marks male person nouns and pronouns in Kanehsatà:ke/Kahnawà:ke. In Akwesasne this becomes L- (Lo-, La-, Lon-, Lok-, Lan-). Compare I-/Iak-/A-/Ako- for female."
+      "t": "The prefix R- (Ro-, Ra-, Ron-, Rok-, Ran-) marks male person nouns and pronouns in Kanehsatà:ke/Kahnawà:ke. In Akwesasne this becomes L- (Lo-, La-, Lon-, Lok-, Lan-). Compare I-/Iak-/A-/Ako- for female.",
+      "words": [
+        {
+          "id": "p04",
+          "word": "raónha",
+          "english": "he (Ra- prefix)"
+        },
+        {
+          "id": "n05",
+          "word": "Raksá:'a",
+          "english": "boy (Ra- prefix)"
+        },
+        {
+          "id": "n07",
+          "word": "Rón:kwe",
+          "english": "man (Ro- prefix)"
+        },
+        {
+          "id": "n08",
+          "word": "Rokstén:ha",
+          "english": "elder man (Ro- prefix)"
+        },
+        {
+          "id": "k03",
+          "word": "'sot",
+          "english": "grandfather"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-rm_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-rm_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-rm_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "st-if",
@@ -366,7 +1541,54 @@
         "pitch": 1.1
       },
       "s": "marks female nouns and pronouns",
-      "t": "The prefixes I-, Iak-, A-, and Ako- mark female person nouns and pronouns. The specific prefix depends on the noun class and social register — Ako- is formal/respectful (mothers, elders), aónha is informal. This system is fully systematic throughout the language."
+      "t": "The prefixes I-, Iak-, A-, and Ako- mark female person nouns and pronouns. The specific prefix depends on the noun class and social register — Ako- is formal/respectful (mothers, elders), aónha is informal. This system is fully systematic throughout the language.",
+      "words": [
+        {
+          "id": "n01",
+          "word": "Ieksá:'a",
+          "english": "girl (I- prefix)"
+        },
+        {
+          "id": "n03",
+          "word": "Iakón:kwe",
+          "english": "woman (Iak- prefix)"
+        },
+        {
+          "id": "n04",
+          "word": "Akokstén:ha",
+          "english": "elder woman (Ako- prefix)"
+        },
+        {
+          "id": "k05",
+          "word": "Sahtsí:'a",
+          "english": "older sister"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/st-if_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/st-if_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/st-if_akwesasne-speaker.mp3"
+        }
+      ]
     }
   ]
 }
