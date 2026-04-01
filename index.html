@@ -303,6 +303,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .btn-signout{position:absolute;top:.85rem;right:1rem;background:var(--ed);border:1.5px solid var(--sand);border-radius:9px;color:var(--sand);font-family:'Crimson Pro',serif;font-size:.88rem;font-weight:600;padding:.48rem 1rem;cursor:pointer;letter-spacing:.02em;transition:background .14s,color .14s;}
 .btn-signout:hover{background:var(--em);color:white;}
 
+/* orthography toggle */
+.orth-wrap{display:flex;align-items:center;gap:.55rem;padding:.65rem 1.35rem .25rem;flex-wrap:wrap;}
+.orth-label{font-size:.75rem;color:var(--ew);white-space:nowrap;}
+.orth-pills{display:flex;gap:.3rem;flex-wrap:wrap;}
+.orth-pill{padding:.3rem .75rem;border-radius:17px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.8rem;color:var(--ew);cursor:pointer;transition:all .13s;min-height:32px;}
+.orth-pill:hover{border-color:var(--clay);color:var(--clay);}
+.orth-pill.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.orth-note{font-size:.72rem;color:var(--ew);font-style:italic;padding:0 1.35rem .4rem;line-height:1.5;}
+
 /* syllabary practice */
 .sp-section{padding:.9rem 1.35rem .3rem;}
 .sp-title{font-family:'Playfair Display',serif;font-size:1rem;color:var(--em);margin-bottom:.7rem;padding-bottom:.32rem;border-bottom:2px solid var(--sand);}
@@ -543,10 +552,23 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
     <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — e.g. Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>. No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
     <div class="tts-note"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. <strong>No browser currently has a Kanien'kéha voice</strong> — these clips use carefully chosen phonetic approximations designed to produce the closest possible sound. They are a starting guide only. Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
+
+    <!-- Orthography toggle -->
+    <div class="orth-wrap" role="group" aria-label="Spelling system">
+      <span class="orth-label">Spelling system:</span>
+      <div class="orth-pills">
+        <button class="orth-pill active" onclick="setOrth('standard',this)" aria-pressed="true">Standard (1993)</button>
+        <button class="orth-pill" onclick="setOrth('East',this)" aria-pressed="false">East</button>
+        <button class="orth-pill" onclick="setOrth('West',this)" aria-pressed="false">West</button>
+      </div>
+    </div>
+    <div class="orth-note" id="orth-note">Standard — 1993 consensus orthography used across all six Mohawk communities.</div>
+
     <div class="stabwrap" role="tablist" aria-label="Sound categories">
       <button class="stab active" role="tab" aria-selected="true" onclick="setSylTab('vowels',this)">Vowels</button>
       <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('consonants',this)">Consonants</button>
       <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('tone',this)">Tone &amp; Length</button>
+      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('combinations',this)">Combinations</button>
     </div>
     <div class="sgrid" id="sgrid" role="list"></div>
   </div>
@@ -799,7 +821,7 @@ function navTo(id){
   const nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('active');
   window.scrollTo(0,0);
   if(id==='glossary')renderGloss();
-  if(id==='syllabary'){renderSylPracticeCards();renderSyl('vowels');}
+  if(id==='syllabary'){renderSylPracticeCards();renderSyl(SYL_TAB||'vowels');}
 }
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function goHome(){updateHomeUI();navTo('home');}
@@ -1565,16 +1587,46 @@ function closeModal(){document.getElementById('wmodal').classList.remove('open')
 function closeModalOverlay(e){if(e.target===document.getElementById('wmodal'))closeModal();}
 
 /* syllabary reference grid */
+let SYL_ORTH='standard';
+let SYL_TAB='vowels';
+
+const ORTH_NOTES={
+  standard:'Standard — 1993 consensus orthography used across all six Mohawk communities.',
+  East:'East — Standard orthography as used in East (Quebec) communities: Kanehsatà:ke, Kahnawà:ke. Uses i where West uses y.',
+  West:'West — Pre-1993 Tyendinaga / Six Nations tradition (Maracle reference). Uses g/d for k/t, en/on for nasal vowels, and phonetic combination spellings.',
+};
+
+function setOrth(orth,btn){
+  SYL_ORTH=orth;
+  document.querySelectorAll('.orth-pill').forEach(b=>{
+    b.classList.toggle('active',b===btn);
+    b.setAttribute('aria-pressed',b===btn?'true':'false');
+  });
+  const note=document.getElementById('orth-note');
+  if(note)note.textContent=ORTH_NOTES[orth]||'';
+  renderSyl(SYL_TAB);
+}
+
+function sylDisplay(s){
+  // Returns {c, r} using active orthography, falls back to base fields
+  if(s.spellings&&s.spellings[SYL_ORTH]){
+    return{c:s.spellings[SYL_ORTH].c, r:s.spellings[SYL_ORTH].r};
+  }
+  return{c:s.c, r:s.r};
+}
+
 function renderSyl(tab){
+  SYL_TAB=tab;
   document.getElementById('sgrid').innerHTML=(SYL[tab]||[]).map(s=>{
     const p=getSylProf(s.id);
     const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
+    const d=sylDisplay(s);
     const ipaHtml=s.ipa?`<span class="sipa">${s.ipa} <span>${s.ipaNote}</span></span>`:'';
-    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" aria-label="Play ${s.r}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
+    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" aria-label="Play ${d.r}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
     const profHtml=p?`<div class="prof-track" style="margin-top:.32rem" role="progressbar" aria-valuenow="${p.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Proficiency ${p.pct}%"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:'';
-    return`<div class="scard" role="button" tabindex="0" aria-label="${s.c} — ${s.s}" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')showSylTip(this,'${qs(s.t)}','${s.id}')">
-      <span class="sc">${s.c}</span>
-      <span class="sr">${s.r}</span>
+    return`<div class="scard" role="button" tabindex="0" aria-label="${d.c} — ${s.s}" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')showSylTip(this,'${qs(s.t)}','${s.id}')">
+      <span class="sc">${d.c}</span>
+      <span class="sr">${d.r}</span>
       <span class="ss">${s.s}</span>
       ${ipaHtml}
       ${ttsHtml}
@@ -1583,16 +1635,16 @@ function renderSyl(tab){
   }).join('');
 }
 
-function setSylTab(tab,btn){document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderSyl(tab);}
+function setSylTab(tab,btn){
+  document.querySelectorAll('.stab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');});
+  btn.classList.add('active');btn.setAttribute('aria-selected','true');
+  renderSyl(tab);
+}
 
 function recordSylProf(sid,correct){
   recSylProf(sid,correct);
   const d=document.getElementById('syl-assess');if(d)d.remove();
-  const activeTab=document.querySelector('.stab.active');
-  if(activeTab){
-    const tab=activeTab.textContent.toLowerCase().replace(/[^a-z]/g,'');
-    renderSyl(tab==='vowels'?'vowels':tab==='consonants'?'consonants':'tone');
-  }
+  renderSyl(SYL_TAB||'vowels');
   const p=getSylProf(sid);
   if(p){
     const note=document.createElement('div');
@@ -1709,12 +1761,13 @@ function showSylTip(card,tip,sid){
 
 const SP_LESSONS=[
   {id:'sp-vowels',    title:'Vowels',           tab:'vowels',      icon:'🔤', desc:'All vowel sounds'},
-  {id:'sp-nasals',    title:'Nasal vowels',      tab:'vowels',      icon:'👃', desc:'ę and ǫ — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
+  {id:'sp-nasals',    title:'Nasal vowels',      tab:'vowels',      icon:'👃', desc:'ę / en and ǫ / on — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
   {id:'sp-long',      title:'Long vs. short',    tab:'vowels',      icon:'⏱', desc:'Vowel length changes meaning', filter:s=>s.id.endsWith('2')||['sv-a','sv-e','sv-i','sv-o'].includes(s.id)},
-  {id:'sp-consonants',title:'Consonants',        tab:'consonants',  icon:'🔠', desc:'All consonants'},
-  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants',  icon:'🛑', desc:'k, t, ts, tsh — unaspirated', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
+  {id:'sp-consonants',title:'Consonants',        tab:'consonants',  icon:'🔠', desc:'All consonants including s'},
+  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants',  icon:'🛑', desc:'k/g, t/d, ts, tsh — stop sounds', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
   {id:'sp-glottal',   title:'Glottal stop',      tab:'consonants',  icon:'✋', desc:"The ' consonant — like uh-oh", filter:s=>s.id==='sc-gs'},
   {id:'sp-tone',      title:'Tone & length',     tab:'tone',        icon:'🎵', desc:'Stress, length, nasal vowels'},
+  {id:'sp-combos',    title:'Combinations',      tab:'combinations',icon:'🔗', desc:'hw, kh, kw, ky, sh, ty and more'},
 ];
 
 let SPEX={lesson:null,pool:[],done:0,total:0,current:null,answered:false,attempts:0};
@@ -1789,61 +1842,54 @@ function startSylPractice(lessonId){
 
 function spexBuild(type,entry,lessonEntries,allSounds){
   const distractors=allSounds.filter(s=>s.id!==entry.id);
+  const d=sylDisplay(entry); // active orthography display
 
   if(type==='identify'){
-    // Show the character → pick the correct sound description
     const wrongs=shuffle(distractors).slice(0,3).map(d=>d.s);
     const opts=shuffle([entry.s,...wrongs]);
     return{type,sid:entry.id,
       qtype:'Identify the sound',
       q:`What sound does this character make?`,
-      char:entry.c,
+      char:d.c,
       opts,correct:entry.s,
-      hint:entry.r};
+      hint:d.r};
   }
 
   if(type==='word'){
-    // Show a word example → identify which sound in it matches this lesson sound
     const words=entry.words||[];
     const word=words.length?words[Math.floor(Math.random()*words.length)]:null;
-    if(!word){
-      // Fall back to identify if no words available
-      return spexBuild('identify',entry,lessonEntries,allSounds);
-    }
-    // Multiple choice: which sound does the highlighted character represent?
-    const wrongs=shuffle(distractors).slice(0,3).map(d=>d.s);
+    if(!word) return spexBuild('identify',entry,lessonEntries,allSounds);
+    const wrongs=shuffle(distractors).slice(0,3).map(dx=>dx.s);
     const opts=shuffle([entry.s,...wrongs]);
     return{type,sid:entry.id,
       qtype:'Word in context',
-      q:`You see this word: "${word.word}" (${word.english})\nWhat sound does the character  ${entry.c}  make in this word?`,
-      char:entry.c,
+      q:`You see this word: "${word.word}" (${word.english})\nWhat sound does the character  ${d.c}  make in this word?`,
+      char:d.c,
       word,
       opts,correct:entry.s,
-      hint:entry.r};
+      hint:d.r};
   }
 
   if(type==='recall'){
-    // Read description → pick the correct character
-    const wrongs=shuffle(distractors.filter(d=>d.c!==entry.c)).slice(0,3).map(d=>d.c);
-    const opts=shuffle([entry.c,...wrongs]);
+    const wrongs=shuffle(distractors.filter(dx=>dx.c!==entry.c)).slice(0,3).map(dx=>sylDisplay(dx).c);
+    const opts=shuffle([d.c,...wrongs]);
     return{type,sid:entry.id,
       qtype:'Find the character',
       q:`Which character represents this sound?\n"${entry.s}"`,
-      opts,correct:entry.c,
-      hint:`IPA: ${entry.ipa||entry.r}`};
+      opts,correct:d.c,
+      hint:`IPA: ${entry.ipa||d.r}`};
   }
 
   if(type==='audio'){
-    // Audio placeholder — show word context + description, learner self-assesses
     const words=entry.words||[];
     const word=words.length?words[Math.floor(Math.random()*words.length)]:null;
-    // Pick a random audio voice if files are present
     const audioFiles=entry.audioFiles||[];
     const audioFile=audioFiles.length?audioFiles[Math.floor(Math.random()*audioFiles.length)]:null;
     return{type,sid:entry.id,
       qtype:'Listen & confirm',
-      q:`Listen to the sound: ${entry.c} — ${entry.r}`,
-      char:entry.c,
+      q:`Listen to the sound: ${d.c} — ${d.r}`,
+      char:d.c,
+      r:d.r,
       desc:entry.t,
       word,
       audioFile,

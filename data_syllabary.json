@@ -59,7 +59,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-a_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "a",
+          "r": "a"
+        },
+        "East": {
+          "c": "a",
+          "r": "a"
+        },
+        "West": {
+          "c": "a",
+          "r": "ah"
+        }
+      }
     },
     {
       "id": "sv-a2",
@@ -120,7 +134,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-a2_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "a:",
+          "r": "a:"
+        },
+        "East": {
+          "c": "a:",
+          "r": "a:"
+        },
+        "West": {
+          "c": "a:",
+          "r": "ah (long)"
+        }
+      }
     },
     {
       "id": "sv-e",
@@ -181,7 +209,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-e_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "e",
+          "r": "e"
+        },
+        "East": {
+          "c": "e",
+          "r": "e"
+        },
+        "West": {
+          "c": "e",
+          "r": "ey / eh"
+        }
+      }
     },
     {
       "id": "sv-e2",
@@ -242,7 +284,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-e2_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "e:",
+          "r": "e:"
+        },
+        "East": {
+          "c": "e:",
+          "r": "e:"
+        },
+        "West": {
+          "c": "e:",
+          "r": "ey / eh (long)"
+        }
+      }
     },
     {
       "id": "sv-i",
@@ -303,7 +359,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-i_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "i",
+          "r": "i"
+        },
+        "East": {
+          "c": "i",
+          "r": "i"
+        },
+        "West": {
+          "c": "i",
+          "r": "ee"
+        }
+      }
     },
     {
       "id": "sv-i2",
@@ -364,7 +434,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-i2_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "i:",
+          "r": "i:"
+        },
+        "East": {
+          "c": "i:",
+          "r": "i:"
+        },
+        "West": {
+          "c": "i:",
+          "r": "ee (long)"
+        }
+      }
     },
     {
       "id": "sv-o",
@@ -425,7 +509,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-o_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "o",
+          "r": "o"
+        },
+        "East": {
+          "c": "o",
+          "r": "o"
+        },
+        "West": {
+          "c": "o",
+          "r": "o (as in note)"
+        }
+      }
     },
     {
       "id": "sv-o2",
@@ -486,7 +584,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-o2_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "o:",
+          "r": "o:"
+        },
+        "East": {
+          "c": "o:",
+          "r": "o:"
+        },
+        "West": {
+          "c": "o:",
+          "r": "o (long)"
+        }
+      }
     },
     {
       "id": "sv-en",
@@ -547,7 +659,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-en_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "ę",
+          "r": "ę"
+        },
+        "East": {
+          "c": "ę",
+          "r": "ę"
+        },
+        "West": {
+          "c": "en",
+          "r": "en (nasal, as in song)"
+        }
+      }
     },
     {
       "id": "sv-on",
@@ -608,7 +734,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sv-on_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "ǫ",
+          "r": "ǫ"
+        },
+        "East": {
+          "c": "ǫ",
+          "r": "ǫ"
+        },
+        "West": {
+          "c": "on",
+          "r": "on (nasal, as in moon)"
+        }
+      }
     }
   ],
   "consonants": [
@@ -671,7 +811,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-k_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "k",
+          "r": "k"
+        },
+        "East": {
+          "c": "k",
+          "r": "k"
+        },
+        "West": {
+          "c": "k / g",
+          "r": "g (as in gate)"
+        }
+      }
     },
     {
       "id": "sc-t",
@@ -732,7 +886,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-t_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "t",
+          "r": "t"
+        },
+        "East": {
+          "c": "t",
+          "r": "t"
+        },
+        "West": {
+          "c": "t / d",
+          "r": "d (before vowel/y) / t (before consonant)"
+        }
+      }
     },
     {
       "id": "sc-gs",
@@ -793,7 +961,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-gs_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "'",
+          "r": "ʔ (glottal stop)"
+        },
+        "East": {
+          "c": "'",
+          "r": "ʔ (glottal stop)"
+        },
+        "West": {
+          "c": "'",
+          "r": "' (as in uh-oh)"
+        }
+      }
     },
     {
       "id": "sc-h",
@@ -854,7 +1036,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-h_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "h",
+          "r": "h"
+        },
+        "East": {
+          "c": "h",
+          "r": "h"
+        },
+        "West": {
+          "c": "h",
+          "r": "h (as in hat)"
+        }
+      }
     },
     {
       "id": "sc-n",
@@ -915,7 +1111,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-n_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "n",
+          "r": "n"
+        },
+        "East": {
+          "c": "n",
+          "r": "n"
+        },
+        "West": {
+          "c": "n",
+          "r": "n (as in now)"
+        }
+      }
     },
     {
       "id": "sc-r",
@@ -975,6 +1185,95 @@
           "label": "Community speaker — Akwesasne",
           "dialect": "Akwesasne",
           "file": "audio/sc-r_akwesasne-speaker.mp3"
+        }
+      ],
+      "spellings": {
+        "standard": {
+          "c": "r",
+          "r": "r / l (Akwesasne)"
+        },
+        "East": {
+          "c": "r",
+          "r": "r / l (Akwesasne)"
+        },
+        "West": {
+          "c": "r",
+          "r": "between r and l"
+        }
+      }
+    },
+    {
+      "id": "sc-s",
+      "c": "s",
+      "r": "s",
+      "ipa": "[s] / [z] / [ʃ]",
+      "ipaNote": "alveolar fricative; voiced or palatal by context",
+      "tts": {
+        "text": "ss",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 's' in say — varies by context",
+      "t": "Three pronunciations: like 's' in say before a consonant or vowel; like soft 'z' before a long stressed vowel; like 'sh' in she before y or i (dialect dependent). IPA: [s] / [z] / [ʃ].",
+      "spellings": {
+        "standard": {
+          "c": "s",
+          "r": "s"
+        },
+        "East": {
+          "c": "s",
+          "r": "s"
+        },
+        "West": {
+          "c": "s",
+          "r": "s / z (before long stress) / sh (before y/i)"
+        }
+      },
+      "words": [
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "num05",
+          "word": "Wísk",
+          "english": "five"
+        },
+        {
+          "id": "wa09",
+          "word": "Shikó:hs",
+          "english": "skunk"
+        },
+        {
+          "id": "k05",
+          "word": "Sahtsí:'a",
+          "english": "older sister"
+        },
+        {
+          "id": "na07",
+          "word": "Sé:ske",
+          "english": "spring"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sc-s_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sc-s_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sc-s_akwesasne-speaker.mp3"
         }
       ]
     },
@@ -1037,7 +1336,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-w_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "w",
+          "r": "w"
+        },
+        "East": {
+          "c": "w",
+          "r": "w"
+        },
+        "West": {
+          "c": "w",
+          "r": "w (as in way)"
+        }
+      }
     },
     {
       "id": "sc-y",
@@ -1098,7 +1411,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-y_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "y / i",
+          "r": "y (Ontario) / i (Quebec)"
+        },
+        "East": {
+          "c": "i",
+          "r": "i"
+        },
+        "West": {
+          "c": "y",
+          "r": "y (as in yet)"
+        }
+      }
     },
     {
       "id": "sc-ts",
@@ -1159,7 +1486,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-ts_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "ts",
+          "r": "ts"
+        },
+        "East": {
+          "c": "ts",
+          "r": "ts"
+        },
+        "West": {
+          "c": "ts",
+          "r": "ts (as in cats)"
+        }
+      }
     },
     {
       "id": "sc-tsh",
@@ -1220,7 +1561,21 @@
           "dialect": "Akwesasne",
           "file": "audio/sc-tsh_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "tsh",
+          "r": "tsh"
+        },
+        "East": {
+          "c": "tsh",
+          "r": "tsh"
+        },
+        "West": {
+          "c": "tsh",
+          "r": "tsh (as in church)"
+        }
+      }
     }
   ],
   "tone": [
@@ -1283,7 +1638,21 @@
           "dialect": "Akwesasne",
           "file": "audio/st-vl_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "V:",
+          "r": "Long vowel"
+        },
+        "East": {
+          "c": "V:",
+          "r": "Long vowel"
+        },
+        "West": {
+          "c": "V:",
+          "r": "Long vowel"
+        }
+      }
     },
     {
       "id": "st-gs",
@@ -1344,7 +1713,21 @@
           "dialect": "Akwesasne",
           "file": "audio/st-gs_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "ʔ",
+          "r": "Glottal stop"
+        },
+        "East": {
+          "c": "ʔ",
+          "r": "Glottal stop"
+        },
+        "West": {
+          "c": "'",
+          "r": "Glottal stop (')"
+        }
+      }
     },
     {
       "id": "st-ac",
@@ -1405,7 +1788,21 @@
           "dialect": "Akwesasne",
           "file": "audio/st-ac_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "á",
+          "r": "Stress accent"
+        },
+        "East": {
+          "c": "á",
+          "r": "Stress accent"
+        },
+        "West": {
+          "c": "á",
+          "r": "Stress / falling tone"
+        }
+      }
     },
     {
       "id": "st-ns",
@@ -1466,7 +1863,21 @@
           "dialect": "Akwesasne",
           "file": "audio/st-ns_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "ę / ǫ",
+          "r": "Nasal vowels"
+        },
+        "East": {
+          "c": "ę / ǫ",
+          "r": "Nasal vowels"
+        },
+        "West": {
+          "c": "en / on",
+          "r": "Nasal vowels (en / on)"
+        }
+      }
     },
     {
       "id": "st-rm",
@@ -1527,7 +1938,21 @@
           "dialect": "Akwesasne",
           "file": "audio/st-rm_akwesasne-speaker.mp3"
         }
-      ]
+      ],
+      "spellings": {
+        "standard": {
+          "c": "R-",
+          "r": "Male prefix (R- / L-)"
+        },
+        "East": {
+          "c": "R-",
+          "r": "Male prefix (R- / L-)"
+        },
+        "West": {
+          "c": "R-",
+          "r": "Male prefix (R- / L-)"
+        }
+      }
     },
     {
       "id": "st-if",
@@ -1587,6 +2012,922 @@
           "label": "Community speaker — Akwesasne",
           "dialect": "Akwesasne",
           "file": "audio/st-if_akwesasne-speaker.mp3"
+        }
+      ],
+      "spellings": {
+        "standard": {
+          "c": "I-",
+          "r": "Female prefix (I- / Iak- / A-)"
+        },
+        "East": {
+          "c": "I-",
+          "r": "Female prefix (I- / Iak- / A-)"
+        },
+        "West": {
+          "c": "I-",
+          "r": "Female prefix (I- / Iak- / A-)"
+        }
+      }
+    }
+  ],
+  "combinations": [
+    {
+      "id": "comb-hw",
+      "c": "hw",
+      "r": "hw",
+      "ipa": "[ʍ]",
+      "ipaNote": "voiceless labiovelar",
+      "tts": {
+        "text": "wh",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'wh' in where",
+      "t": "The hw combination — a voiceless w sound. Like 'wh' in 'where' in dialects that distinguish wh/w. IPA: [ʍ].",
+      "spellings": {
+        "standard": {
+          "c": "hw",
+          "r": "hw"
+        },
+        "East": {
+          "c": "hw",
+          "r": "hw"
+        },
+        "West": {
+          "c": "hw",
+          "r": "wh (as in where)"
+        }
+      },
+      "words": [
+        {
+          "id": "o05",
+          "word": "Ónhka",
+          "english": "water"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-hw_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-hw_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-hw_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-kh",
+      "c": "kh",
+      "r": "kh",
+      "ipa": "[kʰ]",
+      "ipaNote": "aspirated velar stop",
+      "tts": {
+        "text": "k",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'c' in cat / cow",
+      "t": "Aspirated k — a puff of air follows the stop, like 'c' in 'cat' or 'cow'. Contrast with plain k (unaspirated). IPA: [kʰ].",
+      "spellings": {
+        "standard": {
+          "c": "kh",
+          "r": "kh"
+        },
+        "East": {
+          "c": "kh",
+          "r": "kh"
+        },
+        "West": {
+          "c": "kh",
+          "r": "kh (like c in cat/cow)"
+        }
+      },
+      "words": [
+        {
+          "id": "da06",
+          "word": "Érhar",
+          "english": "dog"
+        },
+        {
+          "id": "dh24",
+          "word": "káwhe",
+          "english": "coffee"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-kh_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-kh_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-kh_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-khw",
+      "c": "khw",
+      "r": "khw",
+      "ipa": "[kʷʰ]",
+      "ipaNote": "aspirated labiovelar stop",
+      "tts": {
+        "text": "kw",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "like 'qu' in queen / quiet",
+      "t": "Aspirated kw — like 'qu' in 'queen' or 'quiet'. Combines the aspirated k with a simultaneous w rounding. IPA: [kʷʰ].",
+      "spellings": {
+        "standard": {
+          "c": "khw",
+          "r": "khw"
+        },
+        "East": {
+          "c": "khw",
+          "r": "khw"
+        },
+        "West": {
+          "c": "khw",
+          "r": "qu (as in queen/quiet)"
+        }
+      },
+      "words": [
+        {
+          "id": "n07",
+          "word": "Rón:kwe",
+          "english": "man"
+        },
+        {
+          "id": "p10",
+          "word": "sewakwé:kon",
+          "english": "you all"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-khw_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-khw_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-khw_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-kw",
+      "c": "kw",
+      "r": "kw",
+      "ipa": "[kʷ]",
+      "ipaNote": "labiovelar stop",
+      "tts": {
+        "text": "gw",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "g in gate + w in way",
+      "t": "Unaspirated kw — the g sound from 'gate' immediately followed by the w from 'way'. IPA: [kʷ].",
+      "spellings": {
+        "standard": {
+          "c": "kw",
+          "r": "kw"
+        },
+        "East": {
+          "c": "kw",
+          "r": "kw"
+        },
+        "West": {
+          "c": "kw",
+          "r": "g (gate) + w (way)"
+        }
+      },
+      "words": [
+        {
+          "id": "wa01",
+          "word": "Ohkwá:ri",
+          "english": "bear"
+        },
+        {
+          "id": "n03",
+          "word": "Iakón:kwe",
+          "english": "woman"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-kw_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-kw_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-kw_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-ky",
+      "c": "ky",
+      "r": "ky",
+      "ipa": "[kʲ]",
+      "ipaNote": "palatalised velar stop",
+      "tts": {
+        "text": "gy",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "g in gate + y in yet",
+      "t": "Palatalised k — the g sound from 'gate' with the y from 'yet'. IPA: [kʲ].",
+      "spellings": {
+        "standard": {
+          "c": "ky",
+          "r": "ky"
+        },
+        "East": {
+          "c": "ki",
+          "r": "ki"
+        },
+        "West": {
+          "c": "ky",
+          "r": "g (gate) + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "col05",
+          "word": "Kayé:ri",
+          "english": "black"
+        },
+        {
+          "id": "num04",
+          "word": "Kaié:ri",
+          "english": "four"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-ky_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-ky_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-ky_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-ny",
+      "c": "ny",
+      "r": "ny",
+      "ipa": "[nʲ]",
+      "ipaNote": "palatalised nasal",
+      "tts": {
+        "text": "ny",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "n in now + y in yet",
+      "t": "Palatalised n — the n from 'now' immediately followed by the y from 'yet'. IPA: [nʲ].",
+      "spellings": {
+        "standard": {
+          "c": "ny",
+          "r": "ny"
+        },
+        "East": {
+          "c": "ni",
+          "r": "ni"
+        },
+        "West": {
+          "c": "ny",
+          "r": "n (now) + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "av01",
+          "word": "énha",
+          "english": "to put on"
+        },
+        {
+          "id": "num01",
+          "word": "Énska",
+          "english": "one"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-ny_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-ny_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-ny_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-ry",
+      "c": "ry",
+      "r": "ry",
+      "ipa": "[ɾʲ]",
+      "ipaNote": "palatalised flap",
+      "tts": {
+        "text": "ry",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "r/l sound + y in yet",
+      "t": "Palatalised r — the r/l flap followed by the y from 'yet'. IPA: [ɾʲ].",
+      "spellings": {
+        "standard": {
+          "c": "ry",
+          "r": "ry"
+        },
+        "East": {
+          "c": "ri",
+          "r": "ri"
+        },
+        "West": {
+          "c": "ry",
+          "r": "r/l + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        },
+        {
+          "id": "brd03",
+          "word": "so:ra",
+          "english": "duck"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-ry_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-ry_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-ry_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-sh",
+      "c": "sh",
+      "r": "sh",
+      "ipa": "[sʰ]",
+      "ipaNote": "aspirated alveolar fricative",
+      "tts": {
+        "text": "sh",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "s in say + h in hat",
+      "t": "Aspirated s — the s from 'say' followed by a puff of air (h from 'hat'). IPA: [sʰ].",
+      "spellings": {
+        "standard": {
+          "c": "sh",
+          "r": "sh"
+        },
+        "East": {
+          "c": "sh",
+          "r": "sh"
+        },
+        "West": {
+          "c": "sh",
+          "r": "s (say) + h (hat)"
+        }
+      },
+      "words": [
+        {
+          "id": "wa09",
+          "word": "Shikó:hs",
+          "english": "skunk"
+        },
+        {
+          "id": "k05",
+          "word": "Sahtsí:'a",
+          "english": "older sister"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-sh_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-sh_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-sh_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-sy",
+      "c": "sy",
+      "r": "sy",
+      "ipa": "[ʃʲ]",
+      "ipaNote": "palatalised sh",
+      "tts": {
+        "text": "shy",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "sh in she + y in yet",
+      "t": "Palatalised sh — the sh from 'she/show' followed by the y from 'yet'. IPA: [ʃʲ].",
+      "spellings": {
+        "standard": {
+          "c": "sy",
+          "r": "sy"
+        },
+        "East": {
+          "c": "si",
+          "r": "si"
+        },
+        "West": {
+          "c": "sy",
+          "r": "sh (she) + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "na07",
+          "word": "Sé:ske",
+          "english": "spring"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-sy_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-sy_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-sy_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-th",
+      "c": "th",
+      "r": "th",
+      "ipa": "[tʰ]",
+      "ipaNote": "aspirated alveolar stop",
+      "tts": {
+        "text": "th",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "t in take + h in hat",
+      "t": "Aspirated t — the t from 'take' followed by a puff of air (h). Contrast with plain t (unaspirated). IPA: [tʰ].",
+      "spellings": {
+        "standard": {
+          "c": "th",
+          "r": "th"
+        },
+        "East": {
+          "c": "th",
+          "r": "th"
+        },
+        "West": {
+          "c": "th",
+          "r": "t (take) + h (hat)"
+        }
+      },
+      "words": [
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        },
+        {
+          "id": "k01",
+          "word": "ista",
+          "english": "mother"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-th_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-th_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-th_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-tsy",
+      "c": "tsy",
+      "r": "tsy",
+      "ipa": "[dʒ~tʃʲ]",
+      "ipaNote": "palato-alveolar affricate, palatalised",
+      "tts": {
+        "text": "jy",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "between j and ch + y in yet",
+      "t": "Between j and ch, followed by y. The exact realisation varies by community and speaker. IPA: [dʒ~tʃʲ].",
+      "spellings": {
+        "standard": {
+          "c": "tsy",
+          "r": "tsy"
+        },
+        "East": {
+          "c": "tsi",
+          "r": "tsi"
+        },
+        "West": {
+          "c": "tsy",
+          "r": "tch/je (between j and ch) + y"
+        }
+      },
+      "words": [
+        {
+          "id": "wa18",
+          "word": "Tsitsi",
+          "english": "chipmunk"
+        },
+        {
+          "id": "num07",
+          "word": "Tsà:ta",
+          "english": "seven"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-tsy_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-tsy_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-tsy_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-tsi",
+      "c": "tsi",
+      "r": "tsi",
+      "ipa": "[dʒ]",
+      "ipaNote": "palato-alveolar affricate",
+      "tts": {
+        "text": "gee",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "gee — between j and ch before vowels",
+      "t": "Central dialect form — tsi between consonants, often pronounced 'gee'. Used at Six Nations/Tyendinaga. East dialect writes ts instead. IPA: [dʒ].",
+      "spellings": {
+        "standard": {
+          "c": "tsi",
+          "r": "tsi"
+        },
+        "East": {
+          "c": "tsi",
+          "r": "tsi"
+        },
+        "West": {
+          "c": "tsi",
+          "r": "gee / twy (between consonants)"
+        }
+      },
+      "words": [
+        {
+          "id": "wa04",
+          "word": "Tsaní:to",
+          "english": "beaver"
+        },
+        {
+          "id": "ins05",
+          "word": "tsiks",
+          "english": "fly"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-tsi_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-tsi_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-tsi_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-tshy",
+      "c": "tshy",
+      "r": "tshy",
+      "ipa": "[tʃʲ]",
+      "ipaNote": "palatalised palato-alveolar affricate",
+      "tts": {
+        "text": "chy",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "ch in church + y in yet",
+      "t": "Palatalised tsh — the ch from 'church' followed by the y from 'yet'. IPA: [tʃʲ].",
+      "spellings": {
+        "standard": {
+          "c": "tshy",
+          "r": "tshy"
+        },
+        "East": {
+          "c": "tshi",
+          "r": "tshi"
+        },
+        "West": {
+          "c": "tshy",
+          "r": "ch (church) + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "bp15",
+          "word": "Otshén:ta",
+          "english": "elbow"
+        },
+        {
+          "id": "fp05",
+          "word": "onerahóntsha",
+          "english": "wing"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-tshy_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-tshy_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-tshy_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-ty",
+      "c": "ty",
+      "r": "ty",
+      "ipa": "[dʲ]",
+      "ipaNote": "palatalised alveolar stop",
+      "tts": {
+        "text": "dy",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "dee-ye — d in dog + y in yet",
+      "t": "Palatalised t/d — the d from 'dog' followed by the y from 'yet'. IPA: [dʲ].",
+      "spellings": {
+        "standard": {
+          "c": "ty",
+          "r": "ty"
+        },
+        "East": {
+          "c": "ti",
+          "r": "ti"
+        },
+        "West": {
+          "c": "ty",
+          "r": "d (dog) + y (yet)"
+        }
+      },
+      "words": [
+        {
+          "id": "k01",
+          "word": "ista",
+          "english": "mother"
+        },
+        {
+          "id": "k04",
+          "word": "tota",
+          "english": "grandmother"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-ty_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-ty_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-ty_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "comb-wh",
+      "c": "wh",
+      "r": "wh",
+      "ipa": "[ʍ]",
+      "ipaNote": "voiceless labiovelar (variant spelling)",
+      "tts": {
+        "text": "f",
+        "rate": 0.7,
+        "pitch": 1
+      },
+      "s": "soft f — voiceless w",
+      "t": "Alternate spelling of hw. Pronounced as a soft f / voiceless w. Some writers use wh, others hw — both represent the same sound. IPA: [ʍ].",
+      "spellings": {
+        "standard": {
+          "c": "wh",
+          "r": "wh"
+        },
+        "East": {
+          "c": "wh",
+          "r": "wh"
+        },
+        "West": {
+          "c": "wh",
+          "r": "soft f (voiceless w)"
+        }
+      },
+      "words": [
+        {
+          "id": "o05",
+          "word": "Ónhka",
+          "english": "water"
+        },
+        {
+          "id": "a01",
+          "word": "áhta'",
+          "english": "shoe"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/comb-wh_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/comb-wh_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/comb-wh_akwesasne-speaker.mp3"
         }
       ]
     }
