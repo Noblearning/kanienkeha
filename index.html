@@ -544,33 +544,34 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="pw">
     <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanehsatà:ke phonology</p></div>
 
-    <!-- Practice lessons section -->
+    <!-- Practice -->
     <div class="sp-section">
-      <div class="sp-title">Practice lessons</div>
-      <div class="sp-cards" id="sp-cards"></div>
+      <div class="sp-title">Practice</div>
+      <p style="font-size:.85rem;color:var(--ew);margin-bottom:.75rem;line-height:1.6;">Choose a spelling system to begin a randomised practice session across all sounds.</p>
+      <div style="display:flex;flex-direction:column;gap:.5rem;" id="sp-btns">
+        <button class="sbtn dark" style="font-size:.95rem;" onclick="startSylPracticeAll('standard')">Practice — Standard (1993)</button>
+        <button class="sbtn dark" style="font-size:.95rem;background:var(--em);" onclick="startSylPracticeAll('eastern')">Practice — East</button>
+        <button class="sbtn dark" style="font-size:.95rem;background:var(--ew);" onclick="startSylPracticeAll('ohsweken')">Practice — Ohswéken</button>
+      </div>
+      <div id="sp-prof-summary" style="margin-top:.85rem;font-size:.8rem;color:var(--ew);font-style:italic;"></div>
     </div>
 
-    <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — e.g. Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>. No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
-    <div class="tts-note"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. <strong>No browser currently has a Kanien'kéha voice</strong> — these clips use carefully chosen phonetic approximations designed to produce the closest possible sound. They are a starting guide only. Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
+    <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — (e.g., Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>). No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
+    <div class="stip" style="margin-top:.5rem;"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. No browser currently has a Kanien'kéha voice — these clips use carefully chosen phonetic approximations as a starting guide only (e.g., the long vowel a: is approximated as "aaah"). Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
 
     <!-- Orthography toggle -->
     <div class="orth-wrap" role="group" aria-label="Spelling system">
       <span class="orth-label">Spelling system:</span>
       <div class="orth-pills">
         <button class="orth-pill active" onclick="setOrth('standard',this)" aria-pressed="true">Standard (1993)</button>
-        <button class="orth-pill" onclick="setOrth('East',this)" aria-pressed="false">East</button>
-        <button class="orth-pill" onclick="setOrth('West',this)" aria-pressed="false">West</button>
+        <button class="orth-pill" onclick="setOrth('eastern',this)" aria-pressed="false">East</button>
+        <button class="orth-pill" onclick="setOrth('ohsweken',this)" aria-pressed="false">Ohswéken</button>
       </div>
     </div>
     <div class="orth-note" id="orth-note">Standard — 1993 consensus orthography used across all six Mohawk communities.</div>
 
-    <div class="stabwrap" role="tablist" aria-label="Sound categories">
-      <button class="stab active" role="tab" aria-selected="true" onclick="setSylTab('vowels',this)">Vowels</button>
-      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('consonants',this)">Consonants</button>
-      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('tone',this)">Tone &amp; Length</button>
-      <button class="stab" role="tab" aria-selected="false" onclick="setSylTab('combinations',this)">Combinations</button>
-    </div>
-    <div class="sgrid" id="sgrid" role="list"></div>
+    <!-- Stacked sound sections -->
+    <div id="syl-all-sections"></div>
   </div>
 </div>
 
@@ -821,7 +822,7 @@ function navTo(id){
   const nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('active');
   window.scrollTo(0,0);
   if(id==='glossary')renderGloss();
-  if(id==='syllabary'){renderSylPracticeCards();renderSyl(SYL_TAB||'vowels');}
+  if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
 }
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function goHome(){updateHomeUI();navTo('home');}
@@ -1586,14 +1587,20 @@ function openDialectModal(){
 function closeModal(){document.getElementById('wmodal').classList.remove('open');}
 function closeModalOverlay(e){if(e.target===document.getElementById('wmodal'))closeModal();}
 
-/* syllabary reference grid */
+/* syllabary reference — stacked sections */
 let SYL_ORTH='standard';
-let SYL_TAB='vowels';
 
 const ORTH_NOTES={
   standard:'Standard — 1993 consensus orthography used across all six Mohawk communities.',
-  East:'East — Standard orthography as used in East (Quebec) communities: Kanehsatà:ke, Kahnawà:ke. Uses i where West uses y.',
-  West:'West — Pre-1993 Tyendinaga / Six Nations tradition (Maracle reference). Uses g/d for k/t, en/on for nasal vowels, and phonetic combination spellings.',
+  eastern:'East — Standard orthography as used in eastern (Quebec) communities (e.g., Kanehsatà:ke, Kahnawà:ke). Uses i where Ohswéken uses y.',
+  ohsweken:"Ohswéken — pre-1993 Tyendinaga / Six Nations tradition. Written k and t are pronounced like g and d before vowels (e.g., k sounds like g in gate; t sounds like d in dog before a vowel).",
+};
+
+const SYL_SECTION_TITLES={
+  vowels:'Vowels',
+  consonants:'Consonants',
+  tone:'Tone &amp; Length',
+  combinations:'Combinations',
 };
 
 function setOrth(orth,btn){
@@ -1604,55 +1611,53 @@ function setOrth(orth,btn){
   });
   const note=document.getElementById('orth-note');
   if(note)note.textContent=ORTH_NOTES[orth]||'';
-  renderSyl(SYL_TAB);
+  renderSylAll();
 }
 
 function sylDisplay(s){
-  // Returns {c, r} using active orthography, falls back to base fields
   if(s.spellings&&s.spellings[SYL_ORTH]){
-    return{c:s.spellings[SYL_ORTH].c, r:s.spellings[SYL_ORTH].r};
+    return{c:s.spellings[SYL_ORTH].c,r:s.spellings[SYL_ORTH].r};
   }
-  return{c:s.c, r:s.r};
+  return{c:s.c,r:s.r};
 }
 
-function renderSyl(tab){
-  SYL_TAB=tab;
-  document.getElementById('sgrid').innerHTML=(SYL[tab]||[]).map(s=>{
-    const p=getSylProf(s.id);
-    const cls=p?p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone':'';
-    const d=sylDisplay(s);
-    const ipaHtml=s.ipa?`<span class="sipa">${s.ipa} <span>${s.ipaNote}</span></span>`:'';
-    const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" aria-label="Play ${d.r}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
-    const profHtml=p?`<div class="prof-track" style="margin-top:.32rem" role="progressbar" aria-valuenow="${p.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="Proficiency ${p.pct}%"><div class="prof-fill ${cls}" style="width:${p.pct}%;height:4px;border-radius:6px"></div></div>`:'';
-    return`<div class="scard" role="button" tabindex="0" aria-label="${d.c} — ${s.s}" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')showSylTip(this,'${qs(s.t)}','${s.id}')">
-      <span class="sc">${d.c}</span>
-      <span class="sr">${d.r}</span>
-      <span class="ss">${s.s}</span>
-      ${ipaHtml}
-      ${ttsHtml}
-      ${profHtml}
-    </div>`;
+function renderSylAll(){
+  const container=document.getElementById('syl-all-sections');
+  if(!container)return;
+  const tabOrder=['vowels','consonants','tone','combinations'];
+  container.innerHTML=tabOrder.map(tab=>{
+    const entries=SYL[tab]||[];
+    if(!entries.length)return'';
+    const cards=entries.map(s=>{
+      const d=sylDisplay(s);
+      const ipaHtml=s.ipa?`<span class="sipa">${s.ipa} <span>${s.ipaNote}</span></span>`:'';
+      const ttsHtml=s.tts?`<button class="stts" id="tts-${s.id}" aria-label="Play ${d.r}" onclick="event.stopPropagation();speakSyl('${s.id}')">🔊 Play</button>`:'';
+      return`<div class="scard" role="button" tabindex="0" aria-label="${d.c} — ${s.s}" onclick="showSylTip(this,'${qs(s.t)}','${s.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')showSylTip(this,'${qs(s.t)}','${s.id}')">
+        <span class="sc">${d.c}</span>
+        <span class="sr">${d.r}</span>
+        <span class="ss">${s.s}</span>
+        ${ipaHtml}
+        ${ttsHtml}
+      </div>`;
+    }).join('');
+    return`<div style="padding:.75rem 1.35rem 0;">
+      <div class="sp-title" style="margin-bottom:.6rem;">${SYL_SECTION_TITLES[tab]||tab}</div>
+    </div>
+    <div class="sgrid" role="list" style="padding-top:.2rem;">${cards}</div>`;
   }).join('');
+
+  // Update proficiency summary
+  updateSylProfSummary();
 }
 
-function setSylTab(tab,btn){
-  document.querySelectorAll('.stab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');});
-  btn.classList.add('active');btn.setAttribute('aria-selected','true');
-  renderSyl(tab);
-}
-
-function recordSylProf(sid,correct){
-  recSylProf(sid,correct);
-  const d=document.getElementById('syl-assess');if(d)d.remove();
-  renderSyl(SYL_TAB||'vowels');
-  const p=getSylProf(sid);
-  if(p){
-    const note=document.createElement('div');
-    note.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--sage);color:white;padding:.6rem 1rem;border-radius:11px;font-size:.85rem;text-align:center;z-index:151;animation:fbin .2s ease;';
-    note.textContent=(correct?'Recorded ✓ — ':'Noted — ')+'proficiency: '+p.pct+'%';
-    document.body.appendChild(note);
-    setTimeout(()=>{if(note.parentElement)note.remove();},2200);
-  }
+function updateSylProfSummary(){
+  const el=document.getElementById('sp-prof-summary');
+  if(!el)return;
+  const all=getSylAll();
+  const profs=all.map(s=>getSylProf(s.id)).filter(Boolean);
+  if(!profs.length){el.textContent='No practice recorded yet.';return;}
+  const avg=Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length);
+  el.textContent=`Overall proficiency: ${avg}% across ${profs.length} of ${all.length} sounds practiced.`;
 }
 
 /* ── TTS FUNCTION ──
@@ -1690,34 +1695,22 @@ function speakSyl(sid){
     ||null;
   if(preferred)utt.voice=preferred;
 
-  utt.onend=()=>{
-    if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}
-    // After playback, show inline self-assessment so proficiency can be recorded
-    showSylAssess(sid, entry);
-  };
+  utt.onend=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
   utt.onerror=()=>{if(btn){btn.classList.remove('playing');btn.textContent='🔊 Play';}};
   window.speechSynthesis.speak(utt);
 }
 
-function showSylAssess(sid, entry){
-  // Remove any existing assess popup
-  const old=document.getElementById('syl-assess');if(old)old.remove();
-  const d=document.createElement('div');
-  d.id='syl-assess';
-  d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.82rem 1rem;border-radius:11px;font-size:.88rem;line-height:1.55;z-index:151;box-shadow:0 4px 18px rgba(44,24,16,.3);animation:fbin .22s ease;text-align:center;';
-  const label=entry?entry.r:'this sound';
-  d.innerHTML=
-    `<div style="margin-bottom:.6rem;color:var(--smoke)">How did <strong style="color:var(--sand)">${label}</strong> sound to you?</div>`+
-    `<div style="display:flex;gap:.65rem;justify-content:center;">`+
-      `<button onclick="recordSylProf('${sid}',true)" style="flex:1;padding:.48rem .5rem;border:none;border-radius:8px;background:var(--sage);color:white;font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;font-weight:600;">✓ Got it</button>`+
-      `<button onclick="recordSylProf('${sid}',false)" style="flex:1;padding:.48rem .5rem;border:none;border-radius:8px;background:var(--smoke);color:var(--ed);font-family:'Crimson Pro',serif;font-size:.88rem;cursor:pointer;">Still learning</button>`+
-      `<button onclick="document.getElementById('syl-assess').remove()" style="padding:.48rem .6rem;border:none;border-radius:8px;background:transparent;color:var(--smoke);cursor:pointer;font-size:.9rem;">✕</button>`+
-    `</div>`;
+function showSylTip(card,tip,sid){
+  const old=document.getElementById('stpop');if(old)old.remove();
+  const entry=Object.values(SYL).flat().find(s=>s.id===sid);
+  const d=document.createElement('div');d.id='stpop';
+  d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.78rem 1rem;border-radius:11px;font-size:.86rem;line-height:1.55;z-index:150;box-shadow:0 4px 18px rgba(44,24,16,.28);animation:fbin .2s ease;';
+  const ipaLine=entry&&entry.ipa?`<div style="margin-top:.3rem;font-size:.78rem;color:var(--skyl)">IPA: <strong>${entry.ipa}</strong> · ${entry.ipaNote}</div>`:'';
+  const disp=sylDisplay(entry||{c:'',r:''});
+  d.innerHTML=`<strong style="color:var(--clay)">${disp.r}</strong> — ${tip}${ipaLine}<span style="float:right;cursor:pointer;color:var(--smoke);margin-left:.5rem;margin-top:-.1rem" onclick="this.parentElement.remove()">✕</span>`;
   document.body.appendChild(d);
-  setTimeout(()=>{if(d.parentElement)d.remove();},12000);
+  setTimeout(()=>{if(d.parentElement)d.remove();},8000);
 }
-
-
 
 // Voices may load async — pre-load them
 if(window.speechSynthesis){
@@ -1725,117 +1718,50 @@ if(window.speechSynthesis){
   window.speechSynthesis.onvoiceschanged=()=>window.speechSynthesis.getVoices();
 }
 
-function showSylTip(card,tip,sid){
-  const old=document.getElementById('stpop');if(old)old.remove();
-  const entry=Object.values(SYL).flat().find(s=>s.id===sid);
-
-  // Mark as seen: initialise proficiency record if this is the first tap
-  // (doesn't change the score, just ensures the bar appears)
-  if(CU&&!CU.data.proficiency[sid]){
-    CU.data.proficiency[sid]=[];
-    // Don't push a 0 or 1 — leave empty so bar shows "not yet practiced" still
-    // but the entry exists for tracking purposes
-  }
-
-  const d=document.createElement('div');d.id='stpop';
-  d.style.cssText='position:fixed;bottom:5rem;left:1rem;right:1rem;background:var(--ed);color:var(--sand);padding:.78rem 1rem;border-radius:11px;font-size:.86rem;line-height:1.55;z-index:150;box-shadow:0 4px 18px rgba(44,24,16,.28);animation:fbin .2s ease;';
-  const p=getSylProf(sid);
-  const ipaLine=entry&&entry.ipa?`<div style="margin-top:.3rem;font-size:.78rem;color:var(--skyl)">IPA: <strong>${entry.ipa}</strong> · ${entry.ipaNote}</div>`:'';
-  const profLine=p&&p.count>0
-    ?`<div style="margin-top:.42rem">
-        <div style="display:flex;justify-content:space-between;font-size:.73rem;color:var(--smoke);margin-bottom:.2rem"><span>proficiency</span><span>${p.pct}%</span></div>
-        <div style="height:5px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden">
-          <div style="height:100%;width:${p.pct}%;background:${p.pct>=80?'var(--sage)':p.pct>=40?'var(--sky)':'var(--clay)'};border-radius:4px;transition:width .4s"></div>
-        </div>
-        <div style="font-size:.7rem;color:var(--smoke);margin-top:.15rem">${p.count} of 10 recent attempts tracked — practice in lessons above</div>
-      </div>`
-    :`<div style="margin-top:.35rem;font-size:.72rem;color:var(--smoke);font-style:italic">not yet practiced — use Practice Lessons above to build proficiency</div>`;
-  d.innerHTML=`<strong style="color:var(--clay)">${card.querySelector('.sr').textContent}</strong> — ${tip}${ipaLine}${profLine}<span style="float:right;cursor:pointer;color:var(--smoke);margin-left:.5rem;margin-top:-.1rem" onclick="this.parentElement.remove()">✕</span>`;
-  document.body.appendChild(d);
-  setTimeout(()=>{if(d.parentElement)d.remove();},8000);
-}
-
 /* ══════════════════════════════════════════════════════════
    SYLLABARY PRACTICE ENGINE
    ══════════════════════════════════════════════════════════ */
 
-const SP_LESSONS=[
-  {id:'sp-vowels',    title:'Vowels',           tab:'vowels',      icon:'🔤', desc:'All vowel sounds'},
-  {id:'sp-nasals',    title:'Nasal vowels',      tab:'vowels',      icon:'👃', desc:'ę / en and ǫ / on — through the nose', filter:s=>s.id==='sv-en'||s.id==='sv-on'},
-  {id:'sp-long',      title:'Long vs. short',    tab:'vowels',      icon:'⏱', desc:'Vowel length changes meaning', filter:s=>s.id.endsWith('2')||['sv-a','sv-e','sv-i','sv-o'].includes(s.id)},
-  {id:'sp-consonants',title:'Consonants',        tab:'consonants',  icon:'🔠', desc:'All consonants including s'},
-  {id:'sp-stops',     title:'Stops & affricates',tab:'consonants',  icon:'🛑', desc:'k/g, t/d, ts, tsh — stop sounds', filter:s=>['sc-k','sc-t','sc-ts','sc-tsh'].includes(s.id)},
-  {id:'sp-glottal',   title:'Glottal stop',      tab:'consonants',  icon:'✋', desc:"The ' consonant — like uh-oh", filter:s=>s.id==='sc-gs'},
-  {id:'sp-tone',      title:'Tone & length',     tab:'tone',        icon:'🎵', desc:'Stress, length, nasal vowels'},
-  {id:'sp-combos',    title:'Combinations',      tab:'combinations',icon:'🔗', desc:'hw, kh, kw, ky, sh, ty and more'},
-];
-
-let SPEX={lesson:null,pool:[],done:0,total:0,current:null,answered:false,attempts:0};
+let SPEX={orth:null,pool:[],done:0,total:0,current:null,answered:false,attempts:0};
 
 function getSylAll(){return Object.values(SYL).flat();}
 
-function renderSylPracticeCards(){
-  const container=document.getElementById('sp-cards');
-  if(!container||!Object.keys(SYL).length)return;
-  container.innerHTML=SP_LESSONS.map(lesson=>{
-    const tab=SYL[lesson.tab]||[];
-    const entries=lesson.filter?tab.filter(lesson.filter):tab;
-    if(!entries.length)return'';
-    const profs=entries.map(s=>getSylProf(s.id)).filter(Boolean);
-    const pct=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
-    const practiced=profs.length;
-    return`<div class="sp-card" role="button" tabindex="0"
-        aria-label="Practice ${lesson.title}"
-        onclick="startSylPractice('${lesson.id}')"
-        onkeydown="if(event.key==='Enter'||event.key===' ')startSylPractice('${lesson.id}')">
-      <div class="sp-card-title">${lesson.icon} ${lesson.title}</div>
-      <div class="sp-card-sub">${lesson.desc}</div>
-      <div class="sp-card-prog">
-        <div class="sp-card-prog-bar"><div class="sp-card-prog-fill" style="width:${pct}%"></div></div>
-        <div class="sp-card-count">${practiced?pct+'% · '+practiced+' sound'+(practiced!==1?'s':'')+'  practiced':'Not yet started'}</div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
 function shuffle(arr){return [...arr].sort(()=>Math.random()-.5);}
 
-function startSylPractice(lessonId){
-  const lesson=SP_LESSONS.find(l=>l.id===lessonId);
-  if(!lesson)return;
-  const tab=SYL[lesson.tab]||[];
-  const entries=lesson.filter?tab.filter(lesson.filter):tab;
-  if(!entries.length)return;
+function startSylPracticeAll(orth){
+  // Temporarily set orth for exercise building, restore after
+  const prevOrth=SYL_ORTH;
+  SYL_ORTH=orth;
 
   const allSounds=getSylAll();
+  if(!allSounds.length)return;
 
-  // Sort by ascending proficiency (prioritise less-practiced sounds)
-  const sorted=[...entries].sort((a,b)=>{
+  // Sort by ascending proficiency (less-practiced sounds come first)
+  const sorted=[...allSounds].sort((a,b)=>{
     const pa=getSylProf(a.id),pb=getSylProf(b.id);
     return (pa?pa.pct:0)-(pb?pb.pct:0);
   });
 
-  // Build exactly 8 exercises cycling through 4 types
-  // Type sequence: identify → word-in-context → recall → audio (×2 rounds)
-  const typeSeq=['identify','word','recall','audio','identify','word','recall','audio'];
+  // Build exactly 8 exercises, cycling type sequence, drawing from sorted sounds
+  const typeSeq=shuffle(['identify','word','recall','audio','identify','word','recall','audio']);
   const pool=[];
-
   typeSeq.forEach((type,i)=>{
     const entry=sorted[i%sorted.length];
-    const ex=spexBuild(type,entry,entries,allSounds);
+    const ex=spexBuild(type,entry,allSounds,allSounds);
     if(ex)pool.push(ex);
   });
 
-  // Safety: if pool < 8 (e.g. single-sound lessons) cycle more
+  // Safety pad to 8
   let safety=0;
-  while(pool.length<8&&safety++<20){
+  while(pool.length<8&&safety++<24){
     const entry=sorted[pool.length%sorted.length];
     const types=['identify','word','recall','audio'];
-    const ex=spexBuild(types[pool.length%4],entry,entries,allSounds);
+    const ex=spexBuild(types[pool.length%4],entry,allSounds,allSounds);
     if(ex)pool.push(ex);
   }
 
-  SPEX={lesson,pool,done:0,total:pool.length,current:null,answered:false,attempts:0};
+  SYL_ORTH=prevOrth; // restore after building (exercises carry their own display data)
+  SPEX={orth,pool,done:0,total:pool.length,current:null,answered:false,attempts:0};
   showScreen('syl-practice');
   renderSpex();
 }
@@ -1966,9 +1892,6 @@ function renderSpex(){
         The character <strong style="font-family:'Playfair Display',serif;color:var(--ed)">${ex.char}</strong> appears in this word
       </div>`;
     }
-    if(ex.hint){
-      html+=`<div style="font-size:.78rem;color:var(--ew);text-align:center;margin-bottom:.6rem">Hint: ${ex.hint}</div>`;
-    }
     html+=`<div class="spex-opts" role="group" aria-label="Answer options">`+
       ex.opts.map(o=>`<button class="spex-opt" data-v="${qs(o)}" onclick="pickSpexOpt(this,'${qs(o)}','${qs(ex.correct)}')" style="min-height:44px;">${o}</button>`).join('')+
     `</div>`;
@@ -2059,23 +1982,24 @@ function advanceSpexNext(){
 }
 
 function finishSylPractice(){
-  renderSylPracticeCards();
-  const lesson=SPEX.lesson;
-  const tab=SYL[lesson.tab]||[];
-  const entries=lesson.filter?tab.filter(lesson.filter):tab;
-  const profs=entries.map(s=>getSylProf(s.id)).filter(Boolean);
+  const allSounds=getSylAll();
+  const profs=allSounds.map(s=>getSylProf(s.id)).filter(Boolean);
   const avg=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
+  const orthLabels={standard:'Standard (1993)',eastern:'East',ohsweken:'Ohswéken'};
+  const orthLabel=orthLabels[SPEX.orth]||'';
+
+  updateSylProfSummary();
 
   const note=document.createElement('div');
   note.style.cssText='position:fixed;inset:0;z-index:300;background:rgba(44,24,16,.6);display:flex;align-items:center;justify-content:center;';
   note.setAttribute('role','dialog');
   note.setAttribute('aria-modal','true');
-  note.setAttribute('aria-label','Lesson complete');
+  note.setAttribute('aria-label','Practice complete');
   note.innerHTML=`<div style="background:white;border-radius:18px;padding:2rem 1.8rem;max-width:320px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(44,24,16,.22);">
     <div style="font-size:2.5rem;margin-bottom:.65rem" aria-hidden="true">🌿</div>
-    <div style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--ed);margin-bottom:.4rem">Lesson complete</div>
-    <div style="font-size:.9rem;color:var(--ew);margin-bottom:.3rem">${lesson.title}</div>
-    <div style="font-size:1.1rem;color:var(--clay);font-weight:600;margin-bottom:1.2rem">${avg}% average proficiency</div>
+    <div style="font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--ed);margin-bottom:.4rem">Practice complete</div>
+    ${orthLabel?`<div style="font-size:.9rem;color:var(--ew);margin-bottom:.3rem">${orthLabel} spelling system</div>`:''}
+    <div style="font-size:1.1rem;color:var(--clay);font-weight:600;margin-bottom:.75rem">${avg}% overall proficiency</div>
     <div style="font-size:.82rem;color:var(--ew);font-style:italic;margin-bottom:1.2rem;line-height:1.55">This number reflects patterns in this session — not your relationship to the language, which grows in its own time.</div>
     <button style="width:100%;padding:.85rem;background:var(--ed);color:var(--sand);border:none;border-radius:11px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:600;cursor:pointer;min-height:44px;"
       onclick="this.closest('[role=dialog]').remove();navTo('syllabary')">Back to Sounds</button>

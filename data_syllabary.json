@@ -65,11 +65,11 @@
           "c": "a",
           "r": "a"
         },
-        "East": {
+        "eastern": {
           "c": "a",
           "r": "a"
         },
-        "West": {
+        "ohsweken": {
           "c": "a",
           "r": "ah"
         }
@@ -140,11 +140,11 @@
           "c": "a:",
           "r": "a:"
         },
-        "East": {
+        "eastern": {
           "c": "a:",
           "r": "a:"
         },
-        "West": {
+        "ohsweken": {
           "c": "a:",
           "r": "ah (long)"
         }
@@ -215,11 +215,11 @@
           "c": "e",
           "r": "e"
         },
-        "East": {
+        "eastern": {
           "c": "e",
           "r": "e"
         },
-        "West": {
+        "ohsweken": {
           "c": "e",
           "r": "ey / eh"
         }
@@ -290,11 +290,11 @@
           "c": "e:",
           "r": "e:"
         },
-        "East": {
+        "eastern": {
           "c": "e:",
           "r": "e:"
         },
-        "West": {
+        "ohsweken": {
           "c": "e:",
           "r": "ey / eh (long)"
         }
@@ -365,11 +365,11 @@
           "c": "i",
           "r": "i"
         },
-        "East": {
+        "eastern": {
           "c": "i",
           "r": "i"
         },
-        "West": {
+        "ohsweken": {
           "c": "i",
           "r": "ee"
         }
@@ -440,11 +440,11 @@
           "c": "i:",
           "r": "i:"
         },
-        "East": {
+        "eastern": {
           "c": "i:",
           "r": "i:"
         },
-        "West": {
+        "ohsweken": {
           "c": "i:",
           "r": "ee (long)"
         }
@@ -515,11 +515,11 @@
           "c": "o",
           "r": "o"
         },
-        "East": {
+        "eastern": {
           "c": "o",
           "r": "o"
         },
-        "West": {
+        "ohsweken": {
           "c": "o",
           "r": "o (as in note)"
         }
@@ -590,11 +590,11 @@
           "c": "o:",
           "r": "o:"
         },
-        "East": {
+        "eastern": {
           "c": "o:",
           "r": "o:"
         },
-        "West": {
+        "ohsweken": {
           "c": "o:",
           "r": "o (long)"
         }
@@ -665,11 +665,11 @@
           "c": "ę",
           "r": "ę"
         },
-        "East": {
+        "eastern": {
           "c": "ę",
           "r": "ę"
         },
-        "West": {
+        "ohsweken": {
           "c": "en",
           "r": "en (nasal, as in song)"
         }
@@ -740,11 +740,11 @@
           "c": "ǫ",
           "r": "ǫ"
         },
-        "East": {
+        "eastern": {
           "c": "ǫ",
           "r": "ǫ"
         },
-        "West": {
+        "ohsweken": {
           "c": "on",
           "r": "on (nasal, as in moon)"
         }
@@ -815,15 +815,15 @@
       "spellings": {
         "standard": {
           "c": "k",
-          "r": "k"
+          "r": "k — unaspirated, like k in sky"
         },
-        "East": {
+        "eastern": {
           "c": "k",
-          "r": "k"
+          "r": "k — unaspirated, like k in sky"
         },
-        "West": {
-          "c": "k / g",
-          "r": "g (as in gate)"
+        "ohsweken": {
+          "c": "k",
+          "r": "k — written k, sounds like g in gate"
         }
       }
     },
@@ -890,15 +890,15 @@
       "spellings": {
         "standard": {
           "c": "t",
-          "r": "t"
+          "r": "t — unaspirated, like t in stop"
         },
-        "East": {
+        "eastern": {
           "c": "t",
-          "r": "t"
+          "r": "t — unaspirated, like t in stop"
         },
-        "West": {
-          "c": "t / d",
-          "r": "d (before vowel/y) / t (before consonant)"
+        "ohsweken": {
+          "c": "t",
+          "r": "t — before consonant; like d in dog before vowel/y"
         }
       }
     },
@@ -967,11 +967,11 @@
           "c": "'",
           "r": "ʔ (glottal stop)"
         },
-        "East": {
+        "eastern": {
           "c": "'",
           "r": "ʔ (glottal stop)"
         },
-        "West": {
+        "ohsweken": {
           "c": "'",
           "r": "' (as in uh-oh)"
         }
@@ -1042,11 +1042,11 @@
           "c": "h",
           "r": "h"
         },
-        "East": {
+        "eastern": {
           "c": "h",
           "r": "h"
         },
-        "West": {
+        "ohsweken": {
           "c": "h",
           "r": "h (as in hat)"
         }
@@ -1117,11 +1117,11 @@
           "c": "n",
           "r": "n"
         },
-        "East": {
+        "eastern": {
           "c": "n",
           "r": "n"
         },
-        "West": {
+        "ohsweken": {
           "c": "n",
           "r": "n (as in now)"
         }
@@ -1192,11 +1192,11 @@
           "c": "r",
           "r": "r / l (Akwesasne)"
         },
-        "East": {
+        "eastern": {
           "c": "r",
           "r": "r / l (Akwesasne)"
         },
-        "West": {
+        "ohsweken": {
           "c": "r",
           "r": "between r and l"
         }
@@ -1220,11 +1220,11 @@
           "c": "s",
           "r": "s"
         },
-        "East": {
+        "eastern": {
           "c": "s",
           "r": "s"
         },
-        "West": {
+        "ohsweken": {
           "c": "s",
           "r": "s / z (before long stress) / sh (before y/i)"
         }
@@ -1342,11 +1342,11 @@
           "c": "w",
           "r": "w"
         },
-        "East": {
+        "eastern": {
           "c": "w",
           "r": "w"
         },
-        "West": {
+        "ohsweken": {
           "c": "w",
           "r": "w (as in way)"
         }
@@ -1417,11 +1417,11 @@
           "c": "y / i",
           "r": "y (Ontario) / i (Quebec)"
         },
-        "East": {
+        "eastern": {
           "c": "i",
           "r": "i"
         },
-        "West": {
+        "ohsweken": {
           "c": "y",
           "r": "y (as in yet)"
         }
@@ -1492,11 +1492,11 @@
           "c": "ts",
           "r": "ts"
         },
-        "East": {
+        "eastern": {
           "c": "ts",
           "r": "ts"
         },
-        "West": {
+        "ohsweken": {
           "c": "ts",
           "r": "ts (as in cats)"
         }
@@ -1567,11 +1567,11 @@
           "c": "tsh",
           "r": "tsh"
         },
-        "East": {
+        "eastern": {
           "c": "tsh",
           "r": "tsh"
         },
-        "West": {
+        "ohsweken": {
           "c": "tsh",
           "r": "tsh (as in church)"
         }
@@ -1591,7 +1591,7 @@
         "pitch": 0.9
       },
       "s": "held ~2× longer than short vowel",
-      "t": "The colon (:) in the orthography corresponds to the IPA length mark [ː]. Always write it; always pronounce it. A long vowel is held roughly twice as long as its short counterpart, and the distinction changes meaning. IPA: [Vː].",
+      "t": "The colon (:) always marks vowel length. Any vowel can be long: a: e: i: o: — and a long vowel can completely change a word's meaning. Never shorten it. IPA: [Vː].",
       "words": [
         {
           "id": "v01",
@@ -1641,16 +1641,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "V:",
-          "r": "Long vowel"
+          "c": "a: · e: · i: · o:",
+          "r": "Long vowel — held ~2× longer than short"
         },
-        "East": {
-          "c": "V:",
-          "r": "Long vowel"
+        "eastern": {
+          "c": "a: · e: · i: · o:",
+          "r": "Long vowel — held ~2× longer than short"
         },
-        "West": {
-          "c": "V:",
-          "r": "Long vowel"
+        "ohsweken": {
+          "c": "a: · e: · i: · o:",
+          "r": "Long vowel — held ~2× longer than short"
         }
       }
     },
@@ -1665,8 +1665,8 @@
         "rate": 0.6,
         "pitch": 1
       },
-      "s": "full consonant — written as ' in orthography",
-      "t": "The apostrophe (') in Kanien'kéha orthography represents the glottal stop [ʔ]. It appears mid-word and word-finally. í:'i (I) and í:se' (you) are different words partly because of its position. IPA: [ʔ].",
+      "s": "full consonant — the ' in all spelling systems",
+      "t": "The apostrophe (') represents the glottal stop [ʔ] in all three spelling systems. It appears word-initially (e.g., 'sot — grandfather), mid-word (e.g., í:'i — I), and word-finally (e.g., áhta' — shoe). IPA: [ʔ].",
       "words": [
         {
           "id": "p02",
@@ -1716,16 +1716,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "ʔ",
-          "r": "Glottal stop"
+          "c": "' (ʔ)",
+          "r": "Glottal stop — written as ' in Standard orthography"
         },
-        "East": {
-          "c": "ʔ",
-          "r": "Glottal stop"
+        "eastern": {
+          "c": "' (ʔ)",
+          "r": "Glottal stop — written as ' in Standard orthography"
         },
-        "West": {
+        "ohsweken": {
           "c": "'",
-          "r": "Glottal stop (')"
+          "r": "Glottal stop — like the pause in uh-oh"
         }
       }
     },
@@ -1741,7 +1741,7 @@
         "pitch": 1.2
       },
       "s": "primary stress — higher pitch + louder",
-      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. In IPA, stress is marked with [ˈ] before the stressed syllable. Kanien'kéha pitch-stress patterns can change grammatical meaning.",
+      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. The grave accent (à, è, ì, ò) marks a falling tone in some analyses. Stress patterns can change grammatical meaning. IPA: [ˈ] before the stressed syllable.",
       "words": [
         {
           "id": "wa01",
@@ -1791,16 +1791,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "á",
-          "r": "Stress accent"
+          "c": "á · é · í · ó",
+          "r": "Stress accent — primary stress, higher pitch + louder"
         },
-        "East": {
-          "c": "á",
-          "r": "Stress accent"
+        "eastern": {
+          "c": "á · é · í · ó",
+          "r": "Stress accent — primary stress, higher pitch + louder"
         },
-        "West": {
-          "c": "á",
-          "r": "Stress / falling tone"
+        "ohsweken": {
+          "c": "á · é · í · ó",
+          "r": "Stress / falling tone — higher pitch + louder"
         }
       }
     },
@@ -1815,8 +1815,8 @@
         "rate": 0.6,
         "pitch": 0.95
       },
-      "s": "nasalized — ę [ã] and ǫ [õ]",
-      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels distinctive to Kanien'kéha. Air passes through both mouth and nose. They are separate phonemes — ę is low and central, ǫ is rounded and back. Both are common in Kanehsatà:ke speech.",
+      "s": "nasalized — ę · ǫ (Standard) or en · on (Ohswéken)",
+      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels — air passes through both mouth and nose simultaneously. In Ohswéken spelling these are written en and on. They are separate phonemes: ę/en is low and central; ǫ/on is rounded and back. Both are common in Kanehsatà:ke speech.",
       "words": [
         {
           "id": "n07",
@@ -1866,16 +1866,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "ę / ǫ",
-          "r": "Nasal vowels"
+          "c": "ę · ǫ",
+          "r": "Nasal vowels — ę [ã] and ǫ [õ], air through nose"
         },
-        "East": {
-          "c": "ę / ǫ",
-          "r": "Nasal vowels"
+        "eastern": {
+          "c": "ę · ǫ",
+          "r": "Nasal vowels — ę [ã] and ǫ [õ], air through nose"
         },
-        "West": {
-          "c": "en / on",
-          "r": "Nasal vowels (en / on)"
+        "ohsweken": {
+          "c": "en · on",
+          "r": "Nasal vowels — en and on, air through nose"
         }
       }
     },
@@ -1891,7 +1891,7 @@
         "pitch": 1
       },
       "s": "marks male nouns and pronouns",
-      "t": "The prefix R- (Ro-, Ra-, Ron-, Rok-, Ran-) marks male person nouns and pronouns in Kanehsatà:ke/Kahnawà:ke. In Akwesasne this becomes L- (Lo-, La-, Lon-, Lok-, Lan-). Compare I-/Iak-/A-/Ako- for female.",
+      "t": "The male prefix appears as Ra-, Ro-, Ron-, Rok-, Ran- depending on the word. In Akwesasne these become La-, Lo-, Lon-, Lok-, Lan- (e.g., Lón:kwe vs. Rón:kwe — man). Compare female prefixes I-, Iak-, A-, Ako-.",
       "words": [
         {
           "id": "p04",
@@ -1941,16 +1941,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "R-",
-          "r": "Male prefix (R- / L-)"
+          "c": "Ra- · Ro- · Ron- · Rok-",
+          "r": "Male prefix — marks male nouns and pronouns"
         },
-        "East": {
-          "c": "R-",
-          "r": "Male prefix (R- / L-)"
+        "eastern": {
+          "c": "Ra- · Ro- · Ron- · Rok-",
+          "r": "Male prefix — marks male nouns and pronouns"
         },
-        "West": {
-          "c": "R-",
-          "r": "Male prefix (R- / L-)"
+        "ohsweken": {
+          "c": "Ra- · Ro- · Ron- · Rok-",
+          "r": "Male prefix — marks male nouns and pronouns"
         }
       }
     },
@@ -1966,7 +1966,7 @@
         "pitch": 1.1
       },
       "s": "marks female nouns and pronouns",
-      "t": "The prefixes I-, Iak-, A-, and Ako- mark female person nouns and pronouns. The specific prefix depends on the noun class and social register — Ako- is formal/respectful (mothers, elders), aónha is informal. This system is fully systematic throughout the language.",
+      "t": "Female prefixes: I- (e.g., Ieksá'a — girl), Iak- (e.g., Iakón:kwe — woman), A- and Ako- (e.g., Akokstén:ha — elder woman, Ako- is formal/respectful for mothers and elders). The system is fully systematic throughout the language.",
       "words": [
         {
           "id": "n01",
@@ -2016,16 +2016,16 @@
       ],
       "spellings": {
         "standard": {
-          "c": "I-",
-          "r": "Female prefix (I- / Iak- / A-)"
+          "c": "I- · Iak- · A- · Ako-",
+          "r": "Female prefix — marks female nouns and pronouns"
         },
-        "East": {
-          "c": "I-",
-          "r": "Female prefix (I- / Iak- / A-)"
+        "eastern": {
+          "c": "I- · Iak- · A- · Ako-",
+          "r": "Female prefix — marks female nouns and pronouns"
         },
-        "West": {
-          "c": "I-",
-          "r": "Female prefix (I- / Iak- / A-)"
+        "ohsweken": {
+          "c": "I- · Iak- · A- · Ako-",
+          "r": "Female prefix — marks female nouns and pronouns"
         }
       }
     }
@@ -2049,11 +2049,11 @@
           "c": "hw",
           "r": "hw"
         },
-        "East": {
+        "eastern": {
           "c": "hw",
           "r": "hw"
         },
-        "West": {
+        "ohsweken": {
           "c": "hw",
           "r": "wh (as in where)"
         }
@@ -2109,11 +2109,11 @@
           "c": "kh",
           "r": "kh"
         },
-        "East": {
+        "eastern": {
           "c": "kh",
           "r": "kh"
         },
-        "West": {
+        "ohsweken": {
           "c": "kh",
           "r": "kh (like c in cat/cow)"
         }
@@ -2169,11 +2169,11 @@
           "c": "khw",
           "r": "khw"
         },
-        "East": {
+        "eastern": {
           "c": "khw",
           "r": "khw"
         },
-        "West": {
+        "ohsweken": {
           "c": "khw",
           "r": "qu (as in queen/quiet)"
         }
@@ -2229,11 +2229,11 @@
           "c": "kw",
           "r": "kw"
         },
-        "East": {
+        "eastern": {
           "c": "kw",
           "r": "kw"
         },
-        "West": {
+        "ohsweken": {
           "c": "kw",
           "r": "g (gate) + w (way)"
         }
@@ -2289,11 +2289,11 @@
           "c": "ky",
           "r": "ky"
         },
-        "East": {
+        "eastern": {
           "c": "ki",
           "r": "ki"
         },
-        "West": {
+        "ohsweken": {
           "c": "ky",
           "r": "g (gate) + y (yet)"
         }
@@ -2349,11 +2349,11 @@
           "c": "ny",
           "r": "ny"
         },
-        "East": {
+        "eastern": {
           "c": "ni",
           "r": "ni"
         },
-        "West": {
+        "ohsweken": {
           "c": "ny",
           "r": "n (now) + y (yet)"
         }
@@ -2409,11 +2409,11 @@
           "c": "ry",
           "r": "ry"
         },
-        "East": {
+        "eastern": {
           "c": "ri",
           "r": "ri"
         },
-        "West": {
+        "ohsweken": {
           "c": "ry",
           "r": "r/l + y (yet)"
         }
@@ -2469,11 +2469,11 @@
           "c": "sh",
           "r": "sh"
         },
-        "East": {
+        "eastern": {
           "c": "sh",
           "r": "sh"
         },
-        "West": {
+        "ohsweken": {
           "c": "sh",
           "r": "s (say) + h (hat)"
         }
@@ -2529,11 +2529,11 @@
           "c": "sy",
           "r": "sy"
         },
-        "East": {
+        "eastern": {
           "c": "si",
           "r": "si"
         },
-        "West": {
+        "ohsweken": {
           "c": "sy",
           "r": "sh (she) + y (yet)"
         }
@@ -2589,11 +2589,11 @@
           "c": "th",
           "r": "th"
         },
-        "East": {
+        "eastern": {
           "c": "th",
           "r": "th"
         },
-        "West": {
+        "ohsweken": {
           "c": "th",
           "r": "t (take) + h (hat)"
         }
@@ -2649,11 +2649,11 @@
           "c": "tsy",
           "r": "tsy"
         },
-        "East": {
+        "eastern": {
           "c": "tsi",
           "r": "tsi"
         },
-        "West": {
+        "ohsweken": {
           "c": "tsy",
           "r": "tch/je (between j and ch) + y"
         }
@@ -2703,17 +2703,17 @@
         "pitch": 1
       },
       "s": "gee — between j and ch before vowels",
-      "t": "Central dialect form — tsi between consonants, often pronounced 'gee'. Used at Six Nations/Tyendinaga. East dialect writes ts instead. IPA: [dʒ].",
+      "t": "Central dialect form — tsi between consonants, often pronounced 'gee'. Used at Six Nations/Tyendinaga. Eastern dialect writes ts instead. IPA: [dʒ].",
       "spellings": {
         "standard": {
           "c": "tsi",
           "r": "tsi"
         },
-        "East": {
+        "eastern": {
           "c": "tsi",
           "r": "tsi"
         },
-        "West": {
+        "ohsweken": {
           "c": "tsi",
           "r": "gee / twy (between consonants)"
         }
@@ -2769,11 +2769,11 @@
           "c": "tshy",
           "r": "tshy"
         },
-        "East": {
+        "eastern": {
           "c": "tshi",
           "r": "tshi"
         },
-        "West": {
+        "ohsweken": {
           "c": "tshy",
           "r": "ch (church) + y (yet)"
         }
@@ -2829,11 +2829,11 @@
           "c": "ty",
           "r": "ty"
         },
-        "East": {
+        "eastern": {
           "c": "ti",
           "r": "ti"
         },
-        "West": {
+        "ohsweken": {
           "c": "ty",
           "r": "d (dog) + y (yet)"
         }
@@ -2889,11 +2889,11 @@
           "c": "wh",
           "r": "wh"
         },
-        "East": {
+        "eastern": {
           "c": "wh",
           "r": "wh"
         },
-        "West": {
+        "ohsweken": {
           "c": "wh",
           "r": "soft f (voiceless w)"
         }
