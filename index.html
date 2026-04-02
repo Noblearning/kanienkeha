@@ -1599,7 +1599,6 @@ const ORTH_NOTES={
 const SYL_SECTION_TITLES={
   vowels:'Vowels',
   consonants:'Consonants',
-  tone:'Tone &amp; Length',
   combinations:'Combinations',
 };
 
@@ -1624,7 +1623,7 @@ function sylDisplay(s){
 function renderSylAll(){
   const container=document.getElementById('syl-all-sections');
   if(!container)return;
-  const tabOrder=['vowels','consonants','tone','combinations'];
+  const tabOrder=['vowels','consonants','combinations'];
   container.innerHTML=tabOrder.map(tab=>{
     const entries=SYL[tab]||[];
     if(!entries.length)return'';

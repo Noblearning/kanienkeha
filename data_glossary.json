@@ -15425,5 +15425,1773 @@
       "plum variant"
     ],
     "forms": null
+  },
+  {
+    "id": "col-oer02",
+    "target": "Kanekwenhtarahòn:tsi",
+    "english": "dark red",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Dark red — Kanekwenhtarahòn:tsi. The -hòn:tsi suffix marks darkness/depth of colour.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kanekwenhtarahòn:tsi",
+      "kanekwenhtarahòn:tsi"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer03",
+    "target": "Kanekwenhtararà:ken",
+    "english": "light red",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Light red — Kanekwenhtararà:ken. The -rà:ken suffix marks lightness of colour.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kanekwenhtararà:ken",
+      "kanekwenhtararà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer04",
+    "target": "Akiarèn:ta",
+    "english": "orange",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Orange — Akiarèn:ta. Six Nations Polytechnic OER form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Akiarèn:ta",
+      "akiarèn:ta"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer05",
+    "target": "Kahontarà:ken",
+    "english": "light green",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Light green — Kahontarà:ken. Light variant of Óhonte (green).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kahontarà:ken",
+      "kahontarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer06",
+    "target": "Karonhiahòn:tsi",
+    "english": "dark blue",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Dark blue — Karonhiahòn:tsi. Dark variant of Oròn:ia (blue).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Karonhiahòn:tsi",
+      "karonhiahòn:tsi"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer07",
+    "target": "Karonhiarà:ken",
+    "english": "light blue",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Light blue — Karonhiarà:ken. Light variant of Oròn:ia (blue).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Karonhiarà:ken",
+      "karonhiarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer08",
+    "target": "Oharennáhta",
+    "english": "purple",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Purple — Oharennáhta. OER form; compare Ariwa'konhné:ha (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oharennáhta",
+      "oharennáhta"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer09",
+    "target": "Waharennahtarà:ken",
+    "english": "mauve",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Mauve / light purple — Waharennahtarà:ken. Light variant of Oharennáhta.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Waharennahtarà:ken",
+      "waharennahtarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer10",
+    "target": "Wahsén:rate",
+    "english": "pink",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Pink — Wahsén:rate. OER form; compare Washén:ra (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wahsén:rate",
+      "wahsén:rate"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer11",
+    "target": "Wahsenrate'tsherarà:ken",
+    "english": "pale pink",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Pale pink — Wahsenrate'tsherarà:ken. Light variant of Wahsén:rate.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wahsenrate'tsherarà:ken",
+      "wahsenrate'tsherarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer12",
+    "target": "Watehsarà:ken",
+    "english": "tan / light brown",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Tan or light brown — Watehsarà:ken. Light variant of Athéhsa (brown).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Watehsarà:ken",
+      "watehsarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer13",
+    "target": "Kahòn:tsi",
+    "english": "black",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Black — Kahòn:tsi. OER form; compare Kayé:ri (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kahòn:tsi",
+      "kahòn:tsi"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer14",
+    "target": "Ata'kenhróhkwa",
+    "english": "grey",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Grey — Ata'kenhróhkwa. OER form; compare Oseráhne (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ata'kenhróhkwa",
+      "ata'kenhróhkwa"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer15",
+    "target": "Wata'kenhrohkwarà:ken",
+    "english": "light grey",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "Light grey — Wata'kenhrohkwarà:ken. Light variant of Ata'kenhróhkwa.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wata'kenhrohkwarà:ken",
+      "wata'kenhrohkwarà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "col-oer16",
+    "target": "Karà:ken",
+    "english": "white",
+    "pos": "Noun — Colour",
+    "unit": null,
+    "lesson": null,
+    "notes": "White — Karà:ken. OER form; compare Ó:wira' (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Karà:ken",
+      "karà:ken"
+    ],
+    "forms": null,
+    "group": "colours",
+    "groupLabel": "colours"
+  },
+  {
+    "id": "num-oer01",
+    "target": "Énskat",
+    "english": "one (OER form)",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "One — Énskat (OER / Six Nations form). Compare Énska (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Énskat",
+      "énskat"
+    ],
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "num-oer03",
+    "target": "Kióhton",
+    "english": "nine",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "Nine — Kióhton (OER form). Compare Tióhton (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kióhton",
+      "kióhton"
+    ],
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "num-oer04",
+    "target": "Oié:ri",
+    "english": "ten (OER form)",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "Ten — Oié:ri (OER form). Compare Óia'k (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oié:ri",
+      "oié:ri"
+    ],
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "num-oer05",
+    "target": "Tewen'nyá:we",
+    "english": "hundred (number marker)",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "Hundred number marker — Tewen'nyá:we. Used when expressing hundreds (e.g., Tewen'nyá:we + number = that many hundreds).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tewen'nyá:we",
+      "tewen'nyá:we"
+    ],
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "num-oer06",
+    "target": "iawén:re",
+    "english": "+ ten (teens marker)",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "Teens marker — iawén:re. Added after the base number to form 11–19 (e.g., Énskat iawén:re = eleven).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "iawén:re"
+    ],
+    "forms": null,
+    "group": "num",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "num-oer07",
+    "target": "niwáhsen",
+    "english": "tens marker",
+    "pos": "Number",
+    "unit": null,
+    "lesson": null,
+    "notes": "Tens marker — niwáhsen. Used to form multiples of ten (e.g., Áhsen niwáhsen = thirty).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "niwáhsen"
+    ],
+    "forms": null,
+    "group": "num_higher",
+    "groupLabel": "Numbers"
+  },
+  {
+    "id": "ppl-oer01",
+    "target": "Eksá:'a",
+    "english": "child (gender-neutral)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Gender-neutral child — Eksá:'a. Distinct from gendered Raksá:'a (boy) and Yeksá:'a (girl) in the OER.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Eksá:'a",
+      "eksá:'a"
+    ],
+    "forms": null,
+    "group": "people",
+    "groupLabel": "people"
+  },
+  {
+    "id": "ppl-oer02",
+    "target": "Yeksá:'a",
+    "english": "girl (OER form)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Girl — Yeksá:'a. OER Six Nations form; compare Ieksá:'a (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yeksá:'a",
+      "yeksá:'a"
+    ],
+    "forms": null,
+    "group": "pn_girl",
+    "groupLabel": "Girl"
+  },
+  {
+    "id": "ppl-oer03",
+    "target": "Eksa'okón:'a",
+    "english": "children (collective)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Children (collective) — Eksa'okón:'a. The -okón:'a suffix marks a collective plural.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Eksa'okón:'a",
+      "eksa'okón:'a"
+    ],
+    "forms": null,
+    "group": "people",
+    "groupLabel": "people"
+  },
+  {
+    "id": "ppl-oer04",
+    "target": "Onkwe'shón:'a",
+    "english": "people (collective)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "People — Onkwe'shón:'a. Collective noun for people generally.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Onkwe'shón:'a",
+      "onkwe'shón:'a"
+    ],
+    "forms": null,
+    "group": "people",
+    "groupLabel": "people"
+  },
+  {
+    "id": "ppl-oer05",
+    "target": "Ón:kwe",
+    "english": "human being / person",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Human being or person — Ón:kwe. The base form from which many words for people are built.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ón:kwe",
+      "ón:kwe"
+    ],
+    "forms": null,
+    "group": "people",
+    "groupLabel": "people"
+  },
+  {
+    "id": "ppl-oer06",
+    "target": "Yakón:kwe",
+    "english": "woman (OER form)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Woman — Yakón:kwe. OER Six Nations form; compare Iakón:kwe (Kontinónhstats). Both are valid community forms.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yakón:kwe",
+      "yakón:kwe"
+    ],
+    "forms": null,
+    "group": "pn_woman",
+    "groupLabel": "Woman"
+  },
+  {
+    "id": "ppl-oer07",
+    "target": "Yeya'taséha",
+    "english": "young woman",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Young woman — Yeya'taséha. Female adolescent/young adult. Compare Ranekénhteron (young man).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Yeya'taséha",
+      "yeya'taséha"
+    ],
+    "forms": null,
+    "group": "people",
+    "groupLabel": "people"
+  },
+  {
+    "id": "ppl-oer08",
+    "target": "Ronnón:kwe",
+    "english": "men / adults (plural)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Men or mixed adults (3+) — Ronnón:kwe. Plural form of Rón:kwe.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ronnón:kwe",
+      "ronnón:kwe"
+    ],
+    "forms": null,
+    "group": "pn_man",
+    "groupLabel": "Man"
+  },
+  {
+    "id": "ppl-oer09",
+    "target": "Konnón:kwe",
+    "english": "women (plural)",
+    "pos": "Noun — Person",
+    "unit": null,
+    "lesson": null,
+    "notes": "Women (3+) — Konnón:kwe. Plural form of Yakón:kwe.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Konnón:kwe",
+      "konnón:kwe"
+    ],
+    "forms": null,
+    "group": "pn_woman",
+    "groupLabel": "Woman"
+  },
+  {
+    "id": "clan-oer01",
+    "target": "wakenyáhten",
+    "english": "I am of the Turtle Clan",
+    "pos": "Verb phrase — Clan",
+    "unit": null,
+    "lesson": null,
+    "notes": "I am of the Turtle Clan — wakenyáhten. The wa- prefix marks first person; -ken- is the Turtle Clan root; -yáhten marks clan membership.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wakenyáhten"
+    ],
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans"
+  },
+  {
+    "id": "clan-oer02",
+    "target": "sanyáhten",
+    "english": "you are of the Turtle Clan",
+    "pos": "Verb phrase — Clan",
+    "unit": null,
+    "lesson": null,
+    "notes": "You are of the Turtle Clan — sanyáhten. The sa- prefix marks second person singular.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "sanyáhten"
+    ],
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans"
+  },
+  {
+    "id": "clan-oer03",
+    "target": "wakathahyón:ni",
+    "english": "I am of the Wolf Clan",
+    "pos": "Verb phrase — Clan",
+    "unit": null,
+    "lesson": null,
+    "notes": "I am of the Wolf Clan — wakathahyón:ni. The -thahyón:ni root marks Wolf Clan membership.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wakathahyón:ni"
+    ],
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans"
+  },
+  {
+    "id": "clan-oer04",
+    "target": "wakhskaré:wake",
+    "english": "I am of the Bear Clan",
+    "pos": "Verb phrase — Clan",
+    "unit": null,
+    "lesson": null,
+    "notes": "I am of the Bear Clan — wakhskaré:wake. The -hskaré:wake root marks Bear Clan membership.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "wakhskaré:wake"
+    ],
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans"
+  },
+  {
+    "id": "clan-oer05",
+    "target": "Oh nisen'tarò:ten?",
+    "english": "what clan are you?",
+    "pos": "Question phrase — Clan",
+    "unit": null,
+    "lesson": null,
+    "notes": "What clan are you? — Oh nisen'tarò:ten? A key conversational phrase for introductions in Kanien'kehá:ka communities where clan membership is central to identity.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Oh nisen'tarò:ten?",
+      "oh nisen'tarò:ten?"
+    ],
+    "forms": null,
+    "group": "clans",
+    "groupLabel": "Clans"
+  },
+  {
+    "id": "loc-oer01",
+    "target": "Tsi tkanatáhere",
+    "english": "Brantford",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Brantford, Ontario — Tsi tkanatáhere. Near Ohswéken (Six Nations of the Grand River).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsi tkanatáhere",
+      "tsi tkanatáhere"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer02",
+    "target": "Tsi teyohserò:ron",
+    "english": "Buffalo",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Buffalo, New York — Tsi teyohserò:ron.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsi teyohserò:ron",
+      "tsi teyohserò:ron"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer03",
+    "target": "Kharatón:ni",
+    "english": "Caledonia",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Caledonia, Ontario — Kharatón:ni. Near Six Nations territory.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Kharatón:ni",
+      "kharatón:ni"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer04",
+    "target": "Ohrón:wakon",
+    "english": "Hamilton",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Hamilton, Ontario — Ohrón:wakon.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ohrón:wakon",
+      "ohrón:wakon"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer05",
+    "target": "Ka'taróhkwen",
+    "english": "Kingston",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Kingston, Ontario — Ka'taróhkwen.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ka'taróhkwen",
+      "ka'taróhkwen"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer06",
+    "target": "Tekahyonhó:ken",
+    "english": "London, Ontario",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "London, Ontario (also Paris, Ontario) — Tekahyonhó:ken.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tekahyonhó:ken",
+      "tekahyonhó:ken"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer09",
+    "target": "Koráhne",
+    "english": "Canada",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Canada — Koráhne.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Koráhne",
+      "koráhne"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer10",
+    "target": "Wahstonhronòn:ke",
+    "english": "United States",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "United States — Wahstonhronòn:ke.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Wahstonhronòn:ke",
+      "wahstonhronòn:ke"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer11",
+    "target": "tsi teká:tens",
+    "english": "airport",
+    "pos": "Noun — Place (locative)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Airport — tsi teká:tens (at a/the airport). The tsi prefix marks a locative construction.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi teká:tens"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer15",
+    "target": "tsi yehwihstayentáhkwa",
+    "english": "bank",
+    "pos": "Noun — Place (locative)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Bank — tsi yehwihstayentáhkwa (at a/the bank).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsi yehwihstayentáhkwa"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer18",
+    "target": "onkwehonwè:ne",
+    "english": "reserve / territory",
+    "pos": "Noun — Place (locative)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Reserve or territory — onkwehonwè:ne (at a/the reserve). Literally 'the place of the original people.'",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onkwehonwè:ne"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer19",
+    "target": "Tsi yetsyenhayentáhkwa",
+    "english": "Ohswéken village",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Ohswéken village — Tsi yetsyenhayentáhkwa (or Tsiyayentáhkwa). The village on Six Nations of the Grand River territory.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Tsi yetsyenhayentáhkwa",
+      "tsi yetsyenhayentáhkwa"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "loc-oer20",
+    "target": "Ranatakaryáhsne",
+    "english": "Washington, D.C.",
+    "pos": "Proper Noun — Place",
+    "unit": null,
+    "lesson": null,
+    "notes": "Washington, D.C. — Ranatakaryáhsne.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "Ranatakaryáhsne",
+      "ranatakaryáhsne"
+    ],
+    "forms": null,
+    "group": "places",
+    "groupLabel": "Places"
+  },
+  {
+    "id": "ani-oer01",
+    "target": "orhyó:ken",
+    "english": "chipmunk (OER form)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Chipmunk — orhyó:ken. OER Six Nations form; compare Tsitsi (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "orhyó:ken"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer03",
+    "target": "ohskennón:ton",
+    "english": "deer",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Deer — ohskennón:ton. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohskennón:ton"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer04",
+    "target": "atená:ti",
+    "english": "elk",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Elk — atená:ti. OER form; compare Atená:ta (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "atená:ti"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer05",
+    "target": "tsítsho",
+    "english": "fox",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Fox — tsítsho. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsítsho"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer06",
+    "target": "anonhwaráweron",
+    "english": "groundhog",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Groundhog / woodchuck — anonhwaráweron. Six Nations Polytechnic OER.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "anonhwaráweron"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer08",
+    "target": "kwa'yén:'a",
+    "english": "rabbit (wild)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Wild rabbit — kwa'yén:'a. OER form; compare Tsihkoni (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kwa'yén:'a"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer09",
+    "target": "atí:ron",
+    "english": "raccoon",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Raccoon — atí:ron. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "atí:ron"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer10",
+    "target": "onkwe'tá:ko",
+    "english": "squirrel (black/grey)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Black or grey squirrel — onkwe'tá:ko. OER form; compare Sakwirá:'a (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onkwe'tá:ko"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer11",
+    "target": "aró:sen",
+    "english": "red squirrel",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Red squirrel — aró:sen. Distinct from the grey/black squirrel (onkwe'tá:ko).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "aró:sen"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer12",
+    "target": "anì:tas",
+    "english": "skunk (OER form)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Skunk — anì:tas. OER Six Nations form; compare Shikó:hs (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "anì:tas"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer13",
+    "target": "ò:nyare",
+    "english": "snake (OER form)",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Snake — ò:nyare. OER form; compare O'nó:wara (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ò:nyare"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "ani-oer14",
+    "target": "kanyáhten",
+    "english": "snapping turtle",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Snapping turtle — kanyáhten. Distinct from the regular turtle (a'nó:wara).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanyáhten"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "fish-oer01",
+    "target": "ohwén:ta",
+    "english": "catfish",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Catfish — ohwén:ta. OER Six Nations form; compare Kotihnawá:ra's (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohwén:ta"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer02",
+    "target": "oyenhè:ta",
+    "english": "perch",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Perch — oyenhè:ta. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "oyenhè:ta"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer03",
+    "target": "tsikónhses",
+    "english": "pike (OER form)",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Pike — tsikónhses. OER Six Nations form; compare Ohkwarí: (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsikónhses"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer04",
+    "target": "ohyé:karon",
+    "english": "trout / salmon",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Trout or salmon — ohyé:karon. OER Six Nations form; compare Namé:s (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohyé:karon"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer05",
+    "target": "skakahráksen",
+    "english": "walleye / pickerel",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Walleye or pickerel — skakahráksen. An important food fish in Haudenosaunee territory.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "skakahráksen"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer06",
+    "target": "tsyonnhó:wane",
+    "english": "whale",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Whale — tsyonnhó:wane. The -kó:wa suffix means 'large' — literally 'the large water creature.'",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsyonnhó:wane"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "fish-oer07",
+    "target": "tyawerón:ko",
+    "english": "eel",
+    "pos": "Noun — Fish",
+    "unit": null,
+    "lesson": null,
+    "notes": "Eel — tyawerón:ko. Eels were historically significant in Haudenosaunee foodways; the Eel Clan (Rotineniotthró:non) is named for them.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tyawerón:ko"
+    ],
+    "forms": null,
+    "group": "fish",
+    "groupLabel": "Fish"
+  },
+  {
+    "id": "bird-oer01",
+    "target": "katsihnekwárha",
+    "english": "goldfinch",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "Goldfinch — katsihnekwárha. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katsihnekwárha"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "bird-oer02",
+    "target": "kanatakón:ha",
+    "english": "house sparrow",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "House sparrow — kanatakón:ha. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanatakón:ha"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "bird-oer03",
+    "target": "kenheyón:taks",
+    "english": "turkey vulture",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "Turkey vulture — kenheyón:taks. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kenheyón:taks"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "bird-oer04",
+    "target": "tsyohwátstakahwe",
+    "english": "seagull",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "Seagull — tsyohwátstakahwe. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsyohwátstakahwe"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "bird-oer05",
+    "target": "tekáhstya'ks",
+    "english": "parrot",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "Parrot — tekáhstya'ks. A post-contact loanword concept given a Kanien'kéha name.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tekáhstya'ks"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "bird-oer06",
+    "target": "orí:te",
+    "english": "pigeon / dove (OER)",
+    "pos": "Noun — Bird",
+    "unit": null,
+    "lesson": null,
+    "notes": "Pigeon or dove — orí:te. OER Six Nations form; compare Kanón:kwes (Kontinónhstats).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "orí:te"
+    ],
+    "forms": null,
+    "group": "birds",
+    "groupLabel": "Birds"
+  },
+  {
+    "id": "ins-oer02",
+    "target": "o'nó:wa",
+    "english": "beetle",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Beetle — o'nó:wa. OER Six Nations form.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "o'nó:wa"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer03",
+    "target": "nikontinyaréhsha",
+    "english": "blackfly",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Blackfly — nikontinyaréhsha. A notorious presence in northeastern forests.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "nikontinyaréhsha"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer04",
+    "target": "otskwárhe",
+    "english": "bullfrog",
+    "pos": "Noun — Insect / Amphibian",
+    "unit": null,
+    "lesson": null,
+    "notes": "Bullfrog — otskwárhe. Grouped with insects/small creatures in the OER.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otskwárhe"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer06",
+    "target": "orwharà:ne",
+    "english": "caterpillar",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Caterpillar — orwharà:ne.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "orwharà:ne"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer07",
+    "target": "tsiríktsirik",
+    "english": "cricket",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Cricket — tsiríktsirik (also taráktarak). The name is onomatopoeic.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsiríktsirik"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer09",
+    "target": "otá:wek",
+    "english": "flea",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Flea — otá:wek.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otá:wek"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer11",
+    "target": "tsihstá:rare",
+    "english": "grasshopper",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Grasshopper — tsihstá:rare.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsihstá:rare"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer12",
+    "target": "otsì:non",
+    "english": "lice / louse",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Lice or louse — otsì:non.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otsì:non"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer13",
+    "target": "ohó:wa",
+    "english": "moth",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Moth — ohó:wa. Compare the butterfly (tsiktsinón:nawen).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "ohó:wa"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer14",
+    "target": "otsihskayonnì:tha",
+    "english": "snail / slug",
+    "pos": "Noun — Insect",
+    "unit": null,
+    "lesson": null,
+    "notes": "Snail or slug — otsihskayonnì:tha.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "otsihskayonnì:tha"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "ins-oer16",
+    "target": "tsikhnennà:taks",
+    "english": "toad",
+    "pos": "Noun — Insect / Amphibian",
+    "unit": null,
+    "lesson": null,
+    "notes": "Toad — tsikhnennà:taks.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsikhnennà:taks"
+    ],
+    "forms": null,
+    "group": "insects",
+    "groupLabel": "Insects"
+  },
+  {
+    "id": "exo-oer01",
+    "target": "teka'nón:ten",
+    "english": "alligator / crocodile",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Alligator or crocodile — teka'nón:ten. Post-contact animal given a Kanien'kéha name.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "teka'nón:ten"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer02",
+    "target": "tsikera'wíhstak",
+    "english": "bat",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Bat — tsikera'wíhstak (also yakohónhtariks). Two forms documented in OER.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tsikera'wíhstak"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer03",
+    "target": "onotsta'kó:wa",
+    "english": "elephant",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Elephant — onotsta'kó:wa. Post-contact animal; literally 'the great one with a long nose.'",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "onotsta'kó:wa"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer04",
+    "target": "kanyá:rehs",
+    "english": "giraffe",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Giraffe — kanyá:rehs. Post-contact animal.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "kanyá:rehs"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer05",
+    "target": "tó:tis",
+    "english": "lizard / salamander",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Lizard or salamander — tó:tis.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "tó:tis"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer06",
+    "target": "katsi'nòn:taks",
+    "english": "monkey / gorilla",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Monkey or gorilla — katsi'nòn:taks (also katsi'nonhtakskó:wa). Post-contact.",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "katsi'nòn:taks"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
+  },
+  {
+    "id": "exo-oer07",
+    "target": "takohskó:wa",
+    "english": "lion / tiger",
+    "pos": "Noun — Animal (Wild)",
+    "unit": null,
+    "lesson": null,
+    "notes": "Lion or tiger — takohskó:wa. Literally 'the great cat' — same root as Takós (domestic cat).",
+    "cite": {
+      "text": "Mohawk Language Learning Resources (CC BY 4.0) · Six Nations Polytechnic · Stevie Jonathan, Tehakanere Henhawk, Jersey Squire",
+      "url": "https://ecampusontario.pressbooks.pub/mohawklanguageresource/"
+    },
+    "accepts": [
+      "takohskó:wa"
+    ],
+    "forms": null,
+    "group": "wildanimals",
+    "groupLabel": "Wild animals"
   }
 ]

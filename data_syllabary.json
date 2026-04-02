@@ -151,6 +151,136 @@
       }
     },
     {
+      "id": "sv-a-ac",
+      "c": "á",
+      "r": "á",
+      "ipa": "[á]",
+      "ipaNote": "stressed low central",
+      "tts": {
+        "text": "AH",
+        "rate": 0.6,
+        "pitch": 0.9
+      },
+      "s": "stressed a — higher pitch, louder",
+      "t": "The acute accent marks primary stress. á is louder and higher in pitch than plain a. Stress can change grammatical meaning in Kanien'kéha. IPA: [á].",
+      "spellings": {
+        "standard": {
+          "c": "á",
+          "r": "á — stressed a — higher pitch, louder"
+        },
+        "eastern": {
+          "c": "á",
+          "r": "á — stressed a — higher pitch, louder"
+        },
+        "ohsweken": {
+          "c": "á",
+          "r": "á — stressed a — higher pitch, louder"
+        }
+      },
+      "words": [
+        {
+          "id": "wa01",
+          "word": "Ohkwá:ri",
+          "english": "bear"
+        },
+        {
+          "id": "num03",
+          "word": "Áhsen",
+          "english": "three"
+        },
+        {
+          "id": "da01",
+          "word": "Takós",
+          "english": "cat"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-a-ac_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-a-ac_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-a-ac_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sv-a-gr",
+      "c": "à",
+      "r": "à",
+      "ipa": "[à]",
+      "ipaNote": "falling tone low central",
+      "tts": {
+        "text": "ah",
+        "rate": 0.6,
+        "pitch": 0.9
+      },
+      "s": "falling tone a — pitch drops",
+      "t": "The grave accent marks a falling tone — the pitch starts higher and drops through the vowel. It appears in specific grammatical contexts. IPA: [à].",
+      "spellings": {
+        "standard": {
+          "c": "à",
+          "r": "à — falling tone a — pitch drops"
+        },
+        "eastern": {
+          "c": "à",
+          "r": "à — falling tone a — pitch drops"
+        },
+        "ohsweken": {
+          "c": "à",
+          "r": "à — falling tone a — pitch drops"
+        }
+      },
+      "words": [
+        {
+          "id": "a08",
+          "word": "à:there'",
+          "english": "basket"
+        },
+        {
+          "id": "dv02",
+          "word": "wà:ke",
+          "english": "I am going"
+        },
+        {
+          "id": "fo07",
+          "word": "Kanà:taros",
+          "english": "bread"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-a-gr_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-a-gr_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-a-gr_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
       "id": "sv-e",
       "c": "e",
       "r": "e",
@@ -299,6 +429,131 @@
           "r": "ey / eh (long)"
         }
       }
+    },
+    {
+      "id": "sv-e-ac",
+      "c": "é",
+      "r": "é",
+      "ipa": "[é]",
+      "ipaNote": "stressed mid front",
+      "tts": {
+        "text": "EH",
+        "rate": 0.6,
+        "pitch": 1.0
+      },
+      "s": "stressed e — higher pitch, louder",
+      "t": "Stressed e — louder and higher in pitch than plain e. IPA: [é].",
+      "spellings": {
+        "standard": {
+          "c": "é",
+          "r": "é — stressed e — higher pitch, louder"
+        },
+        "eastern": {
+          "c": "é",
+          "r": "é — stressed e — higher pitch, louder"
+        },
+        "ohsweken": {
+          "c": "é",
+          "r": "é — stressed e — higher pitch, louder"
+        }
+      },
+      "words": [
+        {
+          "id": "fx12",
+          "word": "é:ri",
+          "english": "cherry"
+        },
+        {
+          "id": "col05",
+          "word": "Kayé:ri",
+          "english": "black"
+        },
+        {
+          "id": "fi01",
+          "word": "Namé:s",
+          "english": "trout"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-e-ac_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-e-ac_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-e-ac_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sv-e-gr",
+      "c": "è",
+      "r": "è",
+      "ipa": "[è]",
+      "ipaNote": "falling tone mid front",
+      "tts": {
+        "text": "eh",
+        "rate": 0.6,
+        "pitch": 1.0
+      },
+      "s": "falling tone e — pitch drops",
+      "t": "Falling tone e — pitch starts higher and drops. IPA: [è].",
+      "spellings": {
+        "standard": {
+          "c": "è",
+          "r": "è — falling tone e — pitch drops"
+        },
+        "eastern": {
+          "c": "è",
+          "r": "è — falling tone e — pitch drops"
+        },
+        "ohsweken": {
+          "c": "è",
+          "r": "è — falling tone e — pitch drops"
+        }
+      },
+      "words": [
+        {
+          "id": "bp03",
+          "word": "Ó:nen",
+          "english": "eye"
+        },
+        {
+          "id": "o04",
+          "word": "Otsikhè:ta",
+          "english": "sugar"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-e-gr_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-e-gr_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-e-gr_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-i",
@@ -451,6 +706,131 @@
       }
     },
     {
+      "id": "sv-i-ac",
+      "c": "í",
+      "r": "í",
+      "ipa": "[í]",
+      "ipaNote": "stressed high front",
+      "tts": {
+        "text": "EE",
+        "rate": 0.6,
+        "pitch": 1.1
+      },
+      "s": "stressed i — higher pitch, louder",
+      "t": "Stressed i — louder and higher in pitch than plain i. IPA: [í].",
+      "spellings": {
+        "standard": {
+          "c": "í",
+          "r": "í — stressed i — higher pitch, louder"
+        },
+        "eastern": {
+          "c": "í",
+          "r": "í — stressed i — higher pitch, louder"
+        },
+        "ohsweken": {
+          "c": "í",
+          "r": "í — stressed i — higher pitch, louder"
+        }
+      },
+      "words": [
+        {
+          "id": "p02",
+          "word": "í:'i",
+          "english": "I"
+        },
+        {
+          "id": "p01",
+          "word": "í:se'",
+          "english": "you"
+        },
+        {
+          "id": "na01",
+          "word": "Tsí:tewen",
+          "english": "moon"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-i-ac_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-i-ac_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-i-ac_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sv-i-gr",
+      "c": "ì",
+      "r": "ì",
+      "ipa": "[ì]",
+      "ipaNote": "falling tone high front",
+      "tts": {
+        "text": "ee",
+        "rate": 0.6,
+        "pitch": 1.1
+      },
+      "s": "falling tone i — pitch drops",
+      "t": "Falling tone i — pitch starts higher and drops. IPA: [ì].",
+      "spellings": {
+        "standard": {
+          "c": "ì",
+          "r": "ì — falling tone i — pitch drops"
+        },
+        "eastern": {
+          "c": "ì",
+          "r": "ì — falling tone i — pitch drops"
+        },
+        "ohsweken": {
+          "c": "ì",
+          "r": "ì — falling tone i — pitch drops"
+        }
+      },
+      "words": [
+        {
+          "id": "bp22",
+          "word": "Otsìtà:'a",
+          "english": "leg"
+        },
+        {
+          "id": "dv02",
+          "word": "wà:ke",
+          "english": "I am going"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-i-gr_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-i-gr_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-i-gr_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
       "id": "sv-o",
       "c": "o",
       "r": "o",
@@ -599,6 +979,131 @@
           "r": "o (long)"
         }
       }
+    },
+    {
+      "id": "sv-o-ac",
+      "c": "ó",
+      "r": "ó",
+      "ipa": "[ó]",
+      "ipaNote": "stressed mid back rounded",
+      "tts": {
+        "text": "OH",
+        "rate": 0.6,
+        "pitch": 0.9
+      },
+      "s": "stressed o — higher pitch, louder",
+      "t": "Stressed o — louder and higher in pitch than plain o. IPA: [ó].",
+      "spellings": {
+        "standard": {
+          "c": "ó",
+          "r": "ó — stressed o — higher pitch, louder"
+        },
+        "eastern": {
+          "c": "ó",
+          "r": "ó — stressed o — higher pitch, louder"
+        },
+        "ohsweken": {
+          "c": "ó",
+          "r": "ó — stressed o — higher pitch, louder"
+        }
+      },
+      "words": [
+        {
+          "id": "bp05",
+          "word": "Ohsó:wa",
+          "english": "lips"
+        },
+        {
+          "id": "wa02",
+          "word": "A'nó:wara",
+          "english": "turtle"
+        },
+        {
+          "id": "col05",
+          "word": "Kayé:ri",
+          "english": "black"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-o-ac_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-o-ac_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-o-ac_akwesasne-speaker.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sv-o-gr",
+      "c": "ò",
+      "r": "ò",
+      "ipa": "[ò]",
+      "ipaNote": "falling tone mid back rounded",
+      "tts": {
+        "text": "oh",
+        "rate": 0.6,
+        "pitch": 0.9
+      },
+      "s": "falling tone o — pitch drops",
+      "t": "Falling tone o — pitch starts higher and drops. IPA: [ò].",
+      "spellings": {
+        "standard": {
+          "c": "ò",
+          "r": "ò — falling tone o — pitch drops"
+        },
+        "eastern": {
+          "c": "ò",
+          "r": "ò — falling tone o — pitch drops"
+        },
+        "ohsweken": {
+          "c": "ò",
+          "r": "ò — falling tone o — pitch drops"
+        }
+      },
+      "words": [
+        {
+          "id": "bp22",
+          "word": "Otsìtà:'a",
+          "english": "leg"
+        },
+        {
+          "id": "loc03",
+          "word": "tsi yontenhninon'tha'kó:wa",
+          "english": "mall"
+        }
+      ],
+      "audioFiles": [
+        {
+          "voice": "kanehsatake-elder",
+          "label": "Elder speaker — Kanehsatà:ke",
+          "dialect": "Kanehsatà:ke",
+          "file": "audio/sv-o-gr_kanehsatake-elder.mp3"
+        },
+        {
+          "voice": "kahnawake-speaker",
+          "label": "Community speaker — Kahnawà:ke",
+          "dialect": "Kahnawà:ke",
+          "file": "audio/sv-o-gr_kahnawake-speaker.mp3"
+        },
+        {
+          "voice": "akwesasne-speaker",
+          "label": "Community speaker — Akwesasne",
+          "dialect": "Akwesasne",
+          "file": "audio/sv-o-gr_akwesasne-speaker.mp3"
+        }
+      ]
     },
     {
       "id": "sv-en",
@@ -1574,458 +2079,6 @@
         "ohsweken": {
           "c": "tsh",
           "r": "tsh (as in church)"
-        }
-      }
-    }
-  ],
-  "tone": [
-    {
-      "id": "st-vl",
-      "c": "V:",
-      "r": "Long vowel",
-      "ipa": "[Vː]",
-      "ipaNote": "any vowel + length mark",
-      "tts": {
-        "text": "aaah",
-        "rate": 0.4,
-        "pitch": 0.9
-      },
-      "s": "held ~2× longer than short vowel",
-      "t": "The colon (:) always marks vowel length. Any vowel can be long: a: e: i: o: — and a long vowel can completely change a word's meaning. Never shorten it. IPA: [Vː].",
-      "words": [
-        {
-          "id": "v01",
-          "word": "á:tien",
-          "english": "to sit (long á:)"
-        },
-        {
-          "id": "na03",
-          "word": "Wahtá:",
-          "english": "maple tree (long á:)"
-        },
-        {
-          "id": "brd03",
-          "word": "so:ra",
-          "english": "duck (long o:)"
-        },
-        {
-          "id": "fi01",
-          "word": "Namé:s",
-          "english": "trout (long é:)"
-        },
-        {
-          "id": "p01",
-          "word": "í:se'",
-          "english": "you (long í:)"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-vl_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-vl_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-vl_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "a: · e: · i: · o:",
-          "r": "Long vowel — held ~2× longer than short"
-        },
-        "eastern": {
-          "c": "a: · e: · i: · o:",
-          "r": "Long vowel — held ~2× longer than short"
-        },
-        "ohsweken": {
-          "c": "a: · e: · i: · o:",
-          "r": "Long vowel — held ~2× longer than short"
-        }
-      }
-    },
-    {
-      "id": "st-gs",
-      "c": "ʔ",
-      "r": "Glottal stop",
-      "ipa": "[ʔ]",
-      "ipaNote": "glottal stop",
-      "tts": {
-        "text": "uh oh",
-        "rate": 0.6,
-        "pitch": 1
-      },
-      "s": "full consonant — the ' in all spelling systems",
-      "t": "The apostrophe (') represents the glottal stop [ʔ] in all three spelling systems. It appears word-initially (e.g., 'sot — grandfather), mid-word (e.g., í:'i — I), and word-finally (e.g., áhta' — shoe). IPA: [ʔ].",
-      "words": [
-        {
-          "id": "p02",
-          "word": "í:'i",
-          "english": "I (mid-word glottal)"
-        },
-        {
-          "id": "k03",
-          "word": "'sot",
-          "english": "grandfather (word-initial)"
-        },
-        {
-          "id": "p01",
-          "word": "í:se'",
-          "english": "you (word-final)"
-        },
-        {
-          "id": "n01",
-          "word": "Ieksá:'a",
-          "english": "girl (pre-final)"
-        },
-        {
-          "id": "a01",
-          "word": "áhta'",
-          "english": "shoe (word-final)"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-gs_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-gs_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-gs_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "' (ʔ)",
-          "r": "Glottal stop — written as ' in Standard orthography"
-        },
-        "eastern": {
-          "c": "' (ʔ)",
-          "r": "Glottal stop — written as ' in Standard orthography"
-        },
-        "ohsweken": {
-          "c": "'",
-          "r": "Glottal stop — like the pause in uh-oh"
-        }
-      }
-    },
-    {
-      "id": "st-ac",
-      "c": "á",
-      "r": "Stress accent",
-      "ipa": "[ˈ]",
-      "ipaNote": "primary stress marker",
-      "tts": {
-        "text": "AH",
-        "rate": 0.6,
-        "pitch": 1.2
-      },
-      "s": "primary stress — higher pitch + louder",
-      "t": "The acute accent (á, é, í, ó) marks primary stress. Stressed syllables are louder and higher in pitch. The grave accent (à, è, ì, ò) marks a falling tone in some analyses. Stress patterns can change grammatical meaning. IPA: [ˈ] before the stressed syllable.",
-      "words": [
-        {
-          "id": "wa01",
-          "word": "Ohkwá:ri",
-          "english": "bear (stress on kwá)"
-        },
-        {
-          "id": "num03",
-          "word": "Áhsen",
-          "english": "three (stress on Áh)"
-        },
-        {
-          "id": "fo07",
-          "word": "Kanà:taros",
-          "english": "bread (stress on nà:)"
-        },
-        {
-          "id": "da01",
-          "word": "Takós",
-          "english": "cat (stress on kós)"
-        },
-        {
-          "id": "p01",
-          "word": "í:se'",
-          "english": "you (stress on í:)"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-ac_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-ac_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-ac_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "á · é · í · ó",
-          "r": "Stress accent — primary stress, higher pitch + louder"
-        },
-        "eastern": {
-          "c": "á · é · í · ó",
-          "r": "Stress accent — primary stress, higher pitch + louder"
-        },
-        "ohsweken": {
-          "c": "á · é · í · ó",
-          "r": "Stress / falling tone — higher pitch + louder"
-        }
-      }
-    },
-    {
-      "id": "st-ns",
-      "c": "ę / ǫ",
-      "r": "Nasal vowels",
-      "ipa": "[ã] / [õ]",
-      "ipaNote": "nasalized vowels",
-      "tts": {
-        "text": "an on",
-        "rate": 0.6,
-        "pitch": 0.95
-      },
-      "s": "nasalized — ę · ǫ (Standard) or en · on (Ohswéken)",
-      "t": "Both ę [ã] and ǫ [õ] are nasalized vowels — air passes through both mouth and nose simultaneously. In Ohswéken spelling these are written en and on. They are separate phonemes: ę/en is low and central; ǫ/on is rounded and back. Both are common in Kanehsatà:ke speech.",
-      "words": [
-        {
-          "id": "n07",
-          "word": "Rón:kwe",
-          "english": "man"
-        },
-        {
-          "id": "n03",
-          "word": "Iakón:kwe",
-          "english": "woman"
-        },
-        {
-          "id": "p10",
-          "word": "sewakwé:kon",
-          "english": "you all"
-        },
-        {
-          "id": "num03",
-          "word": "Áhsen",
-          "english": "three"
-        },
-        {
-          "id": "k04",
-          "word": "tota",
-          "english": "grandmother"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-ns_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-ns_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-ns_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "ę · ǫ",
-          "r": "Nasal vowels — ę [ã] and ǫ [õ], air through nose"
-        },
-        "eastern": {
-          "c": "ę · ǫ",
-          "r": "Nasal vowels — ę [ã] and ǫ [õ], air through nose"
-        },
-        "ohsweken": {
-          "c": "en · on",
-          "r": "Nasal vowels — en and on, air through nose"
-        }
-      }
-    },
-    {
-      "id": "st-rm",
-      "c": "R-",
-      "r": "Male prefix  (R- / L-)",
-      "ipa": "[r] / [l]",
-      "ipaNote": "dialect-dependent",
-      "tts": {
-        "text": "r",
-        "rate": 0.7,
-        "pitch": 1
-      },
-      "s": "marks male nouns and pronouns",
-      "t": "The male prefix appears as Ra-, Ro-, Ron-, Rok-, Ran- depending on the word. In Akwesasne these become La-, Lo-, Lon-, Lok-, Lan- (e.g., Lón:kwe vs. Rón:kwe — man). Compare female prefixes I-, Iak-, A-, Ako-.",
-      "words": [
-        {
-          "id": "p04",
-          "word": "raónha",
-          "english": "he (Ra- prefix)"
-        },
-        {
-          "id": "n05",
-          "word": "Raksá:'a",
-          "english": "boy (Ra- prefix)"
-        },
-        {
-          "id": "n07",
-          "word": "Rón:kwe",
-          "english": "man (Ro- prefix)"
-        },
-        {
-          "id": "n08",
-          "word": "Rokstén:ha",
-          "english": "elder man (Ro- prefix)"
-        },
-        {
-          "id": "k03",
-          "word": "'sot",
-          "english": "grandfather"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-rm_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-rm_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-rm_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "Ra- · Ro- · Ron- · Rok-",
-          "r": "Male prefix — marks male nouns and pronouns"
-        },
-        "eastern": {
-          "c": "Ra- · Ro- · Ron- · Rok-",
-          "r": "Male prefix — marks male nouns and pronouns"
-        },
-        "ohsweken": {
-          "c": "Ra- · Ro- · Ron- · Rok-",
-          "r": "Male prefix — marks male nouns and pronouns"
-        }
-      }
-    },
-    {
-      "id": "st-if",
-      "c": "I-",
-      "r": "Female prefix  (I- / Iak- / A-)",
-      "ipa": "[i] / [iak] / [a]",
-      "ipaNote": "varies by noun class",
-      "tts": {
-        "text": "ee",
-        "rate": 0.7,
-        "pitch": 1.1
-      },
-      "s": "marks female nouns and pronouns",
-      "t": "Female prefixes: I- (e.g., Ieksá'a — girl), Iak- (e.g., Iakón:kwe — woman), A- and Ako- (e.g., Akokstén:ha — elder woman, Ako- is formal/respectful for mothers and elders). The system is fully systematic throughout the language.",
-      "words": [
-        {
-          "id": "n01",
-          "word": "Ieksá:'a",
-          "english": "girl (I- prefix)"
-        },
-        {
-          "id": "n03",
-          "word": "Iakón:kwe",
-          "english": "woman (Iak- prefix)"
-        },
-        {
-          "id": "n04",
-          "word": "Akokstén:ha",
-          "english": "elder woman (Ako- prefix)"
-        },
-        {
-          "id": "k05",
-          "word": "Sahtsí:'a",
-          "english": "older sister"
-        },
-        {
-          "id": "k04",
-          "word": "tota",
-          "english": "grandmother"
-        }
-      ],
-      "audioFiles": [
-        {
-          "voice": "kanehsatake-elder",
-          "label": "Elder speaker — Kanehsatà:ke",
-          "dialect": "Kanehsatà:ke",
-          "file": "audio/st-if_kanehsatake-elder.mp3"
-        },
-        {
-          "voice": "kahnawake-speaker",
-          "label": "Community speaker — Kahnawà:ke",
-          "dialect": "Kahnawà:ke",
-          "file": "audio/st-if_kahnawake-speaker.mp3"
-        },
-        {
-          "voice": "akwesasne-speaker",
-          "label": "Community speaker — Akwesasne",
-          "dialect": "Akwesasne",
-          "file": "audio/st-if_akwesasne-speaker.mp3"
-        }
-      ],
-      "spellings": {
-        "standard": {
-          "c": "I- · Iak- · A- · Ako-",
-          "r": "Female prefix — marks female nouns and pronouns"
-        },
-        "eastern": {
-          "c": "I- · Iak- · A- · Ako-",
-          "r": "Female prefix — marks female nouns and pronouns"
-        },
-        "ohsweken": {
-          "c": "I- · Iak- · A- · Ako-",
-          "r": "Female prefix — marks female nouns and pronouns"
         }
       }
     }
