@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kanien'kéha — Kanehsatà:ke</title>
+<title>Tsyatenron — Kanien'kéha Learning Companion</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -303,14 +303,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .btn-signout{position:absolute;top:.85rem;right:1rem;background:var(--ed);border:1.5px solid var(--sand);border-radius:9px;color:var(--sand);font-family:'Crimson Pro',serif;font-size:.88rem;font-weight:600;padding:.48rem 1rem;cursor:pointer;letter-spacing:.02em;transition:background .14s,color .14s;}
 .btn-signout:hover{background:var(--em);color:white;}
 
-/* orthography toggle */
-.orth-wrap{display:flex;align-items:center;gap:.55rem;padding:.65rem 1.35rem .25rem;flex-wrap:wrap;}
-.orth-label{font-size:.75rem;color:var(--ew);white-space:nowrap;}
-.orth-pills{display:flex;gap:.3rem;flex-wrap:wrap;}
+/* syllabary top bar — practice + spelling toggle */
+.syl-top-bar{display:grid;grid-template-columns:1fr 2fr;gap:1rem;padding:.9rem 1.35rem .5rem;align-items:start;}
+@media(max-width:540px){.syl-top-bar{grid-template-columns:1fr;}}
+.syl-practice-col{}
+.syl-orth-col{}
+.orth-pills{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.1rem;}
 .orth-pill{padding:.3rem .75rem;border-radius:17px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.8rem;color:var(--ew);cursor:pointer;transition:all .13s;min-height:32px;}
 .orth-pill:hover{border-color:var(--clay);color:var(--clay);}
 .orth-pill.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
-.orth-note{font-size:.72rem;color:var(--ew);font-style:italic;padding:0 1.35rem .4rem;line-height:1.5;}
+.orth-note{font-size:.72rem;color:var(--ew);font-style:italic;line-height:1.5;}
 
 /* syllabary practice */
 .sp-section{padding:.9rem 1.35rem .3rem;}
@@ -351,6 +353,20 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .spex-audio-icon{font-size:2.5rem;display:block;margin-bottom:.5rem;opacity:.4;}
 .spex-audio-label{font-size:.88rem;color:var(--ew);font-style:italic;line-height:1.55;}
 .spex-audio-ph{display:inline-block;margin-top:.65rem;padding:.38rem .9rem;border-radius:20px;background:var(--smoke);color:var(--em);font-size:.78rem;font-family:'Crimson Pro',serif;}
+
+/* phrases */
+.ph-card{background:white;border:1px solid var(--smoke);border-radius:13px;padding:.88rem 1rem;margin-bottom:.52rem;cursor:pointer;transition:border-color .13s,box-shadow .13s;box-shadow:0 1px 5px rgba(44,24,16,.05);}
+.ph-card:hover{border-color:var(--clay);box-shadow:0 4px 12px rgba(44,24,16,.09);}
+.ph-card:focus-visible{outline:3px solid var(--sky);outline-offset:2px;}
+.ph-target{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);margin-bottom:.2rem;line-height:1.35;}
+.ph-english{font-size:.85rem;color:var(--ew);font-style:italic;}
+.ph-notes{font-size:.78rem;color:var(--em);margin-top:.42rem;line-height:1.55;border-top:1px solid var(--smoke);padding-top:.42rem;display:none;}
+.ph-card.open .ph-notes{display:block;}
+.ph-scenario-tag{font-size:.68rem;color:var(--ew);background:var(--birch);padding:.15rem .5rem;border-radius:10px;margin-top:.32rem;display:inline-block;}
+.ph-scen-btn{padding:.28rem .72rem;border-radius:17px;border:1.5px solid var(--smoke);background:white;font-family:'Crimson Pro',serif;font-size:.8rem;color:var(--ew);cursor:pointer;transition:all .13s;min-height:32px;}
+.ph-scen-btn:hover{border-color:var(--clay);color:var(--clay);}
+.ph-scen-btn.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.ph-section-head{font-family:'Playfair Display',serif;font-size:.92rem;color:var(--em);margin:1rem 0 .45rem;padding-bottom:.22rem;border-bottom:1px solid var(--smoke);}
 
 /* resources */
 .rsec{padding:.8rem 1.35rem .18rem;}
@@ -412,7 +428,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="lbox">
     <div class="lhero">
       <span class="em">🌿</span>
-      <h1>Kanien'kéha<br><em>Kanehsatà:ke Dialect</em></h1>
+      <h1>Tsyatenron<br><em>Kanien'kéha Learning Companion</em></h1>
       <p>Sign in to continue your journey</p>
     </div>
     <div class="lbody">
@@ -444,7 +460,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div class="hhero">
       <button onclick="doLogout()" class="btn-signout">Sign Out</button>
       <span class="hi">🌿</span>
-      <h1>Kanien'kéha<br><em>Kanehsatà:ke</em></h1>
+      <h1>Tsyatenron<br><em>Kanien'kéha Learning Companion</em></h1>
       <p>Carry the language forward, one word at a time</p>
     </div>
     <div class="hbody">
@@ -542,33 +558,28 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <div id="syllabary" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanehsatà:ke phonology</p></div>
+    <div class="sh"><h2>Sounds &amp; Syllables</h2><p>Kanien'kéha phonology</p></div>
 
-    <!-- Practice -->
-    <div class="sp-section">
-      <div class="sp-title">Practice</div>
-      <p style="font-size:.85rem;color:var(--ew);margin-bottom:.75rem;line-height:1.6;">Choose a spelling system to begin a randomised practice session across all sounds.</p>
-      <div style="display:flex;flex-direction:column;gap:.5rem;" id="sp-btns">
-        <button class="sbtn dark" style="font-size:.95rem;" onclick="startSylPracticeAll('standard')">Practice — Standard (1993)</button>
-        <button class="sbtn dark" style="font-size:.95rem;background:var(--em);" onclick="startSylPracticeAll('eastern')">Practice — East</button>
-        <button class="sbtn dark" style="font-size:.95rem;background:var(--ew);" onclick="startSylPracticeAll('ohsweken')">Practice — Ohswéken</button>
+    <!-- Practice + orthography toggle: consolidated bar -->
+    <div class="syl-top-bar">
+      <div class="syl-practice-col">
+        <div class="sp-title">Practice</div>
+        <p style="font-size:.82rem;color:var(--ew);margin:.3rem 0 .7rem;line-height:1.55;">8 randomised activities across all sounds in the active spelling system</p>
+        <button class="sbtn dark" style="width:100%;font-size:.95rem;" onclick="startSylPracticeAll(SYL_ORTH)">Begin practice</button>
+        <div id="sp-prof-summary" style="margin-top:.7rem;font-size:.78rem;color:var(--ew);font-style:italic;"></div>
       </div>
-      <div id="sp-prof-summary" style="margin-top:.85rem;font-size:.8rem;color:var(--ew);font-style:italic;"></div>
+      <div class="syl-orth-col">
+        <div class="sp-title">Spelling system</div>
+        <div class="orth-pills" role="group" aria-label="Spelling system">
+          <button class="orth-pill active" onclick="setOrth('kanehsatake',this)" aria-pressed="true">Kanehsatà:ke</button>
+          <button class="orth-pill" onclick="setOrth('sixnations',this)" aria-pressed="false">Six Nations</button>
+        </div>
+        <div class="orth-note" id="orth-note" style="padding:0;margin-top:.5rem;">Kanehsatà:ke — orthography used in this course. Uses í (not y), ę/ǫ for nasal vowels, and accent marks for stress and falling tone.</div>
+      </div>
     </div>
 
-    <div class="stip"><strong>A note on dialect:</strong> This guide reflects the <strong>Kanehsatà:ke dialect</strong> (oldest spoken Mohawk dialect). Other communities use different but equally valid forms — (e.g., Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations/Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>). No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
+    <div class="stip"><strong>A note on dialect:</strong> This course is built on the <strong>Kanehsatà:ke dialect</strong>, home of some of the oldest living speakers of Kanien'kéha. Other communities use equally valid forms (e.g., Akwesasne uses <strong>l</strong> where Kanehsatà:ke uses <strong>r</strong>; Six Nations and Tyendinaga use <strong>y</strong> where Kanehsatà:ke uses <strong>i</strong>). No dialect is more "correct" than another. <a href="#" onclick="openModal('dialects')" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Learn more about dialect variation ↗</a></div>
     <div class="stip" style="margin-top:.5rem;"><strong>🔊 Audio note:</strong> The play buttons below use your device's text-to-speech engine to approximate each sound. No browser currently has a Kanien'kéha voice — these clips use carefully chosen phonetic approximations as a starting guide only (e.g., the long vowel a: is approximated as "aaah"). Always prioritise audio from community speakers at <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">kanehsatakevoices.com ↗</a> and <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">FirstVoices ↗</a>.</div>
-
-    <!-- Orthography toggle -->
-    <div class="orth-wrap" role="group" aria-label="Spelling system">
-      <span class="orth-label">Spelling system:</span>
-      <div class="orth-pills">
-        <button class="orth-pill active" onclick="setOrth('standard',this)" aria-pressed="true">Standard (1993)</button>
-        <button class="orth-pill" onclick="setOrth('eastern',this)" aria-pressed="false">East</button>
-        <button class="orth-pill" onclick="setOrth('ohsweken',this)" aria-pressed="false">Ohswéken</button>
-      </div>
-    </div>
-    <div class="orth-note" id="orth-note">Standard — 1993 consensus orthography used across all six Mohawk communities.</div>
 
     <!-- Stacked sound sections -->
     <div id="syl-all-sections"></div>
@@ -639,6 +650,39 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   </div>
 </div>
 
+<!-- PHRASES -->
+<div id="phrases" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh">
+      <h2>Phrases</h2>
+      <p>Common expressions and conversation starters</p>
+    </div>
+
+    <div class="stip">
+      <strong>About this section:</strong> These phrases come from the Kanehsatà:ke dialect and the eCampusOntario OER (Six Nations Polytechnic, CC BY 4.0). Tap any phrase to see pronunciation notes. This section will grow into a conversation companion — for now it serves as a reference and practice space.
+    </div>
+
+    <!-- Scenario filter -->
+    <div style="padding:.65rem 1.35rem .2rem;">
+      <div style="font-size:.78rem;color:var(--ew);margin-bottom:.45rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;">Scenario</div>
+      <div id="ph-scenarios" style="display:flex;gap:.3rem;flex-wrap:wrap;"></div>
+    </div>
+
+    <!-- Search -->
+    <div class="gswrap" style="margin:.5rem 1.35rem .2rem;"><span class="gsic">🔍</span><input class="gsearch" id="ph-search" type="text" placeholder="Search phrases or English…" oninput="filterPhrases()" autocorrect="off" autocapitalize="off"></div>
+
+    <!-- Phrase list -->
+    <div id="ph-list" style="padding:.4rem 1.35rem 5rem;"></div>
+
+    <!-- Future conversation companion note -->
+    <div style="margin:0 1.35rem 1rem;padding:.85rem 1rem;background:var(--birch);border-radius:13px;border-left:3px solid var(--sky);">
+      <div style="font-size:.82rem;color:var(--em);font-weight:600;margin-bottom:.25rem;">Coming soon — Conversation companion</div>
+      <div style="font-size:.78rem;color:var(--ew);line-height:1.6;">This space is planned to become an interactive conversation practice area — scenario-based dialogues, guided exchanges, and eventually a way to connect with other learners. <a href="https://www.firstvoices.com/kanienkeha-mohawk-en/phrases" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Browse all phrases on FirstVoices ↗</a></div>
+    </div>
+  </div>
+</div>
+
 <!-- RESOURCES -->
 <div id="resources" class="screen">
   <div class="bm"></div>
@@ -685,6 +729,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni">🏠</span>Journey</button>
   <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni">🔤</span>Sounds</button>
   <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni">📖</span>Words</button>
+  <button class="nb" id="nb-phrases" onclick="navTo('phrases')"><span class="ni">💬</span>Phrases</button>
   <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni">📚</span>Resources</button>
 </nav>
 
@@ -823,6 +868,7 @@ function navTo(id){
   window.scrollTo(0,0);
   if(id==='glossary')renderGloss();
   if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
+  if(id==='phrases')renderPhrases();
 }
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function goHome(){updateHomeUI();navTo('home');}
@@ -885,7 +931,7 @@ function updateHomeUI(){
      Option C — VS Code: install "Live Server" extension, click "Go Live"
    ══════════════════════════════════════════════════════════ */
 
-let VARIANTS={}, GLOSS=[], UNITS=[], SYL={};
+let VARIANTS={}, GLOSS=[], UNITS=[], SYL={}, PHRASES=[];
 
 /* ── FALLBACK DATA (used when running as local file://) ── */
 /* This is a snapshot of the JSON files. If you edit the JSON files,
@@ -900,27 +946,29 @@ async function loadData() {
     GLOSS    = FALLBACK_DATA.glossary || [];
     UNITS    = FALLBACK_DATA.units    || [];
     SYL      = FALLBACK_DATA.syllabary|| {};
+    PHRASES  = FALLBACK_DATA.phrases  || [];
     showLoadingScreen(false);
     return;
   }
   if (isLocalFile) {
-    // No fallback provided — show helpful message
     showLoadingScreen(false);
     showDataError();
     return;
   }
   try {
     const base = location.href.replace(/\/[^\/]*$/, '');
-    const [v, g, u, s] = await Promise.all([
+    const [v, g, u, s, p] = await Promise.all([
       fetch(base + '/data_variants.json').then(r => { if(!r.ok) throw new Error(r.status); return r.json(); }),
       fetch(base + '/data_glossary.json').then(r => { if(!r.ok) throw new Error(r.status); return r.json(); }),
       fetch(base + '/data_units.json').then(r    => { if(!r.ok) throw new Error(r.status); return r.json(); }),
       fetch(base + '/data_syllabary.json').then(r=> { if(!r.ok) throw new Error(r.status); return r.json(); }),
+      fetch(base + '/data_phrases.json').then(r => { if(!r.ok) throw new Error(r.status); return r.json(); }),
     ]);
     VARIANTS = v;
     GLOSS    = g;
     UNITS    = u;
     SYL      = s;
+    PHRASES  = p;
     showLoadingScreen(false);
   } catch(err) {
     console.error('Data load failed:', err);
@@ -1463,12 +1511,15 @@ function filterGloss(){
     return;
   }
 
-  // Sort
+  // Sort — use sortKey if present (e.g. entries beginning with article "a ")
   const sorted=[...matching];
+  const glossSortKey=w=>sortByKanien
+    ? (w.sortKey||w.target).toLowerCase()
+    : w.english.toLowerCase();
   if(sortByKanien){
-    sorted.sort((a,b)=>a.target.toLowerCase().localeCompare(b.target.toLowerCase(),'fr'));
+    sorted.sort((a,b)=>glossSortKey(a).localeCompare(glossSortKey(b),'fr'));
   } else {
-    sorted.sort((a,b)=>a.english.toLowerCase().localeCompare(b.english.toLowerCase(),'en'));
+    sorted.sort((a,b)=>glossSortKey(a).localeCompare(glossSortKey(b),'en'));
   }
 
   // Bucket by first letter — Kanien'kéha mode uses accent-aware ordering
@@ -1577,7 +1628,7 @@ function openModal(wid){
 function openDialectModal(){
   document.getElementById('mword').textContent='Dialect Variation';
   document.getElementById('mmean').textContent='Why all forms are valid';
-  document.getElementById('mnotes').textContent="Kanien'kéha is spoken in six communities across Canada and the US. Each community's speech is equally valid — there is no single 'correct' dialect. The key community-level differences are:\n\n• r/l: Akwesasne uses l where other communities use r (e.g., Lón:kwe vs Rón:kwe)\n• y/i: Six Nations and Tyendinaga (Ontario) use y; Kanehsatà:ke and Kahnawà:ke use i (e.g., ý:se' vs í:se')\n• ts: Kahnawà:ke consistently uses ts as in tsunami; other communities may vary\n• k/t voicing: Tyendinaga voices these consonants differently before some vowels\n\nThis app uses the Kanehsatà:ke orthography as its base, but accepts all major dialect variants as correct answers. Sources: Bonvillain (1984), Pentangelo (2020), native-languages.org, CBC Original Voices.";
+  document.getElementById('mnotes').textContent="Kanien'kéha is spoken in six communities across Canada and the US, each with its own equally valid speech. The key community differences visible in writing are:\n\n• r / l: Akwesasne uses l where other communities use r (e.g., Lón:kwe vs Rón:kwe for 'man')\n• y / i: Six Nations and Tyendinaga use y; Kanehsatà:ke and Kahnawà:ke use i (e.g., yó:ri vs ió:ri for 'it is cooked')\n• k / t voicing: In most dialects k and t sound like g and d before a vowel; Tyendinaga preserves a distinction here\n• ts / tsi: Kahnawà:ke writes ts; Six Nations / Tyendinaga write tsi for the same sound\n\nThis course uses Kanehsatà:ke orthography as its base. The Spelling System toggle on the Sounds page lets you compare Kanehsatà:ke and Six Nations written forms. Sources: CBC Original Voices (2019), Pentangelo (2020), native-languages.org, 1993 Mohawk Language Standardisation Project.";
   document.getElementById('mvars-container').style.display='none';
   document.getElementById('mprofwrap').innerHTML='';
   document.getElementById('mcite').innerHTML=`Sources: <a href="https://www.cbc.ca/newsinteractives/original-voices/kanienkeha" target="_blank" rel="noopener">CBC Original Voices ↗</a> · <a href="https://www.native-languages.org/mohawk_guide.htm" target="_blank" rel="noopener">native-languages.org ↗</a>`;
@@ -1588,12 +1639,11 @@ function closeModal(){document.getElementById('wmodal').classList.remove('open')
 function closeModalOverlay(e){if(e.target===document.getElementById('wmodal'))closeModal();}
 
 /* syllabary reference — stacked sections */
-let SYL_ORTH='standard';
+let SYL_ORTH='kanehsatake';
 
 const ORTH_NOTES={
-  standard:'Standard — 1993 consensus orthography used across all six Mohawk communities.',
-  eastern:'East — Standard orthography as used in eastern (Quebec) communities (e.g., Kanehsatà:ke, Kahnawà:ke). Uses i where Ohswéken uses y.',
-  ohsweken:"Ohswéken — pre-1993 Tyendinaga / Six Nations tradition. Written k and t are pronounced like g and d before vowels (e.g., k sounds like g in gate; t sounds like d in dog before a vowel).",
+  kanehsatake:"Kanehsatà:ke — the orthography this course is built on. Uses í (not y), ę/ǫ for nasal vowels, and acute/grave accent marks for stress and falling tone. Used in Kanehsatà:ke, Kahnawà:ke, Akwesasne, and Wáhta.",
+  sixnations:"Six Nations — the orthography tradition of Six Nations of the Grand River and Tyendinaga. Uses y (not i), en/on for nasal vowels. Written k and t are pronounced like g and d before vowels (e.g., k sounds like g in gate).",
 };
 
 const SYL_SECTION_TITLES={
@@ -1614,8 +1664,16 @@ function setOrth(orth,btn){
 }
 
 function sylDisplay(s){
-  if(s.spellings&&s.spellings[SYL_ORTH]){
-    return{c:s.spellings[SYL_ORTH].c,r:s.spellings[SYL_ORTH].r};
+  // Map UI orth keys to JSON spelling keys
+  // JSON still uses 'standard', 'eastern', 'ohsweken' — map our new names
+  const keyMap={kanehsatake:'standard', sixnations:'ohsweken'};
+  const jsonKey=keyMap[SYL_ORTH]||SYL_ORTH;
+  if(s.spellings&&s.spellings[jsonKey]){
+    return{c:s.spellings[jsonKey].c,r:s.spellings[jsonKey].r};
+  }
+  // Fall back to eastern then standard
+  if(s.spellings&&s.spellings['standard']){
+    return{c:s.spellings['standard'].c,r:s.spellings['standard'].r};
   }
   return{c:s.c,r:s.r};
 }
@@ -1984,7 +2042,7 @@ function finishSylPractice(){
   const allSounds=getSylAll();
   const profs=allSounds.map(s=>getSylProf(s.id)).filter(Boolean);
   const avg=profs.length?Math.round(profs.reduce((a,b)=>a+b.pct,0)/profs.length):0;
-  const orthLabels={standard:'Standard (1993)',eastern:'East',ohsweken:'Ohswéken'};
+  const orthLabels={kanehsatake:'Kanehsatà:ke',sixnations:'Six Nations'};
   const orthLabel=orthLabels[SPEX.orth]||'';
 
   updateSylProfSummary();
@@ -2006,6 +2064,114 @@ function finishSylPractice(){
   document.body.appendChild(note);
 }
 
+/* ══════════════════════════════════════════════════════════
+   PHRASES ENGINE
+   ══════════════════════════════════════════════════════════ */
+
+let PH_SCENARIO='all';
+
+function renderPhrases(){
+  buildScenarioBar();
+  filterPhrases();
+}
+
+function buildScenarioBar(){
+  const bar=document.getElementById('ph-scenarios');
+  if(!bar)return;
+  const scenarios=['all',...new Set(PHRASES.map(p=>p.scenario||'General phrases').filter(Boolean))].sort((a,b)=>a==='all'?-1:b==='all'?1:a.localeCompare(b));
+  bar.innerHTML=scenarios.map(s=>`<button class="ph-scen-btn${PH_SCENARIO===s?' active':''}"
+    onclick="setPhraseScenario('${qs(s)}',this)" aria-pressed="${PH_SCENARIO===s}">${s==='all'?'All scenarios':s}</button>`).join('');
+}
+
+function setPhraseScenario(scenario,btn){
+  PH_SCENARIO=scenario;
+  document.querySelectorAll('.ph-scen-btn').forEach(b=>{
+    b.classList.toggle('active',b===btn);
+    b.setAttribute('aria-pressed',b===btn?'true':'false');
+  });
+  filterPhrases();
+}
+
+function filterPhrases(){
+  const q=(document.getElementById('ph-search')?.value||'').toLowerCase().trim();
+  let list=PHRASES;
+
+  // Scenario filter
+  if(PH_SCENARIO!=='all'){
+    list=list.filter(p=>(p.scenario||'General phrases')===PH_SCENARIO);
+  }
+
+  // Text search
+  if(q){
+    list=list.filter(p=>
+      p.target.toLowerCase().includes(q)||
+      p.english.toLowerCase().includes(q)||
+      (p.notes||'').toLowerCase().includes(q)
+    );
+  }
+
+  renderPhraseList(list);
+}
+
+function renderPhraseList(list){
+  const container=document.getElementById('ph-list');
+  if(!container)return;
+
+  if(!list.length){
+    container.innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No phrases found.</p>';
+    return;
+  }
+
+  // Group by scenario
+  const byScenario={};
+  const scenarioOrder=[];
+  list.forEach(p=>{
+    const s=p.scenario||'General phrases';
+    if(!byScenario[s]){byScenario[s]=[];scenarioOrder.push(s);}
+    byScenario[s].push(p);
+  });
+
+  const showHeadings=PH_SCENARIO==='all'&&scenarioOrder.length>1;
+
+  container.innerHTML=scenarioOrder.map(scenario=>{
+    const entries=byScenario[scenario];
+    const heading=showHeadings?`<div class="ph-section-head">${scenario}</div>`:'';
+    const cards=entries.map(p=>renderPhraseCard(p)).join('');
+    return heading+cards;
+  }).join('');
+}
+
+function renderPhraseCard(p){
+  const notesHtml=p.notes
+    ?`<div class="ph-notes">${p.notes}</div>`:'';
+  const citeHtml=p.cite&&p.cite.text
+    ?`<div style="font-size:.68rem;color:var(--ew);margin-top:.35rem;border-top:1px solid var(--smoke);padding-top:.3rem;">${p.cite.text}</div>`:'';
+  const formsHtml=p.forms&&p.forms.length
+    ?`<div class="ph-notes" style="display:block;">
+        <table style="width:100%;border-collapse:collapse;font-size:.82rem;">
+          ${p.forms.map(f=>`<tr>
+            <td style="padding:.22rem .5rem .22rem 0;color:var(--ew);white-space:nowrap;">${f.label||''}</td>
+            <td style="padding:.22rem 0;font-family:'Playfair Display',serif;color:var(--ed);">${f.form||''}</td>
+            ${f.dialect?`<td style="padding:.22rem 0 .22rem .5rem;color:var(--ew);font-size:.75rem;font-style:italic;">${f.dialect}</td>`:''}
+          </tr>`).join('')}
+        </table>
+      </div>`:notesHtml;
+
+  return`<div class="ph-card" role="button" tabindex="0"
+    aria-label="${p.target}"
+    onclick="togglePhraseCard(this)"
+    onkeydown="if(event.key==='Enter'||event.key===' ')togglePhraseCard(this)">
+    <div class="ph-target">${p.target}</div>
+    <div class="ph-english">${p.english}</div>
+    ${formsHtml}
+    ${citeHtml}
+    <span class="ph-scenario-tag">${p.scenario||'General phrases'}</span>
+  </div>`;
+}
+
+function togglePhraseCard(card){
+  card.classList.toggle('open');
+}
 /* init */
 loadData().then(() => {
   const last=localStorage.getItem(LK);
