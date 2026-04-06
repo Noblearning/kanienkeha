@@ -1185,80 +1185,143 @@ function initDialogue(ex){
 function dlRenderStep(){
   const thread=document.getElementById('dl-thread');
   if(!thread)return;
-  // Rebuild thread up to current step
+
+  // Rebuild history of settled turns
   thread.innerHTML='';
   for(let i=0;i<DL.step;i++){
     const t=DL.turns[i];
     if(t.speaker==='other'){
-      thread.innerHTML+=dlBubbleOther(t);
+      thread.appendChild(dlMakeBubbleOther(t));
     } else {
-      thread.innerHTML+=`<div class="dl-bubble learner"><div class="dl-speaker">You</div><div class="dl-line" style="opacity:.4;font-style:italic;font-size:.88rem;">…</div></div>`;
+      // Answered learner turn — show placeholder (replaced by dlAdvance with real answer)
+      const d=document.createElement('div');
+      d.className='dl-bubble learner';
+      d.innerHTML='<div class="dl-speaker">You</div><div class="dl-line" style="opacity:.4;font-style:italic;font-size:.88rem;">…</div>';
+      thread.appendChild(d);
     }
   }
+
   if(DL.step>=DL.turns.length){dlFinish();return;}
-  const cur=DL.turns[DL.step];
-  if(cur.speaker==='other'){
-    thread.innerHTML+=dlBubbleOther(cur);
-    thread.scrollTop=thread.scrollHeight;
+
+  // Render all consecutive 'other' turns synchronously, stop at first learner turn
+  while(DL.step<DL.turns.length && DL.turns[DL.step].speaker==='other'){
+    thread.appendChild(dlMakeBubbleOther(DL.turns[DL.step]));
     DL.step++;
-    setTimeout(dlRenderStep,420);
-  } else {
-    dlRenderLearnerTurn(cur);
-    thread.scrollTop=thread.scrollHeight;
   }
+  thread.scrollTop=thread.scrollHeight;
+
+  if(DL.step>=DL.turns.length){dlFinish();return;}
+  // Now at a learner turn — render it
+  dlRenderLearnerTurn(DL.turns[DL.step]);
 }
 
-function dlBubbleOther(t){
-  const nameHtml=t.name?`<div class="dl-speaker">${t.name}</div>`:'<div class="dl-speaker">—</div>';
-  const glossHtml=t.gloss?`<div class="dl-gloss">${t.gloss}</div>`:'';
-  const audioHtml=t.audio
-    ?`<button class="dl-audio" aria-label="Play audio" onclick="dlPlayAudio(this,'${qs(t.audio)}')">▶ Listen</button><div class="dl-audio-note">Community speaker recording</div>`
-    :'';
-  return`<div class="dl-bubble other">${nameHtml}<div class="dl-line">${t.line}</div>${glossHtml}${audioHtml}</div>`;
+function dlMakeBubbleOther(t){
+  const wrap=document.createElement('div');
+  wrap.className='dl-bubble other';
+
+  const speaker=document.createElement('div');
+  speaker.className='dl-speaker';
+  speaker.textContent=t.name||'—';
+  wrap.appendChild(speaker);
+
+  const line=document.createElement('div');
+  line.className='dl-line';
+  line.textContent=t.line;
+  wrap.appendChild(line);
+
+  if(t.gloss){
+    const gloss=document.createElement('div');
+    gloss.className='dl-gloss';
+    gloss.textContent=t.gloss;
+    wrap.appendChild(gloss);
+  }
+
+  // Audio button only when a file path is actually provided
+  if(t.audio){
+    const abtn=document.createElement('button');
+    abtn.className='dl-audio';
+    abtn.setAttribute('aria-label','Play audio for: '+t.line);
+    abtn.textContent='▶ Listen';
+    abtn.addEventListener('click',()=>dlPlayAudio(abtn,t.audio));
+    wrap.appendChild(abtn);
+    const anote=document.createElement('div');
+    anote.className='dl-audio-note';
+    anote.textContent='Community speaker recording';
+    wrap.appendChild(anote);
+  }
+  return wrap;
 }
 
 function dlRenderLearnerTurn(t){
   const interact=document.getElementById('dl-interact');
   if(!interact)return;
-  const instr=t.instruction?`<div class="dl-instruction">${t.instruction}</div>`:'';
+  interact.innerHTML='';
+  DL.attempts=0;
+
   const btn=document.getElementById('actbtn');
   btn.textContent='Submit';btn.disabled=true;btn.className='sbtn dark';
-  DL.attempts=0;
-  if(t.mode==='mc'){
-    interact.innerHTML=instr+`<div class="mco">${(t.options||[]).map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="dlPickMC(this,'${qs(o)}','${qs(t.correct)}')">${o}</button>`).join('')}</div>`;
-  } else if(t.mode==='type'){
-    interact.innerHTML=instr+`<input class="tinput" id="dl-tinput" type="text" placeholder="Type in Kanien\'kéha…" oninput="dlOnTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;
+
+  if(t.instruction){
+    const instr=document.createElement('div');
+    instr.className='dl-instruction';
+    instr.textContent=t.instruction;
+    interact.appendChild(instr);
   }
-}
 
-function dlPickMC(btn,chosen,correct){
-  document.querySelectorAll('#dl-interact .mcb').forEach(b=>b.classList.remove('sel'));
-  btn.classList.add('sel');
-  const ab=document.getElementById('actbtn');
-  ab.disabled=false;ab._dlc=chosen;ab._dlr=correct;
-}
+  if(t.mode==='mc'){
+    const wrap=document.createElement('div');
+    wrap.className='mco';
+    (t.options||[]).forEach(opt=>{
+      const b=document.createElement('button');
+      b.className='mcb';
+      b.textContent=opt;
+      b.addEventListener('click',()=>{
+        if(EX.answered)return;
+        wrap.querySelectorAll('.mcb').forEach(x=>x.classList.remove('sel'));
+        b.classList.add('sel');
+        const ab=document.getElementById('actbtn');
+        ab.disabled=false;
+        ab._dlc=opt;
+        ab._dlr=t.correct;
+      });
+      wrap.appendChild(b);
+    });
+    interact.appendChild(wrap);
 
-function dlOnTyped(){
-  const i=document.getElementById('dl-tinput');
-  document.getElementById('actbtn').disabled=!i||!i.value.trim();
+  } else if(t.mode==='type'){
+    const inp=document.createElement('input');
+    inp.className='tinput';
+    inp.id='dl-tinput';
+    inp.type='text';
+    inp.placeholder="Type in Kanien\u2019k\u00e9ha\u2026";
+    inp.autocomplete='off';inp.autocorrect='off';inp.autocapitalize='off';
+    inp.addEventListener('input',()=>{
+      document.getElementById('actbtn').disabled=!inp.value.trim();
+    });
+    interact.appendChild(inp);
+    inp.focus();
+  }
 }
 
 function dlHandleAction(){
   const t=DL.turns[DL.step];
   if(!t||t.speaker!=='learner')return;
+
   if(t.mode==='mc'){
     const ab=document.getElementById('actbtn');
-    const chosen=ab._dlc,correct=ab._dlr;
+    const chosen=ab._dlc, correct=ab._dlr;
+    if(!chosen)return; // nothing selected yet
     const isR=chosen===correct;
     DL.attempts++;
+    const btns=document.querySelectorAll('#dl-interact .mcb');
     if(!isR&&DL.attempts===1){
-      document.querySelectorAll('#dl-interact .mcb').forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
+      btns.forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
       showFB('try','Not quite — please try again.','');
       ab.disabled=true;
       return;
     }
-    document.querySelectorAll('#dl-interact .mcb').forEach(b=>{
-      if(b.dataset.v===correct)b.classList.add('cor');
+    btns.forEach(b=>{
+      if(b.textContent===correct)b.classList.add('cor');
       else if(b.classList.contains('sel'))b.classList.add('wrg');
       b.disabled=true;
     });
@@ -1266,11 +1329,12 @@ function dlHandleAction(){
     if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
     else{if(t.wid)recProf(t.wid,false);}
     showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite.'),'');
-    const btn=document.getElementById('actbtn');
-    btn.textContent='Continue';btn.disabled=false;btn.className=isR?'sbtn succ':'sbtn cont';
+    ab.textContent='Continue';ab.disabled=false;ab.className=isR?'sbtn succ':'sbtn cont';
     EX.answered=true;
-  } else if(t.mode==='type'){
+
+  }else if(t.mode==='type'){
     const el=document.getElementById('dl-tinput');
+    if(!el)return;
     const v=(el.value||'').trim();
     const alts=[t.correct,...(t.alts||[])];
     const isR=alts.some(a=>norm(v)===norm(a));
@@ -1283,8 +1347,8 @@ function dlHandleAction(){
     if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
     else{if(t.wid)recProf(t.wid,false);}
     showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite. The answer is: '+t.correct),'');
-    const btn=document.getElementById('actbtn');
-    btn.textContent='Continue';btn.disabled=false;btn.className=isR?'sbtn succ':'sbtn cont';
+    const ab=document.getElementById('actbtn');
+    ab.textContent='Continue';ab.disabled=false;ab.className=isR?'sbtn succ':'sbtn cont';
     EX.answered=true;
   }
 }
@@ -1292,25 +1356,34 @@ function dlHandleAction(){
 function dlAdvance(){
   const t=DL.turns[DL.step];
   const thread=document.getElementById('dl-thread');
-  // Replace placeholder with real answered bubble
+
+  // Replace the last placeholder with the real answered bubble
   const placeholders=thread.querySelectorAll('.dl-bubble.learner');
   if(placeholders.length)placeholders[placeholders.length-1].remove();
+
+  const ans=document.createElement('div');
+  ans.className='dl-bubble learner';
   let answerText='';
   if(t.mode==='mc'){const ab=document.getElementById('actbtn');answerText=ab._dlc||t.correct;}
-  else if(t.mode==='type'){const el=document.getElementById('dl-tinput');answerText=(el&&el.value)||t.correct;}
-  thread.innerHTML+=`<div class="dl-bubble learner"><div class="dl-speaker">You</div><div class="dl-line">${answerText}</div></div>`;
+  else if(t.mode==='type'){const el=document.getElementById('dl-tinput');answerText=(el&&el.value.trim())||t.correct;}
+  ans.innerHTML=`<div class="dl-speaker">You</div><div class="dl-line">${answerText}</div>`;
+  thread.appendChild(ans);
+
   document.getElementById('dl-interact').innerHTML='';
   document.getElementById('fbbar').className='fb';
   EX.answered=false;
   DL.step++;
-  setTimeout(dlRenderStep,320);
+  dlRenderStep();
 }
 
 function dlFinish(){
   EX.correct+=DL.correct;EX.scoreable+=DL.scoreable;
   const interact=document.getElementById('dl-interact');
   if(DL.ex.closing&&interact){
-    interact.innerHTML=`<div class="dl-closing"><strong>Reflection</strong>${DL.ex.closing}</div>`;
+    const c=document.createElement('div');
+    c.className='dl-closing';
+    c.innerHTML='<strong>Reflection</strong>'+DL.ex.closing;
+    interact.appendChild(c);
   }
   if(DL.ex.dialect_note){
     const vd=document.getElementById('varnotediv');
@@ -1326,10 +1399,10 @@ function dlPlayAudio(btn,src){
   if(DL_AUDIO){DL_AUDIO.pause();DL_AUDIO=null;}
   document.querySelectorAll('.dl-audio').forEach(b=>{b.classList.remove('playing');b.textContent='▶ Listen';});
   const a=new Audio(src);DL_AUDIO=a;
-  btn.classList.add('playing');btn.textContent='▶ Playing…';
+  btn.classList.add('playing');btn.textContent='▶ Playing\u2026';
   a.play().catch(()=>{btn.classList.remove('playing');btn.textContent='▶ Listen';});
   a.onended=()=>{btn.classList.remove('playing');btn.textContent='▶ Listen';DL_AUDIO=null;};
-  a.onerror=()=>{btn.classList.remove('playing');btn.textContent='⚠ Unavailable';btn.disabled=true;};
+  a.onerror=()=>{btn.classList.remove('playing');btn.textContent='\u26a0 Unavailable';btn.disabled=true;};
 }
 
 function pickMC(btn,chosen,correct){
