@@ -191,7 +191,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .rbtn.rp{background:var(--wrg);color:white;}
 .rbtn.rl{background:var(--sage);color:white;}
 .rbtn:disabled{opacity:.38;cursor:not-allowed;}
-.rstatus{text-align:center;font-size:.83rem;color:var(--ew);font-style:italic;min-height:1.35em;}
+.rprog-wrap{display:none;margin:.05rem .5rem .65rem;user-select:none;}
+.rprog-wrap.vis{display:block;}
+.rprog-bar{height:6px;background:var(--smoke);border-radius:10px;overflow:hidden;margin-bottom:.3rem;cursor:pointer;}
+.rprog-fill{height:100%;background:linear-gradient(90deg,var(--sage),var(--clay));border-radius:10px;width:0%;transition:width .1s linear;}
+.rprog-times{display:flex;justify-content:space-between;font-size:.72rem;color:var(--ew);font-family:'Crimson Pro',serif;}
+.rstatus{text-align:center;font-size:.83rem;color:var(--ew);font-style:italic;min-height:1.35em;display:flex;align-items:center;justify-content:center;gap:.4rem;}
+.rec-pulse{width:9px;height:9px;border-radius:50%;background:var(--wrg);display:none;flex-shrink:0;}
+.rec-pulse.on{display:block;animation:rpulse 1s ease-in-out infinite;}
+@keyframes rpulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.7);}}
 .sass{margin-top:.72rem;display:none;}
 .sass.vis{display:block;}
 .sass p{font-size:.88rem;color:var(--ed);margin-bottom:.55rem;text-align:center;}
@@ -1131,7 +1139,7 @@ function rMC(ex){return`<div class="mco">${ex.options.map(o=>`<button class="mcb
 function rMatch(ex){const sh=[...ex.pairs].sort(()=>Math.random()-.5);return`<div class="mgrid"><div class="mcol">${ex.pairs.map((p,i)=>`<div class="mi" data-id="${i}" data-side="L" onclick="pickMatch(this)">${p.target}</div>`).join('')}</div><div class="mcol">${sh.map(p=>{const i=ex.pairs.findIndex(x=>x.english===p.english);return`<div class="mi" data-id="${i}" data-side="R" onclick="pickMatch(this)">${p.english}</div>`;}).join('')}</div></div><div id="mst" style="text-align:center;margin-top:.55rem;font-style:italic;color:var(--ew);font-size:.82rem;">Tap a word on the left, then its match on the right</div>`;}
 function rFill(ex){return`<div class="fbs">${ex.sentence.replace('___',`<input class="fbi" id="fbi" type="text" placeholder="?" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)}</div><p style="font-size:.78rem;color:var(--ew);font-style:italic;">Hint: starts with <strong>${ex.hint}</strong></p>`;}
 function rType(){return`<input class="tinput" id="tinput" type="text" placeholder="Type in Kanien'kéha…" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;}
-function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</span><span class="aphint">${ex.meaning} — ${ex.hint}</span></div><div class="rctrl"><button class="rbtn rs" id="rs" onclick="startRec()">🎙️ Record</button><button class="rbtn rp" id="rp" onclick="stopRec()" disabled>⏹ Stop</button><button class="rbtn rl" id="rl" onclick="playRec()" disabled>▶️ Listen</button></div><div class="rstatus" id="rstatus">Press Record to begin</div><div class="sass" id="sass"><p>How did it sound to you?</p><div class="sbtns"><button class="sab sy" onclick="audioAssess(true)">✓ Felt right</button><button class="sab sn" onclick="audioAssess(false)">Still learning</button></div></div>`;}
+function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</span><span class="aphint">${ex.meaning} — ${ex.hint}</span></div><div class="rctrl"><button class="rbtn rs" id="rs" onclick="startRec()">🎙️ Record</button><button class="rbtn rp" id="rp" onclick="stopRec()" disabled>⏹ Stop</button><button class="rbtn rl" id="rl" onclick="playRec()" disabled>▶️ Listen</button></div><div class="rprog-wrap" id="rprog-wrap"><div class="rprog-bar" onclick="seekRec(event,this)"><div class="rprog-fill" id="rprog-fill"></div></div><div class="rprog-times"><span id="rprog-cur">0:00</span><span id="rprog-dur">0:00</span></div></div><div class="rstatus" id="rstatus"><span class="rec-pulse" id="rec-pulse"></span><span id="rstatus-text">Press Record to begin</span></div><div class="sass" id="sass"><p>How did it sound to you?</p><div class="sbtns"><button class="sab sy" onclick="audioAssess(true)">✓ Felt right</button><button class="sab sn" onclick="audioAssess(false)">Still learning</button></div></div>`;}
 function rStory(ex){return`${ex.word?`<div class="stcard"><span class="sqm">"</span><span class="stword">${ex.word}</span><span class="stmean">${ex.meaning}</span></div>`:''}<p class="stprompt">${ex.storyPrompt}</p><textarea class="starea" id="starea" placeholder="Write your reflection here — stays on your device only…"></textarea>`;}
 function qs(s){return(s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');}
 
@@ -1299,26 +1307,117 @@ function norm(s){return(s||'').toLowerCase().trim().replace(/['']/g,"'").replace
 async function startRec(){
   try{
     const s=await navigator.mediaDevices.getUserMedia({audio:true});
-    EX.chunks=[];EX.mr=new MediaRecorder(s);
-    EX.mr.ondataavailable=e=>{if(e.data.size>0)EX.chunks.push(e.data);};
+    EX.chunks=[];
+    // Prefer formats the browser actually supports for reliable playback
+    const mimeType=['audio/webm;codecs=opus','audio/webm','audio/ogg;codecs=opus','audio/mp4','']
+      .find(t=>t===''||MediaRecorder.isTypeSupported(t));
+    EX.mr=new MediaRecorder(s,mimeType?{mimeType}:{});
+    EX.recMime=EX.mr.mimeType||'audio/webm';
+    EX.mr.ondataavailable=e=>{if(e.data&&e.data.size>0)EX.chunks.push(e.data);};
     EX.mr.onstop=()=>{
-      const b=new Blob(EX.chunks,{type:'audio/webm'});
+      s.getTracks().forEach(t=>t.stop());
+      const b=new Blob(EX.chunks,{type:EX.recMime});
       if(EX.aurl)URL.revokeObjectURL(EX.aurl);
       EX.aurl=URL.createObjectURL(b);
+      EX.audio=new Audio(EX.aurl);
+      // Wire up events now so they're ready before the user presses Listen
+      EX.audio.onloadedmetadata=()=>{
+        setStatus('Saved ✓ — press ▶️ to listen back');
+        updateProgDur(EX.audio.duration);
+      };
+      EX.audio.ontimeupdate=()=>updateProgPos(EX.audio.currentTime,EX.audio.duration);
+      EX.audio.onended=()=>{
+        setStatus('Done — how did it sound?');
+        setPulse(false);
+        updateProgPos(EX.audio.duration,EX.audio.duration);
+        document.getElementById('rl').textContent='▶️ Listen again';
+        document.getElementById('rl').disabled=false;
+        document.getElementById('sass').classList.add('vis');
+      };
+      EX.audio.onerror=()=>setStatus('Playback error — try recording again.');
+      EX.audio.load();
       document.getElementById('rl').disabled=false;
-      document.getElementById('rstatus').textContent='Saved ✓ — press ▶️ to listen';
-      document.getElementById('sass').classList.add('vis');
-      s.getTracks().forEach(t=>t.stop());
+      document.getElementById('rprog-wrap').classList.add('vis');
+      document.getElementById('rec-pulse').classList.remove('on');
     };
-    EX.mr.start();
-    document.getElementById('rs').disabled=true;document.getElementById('rp').disabled=false;
-    document.getElementById('rstatus').textContent='● Recording…';
-    setTimeout(()=>{if(EX.mr&&EX.mr.state==='recording')stopRec();},12000);
-  }catch(e){document.getElementById('rstatus').textContent='Mic access denied — allow microphone access to use this feature.';}
+    EX.mr.start(100); // collect chunks every 100ms for smoother blob
+    document.getElementById('rs').disabled=true;
+    document.getElementById('rp').disabled=false;
+    document.getElementById('rl').disabled=true;
+    setPulse(true);
+    setStatus('Recording…');
+    // Auto-stop safety at 12 s
+    EX.recTimer=setTimeout(()=>{if(EX.mr&&EX.mr.state==='recording')stopRec();},12000);
+  }catch(e){
+    const msg=e.name==='NotAllowedError'
+      ?'Microphone access denied — allow mic access in your browser settings and try again.'
+      :'Microphone not available — check your device settings.';
+    setStatus(msg);
+  }
 }
-function stopRec(){if(EX.mr&&EX.mr.state==='recording'){EX.mr.stop();document.getElementById('rp').disabled=true;}}
-function playRec(){if(!EX.aurl)return;const a=new Audio(EX.aurl);a.play();document.getElementById('rstatus').textContent='▶ Playing…';a.onended=()=>document.getElementById('rstatus').textContent='How did it sound?';}
+
+function stopRec(){
+  clearTimeout(EX.recTimer);
+  if(EX.mr&&EX.mr.state==='recording'){
+    EX.mr.stop();
+    document.getElementById('rp').disabled=true;
+    setStatus('Processing…');
+  }
+}
+
+function playRec(){
+  if(!EX.audio||!EX.aurl)return;
+  // If already playing, restart from beginning
+  EX.audio.pause();
+  EX.audio.currentTime=0;
+  document.getElementById('rl').disabled=true;
+  document.getElementById('rl').textContent='▶️ Playing…';
+  EX.audio.play().catch(err=>{
+    setStatus('Could not play — try recording again.');
+    document.getElementById('rl').disabled=false;
+    document.getElementById('rl').textContent='▶️ Listen';
+  });
+  setStatus('Playing…');
+}
+
+function seekRec(e,bar){
+  if(!EX.audio||!EX.audio.duration)return;
+  const rect=bar.getBoundingClientRect();
+  const frac=Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width));
+  EX.audio.currentTime=frac*EX.audio.duration;
+  if(EX.audio.paused)EX.audio.play().catch(()=>{});
+}
+
+function setStatus(msg){
+  const el=document.getElementById('rstatus-text');
+  if(el)el.textContent=msg;
+}
+
+function setPulse(on){
+  const p=document.getElementById('rec-pulse');
+  if(p)p.classList.toggle('on',on);
+}
+
+function fmtTime(s){
+  if(!isFinite(s)||s<0)return'0:00';
+  const m=Math.floor(s/60),sec=Math.floor(s%60);
+  return m+':'+(sec<10?'0':'')+sec;
+}
+
+function updateProgDur(dur){
+  const el=document.getElementById('rprog-dur');
+  if(el)el.textContent=fmtTime(dur);
+}
+
+function updateProgPos(cur,dur){
+  const fill=document.getElementById('rprog-fill');
+  const curEl=document.getElementById('rprog-cur');
+  if(fill&&isFinite(dur)&&dur>0)fill.style.width=(cur/dur*100)+'%';
+  if(curEl)curEl.textContent=fmtTime(cur);
+}
+
 function audioAssess(good){
+  if(EX.audio){EX.audio.pause();}
   if(EX.current&&EX.current.wid)recProf(EX.current.wid,good);
   document.getElementById('sass').classList.remove('vis');
   showFB('info',good?"You're building the voice of the language":'Every attempt is a seed planted','Speaking practice builds the deepest connection to a living language.');
