@@ -1,0 +1,86 @@
+{
+  "summary": {
+    "total_entries": 1254,
+    "entries_changed": 1254,
+    "entries_flagged_human_review": 6,
+    "unmapped_pos_values": []
+  },
+  "human_review_required": [
+    {
+      "id": "vr06",
+      "reason": "pos='verb — habitual' — no stem class recorded; cannot assign morphological subclass",
+      "original_pos": "verb — habitual"
+    },
+    {
+      "id": "fv001",
+      "reason": "english='weekend' — noun.nature (temporal) but could be particle",
+      "original_pos": "Noun"
+    },
+    {
+      "id": "fv005",
+      "reason": "english='you should write it' — appears to be a verb form, not a noun",
+      "original_pos": "Noun"
+    },
+    {
+      "id": "fv041",
+      "reason": "english='new' — appears to be a particle/qualifier, not a noun",
+      "original_pos": "Noun"
+    },
+    {
+      "id": "fv079",
+      "reason": "pos=Number but adjacent entries suggest possible error in ID sequence",
+      "original_pos": "Number"
+    },
+    {
+      "id": "fv151",
+      "reason": "pos=Food but english='cornet (instrument)' — likely noun.cultural",
+      "original_pos": "Food"
+    }
+  ],
+  "pos_taxonomy": [
+    "noun",
+    "noun.a-class",
+    "noun.animal",
+    "noun.body",
+    "noun.clothing",
+    "noun.colour",
+    "noun.cultural",
+    "noun.food",
+    "noun.household",
+    "noun.ka-class",
+    "noun.kinship",
+    "noun.nature",
+    "noun.o-class",
+    "noun.person",
+    "noun.place",
+    "noun.shape",
+    "noun.tool",
+    "number",
+    "number.ordinal",
+    "particle",
+    "particle.article",
+    "particle.discourse",
+    "particle.locative",
+    "particle.negation",
+    "particle.quality",
+    "particle.question",
+    "particle.temporal",
+    "pronoun",
+    "pronoun.possessive",
+    "proper-noun.clan",
+    "proper-noun.cultural",
+    "proper-noun.identity",
+    "proper-noun.place",
+    "verb",
+    "verb.a-stem",
+    "verb.active",
+    "verb.consonant-stem",
+    "verb.direction",
+    "verb.e-stem-fake",
+    "verb.e-stem-true",
+    "verb.i-stem",
+    "verb.o-stem",
+    "verb.relational",
+    "verb.stative"
+  ]
+}
