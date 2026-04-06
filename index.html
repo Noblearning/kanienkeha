@@ -191,6 +191,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .rbtn.rp{background:var(--wrg);color:white;}
 .rbtn.rl{background:var(--sage);color:white;}
 .rbtn:disabled{opacity:.38;cursor:not-allowed;}
+.rbtn-ic{font-size:.78rem;line-height:1;opacity:.85;}
+.rbtn.rs .rbtn-ic{color:#ffb3a0;}
+.rbtn.rp .rbtn-ic{color:#ffcdd0;}
+.rbtn.rl .rbtn-ic{color:#c8e6c9;}
 .rprog-wrap{display:none;margin:.05rem .5rem .65rem;user-select:none;}
 .rprog-wrap.vis{display:block;}
 .rprog-bar{height:6px;background:var(--smoke);border-radius:10px;overflow:hidden;margin-bottom:.3rem;cursor:pointer;}
@@ -424,6 +428,26 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .mcite{font-size:.78rem;color:var(--sky);margin-top:.5rem;font-style:italic;}
 .mcite a{color:var(--sky);text-decoration:none;border-bottom:1px dashed var(--skyl);}
 .mpad{padding-bottom:2rem;}
+
+/* dialogue */
+.dl-scene{background:linear-gradient(135deg,rgba(46,106,142,.07),rgba(74,110,64,.07));border:1px solid var(--skyl);border-radius:13px;padding:1rem 1.1rem;margin-bottom:1rem;font-size:.9rem;color:var(--ed);line-height:1.65;font-style:italic;}
+.dl-scene strong{font-style:normal;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--sky);display:block;margin-bottom:.3rem;}
+.dl-thread{display:flex;flex-direction:column;gap:.65rem;margin-bottom:.9rem;}
+.dl-bubble{display:flex;flex-direction:column;max-width:88%;}
+.dl-bubble.other{align-self:flex-start;}
+.dl-bubble.learner{align-self:flex-end;align-items:flex-end;}
+.dl-speaker{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ew);margin-bottom:.18rem;padding:0 .42rem;}
+.dl-line{padding:.62rem .88rem;border-radius:14px;font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);line-height:1.4;}
+.dl-bubble.other .dl-line{background:white;border:1px solid var(--smoke);border-radius:14px 14px 14px 4px;}
+.dl-bubble.learner .dl-line{background:var(--birch);border:1px solid var(--sand);border-radius:14px 14px 4px 14px;}
+.dl-gloss{font-size:.74rem;color:var(--ew);font-style:italic;padding:0 .42rem;margin-top:.18rem;}
+.dl-instruction{font-size:.84rem;color:var(--em);margin-bottom:.62rem;line-height:1.5;padding:.55rem .75rem;background:rgba(196,120,74,.07);border-left:3px solid var(--clay);border-radius:0 8px 8px 0;}
+.dl-closing{background:linear-gradient(135deg,rgba(74,110,64,.08),rgba(92,58,30,.05));border:1px solid rgba(74,110,64,.3);border-radius:11px;padding:.82rem 1rem;margin-top:.75rem;font-size:.86rem;color:var(--em);line-height:1.6;font-style:italic;}
+.dl-closing strong{font-style:normal;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--sage);display:block;margin-bottom:.22rem;}
+.dl-audio{display:inline-flex;align-items:center;gap:.28rem;margin-top:.32rem;background:var(--birch);border:1px solid var(--sand);border-radius:20px;padding:.22rem .62rem;font-size:.72rem;color:var(--ew);cursor:pointer;transition:background .13s;font-family:'Crimson Pro',serif;}
+.dl-audio:hover{background:var(--sand);color:var(--ed);}
+.dl-audio.playing{background:var(--clay);color:white;}
+.dl-audio-note{font-size:.68rem;color:var(--ew);font-style:italic;padding:0 .42rem;margin-top:.1rem;}
 
 @media(max-width:380px){.mi{font-size:.78rem;padding:.45rem;}.sgrid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr));}}
 </style>
@@ -1126,22 +1150,187 @@ function renderEx(){
   else if(ex.type==='type')html+=rType();
   else if(ex.type==='audio')html+=rAudio(ex);
   else if(ex.type==='story')html+=rStory(ex);
+  else if(ex.type==='dialogue')html+=rDialogue(ex);
   document.getElementById('exbody').innerHTML=html;
 
   if(ex.type==='audio'||ex.type==='story'){
     btn.textContent=ex.type==='story'?'Continue':'Skip';
     btn.disabled=false;btn.className='sbtn cont';
   }
+  if(ex.type==='dialogue'){initDialogue(ex);}
 }
 
-function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment'}[t]||t;}
+function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment','dialogue':'💬 Conversation'}[t]||t;}
 function rMC(ex){return`<div class="mco">${ex.options.map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="pickMC(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')}</div>`;}
 function rMatch(ex){const sh=[...ex.pairs].sort(()=>Math.random()-.5);return`<div class="mgrid"><div class="mcol">${ex.pairs.map((p,i)=>`<div class="mi" data-id="${i}" data-side="L" onclick="pickMatch(this)">${p.target}</div>`).join('')}</div><div class="mcol">${sh.map(p=>{const i=ex.pairs.findIndex(x=>x.english===p.english);return`<div class="mi" data-id="${i}" data-side="R" onclick="pickMatch(this)">${p.english}</div>`;}).join('')}</div></div><div id="mst" style="text-align:center;margin-top:.55rem;font-style:italic;color:var(--ew);font-size:.82rem;">Tap a word on the left, then its match on the right</div>`;}
 function rFill(ex){return`<div class="fbs">${ex.sentence.replace('___',`<input class="fbi" id="fbi" type="text" placeholder="?" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)}</div><p style="font-size:.78rem;color:var(--ew);font-style:italic;">Hint: starts with <strong>${ex.hint}</strong></p>`;}
 function rType(){return`<input class="tinput" id="tinput" type="text" placeholder="Type in Kanien'kéha…" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;}
-function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</span><span class="aphint">${ex.meaning} — ${ex.hint}</span></div><div class="rctrl"><button class="rbtn rs" id="rs" onclick="startRec()">🎙️ Record</button><button class="rbtn rp" id="rp" onclick="stopRec()" disabled>⏹ Stop</button><button class="rbtn rl" id="rl" onclick="playRec()" disabled>▶️ Listen</button></div><div class="rprog-wrap" id="rprog-wrap"><div class="rprog-bar" onclick="seekRec(event,this)"><div class="rprog-fill" id="rprog-fill"></div></div><div class="rprog-times"><span id="rprog-cur">0:00</span><span id="rprog-dur">0:00</span></div></div><div class="rstatus" id="rstatus"><span class="rec-pulse" id="rec-pulse"></span><span id="rstatus-text">Press Record to begin</span></div><div class="sass" id="sass"><p>How did it sound to you?</p><div class="sbtns"><button class="sab sy" onclick="audioAssess(true)">✓ Felt right</button><button class="sab sn" onclick="audioAssess(false)">Still learning</button></div></div>`;}
+function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</span><span class="aphint">${ex.meaning} — ${ex.hint}</span></div><div class="rctrl"><button class="rbtn rs" id="rs" onclick="startRec()"><span class="rbtn-ic">●</span> Record</button><button class="rbtn rp" id="rp" onclick="stopRec()" disabled><span class="rbtn-ic">■</span> Stop</button><button class="rbtn rl" id="rl" onclick="playRec()" disabled><span class="rbtn-ic">▶</span> Listen</button></div><div class="rprog-wrap" id="rprog-wrap"><div class="rprog-bar" onclick="seekRec(event,this)"><div class="rprog-fill" id="rprog-fill"></div></div><div class="rprog-times"><span id="rprog-cur">0:00</span><span id="rprog-dur">0:00</span></div></div><div class="rstatus" id="rstatus"><span class="rec-pulse" id="rec-pulse"></span><span id="rstatus-text">Press Record to begin</span></div><div class="sass" id="sass"><p>How did it sound to you?</p><div class="sbtns"><button class="sab sy" onclick="audioAssess(true)">✓ Felt right</button><button class="sab sn" onclick="audioAssess(false)">Still learning</button></div></div>`;}
 function rStory(ex){return`${ex.word?`<div class="stcard"><span class="sqm">"</span><span class="stword">${ex.word}</span><span class="stmean">${ex.meaning}</span></div>`:''}<p class="stprompt">${ex.storyPrompt}</p><textarea class="starea" id="starea" placeholder="Write your reflection here — stays on your device only…"></textarea>`;}
-function qs(s){return(s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');}
+
+/* ── DIALOGUE ENGINE ─────────────────────────────────────────── */
+let DL={turns:[],step:0,correct:0,scoreable:0,attempts:0,done:false,ex:null};
+
+function rDialogue(ex){
+  const sceneHtml=ex.scene
+    ?`<div class="dl-scene"><strong>Scene</strong>${ex.scene}</div>`:'';
+  return sceneHtml+`<div class="dl-thread" id="dl-thread"></div><div id="dl-interact"></div>`;
+}
+
+function initDialogue(ex){
+  DL={turns:ex.turns||[],step:0,correct:0,scoreable:0,attempts:0,done:false,ex:ex};
+  dlRenderStep();
+}
+
+function dlRenderStep(){
+  const thread=document.getElementById('dl-thread');
+  if(!thread)return;
+  // Rebuild thread up to current step
+  thread.innerHTML='';
+  for(let i=0;i<DL.step;i++){
+    const t=DL.turns[i];
+    if(t.speaker==='other'){
+      thread.innerHTML+=dlBubbleOther(t);
+    } else {
+      thread.innerHTML+=`<div class="dl-bubble learner"><div class="dl-speaker">You</div><div class="dl-line" style="opacity:.4;font-style:italic;font-size:.88rem;">…</div></div>`;
+    }
+  }
+  if(DL.step>=DL.turns.length){dlFinish();return;}
+  const cur=DL.turns[DL.step];
+  if(cur.speaker==='other'){
+    thread.innerHTML+=dlBubbleOther(cur);
+    thread.scrollTop=thread.scrollHeight;
+    DL.step++;
+    setTimeout(dlRenderStep,420);
+  } else {
+    dlRenderLearnerTurn(cur);
+    thread.scrollTop=thread.scrollHeight;
+  }
+}
+
+function dlBubbleOther(t){
+  const nameHtml=t.name?`<div class="dl-speaker">${t.name}</div>`:'<div class="dl-speaker">—</div>';
+  const glossHtml=t.gloss?`<div class="dl-gloss">${t.gloss}</div>`:'';
+  const audioHtml=t.audio
+    ?`<button class="dl-audio" aria-label="Play audio" onclick="dlPlayAudio(this,'${qs(t.audio)}')">▶ Listen</button><div class="dl-audio-note">Community speaker recording</div>`
+    :'';
+  return`<div class="dl-bubble other">${nameHtml}<div class="dl-line">${t.line}</div>${glossHtml}${audioHtml}</div>`;
+}
+
+function dlRenderLearnerTurn(t){
+  const interact=document.getElementById('dl-interact');
+  if(!interact)return;
+  const instr=t.instruction?`<div class="dl-instruction">${t.instruction}</div>`:'';
+  const btn=document.getElementById('actbtn');
+  btn.textContent='Submit';btn.disabled=true;btn.className='sbtn dark';
+  DL.attempts=0;
+  if(t.mode==='mc'){
+    interact.innerHTML=instr+`<div class="mco">${(t.options||[]).map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="dlPickMC(this,'${qs(o)}','${qs(t.correct)}')">${o}</button>`).join('')}</div>`;
+  } else if(t.mode==='type'){
+    interact.innerHTML=instr+`<input class="tinput" id="dl-tinput" type="text" placeholder="Type in Kanien\'kéha…" oninput="dlOnTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;
+  }
+}
+
+function dlPickMC(btn,chosen,correct){
+  document.querySelectorAll('#dl-interact .mcb').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+  const ab=document.getElementById('actbtn');
+  ab.disabled=false;ab._dlc=chosen;ab._dlr=correct;
+}
+
+function dlOnTyped(){
+  const i=document.getElementById('dl-tinput');
+  document.getElementById('actbtn').disabled=!i||!i.value.trim();
+}
+
+function dlHandleAction(){
+  const t=DL.turns[DL.step];
+  if(!t||t.speaker!=='learner')return;
+  if(t.mode==='mc'){
+    const ab=document.getElementById('actbtn');
+    const chosen=ab._dlc,correct=ab._dlr;
+    const isR=chosen===correct;
+    DL.attempts++;
+    if(!isR&&DL.attempts===1){
+      document.querySelectorAll('#dl-interact .mcb').forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
+      showFB('try','Not quite — please try again.','');
+      ab.disabled=true;
+      return;
+    }
+    document.querySelectorAll('#dl-interact .mcb').forEach(b=>{
+      if(b.dataset.v===correct)b.classList.add('cor');
+      else if(b.classList.contains('sel'))b.classList.add('wrg');
+      b.disabled=true;
+    });
+    DL.scoreable++;
+    if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
+    else{if(t.wid)recProf(t.wid,false);}
+    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite.'),'');
+    const btn=document.getElementById('actbtn');
+    btn.textContent='Continue';btn.disabled=false;btn.className=isR?'sbtn succ':'sbtn cont';
+    EX.answered=true;
+  } else if(t.mode==='type'){
+    const el=document.getElementById('dl-tinput');
+    const v=(el.value||'').trim();
+    const alts=[t.correct,...(t.alts||[])];
+    const isR=alts.some(a=>norm(v)===norm(a));
+    DL.attempts++;
+    if(!isR&&DL.attempts===1){
+      el.value='';showFB('try','Incorrect — please try again.','');el.focus();return;
+    }
+    el.classList.add(isR?'cor':'wrg');el.disabled=true;
+    DL.scoreable++;
+    if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
+    else{if(t.wid)recProf(t.wid,false);}
+    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite. The answer is: '+t.correct),'');
+    const btn=document.getElementById('actbtn');
+    btn.textContent='Continue';btn.disabled=false;btn.className=isR?'sbtn succ':'sbtn cont';
+    EX.answered=true;
+  }
+}
+
+function dlAdvance(){
+  const t=DL.turns[DL.step];
+  const thread=document.getElementById('dl-thread');
+  // Replace placeholder with real answered bubble
+  const placeholders=thread.querySelectorAll('.dl-bubble.learner');
+  if(placeholders.length)placeholders[placeholders.length-1].remove();
+  let answerText='';
+  if(t.mode==='mc'){const ab=document.getElementById('actbtn');answerText=ab._dlc||t.correct;}
+  else if(t.mode==='type'){const el=document.getElementById('dl-tinput');answerText=(el&&el.value)||t.correct;}
+  thread.innerHTML+=`<div class="dl-bubble learner"><div class="dl-speaker">You</div><div class="dl-line">${answerText}</div></div>`;
+  document.getElementById('dl-interact').innerHTML='';
+  document.getElementById('fbbar').className='fb';
+  EX.answered=false;
+  DL.step++;
+  setTimeout(dlRenderStep,320);
+}
+
+function dlFinish(){
+  EX.correct+=DL.correct;EX.scoreable+=DL.scoreable;
+  const interact=document.getElementById('dl-interact');
+  if(DL.ex.closing&&interact){
+    interact.innerHTML=`<div class="dl-closing"><strong>Reflection</strong>${DL.ex.closing}</div>`;
+  }
+  if(DL.ex.dialect_note){
+    const vd=document.getElementById('varnotediv');
+    if(vd)vd.innerHTML=`<div class="var-note"><strong>Dialect note</strong>${DL.ex.dialect_note}</div>`;
+  }
+  DL.done=true;EX.answered=true;
+  const btn=document.getElementById('actbtn');
+  btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
+}
+
+let DL_AUDIO=null;
+function dlPlayAudio(btn,src){
+  if(DL_AUDIO){DL_AUDIO.pause();DL_AUDIO=null;}
+  document.querySelectorAll('.dl-audio').forEach(b=>{b.classList.remove('playing');b.textContent='▶ Listen';});
+  const a=new Audio(src);DL_AUDIO=a;
+  btn.classList.add('playing');btn.textContent='▶ Playing…';
+  a.play().catch(()=>{btn.classList.remove('playing');btn.textContent='▶ Listen';});
+  a.onended=()=>{btn.classList.remove('playing');btn.textContent='▶ Listen';DL_AUDIO=null;};
+  a.onerror=()=>{btn.classList.remove('playing');btn.textContent='⚠ Unavailable';btn.disabled=true;};
+}
 
 function pickMC(btn,chosen,correct){
   if(EX.answered)return;
@@ -1191,6 +1380,12 @@ function onTyped(){const i=document.getElementById('fbi')||document.getElementBy
 
 function handleAction(){
   const ex=EX.current;
+  if(ex.type==='dialogue'){
+    if(DL.done){advance();return;}
+    if(EX.answered){dlAdvance();return;}
+    dlHandleAction();
+    return;
+  }
   if(EX.answered){advance();return;}
   if(ex.type==='mc'){
     const ab=document.getElementById('actbtn');
@@ -1330,7 +1525,7 @@ async function startRec(){
         setStatus('Done — how did it sound?');
         setPulse(false);
         updateProgPos(EX.audio.duration,EX.audio.duration);
-        document.getElementById('rl').textContent='▶️ Listen again';
+        document.getElementById('rl').innerHTML='<span class="rbtn-ic">▶</span> Listen again';
         document.getElementById('rl').disabled=false;
         document.getElementById('sass').classList.add('vis');
       };
