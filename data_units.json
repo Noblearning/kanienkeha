@@ -1265,75 +1265,96 @@
             "id": "dl_u0l7_01",
             "prompt": "A community gathering",
             "sub": "Use what you know",
-            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman beside him. Listen to the exchange and respond correctly.",
+            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman standing beside him, then turns and asks you a question.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
                 "line": "Shé:kon.",
-                "gloss": "Hello / Greetings"
+                "gloss": "Greetings."
               },
               {
                 "speaker": "learner",
-                "instruction": "How do you greet him back?",
+                "instruction": "Greet him back.",
                 "mode": "mc",
                 "options": [
                   "Shé:kon.",
-                  "Ka' wáhse'?",
-                  "akaónha.",
-                  "aónha."
+                  "Niawenhkó:wa.",
+                  "Tho niioht.",
+                  "Onen'."
                 ],
                 "correct": "Shé:kon.",
-                "cm": "Tho niioht! Shé:kon — you return the greeting.",
-                "wm": "Shé:kon is the greeting form here. The other options are a question or pronouns, not greetings."
+                "cm": "Tho niioht! Shé:kon is the standard greeting — you return it in kind.",
+                "wm": "When someone greets you with Shé:kon, you return the same greeting."
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Akaónha — Akokstén:ha.",
-                "gloss": "She — the elder woman (he indicates the woman beside him, using the respectful pronoun)"
+                "line": "Shé:kon. Akaónha tsi ionkwarihó:ten — Akokstén:ha.",
+                "gloss": "Greetings. She is known to us — she is an elder woman."
               },
               {
                 "speaker": "learner",
-                "instruction": "He has just introduced an elder woman. Which pronoun do you use when speaking about her?",
+                "instruction": "He is speaking about the elder woman beside him. How do you refer to her to your cousin?",
                 "mode": "mc",
                 "options": [
-                  "akaónha",
-                  "aónha",
-                  "raónha",
-                  "í:se'"
+                  "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                  "Aónha kanónhsa tsi ionkwarihó:ten.",
+                  "Raónha kanónhsa tsi ionkwarihó:ten.",
+                  "Í:se' kanónhsa tsi ionkwarihó:ten."
                 ],
-                "correct": "akaónha",
-                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. Using aónha would be grammatically incorrect here.",
-                "wm": "This is an elder woman. Which pronoun encodes respect in Kanien'kéha grammar?"
+                "correct": "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. aónha would be grammatically wrong here.",
+                "wm": "She is an elder woman — which pronoun encodes respect for a woman of her standing?"
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Í:se' — Ka' wáhse'?",
-                "gloss": "You — where are you going? (he turns and asks you directly)"
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "He is speaking to you (singular) directly. Which pronoun did he use for 'you'?",
+                "instruction": "Tell him where you are going — to your grandmother's house.",
                 "mode": "mc",
                 "options": [
-                  "í:se'",
-                  "í:'i",
-                  "raónha",
-                  "akaónha"
+                  "Aksótha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke.",
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ka' nontáhse'?"
                 ],
-                "correct": "í:se'",
-                "cm": "Niawenhkó:wa! í:se' — you (singular). He is addressing only you. In Ontario dialects this appears as ý:se' — both are correct.",
-                "wm": "The singular 'you' is what he used here. Remember the singular/dual/plural distinction."
+                "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
+                "cm": "Niawenhkó:wa! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. wà:ke marks going; nontà:ke marks coming from.",
+                "wm": "You are going — which verb is for going, not coming from? And whose house are you going to?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rokstén:ha",
+                "line": "Tho niioht. Aksótha — akaónha ká:tiens kanónhsa.",
+                "gloss": "I see. Your grandmother — she is sitting at home."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He has told you your grandmother is home. Take your leave.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Tho niioht. Ka' wáhse'?",
+                  "Én. í:'i."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! Thank you — and then Onen', meaning 'now' or 'that's it for now.' A natural way to close a conversation.",
+                "wm": "You want to thank him and say goodbye. Niawenhkó:wa is thank you; Onen' closes the exchange."
               }
             ],
-            "closing": "You navigated a real exchange. You heard akaónha used correctly for an elder woman, and you know that choosing the wrong pronoun is not just impolite — in Kanien'kéha, it is grammatically wrong.",
-            "dialect_note": "In Akwesasne dialect, raónha becomes laónha — both are correct and both are accepted.",
+            "closing": "You moved through a real community exchange — greeting, recognising an elder, and saying where you are going. The pronoun akaónha is not optional here. The language requires you to see who she is before you can speak about her.",
+            "dialect_note": "In Akwesasne, raónha becomes laónha and Rokstén:ha becomes Lokstén:ha. All community forms are accepted.",
             "wids_tested": [
               "p01",
               "p03",
-              "p05"
+              "dv01",
+              "dv02"
             ]
           }
         ]
@@ -1508,70 +1529,89 @@
             "id": "dl_u0_review_01",
             "prompt": "At your grandmother's door",
             "sub": "Three conversations at once",
-            "scene": "You arrive at your grandmother's house. Two women are sitting on the step — an elder woman and a younger woman you know. Your grandmother calls to you from inside. Slow down and listen to who is speaking to whom.",
+            "scene": "You arrive at your grandmother's house. Two women are sitting on the step. Your grandmother calls from inside. Three people want to speak with you.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Aksótha (from inside)",
-                "line": "Shé:kon! í:se'?",
-                "gloss": "Greetings — is that you (singular)?"
+                "line": "Shé:kon! Í:se' kí:'",
+                "gloss": "Greetings! Is that you?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking if it is you — just you, alone. How do you confirm?",
+                "instruction": "Confirm it's you — just you, alone.",
                 "mode": "mc",
                 "options": [
-                  "í:'i.",
-                  "teiakeniiáhshe.",
-                  "iakwakwé:kon.",
-                  "raónha."
+                  "Ó:nen, í:'i.",
+                  "Ó:nen, teiakeniiáhshe.",
+                  "Ó:nen, iakwakwé:kon.",
+                  "Ó:nen, raónha."
                 ],
-                "correct": "í:'i.",
-                "cm": "Tho niioht! í:'i — I / me. You are alone at the door, so the singular first person is correct. In Ontario dialects this may appear as ý:'i.",
-                "wm": "Your grandmother is asking about you alone. Which is the singular first-person pronoun?"
+                "correct": "Ó:nen, í:'i.",
+                "cm": "Tho niioht! í:'i — I, me. You are alone at the door. In Ontario dialects this appears as ý:'i — both accepted.",
+                "wm": "You are alone. Which pronoun means 'I' — just you, singular?"
               },
               {
                 "speaker": "other",
-                "name": "The younger woman on the step",
-                "line": "Shé:kon. Teiakeniiáhshe — wà:ke.",
-                "gloss": "Greetings. You and I — I am going (she invites you to walk with her)"
+                "name": "Younger woman on the step",
+                "line": "Shé:kon. Teiakeniiáhshe wà:ke — í:se' wáhse' nahe'?",
+                "gloss": "Greetings. You and I are going — are you coming along?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She said teiakeniiáhshe — you and I. What kind of pronoun is this?",
+                "instruction": "She wants you both to go somewhere together. Agree — say 'you and I, yes.'",
                 "mode": "mc",
                 "options": [
-                  "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                  "Exclusive plural — she means a group that does not include you",
-                  "Singular — she means only herself",
-                  "Formal plural — used for large groups"
+                  "Én, teiakeniiáhshe.",
+                  "Én, iakwakwé:kon.",
+                  "Én, í:'i.",
+                  "Én, raónha."
                 ],
-                "correct": "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe is the inclusive dual — you and I, together. She is drawing you into the 'we'. This is the same distinction you studied in Lesson 6.",
-                "wm": "teiakeniiáhshe means 'you and I' — is the person you're talking to inside or outside the 'we'?"
+                "correct": "Én, teiakeniiáhshe.",
+                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe — you and I, the inclusive dual. She invited you in, and you accepted with the same pronoun.",
+                "wm": "She used teiakeniiáhshe — you and I, two people together. Which pronoun matches that?"
               },
               {
                 "speaker": "other",
-                "name": "The elder woman on the step",
-                "line": "Shé:kon. Ka' wáhse'?",
-                "gloss": "Greetings. Where are you going?"
+                "name": "Elder woman on the step",
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking where you are going. Type the Kanien'kéha answer: 'I am going (there).'",
+                "instruction": "Tell her where you are going.",
                 "mode": "type",
                 "correct": "wà:ke",
                 "alts": [
                   "wa:ke",
-                  "wake",
-                  "wà:ke'"
+                  "wake"
                 ],
-                "cm": "Niawenhkó:wa! wà:ke — I am going. You connected the question to its answer.",
-                "wm": "The answer to Ka' wáhse' is a direction verb meaning 'I am going'. It starts with w — try: wà:ke"
+                "cm": "Niawenhkó:wa! wà:ke — I am going. Short, complete, correct.",
+                "wm": "The verb 'I am going' — it starts with w. Try: wà:ke"
+              },
+              {
+                "speaker": "other",
+                "name": "Elder woman on the step",
+                "line": "Tho niioht. Niawenhkó:wa, í:se'.",
+                "gloss": "I see. Thank you — take care."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Thank her in return.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa, akaónha.",
+                  "Niawenhkó:wa, aónha.",
+                  "Ka' wáhse', akaónha?",
+                  "Shé:kon, akaónha."
+                ],
+                "correct": "Niawenhkó:wa, akaónha.",
+                "cm": "Io'nikonhraién:ta'ne! Niawenhkó:wa — thank you. And akaónha, the respectful address, because she is an elder woman. The grammar of respect holds even in a single closing line.",
+                "wm": "Thank her — and remember which pronoun an elder woman requires."
               }
             ],
-            "closing": "You held three conversations at once — singular, dual, and plural all visible in one scene. The pronoun system is not a list. It is a map of who is here, and who belongs to whom.",
-            "dialect_note": "In Akwesasne, í:'i and raónha become í:'i and laónha respectively. Both are accepted.",
+            "closing": "Singular, dual, and plural all appeared in one scene. The pronoun system is not a list to memorise — it is a map of who is here, and who belongs to whom.",
+            "dialect_note": "In Akwesasne: í:'i stays the same. raónha becomes laónha. All are accepted.",
             "wids_tested": [
               "p02",
               "p07",
@@ -2123,7 +2163,7 @@
             "id": "dl_u1l2_01",
             "prompt": "Walking through the community",
             "sub": "A morning exchange",
-            "scene": "You are walking through the community on a quiet morning. A neighbour you know well stops to talk. The conversation moves naturally — where you are going, where they came from, where someone else went yesterday.",
+            "scene": "You are walking through the community on a quiet morning. A neighbour stops to talk. The conversation moves through where you are going, where they came from, and where someone else went yesterday.",
             "turns": [
               {
                 "speaker": "other",
@@ -2133,47 +2173,47 @@
               },
               {
                 "speaker": "learner",
-                "instruction": "You are going to your grandmother's house. Choose the correct response.",
+                "instruction": "You are going to your grandmother's house. Tell them.",
                 "mode": "mc",
                 "options": [
                   "Aksótha tsi tiakonónhsote' wà:ke.",
-                  "Ka' nontáhse'?",
-                  "Iè:ke'skwe'.",
-                  "Rake'níha tsi thonónhsote' wà:ke."
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ake'nisténha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke."
                 ],
                 "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
-                "cm": "Tho niioht! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. Aksótha = my grandmother; tsi tiakonónhsote' = her house; wà:ke = I am going.",
-                "wm": "You are going to your grandmother's. Which answer uses wà:ke with the right destination?"
+                "cm": "Tho niioht! Aksótha = my grandmother; wà:ke = I am going. nontà:ke would mean coming from, not going to.",
+                "wm": "You are going — not coming from. And it is your grandmother's house, not your grandfather's or mother's."
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Tho niioht. í:'i — Raksótha tsi thonónhsote' non nontà:ke.",
+                "line": "Tho niioht. Í:'i, Raksótha tsi thonónhsote' non nontà:ke.",
                 "gloss": "I see. I — I came from my grandfather's house."
               },
               {
                 "speaker": "learner",
-                "instruction": "Your neighbour said they came from their grandfather's house. What is the Kanien'kéha word for 'my grandfather' in the sentence they used?",
+                "instruction": "They came from their grandfather's house. Say the Kanien'kéha word for 'my grandfather.'",
                 "mode": "mc",
                 "options": [
                   "Raksótha",
                   "Aksótha",
-                  "Rake'níha",
-                  "Rokstén:ha"
+                  "Rake'sótha",
+                  "Rake'níha"
                 ],
                 "correct": "Raksótha",
-                "cm": "Niawenhkó:wa! Raksótha — my grandfather. Compare Aksótha (my grandmother): the ra- marks male possession in elder kin terms. Same -sótha root, different prefix.",
-                "wm": "They came from their grandfather's, not grandmother's. The ra- prefix marks male."
+                "cm": "Niawenhkó:wa! Raksótha — my grandfather, used in a sentence. Compare Aksótha (my grandmother) — same -sótha root, ra- marks male.",
+                "wm": "The ra- prefix marks male elder kin. Aksótha is grandmother. Which form has ra-?"
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Rake'níha — Ka' iéhse'skwe'?",
-                "gloss": "Your father — where did he go?"
+                "line": "Ka' iéhse'skwe' rake'níha?",
+                "gloss": "Where did your father go?"
               },
               {
                 "speaker": "learner",
-                "instruction": "They asked where your father went. Type the question they used: 'Where did (someone) go?'",
+                "instruction": "Type the question they just asked: 'Where did (someone) go?'",
                 "mode": "type",
                 "correct": "Ka' iéhse'skwe'",
                 "alts": [
@@ -2182,12 +2222,12 @@
                   "ka' iehse'skwe'",
                   "Ka iehseskwe"
                 ],
-                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense. Compare Ka' wáhse' (present) and Ka' nontáhse' (where did you come from).",
-                "wm": "This is the past-tense direction question. It starts with Ka' and ends in -skwe'. Try: Ka' iéhse'skwe'"
+                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense.",
+                "wm": "The past-tense direction question — starts with Ka' and ends with -skwe'. Try: Ka' iéhse'skwe'"
               },
               {
                 "speaker": "learner",
-                "instruction": "Your father went to your grandfather's house. Type the first-person past answer: 'I went (there).'",
+                "instruction": "Your father went to your grandfather's house. Type: 'I went (there).'",
                 "mode": "type",
                 "correct": "iè:ke'skwe'",
                 "alts": [
@@ -2196,12 +2236,32 @@
                   "iéke'skwe'",
                   "iekeskwe"
                 ],
-                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. The same -skwe' suffix marks the past in the answer as in the question. You now have all three direction verb pairs.",
-                "wm": "This is the past-tense answer to Ka' iéhse'skwe'. It shares the -skwe' suffix. Try: iè:ke'skwe'"
+                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. Same -skwe' suffix as the question. All three direction pairs complete: wà:ke / nontà:ke / iè:ke'skwe'.",
+                "wm": "The past-tense answer — shares the -skwe' suffix with the question. Try: iè:ke'skwe'"
+              },
+              {
+                "speaker": "other",
+                "name": "Neighbour",
+                "line": "Tho niioht. Raksótha tsi thonónhsote' wà:ke ó:nen.",
+                "gloss": "I see. I'm going to my grandfather's house now."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He is leaving. Say goodbye — type the Kanien'kéha word for 'now / that's all.'",
+                "mode": "type",
+                "correct": "Onen'",
+                "alts": [
+                  "onen'",
+                  "Onen'",
+                  "onen",
+                  "Onen"
+                ],
+                "cm": "Tho niioht! Onen' — now, that's all, goodbye for now. A simple and complete closing.",
+                "wm": "The word that closes a Kanien'kéha conversation — short, two syllables. Try: Onen'"
               }
             ],
-            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. In Kanien'kéha, where you go and who you go to are not separate. The language holds them together.",
-            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation here.",
+            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. Where you go and who you go to are not separate in Kanien'kéha. The language holds them together.",
+            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation in these forms.",
             "wids_tested": [
               "dv01",
               "dv02",
@@ -31840,75 +31900,96 @@
             "id": "dl_u0l7_01",
             "prompt": "A community gathering",
             "sub": "Use what you know",
-            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman beside him. Listen to the exchange and respond correctly.",
+            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman standing beside him, then turns and asks you a question.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
                 "line": "Shé:kon.",
-                "gloss": "Hello / Greetings"
+                "gloss": "Greetings."
               },
               {
                 "speaker": "learner",
-                "instruction": "How do you greet him back?",
+                "instruction": "Greet him back.",
                 "mode": "mc",
                 "options": [
                   "Shé:kon.",
-                  "Ka' wáhse'?",
-                  "akaónha.",
-                  "aónha."
+                  "Niawenhkó:wa.",
+                  "Tho niioht.",
+                  "Onen'."
                 ],
                 "correct": "Shé:kon.",
-                "cm": "Tho niioht! Shé:kon — you return the greeting.",
-                "wm": "Shé:kon is the greeting form here. The other options are a question or pronouns, not greetings."
+                "cm": "Tho niioht! Shé:kon is the standard greeting — you return it in kind.",
+                "wm": "When someone greets you with Shé:kon, you return the same greeting."
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Akaónha — Akokstén:ha.",
-                "gloss": "She — the elder woman (he indicates the woman beside him, using the respectful pronoun)"
+                "line": "Shé:kon. Akaónha tsi ionkwarihó:ten — Akokstén:ha.",
+                "gloss": "Greetings. She is known to us — she is an elder woman."
               },
               {
                 "speaker": "learner",
-                "instruction": "He has just introduced an elder woman. Which pronoun do you use when speaking about her?",
+                "instruction": "He is speaking about the elder woman beside him. How do you refer to her to your cousin?",
                 "mode": "mc",
                 "options": [
-                  "akaónha",
-                  "aónha",
-                  "raónha",
-                  "í:se'"
+                  "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                  "Aónha kanónhsa tsi ionkwarihó:ten.",
+                  "Raónha kanónhsa tsi ionkwarihó:ten.",
+                  "Í:se' kanónhsa tsi ionkwarihó:ten."
                 ],
-                "correct": "akaónha",
-                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. Using aónha would be grammatically incorrect here.",
-                "wm": "This is an elder woman. Which pronoun encodes respect in Kanien'kéha grammar?"
+                "correct": "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. aónha would be grammatically wrong here.",
+                "wm": "She is an elder woman — which pronoun encodes respect for a woman of her standing?"
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Í:se' — Ka' wáhse'?",
-                "gloss": "You — where are you going? (he turns and asks you directly)"
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "He is speaking to you (singular) directly. Which pronoun did he use for 'you'?",
+                "instruction": "Tell him where you are going — to your grandmother's house.",
                 "mode": "mc",
                 "options": [
-                  "í:se'",
-                  "í:'i",
-                  "raónha",
-                  "akaónha"
+                  "Aksótha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke.",
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ka' nontáhse'?"
                 ],
-                "correct": "í:se'",
-                "cm": "Niawenhkó:wa! í:se' — you (singular). He is addressing only you. In Ontario dialects this appears as ý:se' — both are correct.",
-                "wm": "The singular 'you' is what he used here. Remember the singular/dual/plural distinction."
+                "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
+                "cm": "Niawenhkó:wa! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. wà:ke marks going; nontà:ke marks coming from.",
+                "wm": "You are going — which verb is for going, not coming from? And whose house are you going to?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rokstén:ha",
+                "line": "Tho niioht. Aksótha — akaónha ká:tiens kanónhsa.",
+                "gloss": "I see. Your grandmother — she is sitting at home."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He has told you your grandmother is home. Take your leave.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Tho niioht. Ka' wáhse'?",
+                  "Én. í:'i."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! Thank you — and then Onen', meaning 'now' or 'that's it for now.' A natural way to close a conversation.",
+                "wm": "You want to thank him and say goodbye. Niawenhkó:wa is thank you; Onen' closes the exchange."
               }
             ],
-            "closing": "You navigated a real exchange. You heard akaónha used correctly for an elder woman, and you know that choosing the wrong pronoun is not just impolite — in Kanien'kéha, it is grammatically wrong.",
-            "dialect_note": "In Akwesasne dialect, raónha becomes laónha — both are correct and both are accepted.",
+            "closing": "You moved through a real community exchange — greeting, recognising an elder, and saying where you are going. The pronoun akaónha is not optional here. The language requires you to see who she is before you can speak about her.",
+            "dialect_note": "In Akwesasne, raónha becomes laónha and Rokstén:ha becomes Lokstén:ha. All community forms are accepted.",
             "wids_tested": [
               "p01",
               "p03",
-              "p05"
+              "dv01",
+              "dv02"
             ]
           }
         ]
@@ -31930,70 +32011,89 @@
             "id": "dl_u0_review_01",
             "prompt": "At your grandmother's door",
             "sub": "Three conversations at once",
-            "scene": "You arrive at your grandmother's house. Two women are sitting on the step — an elder woman and a younger woman you know. Your grandmother calls to you from inside. Slow down and listen to who is speaking to whom.",
+            "scene": "You arrive at your grandmother's house. Two women are sitting on the step. Your grandmother calls from inside. Three people want to speak with you.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Aksótha (from inside)",
-                "line": "Shé:kon! í:se'?",
-                "gloss": "Greetings — is that you (singular)?"
+                "line": "Shé:kon! Í:se' kí:'",
+                "gloss": "Greetings! Is that you?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking if it is you — just you, alone. How do you confirm?",
+                "instruction": "Confirm it's you — just you, alone.",
                 "mode": "mc",
                 "options": [
-                  "í:'i.",
-                  "teiakeniiáhshe.",
-                  "iakwakwé:kon.",
-                  "raónha."
+                  "Ó:nen, í:'i.",
+                  "Ó:nen, teiakeniiáhshe.",
+                  "Ó:nen, iakwakwé:kon.",
+                  "Ó:nen, raónha."
                 ],
-                "correct": "í:'i.",
-                "cm": "Tho niioht! í:'i — I / me. You are alone at the door, so the singular first person is correct. In Ontario dialects this may appear as ý:'i.",
-                "wm": "Your grandmother is asking about you alone. Which is the singular first-person pronoun?"
+                "correct": "Ó:nen, í:'i.",
+                "cm": "Tho niioht! í:'i — I, me. You are alone at the door. In Ontario dialects this appears as ý:'i — both accepted.",
+                "wm": "You are alone. Which pronoun means 'I' — just you, singular?"
               },
               {
                 "speaker": "other",
-                "name": "The younger woman on the step",
-                "line": "Shé:kon. Teiakeniiáhshe — wà:ke.",
-                "gloss": "Greetings. You and I — I am going (she invites you to walk with her)"
+                "name": "Younger woman on the step",
+                "line": "Shé:kon. Teiakeniiáhshe wà:ke — í:se' wáhse' nahe'?",
+                "gloss": "Greetings. You and I are going — are you coming along?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She said teiakeniiáhshe — you and I. What kind of pronoun is this?",
+                "instruction": "She wants you both to go somewhere together. Agree — say 'you and I, yes.'",
                 "mode": "mc",
                 "options": [
-                  "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                  "Exclusive plural — she means a group that does not include you",
-                  "Singular — she means only herself",
-                  "Formal plural — used for large groups"
+                  "Én, teiakeniiáhshe.",
+                  "Én, iakwakwé:kon.",
+                  "Én, í:'i.",
+                  "Én, raónha."
                 ],
-                "correct": "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe is the inclusive dual — you and I, together. She is drawing you into the 'we'. This is the same distinction you studied in Lesson 6.",
-                "wm": "teiakeniiáhshe means 'you and I' — is the person you're talking to inside or outside the 'we'?"
+                "correct": "Én, teiakeniiáhshe.",
+                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe — you and I, the inclusive dual. She invited you in, and you accepted with the same pronoun.",
+                "wm": "She used teiakeniiáhshe — you and I, two people together. Which pronoun matches that?"
               },
               {
                 "speaker": "other",
-                "name": "The elder woman on the step",
-                "line": "Shé:kon. Ka' wáhse'?",
-                "gloss": "Greetings. Where are you going?"
+                "name": "Elder woman on the step",
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking where you are going. Type the Kanien'kéha answer: 'I am going (there).'",
+                "instruction": "Tell her where you are going.",
                 "mode": "type",
                 "correct": "wà:ke",
                 "alts": [
                   "wa:ke",
-                  "wake",
-                  "wà:ke'"
+                  "wake"
                 ],
-                "cm": "Niawenhkó:wa! wà:ke — I am going. You connected the question to its answer.",
-                "wm": "The answer to Ka' wáhse' is a direction verb meaning 'I am going'. It starts with w — try: wà:ke"
+                "cm": "Niawenhkó:wa! wà:ke — I am going. Short, complete, correct.",
+                "wm": "The verb 'I am going' — it starts with w. Try: wà:ke"
+              },
+              {
+                "speaker": "other",
+                "name": "Elder woman on the step",
+                "line": "Tho niioht. Niawenhkó:wa, í:se'.",
+                "gloss": "I see. Thank you — take care."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Thank her in return.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa, akaónha.",
+                  "Niawenhkó:wa, aónha.",
+                  "Ka' wáhse', akaónha?",
+                  "Shé:kon, akaónha."
+                ],
+                "correct": "Niawenhkó:wa, akaónha.",
+                "cm": "Io'nikonhraién:ta'ne! Niawenhkó:wa — thank you. And akaónha, the respectful address, because she is an elder woman. The grammar of respect holds even in a single closing line.",
+                "wm": "Thank her — and remember which pronoun an elder woman requires."
               }
             ],
-            "closing": "You held three conversations at once — singular, dual, and plural all visible in one scene. The pronoun system is not a list. It is a map of who is here, and who belongs to whom.",
-            "dialect_note": "In Akwesasne, í:'i and raónha become í:'i and laónha respectively. Both are accepted.",
+            "closing": "Singular, dual, and plural all appeared in one scene. The pronoun system is not a list to memorise — it is a map of who is here, and who belongs to whom.",
+            "dialect_note": "In Akwesasne: í:'i stays the same. raónha becomes laónha. All are accepted.",
             "wids_tested": [
               "p02",
               "p07",
@@ -32019,7 +32119,7 @@
             "id": "dl_u1l2_01",
             "prompt": "Walking through the community",
             "sub": "A morning exchange",
-            "scene": "You are walking through the community on a quiet morning. A neighbour you know well stops to talk. The conversation moves naturally — where you are going, where they came from, where someone else went yesterday.",
+            "scene": "You are walking through the community on a quiet morning. A neighbour stops to talk. The conversation moves through where you are going, where they came from, and where someone else went yesterday.",
             "turns": [
               {
                 "speaker": "other",
@@ -32029,47 +32129,47 @@
               },
               {
                 "speaker": "learner",
-                "instruction": "You are going to your grandmother's house. Choose the correct response.",
+                "instruction": "You are going to your grandmother's house. Tell them.",
                 "mode": "mc",
                 "options": [
                   "Aksótha tsi tiakonónhsote' wà:ke.",
-                  "Ka' nontáhse'?",
-                  "Iè:ke'skwe'.",
-                  "Rake'níha tsi thonónhsote' wà:ke."
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ake'nisténha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke."
                 ],
                 "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
-                "cm": "Tho niioht! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. Aksótha = my grandmother; tsi tiakonónhsote' = her house; wà:ke = I am going.",
-                "wm": "You are going to your grandmother's. Which answer uses wà:ke with the right destination?"
+                "cm": "Tho niioht! Aksótha = my grandmother; wà:ke = I am going. nontà:ke would mean coming from, not going to.",
+                "wm": "You are going — not coming from. And it is your grandmother's house, not your grandfather's or mother's."
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Tho niioht. í:'i — Raksótha tsi thonónhsote' non nontà:ke.",
+                "line": "Tho niioht. Í:'i, Raksótha tsi thonónhsote' non nontà:ke.",
                 "gloss": "I see. I — I came from my grandfather's house."
               },
               {
                 "speaker": "learner",
-                "instruction": "Your neighbour said they came from their grandfather's house. What is the Kanien'kéha word for 'my grandfather' in the sentence they used?",
+                "instruction": "They came from their grandfather's house. Say the Kanien'kéha word for 'my grandfather.'",
                 "mode": "mc",
                 "options": [
                   "Raksótha",
                   "Aksótha",
-                  "Rake'níha",
-                  "Rokstén:ha"
+                  "Rake'sótha",
+                  "Rake'níha"
                 ],
                 "correct": "Raksótha",
-                "cm": "Niawenhkó:wa! Raksótha — my grandfather. Compare Aksótha (my grandmother): the ra- marks male possession in elder kin terms. Same -sótha root, different prefix.",
-                "wm": "They came from their grandfather's, not grandmother's. The ra- prefix marks male."
+                "cm": "Niawenhkó:wa! Raksótha — my grandfather, used in a sentence. Compare Aksótha (my grandmother) — same -sótha root, ra- marks male.",
+                "wm": "The ra- prefix marks male elder kin. Aksótha is grandmother. Which form has ra-?"
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Rake'níha — Ka' iéhse'skwe'?",
-                "gloss": "Your father — where did he go?"
+                "line": "Ka' iéhse'skwe' rake'níha?",
+                "gloss": "Where did your father go?"
               },
               {
                 "speaker": "learner",
-                "instruction": "They asked where your father went. Type the question they used: 'Where did (someone) go?'",
+                "instruction": "Type the question they just asked: 'Where did (someone) go?'",
                 "mode": "type",
                 "correct": "Ka' iéhse'skwe'",
                 "alts": [
@@ -32078,12 +32178,12 @@
                   "ka' iehse'skwe'",
                   "Ka iehseskwe"
                 ],
-                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense. Compare Ka' wáhse' (present) and Ka' nontáhse' (where did you come from).",
-                "wm": "This is the past-tense direction question. It starts with Ka' and ends in -skwe'. Try: Ka' iéhse'skwe'"
+                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense.",
+                "wm": "The past-tense direction question — starts with Ka' and ends with -skwe'. Try: Ka' iéhse'skwe'"
               },
               {
                 "speaker": "learner",
-                "instruction": "Your father went to your grandfather's house. Type the first-person past answer: 'I went (there).'",
+                "instruction": "Your father went to your grandfather's house. Type: 'I went (there).'",
                 "mode": "type",
                 "correct": "iè:ke'skwe'",
                 "alts": [
@@ -32092,12 +32192,32 @@
                   "iéke'skwe'",
                   "iekeskwe"
                 ],
-                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. The same -skwe' suffix marks the past in the answer as in the question. You now have all three direction verb pairs.",
-                "wm": "This is the past-tense answer to Ka' iéhse'skwe'. It shares the -skwe' suffix. Try: iè:ke'skwe'"
+                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. Same -skwe' suffix as the question. All three direction pairs complete: wà:ke / nontà:ke / iè:ke'skwe'.",
+                "wm": "The past-tense answer — shares the -skwe' suffix with the question. Try: iè:ke'skwe'"
+              },
+              {
+                "speaker": "other",
+                "name": "Neighbour",
+                "line": "Tho niioht. Raksótha tsi thonónhsote' wà:ke ó:nen.",
+                "gloss": "I see. I'm going to my grandfather's house now."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He is leaving. Say goodbye — type the Kanien'kéha word for 'now / that's all.'",
+                "mode": "type",
+                "correct": "Onen'",
+                "alts": [
+                  "onen'",
+                  "Onen'",
+                  "onen",
+                  "Onen"
+                ],
+                "cm": "Tho niioht! Onen' — now, that's all, goodbye for now. A simple and complete closing.",
+                "wm": "The word that closes a Kanien'kéha conversation — short, two syllables. Try: Onen'"
               }
             ],
-            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. In Kanien'kéha, where you go and who you go to are not separate. The language holds them together.",
-            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation here.",
+            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. Where you go and who you go to are not separate in Kanien'kéha. The language holds them together.",
+            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation in these forms.",
             "wids_tested": [
               "dv01",
               "dv02",
@@ -32126,75 +32246,96 @@
             "id": "dl_u0l7_01",
             "prompt": "A community gathering",
             "sub": "Use what you know",
-            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman beside him. Listen to the exchange and respond correctly.",
+            "scene": "You are at a community gathering with your cousin. An elder man — Rokstén:ha — approaches and greets you both. He introduces the woman standing beside him, then turns and asks you a question.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
                 "line": "Shé:kon.",
-                "gloss": "Hello / Greetings"
+                "gloss": "Greetings."
               },
               {
                 "speaker": "learner",
-                "instruction": "How do you greet him back?",
+                "instruction": "Greet him back.",
                 "mode": "mc",
                 "options": [
                   "Shé:kon.",
-                  "Ka' wáhse'?",
-                  "akaónha.",
-                  "aónha."
+                  "Niawenhkó:wa.",
+                  "Tho niioht.",
+                  "Onen'."
                 ],
                 "correct": "Shé:kon.",
-                "cm": "Tho niioht! Shé:kon — you return the greeting.",
-                "wm": "Shé:kon is the greeting form here. The other options are a question or pronouns, not greetings."
+                "cm": "Tho niioht! Shé:kon is the standard greeting — you return it in kind.",
+                "wm": "When someone greets you with Shé:kon, you return the same greeting."
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Akaónha — Akokstén:ha.",
-                "gloss": "She — the elder woman (he indicates the woman beside him, using the respectful pronoun)"
+                "line": "Shé:kon. Akaónha tsi ionkwarihó:ten — Akokstén:ha.",
+                "gloss": "Greetings. She is known to us — she is an elder woman."
               },
               {
                 "speaker": "learner",
-                "instruction": "He has just introduced an elder woman. Which pronoun do you use when speaking about her?",
+                "instruction": "He is speaking about the elder woman beside him. How do you refer to her to your cousin?",
                 "mode": "mc",
                 "options": [
-                  "akaónha",
-                  "aónha",
-                  "raónha",
-                  "í:se'"
+                  "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                  "Aónha kanónhsa tsi ionkwarihó:ten.",
+                  "Raónha kanónhsa tsi ionkwarihó:ten.",
+                  "Í:se' kanónhsa tsi ionkwarihó:ten."
                 ],
-                "correct": "akaónha",
-                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. Using aónha would be grammatically incorrect here.",
-                "wm": "This is an elder woman. Which pronoun encodes respect in Kanien'kéha grammar?"
+                "correct": "Akaónha kanónhsa tsi ionkwarihó:ten.",
+                "cm": "Io'nikonhraién:ta'ne! akaónha — the respectful she. An Akokstén:ha requires akaónha. aónha would be grammatically wrong here.",
+                "wm": "She is an elder woman — which pronoun encodes respect for a woman of her standing?"
               },
               {
                 "speaker": "other",
                 "name": "Rokstén:ha",
-                "line": "Í:se' — Ka' wáhse'?",
-                "gloss": "You — where are you going? (he turns and asks you directly)"
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "He is speaking to you (singular) directly. Which pronoun did he use for 'you'?",
+                "instruction": "Tell him where you are going — to your grandmother's house.",
                 "mode": "mc",
                 "options": [
-                  "í:se'",
-                  "í:'i",
-                  "raónha",
-                  "akaónha"
+                  "Aksótha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke.",
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ka' nontáhse'?"
                 ],
-                "correct": "í:se'",
-                "cm": "Niawenhkó:wa! í:se' — you (singular). He is addressing only you. In Ontario dialects this appears as ý:se' — both are correct.",
-                "wm": "The singular 'you' is what he used here. Remember the singular/dual/plural distinction."
+                "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
+                "cm": "Niawenhkó:wa! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. wà:ke marks going; nontà:ke marks coming from.",
+                "wm": "You are going — which verb is for going, not coming from? And whose house are you going to?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rokstén:ha",
+                "line": "Tho niioht. Aksótha — akaónha ká:tiens kanónhsa.",
+                "gloss": "I see. Your grandmother — she is sitting at home."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He has told you your grandmother is home. Take your leave.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Tho niioht. Ka' wáhse'?",
+                  "Én. í:'i."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! Thank you — and then Onen', meaning 'now' or 'that's it for now.' A natural way to close a conversation.",
+                "wm": "You want to thank him and say goodbye. Niawenhkó:wa is thank you; Onen' closes the exchange."
               }
             ],
-            "closing": "You navigated a real exchange. You heard akaónha used correctly for an elder woman, and you know that choosing the wrong pronoun is not just impolite — in Kanien'kéha, it is grammatically wrong.",
-            "dialect_note": "In Akwesasne dialect, raónha becomes laónha — both are correct and both are accepted.",
+            "closing": "You moved through a real community exchange — greeting, recognising an elder, and saying where you are going. The pronoun akaónha is not optional here. The language requires you to see who she is before you can speak about her.",
+            "dialect_note": "In Akwesasne, raónha becomes laónha and Rokstén:ha becomes Lokstén:ha. All community forms are accepted.",
             "wids_tested": [
               "p01",
               "p03",
-              "p05"
+              "dv01",
+              "dv02"
             ]
           },
           {
@@ -32202,70 +32343,89 @@
             "id": "dl_u0_review_01",
             "prompt": "At your grandmother's door",
             "sub": "Three conversations at once",
-            "scene": "You arrive at your grandmother's house. Two women are sitting on the step — an elder woman and a younger woman you know. Your grandmother calls to you from inside. Slow down and listen to who is speaking to whom.",
+            "scene": "You arrive at your grandmother's house. Two women are sitting on the step. Your grandmother calls from inside. Three people want to speak with you.",
             "turns": [
               {
                 "speaker": "other",
                 "name": "Aksótha (from inside)",
-                "line": "Shé:kon! í:se'?",
-                "gloss": "Greetings — is that you (singular)?"
+                "line": "Shé:kon! Í:se' kí:'",
+                "gloss": "Greetings! Is that you?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking if it is you — just you, alone. How do you confirm?",
+                "instruction": "Confirm it's you — just you, alone.",
                 "mode": "mc",
                 "options": [
-                  "í:'i.",
-                  "teiakeniiáhshe.",
-                  "iakwakwé:kon.",
-                  "raónha."
+                  "Ó:nen, í:'i.",
+                  "Ó:nen, teiakeniiáhshe.",
+                  "Ó:nen, iakwakwé:kon.",
+                  "Ó:nen, raónha."
                 ],
-                "correct": "í:'i.",
-                "cm": "Tho niioht! í:'i — I / me. You are alone at the door, so the singular first person is correct. In Ontario dialects this may appear as ý:'i.",
-                "wm": "Your grandmother is asking about you alone. Which is the singular first-person pronoun?"
+                "correct": "Ó:nen, í:'i.",
+                "cm": "Tho niioht! í:'i — I, me. You are alone at the door. In Ontario dialects this appears as ý:'i — both accepted.",
+                "wm": "You are alone. Which pronoun means 'I' — just you, singular?"
               },
               {
                 "speaker": "other",
-                "name": "The younger woman on the step",
-                "line": "Shé:kon. Teiakeniiáhshe — wà:ke.",
-                "gloss": "Greetings. You and I — I am going (she invites you to walk with her)"
+                "name": "Younger woman on the step",
+                "line": "Shé:kon. Teiakeniiáhshe wà:ke — í:se' wáhse' nahe'?",
+                "gloss": "Greetings. You and I are going — are you coming along?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She said teiakeniiáhshe — you and I. What kind of pronoun is this?",
+                "instruction": "She wants you both to go somewhere together. Agree — say 'you and I, yes.'",
                 "mode": "mc",
                 "options": [
-                  "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                  "Exclusive plural — she means a group that does not include you",
-                  "Singular — she means only herself",
-                  "Formal plural — used for large groups"
+                  "Én, teiakeniiáhshe.",
+                  "Én, iakwakwé:kon.",
+                  "Én, í:'i.",
+                  "Én, raónha."
                 ],
-                "correct": "Inclusive dual — she is inviting you into a 'we two' that includes you",
-                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe is the inclusive dual — you and I, together. She is drawing you into the 'we'. This is the same distinction you studied in Lesson 6.",
-                "wm": "teiakeniiáhshe means 'you and I' — is the person you're talking to inside or outside the 'we'?"
+                "correct": "Én, teiakeniiáhshe.",
+                "cm": "Io'nikonhraién:ta'ne! teiakeniiáhshe — you and I, the inclusive dual. She invited you in, and you accepted with the same pronoun.",
+                "wm": "She used teiakeniiáhshe — you and I, two people together. Which pronoun matches that?"
               },
               {
                 "speaker": "other",
-                "name": "The elder woman on the step",
-                "line": "Shé:kon. Ka' wáhse'?",
-                "gloss": "Greetings. Where are you going?"
+                "name": "Elder woman on the step",
+                "line": "Ka' wáhse', í:se'?",
+                "gloss": "Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She is asking where you are going. Type the Kanien'kéha answer: 'I am going (there).'",
+                "instruction": "Tell her where you are going.",
                 "mode": "type",
                 "correct": "wà:ke",
                 "alts": [
                   "wa:ke",
-                  "wake",
-                  "wà:ke'"
+                  "wake"
                 ],
-                "cm": "Niawenhkó:wa! wà:ke — I am going. You connected the question to its answer.",
-                "wm": "The answer to Ka' wáhse' is a direction verb meaning 'I am going'. It starts with w — try: wà:ke"
+                "cm": "Niawenhkó:wa! wà:ke — I am going. Short, complete, correct.",
+                "wm": "The verb 'I am going' — it starts with w. Try: wà:ke"
+              },
+              {
+                "speaker": "other",
+                "name": "Elder woman on the step",
+                "line": "Tho niioht. Niawenhkó:wa, í:se'.",
+                "gloss": "I see. Thank you — take care."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Thank her in return.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa, akaónha.",
+                  "Niawenhkó:wa, aónha.",
+                  "Ka' wáhse', akaónha?",
+                  "Shé:kon, akaónha."
+                ],
+                "correct": "Niawenhkó:wa, akaónha.",
+                "cm": "Io'nikonhraién:ta'ne! Niawenhkó:wa — thank you. And akaónha, the respectful address, because she is an elder woman. The grammar of respect holds even in a single closing line.",
+                "wm": "Thank her — and remember which pronoun an elder woman requires."
               }
             ],
-            "closing": "You held three conversations at once — singular, dual, and plural all visible in one scene. The pronoun system is not a list. It is a map of who is here, and who belongs to whom.",
-            "dialect_note": "In Akwesasne, í:'i and raónha become í:'i and laónha respectively. Both are accepted.",
+            "closing": "Singular, dual, and plural all appeared in one scene. The pronoun system is not a list to memorise — it is a map of who is here, and who belongs to whom.",
+            "dialect_note": "In Akwesasne: í:'i stays the same. raónha becomes laónha. All are accepted.",
             "wids_tested": [
               "p02",
               "p07",
@@ -32277,7 +32437,7 @@
             "id": "dl_u1l2_01",
             "prompt": "Walking through the community",
             "sub": "A morning exchange",
-            "scene": "You are walking through the community on a quiet morning. A neighbour you know well stops to talk. The conversation moves naturally — where you are going, where they came from, where someone else went yesterday.",
+            "scene": "You are walking through the community on a quiet morning. A neighbour stops to talk. The conversation moves through where you are going, where they came from, and where someone else went yesterday.",
             "turns": [
               {
                 "speaker": "other",
@@ -32287,47 +32447,47 @@
               },
               {
                 "speaker": "learner",
-                "instruction": "You are going to your grandmother's house. Choose the correct response.",
+                "instruction": "You are going to your grandmother's house. Tell them.",
                 "mode": "mc",
                 "options": [
                   "Aksótha tsi tiakonónhsote' wà:ke.",
-                  "Ka' nontáhse'?",
-                  "Iè:ke'skwe'.",
-                  "Rake'níha tsi thonónhsote' wà:ke."
+                  "Raksótha tsi thonónhsote' wà:ke.",
+                  "Ake'nisténha tsi tiakonónhsote' wà:ke.",
+                  "Aksótha tsi tiakonónhsote' non nontà:ke."
                 ],
                 "correct": "Aksótha tsi tiakonónhsote' wà:ke.",
-                "cm": "Tho niioht! Aksótha tsi tiakonónhsote' wà:ke — I am going to my grandmother's house. Aksótha = my grandmother; tsi tiakonónhsote' = her house; wà:ke = I am going.",
-                "wm": "You are going to your grandmother's. Which answer uses wà:ke with the right destination?"
+                "cm": "Tho niioht! Aksótha = my grandmother; wà:ke = I am going. nontà:ke would mean coming from, not going to.",
+                "wm": "You are going — not coming from. And it is your grandmother's house, not your grandfather's or mother's."
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Tho niioht. í:'i — Raksótha tsi thonónhsote' non nontà:ke.",
+                "line": "Tho niioht. Í:'i, Raksótha tsi thonónhsote' non nontà:ke.",
                 "gloss": "I see. I — I came from my grandfather's house."
               },
               {
                 "speaker": "learner",
-                "instruction": "Your neighbour said they came from their grandfather's house. What is the Kanien'kéha word for 'my grandfather' in the sentence they used?",
+                "instruction": "They came from their grandfather's house. Say the Kanien'kéha word for 'my grandfather.'",
                 "mode": "mc",
                 "options": [
                   "Raksótha",
                   "Aksótha",
-                  "Rake'níha",
-                  "Rokstén:ha"
+                  "Rake'sótha",
+                  "Rake'níha"
                 ],
                 "correct": "Raksótha",
-                "cm": "Niawenhkó:wa! Raksótha — my grandfather. Compare Aksótha (my grandmother): the ra- marks male possession in elder kin terms. Same -sótha root, different prefix.",
-                "wm": "They came from their grandfather's, not grandmother's. The ra- prefix marks male."
+                "cm": "Niawenhkó:wa! Raksótha — my grandfather, used in a sentence. Compare Aksótha (my grandmother) — same -sótha root, ra- marks male.",
+                "wm": "The ra- prefix marks male elder kin. Aksótha is grandmother. Which form has ra-?"
               },
               {
                 "speaker": "other",
                 "name": "Neighbour",
-                "line": "Rake'níha — Ka' iéhse'skwe'?",
-                "gloss": "Your father — where did he go?"
+                "line": "Ka' iéhse'skwe' rake'níha?",
+                "gloss": "Where did your father go?"
               },
               {
                 "speaker": "learner",
-                "instruction": "They asked where your father went. Type the question they used: 'Where did (someone) go?'",
+                "instruction": "Type the question they just asked: 'Where did (someone) go?'",
                 "mode": "type",
                 "correct": "Ka' iéhse'skwe'",
                 "alts": [
@@ -32336,12 +32496,12 @@
                   "ka' iehse'skwe'",
                   "Ka iehseskwe"
                 ],
-                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense. Compare Ka' wáhse' (present) and Ka' nontáhse' (where did you come from).",
-                "wm": "This is the past-tense direction question. It starts with Ka' and ends in -skwe'. Try: Ka' iéhse'skwe'"
+                "cm": "Tho niioht! Ka' iéhse'skwe' — where did (someone) go? The -skwe' suffix marks past tense.",
+                "wm": "The past-tense direction question — starts with Ka' and ends with -skwe'. Try: Ka' iéhse'skwe'"
               },
               {
                 "speaker": "learner",
-                "instruction": "Your father went to your grandfather's house. Type the first-person past answer: 'I went (there).'",
+                "instruction": "Your father went to your grandfather's house. Type: 'I went (there).'",
                 "mode": "type",
                 "correct": "iè:ke'skwe'",
                 "alts": [
@@ -32350,12 +32510,32 @@
                   "iéke'skwe'",
                   "iekeskwe"
                 ],
-                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. The same -skwe' suffix marks the past in the answer as in the question. You now have all three direction verb pairs.",
-                "wm": "This is the past-tense answer to Ka' iéhse'skwe'. It shares the -skwe' suffix. Try: iè:ke'skwe'"
+                "cm": "Io'nikonhraién:ta'ne! iè:ke'skwe' — I went. Same -skwe' suffix as the question. All three direction pairs complete: wà:ke / nontà:ke / iè:ke'skwe'.",
+                "wm": "The past-tense answer — shares the -skwe' suffix with the question. Try: iè:ke'skwe'"
+              },
+              {
+                "speaker": "other",
+                "name": "Neighbour",
+                "line": "Tho niioht. Raksótha tsi thonónhsote' wà:ke ó:nen.",
+                "gloss": "I see. I'm going to my grandfather's house now."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He is leaving. Say goodbye — type the Kanien'kéha word for 'now / that's all.'",
+                "mode": "type",
+                "correct": "Onen'",
+                "alts": [
+                  "onen'",
+                  "Onen'",
+                  "onen",
+                  "Onen"
+                ],
+                "cm": "Tho niioht! Onen' — now, that's all, goodbye for now. A simple and complete closing.",
+                "wm": "The word that closes a Kanien'kéha conversation — short, two syllables. Try: Onen'"
               }
             ],
-            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. In Kanien'kéha, where you go and who you go to are not separate. The language holds them together.",
-            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation here.",
+            "closing": "Ka' wáhse' — Ka' nontáhse' — Ka' iéhse'skwe'. Three questions, three tenses, built into the verb itself. Where you go and who you go to are not separate in Kanien'kéha. The language holds them together.",
+            "dialect_note": "wà:ke, nontà:ke, and iè:ke'skwe' are stable across community dialects — no r→l alternation in these forms.",
             "wids_tested": [
               "dv01",
               "dv02",
