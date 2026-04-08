@@ -4293,6 +4293,102 @@
             "hint": "Five syllables: ka-neh-sa-TÀ-ke. The stress falls on the 'ta' (fourth) syllable. The grave accent (à) marks this stress. The final 'ke' is short and quick."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u2l5_01",
+            "prompt": "What is that?",
+            "sub": "Nouns and questions in a real exchange",
+            "scene": "You are at the community centre. A woman walks past carrying something. You want to ask what it is and whether it belongs to her.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Shé:kon.",
+                "gloss": "Greetings."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Return the greeting.",
+                "mode": "mc",
+                "options": [
+                  "Shé:kon.",
+                  "Niawenhkó:wa.",
+                  "Onen'.",
+                  "Tho niioht."
+                ],
+                "correct": "Shé:kon.",
+                "cm": "Tho niioht! Shé:kon — the greeting you return in kind.",
+                "wm": "She greeted you with Shé:kon. Return the same greeting."
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Nahò:ten né:e?",
+                "gloss": "What is that?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She's asking what something is. How do you ask the same question back about what she is carrying?",
+                "mode": "mc",
+                "options": [
+                  "Nahò:ten né:e?",
+                  "Ka' wáhse'?",
+                  "Onkwa'nikónhrak ne í:se'?",
+                  "Shé:kon né:e?"
+                ],
+                "correct": "Nahò:ten né:e?",
+                "cm": "Niawenhkó:wa! Nahò:ten — what. Né:e — that / it. 'What is that?' You used the question word you just learned.",
+                "wm": "Nahò:ten is 'what' — the question word for asking about objects. Né:e points to the thing."
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Áhta' né:e. Ke'nikónhrak.",
+                "gloss": "Those are shoes. They are mine."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She said they are hers. Acknowledge what she said — 'I see' or 'I understand.'",
+                "mode": "mc",
+                "options": [
+                  "Tho niioht.",
+                  "Nahò:ten?",
+                  "Niawenhkó:wa.",
+                  "Shé:kon."
+                ],
+                "correct": "Tho niioht.",
+                "cm": "Io'nikonhraién:ta'ne! Tho niioht — 'that's it' / 'I see' / 'I understand.' A natural acknowledgement in Kanien'kéha conversation.",
+                "wm": "You want to show you understood her. Tho niioht is the expression for 'I see' or 'that's right.'"
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Niawenhkó:wa. Onen'.",
+                "gloss": "Thank you. Until next time."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Close the conversation.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Nahò:ten. Onen'.",
+                  "Tho niioht. Ka' wáhse'?"
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Tho niioht! Niawenhkó:wa — thank you. Onen' — that's it for now. A complete, natural closing.",
+                "wm": "You want to thank her and say goodbye. Niawenhkó:wa is thank you; Onen' closes the exchange."
+              }
+            ],
+            "closing": "Nahò:ten — ne — tho niioht. Three small pieces of language that let you ask, point, and understand in a real exchange. You used a question word, an article, and a conversational acknowledgement in a natural sequence.",
+            "dialect_note": "Tho niioht is common across dialects. In Ontario communities you may hear 'Tho' alone as the acknowledgement.",
+            "wids_tested": [
+              "par11",
+              "ar01",
+              "v05"
+            ]
+          },
+          {
             "type": "story",
             "wid": "pl01",
             "prompt": "Connect to your life",
@@ -5614,6 +5710,104 @@
             "hint": "Say each number clearly before moving to the next. When you can count to ten without a pause, you own these numbers."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u3l5_01",
+            "prompt": "Describing what you see",
+            "sub": "Colours, numbers, and stative verbs in context",
+            "scene": "A child shows you a drawing. An adult relative is watching. You and the child talk about what is in the picture — colours and how many.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Raksá:'a (child)",
+                "line": "Shé:kon! Ka'nikónhrak?",
+                "gloss": "Greetings! Is this yours?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Say it is yours — 'Yes, it is mine.'",
+                "mode": "mc",
+                "options": [
+                  "Én, ke'nikónhrak.",
+                  "Én, í:se'.",
+                  "Iah, ke'nikónhrak.",
+                  "Én, raónha."
+                ],
+                "correct": "Én, ke'nikónhrak.",
+                "cm": "Niawenhkó:wa! Én — yes. Ke'nikónhrak — it is mine. Short and complete.",
+                "wm": "Én = yes. Ke'nikónhrak = it is mine. Put them together."
+              },
+              {
+                "speaker": "other",
+                "name": "Raksá:'a (child)",
+                "line": "Onekwénhtara né:e! Skà:nek?",
+                "gloss": "That is red! One?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "The child is pointing at one red thing. Confirm: 'Yes, one.'",
+                "mode": "mc",
+                "options": [
+                  "Én, énska.",
+                  "Én, tékeni.",
+                  "Iah, énska.",
+                  "Én, áhsen."
+                ],
+                "correct": "Én, énska.",
+                "cm": "Tho niioht! Énska — one. You confirmed the number the child pointed to.",
+                "wm": "Énska is one. Tékeni is two. The child pointed to one thing — which number fits?"
+              },
+              {
+                "speaker": "other",
+                "name": "Adult relative",
+                "line": "Tékeni — Oròn:ia tánon Óhonte'. Ka' nihó:nen?",
+                "gloss": "Two — blue and green. How many are there?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She said two colours. Confirm: 'Two — blue and green.'",
+                "mode": "mc",
+                "options": [
+                  "Én, tékeni — Oròn:ia tánon Óhonte'.",
+                  "Én, tékeni — Onekwénhtara tánon Óhonte'.",
+                  "Én, áhsen — Oròn:ia tánon Óhonte'.",
+                  "Én, énska — Oròn:ia."
+                ],
+                "correct": "Én, tékeni — Oròn:ia tánon Óhonte'.",
+                "cm": "Io'nikonhraién:ta'ne! Tékeni — two. Oròn:ia tánon Óhonte' — blue and green. tánon connects them as equals.",
+                "wm": "She said two colours: blue (Oròn:ia) and green (Óhonte'). Tánon connects them. How many — tékeni (2) or áhsen (3)?"
+              },
+              {
+                "speaker": "other",
+                "name": "Raksá:'a (child)",
+                "line": "Niawenhkó:wa! Ioia'táwen!",
+                "gloss": "Thank you! It is good / beautiful!"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Agree — 'Yes, it is good.'",
+                "mode": "mc",
+                "options": [
+                  "Én, ioia'táwen.",
+                  "Én, ioia'ko:wa.",
+                  "Iah, ioia'táwen.",
+                  "Én, Onekwénhtara."
+                ],
+                "correct": "Én, ioia'táwen.",
+                "cm": "Niawenhkó:wa! Ioia'táwen — it is good / beautiful. You affirmed what the child said.",
+                "wm": "The child said ioia'táwen (it is good). Agree using the same word. Ioia'ko:wa means the opposite — bad."
+              }
+            ],
+            "closing": "Colours, numbers, tánon (and), and ioia'táwen (it is good) all appeared naturally in a real exchange. You described the world around you in Kanien'kéha — which is what the language is for.",
+            "dialect_note": "In Akwesasne and Ontario dialects, number words are the same across communities. Colour terms are stable across dialects.",
+            "wids_tested": [
+              "col01",
+              "col03",
+              "num01",
+              "num02",
+              "pc01"
+            ]
+          },
+          {
             "type": "story",
             "wid": "num03",
             "prompt": "Three",
@@ -6532,6 +6726,102 @@
             ],
             "cm": "Tho niioht! Ohén:ton Karihwatéhkwen — the words that come before all else. You have said this name many times. It has become familiar. That is what happens when you say something every day.",
             "wm": "Please try again — the second word of the Address name begins with K."
+          },
+          {
+            "type": "dialogue",
+            "id": "dl_u4l5_01",
+            "prompt": "Opening a gathering",
+            "sub": "The Address begins before anything else",
+            "scene": "Your family is gathering for a meal. An elder opens with words of thanks. You are asked to contribute one part of the Thanksgiving Address. This is how it begins.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha (elder woman)",
+                "line": "Sewatkwá:here'. Onen' tánon niiawén:re'.",
+                "gloss": "We greet one another. Now and always — so it is."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "The elder has opened. Acknowledge the opening before the Address begins.",
+                "mode": "mc",
+                "options": [
+                  "Tho niioht.",
+                  "Shé:kon.",
+                  "Niawenhkó:wa.",
+                  "Onen'."
+                ],
+                "correct": "Niawenhkó:wa.",
+                "cm": "Niawenhkó:wa — thank you, with great thanks. This is the right response when an elder opens with words of gathering.",
+                "wm": "She has opened the gathering. A word of thanks is the natural response before the Address begins."
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha (elder woman)",
+                "line": "Ohén:ton Karihwatéhkwen — the words before all else. Onkwehshón:'a — the people. Sewatkwá:here' — we greet one another.",
+                "gloss": "The Thanksgiving Address — the people — we greet one another."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She has named the people. The next section gives thanks for the earth. Which words belong here?",
+                "mode": "mc",
+                "options": [
+                  "Ohwén:tsia — the earth that holds us.",
+                  "Ononhkwa'shón:'a — the medicines.",
+                  "Ratiwéras — the thunderers.",
+                  "Karahkwa — the sun."
+                ],
+                "correct": "Ohwén:tsia — the earth that holds us.",
+                "cm": "Tho niioht! Ohwén:tsia — the earth — comes after the people in the Address. The sequence matters: people, then earth, then waters, then plants…",
+                "wm": "In the Thanksgiving Address the sequence is fixed: people first, then earth. Which word is the earth?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha (elder woman)",
+                "line": "Ónhka — the waters. Oskennón:ton — good health. Niiawén:re' — so it is.",
+                "gloss": "The waters. Good health. So it is."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She has closed a section with Niiawén:re'. What is its meaning?",
+                "mode": "mc",
+                "options": [
+                  "So it is / and so we agree.",
+                  "Thank you.",
+                  "Now we begin.",
+                  "The earth is here."
+                ],
+                "correct": "So it is / and so we agree.",
+                "cm": "Io'nikonhraién:ta'ne! Niiawén:re' — so it is. The closing word of each section of the Thanksgiving Address. It signals communal agreement, not just a speaker's ending.",
+                "wm": "Niiawén:re' closes each section of the Address. What does it mean — agreement, thanks, or a beginning?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha (elder woman)",
+                "line": "Niawenhkó:wa. Onen' niiawén:re'.",
+                "gloss": "Great thanks. Now — so it is."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "The elder has closed. Respond with the communal agreement.",
+                "mode": "mc",
+                "options": [
+                  "Niiawén:re'.",
+                  "Shé:kon.",
+                  "Nahò:ten?",
+                  "Onen'."
+                ],
+                "correct": "Niiawén:re'.",
+                "cm": "Niawenhkó:wa! Niiawén:re' — so it is. You held up your part of the Agreement. The Address closes when the community responds together.",
+                "wm": "The Address closes communally. What word closes each section and signals the group's agreement?"
+              }
+            ],
+            "closing": "The Thanksgiving Address is not a recitation — it is a conversation between the speaker and the people who respond. Niiawén:re' is the community's voice, not just a ceremonial word. You participated in a real form of Kanien'kéha speech.",
+            "dialect_note": "Ohén:ton Karihwatéhkwen is used across all Kanien'kehá:ka communities. Pronunciation and some phrasing vary by community but the sequence is shared.",
+            "wids_tested": [
+              "ta01",
+              "o05",
+              "cu04"
+            ]
           },
           {
             "type": "story",
@@ -7860,6 +8150,103 @@
             "wm": "Please try again — ends in ‘wake’."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u5l6_01",
+            "prompt": "What is your clan?",
+            "sub": "Clan identity in real conversation",
+            "scene": "You are meeting someone from another Kanien'kehá:ka community. They want to know your clan — as all Haudenosaunee do when they meet. A clan mother is nearby.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Rón:kwe",
+                "line": "Shé:kon. Ka' ohwátsire' í:se'?",
+                "gloss": "Greetings. Which clan are you?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "You are Turtle Clan — Anowára. Introduce your clan.",
+                "mode": "mc",
+                "options": [
+                  "Anowára ohwátsire' í:'i.",
+                  "Ohkwá:ri ohwátsire' í:'i.",
+                  "Kwá:rihon ohwátsire' í:'i.",
+                  "Anowára ohwátsire' raónha."
+                ],
+                "correct": "Anowára ohwátsire' í:'i.",
+                "cm": "Tho niioht! Anowára ohwátsire' í:'i — I am Turtle Clan. Ohwátsire' is the clan word; í:'i is 'I.' You named yourself before your clan, which is the natural order.",
+                "wm": "You are Turtle Clan (Anowára). The pronoun for 'I' is í:'i. Which answer puts them together correctly?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rón:kwe",
+                "line": "Io'nikonhraién:ta'ne! Kwá:rihon ohwátsire' í:'i.",
+                "gloss": "Wonderful! I am Wolf Clan."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He is Wolf Clan. Which animal is Kwá:rihon?",
+                "mode": "mc",
+                "options": [
+                  "Wolf.",
+                  "Bear.",
+                  "Turtle.",
+                  "Beaver."
+                ],
+                "correct": "Wolf.",
+                "cm": "Io'nikonhraién:ta'ne! Kwá:rihon — Wolf. Ohkwá:ri is Bear. Anowára is Turtle. The clan names are not the same as the animal words — they are the clan forms of those names.",
+                "wm": "Kwá:rihon is one of the nine Haudenosaunee clans. The wolf? The bear? The turtle?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rón:kwe",
+                "line": "Tho niioht. Ka' ohwátsire' akaónha?",
+                "gloss": "I see. Which clan is she — (pointing to the clan mother)."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He is asking about a clan mother using akaónha. Why does he use akaónha instead of aónha?",
+                "mode": "mc",
+                "options": [
+                  "She is a clan mother — an elder woman of authority — and akaónha is required.",
+                  "akaónha and aónha mean the same thing.",
+                  "akaónha is only for women outside your clan.",
+                  "He uses akaónha because she is present."
+                ],
+                "correct": "She is a clan mother — an elder woman of authority — and akaónha is required.",
+                "cm": "Niawenhkó:wa! akaónha is grammatically required for an elder woman, a clan mother, or any woman whose role commands recognition. Using aónha would be wrong — not just impolite.",
+                "wm": "Think back to Unit 1: akaónha is for elder women and women of authority. aónha is for familiar females and animals. A clan mother — Iakoiánehr — takes which pronoun?"
+              },
+              {
+                "speaker": "other",
+                "name": "Rón:kwe",
+                "line": "Niawenhkó:wa. Onen'.",
+                "gloss": "Thank you. Until next time."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Take your leave.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Ka' ohwátsire' í:se'? Onen'.",
+                  "Tho niioht."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! A natural close — thank you and Onen'. You moved through a complete clan introduction, including a pronoun choice that carries real social meaning.",
+                "wm": "Close the conversation with thank you and goodbye."
+              }
+            ],
+            "closing": "Every time you introduce your clan you are doing something the language requires: you are locating yourself in the relational web before you say anything else. Ka' ohwátsire' í:se' is not small talk. It is the first real question.",
+            "dialect_note": "In Akwesasne: raónha → laónha. Clan names are consistent across communities. The word ohwátsire' (clan) is stable.",
+            "wids_tested": [
+              "cl01",
+              "cl02",
+              "p02",
+              "p03"
+            ]
+          },
+          {
             "type": "story",
             "wid": "cl01",
             "prompt": "Bear Clan",
@@ -8448,6 +8835,103 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The Address thanks the corn, the beans, the squash. When you eat them, you receive what was thanked. The meal and the ceremony are not separate.",
             "wm": "Please try again."
+          },
+          {
+            "type": "dialogue",
+            "id": "dl_u6l6_01",
+            "prompt": "At the community table",
+            "sub": "Food vocabulary and social language",
+            "scene": "There is food at a community gathering. An elder woman is serving. You are offered corn soup — the most important food at any Haudenosaunee gathering.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Shé:kon. Ó:nen tékeni niiohontésha' — Ken' niiohontésha' tánon Ohsahé:ta. Kariwiió:son?",
+                "gloss": "Greetings. Here are two berries — strawberries and beans. Is it good?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She is an elder woman serving food. What is the respectful way to address her as you receive it?",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa, akaónha.",
+                  "Niawenhkó:wa, aónha.",
+                  "Niawenhkó:wa, raónha.",
+                  "Niawenhkó:wa, í:se'."
+                ],
+                "correct": "Niawenhkó:wa, akaónha.",
+                "cm": "Tho niioht! Niawenhkó:wa — great thanks. And akaónha — the respectful she, used when addressing or referring to an elder woman. You gave thanks and acknowledged her at the same time.",
+                "wm": "She is an elder woman (Akokstén:ha). Which pronoun acknowledges her standing when you thank her?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Katonhkaria'ks nahe'?",
+                "gloss": "Are you hungry?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Confirm that you are hungry.",
+                "mode": "mc",
+                "options": [
+                  "Én, katonhkaria'ks.",
+                  "Iah, katonhkaria'ks.",
+                  "Én, yawékon.",
+                  "Én, katonhkaria'ks raónha."
+                ],
+                "correct": "Én, katonhkaria'ks.",
+                "cm": "Niawenhkó:wa! Én — yes. Katonhkaria'ks — I am hungry. A stative verb that describes your state right now.",
+                "wm": "Én is yes. Katonhkaria'ks is 'I am hungry.' Combine them to say yes, you are hungry."
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Ohén:ra — ne ohén:ra onón:ta'. Yawékon?",
+                "gloss": "Corn soup — the corn soup is ready. Is it delicious?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell her it is delicious.",
+                "mode": "mc",
+                "options": [
+                  "Én, yawékon!",
+                  "Én, katonhkaria'ks.",
+                  "Én, ioia'táwen.",
+                  "Iah, yawékon."
+                ],
+                "correct": "Én, yawékon!",
+                "cm": "Io'nikonhraién:ta'ne! Yawékon — it is delicious. The specific word for food that is good to eat. Ioia'táwen is more general — good / beautiful. Yawékon is exactly right here.",
+                "wm": "Yawékon is specifically 'it is delicious' — the food quality word. Ioia'táwen is good / beautiful more generally. Which one fits here?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Niawenhkó:wa. Onen' ki' wáhi.",
+                "gloss": "Thank you. That's all for now."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Close the exchange with thanks.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Yawékon. Onen'.",
+                  "Shé:kon. Onen'.",
+                  "Katonhkaria'ks. Onen'."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! You received food from an elder, used the right pronoun, confirmed your hunger, and said the food was delicious — in Kanien'kéha.",
+                "wm": "Close with thank you (Niawenhkó:wa) and Onen'."
+              }
+            ],
+            "closing": "Corn soup — ohén:ra onón:ta' — is present at every major Haudenosaunee gathering. Knowing how to receive it, say it is delicious, and thank the person who offered it is not a small thing. It is language in the place where it belongs.",
+            "dialect_note": "Katonhkaria'ks (I am hungry) is consistent across dialects. Yawékon is stable. In Akwesasne: akaónha stays the same.",
+            "wids_tested": [
+              "eat02",
+              "fd09",
+              "fo05",
+              "p03"
+            ]
           },
           {
             "type": "story",
@@ -12876,6 +13360,104 @@
             "hint": "te-sa-RÁ-htat (4 syllables) — te-se-wa-RÁ-htat (5 syllables). Same root, different person prefix. Say them side by side."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u9_review_01",
+            "prompt": "At the language table",
+            "sub": "Active and stative verbs in use",
+            "scene": "You are in a Kanien'kéha language session. The teacher asks you to demonstrate what you have learned. You use active and stative verbs in real sentences.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Iethinónskon (teacher)",
+                "line": "Shé:kon. Ka' ká:tiens?",
+                "gloss": "Greetings. Where are you sitting?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He asked where you are sitting. Reply using the active verb for sitting.",
+                "mode": "mc",
+                "options": [
+                  "Kanónhsa tsi ká:tiens í:'i.",
+                  "Kanónhsa tsi sohkwá:ren í:'i.",
+                  "Kanónhsa tsi tekaráhtats í:'i.",
+                  "Ka' ká:tiens raónha?"
+                ],
+                "correct": "Kanónhsa tsi ká:tiens í:'i.",
+                "cm": "Tho niioht! Ká:tiens — I am sitting (habitual active). Tsi — at/where. Kanónhsa — at the house. You located yourself using an active verb.",
+                "wm": "Sitting is an active verb — ká:tiens (I sit). You are at the house (kanónhsa). Tsi connects them: at the place where I sit."
+              },
+              {
+                "speaker": "other",
+                "name": "Iethinónskon",
+                "line": "Tho niioht. Nahe' — saiosé:ren nahe'?",
+                "gloss": "I see. Are you sick?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell him you are not sick — you are strong.",
+                "mode": "mc",
+                "options": [
+                  "Iah — sohkwá:ren í:'i.",
+                  "Én — saiosé:ren í:'i.",
+                  "Iah — ká:tiens í:'i.",
+                  "Én — sohkwá:ren raónha."
+                ],
+                "correct": "Iah — sohkwá:ren í:'i.",
+                "cm": "Niawenhkó:wa! Iah — no. Sohkwá:ren — you are strong (stative). Both are stative verbs: saiosé:ren (sick) and sohkwá:ren (strong). You negated one and asserted the other.",
+                "wm": "Iah is no / not. Sohkwá:ren is strong (stative). Saiosé:ren is sick (stative). Which pair means 'no, I am strong'?"
+              },
+              {
+                "speaker": "other",
+                "name": "Iethinónskon",
+                "line": "Io'nikonhraién:ta'ne! Ka' nontáhse' onen'?",
+                "gloss": "Wonderful! Where are you coming from now?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "He asked where you are coming from. Reply: you are coming from home.",
+                "mode": "mc",
+                "options": [
+                  "Kanónhsa tsi nontáhse' í:'i.",
+                  "Kanónhsa tsi wà:ke í:'i.",
+                  "Ka' ká:tiens nahe'?",
+                  "Kanónhsa tsi tekaráhtats."
+                ],
+                "correct": "Kanónhsa tsi nontáhse' í:'i.",
+                "cm": "Tho niioht! Nontáhse' — I am coming from. Wà:ke is going. The direction verb marks which way you are moving, not just that you are moving.",
+                "wm": "He asked where you are coming FROM. Nontáhse' = coming from; wà:ke = going. Which direction verb fits?"
+              },
+              {
+                "speaker": "other",
+                "name": "Iethinónskon",
+                "line": "Ioia'táwen. Niawenhkó:wa, í:se'.",
+                "gloss": "Good. Thank you."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Close the session with thanks.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen'.",
+                  "Tho niioht. Ká:tiens.",
+                  "Shé:kon. Ioia'táwen.",
+                  "Iah, niawenhkó:wa."
+                ],
+                "correct": "Niawenhkó:wa. Onen'.",
+                "cm": "Niawenhkó:wa! You used active and stative verbs in a real exchange — sitting, strong, sick, coming from home. This is exactly what the verb system is for.",
+                "wm": "End the session with thank you and Onen'."
+              }
+            ],
+            "closing": "Active verbs describe action — sitting, running, going, coming. Stative verbs describe states — strong, sick, good, bad. Kanien'kéha keeps these two categories fully separate and the distinction matters in every sentence you make.",
+            "dialect_note": "In Akwesasne, some stative verb forms shift slightly. Sohkwá:ren and saiosé:ren are stable across dialects.",
+            "wids_tested": [
+              "v01",
+              "ov01",
+              "ov03",
+              "dv01",
+              "dv02"
+            ]
+          },
+          {
             "type": "story",
             "wid": "par22",
             "prompt": "The verb system",
@@ -13468,6 +14050,105 @@
             ],
             "cm": "Tho niioht! Kateweyénhstha Kanyen'kéha — I am learning Kanien'kéha. You have been saying this with your actions since Unit 1. Now you can say it in the language.",
             "wm": "Please try again — which name is this language called?"
+          },
+          {
+            "type": "dialogue",
+            "id": "dl_u10l5_01",
+            "prompt": "Talking about learning",
+            "sub": "Relational verbs and emotional states in one exchange",
+            "scene": "You run into a friend who is also learning Kanien'kéha. You talk about how the language feels, who is teaching you, and what you know.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe (friend)",
+                "line": "Shé:kon! Wakatshennón:ni — í:se'?",
+                "gloss": "Greetings! I am happy — and you?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "You are also happy. Tell her.",
+                "mode": "mc",
+                "options": [
+                  "Én — wakatshennón:ni í:'i.",
+                  "Én — wake'nikonhrén:ton í:'i.",
+                  "Iah — wakatshennón:ni í:'i.",
+                  "Én — wakatshennón:ni raónha."
+                ],
+                "correct": "Én — wakatshennón:ni í:'i.",
+                "cm": "Niawenhkó:wa! Wakatshennón:ni — I am happy. Í:'i — I. A stative verb that names what you feel right now.",
+                "wm": "Wakatshennón:ni = I am happy. Wake'nikonhrén:ton = I am sad. Which one says you are happy?"
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Kienté:ri né:e — Kanien'kéha ioianer. Í:se'?",
+                "gloss": "I know it — Kanien'kéha is beautiful. Do you?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Say you know it too — that Kanien'kéha is good.",
+                "mode": "mc",
+                "options": [
+                  "Én — kienté:ri. Ioia'táwen.",
+                  "Én — wakaterién:tare. Ioia'táwen.",
+                  "Iah — kienté:ri. Ioia'ko:wa.",
+                  "Én — kienté:ri. Iah ioia'táwen."
+                ],
+                "correct": "Én — kienté:ri. Ioia'táwen.",
+                "cm": "Tho niioht! Kienté:ri — I know (something specific). Ioia'táwen — it is good. Wakaterién:tare is more general awareness; kienté:ri is specific knowing. You matched her phrasing.",
+                "wm": "She used kienté:ri (I know — something specific). Use the same verb. Ioia'táwen = it is good. Put them together."
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Ka' iethinónskon í:se'? Raón:kwe?",
+                "gloss": "Who is teaching you? Is it a man?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Your teacher is a woman — an elder. How do you refer to her?",
+                "mode": "mc",
+                "options": [
+                  "Iah — akaónha iethinónskon i'.',",
+                  "Én — raónha iethinónskon.",
+                  "Iah — aónha iethinónskon.",
+                  "Én — í:'i iethinónskon."
+                ],
+                "correct": "Iah — akaónha iethinónskon i'.',",
+                "cm": "Io'nikonhraién:ta'ne! Iah — no (not a man). Akaónha — she, respectful. Your teacher is an elder woman — akaónha is required. Aónha would be wrong here. The pronouns carry the relationship.",
+                "wm": "Your teacher is an elder woman. Iah negates the question (not a man). Which pronoun names an elder woman with the right register?"
+              },
+              {
+                "speaker": "other",
+                "name": "Iakón:kwe",
+                "line": "Io'nikonhraién:ta'ne! Wake'nikonhrí:io — wakatshennón:ni.",
+                "gloss": "Wonderful! I feel good inside — I am happy."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Share the feeling — say you feel good inside too.",
+                "mode": "mc",
+                "options": [
+                  "Én — wake'nikonhrí:io í:'i.",
+                  "Én — wake'nikonhrén:ton í:'i.",
+                  "Iah — wake'nikonhrí:io í:'i.",
+                  "Én — wakatshennón:ni raónha."
+                ],
+                "correct": "Én — wake'nikonhrí:io í:'i.",
+                "cm": "Niawenhkó:wa! Wake'nikonhrí:io — I am content / I feel good inside. Different from wakatshennón:ni (happy, outward) — this is the inner state. You used a stative verb to name your inner world.",
+                "wm": "She used wake'nikonhrí:io (I feel good inside). Wake'nikonhrén:ton is heavy-hearted. Which one matches feeling good?"
+              }
+            ],
+            "closing": "Five stative verbs appeared in one conversation: happy, content, sad, heavy-hearted, I know. In Kanien'kéha your emotional and cognitive states are expressed as verbs — they are actions, not descriptions. You feel the language by speaking it.",
+            "dialect_note": "Stative emotional verbs are consistent across dialects. In Akwesasne: akaónha stays the same; raónha → laónha.",
+            "wids_tested": [
+              "st06",
+              "st04",
+              "st07",
+              "st22",
+              "st23",
+              "p03"
+            ]
           },
           {
             "type": "story",
@@ -25008,6 +25689,37 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "pc01",
+            "prompt": "Fill in the particle. And / also — the most common connector in Kanien'kéha sentences. 'Rón:kwe tánon …",
+            "sentence": "___ (and / also)",
+            "correct": "tánon",
+            "hint": "t",
+            "alts": [
+              "tanon"
+            ],
+            "cm": "Tho niioht! tánon — and / also. This particle connects and shapes meaning in Kanien'kéha sentences.",
+            "wm": "Not quite. The particle is tánon — remember: t…"
+          },
+          {
+            "type": "type",
+            "wid": "pc03",
+            "prompt": "Type the Kanien'kéha for: where / at / when (locative)",
+            "correct": "tsi",
+            "alts": [],
+            "cm": "Tho niioht! tsi — where / at / when (locative).",
+            "wm": "The word is tsi. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "pc04",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "ki'",
+            "meaning": "just / only / already",
+            "hint": "1 syllable: ki'. The apostrophe marks a glottal stop — a brief catch in the throat."
+          },
+          {
             "type": "story",
             "wid": "pc01",
             "prompt": "Building complexity",
@@ -25107,6 +25819,39 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The running bear — a nominalised verb phrase with bear as actor. The complex nominal packages the noun and the relative clause into one unit. No separate relative pronoun is needed.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "le23",
+            "prompt": "Write the Kanien'kéha word for: she makes pots / potter.",
+            "sentence": "___ (she makes pots / potter)",
+            "correct": "Iakoriwá:ienstha",
+            "hint": "I",
+            "alts": [
+              "potter"
+            ],
+            "cm": "Tho niioht! Iakoriwá:ienstha — she makes pots / potter.",
+            "wm": "Not quite. The word for 'she makes pots / potter' is Iakoriwá:ienstha. Starts with I."
+          },
+          {
+            "type": "type",
+            "wid": "le24",
+            "prompt": "Type the Kanien'kéha for: basket makers (plural)",
+            "correct": "Ronataierénhthon",
+            "alts": [
+              "basket makers"
+            ],
+            "cm": "Tho niioht! Ronataierénhthon — basket makers (plural).",
+            "wm": "The word is Ronataierénhthon. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "le13",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Iakotsí:sten",
+            "meaning": "she tans hides",
+            "hint": "4 syllables: Ia-kotsí:-sten. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -25210,6 +25955,37 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "pc01",
+            "prompt": "Fill in the particle. And / also — the most common connector in Kanien'kéha sentences. 'Rón:kwe tánon …",
+            "sentence": "___ (and / also)",
+            "correct": "tánon",
+            "hint": "t",
+            "alts": [
+              "tanon"
+            ],
+            "cm": "Tho niioht! tánon — and / also. This particle connects and shapes meaning in Kanien'kéha sentences.",
+            "wm": "Not quite. The particle is tánon — remember: t…"
+          },
+          {
+            "type": "type",
+            "wid": "pc03",
+            "prompt": "Type the Kanien'kéha for: where / at / when (locative)",
+            "correct": "tsi",
+            "alts": [],
+            "cm": "Tho niioht! tsi — where / at / when (locative).",
+            "wm": "The word is tsi. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ta01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Ohén:ton Karihwatéhkwen",
+            "meaning": "thanksgiving Address (lit. 'the words that come before all else')",
+            "hint": "6 syllables: O-hén:to-n Kari-hwaté-hkwen. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "gr08",
             "prompt": "Because",
@@ -25309,6 +26085,19 @@
             ],
             "cm": "Tho niioht! The Thanksgiving Address uses nominalisation, causal clauses, relative constructions, and sequential linking throughout. Learning complex sentence building is, among other things, learning to understand the Address more deeply.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "pc01",
+            "prompt": "Fill in the particle. And / also — the most common connector in Kanien'kéha sentences. 'Rón:kwe tánon …",
+            "sentence": "___ (and / also)",
+            "correct": "tánon",
+            "hint": "t",
+            "alts": [
+              "tanon"
+            ],
+            "cm": "Tho niioht! tánon — and / also. This particle connects and shapes meaning in Kanien'kéha sentences.",
+            "wm": "Not quite. The particle is tánon — remember: t…"
           },
           {
             "type": "story",
@@ -25417,6 +26206,44 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! Sahsénhawe: sa- (you, actor) + -hawe (carry with inanimate object encoding) + habitual. Three dimensions. One word.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "v01",
+            "prompt": "Produce the verb form. Root: á:tien — to sit. Fill in the you sit (command) form.",
+            "sentence": "___ (you sit (command))",
+            "correct": "sá:tien",
+            "hint": "s",
+            "alts": [
+              "ká:tiens",
+              "seniá:tien",
+              "sewá:tien"
+            ],
+            "cm": "Tho niioht! sá:tien — you sit (command) of á:tien. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the you sit (command) form of á:tien (to sit) is sá:tien."
+          },
+          {
+            "type": "type",
+            "wid": "v03",
+            "prompt": "Type the Kanien'kéha for: to run",
+            "correct": "aráhtat",
+            "alts": [
+              "tesewará:htat",
+              "teseniaráhtat",
+              "tesaráhtat",
+              "tekaráhtats"
+            ],
+            "cm": "Tho niioht! aráhtat — to run.",
+            "wm": "The word is aráhtat. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ov01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "sohkwá:ren",
+            "meaning": "you are strong / be strong (command)",
+            "hint": "2 syllables: so-hkwá:ren. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -25538,6 +26365,29 @@
             "wm": "Please try again."
           },
           {
+            "type": "type",
+            "wid": "v03",
+            "prompt": "Type the Kanien'kéha for: to run",
+            "correct": "aráhtat",
+            "alts": [
+              "tesewará:htat",
+              "teseniaráhtat",
+              "tesaráhtat",
+              "tekaráhtats"
+            ],
+            "cm": "Tho niioht! aráhtat — to run.",
+            "wm": "The word is aráhtat. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ov01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "sohkwá:ren",
+            "meaning": "you are strong / be strong (command)",
+            "hint": "2 syllables: so-hkwá:ren. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "ov01",
             "prompt": "Strength and movement",
@@ -25654,6 +26504,27 @@
             "wm": "Please try again."
           },
           {
+            "type": "type",
+            "wid": "fe01",
+            "prompt": "Type the Kanien'kéha for: you make it / make something (command)",
+            "correct": "sahrón:ni",
+            "alts": [
+              "sahron:ni",
+              "sahronni"
+            ],
+            "cm": "Tho niioht! sahrón:ni — you make it / make something (command).",
+            "wm": "The word is sahrón:ni. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "fe01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "sahrón:ni",
+            "meaning": "you make it / make something (command)",
+            "hint": "2 syllables: sa-hrón:ni. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "na06",
             "prompt": "Narrative in winter",
@@ -25746,6 +26617,26 @@
             ],
             "cm": "Tho niioht! Akhró:nis — I make it. Akh- (I, actor) + making root + inanimate object encoding.",
             "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "fe02",
+            "prompt": "Type the Kanien'kéha for: you carry it / carry (command)",
+            "correct": "sahsénhawe",
+            "alts": [
+              "sahsenhawe"
+            ],
+            "cm": "Tho niioht! sahsénhawe — you carry it / carry (command).",
+            "wm": "The word is sahsénhawe. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "v01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "á:tien",
+            "meaning": "to sit",
+            "hint": "2 syllables: á:-tien. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -25967,6 +26858,40 @@
             ],
             "cm": "Tho niioht! Wahtá: kenní:io — the maple tree is beautiful. Noun first, describing verb after. A complete sentence.",
             "wm": "Please try again — noun + describing verb."
+          },
+          {
+            "type": "fill",
+            "wid": "par28",
+            "prompt": "Fill in the particle. Big or large — owá:nen. The standalone size particle. Compare with the noun augm…",
+            "sentence": "___ (it is big / large)",
+            "correct": "Owá:nen",
+            "hint": "O",
+            "alts": [
+              "owa:nen"
+            ],
+            "cm": "Tho niioht! Owá:nen — it is big / large. This particle connects and shapes meaning in Kanien'kéha sentences.",
+            "wm": "Not quite. The particle is Owá:nen — remember: O…"
+          },
+          {
+            "type": "type",
+            "wid": "par29",
+            "prompt": "Type the Kanien'kéha for: it is small",
+            "correct": "Onhkwa'shón:'a",
+            "alts": [
+              "little",
+              "small"
+            ],
+            "cm": "Tho niioht! Onhkwa'shón:'a — it is small.",
+            "wm": "The word is Onhkwa'shón:'a. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "q02",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "ohsì:io",
+            "meaning": "good / nice / beautiful",
+            "hint": "3 syllables: o-hsì:io. The colon marks a long vowel — hold it twice as long; the grave accent marks a falling tone on that syllable."
           },
           {
             "type": "story",
@@ -26751,6 +27676,19 @@
             "hint": "ya-WÉ-kon — three syllables. Warm, satisfied. Say it like you just ate something that made you happy."
           },
           {
+            "type": "type",
+            "wid": "fd10",
+            "prompt": "Type the Kanien'kéha for: it is cooked / done",
+            "correct": "yó:ri",
+            "alts": [
+              "cooked",
+              "yo:ri",
+              "done"
+            ],
+            "cm": "Tho niioht! yó:ri — it is cooked / done.",
+            "wm": "The word is yó:ri. All community dialect spellings are accepted."
+          },
+          {
             "type": "story",
             "wid": "fd09",
             "prompt": "A meal together",
@@ -27048,6 +27986,21 @@
             "hint": "wa-ke'-ni-kon-hrÍ:-io — six syllables. The -nikonhr- is the heart-root — say it from there. Is this true for you right now?"
           },
           {
+            "type": "fill",
+            "wid": "st06",
+            "prompt": "Produce the verb form. Root: Wakatshennón:ni — i am happy. Fill in the I am happy form.",
+            "sentence": "___ (I am happy)",
+            "correct": "Wakatshennón:ni",
+            "hint": "W",
+            "alts": [
+              "wakatshennon:ni",
+              "I am happy",
+              "happy"
+            ],
+            "cm": "Tho niioht! Wakatshennón:ni — I am happy of Wakatshennón:ni. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the I am happy form of Wakatshennón:ni (i am happy) is Wakatshennón:ni."
+          },
+          {
             "type": "story",
             "wid": "st05",
             "prompt": "Heavy-hearted",
@@ -27169,6 +28122,17 @@
             "word": "Niawenhkó:wa",
             "meaning": "Thank you very much",
             "hint": "Nia-wen-KÓ:-wa — four syllables. The -kó:wa is the greatness — it is not decorative. You are expressing great thanks. Say it like you mean the greatness of it."
+          },
+          {
+            "type": "type",
+            "wid": "par28",
+            "prompt": "Type the Kanien'kéha for: it is big / large",
+            "correct": "Owá:nen",
+            "alts": [
+              "owa:nen"
+            ],
+            "cm": "Tho niioht! Owá:nen — it is big / large.",
+            "wm": "The word is Owá:nen. All community dialect spellings are accepted."
           },
           {
             "type": "story",
@@ -27411,6 +28375,31 @@
             "hint": "Five sentences. Five pictures. Say each one with a small pause between — you are drawing something for the listener with your words."
           },
           {
+            "type": "fill",
+            "wid": "wa01",
+            "prompt": "Write the Kanien'kéha word for: bear.",
+            "sentence": "___ (bear)",
+            "correct": "Ohkwá:ri",
+            "hint": "O",
+            "alts": [
+              "ohkwá:ri",
+              "ohkwari"
+            ],
+            "cm": "Tho niioht! Ohkwá:ri — bear.",
+            "wm": "Not quite. The word for 'bear' is Ohkwá:ri. Starts with O."
+          },
+          {
+            "type": "type",
+            "wid": "na04",
+            "prompt": "Type the Kanien'kéha for: river / On the river",
+            "correct": "Kaniatarà:ke",
+            "alts": [
+              "kaniatarake"
+            ],
+            "cm": "Tho niioht! Kaniatarà:ke — river / On the river.",
+            "wm": "The word is Kaniatarà:ke. All community dialect spellings are accepted."
+          },
+          {
             "type": "story",
             "wid": "fo05",
             "prompt": "A scene in Kanien'kéha",
@@ -27632,6 +28621,26 @@
             "wm": "Please try again — which suffix marks 'at/on'?"
           },
           {
+            "type": "type",
+            "wid": "na04",
+            "prompt": "Type the Kanien'kéha for: river / On the river",
+            "correct": "Kaniatarà:ke",
+            "alts": [
+              "kaniatarake"
+            ],
+            "cm": "Tho niioht! Kaniatarà:ke — river / On the river.",
+            "wm": "The word is Kaniatarà:ke. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "na05",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Tsi iononté:nion",
+            "meaning": "mountains",
+            "hint": "6 syllables: Tsi- io-nonté:-nion. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "na02",
             "prompt": "The land",
@@ -27732,6 +28741,41 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! Thi vs ne — the article of direction vs the article of reference. You are going toward the river (thi). The river is there (ne). You have known this since Unit 3.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "na04",
+            "prompt": "Write the Kanien'kéha word for: river / On the river.",
+            "sentence": "___ (river / On the river)",
+            "correct": "Kaniatarà:ke",
+            "hint": "K",
+            "alts": [
+              "kaniatarà:ke",
+              "kaniatarake"
+            ],
+            "cm": "Tho niioht! Kaniatarà:ke — river / On the river.",
+            "wm": "Not quite. The word for 'river / On the river' is Kaniatarà:ke. Starts with K."
+          },
+          {
+            "type": "type",
+            "wid": "dv02",
+            "prompt": "Type the Kanien'kéha for: i am going (somewhere)",
+            "correct": "wà:ke",
+            "alts": [
+              "wa:ke",
+              "wake"
+            ],
+            "cm": "Tho niioht! wà:ke — i am going (somewhere).",
+            "wm": "The word is wà:ke. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "na04",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Kaniatarà:ke",
+            "meaning": "river / On the river",
+            "hint": "5 syllables: Ka-nia-tarà:-ke. The colon marks a long vowel — hold it twice as long; the grave accent marks a falling tone on that syllable."
           },
           {
             "type": "story",
@@ -27836,6 +28880,41 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "na04",
+            "prompt": "Write the Kanien'kéha word for: river / On the river.",
+            "sentence": "___ (river / On the river)",
+            "correct": "Kaniatarà:ke",
+            "hint": "K",
+            "alts": [
+              "kaniatarà:ke",
+              "kaniatarake"
+            ],
+            "cm": "Tho niioht! Kaniatarà:ke — river / On the river.",
+            "wm": "Not quite. The word for 'river / On the river' is Kaniatarà:ke. Starts with K."
+          },
+          {
+            "type": "type",
+            "wid": "na05",
+            "prompt": "Type the Kanien'kéha for: mountains",
+            "correct": "Tsi iononté:nion",
+            "alts": [
+              "tsi iononte:nion",
+              "tsiionontenion"
+            ],
+            "cm": "Tho niioht! Tsi iononté:nion — mountains.",
+            "wm": "The word is Tsi iononté:nion. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "env08",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Kahiónha",
+            "meaning": "river / stream",
+            "hint": "3 syllables: Ka-hió-nha. The acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "pl01",
             "prompt": "Place names",
@@ -27921,6 +29000,19 @@
             ],
             "cm": "Tho niioht! Wà:ke (going) + thi (toward) + Kanehsatà:ke (destination). The three-piece direction sentence, working exactly as it did in Unit 2.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "na11",
+            "prompt": "Write the Kanien'kéha word for: on the earth / ground level.",
+            "sentence": "___ (on the earth / ground level)",
+            "correct": "Ohwén:tsiake",
+            "hint": "O",
+            "alts": [
+              "ohwentsyake"
+            ],
+            "cm": "Tho niioht! Ohwén:tsiake — on the earth / ground level.",
+            "wm": "Not quite. The word for 'on the earth / ground level' is Ohwén:tsiake. Starts with O."
           },
           {
             "type": "story",
@@ -28038,6 +29130,27 @@
             ],
             "cm": "Tho niioht! A journey needs locatives for each place along the way, plus direction verbs to connect them. Spatial language is the vocabulary of movement through a real landscape.",
             "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "dv02",
+            "prompt": "Type the Kanien'kéha for: i am going (somewhere)",
+            "correct": "wà:ke",
+            "alts": [
+              "wa:ke",
+              "wake"
+            ],
+            "cm": "Tho niioht! wà:ke — i am going (somewhere).",
+            "wm": "The word is wà:ke. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "na04",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Kaniatarà:ke",
+            "meaning": "river / On the river",
+            "hint": "5 syllables: Ka-nia-tarà:-ke. The colon marks a long vowel — hold it twice as long; the grave accent marks a falling tone on that syllable."
           },
           {
             "type": "story",
@@ -28163,6 +29276,40 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "ka01",
+            "prompt": "Write the Kanien'kéha word for: car / Automobile.",
+            "sentence": "___ (car / Automobile)",
+            "correct": "Kà:sere'",
+            "hint": "K",
+            "alts": [
+              "ka:sere'",
+              "kasere"
+            ],
+            "cm": "Tho niioht! Kà:sere' — car / Automobile.",
+            "wm": "Not quite. The word for 'car / Automobile' is Kà:sere'. Starts with K."
+          },
+          {
+            "type": "type",
+            "wid": "ka02",
+            "prompt": "Type the Kanien'kéha for: paper / Book",
+            "correct": "Kahiatónhsera",
+            "alts": [
+              "kahiatonhsera"
+            ],
+            "cm": "Tho niioht! Kahiatónhsera — paper / Book.",
+            "wm": "The word is Kahiatónhsera. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ka10",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Karihtón:ni",
+            "meaning": "clock",
+            "hint": "3 syllables: Ka-rihtó-n:ni. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "gr08",
             "prompt": "Technology and language",
@@ -28237,6 +29384,39 @@
             ],
             "cm": "Tho niioht! The habitual. I am learning — continuously, regularly, right now. Language learning is not something you finish. It is something you keep doing. The habitual aspect is exactly right.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "loc05",
+            "prompt": "Write the Kanien'kéha word for: radio station.",
+            "sentence": "___ (radio station)",
+            "correct": "tsi waterennótha",
+            "hint": "t",
+            "alts": [
+              "radio station"
+            ],
+            "cm": "Tho niioht! tsi waterennótha — radio station.",
+            "wm": "Not quite. The word for 'radio station' is tsi waterennótha. Starts with t."
+          },
+          {
+            "type": "type",
+            "wid": "ex14",
+            "prompt": "Type the Kanien'kéha for: school / place of learning",
+            "correct": "Ionteriwahrónnion",
+            "alts": [
+              "ionteriwahronion"
+            ],
+            "cm": "Tho niioht! Ionteriwahrónnion — school / place of learning.",
+            "wm": "The word is Ionteriwahrónnion. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ex10",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Onkwehón:we",
+            "meaning": "indigenous person / original person",
+            "hint": "3 syllables: O-nkwehó-n:we. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -28324,6 +29504,20 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "ka10",
+            "prompt": "Write the Kanien'kéha word for: clock.",
+            "sentence": "___ (clock)",
+            "correct": "Karihtón:ni",
+            "hint": "K",
+            "alts": [
+              "karihtón:ni",
+              "karihtonni"
+            ],
+            "cm": "Tho niioht! Karihtón:ni — clock.",
+            "wm": "Not quite. The word for 'clock' is Karihtón:ni. Starts with K."
+          },
+          {
             "type": "story",
             "wid": "ex10",
             "prompt": "Onkwehón:we in the digital age",
@@ -28396,6 +29590,26 @@
             ],
             "cm": "Tho niioht! Kateweyénhstha Kanyen'kéha — on a device, through an app, right now. The language meets you where you are.",
             "wm": "Please try again."
+          },
+          {
+            "type": "type",
+            "wid": "loc05",
+            "prompt": "Type the Kanien'kéha for: radio station",
+            "correct": "tsi waterennótha",
+            "alts": [
+              "radio station"
+            ],
+            "cm": "Tho niioht! tsi waterennótha — radio station.",
+            "wm": "The word is tsi waterennótha. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ex14",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Ionteriwahrónnion",
+            "meaning": "school / place of learning",
+            "hint": "7 syllables: Io-nteri-wahró-nnion. The acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -28479,6 +29693,20 @@
             ],
             "cm": "Tho niioht! Function-based naming is the consistent strategy. It works for clocks, books, radio stations, and every technology yet to be invented.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "ka10",
+            "prompt": "Write the Kanien'kéha word for: clock.",
+            "sentence": "___ (clock)",
+            "correct": "Karihtón:ni",
+            "hint": "K",
+            "alts": [
+              "karihtón:ni",
+              "karihtonni"
+            ],
+            "cm": "Tho niioht! Karihtón:ni — clock.",
+            "wm": "Not quite. The word for 'clock' is Karihtón:ni. Starts with K."
           },
           {
             "type": "story",
@@ -28606,6 +29834,40 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "ov01",
+            "prompt": "Produce the verb form. Root: sohkwá:ren — you are strong / be strong (command). Fill in the you be strong (command) form.",
+            "sentence": "___ (you be strong (command))",
+            "correct": "sohkwá:ren",
+            "hint": "s",
+            "alts": [
+              "sohkwa:ren",
+              "sohkwaren"
+            ],
+            "cm": "Tho niioht! sohkwá:ren — you be strong (command) of sohkwá:ren. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the you be strong (command) form of sohkwá:ren (you are strong / be strong (command)) is sohkwá:ren."
+          },
+          {
+            "type": "type",
+            "wid": "ov02",
+            "prompt": "Type the Kanien'kéha for: you are cold / be cold (command)",
+            "correct": "satonhnhéton",
+            "alts": [
+              "satonhnheton"
+            ],
+            "cm": "Tho niioht! satonhnhéton — you are cold / be cold (command).",
+            "wm": "The word is satonhnhéton. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "ov03",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "saiosé:ren",
+            "meaning": "you are sick / be sick (command)",
+            "hint": "4 syllables: saio-sé:ren. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "le12",
             "prompt": "The medicine woman",
@@ -28707,6 +29969,40 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "cu05",
+            "prompt": "Write the Kanien'kéha word for: native tobacco.",
+            "sentence": "___ (native tobacco)",
+            "correct": "Onkwatà:wen",
+            "hint": "O",
+            "alts": [
+              "onkwatà:wen",
+              "onkwatawen"
+            ],
+            "cm": "Tho niioht! Onkwatà:wen — native tobacco.",
+            "wm": "Not quite. The word for 'native tobacco' is Onkwatà:wen. Starts with O."
+          },
+          {
+            "type": "type",
+            "wid": "le19",
+            "prompt": "Type the Kanien'kéha for: false face mask",
+            "correct": "Iotsiskwatáties",
+            "alts": [
+              "false face mask"
+            ],
+            "cm": "Tho niioht! Iotsiskwatáties — false face mask.",
+            "wm": "The word is Iotsiskwatáties. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "cu14",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Okwéskons",
+            "meaning": "rattle (ceremonial)",
+            "hint": "2 syllables: O-kwéskons. The acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "na17",
             "prompt": "Cedar",
@@ -28791,6 +30087,20 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! Language pedagogy must respect community-defined boundaries. The medicine woman's title is shareable. The specific songs, protocols, and restricted knowledge of healing ceremonies are not. Knowing where the boundary is — and respecting it — is part of learning the language responsibly.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "ov01",
+            "prompt": "Produce the verb form. Root: sohkwá:ren — you are strong / be strong (command). Fill in the you be strong (command) form.",
+            "sentence": "___ (you be strong (command))",
+            "correct": "sohkwá:ren",
+            "hint": "s",
+            "alts": [
+              "sohkwa:ren",
+              "sohkwaren"
+            ],
+            "cm": "Tho niioht! sohkwá:ren — you be strong (command) of sohkwá:ren. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the you be strong (command) form of sohkwá:ren (you are strong / be strong (command)) is sohkwá:ren."
           },
           {
             "type": "story",
@@ -28893,6 +30203,42 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "st06",
+            "prompt": "Produce the verb form. Root: Wakatshennón:ni — i am happy. Fill in the I am happy form.",
+            "sentence": "___ (I am happy)",
+            "correct": "Wakatshennón:ni",
+            "hint": "W",
+            "alts": [
+              "wakatshennon:ni",
+              "I am happy",
+              "happy"
+            ],
+            "cm": "Tho niioht! Wakatshennón:ni — I am happy of Wakatshennón:ni. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the I am happy form of Wakatshennón:ni (i am happy) is Wakatshennón:ni."
+          },
+          {
+            "type": "type",
+            "wid": "st05",
+            "prompt": "Type the Kanien'kéha for: i am depressed / heavy-hearted",
+            "correct": "Wake'nikonhrén:ton",
+            "alts": [
+              "depressed",
+              "wake'nikonhrenton"
+            ],
+            "cm": "Tho niioht! Wake'nikonhrén:ton — i am depressed / heavy-hearted.",
+            "wm": "The word is Wake'nikonhrén:ton. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "st06",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Wakatshennón:ni",
+            "meaning": "i am happy",
+            "hint": "4 syllables: Wa-katshe-nnón:ni. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "st04",
             "prompt": "Feeling good inside",
@@ -28976,6 +30322,20 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The tobacco opens the channel. The cedar purifies. The rattle drives. The medicine woman holds the knowledge. Healing in Kanien'kehá:ka tradition is a complete ceremonial and physical practice — the two are inseparable.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "ov01",
+            "prompt": "Produce the verb form. Root: sohkwá:ren — you are strong / be strong (command). Fill in the you be strong (command) form.",
+            "sentence": "___ (you be strong (command))",
+            "correct": "sohkwá:ren",
+            "hint": "s",
+            "alts": [
+              "sohkwa:ren",
+              "sohkwaren"
+            ],
+            "cm": "Tho niioht! sohkwá:ren — you be strong (command) of sohkwá:ren. You built a Kanien'kéha verb form.",
+            "wm": "Not quite — the you be strong (command) form of sohkwá:ren (you are strong / be strong (command)) is sohkwá:ren."
           },
           {
             "type": "story",
@@ -29086,6 +30446,40 @@
             ],
             "cm": "Tho niioht! Seskéha — the green corn moon. The calendar and the crops are the same system. When you know the month name, you know what is happening in the garden.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Write the Kanien'kéha word for: corn / Maize.",
+            "sentence": "___ (corn / Maize)",
+            "correct": "Onón:ta",
+            "hint": "O",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn / Maize.",
+            "wm": "Not quite. The word for 'corn / Maize' is Onón:ta. Starts with O."
+          },
+          {
+            "type": "type",
+            "wid": "fo04",
+            "prompt": "Type the Kanien'kéha for: beans",
+            "correct": "Ohsahéta'",
+            "alts": [
+              "ohsaheta"
+            ],
+            "cm": "Tho niioht! Ohsahéta' — beans.",
+            "wm": "The word is Ohsahéta'. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "fo06",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Otá:ra",
+            "meaning": "squash",
+            "hint": "2 syllables: O-tá:ra. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
           },
           {
             "type": "story",
@@ -29205,6 +30599,40 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Write the Kanien'kéha word for: corn / Maize.",
+            "sentence": "___ (corn / Maize)",
+            "correct": "Onón:ta",
+            "hint": "O",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn / Maize.",
+            "wm": "Not quite. The word for 'corn / Maize' is Onón:ta. Starts with O."
+          },
+          {
+            "type": "type",
+            "wid": "fo04",
+            "prompt": "Type the Kanien'kéha for: beans",
+            "correct": "Ohsahéta'",
+            "alts": [
+              "ohsaheta"
+            ],
+            "cm": "Tho niioht! Ohsahéta' — beans.",
+            "wm": "The word is Ohsahéta'. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "fo06",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Otá:ra",
+            "meaning": "squash",
+            "hint": "2 syllables: O-tá:ra. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "fe07",
             "prompt": "Shucking corn",
@@ -29290,6 +30718,20 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The Three Sisters are not products in Kanien'kehá:ka understanding — they are beings who give. The Thanksgiving Address thanks them as such: their gifts sustain us. The relationship is reciprocal: we tend them, they feed us. We acknowledge them, they continue to give.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Write the Kanien'kéha word for: corn / Maize.",
+            "sentence": "___ (corn / Maize)",
+            "correct": "Onón:ta",
+            "hint": "O",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn / Maize.",
+            "wm": "Not quite. The word for 'corn / Maize' is Onón:ta. Starts with O."
           },
           {
             "type": "story",
@@ -29392,6 +30834,40 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Write the Kanien'kéha word for: corn / Maize.",
+            "sentence": "___ (corn / Maize)",
+            "correct": "Onón:ta",
+            "hint": "O",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn / Maize.",
+            "wm": "Not quite. The word for 'corn / Maize' is Onón:ta. Starts with O."
+          },
+          {
+            "type": "type",
+            "wid": "fo04",
+            "prompt": "Type the Kanien'kéha for: beans",
+            "correct": "Ohsahéta'",
+            "alts": [
+              "ohsaheta"
+            ],
+            "cm": "Tho niioht! Ohsahéta' — beans.",
+            "wm": "The word is Ohsahéta'. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "fo06",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "Otá:ra",
+            "meaning": "squash",
+            "hint": "2 syllables: O-tá:ra. The colon marks a long vowel — hold it twice as long; the acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "fo05",
             "prompt": "Corn soup",
@@ -29475,6 +30951,20 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The Three Sisters are not products — they are beings who give. The Address thanks them as such. The relationship is reciprocal: we tend them, they feed us.",
             "wm": "Please try again."
+          },
+          {
+            "type": "fill",
+            "wid": "fo05",
+            "prompt": "Write the Kanien'kéha word for: corn / Maize.",
+            "sentence": "___ (corn / Maize)",
+            "correct": "Onón:ta",
+            "hint": "O",
+            "alts": [
+              "onón:ta",
+              "ononta"
+            ],
+            "cm": "Tho niioht! Onón:ta — corn / Maize.",
+            "wm": "Not quite. The word for 'corn / Maize' is Onón:ta. Starts with O."
           },
           {
             "type": "story",
@@ -30639,6 +32129,24 @@
             "hint": "Shé:kon: hold the é: for a full beat. Shékon: cut it short. Can you feel the difference? The first is the word. The second is a mistake. Train your ear to hear it."
           },
           {
+            "type": "type",
+            "wid": "p02",
+            "prompt": "Type the Kanien'kéha for: i / we",
+            "correct": "í:'i",
+            "alts": [
+              "teiakeniiáhshe",
+              "i'i",
+              "iakwakwekon",
+              "ý:'i",
+              "i:'i",
+              "y'i",
+              "iakwakwé:kon",
+              "teiakeniiahshe"
+            ],
+            "cm": "Tho niioht! í:'i — i / we.",
+            "wm": "The word is í:'i. All community dialect spellings are accepted."
+          },
+          {
             "type": "story",
             "wid": "g01",
             "prompt": "The colon",
@@ -30776,6 +32284,24 @@
             "hint": "í:'i: hold the long í:, close the throat briefly, then say the final i. iken': say it, then close the throat at the end — don't let the word trail off. The glottal stop closes the word like a period closes a sentence."
           },
           {
+            "type": "type",
+            "wid": "p01",
+            "prompt": "Type the Kanien'kéha for: you",
+            "correct": "í:se'",
+            "alts": [
+              "teseniiáhshe",
+              "ý:se'",
+              "teseniiahshe",
+              "sewakwé:kon",
+              "ise'",
+              "sewakwekon",
+              "i:se'",
+              "yse'"
+            ],
+            "cm": "Tho niioht! í:se' — you.",
+            "wm": "The word is í:se'. All community dialect spellings are accepted."
+          },
+          {
             "type": "story",
             "wid": "p02",
             "prompt": "The throat's consonant",
@@ -30911,6 +32437,17 @@
             "word": "Niawenhkó:wa",
             "meaning": "Thank you very much",
             "hint": "Nia-wen-KÓ:-wa. The KÓ: carries the stress and the length together. Let your voice rise and hold on that syllable. The word is not in a hurry — it is an expression of real gratitude."
+          },
+          {
+            "type": "type",
+            "wid": "na04",
+            "prompt": "Type the Kanien'kéha for: river / On the river",
+            "correct": "Kaniatarà:ke",
+            "alts": [
+              "kaniatarake"
+            ],
+            "cm": "Tho niioht! Kaniatarà:ke — river / On the river.",
+            "wm": "The word is Kaniatarà:ke. All community dialect spellings are accepted."
           },
           {
             "type": "story",
@@ -31379,6 +32916,35 @@
             "wm": "Please try again — the stress and length are on the second syllable: nón:."
           },
           {
+            "type": "fill",
+            "wid": "p01",
+            "prompt": "Write the Kanien'kéha word for: you.",
+            "sentence": "___ (you)",
+            "correct": "í:se'",
+            "hint": "í",
+            "alts": [
+              "i:se'",
+              "ise'",
+              "ý:se'",
+              "yse'",
+              "teseniiáhshe",
+              "teseniiahshe",
+              "sewakwé:kon",
+              "sewakwekon"
+            ],
+            "cm": "Tho niioht! í:se' — you.",
+            "wm": "Not quite. The word for 'you' is í:se'. Starts with í."
+          },
+          {
+            "type": "audio",
+            "wid": "p01",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "í:se'",
+            "meaning": "you",
+            "hint": "1 syllable: í:-se'. The apostrophe marks a glottal stop — a brief catch in the throat; the colon marks a long vowel — hold it twice as long."
+          },
+          {
             "type": "story",
             "wid": "p02",
             "prompt": "Writing yourself",
@@ -31489,6 +33055,20 @@
             "word": "Okwáho skén:nen",
             "meaning": "The wolf is calm / peaceful",
             "hint": "ok-WÁ-ho (3 syllables) — SKÉN:-nen (2 syllables). Write both words from memory, then check your marks: á in Okwáho, é: in skén:nen. Then say what you wrote."
+          },
+          {
+            "type": "fill",
+            "wid": "wa01",
+            "prompt": "Write the Kanien'kéha word for: bear.",
+            "sentence": "___ (bear)",
+            "correct": "Ohkwá:ri",
+            "hint": "O",
+            "alts": [
+              "ohkwá:ri",
+              "ohkwari"
+            ],
+            "cm": "Tho niioht! Ohkwá:ri — bear.",
+            "wm": "Not quite. The word for 'bear' is Ohkwá:ri. Starts with O."
           },
           {
             "type": "story",
@@ -31611,6 +33191,53 @@
             "wm": "Please try again."
           },
           {
+            "type": "fill",
+            "wid": "p01",
+            "prompt": "Write the Kanien'kéha word for: you.",
+            "sentence": "___ (you)",
+            "correct": "í:se'",
+            "hint": "í",
+            "alts": [
+              "i:se'",
+              "ise'",
+              "ý:se'",
+              "yse'",
+              "teseniiáhshe",
+              "teseniiahshe",
+              "sewakwé:kon",
+              "sewakwekon"
+            ],
+            "cm": "Tho niioht! í:se' — you.",
+            "wm": "Not quite. The word for 'you' is í:se'. Starts with í."
+          },
+          {
+            "type": "type",
+            "wid": "p02",
+            "prompt": "Type the Kanien'kéha for: i / we",
+            "correct": "í:'i",
+            "alts": [
+              "teiakeniiáhshe",
+              "i'i",
+              "iakwakwekon",
+              "ý:'i",
+              "i:'i",
+              "y'i",
+              "iakwakwé:kon",
+              "teiakeniiahshe"
+            ],
+            "cm": "Tho niioht! í:'i — i / we.",
+            "wm": "The word is í:'i. All community dialect spellings are accepted."
+          },
+          {
+            "type": "audio",
+            "wid": "p04",
+            "prompt": "Say this word aloud",
+            "sub": "Record yourself, listen back, and self-assess",
+            "word": "raónha",
+            "meaning": "he / him",
+            "hint": "2 syllables: raó-nha. The acute accent marks the stressed syllable."
+          },
+          {
             "type": "story",
             "wid": "p01",
             "prompt": "One language, many spellings",
@@ -31691,6 +33318,19 @@
             "word": "Rotinonhsyón:ni",
             "meaning": "People of the Longhouse / Haudenosaunee",
             "hint": "Ro-ti-non-hsyÓN:-ni — five syllables. Stress and length on yÓN:. This is a name. Names deserve to be said correctly."
+          },
+          {
+            "type": "fill",
+            "wid": "ex10",
+            "prompt": "Write the Kanien'kéha word for: indigenous person / original person.",
+            "sentence": "___ (indigenous person / original person)",
+            "correct": "Onkwehón:we",
+            "hint": "O",
+            "alts": [
+              "onkwehon:we"
+            ],
+            "cm": "Tho niioht! Onkwehón:we — indigenous person / original person.",
+            "wm": "Not quite. The word for 'indigenous person / original person' is Onkwehón:we. Starts with O."
           },
           {
             "type": "story",

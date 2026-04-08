@@ -756,6 +756,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   </div>
 </div>
 
+
+<!-- JOURNAL SCREEN -->
+<div id="journal" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2>Your journal</h2><p>Reflections saved as you move through the lessons — private, stays on your device</p></div>
+    <div id="journal-list" style="padding-bottom:2rem;"></div>
+  </div>
+</div>
+
 <!-- BOTTOM NAV -->
 <nav class="bnav" id="bnav" style="display:none">
   <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni">🏠</span>Journey</button>
@@ -763,6 +773,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni">📖</span>Words</button>
   <button class="nb" id="nb-phrases" onclick="navTo('phrases')"><span class="ni">💬</span>Phrases</button>
   <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni">📚</span>Resources</button>
+  <button class="nb" id="nb-journal" onclick="navTo('journal')"><span class="ni">📓</span>Journal</button>
 </nav>
 
 <!-- WORD MODAL -->
@@ -832,8 +843,19 @@ function loginAs(name,data){
   if(!data.proficiency)data.proficiency={};
   if(!data.sylProficiency)data.sylProficiency={};
   if(!data.lessonProgress)data.lessonProgress={};
+  if(!data.journal)data.journal={};
+  // Migrate legacy proficiency arrays to SM-2 on first login after update
+  if(!data.SM2_MIGRATED_V2){
+    Object.keys(data.proficiency).forEach(id=>{
+      if(Array.isArray(data.proficiency[id])){
+        data.proficiency[id]=migrateEntry(data.proficiency[id]);
+      }
+    });
+    data.SM2_MIGRATED_V2=true;
+  }
   const today=new Date().toDateString();
-  if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
+  if(!data.daysLogged.includes(today)){data.daysLogged.push(today);}
+  saveUD(name,data);
   document.getElementById('bnav').style.display='flex';
   updateHomeUI();navTo('home');
 }
@@ -849,20 +871,67 @@ function doLogout(){
 }
 
 /* ══════════════════════════════════════════════════════════
-   PROFICIENCY (running avg last 10)
+   PROFICIENCY — SM-2 spaced repetition scheduler
+   Each word stores: {interval, easiness, due, reps, history[]}
+   interval = days until next review
+   easiness = difficulty factor (default 2.5, min 1.3)
+   due      = Unix ms timestamp when review is due
+   reps     = consecutive correct answers
+   history  = last 10 correct(1)/wrong(0) — for the visual bar only
    ══════════════════════════════════════════════════════════ */
+const SM2_DEFAULTS={interval:1,easiness:2.5,due:0,reps:0,history:[]};
+const MS_PER_DAY=86400000;
+
 function recProf(id,correct){
   if(!CU)return;
+  if(!CU.data.proficiency)CU.data.proficiency={};
   const p=CU.data.proficiency;
-  if(!p[id])p[id]=[];
-  p[id].push(correct?1:0);
-  if(p[id].length>10)p[id]=p[id].slice(-10);
+  if(!p[id]||Array.isArray(p[id]))p[id]=migrateEntry(p[id]);
+  const e=p[id];
+  // Update history array (visual bar)
+  e.history.push(correct?1:0);
+  if(e.history.length>10)e.history=e.history.slice(-10);
+  // SM-2 update
+  if(correct){
+    e.reps++;
+    if(e.reps===1)e.interval=1;
+    else if(e.reps===2)e.interval=6;
+    else e.interval=Math.round(e.interval*e.easiness);
+    e.easiness=Math.max(1.3,e.easiness+0.1-(5-5)*0.08);
+  } else {
+    e.reps=0;
+    e.interval=1;
+    e.easiness=Math.max(1.3,e.easiness-0.2);
+  }
+  e.due=Date.now()+e.interval*MS_PER_DAY;
   saveUD(CU.name,CU.data);
 }
+function migrateEntry(old){
+  // Convert legacy array format to SM-2 object on first access
+  const obj={...SM2_DEFAULTS};
+  if(Array.isArray(old)&&old.length){
+    obj.history=[...old].slice(-10);
+    const pct=old.reduce((a,b)=>a+b,0)/old.length;
+    obj.easiness=1.3+pct*1.2;
+    obj.interval=pct>0.8?7:pct>0.5?3:1;
+    obj.due=Date.now(); // treat all as due now after migration
+  }
+  return obj;
+}
 function getProf(id){
-  if(!CU||!CU.data.proficiency[id])return null;
-  const a=CU.data.proficiency[id];
-  return{pct:Math.round(a.reduce((x,y)=>x+y,0)/10*100),count:a.length};
+  if(!CU||!CU.data.proficiency||!CU.data.proficiency[id])return null;
+  const e=CU.data.proficiency[id];
+  const hist=Array.isArray(e)?e:e.history;
+  if(!hist||!hist.length)return null;
+  return{pct:Math.round(hist.reduce((a,b)=>a+b,0)/10*100),count:hist.length};
+}
+function getDueWords(){
+  if(!CU||!CU.data.proficiency)return[];
+  const now=Date.now();
+  return Object.entries(CU.data.proficiency)
+    .filter(([,e])=>!Array.isArray(e)&&e.due<=now)
+    .sort(([,a],[,b])=>a.due-b.due)
+    .map(([id])=>id);
 }
 
 /* Syllabary proficiency — separate from vocabulary proficiency */
@@ -901,6 +970,7 @@ function navTo(id){
   if(id==='glossary')renderGloss();
   if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
   if(id==='phrases')renderPhrases();
+  if(id==='journal')renderJournal();
 }
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function goHome(){updateHomeUI();navTo('home');}
@@ -1495,7 +1565,24 @@ function handleAction(){
     EX.scoreable++;
     if(isR){EX.correct++;finishEx(true,ex.cm,'');}
     else{EX.rpool.push({...ex});finishEx(false,(ex.wm||'Not quite.')+' The answer is: '+ex.correct,getVariantNote(ex));}
-  } else if(ex.type==='audio'||ex.type==='story'){advance();}
+  } else if(ex.type==='audio'){advance();}
+  else if(ex.type==='story'){
+    // Save journal entry before advancing
+    const stEl=document.getElementById('starea');
+    if(stEl&&stEl.value.trim()&&CU){
+      const jKey=ex.id||(UNITS[CUi]?.id+'_'+CLi+'_'+EX.done);
+      if(!CU.data.journal)CU.data.journal={};
+      CU.data.journal[jKey]={
+        text:stEl.value.trim(),
+        word:ex.word||'',
+        meaning:ex.meaning||'',
+        lessonTitle:UNITS[CUi]?.lessons[CLi]?.title||'',
+        date:new Date().toLocaleDateString('en-CA')
+      };
+      saveUD(CU.name,CU.data);
+    }
+    advance();
+  }
 }
 
 function getVariantNote(ex){
@@ -2546,6 +2633,32 @@ loadData().then(() => {
   if(last){const u=getUsers();if(u[last]){loginAs(last,u[last]);return;}}
   showScreen('login');
 });
+
+/* ══════════════════════════════════════════════════════════
+   JOURNAL RENDERER
+   ══════════════════════════════════════════════════════════ */
+function renderJournal(){
+  const container=document.getElementById('journal-list');
+  if(!container)return;
+  if(!CU||!CU.data.journal||!Object.keys(CU.data.journal).length){
+    container.innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No reflections yet. Complete a Story Moment exercise to start your journal.</p>';
+    return;
+  }
+  const entries=Object.entries(CU.data.journal)
+    .sort((a,b)=>b[1].date.localeCompare(a[1].date));
+  container.innerHTML=entries.map(([key,e])=>`
+    <div style="border:0.5px solid var(--sand);border-radius:12px;padding:1rem 1.15rem;margin-bottom:.85rem;background:white;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.4rem;">
+        <div>
+          ${e.word?`<span style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${e.word}</span>${e.meaning?` <span style="font-size:.8rem;color:var(--ew);">— ${e.meaning}</span>`:''}`:
+          `<span style="font-size:.85rem;color:var(--ew);">${e.lessonTitle||'Reflection'}</span>`}
+        </div>
+        <span style="font-size:.75rem;color:var(--ew);flex-shrink:0;margin-left:.5rem;">${e.date||''}</span>
+      </div>
+      ${e.lessonTitle&&e.word?`<div style="font-size:.78rem;color:var(--ew);margin-bottom:.35rem;">${e.lessonTitle}</div>`:''}
+      <p style="font-size:.9rem;color:var(--ed);line-height:1.6;white-space:pre-wrap;">${e.text}</p>
+    </div>`).join('');
+}
 </script>
 </body>
 </html>
