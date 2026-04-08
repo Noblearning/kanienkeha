@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tsyatenron — Kanien'kéha Learning Companion</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 <style>
 :root{
   --ed:#2C1810;--em:#5C3A1E;--ew:#7A4F2A;
@@ -12,14 +13,34 @@
   --sage:#4A6E40;--sky:#2E6A8E;--skyl:#A8C4D4;
   --birch:#F0E6CC;--smoke:#D4C9B0;--cor:#3A7A3A;--wrg:#9A4A3A;
   --pb:rgba(44,24,16,.12);
+  --nav-h:calc(68px + env(safe-area-inset-bottom));
 }
 *{box-sizing:border-box;margin:0;padding:0;}
+/* ── Practice FAB ── */
+.prac-fab{position:fixed;bottom:calc(68px + env(safe-area-inset-bottom));right:1.1rem;z-index:90;display:none;align-items:center;gap:.55rem;background:var(--sage);color:white;border:none;border-radius:50px;padding:.72rem 1.2rem .72rem .9rem;font-family:'Crimson Pro',serif;font-size:.95rem;font-weight:600;cursor:pointer;box-shadow:0 4px 18px rgba(44,24,16,.28);transition:transform .15s,box-shadow .15s;letter-spacing:.02em;}
+.prac-fab:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(44,24,16,.35);}
+.prac-fab:active{transform:scale(.97);}
+.prac-fab .fab-ic{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;}
+.prac-fab .fab-badge{position:absolute;top:-6px;right:-6px;background:var(--clay);color:white;border-radius:50%;width:20px;height:20px;font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid white;}
+/* ── Practice session overlay ── */
+.prac-overlay{display:none;position:fixed;inset:0;z-index:200;background:var(--cream);overflow-y:auto;flex-direction:column;}
+.prac-overlay.open{display:flex;}
+.prac-header{background:var(--sage);color:white;padding:1rem 1.2rem;display:flex;align-items:center;gap:.75rem;flex-shrink:0;}
+.prac-header-title{flex:1;font-family:'Playfair Display',serif;font-size:1.05rem;}
+.prac-header-sub{font-size:.75rem;opacity:.8;margin-top:.1rem;}
+.prac-close{background:rgba(255,255,255,.2);border:none;color:white;border-radius:50%;width:36px;height:36px;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.prac-progress{height:5px;background:rgba(255,255,255,.3);}
+.prac-progress-fill{height:100%;background:white;transition:width .35s;}
+.prac-body{flex:1;padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:2.5rem;}
+.prac-word-chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--birch);border:1px solid var(--sand);border-radius:20px;padding:.22rem .75rem;font-size:.82rem;color:var(--em);margin-bottom:.85rem;}
+.prac-empty{text-align:center;padding:3rem 1rem;color:var(--ew);font-style:italic;}
+.prac-empty strong{display:block;font-style:normal;color:var(--ed);font-family:'Playfair Display',serif;margin-bottom:.5rem;font-size:1.05rem;}
 html,body{height:100%;font-family:'Crimson Pro',Georgia,serif;background:var(--cream);color:var(--ed);overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(139,94,60,.06),transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(92,58,30,.04),transparent 50%);pointer-events:none;z-index:0;}
 .bm{height:5px;flex-shrink:0;background:repeating-linear-gradient(90deg,var(--clay) 0 8px,var(--ew) 8px 16px,var(--sand) 16px 20px,var(--sage) 20px 28px,var(--sand) 28px 32px);}
 .screen{display:none;position:relative;z-index:1;min-height:100vh;flex-direction:column;}
 .screen.active{display:flex;}
-.pw{flex:1;overflow-y:auto;padding-bottom:5.5rem;}
+.pw{flex:1;overflow-y:auto;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 
 /* ── LOGIN ── */
 #login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));}
@@ -49,9 +70,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 /* ── BOTTOM NAV ── */
 .bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);}
 .nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.68rem;padding:.55rem .58rem;border-radius:8px;transition:color .13s;min-width:56px;min-height:44px;}
-.nb .ni{font-size:1.18rem;line-height:1;}
+.nb .ni{font-size:1.1rem;line-height:1;display:block;}
 .nb.active{color:var(--sand);}
-.nb.active .ni{filter:drop-shadow(0 0 5px rgba(196,120,74,.6));}
+.nb.active .ni{filter:drop-shadow(0 0 5px rgba(196,120,74,.6));}.nb.active .ni i{color:var(--sand);}
 .nb:focus-visible{outline:2px solid var(--sand);outline-offset:2px;}
 
 /* ── HOME ── */
@@ -101,7 +122,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .ll-desc{font-size:.82rem;color:var(--ew);font-style:italic;margin-top:.12rem;}
 
 /* ── LESSON INTRO ── */
-.li-wrap{padding:1.2rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.li-wrap{padding:1.2rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 .li-card{background:white;border-radius:18px;border:1px solid var(--smoke);box-shadow:0 4px 16px rgba(44,24,16,.09);overflow:hidden;margin-bottom:1.2rem;}
 .li-head{background:linear-gradient(135deg,var(--ed),var(--em));padding:1.25rem;color:var(--sand);}
 .li-head .lci{font-size:1.9rem;margin-bottom:.35rem;display:block;}
@@ -136,7 +157,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .prof-note{font-size:.68rem;color:var(--smoke);margin-top:.12rem;font-style:italic;}
 
 /* ── EXERCISE ── */
-.ex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.ex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 .ex-topbar{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem;}
 .ex-pt{flex:1;height:7px;background:var(--smoke);border-radius:10px;overflow:hidden;}
 .ex-pf{height:100%;background:linear-gradient(90deg,var(--clay),var(--ew));border-radius:10px;transition:width .45s cubic-bezier(.4,0,.2,1);}
@@ -342,7 +363,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .sp-card-count{font-size:.68rem;color:var(--ew);margin-top:.18rem;}
 
 /* practice exercise screen */
-.spex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:5rem;}
+.spex-wrap{padding:1.1rem 1.35rem;max-width:540px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 .spex-topbar{display:flex;align-items:center;gap:.85rem;margin-bottom:1.1rem;}
 .spex-pt{flex:1;height:7px;background:var(--smoke);border-radius:10px;overflow:hidden;}
 .spex-pf{height:100%;background:linear-gradient(90deg,var(--clay),var(--ew));border-radius:10px;transition:width .45s cubic-bezier(.4,0,.2,1);}
@@ -756,24 +777,43 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   </div>
 </div>
 
-
-<!-- JOURNAL SCREEN -->
+<!-- JOURNAL -->
 <div id="journal" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh"><h2>Your journal</h2><p>Reflections saved as you move through the lessons — private, stays on your device</p></div>
-    <div id="journal-list" style="padding-bottom:2rem;"></div>
+    <div class="sh"><h2>Your reflections</h2><p>Story moment responses saved to your device. Private — never shared.</p></div>
+    <div id="journal-empty" style="text-align:center;padding:2.5rem 1rem;color:var(--ew);font-style:italic;font-size:.92rem;">No reflections saved yet. Complete a Story Moment exercise and write something — it will appear here.</div>
+    <div id="journal-list"></div>
   </div>
+</div>
+
+<!-- PRACTICE FAB -->
+<button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
+  <span class="fab-ic" style="font-size:1.1rem;line-height:1;">&#8635;</span>
+  <span id="fab-label">Practice</span>
+  <span class="fab-badge" id="fab-badge">0</span>
+</button>
+
+<!-- PRACTICE OVERLAY -->
+<div class="prac-overlay" id="prac-overlay" role="dialog" aria-modal="true" aria-label="Practice session">
+  <div class="prac-header">
+    <div style="flex:1">
+      <div class="prac-header-title">Practice</div>
+      <div class="prac-header-sub" id="prac-header-sub">Low-proficiency words from this unit</div>
+    </div>
+    <button class="prac-close" onclick="closePracOverlay()" aria-label="Close" style="font-size:.85rem;font-weight:700;">&#10005;</button>
+  </div>
+  <div class="prac-progress"><div class="prac-progress-fill" id="prac-prog-fill" style="width:0%"></div></div>
+  <div class="prac-body" id="prac-body"></div>
 </div>
 
 <!-- BOTTOM NAV -->
 <nav class="bnav" id="bnav" style="display:none">
-  <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni">🏠</span>Journey</button>
-  <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni">🔤</span>Sounds</button>
-  <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni">📖</span>Words</button>
-  <button class="nb" id="nb-phrases" onclick="navTo('phrases')"><span class="ni">💬</span>Phrases</button>
-  <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni">📚</span>Resources</button>
-  <button class="nb" id="nb-journal" onclick="navTo('journal')"><span class="ni">📓</span>Journal</button>
+  <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni"><i class="fa-solid fa-house"></i></span>Journey</button>
+  <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni"><i class="fa-solid fa-volume-high"></i></span>Sounds</button>
+  <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni"><i class="fa-solid fa-book-open"></i></span>Words</button>
+  <button class="nb" id="nb-journal" onclick="navTo('journal')"><span class="ni"><i class="fa-solid fa-seedling"></i></span>Journal</button>
+  <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni"><i class="fa-solid fa-compass"></i></span>Resources</button>
 </nav>
 
 <!-- WORD MODAL -->
@@ -844,18 +884,10 @@ function loginAs(name,data){
   if(!data.sylProficiency)data.sylProficiency={};
   if(!data.lessonProgress)data.lessonProgress={};
   if(!data.journal)data.journal={};
-  // Migrate legacy proficiency arrays to SM-2 on first login after update
-  if(!data.SM2_MIGRATED_V2){
-    Object.keys(data.proficiency).forEach(id=>{
-      if(Array.isArray(data.proficiency[id])){
-        data.proficiency[id]=migrateEntry(data.proficiency[id]);
-      }
-    });
-    data.SM2_MIGRATED_V2=true;
-  }
-  const today=new Date().toDateString();
-  if(!data.daysLogged.includes(today)){data.daysLogged.push(today);}
+  migrateProf(data);
   saveUD(name,data);
+  const today=new Date().toDateString();
+  if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
   document.getElementById('bnav').style.display='flex';
   updateHomeUI();navTo('home');
 }
@@ -871,91 +903,94 @@ function doLogout(){
 }
 
 /* ══════════════════════════════════════════════════════════
-   PROFICIENCY — SM-2 spaced repetition scheduler
-   Each word stores: {interval, easiness, due, reps, history[]}
-   interval = days until next review
-   easiness = difficulty factor (default 2.5, min 1.3)
-   due      = Unix ms timestamp when review is due
+   PROFICIENCY — SM-2 spaced repetition
+   Each word: {interval, easiness, due, reps, history[]}
+   interval = days until next review (SM-2 schedule)
+   easiness = difficulty factor, starts at 2.5
+   due      = Unix ms timestamp when next review is due
    reps     = consecutive correct answers
-   history  = last 10 correct(1)/wrong(0) — for the visual bar only
+   history  = last 10 results (1/0) for the proficiency bar
    ══════════════════════════════════════════════════════════ */
-const SM2_DEFAULTS={interval:1,easiness:2.5,due:0,reps:0,history:[]};
-const MS_PER_DAY=86400000;
-
+function _sm2Init(){return{interval:1,easiness:2.5,due:Date.now(),reps:0,history:[]};}
+function _sm2Step(rec,correct){
+  const r={...rec};
+  r.history.push(correct?1:0);
+  if(r.history.length>10)r.history=r.history.slice(-10);
+  if(correct){
+    r.reps++;
+    r.interval=r.reps===1?1:r.reps===2?6:Math.round(r.interval*r.easiness);
+    r.easiness=Math.max(1.3,r.easiness+0.1-0.08*(1-correct));
+  } else {
+    r.reps=0;r.interval=1;
+    r.easiness=Math.max(1.3,r.easiness-0.2);
+  }
+  r.due=Date.now()+r.interval*864e5;
+  return r;
+}
 function recProf(id,correct){
   if(!CU)return;
-  if(!CU.data.proficiency)CU.data.proficiency={};
   const p=CU.data.proficiency;
-  if(!p[id]||Array.isArray(p[id]))p[id]=migrateEntry(p[id]);
-  const e=p[id];
-  // Update history array (visual bar)
-  e.history.push(correct?1:0);
-  if(e.history.length>10)e.history=e.history.slice(-10);
-  // SM-2 update
-  if(correct){
-    e.reps++;
-    if(e.reps===1)e.interval=1;
-    else if(e.reps===2)e.interval=6;
-    else e.interval=Math.round(e.interval*e.easiness);
-    e.easiness=Math.max(1.3,e.easiness+0.1-(5-5)*0.08);
-  } else {
-    e.reps=0;
-    e.interval=1;
-    e.easiness=Math.max(1.3,e.easiness-0.2);
-  }
-  e.due=Date.now()+e.interval*MS_PER_DAY;
+  p[id]=_sm2Step(p[id]||_sm2Init(),correct);
   saveUD(CU.name,CU.data);
 }
-function migrateEntry(old){
-  // Convert legacy array format to SM-2 object on first access
-  const obj={...SM2_DEFAULTS};
-  if(Array.isArray(old)&&old.length){
-    obj.history=[...old].slice(-10);
-    const pct=old.reduce((a,b)=>a+b,0)/old.length;
-    obj.easiness=1.3+pct*1.2;
-    obj.interval=pct>0.8?7:pct>0.5?3:1;
-    obj.due=Date.now(); // treat all as due now after migration
-  }
-  return obj;
-}
 function getProf(id){
-  if(!CU||!CU.data.proficiency||!CU.data.proficiency[id])return null;
-  const e=CU.data.proficiency[id];
-  const hist=Array.isArray(e)?e:e.history;
-  if(!hist||!hist.length)return null;
-  return{pct:Math.round(hist.reduce((a,b)=>a+b,0)/10*100),count:hist.length};
+  if(!CU||!CU.data.proficiency[id])return null;
+  const r=CU.data.proficiency[id];
+  const hist=Array.isArray(r)?r:r.history||[];
+  const pct=hist.length?Math.round(hist.reduce((a,b)=>a+b,0)/10*100):0;
+  return{pct,count:hist.length,due:r.due||0,interval:r.interval||1};
 }
 function getDueWords(){
-  if(!CU||!CU.data.proficiency)return[];
+  if(!CU)return[];
   const now=Date.now();
   return Object.entries(CU.data.proficiency)
-    .filter(([,e])=>!Array.isArray(e)&&e.due<=now)
+    .filter(([,r])=>!Array.isArray(r)&&r.due<=now)
     .sort(([,a],[,b])=>a.due-b.due)
     .map(([id])=>id);
 }
 
-/* Syllabary proficiency — separate from vocabulary proficiency */
+/* Syllabary proficiency — SM-2, same pattern */
 function recSylProf(id,correct){
   if(!CU)return;
   if(!CU.data.sylProficiency)CU.data.sylProficiency={};
   const p=CU.data.sylProficiency;
-  if(!p[id])p[id]=[];
-  p[id].push(correct?1:0);
-  if(p[id].length>10)p[id]=p[id].slice(-10);
+  p[id]=_sm2Step(p[id]||_sm2Init(),correct);
   saveUD(CU.name,CU.data);
 }
 function getSylProf(id){
   if(!CU||!CU.data.sylProficiency||!CU.data.sylProficiency[id])return null;
-  const a=CU.data.sylProficiency[id];
-  return{pct:Math.round(a.reduce((x,y)=>x+y,0)/10*100),count:a.length};
+  const r=CU.data.sylProficiency[id];
+  const hist=Array.isArray(r)?r:r.history||[];
+  const pct=hist.length?Math.round(hist.reduce((a,b)=>a+b,0)/10*100):0;
+  return{pct,count:hist.length};
 }
 function profHTML(id){
   const p=getProf(id);
   if(!p)return'<div class="prof-note">Not yet practiced</div>';
   const cls=p.pct>=80?'phigh':p.pct>=40?'pmid':p.pct>0?'plow':'pnone';
+  const due=p.due&&p.due>Date.now()?`Due in ${Math.ceil((p.due-Date.now())/864e5)} day${Math.ceil((p.due-Date.now())/864e5)!==1?'s':''}`:p.due?'Due for review':'';
   return`<div class="prof-label"><span>Proficiency</span><span>${p.pct}%</span></div>
   <div class="prof-track"><div class="prof-fill ${cls}" style="width:${p.pct}%"></div></div>
-  <div class="prof-note">${p.count} of 10 recent attempt${p.count!==1?'s':''} tracked</div>`;
+  <div class="prof-note">${p.count} of 10 recent attempts${due?` · ${due}`:''}.</div>`;
+}
+
+/* ── MIGRATION: convert old array format to SM-2 on first login ── */
+function migrateProf(data){
+  if(data._profV2)return;
+  const p=data.proficiency||{};
+  Object.keys(p).forEach(id=>{
+    if(Array.isArray(p[id])){
+      const hist=p[id];
+      const pct=hist.length?hist.reduce((a,b)=>a+b,0)/hist.length:0;
+      const rec=_sm2Init();
+      rec.history=hist;
+      rec.easiness=Math.max(1.3,1.3+pct*1.2);
+      rec.interval=Math.max(1,Math.round(pct*14));
+      rec.due=Date.now()+rec.interval*864e5;
+      p[id]=rec;
+    }
+  });
+  data._profV2=true;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -972,8 +1007,383 @@ function navTo(id){
   if(id==='phrases')renderPhrases();
   if(id==='journal')renderJournal();
 }
+function renderJournal(){
+  if(!CU||!CU.data.journal)return;
+  const j=CU.data.journal;
+  const entries=Object.entries(j).sort((a,b)=>b[1].date.localeCompare(a[1].date));
+  const empty=document.getElementById('journal-empty');
+  const list=document.getElementById('journal-list');
+  if(!entries.length){empty.style.display='';list.innerHTML='';return;}
+  empty.style.display='none';
+  list.innerHTML=entries.map(([,e])=>{
+    const d=new Date(e.date);
+    const dateStr=d.toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'});
+    return`<div style="border:0.5px solid var(--smoke);border-radius:12px;padding:1rem 1.15rem;margin-bottom:.75rem;background:white;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.45rem;">
+        ${e.word?`<span style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${e.word}</span>`:'<span></span>'}
+        <span style="font-size:.75rem;color:var(--ew);">${dateStr}</span>
+      </div>
+      ${e.meaning?`<div style="font-size:.78rem;color:var(--ew);margin-bottom:.5rem;">${e.meaning}</div>`:''}
+      <p style="font-size:.88rem;color:var(--ew);font-style:italic;margin-bottom:.55rem;line-height:1.5;">${e.prompt?e.prompt.slice(0,120)+'…':''}</p>
+      <p style="font-size:.95rem;color:var(--ed);line-height:1.65;white-space:pre-wrap;">${e.text}</p>
+    </div>`;
+  }).join('');
+}
+
+/* ══════════════════════════════════════════════════════════
+   PRACTICE FAB + MINI-SESSION ENGINE
+   ══════════════════════════════════════════════════════════
+
+   Flow:
+     openUnit() / openLesson()  →  updateFab(scope)
+       Collects all wids in current unit (scope='unit')
+       or current lesson (scope='lesson'), scores them,
+       shows FAB with badge count if any are weak (<60%)
+       or SM-2 due.
+
+     openPracOverlay()
+       Builds a pool of up to 10 exercises from the
+       weakest words (sorted by proficiency pct asc),
+       preferring type/fill > mc for productive recall.
+       Renders the first exercise inside the overlay.
+
+     pracNext() / pracSubmit()
+       Step through the pool, record proficiency, and
+       show a completion screen when done.
+   ══════════════════════════════════════════════════════════ */
+
+let PRAC = { pool:[], idx:0, correct:0, total:0, scope:'unit', wids:[] };
+
+/* ── collect all wids from current unit or lesson ── */
+function unitWids(unitIdx) {
+  const u = UNITS[unitIdx];
+  if (!u) return [];
+  const ids = new Set();
+  u.lessons.forEach(l => (l.vocabIds||[]).forEach(id => ids.add(id)));
+  return [...ids];
+}
+function lessonWids(unitIdx, lessonIdx) {
+  const l = (UNITS[unitIdx]||{lessons:[]}).lessons[lessonIdx];
+  if (!l) return [];
+  return [...new Set(l.vocabIds||[])];
+}
+
+/* ── score a wid: returns pct (0-100), null if never practiced ── */
+function widScore(id) {
+  const p = getProf(id);
+  return p ? p.pct : null;
+}
+
+/* ── build practice exercises for a set of wids ──
+   Strategy:
+   1. Filter to wids that have been practiced and are weak (<60%)
+      OR are SM-2-due, OR never practiced but lesson is complete.
+   2. Sort: due-and-low first, then low-pct, then never-seen.
+   3. For each wid, find the best exercise in UNITS that uses it:
+      prefer type > fill > mc (productive over recognition).
+   4. Cap at 10 exercises, deduplicate by wid.
+── */
+function buildPracPool(wids) {
+  if (!wids.length) return [];
+
+  const now = Date.now();
+  const profData = CU ? CU.data.proficiency : {};
+
+  // Score and filter
+  const scored = wids.map(id => {
+    const rec = profData[id];
+    const hist = rec && !Array.isArray(rec) ? rec.history||[] : (Array.isArray(rec)?rec:[]);
+    const pct = hist.length ? Math.round(hist.reduce((a,b)=>a+b,0)/10*100) : null;
+    const due = rec && !Array.isArray(rec) ? (rec.due||0) : 0;
+    const isDue = due <= now && due > 0;
+    return { id, pct, isDue };
+  })
+  .filter(x => x.pct === null || x.pct < 60 || x.isDue)
+  .sort((a, b) => {
+    // Due-and-low first
+    const aScore = (a.isDue ? -200 : 0) + (a.pct === null ? -50 : a.pct);
+    const bScore = (b.isDue ? -200 : 0) + (b.pct === null ? -50 : b.pct);
+    return aScore - bScore;
+  });
+
+  // Build exercise index: wid → best exercise
+  const exIndex = {};
+  UNITS.forEach(u => {
+    u.lessons.forEach(l => {
+      l.exercises.forEach(ex => {
+        const wid = ex.wid;
+        if (!wid || !scored.find(s => s.id === wid)) return;
+        if (exIndex[wid]) {
+          // prefer type > fill > audio > mc
+          const rank = { type:4, fill:3, audio:2, mc:1 };
+          if ((rank[ex.type]||0) > (rank[exIndex[wid].type]||0)) exIndex[wid] = ex;
+        } else {
+          exIndex[wid] = ex;
+        }
+      });
+    });
+  });
+
+  // Assemble pool — cap at 10, skip wids without an exercise
+  const pool = [];
+  for (const { id } of scored) {
+    if (pool.length >= 10) break;
+    const ex = exIndex[id];
+    if (!ex) continue;
+    // Don't include story/dialogue/match in practice
+    if (['story','dialogue','match'].includes(ex.type)) continue;
+    pool.push({ ...ex, _pracWid: id });
+  }
+  return pool;
+}
+
+/* ── update FAB visibility ── */
+function updateFab(scope) {
+  const fab = document.getElementById('prac-fab');
+  if (!fab || !CU) { if (fab) fab.style.display = 'none'; return; }
+
+  PRAC.scope = scope;
+  const wids = scope === 'lesson'
+    ? lessonWids(CUi, CLi)
+    : unitWids(CUi);
+  PRAC.wids = wids;
+
+  const pool = buildPracPool(wids);
+  const count = pool.length;
+
+  if (count === 0) {
+    fab.style.display = 'none';
+    return;
+  }
+
+  fab.style.display = 'flex';
+  document.getElementById('fab-badge').textContent = count;
+  document.getElementById('fab-label').textContent =
+    count === 1 ? '1 to review' : `${count} to review`;
+}
+
+/* ── open overlay ── */
+function openPracOverlay() {
+  const wids = PRAC.scope === 'lesson'
+    ? lessonWids(CUi, CLi)
+    : unitWids(CUi);
+  const pool = buildPracPool(wids);
+
+  if (!pool.length) { closePracOverlay(); return; }
+
+  const scopeLabel = PRAC.scope === 'lesson'
+    ? UNITS[CUi].lessons[CLi].title
+    : UNITS[CUi].title;
+
+  PRAC.pool = pool;
+  PRAC.idx = 0;
+  PRAC.correct = 0;
+  PRAC.total = pool.length;
+
+  document.getElementById('prac-header-sub').textContent =
+    `${pool.length} word${pool.length!==1?'s':''} · ${scopeLabel}`;
+  document.getElementById('prac-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderPracEx();
+}
+
+/* ── close overlay ── */
+function closePracOverlay() {
+  document.getElementById('prac-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+  updateFab(PRAC.scope);
+}
+
+/* ── progress bar ── */
+function updatePracProgress() {
+  const pct = PRAC.total ? Math.round((PRAC.idx / PRAC.total) * 100) : 0;
+  document.getElementById('prac-prog-fill').style.width = pct + '%';
+}
+
+/* ── render one exercise in the overlay ── */
+function renderPracEx() {
+  if (PRAC.idx >= PRAC.total) { showPracComplete(); return; }
+  updatePracProgress();
+
+  const ex = PRAC.pool[PRAC.idx];
+  const wid = ex._pracWid || ex.wid;
+  const word = GLOSS.find(g => g.id === wid);
+  const wordChip = word
+    ? `<div class="prac-word-chip">
+        <span style="font-family:'Playfair Display',serif;">${word.target}</span>
+        <span style="color:var(--ew);">·</span>
+        <span>${word.english}</span>
+      </div>`
+    : '';
+
+  let body = '';
+  if (ex.type === 'mc') {
+    const opts = ex.options.map(o =>
+      `<button class="mcb" data-v="${escP(o)}"
+        onclick="pracPickMC(this,'${escP(o)}','${escP(ex.correct)}')">${o}</button>`
+    ).join('');
+    body = `<div class="mco">${opts}</div>`;
+  } else if (ex.type === 'fill') {
+    body = `<div class="fbs">${
+      ex.sentence.replace('___',
+        `<input class="fbi" id="prac-fbi" type="text" placeholder="?"
+          oninput="pracTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)
+    }</div>
+    <p style="font-size:.78rem;color:var(--ew);font-style:italic;">
+      Hint: starts with <strong>${ex.hint}</strong>
+    </p>`;
+  } else if (ex.type === 'type') {
+    body = `<input class="tinput" id="prac-ti" type="text"
+      placeholder="Type in Kanien\u2019k\xe9ha\u2026"
+      oninput="pracTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`;
+  } else if (ex.type === 'audio') {
+    body = `<div class="apbox">
+      <span class="apword">${ex.word}</span>
+      <span class="aphint">${ex.meaning} \u2014 ${ex.hint}</span>
+    </div>
+    <div style="margin-top:1rem;display:flex;gap:.6rem;justify-content:center;">
+      <button class="sbtn succ" style="max-width:200px;margin-top:0;"
+        onclick="pracAudioGood()">&#10003; Felt right</button>
+      <button class="sbtn dark" style="max-width:200px;margin-top:0;"
+        onclick="pracAudioWrong()">Still learning</button>
+    </div>`;
+  }
+
+  document.getElementById('prac-body').innerHTML = `
+    ${wordChip}
+    <div style="margin-bottom:.75rem;">
+      <div style="font-size:.78rem;font-weight:600;color:var(--ew);text-transform:uppercase;
+        letter-spacing:.07em;margin-bottom:.3rem;">${pracTypeLabel(ex.type)}</div>
+      <p style="font-size:1rem;color:var(--ed);line-height:1.55;">${ex.prompt}</p>
+    </div>
+    ${body}
+    <div id="prac-fb" style="display:none;margin-top:.85rem;padding:.75rem 1rem;
+      border-radius:10px;font-size:.92rem;line-height:1.55;"></div>
+    ${ex.type !== 'audio' ? `<button class="sbtn cont" id="prac-next"
+      style="display:none;margin-top:.75rem;" onclick="pracNext()">Next \u2192</button>` : ''}
+  `;
+
+  if (ex.type === 'fill') {
+    const inp = document.getElementById('prac-fbi');
+    if (inp) setTimeout(() => inp.focus(), 80);
+  } else if (ex.type === 'type') {
+    const inp = document.getElementById('prac-ti');
+    if (inp) setTimeout(() => inp.focus(), 80);
+  }
+}
+
+function pracTypeLabel(t) {
+  return { mc:'multiple choice', fill:'fill in the blank',
+           type:'type the word', audio:'speak aloud' }[t] || t;
+}
+function escP(s) { return (s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
+
+/* ── answer handlers ── */
+function pracPickMC(btn, val, correct) {
+  const ex = PRAC.pool[PRAC.idx];
+  document.querySelectorAll('#prac-body .mcb').forEach(b => b.disabled = true);
+  const isR = val === correct;
+  btn.classList.add(isR ? 'cor' : 'wrg');
+  if (!isR) {
+    document.querySelectorAll('#prac-body .mcb').forEach(b => {
+      if (b.dataset.v === correct) b.classList.add('cor');
+    });
+  }
+  pracRecord(ex._pracWid || ex.wid, isR);
+  pracShowFB(isR, isR ? (ex.cm||'Tho niioht!') : (ex.wm||'Not quite. The answer is: ' + correct));
+}
+
+function pracTyped() {
+  // enable submit on keypress — handled by Enter key
+  const inp = document.getElementById('prac-fbi') || document.getElementById('prac-ti');
+  if (!inp) return;
+  if (!inp._bound) {
+    inp._bound = true;
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') pracSubmitTyped(); });
+  }
+}
+
+function pracSubmitTyped() {
+  const ex = PRAC.pool[PRAC.idx];
+  const isFill = ex.type === 'fill';
+  const inp = document.getElementById(isFill ? 'prac-fbi' : 'prac-ti');
+  if (!inp) return;
+  const raw = inp.value.trim();
+  const norm = s => s.toLowerCase()
+    .replace(/[áàâ]/g,'a').replace(/[éèê]/g,'e')
+    .replace(/[íìî]/g,'i').replace(/[óòô]/g,'o')
+    .replace(/[úùû]/g,'u').replace(/:/g,'').replace(/'/g,'').replace(/'/g,'').trim();
+  const accepted = [ex.correct, ...(ex.alts||[])].map(norm);
+  const isR = accepted.includes(norm(raw));
+  inp.disabled = true;
+  inp.classList.add(isR ? 'cor' : 'wrg');
+  pracRecord(ex._pracWid || ex.wid, isR);
+  pracShowFB(isR,
+    isR ? (ex.cm||'Tho niioht!') :
+    (ex.wm||'Not quite.') + ' The answer is: ' + ex.correct);
+}
+
+function pracAudioGood()  { pracAudioFinish(true);  }
+function pracAudioWrong() { pracAudioFinish(false); }
+function pracAudioFinish(good) {
+  const ex = PRAC.pool[PRAC.idx];
+  pracRecord(ex._pracWid || ex.wid, good);
+  PRAC.idx++;
+  if (good) PRAC.correct++;
+  renderPracEx();
+}
+
+/* ── feedback + next ── */
+function pracShowFB(isR, msg) {
+  const fb = document.getElementById('prac-fb');
+  const nx = document.getElementById('prac-next');
+  if (!fb) return;
+  fb.style.display = 'block';
+  fb.style.background = isR ? 'rgba(74,110,64,.12)' : 'rgba(154,74,58,.10)';
+  fb.style.color = isR ? 'var(--sage)' : 'var(--wrg)';
+  fb.style.borderLeft = `3px solid ${isR?'var(--sage)':'var(--wrg)'}`;
+  fb.textContent = msg;
+  if (nx) nx.style.display = 'block';
+  if (isR) PRAC.correct++;
+}
+
+function pracNext() {
+  PRAC.idx++;
+  renderPracEx();
+}
+
+/* ── record proficiency ── */
+function pracRecord(id, correct) {
+  if (!id || !CU) return;
+  recProf(id, correct);
+}
+
+/* ── completion screen ── */
+function showPracComplete() {
+  updatePracProgress();
+  const pct = PRAC.total ? Math.round(PRAC.correct / PRAC.total * 100) : 0;
+  const msg = pct >= 80
+    ? 'Niawenhkó:wa \u2014 strong session.'
+    : pct >= 50
+    ? 'Good effort \u2014 keep returning to these words.'
+    : 'These words take time. Come back again soon.';
+
+  document.getElementById('prac-body').innerHTML = `
+    <div style="text-align:center;padding:2rem .5rem;">
+      <div style="width:80px;height:80px;border-radius:50%;background:var(--sage);
+        color:white;font-size:2rem;display:flex;align-items:center;
+        justify-content:center;margin:0 auto 1.2rem;">&#10003;</div>
+      <h2 style="font-family:'Playfair Display',serif;color:var(--ed);
+        margin-bottom:.4rem;">Session complete</h2>
+      <p style="font-size:2rem;font-weight:600;color:var(--clay);margin:.4rem 0;">${pct}%</p>
+      <p style="color:var(--ew);font-size:.92rem;margin-bottom:1.5rem;">${msg}</p>
+      <button class="sbtn succ" style="max-width:260px;margin:0 auto;"
+        onclick="closePracOverlay()">Back to lessons</button>
+    </div>`;
+}
+
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
-function goHome(){updateHomeUI();navTo('home');}
+function goHome(){const f=document.getElementById('prac-fab');if(f)f.style.display='none';updateHomeUI();navTo('home');}
 
 /* ══════════════════════════════════════════════════════════
    HOME UI
@@ -1157,6 +1567,7 @@ function openUnit(idx){
       <span style="color:var(--clay);font-size:.9rem">›</span>
     </div>`;
   }).join('');
+  updateFab('unit');
   showScreen('unit-screen');
 }
 
@@ -1174,6 +1585,7 @@ function openLesson(ui,li){
       ${vi?`<div class="vgrid">${vi}</div>`:''}
       ${u.lessons[li].vocabIds.length?`<p style="font-size:.78rem;color:var(--ew);font-style:italic;margin-top:.5rem;">Vocabulary from <a href="https://www.kanehsatakevoices.com" target="_blank" rel="noopener" style="color:var(--sky);border-bottom:1px dashed var(--skyl);text-decoration:none;">Kontinónhstats ↗</a> · Kanehsatà:ke dialect · Curriculum: Onwá:ri Tekahawáhkwen Mary McDonald</p>`:''}
     </div>`;
+  updateFab('lesson');
   showScreen('lesson-screen');
 }
 
@@ -1565,21 +1977,15 @@ function handleAction(){
     EX.scoreable++;
     if(isR){EX.correct++;finishEx(true,ex.cm,'');}
     else{EX.rpool.push({...ex});finishEx(false,(ex.wm||'Not quite.')+' The answer is: '+ex.correct,getVariantNote(ex));}
-  } else if(ex.type==='audio'){advance();}
-  else if(ex.type==='story'){
-    // Save journal entry before advancing
-    const stEl=document.getElementById('starea');
-    if(stEl&&stEl.value.trim()&&CU){
-      const jKey=ex.id||(UNITS[CUi]?.id+'_'+CLi+'_'+EX.done);
-      if(!CU.data.journal)CU.data.journal={};
-      CU.data.journal[jKey]={
-        text:stEl.value.trim(),
-        word:ex.word||'',
-        meaning:ex.meaning||'',
-        lessonTitle:UNITS[CUi]?.lessons[CLi]?.title||'',
-        date:new Date().toLocaleDateString('en-CA')
-      };
-      saveUD(CU.name,CU.data);
+  } else if(ex.type==='audio'||ex.type==='story'){
+    if(ex.type==='story'&&CU){
+      const txt=(document.getElementById('starea')||{}).value||'';
+      if(txt.trim()){
+        if(!CU.data.journal)CU.data.journal={};
+        const key=ex.id||(EX.current._jkey=EX.current._jkey||('j'+Date.now()));
+        CU.data.journal[key]={text:txt.trim(),date:new Date().toISOString(),word:ex.word||'',meaning:ex.meaning||'',prompt:ex.storyPrompt||''};
+        saveUD(CU.name,CU.data);
+      }
     }
     advance();
   }
@@ -2633,32 +3039,6 @@ loadData().then(() => {
   if(last){const u=getUsers();if(u[last]){loginAs(last,u[last]);return;}}
   showScreen('login');
 });
-
-/* ══════════════════════════════════════════════════════════
-   JOURNAL RENDERER
-   ══════════════════════════════════════════════════════════ */
-function renderJournal(){
-  const container=document.getElementById('journal-list');
-  if(!container)return;
-  if(!CU||!CU.data.journal||!Object.keys(CU.data.journal).length){
-    container.innerHTML='<p style="color:var(--ew);font-style:italic;padding:1rem 0;">No reflections yet. Complete a Story Moment exercise to start your journal.</p>';
-    return;
-  }
-  const entries=Object.entries(CU.data.journal)
-    .sort((a,b)=>b[1].date.localeCompare(a[1].date));
-  container.innerHTML=entries.map(([key,e])=>`
-    <div style="border:0.5px solid var(--sand);border-radius:12px;padding:1rem 1.15rem;margin-bottom:.85rem;background:white;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.4rem;">
-        <div>
-          ${e.word?`<span style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${e.word}</span>${e.meaning?` <span style="font-size:.8rem;color:var(--ew);">— ${e.meaning}</span>`:''}`:
-          `<span style="font-size:.85rem;color:var(--ew);">${e.lessonTitle||'Reflection'}</span>`}
-        </div>
-        <span style="font-size:.75rem;color:var(--ew);flex-shrink:0;margin-left:.5rem;">${e.date||''}</span>
-      </div>
-      ${e.lessonTitle&&e.word?`<div style="font-size:.78rem;color:var(--ew);margin-bottom:.35rem;">${e.lessonTitle}</div>`:''}
-      <p style="font-size:.9rem;color:var(--ed);line-height:1.6;white-space:pre-wrap;">${e.text}</p>
-    </div>`).join('');
-}
 </script>
 </body>
 </html>

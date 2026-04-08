@@ -2508,6 +2508,95 @@
             "hint": "Ake’-nis-TÉN:-ha (5 syllables) — tsi (1) — tia-ko-NÓN-hso-te’ (5) — wà:-ke’ (2). Thirteen syllables in one complete sentence. Say it like you are actually heading out the door."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u1l4_01",
+            "prompt": "Meeting at the community centre",
+            "sub": "Introductions through kinship",
+            "scene": "You are arriving at the community centre. An older woman you recognise — she is your mother's friend — stops you at the door. She asks about your family.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Shé:kon. Ka' wáhse'?",
+                "gloss": "Greetings. Where are you going?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Greet her respectfully — she is an elder woman.",
+                "mode": "mc",
+                "options": [
+                  "Shé:kon, akaónha.",
+                  "Shé:kon, aónha.",
+                  "Shé:kon, raónha.",
+                  "Niawenhkó:wa, akaónha."
+                ],
+                "correct": "Shé:kon, akaónha.",
+                "cm": "Tho niioht! akaónha — she, with respect. An elder woman always takes akaónha, not aónha.",
+                "wm": "She is an elder woman. Which form of 'she' encodes that respect?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Ka' ní:ioht í:se'? Ista í:se' tsi ionkwarihó:ten?",
+                "gloss": "How are you? Is your mother known to us?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell her — yes, she is your mother.",
+                "mode": "mc",
+                "options": [
+                  "Én. Aksta'í:ra í:'i.",
+                  "Én. Ista akaónha.",
+                  "Iah. Ista í:se'.",
+                  "Én. Raksén'a í:'i."
+                ],
+                "correct": "Én. Ista akaónha.",
+                "cm": "Io'nikonhraién:ta'ne! Ista — mother. And akaónha — she (respectful). Your mother is a woman deserving of respect in speech.",
+                "wm": "Your mother is 'ista'. Which respectful pronoun goes with her?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Tho niioht. Ka' ní:ioht í:se'? Aksótha í:se'?",
+                "gloss": "I see. And how are you? Do you have a grandmother?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Yes — tell her your grandmother lives at home.",
+                "mode": "mc",
+                "options": [
+                  "Én. Aksótha ká:tiens kanónhsa.",
+                  "Én. Raksótha ká:tiens kanónhsa.",
+                  "Én. Tota ká:tiens.",
+                  "Iah. Aksótha wà:ke."
+                ],
+                "correct": "Én. Aksótha ká:tiens kanónhsa.",
+                "cm": "Niawenhkó:wa! Aksótha ká:tiens kanónhsa — my grandmother is sitting at home. ká:tiens is the habitual form of á:tien (to sit).",
+                "wm": "Aksótha is grandmother. ká:tiens means she is sitting (habitual). kanónhsa is home."
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Niawenhkó:wa. Tho niioht. Onen'.",
+                "gloss": "Thank you. I see. Goodbye."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Take your leave respectfully.",
+                "mode": "mc",
+                "options": [
+                  "Niawenhkó:wa. Onen', akaónha.",
+                  "Shé:kon. Onen', akaónha.",
+                  "Niawenhkó:wa. Ka' wáhse'?",
+                  "Tho niioht. Onen', aónha."
+                ],
+                "correct": "Niawenhkó:wa. Onen', akaónha.",
+                "cm": "Tho niioht! Niawenhkó:wa — thank you. Onen' — goodbye. And akaónha holds the respect to the end of the exchange.",
+                "wm": "Thank her and say goodbye — and keep the register correct."
+              }
+            ]
+          },
+          {
             "type": "story",
             "wid": "k01",
             "prompt": "Going home",
@@ -4168,6 +4257,75 @@
             "wm": "Please try again."
           },
           {
+            "type": "dialogue",
+            "id": "dl_u2l7_01",
+            "prompt": "Looking at something together",
+            "sub": "What is it? Whose is it?",
+            "scene": "You are sitting with a younger family member. They pick up an object on the table — a basket — and ask you about it.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Younger family member",
+                "line": "Shé:kon. Tsi nahò:ten tsi énska?",
+                "gloss": "Greetings. What is this one thing?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell them — it is a basket (ka'niáhere).",
+                "mode": "mc",
+                "options": [
+                  "Ka'niáhere tsi énska.",
+                  "Ónhka tsi énska.",
+                  "Otsísto tsi énska.",
+                  "Onón:ta tsi énska."
+                ],
+                "correct": "Ka'niáhere tsi énska.",
+                "cm": "Tho niioht! Ka'niáhere — basket. A Ka-class noun. Ka- is the noun prefix that marks this whole class of objects.",
+                "wm": "The word for basket is Ka'niáhere — it carries the Ka- class prefix."
+              },
+              {
+                "speaker": "other",
+                "name": "Younger family member",
+                "line": "Ka'niáhere. Tho niioht. Nok nó:nen tho í:se' tsi ionkwarihó:ten?",
+                "gloss": "A basket. I see. And whose is it that we know?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell them it belongs to your grandmother — Aksótha.",
+                "mode": "mc",
+                "options": [
+                  "Aksótha akaónha tsi ionkwarihó:ten.",
+                  "Aksótha raónha tsi ionkwarihó:ten.",
+                  "Aksótha í:se' tsi ionkwarihó:ten.",
+                  "Aksótha aónha tsi ionkwarihó:ten."
+                ],
+                "correct": "Aksótha akaónha tsi ionkwarihó:ten.",
+                "cm": "Niawenhkó:wa! Aksótha — grandmother. akaónha — she (respectful). Your grandmother always gets the respectful form.",
+                "wm": "Grandmother is Aksótha. She is an elder woman — which 'she' goes with her?"
+              },
+              {
+                "speaker": "other",
+                "name": "Younger family member",
+                "line": "Aksótha. Akaónha ioiá:'ne. Ka' wáhse' akaónha?",
+                "gloss": "Grandmother. She is good. Where did she go?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell them she went home.",
+                "mode": "mc",
+                "options": [
+                  "Kanónhsa akaónha wà:ke.",
+                  "Kanónhsa raónha wà:ke.",
+                  "Kanónhsa akaónha nontà:ke.",
+                  "Ka' wáhse' akaónha?"
+                ],
+                "correct": "Kanónhsa akaónha wà:ke.",
+                "cm": "Io'nikonhraién:ta'ne! Kanónhsa — home. akaónha — she (respectful). wà:ke — going. She went home.",
+                "wm": "Home is kanónhsa. Going is wà:ke. She (respectful elder) is akaónha."
+              }
+            ]
+          },
+          {
             "type": "story",
             "wid": "par11",
             "prompt": "What is this?",
@@ -4291,102 +4449,6 @@
             "word": "Kanehsatà:ke",
             "meaning": "The community",
             "hint": "Five syllables: ka-neh-sa-TÀ-ke. The stress falls on the 'ta' (fourth) syllable. The grave accent (à) marks this stress. The final 'ke' is short and quick."
-          },
-          {
-            "type": "dialogue",
-            "id": "dl_u2l5_01",
-            "prompt": "What is that?",
-            "sub": "Nouns and questions in a real exchange",
-            "scene": "You are at the community centre. A woman walks past carrying something. You want to ask what it is and whether it belongs to her.",
-            "turns": [
-              {
-                "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Shé:kon.",
-                "gloss": "Greetings."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Return the greeting.",
-                "mode": "mc",
-                "options": [
-                  "Shé:kon.",
-                  "Niawenhkó:wa.",
-                  "Onen'.",
-                  "Tho niioht."
-                ],
-                "correct": "Shé:kon.",
-                "cm": "Tho niioht! Shé:kon — the greeting you return in kind.",
-                "wm": "She greeted you with Shé:kon. Return the same greeting."
-              },
-              {
-                "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Nahò:ten né:e?",
-                "gloss": "What is that?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "She's asking what something is. How do you ask the same question back about what she is carrying?",
-                "mode": "mc",
-                "options": [
-                  "Nahò:ten né:e?",
-                  "Ka' wáhse'?",
-                  "Onkwa'nikónhrak ne í:se'?",
-                  "Shé:kon né:e?"
-                ],
-                "correct": "Nahò:ten né:e?",
-                "cm": "Niawenhkó:wa! Nahò:ten — what. Né:e — that / it. 'What is that?' You used the question word you just learned.",
-                "wm": "Nahò:ten is 'what' — the question word for asking about objects. Né:e points to the thing."
-              },
-              {
-                "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Áhta' né:e. Ke'nikónhrak.",
-                "gloss": "Those are shoes. They are mine."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "She said they are hers. Acknowledge what she said — 'I see' or 'I understand.'",
-                "mode": "mc",
-                "options": [
-                  "Tho niioht.",
-                  "Nahò:ten?",
-                  "Niawenhkó:wa.",
-                  "Shé:kon."
-                ],
-                "correct": "Tho niioht.",
-                "cm": "Io'nikonhraién:ta'ne! Tho niioht — 'that's it' / 'I see' / 'I understand.' A natural acknowledgement in Kanien'kéha conversation.",
-                "wm": "You want to show you understood her. Tho niioht is the expression for 'I see' or 'that's right.'"
-              },
-              {
-                "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Niawenhkó:wa. Onen'.",
-                "gloss": "Thank you. Until next time."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Close the conversation.",
-                "mode": "mc",
-                "options": [
-                  "Niawenhkó:wa. Onen'.",
-                  "Shé:kon. Onen'.",
-                  "Nahò:ten. Onen'.",
-                  "Tho niioht. Ka' wáhse'?"
-                ],
-                "correct": "Niawenhkó:wa. Onen'.",
-                "cm": "Tho niioht! Niawenhkó:wa — thank you. Onen' — that's it for now. A complete, natural closing.",
-                "wm": "You want to thank her and say goodbye. Niawenhkó:wa is thank you; Onen' closes the exchange."
-              }
-            ],
-            "closing": "Nahò:ten — ne — tho niioht. Three small pieces of language that let you ask, point, and understand in a real exchange. You used a question word, an article, and a conversational acknowledgement in a natural sequence.",
-            "dialect_note": "Tho niioht is common across dialects. In Ontario communities you may hear 'Tho' alone as the acknowledgement.",
-            "wids_tested": [
-              "par11",
-              "ar01",
-              "v05"
-            ]
           },
           {
             "type": "story",
@@ -5712,99 +5774,70 @@
           {
             "type": "dialogue",
             "id": "dl_u3l5_01",
-            "prompt": "Describing what you see",
-            "sub": "Colours, numbers, and stative verbs in context",
-            "scene": "A child shows you a drawing. An adult relative is watching. You and the child talk about what is in the picture — colours and how many.",
+            "prompt": "In the garden",
+            "sub": "Colours and numbers in a natural setting",
+            "scene": "You are in a garden with an older relative. They are pointing at the Three Sisters — corn, beans, squash — and asking you questions.",
             "turns": [
               {
                 "speaker": "other",
-                "name": "Raksá:'a (child)",
-                "line": "Shé:kon! Ka'nikónhrak?",
-                "gloss": "Greetings! Is this yours?"
+                "name": "Older relative",
+                "line": "Shé:kon. Tsi nahò:ten tsi nón:wa?",
+                "gloss": "Greetings. What are those ones over there?"
               },
               {
                 "speaker": "learner",
-                "instruction": "Say it is yours — 'Yes, it is mine.'",
+                "instruction": "Tell them — those are corn, beans, and squash (Onón:ta, Osahè:ta, Otá:ra).",
                 "mode": "mc",
                 "options": [
-                  "Én, ke'nikónhrak.",
-                  "Én, í:se'.",
-                  "Iah, ke'nikónhrak.",
-                  "Én, raónha."
+                  "Onón:ta tánon Osahè:ta tánon Otá:ra.",
+                  "Onón:ta tánon Ónhka tánon Otá:ra.",
+                  "Ohón:ta tánon Osahè:ta tánon Otá:ra.",
+                  "Onón:ta tánon Osahè:ta tánon Otsísto."
                 ],
-                "correct": "Én, ke'nikónhrak.",
-                "cm": "Niawenhkó:wa! Én — yes. Ke'nikónhrak — it is mine. Short and complete.",
-                "wm": "Én = yes. Ke'nikónhrak = it is mine. Put them together."
+                "correct": "Onón:ta tánon Osahè:ta tánon Otá:ra.",
+                "cm": "Tho niioht! Onón:ta — corn. Osahè:ta — beans. Otá:ra — squash. Tánon joins them: and / also. The Three Sisters.",
+                "wm": "tánon means 'and'. Corn is Onón:ta, beans are Osahè:ta, squash is Otá:ra."
               },
               {
                 "speaker": "other",
-                "name": "Raksá:'a (child)",
-                "line": "Onekwénhtara né:e! Skà:nek?",
-                "gloss": "That is red! One?"
+                "name": "Older relative",
+                "line": "Tho niioht. Tsi nahò:ten owirá:ke tsi nón:wa?",
+                "gloss": "I see. What colour are those ones?"
               },
               {
                 "speaker": "learner",
-                "instruction": "The child is pointing at one red thing. Confirm: 'Yes, one.'",
+                "instruction": "The corn is yellow (Otsi'tenhará:ke) — say it.",
                 "mode": "mc",
                 "options": [
-                  "Én, énska.",
-                  "Én, tékeni.",
-                  "Iah, énska.",
-                  "Én, áhsen."
+                  "Otsi'tenhará:ke onón:ta.",
+                  "Oskaró:wa onón:ta.",
+                  "Ó:wira' onón:ta.",
+                  "Athéhsa onón:ta."
                 ],
-                "correct": "Én, énska.",
-                "cm": "Tho niioht! Énska — one. You confirmed the number the child pointed to.",
-                "wm": "Énska is one. Tékeni is two. The child pointed to one thing — which number fits?"
+                "correct": "Otsi'tenhará:ke onón:ta.",
+                "cm": "Niawenhkó:wa! Otsi'tenhará:ke — yellow. Onón:ta — corn. Yellow corn.",
+                "wm": "Yellow in Kanien'kéha is Otsi'tenhará:ke. The corn is Onón:ta."
               },
               {
                 "speaker": "other",
-                "name": "Adult relative",
-                "line": "Tékeni — Oròn:ia tánon Óhonte'. Ka' nihó:nen?",
-                "gloss": "Two — blue and green. How many are there?"
+                "name": "Older relative",
+                "line": "Tho niioht. Akwé:kon ioiá:'ne. Niá:wen í:se'.",
+                "gloss": "I see. All is good. Thank you."
               },
               {
                 "speaker": "learner",
-                "instruction": "She said two colours. Confirm: 'Two — blue and green.'",
+                "instruction": "Thank them in return.",
                 "mode": "mc",
                 "options": [
-                  "Én, tékeni — Oròn:ia tánon Óhonte'.",
-                  "Én, tékeni — Onekwénhtara tánon Óhonte'.",
-                  "Én, áhsen — Oròn:ia tánon Óhonte'.",
-                  "Én, énska — Oròn:ia."
+                  "Niawenhkó:wa.",
+                  "Shé:kon.",
+                  "Ka' wáhse'?",
+                  "Onen'."
                 ],
-                "correct": "Én, tékeni — Oròn:ia tánon Óhonte'.",
-                "cm": "Io'nikonhraién:ta'ne! Tékeni — two. Oròn:ia tánon Óhonte' — blue and green. tánon connects them as equals.",
-                "wm": "She said two colours: blue (Oròn:ia) and green (Óhonte'). Tánon connects them. How many — tékeni (2) or áhsen (3)?"
-              },
-              {
-                "speaker": "other",
-                "name": "Raksá:'a (child)",
-                "line": "Niawenhkó:wa! Ioia'táwen!",
-                "gloss": "Thank you! It is good / beautiful!"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Agree — 'Yes, it is good.'",
-                "mode": "mc",
-                "options": [
-                  "Én, ioia'táwen.",
-                  "Én, ioia'ko:wa.",
-                  "Iah, ioia'táwen.",
-                  "Én, Onekwénhtara."
-                ],
-                "correct": "Én, ioia'táwen.",
-                "cm": "Niawenhkó:wa! Ioia'táwen — it is good / beautiful. You affirmed what the child said.",
-                "wm": "The child said ioia'táwen (it is good). Agree using the same word. Ioia'ko:wa means the opposite — bad."
+                "correct": "Niawenhkó:wa.",
+                "cm": "Tho niioht! Niawenhkó:wa — thank you, great thanks. The standard response to gratitude.",
+                "wm": "Thank you is Niawenhkó:wa."
               }
-            ],
-            "closing": "Colours, numbers, tánon (and), and ioia'táwen (it is good) all appeared naturally in a real exchange. You described the world around you in Kanien'kéha — which is what the language is for.",
-            "dialect_note": "In Akwesasne and Ontario dialects, number words are the same across communities. Colour terms are stable across dialects.",
-            "wids_tested": [
-              "col01",
-              "col03",
-              "num01",
-              "num02",
-              "pc01"
             ]
           },
           {
@@ -6730,97 +6763,70 @@
           {
             "type": "dialogue",
             "id": "dl_u4l5_01",
-            "prompt": "Opening a gathering",
-            "sub": "The Address begins before anything else",
-            "scene": "Your family is gathering for a meal. An elder opens with words of thanks. You are asked to contribute one part of the Thanksgiving Address. This is how it begins.",
+            "prompt": "Opening a small gathering",
+            "sub": "The words before all else — in practice",
+            "scene": "A small family meeting is about to begin. You have been asked to open it. Your aunt — Ikhso — is watching. She will ask you about the words when you finish.",
             "turns": [
               {
                 "speaker": "other",
-                "name": "Akokstén:ha (elder woman)",
-                "line": "Sewatkwá:here'. Onen' tánon niiawén:re'.",
-                "gloss": "We greet one another. Now and always — so it is."
+                "name": "Ikhso (aunt)",
+                "line": "Tho niioht. Ohén:ton Karihwatéhkwen — ka' nihò:ten?",
+                "gloss": "I see. The Words Before All Else — what does it mean?"
               },
               {
                 "speaker": "learner",
-                "instruction": "The elder has opened. Acknowledge the opening before the Address begins.",
+                "instruction": "Explain what Ohén:ton Karihwatéhkwen means.",
                 "mode": "mc",
                 "options": [
-                  "Tho niioht.",
-                  "Shé:kon.",
-                  "Niawenhkó:wa.",
-                  "Onen'."
+                  "The words that come before all others — gratitude spoken before anything else begins.",
+                  "A prayer said only in ceremony.",
+                  "The closing words of a gathering.",
+                  "A greeting between two people."
                 ],
-                "correct": "Niawenhkó:wa.",
-                "cm": "Niawenhkó:wa — thank you, with great thanks. This is the right response when an elder opens with words of gathering.",
-                "wm": "She has opened the gathering. A word of thanks is the natural response before the Address begins."
+                "correct": "The words that come before all others — gratitude spoken before anything else begins.",
+                "cm": "Io'nikonhraién:ta'ne! Ohén:ton — the things that come before. Karihwatéhkwen — the words, the matters. Before anything else, we acknowledge what sustains us.",
+                "wm": "Ohén:ton means 'before', Karihwatéhkwen means 'the words/matters'. What does the full phrase mean?"
               },
               {
                 "speaker": "other",
-                "name": "Akokstén:ha (elder woman)",
-                "line": "Ohén:ton Karihwatéhkwen — the words before all else. Onkwehshón:'a — the people. Sewatkwá:here' — we greet one another.",
-                "gloss": "The Thanksgiving Address — the people — we greet one another."
+                "name": "Ikhso (aunt)",
+                "line": "Tho niioht. Nok nó:nen — ionkwatirí:wake tánon ionkwateronhiakwarón:ni?",
+                "gloss": "I see. And — the people and the earth — how do they relate?"
               },
               {
                 "speaker": "learner",
-                "instruction": "She has named the people. The next section gives thanks for the earth. Which words belong here?",
+                "instruction": "The people give thanks to the earth. Choose the best response.",
                 "mode": "mc",
                 "options": [
-                  "Ohwén:tsia — the earth that holds us.",
-                  "Ononhkwa'shón:'a — the medicines.",
-                  "Ratiwéras — the thunderers.",
-                  "Karahkwa — the sun."
+                  "Onkwehón:we ionkwatirí:wake tánon Ohén:ton ionkwateronhiakwarón:ni — the people acknowledge the earth with gratitude.",
+                  "Ohén:ton ionkwateronhiakwarón:ni — the earth is before the people.",
+                  "The people and the earth are the same.",
+                  "The earth gives thanks to the people."
                 ],
-                "correct": "Ohwén:tsia — the earth that holds us.",
-                "cm": "Tho niioht! Ohwén:tsia — the earth — comes after the people in the Address. The sequence matters: people, then earth, then waters, then plants…",
-                "wm": "In the Thanksgiving Address the sequence is fixed: people first, then earth. Which word is the earth?"
+                "correct": "Onkwehón:we ionkwatirí:wake tánon Ohén:ton ionkwateronhiakwarón:ni — the people acknowledge the earth with gratitude.",
+                "cm": "Tho niioht! The people acknowledge all that sustains them — earth, water, plants, animals, sky — before they begin any other business.",
+                "wm": "In the Address, who acknowledges whom first?"
               },
               {
                 "speaker": "other",
-                "name": "Akokstén:ha (elder woman)",
-                "line": "Ónhka — the waters. Oskennón:ton — good health. Niiawén:re' — so it is.",
-                "gloss": "The waters. Good health. So it is."
+                "name": "Ikhso (aunt)",
+                "line": "Niawenhkó:wa. Onen'.",
+                "gloss": "Great thanks. Goodbye."
               },
               {
                 "speaker": "learner",
-                "instruction": "She has closed a section with Niiawén:re'. What is its meaning?",
+                "instruction": "Close respectfully.",
                 "mode": "mc",
                 "options": [
-                  "So it is / and so we agree.",
-                  "Thank you.",
-                  "Now we begin.",
-                  "The earth is here."
+                  "Niawenhkó:wa. Onen' ki' wáhi.",
+                  "Shé:kon. Onen' ki' wáhi.",
+                  "Tho niioht. Ka' wáhse'?",
+                  "Onen'. Niawenhkó:wa, raónha."
                 ],
-                "correct": "So it is / and so we agree.",
-                "cm": "Io'nikonhraién:ta'ne! Niiawén:re' — so it is. The closing word of each section of the Thanksgiving Address. It signals communal agreement, not just a speaker's ending.",
-                "wm": "Niiawén:re' closes each section of the Address. What does it mean — agreement, thanks, or a beginning?"
-              },
-              {
-                "speaker": "other",
-                "name": "Akokstén:ha (elder woman)",
-                "line": "Niawenhkó:wa. Onen' niiawén:re'.",
-                "gloss": "Great thanks. Now — so it is."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "The elder has closed. Respond with the communal agreement.",
-                "mode": "mc",
-                "options": [
-                  "Niiawén:re'.",
-                  "Shé:kon.",
-                  "Nahò:ten?",
-                  "Onen'."
-                ],
-                "correct": "Niiawén:re'.",
-                "cm": "Niawenhkó:wa! Niiawén:re' — so it is. You held up your part of the Agreement. The Address closes when the community responds together.",
-                "wm": "The Address closes communally. What word closes each section and signals the group's agreement?"
+                "correct": "Niawenhkó:wa. Onen' ki' wáhi.",
+                "cm": "Io'nikonhraién:ta'ne! Onen' ki' wáhi — and so it is / that is all. The ceremonial closing formula. You have opened and closed with the proper words.",
+                "wm": "The ceremonial closing is Onen' ki' wáhi — and so it is."
               }
-            ],
-            "closing": "The Thanksgiving Address is not a recitation — it is a conversation between the speaker and the people who respond. Niiawén:re' is the community's voice, not just a ceremonial word. You participated in a real form of Kanien'kéha speech.",
-            "dialect_note": "Ohén:ton Karihwatéhkwen is used across all Kanien'kehá:ka communities. Pronunciation and some phrasing vary by community but the sequence is shared.",
-            "wids_tested": [
-              "ta01",
-              "o05",
-              "cu04"
             ]
           },
           {
@@ -8152,98 +8158,70 @@
           {
             "type": "dialogue",
             "id": "dl_u5l6_01",
-            "prompt": "What is your clan?",
-            "sub": "Clan identity in real conversation",
-            "scene": "You are meeting someone from another Kanien'kehá:ka community. They want to know your clan — as all Haudenosaunee do when they meet. A clan mother is nearby.",
+            "prompt": "A conversation about clans",
+            "sub": "Your clan, their clan",
+            "scene": "You have just met someone from a neighbouring community. They introduce themselves and their clan. They ask about yours.",
             "turns": [
               {
                 "speaker": "other",
-                "name": "Rón:kwe",
-                "line": "Shé:kon. Ka' ohwátsire' í:se'?",
-                "gloss": "Greetings. Which clan are you?"
+                "name": "Visitor",
+                "line": "Shé:kon. Í:'i tsi ionkwarihó:ten — Rotiniáhton í:'i.",
+                "gloss": "Greetings. I am known to you — I am Turtle Clan."
               },
               {
                 "speaker": "learner",
-                "instruction": "You are Turtle Clan — Anowára. Introduce your clan.",
+                "instruction": "Greet them and introduce your clan — say you are Bear Clan (Ohkwá:ri).",
                 "mode": "mc",
                 "options": [
-                  "Anowára ohwátsire' í:'i.",
-                  "Ohkwá:ri ohwátsire' í:'i.",
-                  "Kwá:rihon ohwátsire' í:'i.",
-                  "Anowára ohwátsire' raónha."
+                  "Shé:kon. Ohkwá:ri í:'i.",
+                  "Shé:kon. Rotiniáhton í:'i.",
+                  "Shé:kon. Sha'kowén:na' í:'i.",
+                  "Shé:kon. Tho niioht."
                 ],
-                "correct": "Anowára ohwátsire' í:'i.",
-                "cm": "Tho niioht! Anowára ohwátsire' í:'i — I am Turtle Clan. Ohwátsire' is the clan word; í:'i is 'I.' You named yourself before your clan, which is the natural order.",
-                "wm": "You are Turtle Clan (Anowára). The pronoun for 'I' is í:'i. Which answer puts them together correctly?"
+                "correct": "Shé:kon. Ohkwá:ri í:'i.",
+                "cm": "Tho niioht! Ohkwá:ri — Bear. í:'i — I am. You have greeted and introduced your clan in Kanien'kéha.",
+                "wm": "Bear is Ohkwá:ri. í:'i means I am. Put them together."
               },
               {
                 "speaker": "other",
-                "name": "Rón:kwe",
-                "line": "Io'nikonhraién:ta'ne! Kwá:rihon ohwátsire' í:'i.",
-                "gloss": "Wonderful! I am Wolf Clan."
+                "name": "Visitor",
+                "line": "Ohkwá:ri. Ioiá:'ne. Ka' wáhse'?",
+                "gloss": "Bear. Good. Where are you going?"
               },
               {
                 "speaker": "learner",
-                "instruction": "He is Wolf Clan. Which animal is Kwá:rihon?",
+                "instruction": "Tell them you are going to the longhouse.",
                 "mode": "mc",
                 "options": [
-                  "Wolf.",
-                  "Bear.",
-                  "Turtle.",
-                  "Beaver."
+                  "Kanonsesné:ha wà:ke.",
+                  "Kanónhsa wà:ke.",
+                  "Kanonsesné:ha nontà:ke.",
+                  "Ka' wáhse'?"
                 ],
-                "correct": "Wolf.",
-                "cm": "Io'nikonhraién:ta'ne! Kwá:rihon — Wolf. Ohkwá:ri is Bear. Anowára is Turtle. The clan names are not the same as the animal words — they are the clan forms of those names.",
-                "wm": "Kwá:rihon is one of the nine Haudenosaunee clans. The wolf? The bear? The turtle?"
+                "correct": "Kanonsesné:ha wà:ke.",
+                "cm": "Niawenhkó:wa! Kanonsesné:ha — longhouse. wà:ke — I am going. Going to the longhouse.",
+                "wm": "Longhouse is Kanonsesné:ha. Going is wà:ke."
               },
               {
                 "speaker": "other",
-                "name": "Rón:kwe",
-                "line": "Tho niioht. Ka' ohwátsire' akaónha?",
-                "gloss": "I see. Which clan is she — (pointing to the clan mother)."
+                "name": "Visitor",
+                "line": "Tho niioht. Niawenhkó:wa. Onen'.",
+                "gloss": "I see. Thank you. Goodbye."
               },
               {
                 "speaker": "learner",
-                "instruction": "He is asking about a clan mother using akaónha. Why does he use akaónha instead of aónha?",
-                "mode": "mc",
-                "options": [
-                  "She is a clan mother — an elder woman of authority — and akaónha is required.",
-                  "akaónha and aónha mean the same thing.",
-                  "akaónha is only for women outside your clan.",
-                  "He uses akaónha because she is present."
-                ],
-                "correct": "She is a clan mother — an elder woman of authority — and akaónha is required.",
-                "cm": "Niawenhkó:wa! akaónha is grammatically required for an elder woman, a clan mother, or any woman whose role commands recognition. Using aónha would be wrong — not just impolite.",
-                "wm": "Think back to Unit 1: akaónha is for elder women and women of authority. aónha is for familiar females and animals. A clan mother — Iakoiánehr — takes which pronoun?"
-              },
-              {
-                "speaker": "other",
-                "name": "Rón:kwe",
-                "line": "Niawenhkó:wa. Onen'.",
-                "gloss": "Thank you. Until next time."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Take your leave.",
+                "instruction": "Thank them and say goodbye.",
                 "mode": "mc",
                 "options": [
                   "Niawenhkó:wa. Onen'.",
                   "Shé:kon. Onen'.",
-                  "Ka' ohwátsire' í:se'? Onen'.",
-                  "Tho niioht."
+                  "Tho niioht. Ka' wáhse'?",
+                  "Niawenhkó:wa. Wà:ke."
                 ],
                 "correct": "Niawenhkó:wa. Onen'.",
-                "cm": "Niawenhkó:wa! A natural close — thank you and Onen'. You moved through a complete clan introduction, including a pronoun choice that carries real social meaning.",
-                "wm": "Close the conversation with thank you and goodbye."
+                "cm": "Tho niioht! Niawenhkó:wa — great thanks. Onen' — goodbye, until we meet again.",
+                "wm": "Niawenhkó:wa is thank you. Onen' is goodbye."
               }
-            ],
-            "closing": "Every time you introduce your clan you are doing something the language requires: you are locating yourself in the relational web before you say anything else. Ka' ohwátsire' í:se' is not small talk. It is the first real question.",
-            "dialect_note": "In Akwesasne: raónha → laónha. Clan names are consistent across communities. The word ohwátsire' (clan) is stable.",
-            "wids_tested": [
-              "cl01",
-              "cl02",
-              "p02",
-              "p03"
             ]
           },
           {
@@ -8835,103 +8813,6 @@
             ],
             "cm": "Io'nikonhraién:ta'ne! The Address thanks the corn, the beans, the squash. When you eat them, you receive what was thanked. The meal and the ceremony are not separate.",
             "wm": "Please try again."
-          },
-          {
-            "type": "dialogue",
-            "id": "dl_u6l6_01",
-            "prompt": "At the community table",
-            "sub": "Food vocabulary and social language",
-            "scene": "There is food at a community gathering. An elder woman is serving. You are offered corn soup — the most important food at any Haudenosaunee gathering.",
-            "turns": [
-              {
-                "speaker": "other",
-                "name": "Akokstén:ha",
-                "line": "Shé:kon. Ó:nen tékeni niiohontésha' — Ken' niiohontésha' tánon Ohsahé:ta. Kariwiió:son?",
-                "gloss": "Greetings. Here are two berries — strawberries and beans. Is it good?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "She is an elder woman serving food. What is the respectful way to address her as you receive it?",
-                "mode": "mc",
-                "options": [
-                  "Niawenhkó:wa, akaónha.",
-                  "Niawenhkó:wa, aónha.",
-                  "Niawenhkó:wa, raónha.",
-                  "Niawenhkó:wa, í:se'."
-                ],
-                "correct": "Niawenhkó:wa, akaónha.",
-                "cm": "Tho niioht! Niawenhkó:wa — great thanks. And akaónha — the respectful she, used when addressing or referring to an elder woman. You gave thanks and acknowledged her at the same time.",
-                "wm": "She is an elder woman (Akokstén:ha). Which pronoun acknowledges her standing when you thank her?"
-              },
-              {
-                "speaker": "other",
-                "name": "Akokstén:ha",
-                "line": "Katonhkaria'ks nahe'?",
-                "gloss": "Are you hungry?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Confirm that you are hungry.",
-                "mode": "mc",
-                "options": [
-                  "Én, katonhkaria'ks.",
-                  "Iah, katonhkaria'ks.",
-                  "Én, yawékon.",
-                  "Én, katonhkaria'ks raónha."
-                ],
-                "correct": "Én, katonhkaria'ks.",
-                "cm": "Niawenhkó:wa! Én — yes. Katonhkaria'ks — I am hungry. A stative verb that describes your state right now.",
-                "wm": "Én is yes. Katonhkaria'ks is 'I am hungry.' Combine them to say yes, you are hungry."
-              },
-              {
-                "speaker": "other",
-                "name": "Akokstén:ha",
-                "line": "Ohén:ra — ne ohén:ra onón:ta'. Yawékon?",
-                "gloss": "Corn soup — the corn soup is ready. Is it delicious?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Tell her it is delicious.",
-                "mode": "mc",
-                "options": [
-                  "Én, yawékon!",
-                  "Én, katonhkaria'ks.",
-                  "Én, ioia'táwen.",
-                  "Iah, yawékon."
-                ],
-                "correct": "Én, yawékon!",
-                "cm": "Io'nikonhraién:ta'ne! Yawékon — it is delicious. The specific word for food that is good to eat. Ioia'táwen is more general — good / beautiful. Yawékon is exactly right here.",
-                "wm": "Yawékon is specifically 'it is delicious' — the food quality word. Ioia'táwen is good / beautiful more generally. Which one fits here?"
-              },
-              {
-                "speaker": "other",
-                "name": "Akokstén:ha",
-                "line": "Niawenhkó:wa. Onen' ki' wáhi.",
-                "gloss": "Thank you. That's all for now."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Close the exchange with thanks.",
-                "mode": "mc",
-                "options": [
-                  "Niawenhkó:wa. Onen'.",
-                  "Yawékon. Onen'.",
-                  "Shé:kon. Onen'.",
-                  "Katonhkaria'ks. Onen'."
-                ],
-                "correct": "Niawenhkó:wa. Onen'.",
-                "cm": "Niawenhkó:wa! You received food from an elder, used the right pronoun, confirmed your hunger, and said the food was delicious — in Kanien'kéha.",
-                "wm": "Close with thank you (Niawenhkó:wa) and Onen'."
-              }
-            ],
-            "closing": "Corn soup — ohén:ra onón:ta' — is present at every major Haudenosaunee gathering. Knowing how to receive it, say it is delicious, and thank the person who offered it is not a small thing. It is language in the place where it belongs.",
-            "dialect_note": "Katonhkaria'ks (I am hungry) is consistent across dialects. Yawékon is stable. In Akwesasne: akaónha stays the same.",
-            "wids_tested": [
-              "eat02",
-              "fd09",
-              "fo05",
-              "p03"
-            ]
           },
           {
             "type": "story",
@@ -13237,6 +13118,75 @@
             "wm": "Please try again — which prefix marks you (singular) in commands?"
           },
           {
+            "type": "dialogue",
+            "id": "dl_u9l4_01",
+            "prompt": "Getting ready for a gathering",
+            "sub": "Active and stative verbs in real use",
+            "scene": "You are helping prepare for a gathering. An elder is directing people. She gives you a command, then checks how you are feeling.",
+            "turns": [
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Shé:kon. Sá:tien. Ioiá:'ne.",
+                "gloss": "Greetings. Sit down. Good."
+              },
+              {
+                "speaker": "learner",
+                "instruction": "She told you to sit. Confirm you are sitting — use the habitual (ká:tiens).",
+                "mode": "mc",
+                "options": [
+                  "Én. Ká:tiens í:'i.",
+                  "Én. Sá:tien í:'i.",
+                  "Én. Wà:ke í:'i.",
+                  "Én. Kohkwá:rens í:'i."
+                ],
+                "correct": "Én. Ká:tiens í:'i.",
+                "cm": "Tho niioht! ká:tiens — I sit (habitual). The command was sá:tien (you sit). You confirmed with the first-person habitual.",
+                "wm": "The command is sá:tien. The habitual 'I sit' is ká:tiens. Which one says you are sitting now?"
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Tho niioht. Ka' ní:ioht í:se'? Saiosé:ren nahe'?",
+                "gloss": "I see. How are you? Are you sick?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Tell her you are not sick — you are strong (sohkwá:ren).",
+                "mode": "mc",
+                "options": [
+                  "Iah. Sohkwá:ren í:'i.",
+                  "Én. Saiosé:ren í:'i.",
+                  "Iah. Wà:ke í:'i.",
+                  "Én. Ká:tiens í:'i."
+                ],
+                "correct": "Iah. Sohkwá:ren í:'i.",
+                "cm": "Io'nikonhraién:ta'ne! Iah — no. Sohkwá:ren — you are strong / be strong. í:'i — I am. Iah saiosé:ren would also work: not sick.",
+                "wm": "Iah means no. Sohkwá:ren means strong. Put them together."
+              },
+              {
+                "speaker": "other",
+                "name": "Akokstén:ha",
+                "line": "Ioiá:'ne! Sennnhiáhkhw nahe'?",
+                "gloss": "Good! Will you sing?"
+              },
+              {
+                "speaker": "learner",
+                "instruction": "Say yes — you will sing.",
+                "mode": "mc",
+                "options": [
+                  "Én. Sennnhiáhkhw í:'i.",
+                  "Iah. Sennnhiáhkhw í:'i.",
+                  "Én. Sá:tien í:'i.",
+                  "Én. Sohkwá:ren í:'i."
+                ],
+                "correct": "Én. Sennnhiáhkhw í:'i.",
+                "cm": "Tho niioht! Én — yes. Sennnhiáhkhw — you sing (command form used here as acknowledgement). í:'i — I am / I will. You have responded with the full verb.",
+                "wm": "Yes is Én. Sing (command) is Sennnhiáhkhw. Say you will."
+              }
+            ]
+          },
+          {
             "type": "story",
             "wid": "v05",
             "prompt": "Commands",
@@ -13358,104 +13308,6 @@
             "word": "tesará:htat — tesewará:htat",
             "meaning": "You run (singular) — You all run (plural)",
             "hint": "te-sa-RÁ-htat (4 syllables) — te-se-wa-RÁ-htat (5 syllables). Same root, different person prefix. Say them side by side."
-          },
-          {
-            "type": "dialogue",
-            "id": "dl_u9_review_01",
-            "prompt": "At the language table",
-            "sub": "Active and stative verbs in use",
-            "scene": "You are in a Kanien'kéha language session. The teacher asks you to demonstrate what you have learned. You use active and stative verbs in real sentences.",
-            "turns": [
-              {
-                "speaker": "other",
-                "name": "Iethinónskon (teacher)",
-                "line": "Shé:kon. Ka' ká:tiens?",
-                "gloss": "Greetings. Where are you sitting?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "He asked where you are sitting. Reply using the active verb for sitting.",
-                "mode": "mc",
-                "options": [
-                  "Kanónhsa tsi ká:tiens í:'i.",
-                  "Kanónhsa tsi sohkwá:ren í:'i.",
-                  "Kanónhsa tsi tekaráhtats í:'i.",
-                  "Ka' ká:tiens raónha?"
-                ],
-                "correct": "Kanónhsa tsi ká:tiens í:'i.",
-                "cm": "Tho niioht! Ká:tiens — I am sitting (habitual active). Tsi — at/where. Kanónhsa — at the house. You located yourself using an active verb.",
-                "wm": "Sitting is an active verb — ká:tiens (I sit). You are at the house (kanónhsa). Tsi connects them: at the place where I sit."
-              },
-              {
-                "speaker": "other",
-                "name": "Iethinónskon",
-                "line": "Tho niioht. Nahe' — saiosé:ren nahe'?",
-                "gloss": "I see. Are you sick?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Tell him you are not sick — you are strong.",
-                "mode": "mc",
-                "options": [
-                  "Iah — sohkwá:ren í:'i.",
-                  "Én — saiosé:ren í:'i.",
-                  "Iah — ká:tiens í:'i.",
-                  "Én — sohkwá:ren raónha."
-                ],
-                "correct": "Iah — sohkwá:ren í:'i.",
-                "cm": "Niawenhkó:wa! Iah — no. Sohkwá:ren — you are strong (stative). Both are stative verbs: saiosé:ren (sick) and sohkwá:ren (strong). You negated one and asserted the other.",
-                "wm": "Iah is no / not. Sohkwá:ren is strong (stative). Saiosé:ren is sick (stative). Which pair means 'no, I am strong'?"
-              },
-              {
-                "speaker": "other",
-                "name": "Iethinónskon",
-                "line": "Io'nikonhraién:ta'ne! Ka' nontáhse' onen'?",
-                "gloss": "Wonderful! Where are you coming from now?"
-              },
-              {
-                "speaker": "learner",
-                "instruction": "He asked where you are coming from. Reply: you are coming from home.",
-                "mode": "mc",
-                "options": [
-                  "Kanónhsa tsi nontáhse' í:'i.",
-                  "Kanónhsa tsi wà:ke í:'i.",
-                  "Ka' ká:tiens nahe'?",
-                  "Kanónhsa tsi tekaráhtats."
-                ],
-                "correct": "Kanónhsa tsi nontáhse' í:'i.",
-                "cm": "Tho niioht! Nontáhse' — I am coming from. Wà:ke is going. The direction verb marks which way you are moving, not just that you are moving.",
-                "wm": "He asked where you are coming FROM. Nontáhse' = coming from; wà:ke = going. Which direction verb fits?"
-              },
-              {
-                "speaker": "other",
-                "name": "Iethinónskon",
-                "line": "Ioia'táwen. Niawenhkó:wa, í:se'.",
-                "gloss": "Good. Thank you."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Close the session with thanks.",
-                "mode": "mc",
-                "options": [
-                  "Niawenhkó:wa. Onen'.",
-                  "Tho niioht. Ká:tiens.",
-                  "Shé:kon. Ioia'táwen.",
-                  "Iah, niawenhkó:wa."
-                ],
-                "correct": "Niawenhkó:wa. Onen'.",
-                "cm": "Niawenhkó:wa! You used active and stative verbs in a real exchange — sitting, strong, sick, coming from home. This is exactly what the verb system is for.",
-                "wm": "End the session with thank you and Onen'."
-              }
-            ],
-            "closing": "Active verbs describe action — sitting, running, going, coming. Stative verbs describe states — strong, sick, good, bad. Kanien'kéha keeps these two categories fully separate and the distinction matters in every sentence you make.",
-            "dialect_note": "In Akwesasne, some stative verb forms shift slightly. Sohkwá:ren and saiosé:ren are stable across dialects.",
-            "wids_tested": [
-              "v01",
-              "ov01",
-              "ov03",
-              "dv01",
-              "dv02"
-            ]
           },
           {
             "type": "story",
@@ -14054,100 +13906,70 @@
           {
             "type": "dialogue",
             "id": "dl_u10l5_01",
-            "prompt": "Talking about learning",
-            "sub": "Relational verbs and emotional states in one exchange",
-            "scene": "You run into a friend who is also learning Kanien'kéha. You talk about how the language feels, who is teaching you, and what you know.",
+            "prompt": "A conversation about learning",
+            "sub": "Relational verbs — teaching and knowing",
+            "scene": "You are speaking with a younger relative who wants to learn Kanien'kéha. They ask you about your own journey as a learner.",
             "turns": [
               {
                 "speaker": "other",
-                "name": "Iakón:kwe (friend)",
-                "line": "Shé:kon! Wakatshennón:ni — í:se'?",
-                "gloss": "Greetings! I am happy — and you?"
+                "name": "Younger relative",
+                "line": "Shé:kon. Í:se' katerí:henta' Kanien'kéha?",
+                "gloss": "Greetings. Are you learning Kanien'kéha?"
               },
               {
                 "speaker": "learner",
-                "instruction": "You are also happy. Tell her.",
+                "instruction": "Yes — confirm you are learning.",
                 "mode": "mc",
                 "options": [
-                  "Én — wakatshennón:ni í:'i.",
-                  "Én — wake'nikonhrén:ton í:'i.",
-                  "Iah — wakatshennón:ni í:'i.",
-                  "Én — wakatshennón:ni raónha."
+                  "Én. Katerí:henta' í:'i.",
+                  "Iah. Katerí:henta' í:'i.",
+                  "Én. Kahiátons í:'i.",
+                  "Én. Wà:ke í:'i."
                 ],
-                "correct": "Én — wakatshennón:ni í:'i.",
-                "cm": "Niawenhkó:wa! Wakatshennón:ni — I am happy. Í:'i — I. A stative verb that names what you feel right now.",
-                "wm": "Wakatshennón:ni = I am happy. Wake'nikonhrén:ton = I am sad. Which one says you are happy?"
+                "correct": "Én. Katerí:henta' í:'i.",
+                "cm": "Tho niioht! Katerí:henta' — I am learning. The ka- prefix marks first person. You are the one learning.",
+                "wm": "Katerí:henta' means I am learning. ka- is the first-person prefix on the verb root."
               },
               {
                 "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Kienté:ri né:e — Kanien'kéha ioianer. Í:se'?",
-                "gloss": "I know it — Kanien'kéha is beautiful. Do you?"
+                "name": "Younger relative",
+                "line": "Ioiá:'ne! Nok nó:nen — í:se' tsi ionkwarihó:ten iah tehonwatewénnaiens?",
+                "gloss": "Good! And — do you know people who don't know the language?"
               },
               {
                 "speaker": "learner",
-                "instruction": "Say you know it too — that Kanien'kéha is good.",
+                "instruction": "Yes — say you know some. Use: Wakaterién:tare (I know/am aware).",
                 "mode": "mc",
                 "options": [
-                  "Én — kienté:ri. Ioia'táwen.",
-                  "Én — wakaterién:tare. Ioia'táwen.",
-                  "Iah — kienté:ri. Ioia'ko:wa.",
-                  "Én — kienté:ri. Iah ioia'táwen."
+                  "Én. Wakaterién:tare í:'i.",
+                  "Én. Katerí:henta' í:'i.",
+                  "Iah. Wakaterién:tare í:'i.",
+                  "Én. Kahiátons í:'i."
                 ],
-                "correct": "Én — kienté:ri. Ioia'táwen.",
-                "cm": "Tho niioht! Kienté:ri — I know (something specific). Ioia'táwen — it is good. Wakaterién:tare is more general awareness; kienté:ri is specific knowing. You matched her phrasing.",
-                "wm": "She used kienté:ri (I know — something specific). Use the same verb. Ioia'táwen = it is good. Put them together."
+                "correct": "Én. Wakaterién:tare í:'i.",
+                "cm": "Io'nikonhraién:ta'ne! Wakaterién:tare — I know / I am aware. The waka- prefix here is first-person stative. This is a different prefix class from the active ka-.",
+                "wm": "Wakaterién:tare means I know. The waka- prefix marks stative first person."
               },
               {
                 "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Ka' iethinónskon í:se'? Raón:kwe?",
-                "gloss": "Who is teaching you? Is it a man?"
+                "name": "Younger relative",
+                "line": "Niawenhkó:wa. Í:se' skén:nen?",
+                "gloss": "Thank you. Are you at peace / well?"
               },
               {
                 "speaker": "learner",
-                "instruction": "Your teacher is a woman — an elder. How do you refer to her?",
+                "instruction": "Tell them yes — you are at peace / well (Én, skén:nen í:'i).",
                 "mode": "mc",
                 "options": [
-                  "Iah — akaónha iethinónskon i'.',",
-                  "Én — raónha iethinónskon.",
-                  "Iah — aónha iethinónskon.",
-                  "Én — í:'i iethinónskon."
+                  "Én, skén:nen í:'i.",
+                  "Iah, skén:nen í:'i.",
+                  "Én, sohkwá:ren í:'i.",
+                  "Én, ká:tiens í:'i."
                 ],
-                "correct": "Iah — akaónha iethinónskon i'.',",
-                "cm": "Io'nikonhraién:ta'ne! Iah — no (not a man). Akaónha — she, respectful. Your teacher is an elder woman — akaónha is required. Aónha would be wrong here. The pronouns carry the relationship.",
-                "wm": "Your teacher is an elder woman. Iah negates the question (not a man). Which pronoun names an elder woman with the right register?"
-              },
-              {
-                "speaker": "other",
-                "name": "Iakón:kwe",
-                "line": "Io'nikonhraién:ta'ne! Wake'nikonhrí:io — wakatshennón:ni.",
-                "gloss": "Wonderful! I feel good inside — I am happy."
-              },
-              {
-                "speaker": "learner",
-                "instruction": "Share the feeling — say you feel good inside too.",
-                "mode": "mc",
-                "options": [
-                  "Én — wake'nikonhrí:io í:'i.",
-                  "Én — wake'nikonhrén:ton í:'i.",
-                  "Iah — wake'nikonhrí:io í:'i.",
-                  "Én — wakatshennón:ni raónha."
-                ],
-                "correct": "Én — wake'nikonhrí:io í:'i.",
-                "cm": "Niawenhkó:wa! Wake'nikonhrí:io — I am content / I feel good inside. Different from wakatshennón:ni (happy, outward) — this is the inner state. You used a stative verb to name your inner world.",
-                "wm": "She used wake'nikonhrí:io (I feel good inside). Wake'nikonhrén:ton is heavy-hearted. Which one matches feeling good?"
+                "correct": "Én, skén:nen í:'i.",
+                "cm": "Niawenhkó:wa! Skén:nen — peace, wellness. Én, skén:nen í:'i — yes, I am at peace. A beautiful word to carry.",
+                "wm": "Skén:nen means peace / wellness. Én means yes. I am — í:'i."
               }
-            ],
-            "closing": "Five stative verbs appeared in one conversation: happy, content, sad, heavy-hearted, I know. In Kanien'kéha your emotional and cognitive states are expressed as verbs — they are actions, not descriptions. You feel the language by speaking it.",
-            "dialect_note": "Stative emotional verbs are consistent across dialects. In Akwesasne: akaónha stays the same; raónha → laónha.",
-            "wids_tested": [
-              "st06",
-              "st04",
-              "st07",
-              "st22",
-              "st23",
-              "p03"
             ]
           },
           {
