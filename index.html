@@ -69,7 +69,84 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
 /* ── BOTTOM NAV ── */
 .bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);}
-.nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.68rem;padding:.55rem .58rem;border-radius:8px;transition:color .13s;min-width:56px;min-height:44px;}
+.nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.62rem;padding:.55rem .38rem;border-radius:8px;transition:color .13s;min-width:46px;min-height:44px;}
+
+/* ── WORD BUILDER ── */
+.wb-wrap{padding:1rem 1.2rem;max-width:560px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h)+1.5rem);}
+.wb-mode-bar{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
+.wb-mode-btn{padding:.42rem 1rem;font-size:.8rem;font-weight:600;border:2px solid var(--smoke);border-radius:20px;cursor:pointer;background:transparent;font-family:'Crimson Pro',serif;color:var(--ew);transition:all .13s;letter-spacing:.02em;}
+.wb-mode-btn.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.wb-info{background:var(--birch);border:1px solid var(--sand);border-radius:10px;padding:.65rem .95rem;font-size:.83rem;color:var(--ed);line-height:1.6;margin-bottom:1rem;}
+.wb-tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:.76rem;font-weight:700;}
+.wb-tp{background:rgba(196,120,74,.18);color:#7A3800;}.wb-tr{background:rgba(46,106,142,.18);color:#1A4060;}.wb-ts{background:rgba(58,122,58,.18);color:#1A4A1A;}.wb-tph{background:var(--smoke);color:var(--ew);border:1px dashed var(--sand);}
+.wb-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;}
+@media(max-width:440px){.wb-two{grid-template-columns:1fr;}}
+.wb-slabel{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.55rem;}
+.wb-filter-row{display:flex;gap:.35rem;margin-bottom:.65rem;flex-wrap:wrap;align-items:center;}
+.wb-search{flex:1;min-width:100px;padding:.42rem .7rem;border:1.5px solid var(--smoke);border-radius:9px;font-family:'Crimson Pro',serif;font-size:.88rem;background:white;color:var(--ed);outline:none;}
+.wb-search:focus{border-color:var(--clay);}
+.wb-pill{font-size:.72rem;padding:.22rem .65rem;border-radius:17px;border:1.5px solid var(--smoke);background:white;cursor:pointer;color:var(--ew);font-family:'Crimson Pro',serif;transition:all .11s;}
+.wb-pill.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.wb-root-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.45rem;max-height:320px;overflow-y:auto;padding-right:2px;}
+.wb-chip{border:1px solid var(--smoke);border-radius:10px;padding:.52rem .72rem;cursor:pointer;background:white;transition:border-color .12s,background .12s;box-shadow:0 1px 3px rgba(44,24,16,.04);}
+.wb-chip:hover{border-color:var(--clay);background:var(--cream);}
+.wb-chip.wb-sel{border-color:var(--sky);background:#EEF4F8;}
+.wbc-r{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);}
+.wbc-e{font-size:.76rem;color:var(--ew);font-style:italic;margin-top:1px;}
+.wbc-pos{font-size:.68rem;color:var(--ew);margin-top:1px;}
+.wb-form-list{display:flex;flex-direction:column;gap:.42rem;max-height:320px;overflow-y:auto;}
+.wb-form-chip{border:1px solid var(--smoke);border-radius:10px;padding:.52rem .78rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:.5rem;background:white;transition:border-color .12s,background .12s;box-shadow:0 1px 3px rgba(44,24,16,.04);}
+.wb-form-chip:hover{border-color:var(--clay);background:var(--cream);}
+.wb-form-chip.wb-sel{border-color:var(--sky);background:#EEF4F8;}
+.wb-form-chip.wb-ph{border-style:dashed;opacity:.8;}
+.wbf-word{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);}
+.wbf-lbl{font-size:.76rem;color:var(--ew);font-style:italic;margin-top:1px;}
+.wb-form-tags{display:flex;gap:.3rem;flex-shrink:0;}
+.wb-panel{background:white;border:1px solid var(--smoke);border-radius:14px;padding:1rem 1.1rem;margin-top:1rem;box-shadow:0 2px 8px rgba(44,24,16,.06);}
+.wb-slots{display:flex;gap:.45rem;align-items:stretch;flex-wrap:wrap;margin-bottom:.8rem;}
+.wb-slot{flex:1;min-width:80px;border:1.5px dashed var(--smoke);border-radius:9px;padding:.58rem .75rem;text-align:center;min-height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:border-color .12s,background .12s;}
+.wb-slot.filled{border-style:solid;border-color:var(--sand);background:var(--cream);}
+.wb-slot-lbl{font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ew);margin-bottom:2px;}
+.wb-slot-val{font-size:.95rem;font-weight:700;font-family:'Playfair Display',serif;}
+.wb-slot-sub{font-size:.68rem;color:var(--ew);margin-top:2px;font-style:italic;}
+.wb-eq{font-size:1.1rem;color:var(--smoke);display:flex;align-items:center;align-self:center;padding:0 1px;}
+.wb-result-zone{border-top:1px solid var(--sand);padding-top:.85rem;}
+.wb-result-word{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--ed);margin-bottom:.18rem;}
+.wb-result-en{font-size:.88rem;color:var(--ew);font-style:italic;margin-bottom:.62rem;}
+.wb-decomp{display:flex;gap:.38rem;flex-wrap:wrap;align-items:center;margin-bottom:.4rem;font-size:.82rem;color:var(--ew);}
+.wb-ph-note{font-size:.78rem;color:#7A3800;background:rgba(196,120,74,.12);border:1px solid rgba(196,120,74,.3);border-radius:8px;padding:.4rem .75rem;margin-top:.45rem;line-height:1.55;}
+.wb-stats{display:flex;gap:.55rem;margin-bottom:.9rem;}
+.wb-stat{flex:1;background:var(--birch);border-radius:9px;padding:.55rem .8rem;}
+.wb-stat-n{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--clay);}
+.wb-stat-l{font-size:.72rem;color:var(--ew);font-style:italic;}
+/* activity */
+.wb-act-panel{background:white;border:1px solid var(--smoke);border-radius:14px;padding:1.1rem 1.2rem;box-shadow:0 2px 8px rgba(44,24,16,.06);}
+.wb-act-prompt{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--ed);margin-bottom:.22rem;}
+.wb-act-sub{font-size:.84rem;color:var(--ew);font-style:italic;margin-bottom:1rem;}
+.wb-act-target{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--ed);margin-bottom:.18rem;}
+.wb-act-en{font-size:.88rem;color:var(--ew);font-style:italic;margin-bottom:1rem;}
+.wb-choices{display:grid;grid-template-columns:1fr 1fr;gap:.52rem;margin-bottom:.85rem;}
+.wb-choice{background:var(--cream);border:2px solid var(--smoke);border-radius:10px;padding:.68rem .85rem;font-family:'Crimson Pro',serif;font-size:.95rem;color:var(--ed);cursor:pointer;text-align:left;transition:border-color .13s,background .13s;width:100%;min-height:44px;}
+.wb-choice:hover:not(:disabled){border-color:var(--clay);background:white;}
+.wb-choice.wb-cor{border-color:var(--cor);background:#EEF4EE;}
+.wb-choice.wb-wrg{border-color:var(--wrg);background:#F4EEEE;}
+.wb-choice:disabled{cursor:default;}
+.wb-fb{padding:.68rem .88rem;border-radius:10px;margin-bottom:.75rem;font-size:.88rem;line-height:1.5;display:none;}
+.wb-fb.show{display:block;}
+.wb-fb.wb-cor-fb{background:#EEF5EE;border:1px solid var(--cor);color:#2A5020;}
+.wb-fb.wb-wrg-fb{background:#F5EEEE;border:1px solid var(--wrg);color:#6A2020;}
+.wb-score-row{display:flex;gap:1.1rem;font-size:.82rem;color:var(--ew);margin-bottom:.9rem;}
+.wb-score-n{font-weight:700;color:var(--ed);}
+.wb-next-btn{padding:.58rem 1.2rem;border-radius:10px;border:2px solid var(--smoke);background:var(--cream);font-family:'Crimson Pro',serif;font-size:.9rem;color:var(--ed);cursor:pointer;font-weight:600;transition:background .12s;}
+.wb-next-btn:hover{background:white;border-color:var(--clay);}
+/* prefix browser */
+.wb-pref-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.52rem;margin-bottom:1rem;}
+.wb-pref-card{border:1px solid var(--smoke);border-radius:10px;padding:.58rem .8rem;cursor:pointer;background:white;transition:border-color .12s,background .12s;box-shadow:0 1px 4px rgba(44,24,16,.04);}
+.wb-pref-card:hover{border-color:var(--clay);background:var(--cream);}
+.wb-pref-card.wb-pf-sel{border-color:var(--clay);background:rgba(196,120,74,.08);}
+.wb-pf-form{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);}
+.wb-pf-mean{font-size:.76rem;color:var(--ew);margin-top:2px;font-style:italic;}
+.wb-pf-tag{font-size:.68rem;color:var(--ew);margin-top:1px;}
 .nb .ni{font-size:1.1rem;line-height:1;display:block;}
 .nb.active{color:var(--sand);}
 .nb.active .ni{filter:drop-shadow(0 0 5px rgba(196,120,74,.6));}.nb.active .ni i{color:var(--sand);}
@@ -787,6 +864,96 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   </div>
 </div>
 
+<!-- WORD BUILDER -->
+<div id="builder" class="screen">
+  <div class="bm"></div>
+  <div class="pw">
+    <div class="sh"><h2>Word builder</h2><p>Assemble Kanien'kéha words from roots, prefixes, and suffixes.</p></div>
+    <div class="wb-wrap">
+      <div class="wb-mode-bar">
+        <button class="wb-mode-btn active" id="wbm-explore" onclick="wbSetMode('explore',this)">Explore</button>
+        <button class="wb-mode-btn" id="wbm-activity" onclick="wbSetMode('activity',this)">Activity</button>
+        <button class="wb-mode-btn" id="wbm-prefix" onclick="wbSetMode('prefix',this)">Prefix browser</button>
+      </div>
+
+      <!-- EXPLORE -->
+      <div id="wb-explore">
+        <div class="wb-stats">
+          <div class="wb-stat"><div class="wb-stat-n" id="wb-stat-total">—</div><div class="wb-stat-l">roots in builder</div></div>
+          <div class="wb-stat"><div class="wb-stat-n">106</div><div class="wb-stat-l">with full paradigm data</div></div>
+          <div class="wb-stat"><div class="wb-stat-n">21</div><div class="wb-stat-l">prefix placeholders</div></div>
+        </div>
+        <div class="wb-info">
+          Words in Kanien'kéha are built from <span class="wb-tag wb-tp">prefix</span> (person · aspect) +
+          <span class="wb-tag wb-tr">root</span> (core meaning) + <span class="wb-tag wb-ts">suffix</span> (habitual · mood).
+          <span class="wb-tag wb-tph">dashed border</span> = placeholder awaiting linguistic confirmation.
+        </div>
+        <div class="wb-two">
+          <div>
+            <div class="wb-slabel">1 — root word</div>
+            <div class="wb-filter-row">
+              <input class="wb-search" type="text" id="wb-search" placeholder="Search…" oninput="wbRenderRoots()" autocorrect="off" autocapitalize="off">
+              <button class="wb-pill active" onclick="wbSetCat('all',this)">All</button>
+              <button class="wb-pill" onclick="wbSetCat('verb',this)">Verbs</button>
+              <button class="wb-pill" onclick="wbSetCat('kinship',this)">Kinship</button>
+              <button class="wb-pill" onclick="wbSetCat('emotional state',this)">Feelings</button>
+              <button class="wb-pill" onclick="wbSetCat('food quality',this)">Food</button>
+            </div>
+            <div class="wb-root-grid" id="wb-root-grid"></div>
+          </div>
+          <div>
+            <div class="wb-slabel">2 — choose a form</div>
+            <div class="wb-form-list" id="wb-form-list">
+              <div style="font-size:.88rem;color:var(--ew);font-style:italic;padding:.5rem 0;">← Select a root word to see its forms</div>
+            </div>
+          </div>
+        </div>
+        <div class="wb-panel" id="wb-builder-panel">
+          <div class="wb-slabel" style="margin-bottom:.7rem;">3 — assembled word</div>
+          <div class="wb-slots">
+            <div class="wb-slot" id="wbs-p"><div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · aspect</div></div>
+            <div class="wb-eq">+</div>
+            <div class="wb-slot" id="wbs-r"><div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core meaning</div></div>
+            <div class="wb-eq">+</div>
+            <div class="wb-slot" id="wbs-s"><div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div></div>
+            <div class="wb-eq">=</div>
+            <div class="wb-slot" id="wbs-result" style="flex:1.5;"><div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div></div>
+          </div>
+          <div id="wb-result-zone" style="display:none;" class="wb-result-zone">
+            <div class="wb-decomp" id="wb-decomp"></div>
+            <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY -->
+      <div id="wb-activity" style="display:none;">
+        <div class="wb-filter-row" style="margin-bottom:.75rem;">
+          <span style="font-size:.78rem;color:var(--ew);margin-right:.2rem;">Activity type:</span>
+          <button class="wb-pill active" id="wba-prefix" onclick="wbSetActType('prefix',this)">Identify the prefix</button>
+          <button class="wb-pill" id="wba-form" onclick="wbSetActType('form',this)">Choose the correct form</button>
+          <button class="wb-pill" id="wba-meaning" onclick="wbSetActType('meaning',this)">What does this mean?</button>
+        </div>
+        <div class="wb-score-row">
+          <span>Score: <span class="wb-score-n" id="wb-score">0</span></span>
+          <span>Streak: <span class="wb-score-n" id="wb-streak">0</span></span>
+          <span>Attempts: <span class="wb-score-n" id="wb-attempts">0</span></span>
+        </div>
+        <div class="wb-act-panel" id="wb-act-panel"><div style="color:var(--ew);font-style:italic;font-size:.88rem;">Loading question…</div></div>
+      </div>
+
+      <!-- PREFIX BROWSER -->
+      <div id="wb-prefix" style="display:none;">
+        <div class="wb-info" style="margin-bottom:.85rem;">Click any prefix to filter the root list to words that use it.</div>
+        <div class="wb-slabel">prefix catalogue</div>
+        <div class="wb-pref-grid" id="wb-pref-grid" style="margin-bottom:1rem;"></div>
+        <div id="wb-pf-result-label" style="display:none;" class="wb-slabel"></div>
+        <div class="wb-root-grid" id="wb-pf-roots" style="max-height:360px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- PRACTICE FAB -->
 <button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
   <span class="fab-ic" style="font-size:1.1rem;line-height:1;">&#8635;</span>
@@ -813,6 +980,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni"><i class="fa-solid fa-volume-high"></i></span>Sounds</button>
   <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni"><i class="fa-solid fa-book-open"></i></span>Words</button>
   <button class="nb" id="nb-journal" onclick="navTo('journal')"><span class="ni"><i class="fa-solid fa-seedling"></i></span>Journal</button>
+  <button class="nb" id="nb-builder" onclick="navTo('builder')"><span class="ni"><i class="fa-solid fa-puzzle-piece"></i></span>Builder</button>
   <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni"><i class="fa-solid fa-compass"></i></span>Resources</button>
 </nav>
 
@@ -1006,6 +1174,7 @@ function navTo(id){
   if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
   if(id==='phrases')renderPhrases();
   if(id==='journal')renderJournal();
+  if(id==='builder')wbInit();
 }
 function renderJournal(){
   if(!CU||!CU.data.journal)return;
@@ -3033,6 +3202,308 @@ function renderPhraseCard(p){
 function togglePhraseCard(card){
   card.classList.toggle('open');
 }
+/* ══════════════════════════════════════════════════════════
+   WORD BUILDER ENGINE
+   ══════════════════════════════════════════════════════════ */
+const WB_WORDS=[
+  {id:'v01',r:'á:tien',e:'to sit',pos:'verb',c:'verb',forms:[{l:'you sit (command)',f:'sá:tien',p:'s-/sa-',s:'∅',ph:false},{l:'I sit (habitual)',f:'ká:tiens',p:'k-/ka-',s:'-s',ph:false},{l:'you two sit (command)',f:'seniá:tien',p:'seni-',s:'∅',ph:false},{l:'you all sit (command)',f:'sewá:tien',p:'sewa-',s:'∅',ph:false}]},
+  {id:'v03',r:'aráhtat',e:'to run',pos:'verb',c:'verb',forms:[{l:'you run (command)',f:'tesaráhtat',p:'te-sa-',s:'∅',ph:false},{l:'I run (habitual)',f:'tekaráhtats',p:'te-ka-',s:'-s',ph:false},{l:'you two run (command)',f:'teseniaráhtat',p:'te-seni-',s:'∅',ph:false},{l:'you all run (command)',f:'tesewará:htat',p:'te-sewa-',s:'∅',ph:false}]},
+  {id:'v05',r:'atkáhthon',e:'to listen',pos:'verb',c:'verb',forms:[{l:'you listen (habitual)',f:'satkáhthons',p:'s-/sa-',s:'-s',ph:false},{l:'I listen (habitual)',f:'katkáhthons',p:'k-/ka-',s:'-s',ph:false},{l:'you two listen (command)',f:'seniatkáhthon',p:'seni-',s:'∅',ph:false},{l:'you all listen (command)',f:'sewatkáhthon',p:'sewa-',s:'∅',ph:false}]},
+  {id:'cv01',r:"kwe'tarón:ko",e:'to cut',pos:'verb',c:'verb',forms:[{l:'you cut (command)',f:"skwe'tarón:ko",p:'s-/sa-',s:'∅',ph:false},{l:'I cut (habitual)',f:"kkwe'tarón:kwas",p:'k-/ka-',s:'-was',ph:false}]},
+  {id:'cv04',r:"káhere'",e:'to sweep',pos:'verb',c:'verb',forms:[{l:'you sweep (command)',f:"skáhere'",p:'s-/sa-',s:'∅',ph:false},{l:'you two sweep',f:'seniáhseron',p:'seni-',s:'∅',ph:false},{l:'you all sweep',f:'sewáhseron',p:'sewa-',s:'∅',ph:false}]},
+  {id:'cv05',r:'skahó:wi',e:'to give',pos:'verb',c:'verb',forms:[{l:'you give (command)',f:'skahó:wi',p:'s-/sa-',s:'∅',ph:false},{l:'I give (habitual)',f:'kkahó:wis',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'iv03',r:'ahsennón:ni',e:'to make a fire',pos:'verb.i-stem',c:'verb',forms:[{l:'you make fire (command)',f:'sahsennón:ni',p:'s-/sa-',s:'∅',ph:false},{l:'I make fire (habitual)',f:'kahsennón:nis',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'ev01',r:'é:ta',e:'to put it in',pos:'verb.e-stem',c:'verb',forms:[{l:'you put in (command)',f:'sé:ta',p:'s-/sa-',s:'∅',ph:false},{l:'I put in (habitual)',f:"ké:ta's",p:'k-/ka-',s:"-'s",ph:false}]},
+  {id:'ev03',r:'ahshá:wi',e:'to want something',pos:'verb.e-stem',c:'verb',forms:[{l:'you want (command)',f:'sahshá:wi',p:'s-/sa-',s:'∅',ph:false},{l:'I want (habitual)',f:'kahshá:wis',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'ev04',r:'anerénhton',e:'to mow / cut grass',pos:'verb.e-stem',c:'verb',forms:[{l:'you mow (command)',f:'sanerénhton',p:'s-/sa-',s:'∅',ph:false},{l:'I mow (habitual)',f:'kanerénhtons',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'ov01',r:'ohkwá:ren',e:'to be strong',pos:'verb.o-stem',c:'verb',forms:[{l:'you be strong (command)',f:'sohkwá:ren',p:'s-/so-',s:'∅',ph:false},{l:'I am strong (habitual)',f:'kohkwá:rens',p:'k-/ko-',s:'-s',ph:false},{l:'he is strong (habitual)',f:'rohkwá:rens',p:'ro-',s:'-s',ph:false}]},
+  {id:'ov02',r:'atonhnhéton',e:'to be cold (body)',pos:'verb.o-stem',c:'verb',forms:[{l:'you be cold (command)',f:'satonhnhéton',p:'s-/sa-',s:'∅',ph:false},{l:'I am cold (habitual)',f:'katonhnhétons',p:'k-/ka-',s:'-s',ph:false},{l:'it is cold (weather)',f:'otonhnhéton',p:'o-',s:'∅',ph:false}]},
+  {id:'ov03',r:'aiosé:ren',e:'to be sick',pos:'verb.o-stem',c:'verb',forms:[{l:'you be sick',f:'saiosé:ren',p:'s-/sa-',s:'∅',ph:false},{l:'I am sick (habitual)',f:'kaiosé:rens',p:'k-/ka-',s:'-s',ph:false},{l:'she is sick (habitual)',f:'akoiosé:rens',p:'ako-',s:'-s',ph:false},{l:'he is sick (habitual)',f:'roiosé:rens',p:'ro-',s:'-s',ph:false}]},
+  {id:'ov04',r:'atkatho',e:'to look',pos:'verb.o-stem',c:'verb',forms:[{l:'look (command)',f:'satkatho',p:'s-/sa-',s:'∅',ph:false},{l:'I look (habitual)',f:'katkathos',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'vr09',r:'atonnhétons',e:'to be sick (alt.)',pos:'verb.stative',c:'verb',forms:[{l:'I am sick',f:'katonnhétons',p:'k-/ka-',s:'-s',ph:false},{l:'you are sick',f:'satonnhétons',p:'s-/sa-',s:'-s',ph:false},{l:'she is sick',f:'iakatonnhétons',p:'iaka-',s:'-s',ph:false}]},
+  {id:'av02',r:'atkahnekárhons',e:'to brush teeth',pos:'verb.a-stem',c:'verb',forms:[{l:'you brush teeth (habitual)',f:'satkahnekárhons',p:'s-/sa-',s:'-s',ph:false},{l:'I brush teeth (habitual)',f:'katkahnekárhons',p:'k-/ka-',s:'-s',ph:false}]},
+  {id:'eat02',r:'atonhkaria',e:'to be hungry',pos:'verb.stative',c:'verb',forms:[{l:'I am hungry',f:"Katonhkaria'ks",p:'k-/ka-',s:"-'ks",ph:false},{l:'are you hungry?',f:"Satonhkaria'ks ken?",p:'s-/sa-',s:"-'ks ken?",ph:false}]},
+  {id:'st06',r:'tshennón:ni',e:'to be happy',pos:'verb.stative',c:'emotional state',forms:[{l:'I am happy',f:'Wakatshennón:ni',p:'Waka-',s:'∅',ph:false},{l:'you are happy',f:'Satshennón:ni',p:'Sa-',s:'∅',ph:false},{l:'she is happy',f:'Yakatshennón:ni',p:'Yaka-',s:'∅',ph:false}]},
+  {id:'st01',r:'hterón:ni',e:'to be afraid',pos:'verb.stative',c:'emotional state',forms:[{l:'I am afraid',f:'Wakhterón:ni',p:'Wak-',s:'∅',ph:false}]},
+  {id:'st02',r:"na'khwén:'on",e:'to be angry',pos:'verb.stative',c:'emotional state',forms:[{l:'I am angry',f:"Wakena'khwén:'on",p:'Wake-',s:'∅',ph:false}]},
+  {id:'st04',r:"'nikonhrí:io",e:'to feel good inside',pos:'verb.stative',c:'emotional state',forms:[{l:'I feel good inside',f:"Wake'nikonhrí:io",p:'Wake-',s:'∅',ph:false}]},
+  {id:'st05',r:"'nikonhrén:ton",e:'to be heavy-hearted',pos:'verb.stative',c:'emotional state',forms:[{l:'I am heavy-hearted',f:"Wake'nikonhrén:ton",p:'Wake-',s:'∅',ph:false}]},
+  {id:'st07',r:"'nikonhráksen",e:'to be sad',pos:'verb.stative',c:'emotional state',forms:[{l:'I am sad',f:"Wake'nikonhráksen",p:'Wake-',s:'∅',ph:false}]},
+  {id:'st09',r:'rhá:re',e:'to wait',pos:'verb.stative',c:'emotional state',forms:[{l:'I am waiting',f:'Wakerhá:re',p:'Wake-',s:'∅',ph:false}]},
+  {id:'st12',r:'ttókha',e:'to be smart',pos:'verb.stative',c:'emotional state',forms:[{l:'I am smart',f:'Kattókha',p:'Kat-',s:'∅',ph:false}]},
+  {id:'st19',r:"'nikonhrhare",e:'to be worried',pos:'verb.stative',c:'emotional state',forms:[{l:'I am worried',f:"Tewake'nikonhrhare",p:'Tewake-',s:'∅',ph:false}]},
+  {id:'fd09',r:'wékon',e:'it is delicious',pos:'verb.stative',c:'food quality',forms:[{l:'it is delicious',f:'yawékon',p:'ya-',s:'∅',ph:false}]},
+  {id:'fd10',r:'ó:ri',e:'it is cooked',pos:'verb.stative',c:'food quality',forms:[{l:'it is cooked',f:'yó:ri',p:'yo-',s:'∅',ph:false}]},
+  {id:'fd12',r:"'taríhen",e:'it is hot (food)',pos:'verb.stative',c:'food quality',forms:[{l:'it is hot',f:"yo'taríhen",p:'yo-',s:'∅',ph:false}]},
+  {id:'fd13',r:'wíhsto',e:'it is cool/cold (food)',pos:'verb.stative',c:'food quality',forms:[{l:'it is cool/cold',f:'yowíhsto',p:'yo-',s:'∅',ph:false}]},
+  {id:'fd14',r:"tsha'áhton",e:'it is burnt',pos:'verb.stative',c:'food quality',forms:[{l:'it is burnt',f:"yotsha'áhton",p:'yo-',s:'∅',ph:false}]},
+  {id:'sb01',r:"kenní:io",e:'it is good/beautiful',pos:'verb.stative',c:'quality',forms:[{l:'it is good / beautiful',f:'kenní:io',p:'ke-',s:'∅',ph:false}]},
+  {id:'q01',r:'owá:nen',e:'big / large',pos:'verb.stative',c:'quality',forms:[{l:'big / large',f:'owá:nen',p:'o-',s:'∅',ph:false}]},
+  {id:'q02',r:'ohsì:io',e:'good / beautiful',pos:'verb.stative',c:'quality',forms:[{l:'good / nice / beautiful',f:'ohsì:io',p:'o-',s:'∅',ph:false}]},
+  {id:'w02',r:'ó:iats',e:'it is raining',pos:'verb.stative',c:'weather',forms:[{l:'it is raining',f:'ó:iats',p:'[prefix — placeholder]',s:'∅',ph:true}]},
+  {id:'w04',r:'ohsohkwá:ren',e:'it is warm (weather)',pos:'verb.stative',c:'weather',forms:[{l:'it is warm',f:'ohsohkwá:ren',p:'[prefix — placeholder]',s:'∅',ph:true}]},
+  {id:'vr11',r:'tewatkahráthos',e:'it is raining (alt.)',pos:'verb.stative',c:'weather',forms:[{l:'it is raining',f:'tewatkahráthos',p:'te-wat-',s:'∅',ph:false}]},
+  {id:'k01',r:'ista',e:'mother',pos:'noun.kinship',c:'kinship',forms:[{l:'my mother',f:"ake'nihsténha",p:'ake-/rake-',s:'∅',ph:false},{l:'your mother',f:"sa'nihsténha",p:'sa-/ya-',s:'∅',ph:false},{l:'his mother',f:"ro'nihsténha",p:'ro-',s:'∅',ph:false},{l:'her mother',f:"ako'nihsténha",p:'ako-',s:'∅',ph:false},{l:'our mother',f:"onkwa'nihsténha",p:'onkwa-',s:'∅',ph:false},{l:'your (pl) mother',f:"sewa'nihsténha",p:'sewa-',s:'∅',ph:false}]},
+  {id:'k02',r:"'nisten'ha",e:'father',pos:'noun.kinship',c:'kinship',forms:[{l:'my father',f:"rake'níha",p:'ake-/rake-',s:'∅',ph:false},{l:'your father',f:"ya'níha",p:'sa-/ya-',s:'∅',ph:false},{l:'his father',f:"ro'níha",p:'ro-',s:'∅',ph:false},{l:'her father',f:"shako'níha",p:'shako-',s:'∅',ph:false},{l:'our father',f:"shonkwa'níha",p:'shonkwa-',s:'∅',ph:false}]},
+  {id:'k03',r:"'sot",e:'grandfather',pos:'noun.kinship',c:'kinship',forms:[{l:'my grandfather',f:'rakhsótha',p:'ake-/rake-',s:'∅',ph:false},{l:'your grandfather',f:'yahsótha',p:'sa-/ya-',s:'∅',ph:false},{l:'his grandfather',f:'rohsótha',p:'ro-',s:'∅',ph:false},{l:'her grandfather',f:'shakohsótha',p:'shako-',s:'∅',ph:false},{l:'our grandfather',f:'shonkwahsótha',p:'shonkwa-',s:'∅',ph:false}]},
+  {id:'k04',r:'tota',e:'grandmother',pos:'noun.kinship',c:'kinship',forms:[{l:'my grandmother',f:'akhsótha',p:'ake-/rake-',s:'∅',ph:false},{l:'your grandmother',f:'sahsótha',p:'sa-/ya-',s:'∅',ph:false},{l:'his grandmother',f:'rohsótha',p:'ro-',s:'∅',ph:false},{l:'her grandmother',f:'akohsótha',p:'ako-',s:'∅',ph:false},{l:'our grandmother',f:'onkwahsótha',p:'onkwa-',s:'∅',ph:false},{l:'grandmother of all of you',f:'sewahsótha',p:'sewa-',s:'∅',ph:false}]},
+  {id:'k05',r:"tsí:'a",e:'older sister',pos:'noun.kinship',c:'kinship',forms:[{l:'my older sister',f:"akhtsí:'a",p:'ake-/rake-',s:'∅',ph:false},{l:'your older sister',f:"sahtsí:'a",p:'sa-/ya-',s:'∅',ph:false},{l:'his older sister',f:"rohtsí:'a",p:'ro-',s:'∅',ph:false},{l:'her older sister',f:"akohtsí:'a",p:'ako-',s:'∅',ph:false}]},
+];
+
+const WB_PREFIXES=[
+  {form:'s- / sa-',meaning:'you (singular) — command/imperative',person:'2sg',aspect:'imperative'},
+  {form:'k- / ka-',meaning:'I — habitual action',person:'1sg',aspect:'habitual'},
+  {form:'ko- / so-',meaning:'I / you — o-stem verbs',person:'1sg/2sg',aspect:'habitual/imperative'},
+  {form:'ro-',meaning:'he / him — habitual',person:'3sg.m',aspect:'habitual'},
+  {form:'ako-',meaning:'she / her — habitual',person:'3sg.f',aspect:'habitual'},
+  {form:'iaka-',meaning:'she — habitual (alt.)',person:'3sg.f',aspect:'habitual'},
+  {form:'o-',meaning:'it — impersonal / weather',person:'3sg.n',aspect:'stative'},
+  {form:'ya- / yo-',meaning:'it — stative quality / food',person:'3sg.n',aspect:'stative'},
+  {form:'seni-',meaning:'you two — dual',person:'2du',aspect:'imperative'},
+  {form:'sewa-',meaning:'you all — plural',person:'2pl',aspect:'imperative/possessive'},
+  {form:'onkwa-',meaning:'our / we (inclusive)',person:'1pl',aspect:'possessive'},
+  {form:'shonkwa-',meaning:'our (male-referent)',person:'1pl.m',aspect:'possessive'},
+  {form:'te-',meaning:'dualic prefix — directional motion',person:'',aspect:'dualic'},
+  {form:'Wak- / Waka-',meaning:'I — stative (emotional state)',person:'1sg',aspect:'stative'},
+  {form:'Wake-',meaning:'I — stative (mind/heart verbs)',person:'1sg',aspect:'stative'},
+  {form:'Tewake-',meaning:'I — dualic stative (divided mind)',person:'1sg',aspect:'dualic-stative'},
+  {form:'Sa- / Yaka-',meaning:'you / she — stative',person:'2sg / 3sg.f',aspect:'stative'},
+  {form:'ake- / rake-',meaning:'my (f/m speaker) — possessive',person:'1sg',aspect:'possessive'},
+  {form:'sa- / ya-',meaning:'your — possessive',person:'2sg',aspect:'possessive'},
+  {form:'shako-',meaning:'her (from him) — possessive',person:'3sg.m→f',aspect:'possessive'},
+];
+
+let WB={word:null,formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null};
+
+function wbInit(){
+  if(!WB.initialized){
+    WB.initialized=true;
+    document.getElementById('wb-stat-total').textContent=WB_WORDS.length;
+    wbRenderRoots();
+    wbRenderPrefixGrid();
+  }
+}
+
+function wbSetMode(m,btn){
+  WB.mode=m;
+  document.querySelectorAll('.wb-mode-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('wb-explore').style.display=m==='explore'?'block':'none';
+  document.getElementById('wb-activity').style.display=m==='activity'?'block':'none';
+  document.getElementById('wb-prefix').style.display=m==='prefix'?'block':'none';
+  if(m==='activity')wbGenQuestion();
+}
+
+function wbSetCat(c,btn){
+  WB.cat=c;WB.word=null;WB.formIdx=null;
+  document.querySelectorAll('#wb-explore .wb-pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  wbRenderRoots();
+  wbClearBuilder();
+  document.getElementById('wb-form-list').innerHTML='<div style="font-size:.88rem;color:var(--ew);font-style:italic;padding:.5rem 0;">← Select a root word to see its forms</div>';
+}
+
+function wbFiltered(){
+  const q=(document.getElementById('wb-search')||{}).value||'';
+  const ql=q.toLowerCase();
+  return WB_WORDS.filter(w=>{
+    if(WB.cat!=='all'&&w.c!==WB.cat)return false;
+    if(ql&&!w.r.toLowerCase().includes(ql)&&!w.e.toLowerCase().includes(ql))return false;
+    return true;
+  });
+}
+
+function wbRenderRoots(){
+  const grid=document.getElementById('wb-root-grid');
+  if(!grid)return;
+  const words=wbFiltered();
+  grid.innerHTML=words.map(w=>`
+    <div class="wb-chip${WB.word&&WB.word.id===w.id?' wb-sel':''}" onclick="wbSelectWord('${w.id}')">
+      <div class="wbc-r">${w.r}</div>
+      <div class="wbc-e">${w.e}</div>
+      <div class="wbc-pos">${w.pos}</div>
+    </div>`).join('');
+}
+
+function wbSelectWord(id){
+  WB.word=WB_WORDS.find(w=>w.id===id);WB.formIdx=null;
+  wbRenderRoots();
+  const list=document.getElementById('wb-form-list');
+  if(!WB.word||!list)return;
+  list.innerHTML=`<div style="margin-bottom:.55rem;"><div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${WB.word.r}</div><div style="font-size:.82rem;color:var(--ew);font-style:italic;">${WB.word.e} · ${WB.word.pos}</div></div>`+
+  WB.word.forms.map((f,i)=>`
+    <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}${f.ph?' wb-ph':''}" onclick="wbSelectForm(${i})">
+      <div><div class="wbf-word">${f.f}</div><div class="wbf-lbl">${f.l}</div></div>
+      <div class="wb-form-tags">
+        <span class="wb-tag ${f.ph?'wb-tph':'wb-tp'}">${f.p}</span>
+        ${f.s!=='∅'?`<span class="wb-tag wb-ts">${f.s}</span>`:''}
+      </div>
+    </div>`).join('');
+  wbClearBuilder();
+}
+
+function wbSelectForm(i){
+  WB.formIdx=i;
+  const list=document.getElementById('wb-form-list');
+  if(list)list.querySelectorAll('.wb-form-chip').forEach((el,j)=>el.classList.toggle('wb-sel',j===i));
+  wbRenderBuilder();
+}
+
+function wbRenderBuilder(){
+  if(!WB.word||WB.formIdx===null)return;
+  const f=WB.word.forms[WB.formIdx],w=WB.word;
+  const hasSuf=f.s&&f.s!=='∅';
+  const slP=document.getElementById('wbs-p');
+  slP.classList.add('filled');
+  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.p}</div><div class="wb-slot-sub">person · aspect</div>`;
+  const slR=document.getElementById('wbs-r');
+  slR.classList.add('filled');
+  slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${w.r}</div><div class="wb-slot-sub">${w.e}</div>`;
+  const slS=document.getElementById('wbs-s');
+  slS.classList.add('filled');
+  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:${hasSuf?'#1A4A1A':'var(--smoke)'};">${hasSuf?f.s:'∅'}</div><div class="wb-slot-sub">${hasSuf?'aspect marker':'bare stem'}</div>`;
+  const slRes=document.getElementById('wbs-result');
+  slRes.classList.add('filled');
+  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.f}</div><div class="wb-slot-sub">${f.l}</div>`;
+  const rz=document.getElementById('wb-result-zone');
+  rz.style.display='block';
+  document.getElementById('wb-decomp').innerHTML=
+    `<span class="wb-tag ${f.ph?'wb-tph':'wb-tp'}">${f.p}</span> +
+     <span class="wb-tag wb-tr">${w.r}</span> +
+     <span class="wb-tag ${hasSuf?'wb-ts':'wb-tph'}">${hasSuf?f.s:'∅'}</span>
+     <span style="color:var(--ew);">→</span>
+     <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.f}</strong>
+     <span style="color:var(--ew);font-style:italic;font-size:.8rem;">(${f.l})</span>`;
+  const phn=document.getElementById('wb-ph-note');
+  if(f.ph){phn.style.display='block';phn.textContent='Prefix marked as placeholder — morpheme boundary needs linguistic review before this entry can be used in activities.';}
+  else{phn.style.display='none';}
+}
+
+function wbClearBuilder(){
+  ['wbs-p','wbs-r','wbs-s','wbs-result'].forEach(id=>{
+    const el=document.getElementById(id);if(!el)return;
+    el.classList.remove('filled');
+  });
+  document.getElementById('wbs-p').innerHTML='<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · aspect</div>';
+  document.getElementById('wbs-r').innerHTML='<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core meaning</div>';
+  document.getElementById('wbs-s').innerHTML='<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div>';
+  document.getElementById('wbs-result').innerHTML='<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div>';
+  const rz=document.getElementById('wb-result-zone');if(rz)rz.style.display='none';
+}
+
+/* ── ACTIVITY ── */
+function wbSetActType(t,btn){
+  WB.actType=t;
+  document.querySelectorAll('#wb-activity .wb-pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  wbGenQuestion();
+}
+
+function wbActivityWords(){return WB_WORDS.filter(w=>w.forms.some(f=>!f.ph));}
+
+function wbShuffle(a){return a.slice().sort(()=>Math.random()-.5);}
+
+function wbGenQuestion(){
+  const panel=document.getElementById('wb-act-panel');
+  if(!panel)return;
+  const words=wbActivityWords();
+  if(!words.length){panel.innerHTML='<div style="color:var(--ew);font-style:italic;font-size:.88rem;">No activity data available yet.</div>';return;}
+  const w=words[Math.floor(Math.random()*words.length)];
+  const rf=w.forms.filter(f=>!f.ph);
+  const f=rf[Math.floor(Math.random()*rf.length)];
+
+  let html='';
+  if(WB.actType==='prefix'){
+    const correct=f.p;
+    const pool=wbShuffle([...new Set(WB_WORDS.flatMap(x=>x.forms.map(fm=>fm.p)).filter(p=>p!==correct&&!p.includes('placeholder')))]).slice(0,3);
+    const choices=wbShuffle([correct,...pool]);
+    html=`<div class="wb-act-prompt">Which prefix is used?</div>
+      <div class="wb-act-sub">Identify the person/aspect prefix in this form</div>
+      <div class="wb-act-target">${f.f}</div>
+      <div class="wb-act-en">${w.e} · <em>${f.l}</em></div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div id="wb-fb" class="wb-fb"></div>
+      <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
+  } else if(WB.actType==='form'){
+    const correct=f.f;
+    const pool=wbShuffle(WB_WORDS.flatMap(x=>x.forms.filter(fm=>!fm.ph&&fm.f!==correct)).map(fm=>fm.f)).slice(0,3);
+    const choices=wbShuffle([correct,...pool]);
+    html=`<div class="wb-act-prompt">Build the correct form</div>
+      <div class="wb-act-sub">Root: <strong>${w.r}</strong> (${w.e}) — form for <em>${f.l}</em></div>
+      <div style="display:flex;gap:.4rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap;">
+        <span class="wb-tag wb-tp">${f.p}</span> +
+        <span class="wb-tag wb-tr">${w.r}</span> +
+        <span class="wb-tag ${f.s!=='∅'?'wb-ts':'wb-tph'}">${f.s!=='∅'?f.s:'∅'}</span>
+        <span style="color:var(--ew);">= ?</span>
+      </div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div id="wb-fb" class="wb-fb"></div>
+      <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
+  } else {
+    const correct=`${f.l} — ${w.e}`;
+    const pool=wbShuffle(wbActivityWords().filter(x=>x.id!==w.id)).slice(0,3).map(x=>{
+      const pick=x.forms.filter(fm=>!fm.ph)[0];
+      return pick?`${pick.l} — ${x.e}`:x.e;
+    });
+    const choices=wbShuffle([correct,...pool]);
+    html=`<div class="wb-act-prompt">What does this form mean?</div>
+      <div class="wb-act-sub">Select the correct translation</div>
+      <div class="wb-act-target">${f.f}</div>
+      <div style="display:flex;gap:.4rem;align-items:center;margin-bottom:1rem;">
+        <span class="wb-tag wb-tp">${f.p}</span> + <span class="wb-tag wb-tr">${w.r}</span>
+      </div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div id="wb-fb" class="wb-fb"></div>
+      <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
+  }
+  panel.innerHTML=html;
+}
+
+function wbCheck(btn,chosen,correct){
+  const ok=chosen===correct;
+  WB.attempts++;
+  if(ok){WB.score++;WB.streak++;}else{WB.streak=0;}
+  document.getElementById('wb-score').textContent=WB.score;
+  document.getElementById('wb-streak').textContent=WB.streak;
+  document.getElementById('wb-attempts').textContent=WB.attempts;
+  document.querySelectorAll('.wb-choice').forEach(b=>{
+    b.disabled=true;
+    if(b.textContent.trim()===correct)b.classList.add('wb-cor');
+    else if(b===btn&&!ok)b.classList.add('wb-wrg');
+  });
+  const fb=document.getElementById('wb-fb');
+  fb.className='wb-fb show '+(ok?'wb-cor-fb':'wb-wrg-fb');
+  fb.textContent=ok?`Niawenhkó:wa! ${correct}`:`Not quite — the correct answer is: ${correct}`;
+  document.getElementById('wb-next').style.display='inline-block';
+}
+
+/* ── PREFIX BROWSER ── */
+function wbRenderPrefixGrid(){
+  const grid=document.getElementById('wb-pref-grid');if(!grid)return;
+  grid.innerHTML=WB_PREFIXES.map((p,i)=>`
+    <div class="wb-pref-card${WB.activePfx===i?' wb-pf-sel':''}" onclick="wbFilterByPrefix(${i})">
+      <div class="wb-pf-form">${p.form}</div>
+      <div class="wb-pf-mean">${p.meaning}</div>
+      <div class="wb-pf-tag">${p.person?p.person+' · ':''}${p.aspect}</div>
+    </div>`).join('');
+}
+
+function wbFilterByPrefix(i){
+  WB.activePfx=i;
+  wbRenderPrefixGrid();
+  const pf=WB_PREFIXES[i];
+  const base=pf.form.split('/')[0].trim().replace(/-/g,'').toLowerCase();
+  const matched=WB_WORDS.filter(w=>w.forms.some(f=>f.p.toLowerCase().replace(/-/g,'').includes(base)));
+  const lbl=document.getElementById('wb-pf-result-label');
+  if(lbl){lbl.style.display='block';lbl.textContent=`Roots using ${pf.form} (${matched.length} found)`;}
+  const roots=document.getElementById('wb-pf-roots');
+  if(!roots)return;
+  roots.innerHTML=matched.length?matched.map(w=>`
+    <div class="wb-chip" onclick="wbSetMode('explore',document.getElementById('wbm-explore'));wbSelectWord('${w.id}')">
+      <div class="wbc-r">${w.r}</div><div class="wbc-e">${w.e}</div><div class="wbc-pos">${w.pos}</div>
+    </div>`).join(''):`<div style="font-size:.88rem;color:var(--ew);font-style:italic;">No roots found with this prefix in current data.</div>`;
+}
+
 /* init */
 loadData().then(() => {
   const last=localStorage.getItem(LK);
