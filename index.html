@@ -43,14 +43,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .pw{flex:1;overflow-y:auto;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 
 /* ── LOGIN ── */
-#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));}
-.lbox{background:white;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
-.lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;}
+#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));position:relative;}
+#login>.bm{position:absolute;top:0;left:0;right:0;}
+.lbox{background:transparent;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
+.lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;border-radius:22px 22px 0 0;}
 .lhero .em{font-size:2.8rem;display:block;margin-bottom:.65rem;}
 .lhero h1{font-family:'Playfair Display',serif;color:var(--sand);font-size:1.5rem;line-height:1.2;}
 .lhero h1 em{color:var(--clay);}
 .lhero p{color:var(--smoke);font-size:.88rem;margin-top:.38rem;font-style:italic;}
-.lbody{padding:1.6rem;}
+.lbody{padding:1.6rem;background:white;}
 .ltabs{display:flex;gap:.45rem;margin-bottom:1.3rem;}
 .ltab{flex:1;padding:.55rem;border:2px solid var(--smoke);border-radius:9px;background:transparent;font-family:'Crimson Pro',serif;font-size:.92rem;color:var(--ew);cursor:pointer;transition:all .14s;}
 .ltab.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
@@ -567,14 +568,14 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <button class="ltab" id="treg" onclick="switchTab('reg')">Register</button>
       </div>
       <div id="bsi">
-        <div class="lf"><label for="si-n">Name or username</label><input id="si-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
-        <div class="lf"><label for="si-p">Passcode (4+ characters)</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password" aria-required="true"></div>
+        <div class="lf"><label for="si-n">Username</label><input id="si-n" type="text" placeholder="e.g., Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="si-p">Password</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password" aria-required="true"></div>
         <div class="lerr" id="si-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doSignIn()">Enter the Language Path</button>
       </div>
       <div id="breg" style="display:none">
-        <div class="lf"><label for="reg-n">Choose a username</label><input id="reg-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
-        <div class="lf"><label for="reg-p">Choose a passcode (4+)</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password" aria-required="true"></div>
+        <div class="lf"><label for="reg-n">Username</label><input id="reg-n" type="text" placeholder="e.g., Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="reg-p">Password</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password" aria-required="true"></div>
         <div class="lerr" id="reg-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doRegister()">Begin My Journey</button>
       </div>
@@ -1030,15 +1031,15 @@ function switchTab(t){
 }
 function doSignIn(){
   const n=document.getElementById('si-n').value.trim(),p=document.getElementById('si-p').value,e=document.getElementById('si-e');
-  if(!n||p.length<4){e.textContent='Please enter your name and a passcode of 4+ characters.';return;}
+  if(!n||!p){e.textContent='Please enter your username and password.';return;}
   const users=getUsers(),k=n.toLowerCase();
   if(!users[k]){e.textContent='No account found — please register first.';return;}
-  if(users[k].passcode!==p){e.textContent='Incorrect passcode.';return;}
+  if(users[k].passcode!==p){e.textContent='Incorrect password.';return;}
   e.textContent='';loginAs(n,users[k]);
 }
 function doRegister(){
   const n=document.getElementById('reg-n').value.trim(),p=document.getElementById('reg-p').value,e=document.getElementById('reg-e');
-  if(!n||p.length<4){e.textContent='Please choose a name and passcode of 4+ characters.';return;}
+  if(!n||!p){e.textContent='Please choose a username and password.';return;}
   const users=getUsers(),k=n.toLowerCase();
   if(users[k]){e.textContent='That name is taken — please choose another or sign in.';return;}
   e.textContent='';
@@ -3771,18 +3772,18 @@ function wbSelectKinshipForm(i){
   slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${w.root}</div><div class="wb-slot-sub">${w.e}</div>`;
   const slS=document.getElementById('wbs-s');
   slS.classList.add('filled');
-  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">∅</div><div class="wb-slot-sub">bare stem</div>`;
+  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">∅</div><div class="wb-slot-sub">bare nominal stem</div>`;
   const slRes=document.getElementById('wbs-result');
   slRes.classList.add('filled');
   slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.f}</div><div class="wb-slot-sub">${f.l}</div>`;
   const rz=document.getElementById('wb-result-zone');
   rz.style.display='block';
   document.getElementById('wb-decomp').innerHTML=
-    `<span class="wb-tag wb-tp">${f.p}</span> +
+    `<span class="wb-tag wb-tp">${f.p}</span>
      <span class="wb-tag wb-tr">${w.root}</span>
      <span style="color:var(--ew);">→</span>
      <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.f}</strong>
-     <span style="color:var(--ew);font-style:italic;font-size:.8rem;">(${f.l})</span>`;
+     <span style="color:var(--ew);font-style:italic;font-size:.8rem;">(${f.l} — verified)</span>`;
   document.getElementById('wb-ph-note').style.display='none';
 }
 
@@ -3959,15 +3960,25 @@ const WB_PFCAT=[
   // Aorist
   {form:"wa'ka / wehsa / waha",meaning:"a-stem aorist: I / you / he (completed action)",series:'aorist',stem:'a-stem'},
   {form:"wa'k / wahs / waha",meaning:"c-stem aorist: I / you / he (completed action)",series:'aorist',stem:'c-stem'},
+  {form:"wa'ki / wahsi / waha",meaning:"*i-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'i-stem'},
+  {form:"wa'ken / wahsen / waha",meaning:"*e-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'e-stem'},
+  {form:"wa'kon / wahson / wahon",meaning:"*o-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'o-stem'},
   // Future
   {form:'enka / enhsa / enha',meaning:'a-stem future: I / you / he',series:'future',stem:'a-stem'},
   {form:'enk / enhs / enha',meaning:'c-stem future: I / you / he',series:'future',stem:'c-stem'},
+  {form:'enki / enhsi / enha',meaning:'*i-stem future: I / you / he (generated — verify)',series:'future',stem:'i-stem'},
+  {form:'enken / enhsen / enha',meaning:'*e-stem future: I / you / he (generated — verify)',series:'future',stem:'e-stem'},
+  {form:'enkon / enhson / enhon',meaning:'*o-stem future: I / you / he (generated — verify)',series:'future',stem:'o-stem'},
   // Non-definite
   {form:'aka / ahsa / aha',meaning:'a-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'a-stem'},
   {form:'ak / ahs / aha',meaning:'c-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'c-stem'},
+  {form:'aki / ahsi / aha',meaning:'*i-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'i-stem'},
+  {form:'aken / ahsen / aha',meaning:'*e-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'e-stem'},
+  {form:'akon / ahson / ahon',meaning:'*o-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'o-stem'},
   // Nominal possessives
   {form:'akwa- / sa- / rao-',meaning:'a-stem nominal possessive: my / your / his',series:'poss',stem:'a-stem'},
   {form:'ake- / sa- / rao-',meaning:'c-stem nominal possessive: my / your / his',series:'poss',stem:'c-stem'},
+  {form:'ake- / sa- / ro- / ako-',meaning:'kinship possessive: my / your / his / her',series:'poss',stem:'kinship'},
   // Locatives
   {form:'-àke / -akon / -òkon / -akta',meaning:'locative suffixes: on / in / under / near',series:'loc',stem:'nominal'},
 ];
@@ -3986,13 +3997,24 @@ function wbFilterByPrefix(i){
   WB.activePfx=i;
   wbRenderPrefixGrid();
   const pf=WB_PFCAT[i];
-  const matched=WB_ROOTS.filter(w=>w.stem===pf.stem||pf.stem==='all');
+  // Match by stem class; 'all' matches every verb root; kinship matches kinship stem
+  const matched=WB_ROOTS.filter(w=>{
+    if(pf.stem==='all') return w.cat!=='kinship';
+    if(pf.stem==='kinship') return w.stem==='kinship';
+    if(pf.stem==='nominal') return false; // locatives — no verb roots to list
+    return w.stem===pf.stem;
+  });
   const lbl=document.getElementById('wb-pf-result-label');
-  if(lbl){lbl.style.display='block';lbl.textContent=`Roots using ${pf.stem} ${pf.series} prefixes (${matched.length} found)`;}
+  if(lbl){lbl.style.display='block';lbl.textContent=`${pf.stem} roots — ${pf.series} series (${matched.length} found)`;}
   const roots=document.getElementById('wb-pf-roots');
   if(!roots)return;
+  // When clicking through to Explore, also set the series so the paradigm opens on the right tab
+  const targetSeries=(['subj','obj','aorist','future','nondef'].includes(pf.series))?pf.series:'subj';
   roots.innerHTML=matched.length?matched.map(w=>`
-    <div class="wb-chip" onclick="wbSetMode('explore',document.getElementById('wbm-explore'));wbSelectWord('${w.id}')">
+    <div class="wb-chip" onclick="
+      wbSetMode('explore',document.getElementById('wbm-explore'));
+      WB.series=${JSON.stringify(targetSeries)};
+      wbSelectWord('${w.id}')">
       <div class="wbc-r">${w.root}</div><div class="wbc-e">${w.e}</div><div class="wbc-pos">${w.pos}</div>
     </div>`).join(''):`<div style="font-size:.88rem;color:var(--ew);font-style:italic;">No roots for this stem class yet.</div>`;
 }
