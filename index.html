@@ -73,7 +73,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.62rem;padding:.55rem .38rem;border-radius:8px;transition:color .13s;min-width:46px;min-height:44px;}
 
 /* ── WORD BUILDER ── */
-.wb-wrap{padding:1rem 1.2rem;max-width:560px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h)+1.5rem);}
+.wb-wrap{padding:1rem 1.2rem;max-width:560px;margin:0 auto;width:100%;padding-bottom:calc(var(--nav-h) + 8rem);}
 .wb-mode-bar{display:flex;gap:.45rem;margin-bottom:1rem;flex-wrap:wrap;}
 .wb-mode-btn{padding:.42rem 1rem;font-size:.8rem;font-weight:600;border:2px solid var(--smoke);border-radius:20px;cursor:pointer;background:transparent;font-family:'Crimson Pro',serif;color:var(--ew);transition:all .13s;letter-spacing:.02em;}
 .wb-mode-btn.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
@@ -98,7 +98,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-chip-desc{border-color:rgba(160,100,20,.4);background:rgba(160,100,20,.05);}
 .wb-chip-desc.wb-chip-sel{border-color:rgba(160,100,20,.8)!important;background:rgba(160,100,20,.14)!important;}
 .wb-chip-none{border-style:dashed;color:var(--ew);font-style:italic;}
-.wb-panel-sticky{position:sticky;bottom:0;z-index:50;box-shadow:0 -3px 16px rgba(44,24,16,.13);border-color:var(--sand);margin:0 -1.2rem;border-radius:0;border-left:none;border-right:none;border-bottom:none;padding:0.8rem 1.2rem 1rem;}
+.wb-panel-sticky{position:fixed;bottom:var(--nav-h);left:0;right:0;z-index:90;box-shadow:0 -3px 16px rgba(44,24,16,.13);background:var(--cream);border-top:1px solid var(--sand);padding:0.6rem 1.2rem 0.7rem;}
 .wb-panel-sticky>.wb-slabel,.wb-asm-slots,.wb-asm-full,.wb-ph-note{max-width:560px;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box;}
 #wb-explore{padding-bottom:.5rem;}
 .wb-carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;}
@@ -1043,32 +1043,29 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <div class="wb-root-grid" id="wb-pf-roots" style="max-height:360px;"></div>
       </div>
     </div><!-- end wb-wrap -->
-
-    <!-- Assembly panel — sticky at bottom of .pw scroll -->
-    <div class="wb-panel wb-panel-sticky" id="wb-builder-panel">
-      <div class="wb-slabel" style="margin-bottom:.45rem;">assembled word</div>
-      <!-- Component slots row — all always present; hidden via display:none when not active -->
-      <div class="wb-asm-slots" id="wbs-slots-row">
-        <div class="wb-asm-slot" id="wbs-p"><div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div></div>
-        <div class="wb-asm-eq" id="wbs-eq-ni" style="display:none;">+</div>
-        <div class="wb-asm-slot" id="wbs-ni" style="display:none;"><div class="wb-asm-lbl">Noun</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">incorporated</div></div>
-        <div class="wb-asm-eq">+</div>
-        <div class="wb-asm-slot" id="wbs-r"><div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div></div>
-        <div class="wb-asm-eq" id="wbs-eq-d" style="display:none;">+</div>
-        <div class="wb-asm-slot" id="wbs-d" style="display:none;"><div class="wb-asm-lbl">Descriptor</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">quality</div></div>
-        <div class="wb-asm-eq" id="wbs-eq-s" style="display:none;">+</div>
-        <div class="wb-asm-slot" id="wbs-s" style="display:none;"><div class="wb-asm-lbl">Aspect</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">mood</div></div>
-      </div>
-      <!-- Full form — spans full width below slots -->
-      <div class="wb-asm-full dim" id="wb-asm-full">
-        <div class="wb-asm-word dim" id="wb-asm-word">—</div>
-        <div class="wb-asm-en" id="wb-asm-en" style="display:none;"></div>
-      </div>
-      <!-- Disclaimer for generated/compound forms -->
-      <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
-    </div>
   </div><!-- end pw -->
 </div><!-- end builder screen -->
+
+<!-- Assembled word panel — fixed above bottom nav, only shown in builder Explore mode -->
+<div class="wb-panel wb-panel-sticky" id="wb-builder-panel" style="display:none;">
+  <div class="wb-slabel" style="margin-bottom:.45rem;">assembled word</div>
+  <div class="wb-asm-slots" id="wbs-slots-row">
+    <div class="wb-asm-slot" id="wbs-p"><div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div></div>
+    <div class="wb-asm-eq" id="wbs-eq-ni" style="display:none;">+</div>
+    <div class="wb-asm-slot" id="wbs-ni" style="display:none;"><div class="wb-asm-lbl">Noun</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">incorporated</div></div>
+    <div class="wb-asm-eq">+</div>
+    <div class="wb-asm-slot" id="wbs-r"><div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div></div>
+    <div class="wb-asm-eq" id="wbs-eq-d" style="display:none;">+</div>
+    <div class="wb-asm-slot" id="wbs-d" style="display:none;"><div class="wb-asm-lbl">Descriptor</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">quality</div></div>
+    <div class="wb-asm-eq" id="wbs-eq-s" style="display:none;">+</div>
+    <div class="wb-asm-slot" id="wbs-s" style="display:none;"><div class="wb-asm-lbl">Aspect</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">mood</div></div>
+  </div>
+  <div class="wb-asm-full dim" id="wb-asm-full">
+    <div class="wb-asm-word dim" id="wb-asm-word">—</div>
+    <div class="wb-asm-en" id="wb-asm-en" style="display:none;"></div>
+  </div>
+  <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
+</div>
 <button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
   <span class="fab-ic" style="font-size:1.1rem;line-height:1;">&#8635;</span>
   <span id="fab-label">Practice</span>
@@ -3847,6 +3844,7 @@ function wbInit(){
     wbRenderRoots();
     wbRenderPrefixGrid();
     wbCarrGoto(0);
+    document.getElementById('wb-builder-panel').style.display='';
   }
 }
 
@@ -3862,7 +3860,7 @@ function wbSetMode(m,btn){
 }
 
 function wbSetCat(c,btn){
-  WB.cat=c;WB.word=null;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;
+  WB.cat=c;WB.word=null;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;WB.formChosen=false;
   document.querySelectorAll('#wb-explore .wb-pill').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   wbRenderRoots();
@@ -3900,9 +3898,21 @@ function wbSelectWord(id){
   WB.niRootId=null;
   WB.descriptorId=null;
   WB.series='subj';
+  WB.formChosen=false;
   wbRenderRoots();
   wbRenderPersonStep();
   wbClearBuilder();
+  /* Show the verb root immediately in the assembly panel */
+  const w=WB.word;
+  if(w){
+    const slR=document.getElementById('wbs-r');
+    if(slR){
+      slR.className='wb-asm-slot f';
+      slR.innerHTML=`<div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val" style="color:#1A4060;">${w.root}</div><div class="wb-asm-sub">${w.e}</div>`;
+    }
+    const fullWord=document.getElementById('wb-asm-word');
+    if(fullWord){fullWord.className='wb-asm-word dim';fullWord.textContent=w.root;}
+  }
   /* Enable forward arrow on step 1 now that a root is chosen */
   const nextBtn=document.getElementById('wb-carr-next');
   if(nextBtn)nextBtn.disabled=false;
@@ -3963,7 +3973,7 @@ function wbRenderPersonStep(){
 }
 
 function wbSetSeries(s,btn){
-  WB.series=s;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;
+  WB.series=s;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;WB.formChosen=false;
   document.querySelectorAll('#wb-series-bar .wb-pill').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   wbRenderPersonStep();
@@ -3981,11 +3991,8 @@ function wbPickForm(i){
   wbRenderNIStep();
   wbRenderDescStep();
   wbUpdateAssembly();
-  /* Make steps 3 & 4 reachable — show them if hidden */
-  const s3=document.getElementById('wb-step-ni');
-  const s4=document.getElementById('wb-step-desc');
-  if(s3&&s3.style.display==='none')s3.style.display='';
-  if(s4&&s4.style.display==='none')s4.style.display='';
+  /* Mark steps 3 & 4 as unlocked (carousel will show them when navigated to) */
+  WB.formChosen=true;
 }
 
 function wbPickKinship(i){
@@ -4068,7 +4075,11 @@ function wbCarrGoto(idx){
 }
 
 function wbCarrNext(){
-  if(WB_STEP<WB_STEPS.length-1)wbCarrGoto(WB_STEP+1);
+  const next=WB_STEP+1;
+  if(next>=WB_STEPS.length)return;
+  /* Steps 3 & 4 require a form to have been chosen first */
+  if(next>=2&&!WB.formChosen)return;
+  wbCarrGoto(next);
 }
 function wbCarrPrev(){
   if(WB_STEP>0)wbCarrGoto(WB_STEP-1);
