@@ -268,6 +268,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .ex-q{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--sand);line-height:1.3;}
 .ex-sub{font-size:.84rem;color:var(--smoke);font-style:italic;margin-top:.25rem;}
 .ex-body{padding:1.1rem;}
+.ex-img{width:100%;max-height:200px;object-fit:cover;display:block;border-bottom:1px solid var(--smoke);}
+.ex-img-wrap{position:relative;}
+.ex-img-credit{position:absolute;bottom:0;right:0;background:rgba(44,24,16,.52);color:rgba(255,255,255,.8);font-size:.6rem;padding:2px 6px;font-family:'Crimson Pro',serif;font-style:italic;letter-spacing:.02em;}
 
 /* mc */
 .mco{display:flex;flex-direction:column;gap:.55rem;margin-bottom:.88rem;}
@@ -674,6 +677,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="ex-q" id="eq"></div>
           <div class="ex-sub" id="esub"></div>
         </div>
+        <div class="ex-img-wrap" id="eimgwrap" style="display:none;"></div>
         <div class="ex-body" id="exbody"></div>
       </div>
       <div class="fb" id="fbbar">
@@ -1829,6 +1833,14 @@ function renderEx(){
   document.getElementById('etlbl').textContent=tLabel(ex.type);
   document.getElementById('eq').textContent=ex.prompt;
   document.getElementById('esub').textContent=ex.sub||'';
+  const eimgwrap=document.getElementById('eimgwrap');
+  if(ex.image&&ex.image.url){
+    eimgwrap.style.display='block';
+    eimgwrap.innerHTML=`<img class="ex-img" src="${ex.image.url}" alt="${ex.image.alt||''}" loading="lazy"><div class="ex-img-credit">${ex.image.credit||'Unsplash'}</div>`;
+  } else {
+    eimgwrap.style.display='none';
+    eimgwrap.innerHTML='';
+  }
 
   let html='';
   if((ex.type==='type'||ex.type==='fill')&&!kbShown){

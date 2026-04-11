@@ -3152,7 +3152,12 @@
               "Ball"
             ],
             "cm": "Tho niioht! áhta' — shoe. This word was used in the noun incorporation example: watahkowá:nen = a big shoe.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80",
+              "alt": "A pair of red sneakers on a white background, illustrating áhta' (shoe/footwear) as an A-class noun in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -3218,7 +3223,12 @@
               "ahta"
             ],
             "cm": "Tho niioht! áhta'. The apostrophe at the end is a glottal stop — part of the word.",
-            "wm": "That answer is incorrect — try again. Try: áhta'"
+            "wm": "That answer is incorrect — try again. Try: áhta'",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80",
+              "alt": "A pair of red sneakers, accompanying the exercise asking how to say 'shoe' (áhta') in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "fill",
@@ -3231,7 +3241,12 @@
               "ra"
             ],
             "cm": "Io'nikonhraién:ta'ne! ani'tskwá:ra. The long vowel (:) before the final syllable is important.",
-            "wm": "That answer is incorrect — ends in 'ra'."
+            "wm": "That answer is incorrect — ends in 'ra'.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+              "alt": "A simple wooden chair, illustrating à:rake' (chair/seat) as an A-class noun in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3451,7 +3466,12 @@
               "Sitting"
             ],
             "cm": "Tho niioht! sá:tien — you sit (command). Structure: s- (you) + á:tien (A-stem root). No suffix — it's a command.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+              "alt": "A person sitting cross-legged outdoors, illustrating the A-stem verb sá:tien (sit / command form) in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3466,7 +3486,12 @@
               "Two people sit"
             ],
             "cm": "Niawenhkó:wa! ká:tiens — I am sitting. Structure: k- (I) + á:tien (root) + -s (habitual suffix).",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+              "alt": "A person sitting in a relaxed pose, illustrating ká:tiens (I am sitting), the first-person habitual form in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -3545,7 +3570,12 @@
               "satien"
             ],
             "cm": "Niawenhkó:wa! sá:tien. s- (you) + á:tien (root). No suffix — commands are bare.",
-            "wm": "That answer is incorrect — try again. Try: sá:tien"
+            "wm": "That answer is incorrect — try again. Try: sá:tien",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+              "alt": "Someone seated on the ground, accompanying the exercise asking for the Kanien'kéha command form meaning 'you sit' (sá:tien)",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3632,7 +3662,12 @@
               "Well done"
             ],
             "cm": "Tho niioht! Shé:kon — hello. More literally 'still / yet' — an expression of ongoing life and presence.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&q=80",
+              "alt": "Two people greeting each other warmly outdoors, illustrating Shé:kon, the Kanien'kéha greeting meaning 'hello / you are still here'",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3647,7 +3682,12 @@
               "Wonderful"
             ],
             "cm": "Niawenhkó:wa! (And that's the word itself!) It carries more weight than a simple thank-you — it connects to the spirit of the Thanksgiving Address.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=800&q=80",
+              "alt": "Hands placed together in a gesture of gratitude, illustrating Niawenhkó:wa, the Kanien'kéha expression of deep thanks",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -3836,7 +3876,12 @@
               "Feather"
             ],
             "cm": "Niawenhkó:wa! Ohwísta — money. This word appears in the Kontinónhstats curriculum text describing funding for language revitalization.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&q=80",
+              "alt": "Silver coins scattered on a surface, illustrating ohwísta (silver / money) as an O-class noun in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -4043,7 +4088,12 @@
               "Drum"
             ],
             "cm": "Tho niioht! Kà:sere' — car. A modern concept named using the Ka-class system. The language adapts.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80",
+              "alt": "A car on an open road, illustrating kà:sere' (car / vehicle) as a Ka-class noun in Kanien'kéha",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -4058,7 +4108,12 @@
               "Ka- is the only meaningful part"
             ],
             "cm": "Niawenhkó:wa! -hiatónhsera is a verb-derived root meaning 'writing'. Kanien'kéha names modern objects by describing their function — 'paper' is 'the writing thing'. This is how the language grows.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80",
+              "alt": "An open book with pages spread, illustrating kahiatónhsera (paper / book), a Ka-class noun whose root evokes marks made on a surface",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -4407,7 +4462,12 @@
               "Place of many pines"
             ],
             "cm": "Tho niioht! Kanehsatà:ke — 'where the crust of snow on top of the earth is'. The community often called 'Oka' in English — a name that erases Indigenous presence entirely.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+              "alt": "A snowy forest landscape with crusted snow on the ground, evoking the meaning of Kanehsatà:ke — 'where the crust of snow on top of the earth is'",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -4572,7 +4632,12 @@
               "It has no meaning"
             ],
             "cm": "Tho niioht! Karihtón:ni — the counting/measuring thing. Kanien'kéha named the clock using its own roots. This is the productive naming strategy.",
-            "wm": "Please try again."
+            "wm": "Please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=800&q=80",
+              "alt": "A clock face showing the time, illustrating karihtón:ni (clock), a modern Ka-class noun coined within the Kanien'kéha naming system",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
