@@ -99,6 +99,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-chip-desc.wb-chip-sel{border-color:rgba(160,100,20,.8)!important;background:rgba(160,100,20,.14)!important;}
 .wb-chip-none{border-style:dashed;color:var(--ew);font-style:italic;}
 .wb-panel-sticky{position:sticky;bottom:0;z-index:50;box-shadow:0 -3px 16px rgba(44,24,16,.13);border-color:var(--sand);margin:0 -1.2rem;border-radius:0;border-left:none;border-right:none;border-bottom:none;padding:0.8rem 1.2rem 1rem;}
+.wb-panel-sticky>.wb-slabel,.wb-asm-slots,.wb-asm-full,.wb-ph-note{max-width:560px;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box;}
 #wb-explore{padding-bottom:.5rem;}
 .wb-carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;}
 .wb-carr-btn{width:32px;height:32px;border-radius:50%;border:2px solid var(--clay);background:white;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .12s,border-color .12s;}
@@ -182,6 +183,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-score-n{font-weight:700;color:var(--ed);}
 .wb-next-btn{padding:.58rem 1.2rem;border-radius:10px;border:2px solid var(--smoke);background:var(--cream);font-family:'Crimson Pro',serif;font-size:.9rem;color:var(--ed);cursor:pointer;font-weight:600;transition:background .12s;}
 .wb-next-btn:hover{background:white;border-color:var(--clay);}
+.wb-act-footer{display:flex;align-items:center;justify-content:flex-end;gap:.7rem;margin-top:.75rem;}
 /* prefix browser — layout now via inline table styles */
 .wb-pref-card{border:1px solid var(--smoke);border-radius:10px;padding:.58rem .8rem;cursor:pointer;background:white;transition:border-color .12s,background .12s;box-shadow:0 1px 4px rgba(44,24,16,.04);}
 .wb-pref-card:hover{border-color:var(--clay);background:var(--cream);}
@@ -919,7 +921,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <div class="wb-mode-bar">
         <button class="wb-mode-btn active" id="wbm-explore" onclick="wbSetMode('explore',this)">Explore</button>
         <button class="wb-mode-btn" id="wbm-activity" onclick="wbSetMode('activity',this)">Activity</button>
-        <button class="wb-mode-btn" id="wbm-prefix" onclick="wbSetMode('prefix',this)">Prefix browser</button>
+        <button class="wb-mode-btn" id="wbm-prefix" onclick="wbSetMode('prefix',this)">Prefix Library</button>
       </div>
 
       <!-- EXPLORE -->
@@ -955,7 +957,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
 
         <!-- Step 2: person / series (hidden until step 1 done) -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-person" style="display:none;">
+        <div class="wb-step-block" id="wb-step-person" style="display:none;">
           <div style="display:flex;align-items:center;margin-bottom:.55rem;">
             <div class="wb-slabel" style="margin-bottom:0;">2 — person &amp; series</div>
             <div id="wb-dots-2" style="display:flex;gap:4px;margin-left:auto;"></div>
@@ -976,7 +978,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
 
         <!-- Step 3: noun incorporation (hidden until step 2 done) -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-ni" style="display:none;">
+        <div class="wb-step-block" id="wb-step-ni" style="display:none;">
           <div style="display:flex;align-items:center;margin-bottom:.55rem;">
             <div class="wb-slabel" style="margin-bottom:0;">3 — incorporate a noun <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
             <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-3"></div>
@@ -996,7 +998,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         </div>
 
         <!-- Step 4: descriptor (hidden until step 2 done) -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-desc" style="display:none;">
+        <div class="wb-step-block" id="wb-step-desc" style="display:none;">
           <div style="display:flex;align-items:center;margin-bottom:.55rem;">
             <div class="wb-slabel" style="margin-bottom:0;">4 — descriptor suffix <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
             <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-4"></div>
@@ -3837,7 +3839,7 @@ const WB_COMPOUNDS=[
 
 /* ── WORD BUILDER STATE ── */
 /* ── WORD BUILDER STATE ── */
-let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,niRootId:null,descriptorId:null};
+let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,activeRow:null,niRootId:null,descriptorId:null};
 
 function wbInit(){
   if(!WB.initialized){
@@ -3855,6 +3857,7 @@ function wbSetMode(m,btn){
   document.getElementById('wb-explore').style.display=m==='explore'?'block':'none';
   document.getElementById('wb-activity').style.display=m==='activity'?'block':'none';
   document.getElementById('wb-prefix').style.display=m==='prefix'?'block':'none';
+  document.getElementById('wb-builder-panel').style.display=m==='explore'?'':'none';
   if(m==='activity')wbGenQuestion();
 }
 
@@ -4303,8 +4306,10 @@ function wbGenQuestion(){
 
   panel.innerHTML=promptHtml+
     `<div class="wb-choices">${btns}</div>
-     <div id="wb-fb" class="wb-fb"></div>
-     <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
+     <div id="wb-fb" class="fb"></div>
+     <div class="wb-act-footer">
+       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>
+     </div>`;
 }
 
 function wbCheck(btn){
@@ -4324,8 +4329,8 @@ function wbCheck(btn){
     else if(b===btn&&!ok)b.classList.add('wb-wrg');
   });
   const fb=document.getElementById('wb-fb');
-  fb.className='wb-fb show '+(ok?'wb-cor-fb':'wb-wrg-fb');
-  fb.textContent=ok?`Niawenhkó:wa! ${correct}`:`Not quite — the correct answer is: ${correct}`;
+  fb.className='fb show '+(ok?'corfb':'wrgfb');
+  fb.innerHTML=`<span class="fbi2">${ok?'✓':'✗'}</span><div class="fbt"><strong>${ok?'Niawenhkó:wa!':'Not quite'}</strong><span>${ok?correct:'Correct answer: '+correct}</span></div>`;
   document.getElementById('wb-next').style.display='inline-block';
 }
 
@@ -4620,8 +4625,14 @@ function wbRenderPrefixGrid(){
     const cats=WB_PFCAT.filter(c=>c.series===sec.key);
     if(!cats.length)return;
 
-    // All sections have the same 15 person slots — use the first cat's rows as the row order
-    const persons=cats[0].rows.map(r=>r);
+    // Build a union of all person keys across all stem classes in this section,
+    // preserving the order from the first cat (covers cases where some stems have
+    // fewer person slots, e.g. objective series has no 13du/13pl).
+    const seenPersons=new Set();
+    const persons=[];
+    cats.forEach(cat=>cat.rows.forEach(r=>{
+      if(!seenPersons.has(r.person)){seenPersons.add(r.person);persons.push(r);}
+    }));
 
     html+=`<div style="margin-bottom:1.6rem;">
       <div style="font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.2rem;">${sec.label}</div>
@@ -4630,23 +4641,33 @@ function wbRenderPrefixGrid(){
       <table style="border-collapse:collapse;width:100%;min-width:320px;font-size:.82rem;">
         <thead>
           <tr>
-            <th style="text-align:left;padding:.3rem .6rem .3rem 0;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ew);border-bottom:2px solid var(--sand);white-space:nowrap;">Person</th>`;
+            <th style="text-align:left;padding:.3rem .6rem .3rem 0;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ew);border-bottom:2px solid var(--sand);white-space:nowrap;min-width:90px;">Person</th>`;
     cats.forEach((cat,ci)=>{
       const catIdx=WB_PFCAT.indexOf(cat);
-      html+=`<th style="text-align:center;padding:.3rem .5rem;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--clay);border-bottom:2px solid var(--sand);white-space:nowrap;cursor:pointer;" onclick="wbFilterByPrefix(${catIdx})">${cat.stem}</th>`;
+      const isActive=WB.activePfx===catIdx;
+      html+=`<th style="text-align:center;padding:.3rem .5rem;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--clay);border-bottom:2px solid var(--sand);white-space:nowrap;min-width:72px;cursor:pointer;${isActive?'background:rgba(196,120,74,.12);':''}" onclick="wbFilterByPrefix(${catIdx})">${cat.stem}</th>`;
     });
     html+=`</tr></thead><tbody>`;
 
     persons.forEach((row,ri)=>{
       const bg=ri%2===0?'background:var(--birch);':'';
+      const isActiveRow=WB.activePfx!=null&&cats.some(cat=>{
+        const catIdx=WB_PFCAT.indexOf(cat);
+        return catIdx===WB.activePfx;
+      })&&WB.activeRow===row.person;
       html+=`<tr style="${bg}">
         <td style="padding:.28rem .6rem .28rem 0;color:var(--ew);font-size:.78rem;white-space:nowrap;">${row.label}</td>`;
       cats.forEach((cat,ci)=>{
         const catIdx=WB_PFCAT.indexOf(cat);
-        const catRow=cat.rows[ri];
-        const isActive=WB.activePfx===catIdx;
-        html+=`<td style="text-align:center;padding:.28rem .5rem;cursor:pointer;${isActive?'background:rgba(196,120,74,.15);':''}" onclick="wbFilterByPrefix(${catIdx})">
-          <span style="font-family:'Playfair Display',serif;font-size:.88rem;color:var(--ed);">${catRow?catRow.pfx:'—'}</span>
+        const catRow=cat.rows.find(r=>r.person===row.person);
+        const colActive=WB.activePfx===catIdx;
+        const rowActive=WB.activeRow===row.person&&colActive;
+        let cellBg='';
+        if(rowActive)cellBg='background:rgba(196,120,74,.35);';
+        else if(colActive)cellBg='background:rgba(196,120,74,.15);';
+        else if(WB.activeRow===row.person&&WB.activePfx!=null)cellBg='background:rgba(196,120,74,.08);';
+        html+=`<td style="text-align:center;padding:.28rem .5rem;cursor:pointer;white-space:nowrap;${cellBg}" onclick="wbFilterByPrefix(${catIdx},'${row.person}')">
+          <span style="font-family:'Playfair Display',serif;font-size:.88rem;color:${catRow?'var(--ed)':'var(--smoke)'};">${catRow?catRow.pfx:'—'}</span>
         </td>`;
       });
       html+=`</tr>`;
@@ -4658,8 +4679,9 @@ function wbRenderPrefixGrid(){
   grid.innerHTML=html;
 }
 
-function wbFilterByPrefix(catIdx){
+function wbFilterByPrefix(catIdx,personKey){
   WB.activePfx=catIdx;
+  WB.activeRow=personKey||null;
   wbRenderPrefixGrid();
   const cat=WB_PFCAT[catIdx];
   if(!cat)return;
