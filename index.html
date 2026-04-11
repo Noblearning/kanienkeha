@@ -98,8 +98,30 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-chip-desc{border-color:rgba(160,100,20,.4);background:rgba(160,100,20,.05);}
 .wb-chip-desc.wb-chip-sel{border-color:rgba(160,100,20,.8)!important;background:rgba(160,100,20,.14)!important;}
 .wb-chip-none{border-style:dashed;color:var(--ew);font-style:italic;}
-.wb-panel-sticky{position:sticky;bottom:0;z-index:50;box-shadow:0 -3px 16px rgba(44,24,16,.13);border-color:var(--sand);margin:0 -1.2rem;border-radius:0;border-left:none;border-right:none;border-bottom:none;padding:0.8rem 1.2rem;}
+.wb-panel-sticky{position:sticky;bottom:0;z-index:50;box-shadow:0 -3px 16px rgba(44,24,16,.13);border-color:var(--sand);margin:0 -1.2rem;border-radius:0;border-left:none;border-right:none;border-bottom:none;padding:0.8rem 1.2rem 1rem;}
 #wb-explore{padding-bottom:.5rem;}
+.wb-carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;}
+.wb-carr-btn{width:32px;height:32px;border-radius:50%;border:2px solid var(--clay);background:white;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .12s,border-color .12s;}
+.wb-carr-btn:hover:not(:disabled){background:var(--birch);}
+.wb-carr-btn:disabled{border-color:var(--smoke);opacity:.35;cursor:default;}
+.wb-carr-btn svg{width:12px;height:12px;fill:none;stroke:var(--em);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.wb-carr-btn:disabled svg{stroke:var(--smoke);}
+.wb-carr-ctr{font-size:.75rem;color:var(--ew);letter-spacing:.03em;}
+.wb-asm-slots{display:flex;gap:.32rem;align-items:stretch;margin-bottom:.55rem;}
+.wb-asm-slot{flex:1;min-width:0;border:1.5px dashed var(--smoke);border-radius:7px;padding:.3rem .35rem;text-align:center;}
+.wb-asm-slot.f{border-style:solid;border-color:var(--sand);background:var(--cream);}
+.wb-asm-slot.f-ni{border-style:solid;border-color:rgba(130,60,160,.45);background:rgba(130,60,160,.07);}
+.wb-asm-slot.f-d{border-style:solid;border-color:rgba(160,100,20,.45);background:rgba(160,100,20,.07);}
+.wb-asm-lbl{font-size:.55rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ew);margin-bottom:1px;}
+.wb-asm-val{font-size:.82rem;font-weight:700;font-family:'Playfair Display',serif;}
+.wb-asm-val.dim{color:var(--smoke);}
+.wb-asm-sub{font-size:.58rem;color:var(--ew);font-style:italic;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.wb-asm-eq{font-size:.85rem;color:var(--smoke);align-self:center;flex-shrink:0;padding:0 1px;}
+.wb-asm-full{border:1.5px solid var(--sand);border-radius:7px;background:var(--birch);padding:.38rem .7rem;text-align:center;margin-bottom:.42rem;}
+.wb-asm-full.dim{border-color:var(--smoke);background:transparent;}
+.wb-asm-word{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--ed);}
+.wb-asm-word.dim{color:var(--smoke);}
+.wb-asm-en{font-size:.78rem;color:var(--em);font-style:italic;margin-top:2px;}
 .wb-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;}
 @media(max-width:440px){.wb-two{grid-template-columns:1fr;}}
 .wb-slabel{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.55rem;}
@@ -902,17 +924,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
       <!-- EXPLORE -->
       <div id="wb-explore">
-        <div class="wb-info">
-          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Build a word step by step:
-          choose a <span class="wb-tag wb-tr">verb root</span>, pick a <span class="wb-tag wb-tp">person prefix</span>,
-          then optionally incorporate a <span class="wb-tag wb-tni">noun root</span> and attach a
-          <span class="wb-tag wb-td">descriptor</span>. The assembly panel updates live.
-          <span class="wb-tag wb-tph">*</span> = generated form — verify with a speaker before publishing.
+        <div class="wb-info" id="wb-carousel-info">
+          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">verb root</span>, pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
         </div>
 
-        <!-- Step 1: verb root picker -->
-        <div class="wb-step-block">
-          <div class="wb-slabel">1 — verb root</div>
+        <!-- Step 1: verb root -->
+        <div class="wb-step-block" id="wb-step-root">
+          <div style="display:flex;align-items:center;margin-bottom:.55rem;">
+            <div class="wb-slabel" style="margin-bottom:0;">1 — verb root</div>
+            <div id="wb-dots-1" style="display:flex;gap:4px;margin-left:auto;"></div>
+          </div>
           <div class="wb-filter-row">
             <input class="wb-search" type="text" id="wb-search" placeholder="Search…" oninput="wbRenderRoots()" autocorrect="off" autocapitalize="off">
             <button class="wb-pill active" onclick="wbSetCat('all',this)">All</button>
@@ -922,30 +943,75 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <button class="wb-pill" onclick="wbSetCat('food quality',this)">Food</button>
           </div>
           <div class="wb-root-grid" id="wb-root-grid"></div>
+          <div class="wb-carousel-nav">
+            <button class="wb-carr-btn" id="wb-carr-prev" onclick="wbCarrPrev()" disabled aria-label="Previous step">
+              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
+            </button>
+            <span class="wb-carr-ctr" id="wb-carr-ctr">step 1 of 4</span>
+            <button class="wb-carr-btn" id="wb-carr-next" onclick="wbCarrNext()" disabled aria-label="Next step">
+              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
+            </button>
+          </div>
         </div>
 
-        <!-- Step 2: person / series picker — locked until root chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-person">
-          <div class="wb-slabel">2 — person &amp; series</div>
+        <!-- Step 2: person / series (hidden until step 1 done) -->
+        <div class="wb-step-block wb-step-locked" id="wb-step-person" style="display:none;">
+          <div style="display:flex;align-items:center;margin-bottom:.55rem;">
+            <div class="wb-slabel" style="margin-bottom:0;">2 — person &amp; series</div>
+            <div id="wb-dots-2" style="display:flex;gap:4px;margin-left:auto;"></div>
+          </div>
           <div id="wb-series-bar" style="display:flex;gap:.3rem;margin-bottom:.65rem;flex-wrap:wrap;"></div>
           <div class="wb-form-list" id="wb-form-list">
             <div class="wb-step-hint">← Choose a verb root first</div>
           </div>
-        </div>
-
-        <!-- Step 3: noun incorporation — locked until person chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-ni">
-          <div class="wb-slabel">3 — incorporate a noun <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
-          <div class="wb-root-grid" id="wb-ni-grid">
-            <div class="wb-step-hint">← Choose a person form first</div>
+          <div class="wb-carousel-nav">
+            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
+              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
+            </button>
+            <span class="wb-carr-ctr">step 2 of 4</span>
+            <button class="wb-carr-btn" id="wb-carr-next-2" onclick="wbCarrNext()" aria-label="Next step">
+              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
+            </button>
           </div>
         </div>
 
-        <!-- Step 4: descriptor suffix — locked until person chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-desc">
-          <div class="wb-slabel">4 — descriptor suffix <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
+        <!-- Step 3: noun incorporation (hidden until step 2 done) -->
+        <div class="wb-step-block wb-step-locked" id="wb-step-ni" style="display:none;">
+          <div style="display:flex;align-items:center;margin-bottom:.55rem;">
+            <div class="wb-slabel" style="margin-bottom:0;">3 — incorporate a noun <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
+            <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-3"></div>
+          </div>
+          <div class="wb-root-grid" id="wb-ni-grid">
+            <div class="wb-step-hint">← Choose a person form first</div>
+          </div>
+          <div class="wb-carousel-nav">
+            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
+              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
+            </button>
+            <span class="wb-carr-ctr">step 3 of 4</span>
+            <button class="wb-carr-btn" onclick="wbCarrNext()" aria-label="Next step">
+              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4: descriptor (hidden until step 2 done) -->
+        <div class="wb-step-block wb-step-locked" id="wb-step-desc" style="display:none;">
+          <div style="display:flex;align-items:center;margin-bottom:.55rem;">
+            <div class="wb-slabel" style="margin-bottom:0;">4 — descriptor suffix <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
+            <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-4"></div>
+          </div>
           <div class="wb-root-grid" id="wb-desc-grid">
             <div class="wb-step-hint">← Choose a person form first</div>
+          </div>
+          <div class="wb-carousel-nav">
+            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
+              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
+            </button>
+            <span class="wb-carr-ctr">step 4 of 4</span>
+            <button class="wb-carr-btn" disabled aria-label="No further steps">
+              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -976,26 +1042,28 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       </div>
     </div><!-- end wb-wrap -->
 
-    <!-- Assembly panel — direct child of .pw so sticky works against its scroll -->
+    <!-- Assembly panel — sticky at bottom of .pw scroll -->
     <div class="wb-panel wb-panel-sticky" id="wb-builder-panel">
-      <div class="wb-slabel" style="margin-bottom:.55rem;">assembled word</div>
-      <div class="wb-slots">
-        <div class="wb-slot" id="wbs-p"><div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · series</div></div>
-        <div class="wb-eq wb-eq-opt" id="wbs-eq-ni" style="display:none;">+</div>
-        <div class="wb-slot wb-slot-opt" id="wbs-ni" style="display:none;"><div class="wb-slot-lbl">Noun root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">incorporated object</div></div>
-        <div class="wb-eq">+</div>
-        <div class="wb-slot" id="wbs-r"><div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core action</div></div>
-        <div class="wb-eq wb-eq-opt" id="wbs-eq-d" style="display:none;">+</div>
-        <div class="wb-slot wb-slot-opt" id="wbs-d" style="display:none;"><div class="wb-slot-lbl">Descriptor</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">quality suffix</div></div>
-        <div class="wb-eq">+</div>
-        <div class="wb-slot" id="wbs-s"><div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div></div>
-        <div class="wb-eq">=</div>
-        <div class="wb-slot" id="wbs-result" style="flex:1.5;"><div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div></div>
+      <div class="wb-slabel" style="margin-bottom:.45rem;">assembled word</div>
+      <!-- Component slots row — all always present; hidden via display:none when not active -->
+      <div class="wb-asm-slots" id="wbs-slots-row">
+        <div class="wb-asm-slot" id="wbs-p"><div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div></div>
+        <div class="wb-asm-eq" id="wbs-eq-ni" style="display:none;">+</div>
+        <div class="wb-asm-slot" id="wbs-ni" style="display:none;"><div class="wb-asm-lbl">Noun</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">incorporated</div></div>
+        <div class="wb-asm-eq">+</div>
+        <div class="wb-asm-slot" id="wbs-r"><div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div></div>
+        <div class="wb-asm-eq" id="wbs-eq-d" style="display:none;">+</div>
+        <div class="wb-asm-slot" id="wbs-d" style="display:none;"><div class="wb-asm-lbl">Descriptor</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">quality</div></div>
+        <div class="wb-asm-eq" id="wbs-eq-s" style="display:none;">+</div>
+        <div class="wb-asm-slot" id="wbs-s" style="display:none;"><div class="wb-asm-lbl">Aspect</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">mood</div></div>
       </div>
-      <div id="wb-result-zone" style="display:none;" class="wb-result-zone">
-        <div class="wb-decomp" id="wb-decomp"></div>
-        <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
+      <!-- Full form — spans full width below slots -->
+      <div class="wb-asm-full dim" id="wb-asm-full">
+        <div class="wb-asm-word dim" id="wb-asm-word">—</div>
+        <div class="wb-asm-en" id="wb-asm-en" style="display:none;"></div>
       </div>
+      <!-- Disclaimer for generated/compound forms -->
+      <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
     </div>
   </div><!-- end pw -->
 </div><!-- end builder screen -->
@@ -3776,6 +3844,7 @@ function wbInit(){
     WB.initialized=true;
     wbRenderRoots();
     wbRenderPrefixGrid();
+    wbCarrGoto(0);
   }
 }
 
@@ -3798,9 +3867,6 @@ function wbSetCat(c,btn){
   wbLockStep('wb-step-person');
   wbLockStep('wb-step-ni');
   wbLockStep('wb-step-desc');
-  document.getElementById('wb-form-list').innerHTML='<div class="wb-step-hint">← Choose a verb root first</div>';
-  document.getElementById('wb-ni-grid').innerHTML='<div class="wb-step-hint">← Choose a person form first</div>';
-  document.getElementById('wb-desc-grid').innerHTML='<div class="wb-step-hint">← Choose a person form first</div>';
 }
 
 function wbFiltered(){
@@ -3832,11 +3898,11 @@ function wbSelectWord(id){
   WB.descriptorId=null;
   WB.series='subj';
   wbRenderRoots();
-  wbUnlockStep('wb-step-person');
   wbRenderPersonStep();
-  wbLockStep('wb-step-ni');
-  wbLockStep('wb-step-desc');
   wbClearBuilder();
+  /* Enable forward arrow on step 1 now that a root is chosen */
+  const nextBtn=document.getElementById('wb-carr-next');
+  if(nextBtn)nextBtn.disabled=false;
 }
 
 /* ── step lock/unlock ── */
@@ -3909,11 +3975,14 @@ function wbPickForm(i){
   const list=document.getElementById('wb-form-list');
   const f=(list._forms||[])[i];
   if(!f)return;
-  wbUnlockStep('wb-step-ni');
-  wbUnlockStep('wb-step-desc');
   wbRenderNIStep();
   wbRenderDescStep();
   wbUpdateAssembly();
+  /* Make steps 3 & 4 reachable — show them if hidden */
+  const s3=document.getElementById('wb-step-ni');
+  const s4=document.getElementById('wb-step-desc');
+  if(s3&&s3.style.display==='none')s3.style.display='';
+  if(s4&&s4.style.display==='none')s4.style.display='';
 }
 
 function wbPickKinship(i){
@@ -3981,6 +4050,43 @@ function wbGetSuffix(form,root,prefix){
   return{val:'∅',sub:'bare stem (command/stative)'};
 }
 
+/* ── Carousel navigation ── */
+const WB_STEPS=['wb-step-root','wb-step-person','wb-step-ni','wb-step-desc'];
+let WB_STEP=0;
+
+function wbCarrGoto(idx){
+  WB_STEPS.forEach((id,i)=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    el.style.display=i===idx?'':'none';
+  });
+  WB_STEP=idx;
+  wbRenderDots();
+}
+
+function wbCarrNext(){
+  if(WB_STEP<WB_STEPS.length-1)wbCarrGoto(WB_STEP+1);
+}
+function wbCarrPrev(){
+  if(WB_STEP>0)wbCarrGoto(WB_STEP-1);
+}
+
+function wbRenderDots(){
+  for(let i=1;i<=4;i++){
+    const el=document.getElementById('wb-dots-'+i);
+    if(!el)continue;
+    el.innerHTML=WB_STEPS.map((_,j)=>`<div style="width:5px;height:5px;border-radius:50%;background:${j===WB_STEP?'var(--clay)':'var(--smoke)'}"></div>`).join('');
+  }
+}
+
+/* ── Live assembly — called after any picker selection ── */
+function wbGetSuffix(form,root,prefix){
+  const assembled=(prefix+root).replace(/[áéíóú:]/g,c=>c).toLowerCase();
+  const fLow=form.replace(/[áéíóú:]/g,c=>c).toLowerCase();
+  if(fLow.endsWith('s')&&!assembled.endsWith('s'))return{val:'-s',sub:'habitual aspect'};
+  return{val:'∅',sub:'bare stem'};
+}
+
 function wbUpdateAssembly(){
   const w=WB.word;
   if(!w)return;
@@ -3990,98 +4096,131 @@ function wbUpdateAssembly(){
 
   const ni=WB.niRootId?WB_NI_ROOTS.find(n=>n.id===WB.niRootId):null;
   const d=WB.descriptorId?WB_DESCRIPTORS.find(x=>x.id===WB.descriptorId):null;
-
   const sfx=wbGetSuffix(f.form,f.root,f.prefix);
-  const assembled=f.prefix+(ni?ni.root:'')+f.root+(d?d.suffix:'')+(sfx.val!=='∅'?sfx.val.replace(/^-/,''):'');
+  const hasAspect=sfx.val!=='∅';
+  const assembled=f.prefix+(ni?ni.root:'')+f.root+(d?d.suffix:'')+(hasAspect?sfx.val.replace(/^-/,''):'');
   const isGenerated=f.flagged||!!ni||!!d;
-  const englishParts=[f.label,(ni?ni.e:''),w.e,(d?d.e:'')].filter(Boolean).join(' · ');
 
+  /* Build approximate English translation */
+  let engParts=[f.label];
+  if(ni)engParts.push(ni.e);
+  engParts.push(w.e);
+  if(d)engParts.push('('+d.e+')');
+  const engStr=(isGenerated?'* ':'')+engParts.join(' · ');
+
+  /* ── Prefix slot ── */
   const slP=document.getElementById('wbs-p');
-  slP.classList.add('filled');
-  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.prefix}</div><div class="wb-slot-sub">${f.label}</div>`;
+  slP.className='wb-asm-slot f';
+  slP.innerHTML=`<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val" style="color:#7A3800;">${f.prefix}</div><div class="wb-asm-sub">${f.label}</div>`;
 
+  /* ── Noun slot ── */
   const slNI=document.getElementById('wbs-ni');
   const eqNI=document.getElementById('wbs-eq-ni');
   if(ni){
-    slNI.style.display='';slNI.className='wb-slot wb-slot-opt filled';eqNI.style.display='';
-    slNI.innerHTML=`<div class="wb-slot-lbl">Noun root</div><div class="wb-slot-val" style="color:#5A1A80;">${ni.root}</div><div class="wb-slot-sub">${ni.e}</div>`;
+    eqNI.style.display='';
+    slNI.style.display='';
+    slNI.className='wb-asm-slot f-ni';
+    slNI.innerHTML=`<div class="wb-asm-lbl">Noun</div><div class="wb-asm-val" style="color:#5A1A80;">${ni.root}</div><div class="wb-asm-sub">${ni.e}</div>`;
   }else{
-    slNI.style.display='none';eqNI.style.display='none';
+    eqNI.style.display='none';
+    slNI.style.display='none';
   }
 
+  /* ── Verb root slot ── */
   const slR=document.getElementById('wbs-r');
-  slR.classList.add('filled');
-  slR.innerHTML=`<div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:#1A4060;">${f.root}</div><div class="wb-slot-sub">${w.e}</div>`;
+  slR.className='wb-asm-slot f';
+  slR.innerHTML=`<div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val" style="color:#1A4060;">${f.root}</div><div class="wb-asm-sub">${w.e}</div>`;
 
+  /* ── Descriptor slot ── */
   const slD=document.getElementById('wbs-d');
   const eqD=document.getElementById('wbs-eq-d');
   if(d){
-    slD.style.display='';slD.className='wb-slot wb-slot-desc-opt filled';eqD.style.display='';
-    slD.innerHTML=`<div class="wb-slot-lbl">Descriptor</div><div class="wb-slot-val" style="color:#704010;">${d.suffix}</div><div class="wb-slot-sub">${d.e}</div>`;
+    eqD.style.display='';
+    slD.style.display='';
+    slD.className='wb-asm-slot f-d';
+    slD.innerHTML=`<div class="wb-asm-lbl">Descriptor</div><div class="wb-asm-val" style="color:#704010;">${d.suffix}</div><div class="wb-asm-sub">${d.e}</div>`;
   }else{
-    slD.style.display='none';eqD.style.display='none';
+    eqD.style.display='none';
+    slD.style.display='none';
   }
 
+  /* ── Aspect slot — only shown when a real suffix is present ── */
   const slS=document.getElementById('wbs-s');
-  slS.classList.add('filled');
-  slS.innerHTML=`<div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">${sfx.val}</div><div class="wb-slot-sub">${sfx.sub}</div>`;
+  const eqS=document.getElementById('wbs-eq-s');
+  if(hasAspect){
+    eqS.style.display='';
+    slS.style.display='';
+    slS.className='wb-asm-slot f';
+    slS.innerHTML=`<div class="wb-asm-lbl">Aspect</div><div class="wb-asm-val" style="color:var(--ew);">${sfx.val}</div><div class="wb-asm-sub">${sfx.sub}</div>`;
+  }else{
+    eqS.style.display='none';
+    slS.style.display='none';
+  }
 
-  const slRes=document.getElementById('wbs-result');
-  slRes.classList.add('filled');
-  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${isGenerated?'*':''}${assembled}</div><div class="wb-slot-sub">${englishParts}</div>`;
+  /* ── Full form box ── */
+  const fullBox=document.getElementById('wb-asm-full');
+  const fullWord=document.getElementById('wb-asm-word');
+  const fullEn=document.getElementById('wb-asm-en');
+  fullBox.className='wb-asm-full';
+  fullWord.className='wb-asm-word';
+  fullWord.textContent=(isGenerated?'*':'')+assembled;
+  fullEn.textContent=engStr;
+  fullEn.style.display='';
 
-  const rz=document.getElementById('wb-result-zone');
-  rz.style.display='block';
-  document.getElementById('wb-decomp').innerHTML=
-    `<span class="wb-tag wb-tp">${f.prefix}</span>`+
-    (ni?` + <span class="wb-tag wb-tni">${ni.root}</span>`:'')+
-    ` + <span class="wb-tag wb-tr">${f.root}</span>`+
-    (d?` + <span class="wb-tag wb-td">${d.suffix}</span>`:'')+
-    (sfx.val!=='∅'?` + <span class="wb-tag wb-ts">${sfx.val}</span>`:'')+
-    ` <span style="color:var(--ew);">→</span>`+
-    ` <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${isGenerated?'*':''}${assembled}</strong>`+
-    ` <span style="color:var(--ew);font-style:italic;font-size:.8rem;">${englishParts}${f.verified&&!ni&&!d?' · verified':' · *generated'}</span>`;
-
+  /* ── Disclaimer ── */
   const phn=document.getElementById('wb-ph-note');
   if(isGenerated){
     phn.style.display='block';
     phn.textContent=ni||d
       ?'* Compound assembled from attested roots — the specific combined form has not been verified against a speaker. Use as a learning example.'
       :'* Generated by prefix rule — not yet verified against a speaker or reference.';
-  }else{phn.style.display='none';}
+  }else{
+    phn.style.display='none';
+  }
 }
 
 function wbRenderKinshipAssembly(f){
   const w=WB.word;
-  ['wbs-ni','wbs-d','wbs-eq-ni','wbs-eq-d'].forEach(id=>{const el=document.getElementById(id);if(el){el.style.display='none';el.classList.remove('filled');}});
-  const slP=document.getElementById('wbs-p');slP.classList.add('filled');
-  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.p}</div><div class="wb-slot-sub">possessor</div>`;
-  const slR=document.getElementById('wbs-r');slR.classList.add('filled');
-  slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${w.root}</div><div class="wb-slot-sub">${w.e}</div>`;
-  const slS=document.getElementById('wbs-s');slS.classList.add('filled');
-  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">∅</div><div class="wb-slot-sub">bare nominal stem</div>`;
-  const slRes=document.getElementById('wbs-result');slRes.classList.add('filled');
-  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.f}</div><div class="wb-slot-sub">${f.l}</div>`;
-  document.getElementById('wb-result-zone').style.display='block';
-  document.getElementById('wb-decomp').innerHTML=
-    `<span class="wb-tag wb-tp">${f.p}</span> + <span class="wb-tag wb-tr">${w.root}</span>`+
-    ` <span style="color:var(--ew);">→</span> <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.f}</strong>`+
-    ` <span style="color:var(--ew);font-style:italic;font-size:.8rem;">${f.l} — verified</span>`;
+  /* Hide optional slots */
+  ['wbs-ni','wbs-eq-ni','wbs-d','wbs-eq-d','wbs-s','wbs-eq-s'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.style.display='none';
+  });
+  const slP=document.getElementById('wbs-p');
+  slP.className='wb-asm-slot f';
+  slP.innerHTML=`<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val" style="color:#7A3800;">${f.p}</div><div class="wb-asm-sub">possessor</div>`;
+  const slR=document.getElementById('wbs-r');
+  slR.className='wb-asm-slot f';
+  slR.innerHTML=`<div class="wb-asm-lbl">Root</div><div class="wb-asm-val" style="color:#1A4060;">${w.root}</div><div class="wb-asm-sub">${w.e}</div>`;
+  const fullBox=document.getElementById('wb-asm-full');
+  const fullWord=document.getElementById('wb-asm-word');
+  const fullEn=document.getElementById('wb-asm-en');
+  fullBox.className='wb-asm-full';
+  fullWord.className='wb-asm-word';
+  fullWord.textContent=f.f;
+  fullEn.textContent=f.l;
+  fullEn.style.display='';
   document.getElementById('wb-ph-note').style.display='none';
 }
 
 function wbClearBuilder(){
-  ['wbs-p','wbs-r','wbs-s','wbs-result'].forEach(id=>{
-    const el=document.getElementById(id);if(!el)return;el.classList.remove('filled');
+  /* Reset optional slots */
+  ['wbs-ni','wbs-eq-ni','wbs-d','wbs-eq-d','wbs-s','wbs-eq-s'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.style.display='none';
   });
-  document.getElementById('wbs-p').innerHTML='<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · series</div>';
-  document.getElementById('wbs-r').innerHTML='<div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core action</div>';
-  document.getElementById('wbs-s').innerHTML='<div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div>';
-  document.getElementById('wbs-result').innerHTML='<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div>';
-  ['wbs-ni','wbs-d','wbs-eq-ni','wbs-eq-d'].forEach(id=>{
-    const el=document.getElementById(id);if(el){el.style.display='none';el.classList.remove('filled');}
-  });
-  const rz=document.getElementById('wb-result-zone');if(rz)rz.style.display='none';
+  const slP=document.getElementById('wbs-p');
+  slP.className='wb-asm-slot';
+  slP.innerHTML='<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div>';
+  const slR=document.getElementById('wbs-r');
+  slR.className='wb-asm-slot';
+  slR.innerHTML='<div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div>';
+  const fullBox=document.getElementById('wb-asm-full');
+  const fullWord=document.getElementById('wb-asm-word');
+  const fullEn=document.getElementById('wb-asm-en');
+  if(fullBox)fullBox.className='wb-asm-full dim';
+  if(fullWord){fullWord.className='wb-asm-word dim';fullWord.textContent='—';}
+  if(fullEn){fullEn.style.display='none';fullEn.textContent='';}
+  const phn=document.getElementById('wb-ph-note');
+  if(phn)phn.style.display='none';
 }
 
 
