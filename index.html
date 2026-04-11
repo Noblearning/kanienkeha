@@ -98,6 +98,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-chip-desc{border-color:rgba(160,100,20,.4);background:rgba(160,100,20,.05);}
 .wb-chip-desc.wb-chip-sel{border-color:rgba(160,100,20,.8)!important;background:rgba(160,100,20,.14)!important;}
 .wb-chip-none{border-style:dashed;color:var(--ew);font-style:italic;}
+.wb-panel-sticky{position:sticky;bottom:calc(var(--nav-h) + .5rem);z-index:50;box-shadow:0 -2px 12px rgba(44,24,16,.14);border-color:var(--sand);}
+#wb-explore{padding-bottom:1rem;}
 .wb-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;}
 @media(max-width:440px){.wb-two{grid-template-columns:1fr;}}
 .wb-slabel{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.55rem;}
@@ -944,8 +946,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           </div>
         </div>
 
-        <!-- Assembly panel — always visible, updates live -->
-        <div class="wb-panel" id="wb-builder-panel">
+        <!-- Assembly panel — sticky, always visible -->
+        <div class="wb-panel wb-panel-sticky" id="wb-builder-panel">
           <div class="wb-slabel" style="margin-bottom:.7rem;">assembled word</div>
           <div class="wb-slots">
             <div class="wb-slot" id="wbs-p"><div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · series</div></div>
@@ -985,7 +987,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
       <!-- PREFIX BROWSER -->
       <div id="wb-prefix" style="display:none;">
-        <div class="wb-info" style="margin-bottom:.85rem;">Click any prefix to filter the root list to words that use it.</div>
+        <div class="wb-info" style="margin-bottom:.85rem;">All pronominal prefixes organised by series and stem class, following the paradigm tables in the reference grammar. Click any stem block to see matching roots in Explore mode.</div>
         <div class="wb-slabel">prefix catalogue</div>
         <div class="wb-pref-grid" id="wb-pref-grid" style="margin-bottom:1rem;"></div>
         <div id="wb-pf-result-label" style="display:none;" class="wb-slabel"></div>
@@ -3961,6 +3963,15 @@ function wbPickDesc(id){
 }
 
 /* ── Live assembly — called after any picker selection ── */
+function wbGetSuffix(form,root,prefix){
+  /* Detect habitual -s suffix: the assembled form ends in -s and the
+     generated prefix+root does NOT end in s. Glottal/stative forms are bare (∅). */
+  const assembled=(prefix+root).replace(/[áéíóú:]/g,c=>c).toLowerCase();
+  const fLow=form.replace(/[áéíóú:]/g,c=>c).toLowerCase();
+  if(fLow.endsWith('s')&&!assembled.endsWith('s'))return{val:'-s',sub:'habitual aspect'};
+  return{val:'∅',sub:'bare stem (command/stative)'};
+}
+
 function wbUpdateAssembly(){
   const w=WB.word;
   if(!w)return;
@@ -4101,6 +4112,7 @@ function wbGenQuestion(){
   if(all.length<4){panel.innerHTML='<div style="color:var(--ew);font-style:italic;font-size:.88rem;">Not enough verified forms for activity yet.</div>';return;}
   const item=all[Math.floor(Math.random()*all.length)];
   const w=item.w;
+  const mkBtn=(c,correct)=>`<button class="wb-choice" data-val="${c.replace(/"/g,'&quot;')}" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`;
 
   let html='';
   if(WB.actType==='prefix'){
@@ -4111,7 +4123,7 @@ function wbGenQuestion(){
       <div class="wb-act-sub">Identify the person/aspect prefix · ${w.stem}</div>
       <div class="wb-act-target">${item.form}</div>
       <div class="wb-act-en">${w.e} · <em>${item.label}</em></div>
-      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   } else if(WB.actType==='form'){
@@ -4125,7 +4137,7 @@ function wbGenQuestion(){
         <span class="wb-tag wb-tr">${w.root}</span>
         <span style="color:var(--ew);">= ?</span>
       </div>
-      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   } else {
@@ -4138,7 +4150,7 @@ function wbGenQuestion(){
       <div style="display:flex;gap:.4rem;align-items:center;margin-bottom:1rem;">
         <span class="wb-tag wb-tp">${item.prefix}-</span> + <span class="wb-tag wb-tr">${w.root}</span>
       </div>
-      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   }
@@ -4154,7 +4166,7 @@ function wbCheck(btn,chosen,correct){
   document.getElementById('wb-attempts').textContent=WB.attempts;
   document.querySelectorAll('.wb-choice').forEach(b=>{
     b.disabled=true;
-    if(b.textContent.trim()===correct)b.classList.add('wb-cor');
+    if(b.dataset.val===correct)b.classList.add('wb-cor');
     else if(b===btn&&!ok)b.classList.add('wb-wrg');
   });
   const fb=document.getElementById('wb-fb');
@@ -4164,75 +4176,331 @@ function wbCheck(btn,chosen,correct){
 }
 
 /* ── PREFIX BROWSER ── */
+/* Organised to mirror the PDF paradigm tables:
+   one card per person/number slot, grouped by series → stem class.
+   'persons' lists all slots in that card so clicking filters correctly. */
 const WB_PFCAT=[
-  // Subjective
-  {form:'ka / sa / ra',meaning:'a-stem: I / you / he — subjective',series:'subj',stem:'a-stem'},
-  {form:'yon / wa / ron / kon',meaning:'a-stem: she / it / they — subjective',series:'subj',stem:'a-stem'},
-  {form:'k / s / ra / ye / ka',meaning:'c-stem: I / you / he / she / it — subjective',series:'subj',stem:'c-stem'},
-  {form:'ki / si / ren / ye',meaning:'i-stem: I / you / he / she — subjective',series:'subj',stem:'i-stem'},
-  {form:'ken / sen / ren / yen',meaning:'e-stem: I / you / he / she — subjective',series:'subj',stem:'e-stem'},
-  {form:'kon / son / ron / yakon',meaning:'o-stem: I / you / he / she — subjective',series:'subj',stem:'o-stem'},
-  {form:'tya / tsya / tewa / sewa',meaning:'dual & plural — all subjective stems',series:'subj',stem:'all'},
-  // Objective
-  {form:'waka / ro / yako / yo',meaning:'a-stem: I / he / she / it — objective',series:'obj',stem:'a-stem'},
-  {form:'wak / ro / yako / yo',meaning:'c-stem: I / he / she / it — objective',series:'obj',stem:'c-stem'},
-  {form:'waki / ro / yako',meaning:'i-stem: I / he / she — objective',series:'obj',stem:'i-stem'},
-  {form:'waken / rawen / yakawen',meaning:'e-stem: I / he / she — objective',series:'obj',stem:'e-stem'},
-  {form:'wakon / raon / yakaon',meaning:'o-stem: I / he / she — objective',series:'obj',stem:'o-stem'},
-  {form:'yonkya / yonkwa / rona / yona',meaning:'dual & plural — a-stem objective',series:'obj',stem:'a-stem'},
-  // Aorist
-  {form:"wa'ka / wehsa / waha",meaning:"a-stem aorist: I / you / he (completed action)",series:'aorist',stem:'a-stem'},
-  {form:"wa'k / wahs / waha",meaning:"c-stem aorist: I / you / he (completed action)",series:'aorist',stem:'c-stem'},
-  {form:"wa'ki / wahsi / waha",meaning:"*i-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'i-stem'},
-  {form:"wa'ken / wahsen / waha",meaning:"*e-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'e-stem'},
-  {form:"wa'kon / wahson / wahon",meaning:"*o-stem aorist: I / you / he (generated — verify)",series:'aorist',stem:'o-stem'},
-  // Future
-  {form:'enka / enhsa / enha',meaning:'a-stem future: I / you / he',series:'future',stem:'a-stem'},
-  {form:'enk / enhs / enha',meaning:'c-stem future: I / you / he',series:'future',stem:'c-stem'},
-  {form:'enki / enhsi / enha',meaning:'*i-stem future: I / you / he (generated — verify)',series:'future',stem:'i-stem'},
-  {form:'enken / enhsen / enha',meaning:'*e-stem future: I / you / he (generated — verify)',series:'future',stem:'e-stem'},
-  {form:'enkon / enhson / enhon',meaning:'*o-stem future: I / you / he (generated — verify)',series:'future',stem:'o-stem'},
-  // Non-definite
-  {form:'aka / ahsa / aha',meaning:'a-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'a-stem'},
-  {form:'ak / ahs / aha',meaning:'c-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'c-stem'},
-  {form:'aki / ahsi / aha',meaning:'*i-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'i-stem'},
-  {form:'aken / ahsen / aha',meaning:'*e-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'e-stem'},
-  {form:'akon / ahson / ahon',meaning:'*o-stem non-definite: I / you / he (generated — verify)',series:'nondef',stem:'o-stem'},
-  // Nominal possessives
-  {form:'akwa- / sa- / rao-',meaning:'a-stem nominal possessive: my / your / his',series:'poss',stem:'a-stem'},
-  {form:'ake- / sa- / rao-',meaning:'c-stem nominal possessive: my / your / his',series:'poss',stem:'c-stem'},
-  {form:'ake- / sa- / ro- / ako-',meaning:'kinship possessive: my / your / his / her',series:'poss',stem:'kinship'},
-  // Locatives
-  {form:'-àke / -akon / -òkon / -akta',meaning:'locative suffixes: on / in / under / near',series:'loc',stem:'nominal'},
+  // ── SUBJECTIVE SERIES ──────────────────────────────────────────
+  {section:'Subjective series', series:'subj', stem:'a-stem',
+   rows:[
+     {pfx:'ka',   person:'1sg',   label:'I (singular)'},
+     {pfx:'sa',   person:'2sg',   label:'you (singular)'},
+     {pfx:'ra',   person:'3sg.m', label:'he'},
+     {pfx:'yon',  person:'3sg.f', label:'she'},
+     {pfx:'wa',   person:'3sg.n', label:'it'},
+     {pfx:'tya',  person:'12du',  label:'you & I'},
+     {pfx:'yakya',person:'13du',  label:'he/she & I'},
+     {pfx:'tsya', person:'2du',   label:'you two'},
+     {pfx:'ya',   person:'3du.m', label:'they two (m)'},
+     {pfx:'kya',  person:'3du.f', label:'they two (f)'},
+     {pfx:'tewa', person:'12pl',  label:'you all & I'},
+     {pfx:'yakwa',person:'13pl',  label:'they all & I'},
+     {pfx:'sewa', person:'2pl',   label:'you all'},
+     {pfx:'ron',  person:'3pl.m', label:'they (m)'},
+     {pfx:'kon',  person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Subjective series', series:'subj', stem:'c-stem',
+   rows:[
+     {pfx:'k',    person:'1sg',   label:'I (singular)'},
+     {pfx:'s',    person:'2sg',   label:'you (singular)'},
+     {pfx:'ra',   person:'3sg.m', label:'he'},
+     {pfx:'ye',   person:'3sg.f', label:'she'},
+     {pfx:'ka',   person:'3sg.n', label:'it'},
+     {pfx:'teni', person:'12du',  label:'you & I'},
+     {pfx:'yakeni',person:'13du', label:'he/she & I'},
+     {pfx:'seni', person:'2du',   label:'you two'},
+     {pfx:'ni',   person:'3du.m', label:'they two (m)'},
+     {pfx:'keni', person:'3du.f', label:'they two (f)'},
+     {pfx:'tewa', person:'12pl',  label:'you all & I'},
+     {pfx:'yakwa',person:'13pl',  label:'they all & I'},
+     {pfx:'sewa', person:'2pl',   label:'you all'},
+     {pfx:'rati', person:'3pl.m', label:'they (m)'},
+     {pfx:'konti',person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Subjective series', series:'subj', stem:'i-stem',
+   rows:[
+     {pfx:'ki',   person:'1sg',   label:'I'},
+     {pfx:'si',   person:'2sg',   label:'you'},
+     {pfx:'ren',  person:'3sg.m', label:'he'},
+     {pfx:'ye',   person:'3sg.f', label:'she'},
+     {pfx:'ken',  person:'3sg.n', label:'it'},
+     {pfx:'teni', person:'12du',  label:'you & I'},
+     {pfx:'yakeni',person:'13du', label:'he/she & I'},
+     {pfx:'seni', person:'2du',   label:'you two'},
+     {pfx:'ni',   person:'3du.m', label:'they two (m)'},
+     {pfx:'keni', person:'3du.f', label:'they two (f)'},
+     {pfx:'tewen',person:'12pl',  label:'you all & I'},
+     {pfx:'yakwen',person:'13pl', label:'they all & I'},
+     {pfx:'sewen',person:'2pl',   label:'you all'},
+     {pfx:'rati', person:'3pl.m', label:'they (m)'},
+     {pfx:'konti',person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Subjective series', series:'subj', stem:'e-stem',
+   rows:[
+     {pfx:'ken',  person:'1sg',   label:'I'},
+     {pfx:'sen',  person:'2sg',   label:'you'},
+     {pfx:'ren',  person:'3sg.m', label:'he'},
+     {pfx:'yen',  person:'3sg.f', label:'she'},
+     {pfx:'wen',  person:'3sg.n', label:'it'},
+     {pfx:'tenen',person:'12du',  label:'you & I'},
+     {pfx:'yakenen',person:'13du',label:'he/she & I'},
+     {pfx:'senen',person:'2du',   label:'you two'},
+     {pfx:'nen',  person:'3du.m', label:'they two (m)'},
+     {pfx:'kenen',person:'3du.f', label:'they two (f)'},
+     {pfx:'tewen',person:'12pl',  label:'you all & I'},
+     {pfx:'yakwen',person:'13pl', label:'they all & I'},
+     {pfx:'sewen',person:'2pl',   label:'you all'},
+     {pfx:'ronnen',person:'3pl.m',label:'they (m)'},
+     {pfx:'konnen',person:'3pl.f',label:'they (f)'},
+   ]},
+  {section:'Subjective series', series:'subj', stem:'o-stem',
+   rows:[
+     {pfx:'kon',  person:'1sg',   label:'I'},
+     {pfx:'son',  person:'2sg',   label:'you'},
+     {pfx:'ron',  person:'3sg.m', label:'he'},
+     {pfx:'yakon',person:'3sg.f', label:'she'},
+     {pfx:'yon',  person:'3sg.n', label:'it'},
+     {pfx:'tenon',person:'12du',  label:'you & I'},
+     {pfx:'yakenon',person:'13du',label:'he/she & I'},
+     {pfx:'senon',person:'2du',   label:'you two'},
+     {pfx:'non',  person:'3du.m', label:'they two (m)'},
+     {pfx:'kenon',person:'3du.f', label:'they two (f)'},
+     {pfx:'tyon', person:'12pl',  label:'you all & I'},
+     {pfx:'yakyon',person:'13pl', label:'they all & I'},
+     {pfx:'tsyon',person:'2pl',   label:'you all'},
+     {pfx:'ronnon',person:'3pl.m',label:'they (m)'},
+     {pfx:'konnon',person:'3pl.f',label:'they (f)'},
+   ]},
+  // ── OBJECTIVE SERIES ───────────────────────────────────────────
+  {section:'Objective series', series:'obj', stem:'a-stem',
+   rows:[
+     {pfx:'waka', person:'1sg',   label:'I (patient)'},
+     {pfx:'sa',   person:'2sg',   label:'you'},
+     {pfx:'ro',   person:'3sg.m', label:'he'},
+     {pfx:'yako', person:'3sg.f', label:'she'},
+     {pfx:'yo',   person:'3sg.n', label:'it'},
+     {pfx:'yonkya',person:'12du', label:'you & I'},
+     {pfx:'tsya', person:'2du',   label:'you two'},
+     {pfx:'rona', person:'3du.m', label:'they two (m)'},
+     {pfx:'yona', person:'3du.f', label:'they two (f)'},
+     {pfx:'yonkwa',person:'12pl', label:'you all & I'},
+     {pfx:'sewa', person:'2pl',   label:'you all'},
+     {pfx:'rona', person:'3pl.m', label:'they (m)'},
+     {pfx:'yona', person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Objective series', series:'obj', stem:'c-stem',
+   rows:[
+     {pfx:'wak',  person:'1sg',   label:'I (patient)'},
+     {pfx:'sa',   person:'2sg',   label:'you'},
+     {pfx:'ro',   person:'3sg.m', label:'he'},
+     {pfx:'yako', person:'3sg.f', label:'she'},
+     {pfx:'yo',   person:'3sg.n', label:'it'},
+     {pfx:'yonkeni',person:'12du',label:'you & I'},
+     {pfx:'seni', person:'2du',   label:'you two'},
+     {pfx:'roti', person:'3du.m', label:'they two (m)'},
+     {pfx:'yoti', person:'3du.f', label:'they two (f)'},
+     {pfx:'yonkwa',person:'12pl', label:'you all & I'},
+     {pfx:'sewa', person:'2pl',   label:'you all'},
+     {pfx:'roti', person:'3pl.m', label:'they (m)'},
+     {pfx:'yoti', person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Objective series', series:'obj', stem:'e-stem',
+   rows:[
+     {pfx:'waken', person:'1sg',  label:'I (patient)'},
+     {pfx:'sawen', person:'2sg',  label:'you'},
+     {pfx:'rawen', person:'3sg.m',label:'he'},
+     {pfx:'yakawen',person:'3sg.f',label:'she'},
+     {pfx:'yawen', person:'3sg.n',label:'it'},
+     {pfx:'yonkenen',person:'12du',label:'you & I'},
+     {pfx:'senen', person:'2du',  label:'you two'},
+     {pfx:'ronen', person:'3du.m',label:'they two (m)'},
+     {pfx:'yonen', person:'3du.f',label:'they two (f)'},
+     {pfx:'yonkwen',person:'12pl',label:'you all & I'},
+     {pfx:'sewen', person:'2pl',  label:'you all'},
+     {pfx:'ronen', person:'3pl.m',label:'they (m)'},
+     {pfx:'yonen', person:'3pl.f',label:'they (f)'},
+   ]},
+  {section:'Objective series', series:'obj', stem:'o-stem',
+   rows:[
+     {pfx:'wakon', person:'1sg',  label:'I (patient)'},
+     {pfx:'son',   person:'2sg',  label:'you'},
+     {pfx:'raon',  person:'3sg.m',label:'he'},
+     {pfx:'yakaon',person:'3sg.f',label:'she'},
+     {pfx:'yaon',  person:'3sg.n',label:'it'},
+     {pfx:'yonkenon',person:'12du',label:'you & I'},
+     {pfx:'senon', person:'2du',  label:'you two'},
+     {pfx:'ronon', person:'3du.m',label:'they two (m)'},
+     {pfx:'yonon', person:'3du.f',label:'they two (f)'},
+     {pfx:'yonkyon',person:'12pl',label:'you all & I'},
+     {pfx:'tsyon', person:'2pl',  label:'you all'},
+     {pfx:'ronon', person:'3pl.m',label:'they (m)'},
+     {pfx:'yonon', person:'3pl.f',label:'they (f)'},
+   ]},
+  // ── AORIST ─────────────────────────────────────────────────────
+  {section:'Aorist (completed action)', series:'aorist', stem:'a-stem',
+   rows:[
+     {pfx:"wa'ka", person:'1sg',   label:'I (completed)'},
+     {pfx:'wehsa', person:'2sg',   label:'you'},
+     {pfx:'waha',  person:'3sg.m', label:'he'},
+     {pfx:"wa'on", person:'3sg.f', label:'she'},
+     {pfx:'on',    person:'3sg.n', label:'it'},
+     {pfx:'etya',  person:'12du',  label:'you & I'},
+     {pfx:"wa'akya",person:'13du', label:'he/she & I'},
+     {pfx:'wetsya',person:'2du',   label:'you two'},
+     {pfx:'wahya', person:'3du.m', label:'they two (m)'},
+     {pfx:"wa'kya",person:'3du.f', label:'they two (f)'},
+     {pfx:'wetewa',person:'12pl',  label:'you all & I'},
+     {pfx:"wa'akwa",person:'13pl', label:'they all & I'},
+     {pfx:'wesewa',person:'2pl',   label:'you all'},
+     {pfx:'wahon', person:'3pl.m', label:'they (m)'},
+     {pfx:"wa'kon",person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Aorist (completed action)', series:'aorist', stem:'c-stem',
+   rows:[
+     {pfx:"wa'k",  person:'1sg',   label:'I (completed)'},
+     {pfx:'wahs',  person:'2sg',   label:'you'},
+     {pfx:'waha',  person:'3sg.m', label:'he'},
+     {pfx:"wa'e",  person:'3sg.f', label:'she'},
+     {pfx:"wa'ka", person:'3sg.n', label:'it'},
+     {pfx:'weteni',person:'12du',  label:'you & I'},
+     {pfx:"wa'akeni",person:'13du',label:'he/she & I'},
+     {pfx:'weseni',person:'2du',   label:'you two'},
+     {pfx:'wahni', person:'3du.m', label:'they two (m)'},
+     {pfx:"wa'keni",person:'3du.f',label:'they two (f)'},
+     {pfx:'wetewa',person:'12pl',  label:'you all & I'},
+     {pfx:"wa'akwa",person:'13pl', label:'they all & I'},
+     {pfx:'wesewa',person:'2pl',   label:'you all'},
+     {pfx:'wahati',person:'3pl.m', label:'they (m)'},
+     {pfx:"wa'konti",person:'3pl.f',label:'they (f)'},
+   ]},
+  // ── FUTURE ─────────────────────────────────────────────────────
+  {section:'Future', series:'future', stem:'a-stem',
+   rows:[
+     {pfx:'enka',  person:'1sg',   label:'I (will)'},
+     {pfx:'enhsa', person:'2sg',   label:'you'},
+     {pfx:'enha',  person:'3sg.m', label:'he'},
+     {pfx:'enyon', person:'3sg.f', label:'she'},
+     {pfx:'enwa',  person:'3sg.n', label:'it'},
+     {pfx:'entya', person:'12du',  label:'you & I'},
+     {pfx:'enyakya',person:'13du', label:'he/she & I'},
+     {pfx:'entsya',person:'2du',   label:'you two'},
+     {pfx:'enhya', person:'3du.m', label:'they two (m)'},
+     {pfx:'enkya', person:'3du.f', label:'they two (f)'},
+     {pfx:'entewa',person:'12pl',  label:'you all & I'},
+     {pfx:'enyakwa',person:'13pl', label:'they all & I'},
+     {pfx:'ensewa',person:'2pl',   label:'you all'},
+     {pfx:'enhon', person:'3pl.m', label:'they (m)'},
+     {pfx:'enkon', person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Future', series:'future', stem:'c-stem',
+   rows:[
+     {pfx:'enk',   person:'1sg',   label:'I (will)'},
+     {pfx:'enhs',  person:'2sg',   label:'you'},
+     {pfx:'enha',  person:'3sg.m', label:'he'},
+     {pfx:'enye',  person:'3sg.f', label:'she'},
+     {pfx:'enka',  person:'3sg.n', label:'it'},
+     {pfx:'enteni',person:'12du',  label:'you & I'},
+     {pfx:'enyakeni',person:'13du',label:'he/she & I'},
+     {pfx:'enseni',person:'2du',   label:'you two'},
+     {pfx:'enhni', person:'3du.m', label:'they two (m)'},
+     {pfx:'enkeni',person:'3du.f', label:'they two (f)'},
+     {pfx:'entewa',person:'12pl',  label:'you all & I'},
+     {pfx:'enyakwa',person:'13pl', label:'they all & I'},
+     {pfx:'ensewa',person:'2pl',   label:'you all'},
+     {pfx:'enhati',person:'3pl.m', label:'they (m)'},
+     {pfx:'enkonti',person:'3pl.f',label:'they (f)'},
+   ]},
+  // ── NON-DEFINITE (hypothetical / conditional) ───────────────────
+  {section:'Non-definite (hypothetical)', series:'nondef', stem:'a-stem',
+   rows:[
+     {pfx:'aka',   person:'1sg',   label:'I (would)'},
+     {pfx:'ahsa',  person:'2sg',   label:'you'},
+     {pfx:'aha',   person:'3sg.m', label:'he'},
+     {pfx:'ayon',  person:'3sg.f', label:'she'},
+     {pfx:'aon',   person:'3sg.n', label:'it'},
+     {pfx:'aetya', person:'12du',  label:'you & I'},
+     {pfx:'ayakya',person:'13du',  label:'he/she & I'},
+     {pfx:'aetsya',person:'2du',   label:'you two'},
+     {pfx:'ahya',  person:'3du.m', label:'they two (m)'},
+     {pfx:'akya',  person:'3du.f', label:'they two (f)'},
+     {pfx:'aetewa',person:'12pl',  label:'you all & I'},
+     {pfx:'ayakwa',person:'13pl',  label:'they all & I'},
+     {pfx:'aesewa',person:'2pl',   label:'you all'},
+     {pfx:'ahon',  person:'3pl.m', label:'they (m)'},
+     {pfx:'akon',  person:'3pl.f', label:'they (f)'},
+   ]},
+  {section:'Non-definite (hypothetical)', series:'nondef', stem:'c-stem',
+   rows:[
+     {pfx:'ak',    person:'1sg',   label:'I (would)'},
+     {pfx:'ahs',   person:'2sg',   label:'you'},
+     {pfx:'aha',   person:'3sg.m', label:'he'},
+     {pfx:'aye',   person:'3sg.f', label:'she'},
+     {pfx:'aka',   person:'3sg.n', label:'it'},
+     {pfx:'aeteni',person:'12du',  label:'you & I'},
+     {pfx:'ayakeni',person:'13du', label:'he/she & I'},
+     {pfx:'aeseni',person:'2du',   label:'you two'},
+     {pfx:'ahni',  person:'3du.m', label:'they two (m)'},
+     {pfx:'akeni', person:'3du.f', label:'they two (f)'},
+     {pfx:'aetewa',person:'12pl',  label:'you all & I'},
+     {pfx:'ayakwa',person:'13pl',  label:'they all & I'},
+     {pfx:'aesewa',person:'2pl',   label:'you all'},
+     {pfx:'ahati', person:'3pl.m', label:'they (m)'},
+     {pfx:'akonti',person:'3pl.f', label:'they (f)'},
+   ]},
+];
+
+/* Section headers for rendering */
+const WB_PFSECTIONS=[
+  {key:'subj',   label:'Subjective series',           note:'Subject performs the action'},
+  {key:'obj',    label:'Objective series',             note:'Subject receives / experiences the action'},
+  {key:'aorist', label:'Aorist (completed action)',    note:"wa' / wa / wah / we / on — varies by person"},
+  {key:'future', label:'Future',                       note:'en / enh — varies by person'},
+  {key:'nondef', label:'Non-definite (hypothetical)',  note:'a / ah / ae / aon — varies by person'},
 ];
 
 function wbRenderPrefixGrid(){
   const grid=document.getElementById('wb-pref-grid');if(!grid)return;
-  grid.innerHTML=WB_PFCAT.map((p,i)=>`
-    <div class="wb-pref-card${WB.activePfx===i?' wb-pf-sel':''}" onclick="wbFilterByPrefix(${i})">
-      <div class="wb-pf-form">${p.form}</div>
-      <div class="wb-pf-mean">${p.meaning}</div>
-      <div class="wb-pf-tag">${p.series} · ${p.stem}</div>
-    </div>`).join('');
+  // Render section headers + collapsible paradigm tables
+  let html='';
+  WB_PFSECTIONS.forEach(sec=>{
+    const cats=WB_PFCAT.filter(c=>c.series===sec.key);
+    if(!cats.length)return;
+    html+=`<div style="margin-bottom:1.1rem;">
+      <div style="font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;">${sec.label}</div>
+      <div style="font-size:.78rem;color:var(--ew);font-style:italic;margin-bottom:.6rem;">${sec.note}</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.42rem;">`;
+    cats.forEach((cat,ci)=>{
+      const catIdx=WB_PFCAT.indexOf(cat);
+      html+=`<div class="wb-pref-card${WB.activePfx===catIdx?' wb-pf-sel':''}" onclick="wbFilterByPrefix(${catIdx})" style="padding:.55rem .75rem;">
+        <div style="font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--clay);margin-bottom:.3rem;text-transform:uppercase;">${cat.stem}</div>
+        <table style="width:100%;border-collapse:collapse;">`;
+      cat.rows.forEach(r=>{
+        html+=`<tr style="line-height:1.5;">
+          <td style="font-family:'Playfair Display',serif;font-size:.85rem;color:var(--ed);padding-right:.5rem;white-space:nowrap;">${r.pfx}</td>
+          <td style="font-size:.72rem;color:var(--ew);">${r.label}</td>
+        </tr>`;
+      });
+      html+=`</table></div>`;
+    });
+    html+=`</div></div>`;
+  });
+  grid.innerHTML=html;
 }
 
-function wbFilterByPrefix(i){
-  WB.activePfx=i;
+function wbFilterByPrefix(catIdx){
+  WB.activePfx=catIdx;
   wbRenderPrefixGrid();
-  const pf=WB_PFCAT[i];
-  // Match by stem class; 'all' matches every verb root; kinship matches kinship stem
+  const cat=WB_PFCAT[catIdx];
+  if(!cat)return;
   const matched=WB_ROOTS.filter(w=>{
-    if(pf.stem==='all') return w.cat!=='kinship';
-    if(pf.stem==='kinship') return w.stem==='kinship';
-    if(pf.stem==='nominal') return false; // locatives — no verb roots to list
-    return w.stem===pf.stem;
+    if(cat.stem==='nominal')return false;
+    return w.stem===cat.stem;
   });
   const lbl=document.getElementById('wb-pf-result-label');
-  if(lbl){lbl.style.display='block';lbl.textContent=`${pf.stem} roots — ${pf.series} series (${matched.length} found)`;}
+  if(lbl){lbl.style.display='block';lbl.textContent=`${cat.stem} — ${cat.section} (${matched.length} roots)`;}
   const roots=document.getElementById('wb-pf-roots');
   if(!roots)return;
-  // When clicking through to Explore, also set the series so the paradigm opens on the right tab
-  const targetSeries=(['subj','obj','aorist','future','nondef'].includes(pf.series))?pf.series:'subj';
+  const targetSeries=cat.series;
   roots.innerHTML=matched.length?matched.map(w=>`
     <div class="wb-chip" onclick="
       wbSetMode('explore',document.getElementById('wbm-explore'));
