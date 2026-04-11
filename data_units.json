@@ -3816,7 +3816,12 @@
               "Glass"
             ],
             "cm": "Tho niioht! Ónhka — water. Water is the first being acknowledged in the Thanksgiving Address after the people themselves.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1501862700950-18382cd41497?w=800&q=80",
+              "alt": "Clear water surface with soft ripples and light",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3869,7 +3874,12 @@
               }
             ],
             "cm": "Shé:kon! These four nature nouns all appear in the Thanksgiving Address — they are not just vocabulary but acknowledged members of the world.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80",
+              "alt": "Vibrant red and orange autumn maple leaves",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "match",
@@ -3933,7 +3943,12 @@
               "Onhka"
             ],
             "cm": "Niawenhkó:wa! Ónhka. Water is central to Kanien'kehá:ka life and ceremony.",
-            "wm": "That answer is incorrect — try again. Try: Ónhka"
+            "wm": "That answer is incorrect — try again. Try: Ónhka",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1501862700950-18382cd41497?w=800&q=80",
+              "alt": "Clear water surface with soft ripples and light",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -3948,7 +3963,12 @@
               "Feathers are only in the O-class by accident"
             ],
             "cm": "Io'nikonhraién:ta'ne! Feathers — especially eagle feathers — carry deep ceremonial significance. The language does not separate 'everyday vocabulary' from 'sacred vocabulary'; all of creation is present in the words.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1520808663317-647b476a81b9?w=800&q=80",
+              "alt": "Close-up of a single feather with fine barbs visible",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "audio",
@@ -3972,7 +3992,12 @@
               "O-class nouns are less important than A-class"
             ],
             "cm": "Io'nikonhraién:ta'ne! The Thanksgiving Address acknowledges every element of creation — water, plants, animals, winds, sun, moon, stars — as beings in ongoing relationship with the people. Learning these words means learning a relational ontology.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1490750967868-88df5691cc7c?w=800&q=80",
+              "alt": "Purple wildflowers in a summer meadow",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "story",
@@ -4071,7 +4096,12 @@
               }
             ],
             "cm": "Shé:kon! Ka-class nouns range from modern inventions (car, book) to traditional instruments (drum). The same noun class holds all of them.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=800&q=80",
+              "alt": "Close-up of a hand drum instrument",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "mc",
@@ -4086,7 +4116,12 @@
               "Drum"
             ],
             "cm": "Tho niioht! Kaná:tsihs — boat/canoe. Watercraft is historically central to Kanien'kehá:ka life on the St. Lawrence and Lake of Two Mountains.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
+              "alt": "Traditional birchbark canoe on calm water",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "fill",
@@ -4127,7 +4162,12 @@
               "The Ka-class only holds modern loanwords"
             ],
             "cm": "Io'nikonhraién:ta'ne! The noun class system is grammatical, not hierarchical. Flint — the stone that names the people — and car — a modern adaptation — share Ka-class grammar. The language holds both without ranking one above the other.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=800&q=80",
+              "alt": "Ancient flint arrowhead stone tool",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "audio",
@@ -4382,7 +4422,12 @@
               "Fire"
             ],
             "cm": "Niawenhkó:wa! Karáhkwa — the sun. Acknowledged in the Thanksgiving Address: 'Look up and see the sun, our eldest brother.'",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+              "alt": "Golden sunrise over a misty river landscape",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "fill",
@@ -4439,7 +4484,12 @@
               "Only ceremonial words belong in ceremonial contexts"
             ],
             "cm": "Niawenhkó:wa! This is precisely McCarty & Lee's (2014) point: culturally sustaining/revitalizing pedagogy treats language as inseparable from its cultural and spiritual dimensions. Karáhkwa is not just 'sun' — it is a being in ongoing relationship with the people.",
-            "wm": "That answer is incorrect — please try again."
+            "wm": "That answer is incorrect — please try again.",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+              "alt": "Golden sunrise over a misty river landscape",
+              "credit": "Unsplash"
+            }
           },
           {
             "type": "audio",

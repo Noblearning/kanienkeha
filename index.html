@@ -43,15 +43,14 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .pw{flex:1;overflow-y:auto;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 
 /* ── LOGIN ── */
-#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));position:relative;}
-#login>.bm{position:absolute;top:0;left:0;right:0;}
-.lbox{background:transparent;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
-.lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;border-radius:22px 22px 0 0;}
+#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));}
+.lbox{background:white;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
+.lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;}
 .lhero .em{font-size:2.8rem;display:block;margin-bottom:.65rem;}
 .lhero h1{font-family:'Playfair Display',serif;color:var(--sand);font-size:1.5rem;line-height:1.2;}
 .lhero h1 em{color:var(--clay);}
 .lhero p{color:var(--smoke);font-size:.88rem;margin-top:.38rem;font-style:italic;}
-.lbody{padding:1.6rem;background:white;}
+.lbody{padding:1.6rem;}
 .ltabs{display:flex;gap:.45rem;margin-bottom:1.3rem;}
 .ltab{flex:1;padding:.55rem;border:2px solid var(--smoke);border-radius:9px;background:transparent;font-family:'Crimson Pro',serif;font-size:.92rem;color:var(--ew);cursor:pointer;transition:all .14s;}
 .ltab.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
@@ -80,26 +79,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-info{background:var(--birch);border:1px solid var(--sand);border-radius:10px;padding:.65rem .95rem;font-size:.83rem;color:var(--ed);line-height:1.6;margin-bottom:1rem;}
 .wb-tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:.76rem;font-weight:700;}
 .wb-tp{background:rgba(196,120,74,.18);color:#7A3800;}.wb-tr{background:rgba(46,106,142,.18);color:#1A4060;}.wb-ts{background:rgba(58,122,58,.18);color:#1A4A1A;}.wb-tph{background:var(--smoke);color:var(--ew);border:1px dashed var(--sand);}
-.wb-tni{background:rgba(130,60,160,.18);color:#5A1A80;}
-.wb-td{background:rgba(160,100,20,.18);color:#704010;}
-.wb-ts2{background:rgba(58,122,58,.18);color:#1A4A1A;}
-.wb-slot-opt{border-color:rgba(130,60,160,.35);background:rgba(130,60,160,.04);}
-.wb-slot-opt.filled{border-color:rgba(130,60,160,.5);background:rgba(130,60,160,.07);}
-.wb-slot-desc-opt{border-color:rgba(160,100,20,.35);background:rgba(160,100,20,.04);}
-.wb-slot-desc-opt.filled{border-color:rgba(160,100,20,.5);background:rgba(160,100,20,.07);}
-.wb-step-block{margin-bottom:1.1rem;padding-bottom:1rem;border-bottom:1px solid var(--sand);}
-.wb-step-block:last-of-type{border-bottom:none;}
-.wb-step-locked{opacity:.45;pointer-events:none;}
-.wb-step-locked.wb-step-unlocked{opacity:1;pointer-events:auto;}
-.wb-step-hint{font-size:.88rem;color:var(--ew);font-style:italic;padding:.4rem 0;}
-.wb-chip-sel{border-color:var(--clay)!important;background:rgba(196,120,74,.1)!important;}
-.wb-chip-ni{border-color:rgba(130,60,160,.4);background:rgba(130,60,160,.05);}
-.wb-chip-ni.wb-chip-sel{border-color:rgba(130,60,160,.8)!important;background:rgba(130,60,160,.14)!important;}
-.wb-chip-desc{border-color:rgba(160,100,20,.4);background:rgba(160,100,20,.05);}
-.wb-chip-desc.wb-chip-sel{border-color:rgba(160,100,20,.8)!important;background:rgba(160,100,20,.14)!important;}
-.wb-chip-none{border-style:dashed;color:var(--ew);font-style:italic;}
-.wb-panel-sticky{position:sticky;bottom:calc(var(--nav-h) + .5rem);z-index:50;box-shadow:0 -2px 12px rgba(44,24,16,.14);border-color:var(--sand);}
-#wb-explore{padding-bottom:1rem;}
 .wb-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start;}
 @media(max-width:440px){.wb-two{grid-template-columns:1fr;}}
 .wb-slabel{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.55rem;}
@@ -269,6 +248,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .ex-q{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--sand);line-height:1.3;}
 .ex-sub{font-size:.84rem;color:var(--smoke);font-style:italic;margin-top:.25rem;}
 .ex-body{padding:1.1rem;}
+.ex-img{width:100%;max-height:200px;object-fit:cover;display:block;border-bottom:1px solid var(--smoke);}
+.ex-img-wrap{position:relative;}
+.ex-img-credit{position:absolute;bottom:0;right:0;background:rgba(44,24,16,.52);color:rgba(255,255,255,.8);font-size:.6rem;padding:2px 6px;font-family:'Crimson Pro',serif;font-style:italic;letter-spacing:.02em;}
 
 /* mc */
 .mco{display:flex;flex-direction:column;gap:.55rem;margin-bottom:.88rem;}
@@ -588,14 +570,14 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <button class="ltab" id="treg" onclick="switchTab('reg')">Register</button>
       </div>
       <div id="bsi">
-        <div class="lf"><label for="si-n">Username</label><input id="si-n" type="text" placeholder="e.g., Teiowí:sonte" autocomplete="username" aria-required="true"></div>
-        <div class="lf"><label for="si-p">Password</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password" aria-required="true"></div>
+        <div class="lf"><label for="si-n">Name or username</label><input id="si-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="si-p">Passcode (4+ characters)</label><input id="si-p" type="password" placeholder="••••" autocomplete="current-password" aria-required="true"></div>
         <div class="lerr" id="si-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doSignIn()">Enter the Language Path</button>
       </div>
       <div id="breg" style="display:none">
-        <div class="lf"><label for="reg-n">Username</label><input id="reg-n" type="text" placeholder="e.g., Teiowí:sonte" autocomplete="username" aria-required="true"></div>
-        <div class="lf"><label for="reg-p">Password</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password" aria-required="true"></div>
+        <div class="lf"><label for="reg-n">Choose a username</label><input id="reg-n" type="text" placeholder="e.g. Teiowí:sonte" autocomplete="username" aria-required="true"></div>
+        <div class="lf"><label for="reg-p">Choose a passcode (4+)</label><input id="reg-p" type="password" placeholder="••••" autocomplete="new-password" aria-required="true"></div>
         <div class="lerr" id="reg-e" role="alert" aria-live="polite"></div>
         <button class="lbtn" onclick="doRegister()">Begin My Journey</button>
       </div>
@@ -675,6 +657,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="ex-q" id="eq"></div>
           <div class="ex-sub" id="esub"></div>
         </div>
+        <div class="ex-img-wrap" id="eimgwrap" style="display:none;"></div>
         <div class="ex-body" id="exbody"></div>
       </div>
       <div class="fb" id="fbbar">
@@ -899,66 +882,44 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
       <!-- EXPLORE -->
       <div id="wb-explore">
+        <div class="wb-stats">
+          <div class="wb-stat"><div class="wb-stat-n" id="wb-stat-total">—</div><div class="wb-stat-l">roots in builder</div></div>
+          <div class="wb-stat"><div class="wb-stat-n">26</div><div class="wb-stat-l">corpus-validated roots</div></div>
+          <div class="wb-stat"><div class="wb-stat-n" style="color:#7A3800;">7</div><div class="wb-stat-l">need linguistic review</div></div>
+        </div>
         <div class="wb-info">
-          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Build a word step by step:
-          choose a <span class="wb-tag wb-tr">verb root</span>, pick a <span class="wb-tag wb-tp">person prefix</span>,
-          then optionally incorporate a <span class="wb-tag wb-tni">noun root</span> and attach a
-          <span class="wb-tag wb-td">descriptor</span>. The assembly panel updates live.
-          <span class="wb-tag wb-tph">*</span> = generated form — verify with a speaker before publishing.
+          Words are built from <span class="wb-tag wb-tp">prefix</span> (person · number · aspect) + <span class="wb-tag wb-tr">root</span> (core meaning).
+          The prefix system now covers all 15 person/number combinations across 5 stem classes.
+          <span class="wb-tag wb-tph">* asterisk</span> = generated by prefix rule — verify against a speaker before publishing.
         </div>
-
-        <!-- Step 1: verb root picker -->
-        <div class="wb-step-block">
-          <div class="wb-slabel">1 — verb root</div>
-          <div class="wb-filter-row">
-            <input class="wb-search" type="text" id="wb-search" placeholder="Search…" oninput="wbRenderRoots()" autocorrect="off" autocapitalize="off">
-            <button class="wb-pill active" onclick="wbSetCat('all',this)">All</button>
-            <button class="wb-pill" onclick="wbSetCat('verb',this)">Verbs</button>
-            <button class="wb-pill" onclick="wbSetCat('kinship',this)">Kinship</button>
-            <button class="wb-pill" onclick="wbSetCat('emotional state',this)">Feelings</button>
-            <button class="wb-pill" onclick="wbSetCat('food quality',this)">Food</button>
+        <div class="wb-two">
+          <div>
+            <div class="wb-slabel">1 — root word</div>
+            <div class="wb-filter-row">
+              <input class="wb-search" type="text" id="wb-search" placeholder="Search…" oninput="wbRenderRoots()" autocorrect="off" autocapitalize="off">
+              <button class="wb-pill active" onclick="wbSetCat('all',this)">All</button>
+              <button class="wb-pill" onclick="wbSetCat('verb',this)">Verbs</button>
+              <button class="wb-pill" onclick="wbSetCat('kinship',this)">Kinship</button>
+              <button class="wb-pill" onclick="wbSetCat('emotional state',this)">Feelings</button>
+              <button class="wb-pill" onclick="wbSetCat('food quality',this)">Food</button>
+            </div>
+            <div class="wb-root-grid" id="wb-root-grid"></div>
           </div>
-          <div class="wb-root-grid" id="wb-root-grid"></div>
-        </div>
-
-        <!-- Step 2: person / series picker — locked until root chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-person">
-          <div class="wb-slabel">2 — person &amp; series</div>
-          <div id="wb-series-bar" style="display:flex;gap:.3rem;margin-bottom:.65rem;flex-wrap:wrap;"></div>
-          <div class="wb-form-list" id="wb-form-list">
-            <div class="wb-step-hint">← Choose a verb root first</div>
+          <div>
+            <div class="wb-slabel">2 — choose a form</div>
+            <div class="wb-form-list" id="wb-form-list">
+              <div style="font-size:.88rem;color:var(--ew);font-style:italic;padding:.5rem 0;">← Select a root word to see its forms</div>
+            </div>
           </div>
         </div>
-
-        <!-- Step 3: noun incorporation — locked until person chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-ni">
-          <div class="wb-slabel">3 — incorporate a noun <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
-          <div class="wb-root-grid" id="wb-ni-grid">
-            <div class="wb-step-hint">← Choose a person form first</div>
-          </div>
-        </div>
-
-        <!-- Step 4: descriptor suffix — locked until person chosen -->
-        <div class="wb-step-block wb-step-locked" id="wb-step-desc">
-          <div class="wb-slabel">4 — descriptor suffix <span style="font-weight:400;color:var(--ew);font-style:italic;">(optional)</span></div>
-          <div class="wb-root-grid" id="wb-desc-grid">
-            <div class="wb-step-hint">← Choose a person form first</div>
-          </div>
-        </div>
-
-        <!-- Assembly panel — sticky, always visible -->
-        <div class="wb-panel wb-panel-sticky" id="wb-builder-panel">
-          <div class="wb-slabel" style="margin-bottom:.7rem;">assembled word</div>
+        <div class="wb-panel" id="wb-builder-panel">
+          <div class="wb-slabel" style="margin-bottom:.7rem;">3 — assembled word</div>
           <div class="wb-slots">
-            <div class="wb-slot" id="wbs-p"><div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · series</div></div>
-            <div class="wb-eq wb-eq-opt" id="wbs-eq-ni" style="display:none;">+</div>
-            <div class="wb-slot wb-slot-opt" id="wbs-ni" style="display:none;"><div class="wb-slot-lbl">Noun root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">incorporated object</div></div>
+            <div class="wb-slot" id="wbs-p"><div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · aspect</div></div>
             <div class="wb-eq">+</div>
-            <div class="wb-slot" id="wbs-r"><div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core action</div></div>
-            <div class="wb-eq wb-eq-opt" id="wbs-eq-d" style="display:none;">+</div>
-            <div class="wb-slot wb-slot-opt" id="wbs-d" style="display:none;"><div class="wb-slot-lbl">Descriptor</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">quality suffix</div></div>
+            <div class="wb-slot" id="wbs-r"><div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core meaning</div></div>
             <div class="wb-eq">+</div>
-            <div class="wb-slot" id="wbs-s"><div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div></div>
+            <div class="wb-slot" id="wbs-s"><div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div></div>
             <div class="wb-eq">=</div>
             <div class="wb-slot" id="wbs-result" style="flex:1.5;"><div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div></div>
           </div>
@@ -987,7 +948,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
       <!-- PREFIX BROWSER -->
       <div id="wb-prefix" style="display:none;">
-        <div class="wb-info" style="margin-bottom:.85rem;">All pronominal prefixes organised by series and stem class, following the paradigm tables in the reference grammar. Click any stem block to see matching roots in Explore mode.</div>
+        <div class="wb-info" style="margin-bottom:.85rem;">Click any prefix to filter the root list to words that use it.</div>
         <div class="wb-slabel">prefix catalogue</div>
         <div class="wb-pref-grid" id="wb-pref-grid" style="margin-bottom:1rem;"></div>
         <div id="wb-pf-result-label" style="display:none;" class="wb-slabel"></div>
@@ -1073,15 +1034,15 @@ function switchTab(t){
 }
 function doSignIn(){
   const n=document.getElementById('si-n').value.trim(),p=document.getElementById('si-p').value,e=document.getElementById('si-e');
-  if(!n||!p){e.textContent='Please enter your username and password.';return;}
+  if(!n||p.length<4){e.textContent='Please enter your name and a passcode of 4+ characters.';return;}
   const users=getUsers(),k=n.toLowerCase();
   if(!users[k]){e.textContent='No account found — please register first.';return;}
-  if(users[k].passcode!==p){e.textContent='Incorrect password.';return;}
+  if(users[k].passcode!==p){e.textContent='Incorrect passcode.';return;}
   e.textContent='';loginAs(n,users[k]);
 }
 function doRegister(){
   const n=document.getElementById('reg-n').value.trim(),p=document.getElementById('reg-p').value,e=document.getElementById('reg-e');
-  if(!n||!p){e.textContent='Please choose a username and password.';return;}
+  if(!n||p.length<4){e.textContent='Please choose a name and passcode of 4+ characters.';return;}
   const users=getUsers(),k=n.toLowerCase();
   if(users[k]){e.textContent='That name is taken — please choose another or sign in.';return;}
   e.textContent='';
@@ -1832,6 +1793,14 @@ function renderEx(){
   document.getElementById('etlbl').textContent=tLabel(ex.type);
   document.getElementById('eq').textContent=ex.prompt;
   document.getElementById('esub').textContent=ex.sub||'';
+  const eimgwrap=document.getElementById('eimgwrap');
+  if(ex.image&&ex.image.url){
+    eimgwrap.style.display='block';
+    eimgwrap.innerHTML=`<img class="ex-img" src="${ex.image.url}" alt="${ex.image.alt||''}" loading="lazy"><div class="ex-img-credit">${ex.image.credit||'Unsplash'}</div>`;
+  } else {
+    eimgwrap.style.display='none';
+    eimgwrap.innerHTML='';
+  }
 
   let html='';
   if((ex.type==='type'||ex.type==='fill')&&!kbShown){
@@ -3310,80 +3279,9 @@ const WB_OBJ={
   }
 };
 
-/* ── MODAL SERIES — I-STEM (fully generated; no community forms found in data) ── */
-const WB_AORIST_I={
-  'i-stem':{
-    '1sg':"wa'ki",'2sg':'wahsi','3sg.m':'waha','3sg.f':"wa'ye",'3sg.n':"wa'ken",
-    '12du':'weteni','13du':"wa'akeni",'2du':'weseni','3du.m':'wahni','3du.f':"wa'keni",
-    '12pl':'wetewa','13pl':"wa'akwa",'2pl':'wesewa','3pl.m':'wahati','3pl.f':"wa'konti"
-  }
-};
-const WB_FUTURE_I={
-  'i-stem':{
-    '1sg':'enki','2sg':'enhsi','3sg.m':'enha','3sg.f':'enye','3sg.n':'enken',
-    '12du':'enteni','13du':'enyakeni','2du':'enseni','3du.m':'enhni','3du.f':'enkeni',
-    '12pl':'entewa','13pl':'enyakwa','2pl':'ensewa','3pl.m':'enhati','3pl.f':'enkonti'
-  }
-};
-const WB_NONDEF_I={
-  'i-stem':{
-    '1sg':'aki','2sg':'ahsi','3sg.m':'aha','3sg.f':'aye','3sg.n':'aken',
-    '12du':'aeteni','13du':'ayakeni','2du':'aeseni','3du.m':'ahni','3du.f':'akeni',
-    '12pl':'aetewa','13pl':'ayakwa','2pl':'aesewa','3pl.m':'ahati','3pl.f':'akonti'
-  }
-};
-
-/* ── MODAL SERIES — E-STEM (true and fake; fully generated) ── */
-/* True e-stem: root begins with accented vowel (é:ta, ahshá:wi, anerénhton).
-   Fake e-stem: grammatically c-stem class (ahrón:ni, ahsénhawe, ahwistahní:ios).
-   Both use the same modal prefix patterns as c-stem per Mithun (1999).
-   All forms asterisked — no community-verified modal forms in data sources. */
-const WB_AORIST_E={
-  'e-stem':{
-    '1sg':"wa'ken",'2sg':'wahsen','3sg.m':'waha','3sg.f':"wa'yen",'3sg.n':"wa'wen",
-    '12du':'wetenen','13du':"wa'akenen",'2du':'wesenen','3du.m':'wahnen','3du.f':"wa'kenen",
-    '12pl':'wetewa','13pl':"wa'akwa",'2pl':'wesewa','3pl.m':'wahonnen','3pl.f':"wa'konnen"
-  }
-};
-const WB_FUTURE_E={
-  'e-stem':{
-    '1sg':'enken','2sg':'enhsen','3sg.m':'enha','3sg.f':'enyen','3sg.n':'enwen',
-    '12du':'entenen','13du':'enyakenen','2du':'ensenen','3du.m':'enhnen','3du.f':'enkenen',
-    '12pl':'entewa','13pl':'enyakwa','2pl':'ensewa','3pl.m':'enhonnen','3pl.f':'enkonnen'
-  }
-};
-const WB_NONDEF_E={
-  'e-stem':{
-    '1sg':'aken','2sg':'ahsen','3sg.m':'aha','3sg.f':'ayen','3sg.n':'awen',
-    '12du':'aetenen','13du':'ayakenen','2du':'aesenen','3du.m':'ahnen','3du.f':'akenen',
-    '12pl':'aetewa','13pl':'ayakwa','2pl':'aesewa','3pl.m':'ahonnen','3pl.f':'akonnen'
-  }
-};
-
-/* ── MODAL SERIES — O-STEM (fully generated; o-stem rarely takes aorist/future
-   in practice — stative verbs especially do not; all asterisked) ── */
-const WB_AORIST_O={
-  'o-stem':{
-    '1sg':"wa'kon",'2sg':'wahson','3sg.m':'wahon','3sg.f':"wa'yakon",'3sg.n':"wa'yon",
-    '12du':'wetenon','13du':"wa'akenon",'2du':'wesenon','3du.m':'wahnon','3du.f':"wa'kenon",
-    '12pl':'wetyon','13pl':"wa'akyon",'2pl':'wetsyon','3pl.m':'wahonnon','3pl.f':"wa'konnon"
-  }
-};
-const WB_FUTURE_O={
-  'o-stem':{
-    '1sg':'enkon','2sg':'enhson','3sg.m':'enhon','3sg.f':'enyankon','3sg.n':'enyon',
-    '12du':'entenon','13du':'enyakenon','2du':'ensenon','3du.m':'enhnon','3du.f':'enkenon',
-    '12pl':'entyon','13pl':'enyakyon','2pl':'entsyon','3pl.m':'enhonnon','3pl.f':'enkonnon'
-  }
-};
-const WB_NONDEF_O={
-  'o-stem':{
-    '1sg':'akon','2sg':'ahson','3sg.m':'ahon','3sg.f':'ayakon','3sg.n':'ayon',
-    '12du':'aetenon','13du':'ayakenon','2du':'aesenon','3du.m':'ahnon','3du.f':'akenon',
-    '12pl':'aetyon','13pl':'ayakyon','2pl':'aetsyon','3pl.m':'ahonnon','3pl.f':'akonnon'
-  }
-};
-/* wa' before k/y; wa before h (r→h); wah before 1sg s/se & 3du.m n/y;
+/* ── MODAL SERIES ── */
+/* AORIST (wa' — completed/past action)
+   wa' before k/y; wa before h (r→h); wah before 1sg s/se & 3du.m n/y;
    we before t & 2du/2pl-subj & all-2nd-obj; on before w */
 const WB_AORIST={
   'a-stem':{
@@ -3502,29 +3400,10 @@ function wbCStemObj1sg(root){
   return'wak';
 }
 
+/* Apply C-stem alternations to standard table */
 function wbGetPrefix(stemClass,series,person,root){
-  /* Route to correct table depending on stem class and series */
-  let table=null;
-  if(series==='subj')  table=(WB_SUBJ[stemClass]);
-  else if(series==='obj')    table=(WB_OBJ[stemClass]);
-  else if(series==='aorist'){
-    if(stemClass==='a-stem'||stemClass==='c-stem') table=WB_AORIST[stemClass];
-    else if(stemClass==='i-stem') table=WB_AORIST_I['i-stem'];
-    else if(stemClass==='e-stem') table=WB_AORIST_E['e-stem'];
-    else if(stemClass==='o-stem') table=WB_AORIST_O['o-stem'];
-  }
-  else if(series==='future'){
-    if(stemClass==='a-stem'||stemClass==='c-stem') table=WB_FUTURE[stemClass];
-    else if(stemClass==='i-stem') table=WB_FUTURE_I['i-stem'];
-    else if(stemClass==='e-stem') table=WB_FUTURE_E['e-stem'];
-    else if(stemClass==='o-stem') table=WB_FUTURE_O['o-stem'];
-  }
-  else if(series==='nondef'){
-    if(stemClass==='a-stem'||stemClass==='c-stem') table=WB_NONDEF[stemClass];
-    else if(stemClass==='i-stem') table=WB_NONDEF_I['i-stem'];
-    else if(stemClass==='e-stem') table=WB_NONDEF_E['e-stem'];
-    else if(stemClass==='o-stem') table=WB_NONDEF_O['o-stem'];
-  }
+  const MAP={subj:WB_SUBJ,obj:WB_OBJ,aorist:WB_AORIST,future:WB_FUTURE,nondef:WB_NONDEF};
+  const table=MAP[series]&&MAP[series][stemClass];
   if(!table)return null;
   let pfx=table[person];
   if(!pfx)return null;
@@ -3573,87 +3452,164 @@ function wbGenerateForms(root,stemClass,series,knownForms){
 /* root = bare verb stem (no prefix)
    stem = stem class for prefix selection
    obj  = true if objective series available for this stem
-   knownSubj = verified subjective forms {person: form}
-   knownObj  = verified objective forms {person: form}  */
+   corpusHits = number of forms validated by decomposition against glossary+phrases
+   needsReview = root has no corpus decomposition — priority for linguistic check
+   knownSubj = verified subjective forms {person: form}  */
 const WB_ROOTS=[
-  {id:'v01',root:'á:tien',stem:'a-stem',e:'to sit',pos:'verb',cat:'verb',obj:true,
+  {id:'v01',root:'á:tien',stem:'a-stem',e:'to sit',pos:'verb',cat:'verb',obj:true,corpusHits:2,habitualS:true,
    knownSubj:{'2sg':'sá:tien','1sg':'ká:tiens','2du':'seniá:tien','2pl':'sewá:tien'}},
-  {id:'v03',root:'aráhtat',stem:'a-stem',e:'to run',pos:'verb',cat:'verb',obj:true,
+  {id:'v03',root:'aráhtat',stem:'a-stem',e:'to run',pos:'verb',cat:'verb',obj:true,corpusHits:0,habitualS:true,needsReview:true,
    knownSubj:{'2sg':'tesaráhtat','1sg':'tekaráhtats','2du':'teseniaráhtat','2pl':'tesewará:htat'}},
-  {id:'v05',root:'atkáhthon',stem:'a-stem',e:'to listen',pos:'verb',cat:'verb',obj:true,
+  {id:'v05',root:'atkáhthon',stem:'a-stem',e:'to listen',pos:'verb',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'satkáhthons','1sg':'katkáhthons','2du':'seniatkáhthon','2pl':'sewatkáhthon'}},
-  {id:'cv01',root:"kwe'tarón:ko",stem:'c-stem',e:'to cut',pos:'verb',cat:'verb',obj:true,
+  {id:'cv01',root:"kwe'tarón:ko",stem:'c-stem',e:'to cut',pos:'verb',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':"skwe'tarón:ko",'1sg':"kkwe'tarón:kwas"}},
-  {id:'cv04',root:"káhere'",stem:'a-stem',e:'to sweep',pos:'verb',cat:'verb',obj:true,
+  {id:'cv04',root:"káhere'",stem:'a-stem',e:'to sweep',pos:'verb',cat:'verb',obj:true,corpusHits:1,habitualS:false,
    knownSubj:{'2sg':"skáhere'",'2du':'seniáhseron','2pl':'sewáhseron'}},
-  {id:'cv05',root:'kahó:wi',stem:'c-stem',e:'to give',pos:'verb',cat:'verb',obj:true,
+  {id:'cv05',root:'kahó:wi',stem:'c-stem',e:'to give',pos:'verb',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'skahó:wi','1sg':'kkahó:wis'}},
-  {id:'iv03',root:'ahsennón:ni',stem:'i-stem',e:'to make a fire',pos:'verb.i-stem',cat:'verb',obj:false,
+  {id:'iv03',root:'ahsennón:ni',stem:'i-stem',e:'to make a fire',pos:'verb.i-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'sahsennón:ni','1sg':'kahsennón:nis'}},
-  {id:'ev01',root:'é:ta',stem:'e-stem',e:'to put it in',pos:'verb.e-stem',cat:'verb',obj:false,
+  {id:'ev01',root:'é:ta',stem:'e-stem',e:'to put it in',pos:'verb.e-stem',cat:'verb',obj:true,corpusHits:1,habitualS:false,
    knownSubj:{'2sg':'sé:ta','1sg':"ké:ta's"}},
-  {id:'ev03',root:'ahshá:wi',stem:'e-stem',e:'to want something',pos:'verb.e-stem',cat:'verb',obj:false,
+  {id:'ev03',root:'ahshá:wi',stem:'e-stem',e:'to want something',pos:'verb.e-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
+   note:'Cross-validated: s+ahshá:wi=sahshá:wi confirmed by phrases:q14',
    knownSubj:{'2sg':'sahshá:wi','1sg':'kahshá:wis'}},
-  {id:'ev04',root:'anerénhton',stem:'e-stem',e:'to mow the lawn',pos:'verb.e-stem',cat:'verb',obj:false,
+  {id:'ev04',root:'anerénhton',stem:'e-stem',e:'to mow the lawn',pos:'verb.e-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'sanerénhton','1sg':'kanerénhtons'}},
-  {id:'ov01',root:'ohkwá:ren',stem:'o-stem',e:'to be strong',pos:'verb.o-stem',cat:'verb',obj:true,
+  {id:'ov01',root:'ohkwá:ren',stem:'o-stem',e:'to be strong',pos:'verb.o-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'sohkwá:ren','1sg':'kohkwá:rens','3sg.m':'rohkwá:rens'}},
-  {id:'ov02',root:'atonhnhéton',stem:'o-stem',e:'to be cold (body)',pos:'verb.o-stem',cat:'verb',obj:true,
+  {id:'ov02',root:'atonhnhéton',stem:'o-stem',e:'to be cold (body)',pos:'verb.o-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'satonhnhéton','1sg':'katonhnhétons','3sg.n':'otonhnhéton'}},
-  {id:'ov03',root:'aiosé:ren',stem:'o-stem',e:'to be sick',pos:'verb.o-stem',cat:'verb',obj:true,
+  {id:'ov03',root:'aiosé:ren',stem:'o-stem',e:'to be sick',pos:'verb.o-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'saiosé:ren','1sg':'kaiosé:rens','3sg.f':'akoiosé:rens','3sg.m':'roiosé:rens'}},
-  {id:'ov04',root:'atkatho',stem:'o-stem',e:'to look',pos:'verb.o-stem',cat:'verb',obj:true,
+  {id:'ov04',root:'atkatho',stem:'o-stem',e:'to look',pos:'verb.o-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'satkatho','1sg':'katkathos'}},
-  {id:'av01',root:'énha',stem:'a-stem',e:'to put it on',pos:'verb.a-stem',cat:'verb',obj:true,
+  {id:'av01',root:'énha',stem:'a-stem',e:'to put it on',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:1,habitualS:false,
    knownSubj:{'2sg':'sénha'}},
-  {id:'av02',root:'atkahnekárhon',stem:'a-stem',e:'to brush teeth',pos:'verb.a-stem',cat:'verb',obj:true,
+  {id:'av02',root:'atkahnekárhon',stem:'a-stem',e:'to brush teeth',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:0,habitualS:true,needsReview:true,
    knownSubj:{'2sg':'satkahnekárhons','1sg':'katkahnekárhons'}},
-  {id:'av05',root:"átskhwa'",stem:'a-stem',e:'to eat',pos:'verb.a-stem',cat:'verb',obj:true,
-   knownSubj:{'2sg':"sátskhwa'",'2du':"seniatskhwa'",'2pl':"sewátskhwa'"}},
-  {id:'av06',root:"aié:re'",stem:'a-stem',e:'to walk',pos:'verb.a-stem',cat:'verb',obj:true,
-   knownSubj:{'2sg':'saié:res','2du':"seniá:re'",'2pl':"sewá:re'"}},
-  {id:'av07',root:"anón:we'",stem:'a-stem',e:'to sleep',pos:'verb.a-stem',cat:'verb',obj:true,
-   knownSubj:{'2sg':'sanón:wes','2du':"senianón:we'",'2pl':"sewanón:we'"}},
-  {id:'av09',root:'atkatón:ni',stem:'a-stem',e:'to study / to read',pos:'verb.a-stem',cat:'verb',obj:true,
-   knownSubj:{'2sg':'satkatón:nis','1sg':'katkatón:nis'}},
-  {id:'av13',root:'atohsaré:ko',stem:'a-stem',e:'to wipe',pos:'verb.a-stem',cat:'verb',obj:true,
+  {id:'av05',root:"átskhwa'",stem:'a-stem',e:'to eat',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:2,habitualS:false,
+   knownSubj:{'2sg':"sátskhwa'",'2du':"seniatskhwa'"}},
+  {id:'av06',root:"aié:re'",stem:'a-stem',e:'to walk',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
+   note:'Cross-validated: s+aié:re\'=saié:re\' confirmed by glossary:av10 (cough — different root, same prefix)',
+   knownSubj:{'2sg':'saié:res','2du':"seniá:re'"}},
+  {id:'av07',root:"anón:we'",stem:'a-stem',e:'to sleep',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
+   knownSubj:{'2sg':'sanón:wes','2du':"senianón:we'"}},
+  {id:'av09',root:'atkatón:ni',stem:'a-stem',e:'to speak / to study',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:1,habitualS:true,
+   knownSubj:{'2sg':'Satkatón:ni','1sg':'katkatón:nis'}},
+  {id:'av13',root:'atohsaré:ko',stem:'a-stem',e:'to wipe',pos:'verb.a-stem',cat:'verb',obj:true,corpusHits:1,habitualS:false,
    knownSubj:{'2sg':'satohsaré:ko'}},
-  {id:'fe01',root:'ahrón:ni',stem:'e-stem',e:'to make it',pos:'verb.e-stem-fake',cat:'verb',obj:false,
-   knownSubj:{'2sg':'sahrón:ni','1sg':'kahrón:nis','3sg.m':'rahrón:nis'}},
-  {id:'fe02',root:'ahsénhawe',stem:'e-stem',e:'to carry it',pos:'verb.e-stem-fake',cat:'verb',obj:false,
+  {id:'fe01',root:'ahrón:ni',stem:'e-stem',e:'to make it',pos:'verb.e-stem-fake',cat:'verb',obj:true,corpusHits:1,habitualS:true,
+   knownSubj:{'2sg':'sahrón:ni','1sg':'kahrón:nis'}},
+  {id:'fe02',root:'ahsénhawe',stem:'e-stem',e:'to carry it',pos:'verb.e-stem-fake',cat:'verb',obj:true,corpusHits:1,habitualS:true,
    knownSubj:{'2sg':'sahsénhawe','1sg':'kahsénhawes'}},
-  {id:'fe03',root:'ahwistahní:ios',stem:'e-stem',e:'to spend money',pos:'verb.e-stem-fake',cat:'verb',obj:false,
+  {id:'fe03',root:'ahwistahní:ios',stem:'e-stem',e:'to spend money',pos:'verb.e-stem-fake',cat:'verb',obj:true,corpusHits:2,habitualS:true,
+   knownSubj:{'2sg':'sahwistahní:ios','1sg':'kahwistahní:ios'}},
+  {id:'st01',root:'hterón:ni',stem:'o-stem',e:'to be afraid',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:1,habitualS:false,
+   knownSubj:{'1sg':'Wakhterón:ni'}},
+  {id:'st02',root:"na'khwén:'on",stem:'o-stem',e:'to be angry',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:0,habitualS:false,needsReview:true,
+   knownSubj:{'1sg':"Wakena'khwén:'on"}},
+  {id:'st04',root:"'nikonhrí:io",stem:'o-stem',e:'to feel good inside',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:0,habitualS:false,needsReview:true,
+   knownSubj:{'1sg':"Wake'nikonhrí:io"}},
+  {id:'st06',root:'atshennón:ni',stem:'o-stem',e:'to be happy',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:2,habitualS:false,
+   knownSubj:{'1sg':'Wakatshennón:ni','2sg':'Satshennón:ni','3sg.f':'Yakatshennón:ni'}},
+  {id:'st07',root:"'nikonhráksen",stem:'o-stem',e:'to be sad',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:0,habitualS:false,needsReview:true,
+   knownSubj:{'1sg':"Wake'nikonhráksen"}},
+  {id:'st09',root:'rhá:re',stem:'o-stem',e:'to wait',pos:'verb.stative',cat:'emotional state',obj:false,corpusHits:0,habitualS:false,needsReview:true,
+   knownSubj:{'1sg':'Wakerhá:re'}},
+  {id:'fd09',root:'wékon',stem:'a-stem',e:'it is delicious',pos:'verb.stative',cat:'food quality',obj:false,corpusHits:2,habitualS:false,
+   note:'Cross-validated: ak+wékon=akwekon confirmed by phrases:ph06 (my name is...)',
+   knownSubj:{'3sg.n':'yawékon'}},
+  {id:'fd10',root:'ó:ri',stem:'a-stem',e:'it is cooked',pos:'verb.stative',cat:'food quality',obj:false,corpusHits:0,habitualS:false,needsReview:true,
+   knownSubj:{'3sg.n':'yó:ri'}},
+  {id:'fd12',root:"'taríhen",stem:'o-stem',e:'it is hot (food)',pos:'verb.stative',cat:'food quality',obj:false,corpusHits:1,habitualS:false,
+   knownSubj:{'3sg.n':"yo'taríhen"}},
+  // Kinship (possessive paradigm — not verbal prefix system)
+  {id:'k01',root:'ista',stem:'kinship',e:'mother',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,corpusHits:0},
+  {id:'k02',root:"'nisten'ha",stem:'kinship',e:'father',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,corpusHits:0},
+  {id:'k03',root:"'sot",stem:'kinship',e:'grandfather',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,corpusHits:0},
+  {id:'k04',root:'tota',stem:'kinship',e:'grandmother',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,corpusHits:0},
+  {id:'k05',root:"tsí:'a",stem:'kinship',e:'older sister',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,corpusHits:0},
+];
+  {id:'v01',root:'á:tien',stem:'a-stem',e:'to sit',pos:'verb',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'sá:tien','1sg':'ká:tiens','2du':'seniá:tien','2pl':'sewá:tien'}},
+  {id:'v03',root:'aráhtat',stem:'a-stem',e:'to run',pos:'verb',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'tesaráhtat','1sg':'tekaráhtats','2du':'teseniaráhtat','2pl':'tesewará:htat'}},
+  {id:'v05',root:'atkáhthon',stem:'a-stem',e:'to listen',pos:'verb',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'satkáhthons','1sg':'katkáhthons','2du':'seniatkáhthon','2pl':'sewatkáhthon'}},
+  {id:'cv01',root:"kwe'tarón:ko",stem:'c-stem',e:'to cut',pos:'verb',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':"skwe'tarón:ko",'1sg':"kkwe'tarón:kwas"}},
+  {id:'cv04',root:"káhere'",stem:'a-stem',e:'to sweep',pos:'verb',cat:'verb',obj:true,habitualS:false,
+   knownSubj:{'2sg':"skáhere'",'2du':'seniáhseron','2pl':'sewáhseron'}},
+  {id:'cv05',root:'kahó:wi',stem:'c-stem',e:'to give',pos:'verb',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'skahó:wi','1sg':'kkahó:wis'}},
+  {id:'iv03',root:'ahsennón:ni',stem:'i-stem',e:'to make a fire',pos:'verb.i-stem',cat:'verb',obj:false,habitualS:true,
+   knownSubj:{'2sg':'sahsennón:ni','1sg':'kahsennón:nis'}},
+  {id:'ev01',root:'é:ta',stem:'e-stem',e:'to put it in',pos:'verb.e-stem',cat:'verb',obj:false,habitualS:false,
+   knownSubj:{'2sg':'sé:ta','1sg':"ké:ta's"}},
+  {id:'ev03',root:'ahshá:wi',stem:'e-stem',e:'to want something',pos:'verb.e-stem',cat:'verb',obj:false,habitualS:true,
+   knownSubj:{'2sg':'sahshá:wi','1sg':'kahshá:wis'}},
+  {id:'ev04',root:'anerénhton',stem:'e-stem',e:'to mow the lawn',pos:'verb.e-stem',cat:'verb',obj:false,habitualS:true,
+   knownSubj:{'2sg':'sanerénhton','1sg':'kanerénhtons'}},
+  {id:'ov01',root:'ohkwá:ren',stem:'o-stem',e:'to be strong',pos:'verb.o-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'sohkwá:ren','1sg':'kohkwá:rens','3sg.m':'rohkwá:rens'}},
+  {id:'ov02',root:'atonhnhéton',stem:'o-stem',e:'to be cold (body)',pos:'verb.o-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'satonhnhéton','1sg':'katonhnhétons','3sg.n':'otonhnhéton'}},
+  {id:'ov03',root:'aiosé:ren',stem:'o-stem',e:'to be sick',pos:'verb.o-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'saiosé:ren','1sg':'kaiosé:rens','3sg.f':'akoiosé:rens','3sg.m':'roiosé:rens'}},
+  {id:'ov04',root:'atkatho',stem:'o-stem',e:'to look',pos:'verb.o-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'satkatho','1sg':'katkathos'}},
+  {id:'av01',root:'énha',stem:'a-stem',e:'to put it on',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:false,
+   knownSubj:{'2sg':'sénha'}},
+  {id:'av02',root:'atkahnekárhon',stem:'a-stem',e:'to brush teeth',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'satkahnekárhons','1sg':'katkahnekárhons'}},
+  {id:'av05',root:"átskhwa'",stem:'a-stem',e:'to eat',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:false,
+   knownSubj:{'2sg':"sátskhwa'",'2du':"seniatskhwa'"}},
+  {id:'av06',root:"aié:re'",stem:'a-stem',e:'to walk',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'saié:res','2du':"seniá:re'"}},
+  {id:'av07',root:"anón:we'",stem:'a-stem',e:'to sleep',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'sanón:wes','2du':"senianón:we'"}},
+  {id:'av09',root:'atkatón:ni',stem:'a-stem',e:'to speak',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:true,
+   knownSubj:{'2sg':'Satkatón:ni','1sg':'katkatón:nis'}},
+  {id:'av13',root:'atohsaré:ko',stem:'a-stem',e:'to wipe',pos:'verb.a-stem',cat:'verb',obj:true,habitualS:false,
+   knownSubj:{'2sg':'satohsaré:ko'}},
+  {id:'fe01',root:'ahrón:ni',stem:'e-stem',e:'to make it',pos:'verb.e-stem-fake',cat:'verb',obj:false,habitualS:true,
+   knownSubj:{'2sg':'sahrón:ni','1sg':'kahrón:nis'}},
+  {id:'fe02',root:'ahsénhawe',stem:'e-stem',e:'to carry it',pos:'verb.e-stem-fake',cat:'verb',obj:false,habitualS:true,
+   knownSubj:{'2sg':'sahsénhawe','1sg':'kahsénhawes'}},
+  {id:'fe03',root:'ahwistahní:ios',stem:'e-stem',e:'to spend money',pos:'verb.e-stem-fake',cat:'verb',obj:false,habitualS:true,
    knownSubj:{'2sg':'sahwistahní:ios','1sg':'kahwistahní:ios'}},
   // Emotional state statives (o-stem subjective pattern)
-  {id:'st01',root:'hterón:ni',stem:'o-stem',e:'to be afraid',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st01',root:'hterón:ni',stem:'o-stem',e:'to be afraid',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':'Wakhterón:ni'}},
-  {id:'st02',root:"na'khwén:'on",stem:'o-stem',e:'to be angry',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st02',root:"na'khwén:'on",stem:'o-stem',e:'to be angry',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':"Wakena'khwén:'on"}},
-  {id:'st04',root:"'nikonhrí:io",stem:'o-stem',e:'to feel good inside',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st04',root:"'nikonhrí:io",stem:'o-stem',e:'to feel good inside',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':"Wake'nikonhrí:io"}},
-  {id:'st06',root:'atshennón:ni',stem:'o-stem',e:'to be happy',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st06',root:'atshennón:ni',stem:'o-stem',e:'to be happy',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':'Wakatshennón:ni','2sg':'Satshennón:ni','3sg.f':'Yakatshennón:ni'}},
-  {id:'st07',root:"'nikonhráksen",stem:'o-stem',e:'to be sad',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st07',root:"'nikonhráksen",stem:'o-stem',e:'to be sad',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':"Wake'nikonhráksen"}},
-  {id:'st09',root:'rhá:re',stem:'o-stem',e:'to wait',pos:'verb.stative',cat:'emotional state',obj:false,
+  {id:'st09',root:'rhá:re',stem:'o-stem',e:'to wait',pos:'verb.stative',cat:'emotional state',obj:false,habitualS:false,
    knownSubj:{'1sg':'Wakerhá:re'}},
   // Food quality statives
-  {id:'fd09',root:'wékon',stem:'a-stem',e:'it is delicious',pos:'verb.stative',cat:'food quality',obj:false,
+  {id:'fd09',root:'wékon',stem:'a-stem',e:'it is delicious',pos:'verb.stative',cat:'food quality',obj:false,habitualS:false,
    knownSubj:{'3sg.n':'yawékon'}},
-  {id:'fd10',root:'ó:ri',stem:'a-stem',e:'it is cooked',pos:'verb.stative',cat:'food quality',obj:false,
+  {id:'fd10',root:'ó:ri',stem:'a-stem',e:'it is cooked',pos:'verb.stative',cat:'food quality',obj:false,habitualS:false,
    knownSubj:{'3sg.n':'yó:ri'}},
-  {id:'fd12',root:"'taríhen",stem:'o-stem',e:'it is hot (food)',pos:'verb.stative',cat:'food quality',obj:false,
+  {id:'fd12',root:"'taríhen",stem:'o-stem',e:'it is hot (food)',pos:'verb.stative',cat:'food quality',obj:false,habitualS:false,
    knownSubj:{'3sg.n':"yo'taríhen"}},
   // Kinship (possessive — different paradigm, stored as-is)
-  {id:'k01',root:'ista',stem:'kinship',e:'mother',pos:'noun.kinship',cat:'kinship',obj:false,
+  {id:'k01',root:'ista',stem:'kinship',e:'mother',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,
    knownSubj:{}},
-  {id:'k02',root:"'nisten'ha",stem:'kinship',e:'father',pos:'noun.kinship',cat:'kinship',obj:false,
+  {id:'k02',root:"'nisten'ha",stem:'kinship',e:'father',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,
    knownSubj:{}},
-  {id:'k03',root:"'sot",stem:'kinship',e:'grandfather',pos:'noun.kinship',cat:'kinship',obj:false,
+  {id:'k03',root:"'sot",stem:'kinship',e:'grandfather',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,
    knownSubj:{}},
-  {id:'k04',root:'tota',stem:'kinship',e:'grandmother',pos:'noun.kinship',cat:'kinship',obj:false,
+  {id:'k04',root:'tota',stem:'kinship',e:'grandmother',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,
    knownSubj:{}},
-  {id:'k05',root:"tsí:'a",stem:'kinship',e:'older sister',pos:'noun.kinship',cat:'kinship',obj:false,
+  {id:'k05',root:"tsí:'a",stem:'kinship',e:'older sister',pos:'noun.kinship',cat:'kinship',obj:false,habitualS:false,
    knownSubj:{}},
 ];
 
@@ -3666,105 +3622,14 @@ const WB_KINSHIP={
   'k05':[{l:'my older sister',f:"akhtsí:'a",p:'akh-'},{l:'your older sister',f:"sahtsí:'a",p:'sah-'},{l:'his older sister',f:"rohtsí:'a",p:'roh-'},{l:'her older sister',f:"akohtsí:'a",p:'akoh-'}],
 };
 
-/* ── NOUN INCORPORATION ROOTS ──────────────────────────────────────
-   These are the stripped roots used when a noun is incorporated into
-   a verb. The full standalone noun drops its a- prefix class marker.
-   incorporatesInto: which WB_ROOTS verb ids this root commonly pairs with.
-   Source notes follow the pattern of kanienkeha_data.js.
-   ─────────────────────────────────────────────────────────────────── */
-const WB_NI_ROOTS=[
-  {id:'ni01', root:"hta'",    e:'shoe',     fullForm:"áhta'",
-   note:"Full form áhta' — drops a- for incorporation. Source: Kontinónhstats Lesson 7 / Mary McDonald.",
-   incorporatesInto:['av05','av06','av01']},
-  {id:'ni02', root:'kahión:ni', e:'house',  fullForm:'kahión:ni',
-   note:"House/dwelling incorporation root. Used in compounds like rohkahión:ni (he has a house). Verify boundary phonology with speaker.",
-   incorporatesInto:['fe01','cv05']},
-  {id:'ni03', root:'hahséntha', e:'leaf / paper', fullForm:'ahahséntha',
-   note:"Leaf/paper root. In modern use also covers paper and documents. Drops a- for incorporation.",
-   incorporatesInto:['av09','fe01']},
-  {id:'ni04', root:"ni'tskwá:ra", e:'chair', fullForm:"ani'tskwá:ra",
-   note:"Chair — full form ani'tskwá:ra, drops a- for incorporation.",
-   incorporatesInto:['v01']},
-  {id:'ni05', root:'hthén:no',  e:'ball',   fullForm:'ahthén:no',
-   note:"Ball root — full form ahthén:no, drops a- for incorporation.",
-   incorporatesInto:['av05','av06']},
-];
-
-/* ── DESCRIPTOR SUFFIXES ────────────────────────────────────────────
-   Quality/stative suffixes that attach to an incorporated noun root
-   (or directly to a verb root) to form descriptive compounds.
-   These are the most common in Kanien'kéha learner materials.
-   verified=true means the suffix appears in Kontinónhstats or Mithun.
-   ─────────────────────────────────────────────────────────────────── */
-const WB_DESCRIPTORS=[
-  {id:'d01', suffix:"owá:nen", e:'big / large',
-   note:"Very common size descriptor. áhta' + owá:nen → watahkowá:nen (big shoe). Verified: Kontinónhstats Lesson 7.",
-   verified:true, triggersStem:'a-stem'},
-  {id:'d02', suffix:"ráhksen", e:'ugly / bad / unpleasant',
-   note:"Quality suffix expressing bad condition or ugliness. o-stem stative pattern. Verified: Mithun (1999), Deering & Harries-Delisle.",
-   verified:true, triggersStem:'o-stem'},
-  {id:'d03', suffix:"ní:io",   e:'good / nice / fine',
-   note:"Quality suffix for goodness or pleasantness. o-stem stative. Paired with ráhksen as a minimal pair in many lessons. Verified: Kontinónhstats.",
-   verified:true, triggersStem:'o-stem'},
-  {id:'d04', suffix:"ó:nen",   e:'small / little',
-   note:"Diminutive quality suffix. Contrast with owá:nen (big). Verified: Mithun (1999).",
-   verified:true, triggersStem:'a-stem'},
-  {id:'d05', suffix:"tó:roks", e:'long',
-   note:"Length descriptor suffix. Verified: Deering & Harries-Delisle teaching grammar.",
-   verified:true, triggersStem:'a-stem'},
-  {id:'d06', suffix:"ksá:'a",  e:'new / young',
-   note:"Newness/youth suffix — also appears in Raksá:'a (boy, lit. the young/new one). Verify compound phonology with speaker.",
-   verified:false, triggersStem:'a-stem'},
-];
-
-/* ── VERIFIED COMPOUND FORMS ────────────────────────────────────────
-   Known attested compounds: [prefix] + [ni-root] + [descriptor] → word.
-   These are shown as verified examples in the Explore panel when the
-   user selects a root that has them.
-   verbRootId: which WB_ROOTS entry this compound belongs to (for filtering).
-   ─────────────────────────────────────────────────────────────────── */
-const WB_COMPOUNDS=[
-  {id:'cp01',
-   verbRootId: null,
-   niRootId:'ni01', descriptorId:'d01',
-   prefix:'wa-', prefixLabel:'3sg.n (neuter subject)',
-   niRoot:"hta'", verbRoot:null, descriptor:"owá:nen",
-   form:'watahkowá:nen', english:'big shoe',
-   note:"Canonical noun incorporation example from Kontinónhstats Lesson 7. Prefix wa- (neuter 3sg) + hta' (shoe root) + owá:nen (big) → watahkowá:nen.",
-   verified:true},
-  {id:'cp02',
-   verbRootId: null,
-   niRootId:'ni01', descriptorId:'d04',
-   prefix:'wa-', prefixLabel:'3sg.n (neuter subject)',
-   niRoot:"hta'", verbRoot:null, descriptor:"ó:nen",
-   form:"watahkó:nen", english:'small shoe',
-   note:"Parallel to watahkowá:nen (big shoe) — same incorporation pattern with diminutive ó:nen. Verify with speaker.",
-   verified:false},
-  {id:'cp03',
-   verbRootId: null,
-   niRootId:'ni02', descriptorId:'d03',
-   prefix:'ro-', prefixLabel:'3sg.m (he, subjective)',
-   niRoot:'kahión:ni', verbRoot:null, descriptor:"ní:io",
-   form:"rokahionní:io", english:'he has a nice house / his house is good',
-   note:"3sg.m prefix ro- + kahión:ni (house root) + ní:io (good/nice) → rokahionní:io. Polysynthetic: subject + object + quality all in one word. Verify boundary phonology.",
-   verified:false},
-  {id:'cp04',
-   verbRootId: null,
-   niRootId:'ni02', descriptorId:'d02',
-   prefix:'ro-', prefixLabel:'3sg.m (he, subjective)',
-   niRoot:'kahión:ni', verbRoot:null, descriptor:"ráhksen",
-   form:"rokahionráhksen", english:'he has an ugly house / his house is bad',
-   note:"The example from your original brief. ro- (he) + kahión:ni (house) + ráhksen (ugly/bad). Demonstrates polysynthesis: 'he has an ugly house' as one word. Verify with speaker.",
-   verified:false},
-];
-
 /* ── WORD BUILDER STATE ── */
 /* ── WORD BUILDER STATE ── */
-let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,niRootId:null,descriptorId:null};
+let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null};
 
 function wbInit(){
   if(!WB.initialized){
     WB.initialized=true;
+    document.getElementById('wb-stat-total').textContent=WB_ROOTS.length;
     wbRenderRoots();
     wbRenderPrefixGrid();
   }
@@ -3781,17 +3646,12 @@ function wbSetMode(m,btn){
 }
 
 function wbSetCat(c,btn){
-  WB.cat=c;WB.word=null;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;
+  WB.cat=c;WB.word=null;WB.formIdx=null;
   document.querySelectorAll('#wb-explore .wb-pill').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   wbRenderRoots();
   wbClearBuilder();
-  wbLockStep('wb-step-person');
-  wbLockStep('wb-step-ni');
-  wbLockStep('wb-step-desc');
-  document.getElementById('wb-form-list').innerHTML='<div class="wb-step-hint">← Choose a verb root first</div>';
-  document.getElementById('wb-ni-grid').innerHTML='<div class="wb-step-hint">← Choose a person form first</div>';
-  document.getElementById('wb-desc-grid').innerHTML='<div class="wb-step-hint">← Choose a person form first</div>';
+  document.getElementById('wb-form-list').innerHTML='<div style="font-size:.88rem;color:var(--ew);font-style:italic;padding:.5rem 0;">← Select a root word to see its forms</div>';
 }
 
 function wbFiltered(){
@@ -3812,66 +3672,62 @@ function wbRenderRoots(){
     <div class="wb-chip${WB.word&&WB.word.id===w.id?' wb-sel':''}" onclick="wbSelectWord('${w.id}')">
       <div class="wbc-r">${w.root}</div>
       <div class="wbc-e">${w.e}</div>
-      <div class="wbc-pos">${w.pos}</div>
+      <div style="display:flex;gap:4px;align-items:center;margin-top:2px;">
+        <div class="wbc-pos">${w.pos}</div>
+        ${w.needsReview?'<span style="font-size:.62rem;color:#7A3800;background:rgba(196,120,74,.15);border-radius:3px;padding:0 4px;">⚑ review</span>':w.corpusHits>0?`<span style="font-size:.62rem;color:#2A5020;background:#EAF3DE;border-radius:3px;padding:0 4px;">✓ ${w.corpusHits}</span>`:''}
+      </div>
     </div>`).join('');
 }
 
 function wbSelectWord(id){
   WB.word=WB_ROOTS.find(w=>w.id===id);
   WB.formIdx=null;
-  WB.niRootId=null;
-  WB.descriptorId=null;
-  WB.series='subj';
   wbRenderRoots();
-  wbUnlockStep('wb-step-person');
-  wbRenderPersonStep();
-  wbLockStep('wb-step-ni');
-  wbLockStep('wb-step-desc');
+  wbRenderFormPanel();
   wbClearBuilder();
 }
 
-/* ── step lock/unlock ── */
-function wbLockStep(id){
-  const el=document.getElementById(id);
-  if(el){el.classList.remove('wb-step-unlocked');el.classList.add('wb-step-locked');}
-}
-function wbUnlockStep(id){
-  const el=document.getElementById(id);
-  if(el){el.classList.add('wb-step-unlocked');el.classList.remove('wb-step-locked');}
-}
-
-/* ── Step 2: person / series picker ── */
-function wbRenderPersonStep(){
+function wbRenderFormPanel(){
+  if(!WB.word)return;
   const w=WB.word;
-  if(!w)return;
   const list=document.getElementById('wb-form-list');
-  const bar=document.getElementById('wb-series-bar');
-  if(!list||!bar)return;
+  if(!list)return;
 
   if(w.stem==='kinship'){
-    bar.innerHTML='';
+    // Kinship: show possessive forms
     const kforms=WB_KINSHIP[w.id]||[];
-    list.innerHTML=kforms.map((f,i)=>`
-      <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}" onclick="wbPickKinship(${i})">
+    list.innerHTML=`<div style="margin-bottom:.55rem;"><div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${w.root}</div><div style="font-size:.82rem;color:var(--ew);font-style:italic;">${w.e} · possessive forms</div></div>`+
+    kforms.map((f,i)=>`
+      <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}" onclick="wbSelectKinshipForm(${i})">
         <div><div class="wbf-word">${f.f}</div><div class="wbf-lbl">${f.l}</div></div>
         <div class="wb-form-tags"><span class="wb-tag wb-tp">${f.p}</span></div>
       </div>`).join('');
-    list._kforms=kforms;
     return;
   }
 
+  // Verb: show series toggle + generated paradigm
   const hasObj=w.obj&&WB_OBJ[w.stem];
-  const hasModal=(w.stem==='a-stem'||w.stem==='c-stem'||w.stem==='i-stem'||w.stem==='e-stem'||w.stem==='o-stem');
-  bar.innerHTML=
-    `<button class="wb-pill${WB.series==='subj'?' active':''}" onclick="wbSetSeries('subj',this)">Subjective</button>`+
-    (hasObj?`<button class="wb-pill${WB.series==='obj'?' active':''}" onclick="wbSetSeries('obj',this)">Objective</button>`:'')+
-    (hasModal?`<button class="wb-pill${WB.series==='aorist'?' active':''}" onclick="wbSetSeries('aorist',this)">Aorist</button>`:'')+
-    (hasModal?`<button class="wb-pill${WB.series==='future'?' active':''}" onclick="wbSetSeries('future',this)">Future</button>`:'')+
-    (hasModal?`<button class="wb-pill${WB.series==='nondef'?' active':''}" onclick="wbSetSeries('nondef',this)">Non-definite</button>`:'');
+  const hasModal=(w.stem==='a-stem'||w.stem==='c-stem')&&w.cat!=='kinship';
+  const stativeNote=w.pos==='verb.stative'?`<div style="background:rgba(46,106,142,.09);border:1px solid rgba(46,106,142,.3);border-radius:8px;padding:.5rem .85rem;font-size:.8rem;color:#1A4060;margin-bottom:.65rem;line-height:1.6;"><strong style="display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--sky);margin-bottom:.2rem;">Stative verb — patient-subject prefix</strong>Stative verbs describe a state rather than an action. Their subject is treated as a <em>patient</em> (one who experiences, not one who acts), so they take the <strong>Wak- / Yak- / Ak-</strong> prefix family — the same series as objective verbs — even when the grammatical subject is performing no action. This is normal in Kanien'kéha: the "Subjective" tab label reflects verb slot, not prefix series. Mithun (1999) classifies these as Class II statives.</div>`:'';
+
+  const reviewBadge=w.needsReview?`<div style="background:rgba(196,120,74,.13);border:1px solid rgba(196,120,74,.4);border-radius:8px;padding:.38rem .75rem;font-size:.78rem;color:#7A3800;margin-bottom:.65rem;line-height:1.5;">⚑ Root needs linguistic review — no corpus decomposition found. All generated forms are unverified.</div>`:'';
+  const corpusBadge=w.corpusHits>0?`<span style="font-size:.72rem;background:#EAF3DE;color:#2A5020;border-radius:4px;padding:1px 7px;margin-left:6px;">${w.corpusHits} corpus hit${w.corpusHits>1?'s':''}</span>`:`<span style="font-size:.72rem;background:rgba(196,120,74,.13);color:#7A3800;border-radius:4px;padding:1px 7px;margin-left:6px;">needs review</span>`;
+  const seriesBar=`${reviewBadge}${stativeNote}<div style="display:flex;gap:.3rem;margin-bottom:.65rem;flex-wrap:wrap;">
+    <button class="wb-pill${WB.series==='subj'?' active':''}" onclick="wbSetSeries('subj',this)">Subjective</button>
+    ${hasObj?`<button class="wb-pill${WB.series==='obj'?' active':''}" onclick="wbSetSeries('obj',this)">Objective</button>`:''}
+    ${hasModal?`<button class="wb-pill${WB.series==='aorist'?' active':''}" onclick="wbSetSeries('aorist',this)">Aorist</button>`:''}
+    ${hasModal?`<button class="wb-pill${WB.series==='future'?' active':''}" onclick="wbSetSeries('future',this)">Future</button>`:''}
+    ${hasModal?`<button class="wb-pill${WB.series==='nondef'?' active':''}" onclick="wbSetSeries('nondef',this)">Non-definite</button>`:''}
+  </div>`;
 
   const forms=wbGenerateForms(w.root,w.stem,WB.series,WB.series==='subj'?w.knownSubj:w.knownObj||{});
-  list.innerHTML=forms.map((f,i)=>`
-    <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}" onclick="wbPickForm(${i})">
+
+  list.innerHTML=`<div style="margin-bottom:.55rem;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);">${w.root}</div>
+    <div style="font-size:.82rem;color:var(--ew);font-style:italic;">${w.e} · ${w.pos}</div>
+  </div>${seriesBar}`+
+  forms.map((f,i)=>`
+    <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}" onclick="wbSelectGenForm(${i})">
       <div>
         <div class="wbf-word">${f.flagged?'*':''}${f.form}</div>
         <div class="wbf-lbl">${f.label}</div>
@@ -3881,200 +3737,106 @@ function wbRenderPersonStep(){
         ${f.flagged?'<span class="wb-tag wb-tph" title="generated — verify">*</span>':''}
       </div>
     </div>`).join('');
+
+  // Store generated forms for selection
   list._forms=forms;
 }
 
 function wbSetSeries(s,btn){
-  WB.series=s;WB.formIdx=null;WB.niRootId=null;WB.descriptorId=null;
-  document.querySelectorAll('#wb-series-bar .wb-pill').forEach(b=>b.classList.remove('active'));
+  WB.series=s;WB.formIdx=null;
+  document.querySelectorAll('#wb-form-list .wb-pill').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  wbRenderPersonStep();
-  wbLockStep('wb-step-ni');
-  wbLockStep('wb-step-desc');
+  wbRenderFormPanel();
   wbClearBuilder();
 }
 
-function wbPickForm(i){
-  WB.formIdx=i;WB.niRootId=null;WB.descriptorId=null;
-  document.querySelectorAll('#wb-form-list .wb-form-chip').forEach((el,j)=>el.classList.toggle('wb-sel',j===i));
-  const list=document.getElementById('wb-form-list');
-  const f=(list._forms||[])[i];
-  if(!f)return;
-  wbUnlockStep('wb-step-ni');
-  wbUnlockStep('wb-step-desc');
-  wbRenderNIStep();
-  wbRenderDescStep();
-  wbUpdateAssembly();
-}
-
-function wbPickKinship(i){
+function wbSelectGenForm(i){
   WB.formIdx=i;
-  document.querySelectorAll('#wb-form-list .wb-form-chip').forEach((el,j)=>el.classList.toggle('wb-sel',j===i));
   const list=document.getElementById('wb-form-list');
-  const f=(list._kforms||[])[i];
-  if(!f)return;
-  wbLockStep('wb-step-ni');
-  wbLockStep('wb-step-desc');
-  wbRenderKinshipAssembly(f);
-}
-
-/* ── Step 3: noun incorporation picker ── */
-function wbRenderNIStep(){
-  const grid=document.getElementById('wb-ni-grid');
-  if(!grid)return;
-  const noneChip=`<div class="wb-chip wb-chip-none${WB.niRootId===null?' wb-chip-sel':''}" onclick="wbPickNI(null)" style="min-width:100px;">
-    <div class="wbc-r" style="font-size:.82rem;">none</div>
-    <div class="wbc-e">simple verb</div>
-  </div>`;
-  grid.innerHTML=noneChip+WB_NI_ROOTS.map(ni=>`
-    <div class="wb-chip wb-chip-ni${WB.niRootId===ni.id?' wb-chip-sel':''}" onclick="wbPickNI('${ni.id}')">
-      <div class="wbc-r" style="color:#5A1A80;">${ni.root}</div>
-      <div class="wbc-e">${ni.e}</div>
-      <div class="wbc-pos" style="font-size:.68rem;color:var(--ew);">${ni.fullForm}</div>
-    </div>`).join('');
-}
-
-function wbPickNI(id){
-  WB.niRootId=id;
-  wbRenderNIStep();
-  wbUpdateAssembly();
-}
-
-/* ── Step 4: descriptor picker ── */
-function wbRenderDescStep(){
-  const grid=document.getElementById('wb-desc-grid');
-  if(!grid)return;
-  const noneChip=`<div class="wb-chip wb-chip-none${WB.descriptorId===null?' wb-chip-sel':''}" onclick="wbPickDesc(null)" style="min-width:100px;">
-    <div class="wbc-r" style="font-size:.82rem;">none</div>
-    <div class="wbc-e">no quality suffix</div>
-  </div>`;
-  grid.innerHTML=noneChip+WB_DESCRIPTORS.map(d=>`
-    <div class="wb-chip wb-chip-desc${WB.descriptorId===d.id?' wb-chip-sel':''}" onclick="wbPickDesc('${d.id}')">
-      <div class="wbc-r" style="color:#704010;">${d.suffix}</div>
-      <div class="wbc-e">${d.e}</div>
-      <div class="wbc-pos" style="font-size:.68rem;color:var(--ew);">${d.verified?'verified':'*generated'}</div>
-    </div>`).join('');
-}
-
-function wbPickDesc(id){
-  WB.descriptorId=id;
-  wbRenderDescStep();
-  wbUpdateAssembly();
-}
-
-/* ── Live assembly — called after any picker selection ── */
-function wbGetSuffix(form,root,prefix){
-  /* Detect habitual -s suffix: the assembled form ends in -s and the
-     generated prefix+root does NOT end in s. Glottal/stative forms are bare (∅). */
-  const assembled=(prefix+root).replace(/[áéíóú:]/g,c=>c).toLowerCase();
-  const fLow=form.replace(/[áéíóú:]/g,c=>c).toLowerCase();
-  if(fLow.endsWith('s')&&!assembled.endsWith('s'))return{val:'-s',sub:'habitual aspect'};
-  return{val:'∅',sub:'bare stem (command/stative)'};
-}
-
-function wbUpdateAssembly(){
+  if(list)list.querySelectorAll('.wb-form-chip').forEach((el,j)=>el.classList.toggle('wb-sel',j===i));
+  const forms=list&&list._forms;
+  if(!forms)return;
+  const f=forms[i];
   const w=WB.word;
-  if(!w)return;
+  wbRenderBuilderFromGenForm(f,w);
+}
+
+function wbSelectKinshipForm(i){
+  WB.formIdx=i;
   const list=document.getElementById('wb-form-list');
-  const f=WB.formIdx!=null?(list._forms||[])[WB.formIdx]:null;
+  if(list)list.querySelectorAll('.wb-form-chip').forEach((el,j)=>el.classList.toggle('wb-sel',j===i));
+  const w=WB.word;
+  const f=(WB_KINSHIP[w.id]||[])[i];
   if(!f)return;
-
-  const ni=WB.niRootId?WB_NI_ROOTS.find(n=>n.id===WB.niRootId):null;
-  const d=WB.descriptorId?WB_DESCRIPTORS.find(x=>x.id===WB.descriptorId):null;
-
-  const sfx=wbGetSuffix(f.form,f.root,f.prefix);
-  const assembled=f.prefix+(ni?ni.root:'')+f.root+(d?d.suffix:'')+(sfx.val!=='∅'?sfx.val.replace(/^-/,''):'');
-  const isGenerated=f.flagged||!!ni||!!d;
-  const englishParts=[f.label,(ni?ni.e:''),w.e,(d?d.e:'')].filter(Boolean).join(' · ');
-
+  // Render builder for kinship
   const slP=document.getElementById('wbs-p');
   slP.classList.add('filled');
-  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.prefix}</div><div class="wb-slot-sub">${f.label}</div>`;
-
-  const slNI=document.getElementById('wbs-ni');
-  const eqNI=document.getElementById('wbs-eq-ni');
-  if(ni){
-    slNI.style.display='';slNI.className='wb-slot wb-slot-opt filled';eqNI.style.display='';
-    slNI.innerHTML=`<div class="wb-slot-lbl">Noun root</div><div class="wb-slot-val" style="color:#5A1A80;">${ni.root}</div><div class="wb-slot-sub">${ni.e}</div>`;
-  }else{
-    slNI.style.display='none';eqNI.style.display='none';
-  }
-
+  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.p}</div><div class="wb-slot-sub">possessor</div>`;
   const slR=document.getElementById('wbs-r');
   slR.classList.add('filled');
-  slR.innerHTML=`<div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:#1A4060;">${f.root}</div><div class="wb-slot-sub">${w.e}</div>`;
-
-  const slD=document.getElementById('wbs-d');
-  const eqD=document.getElementById('wbs-eq-d');
-  if(d){
-    slD.style.display='';slD.className='wb-slot wb-slot-desc-opt filled';eqD.style.display='';
-    slD.innerHTML=`<div class="wb-slot-lbl">Descriptor</div><div class="wb-slot-val" style="color:#704010;">${d.suffix}</div><div class="wb-slot-sub">${d.e}</div>`;
-  }else{
-    slD.style.display='none';eqD.style.display='none';
-  }
-
+  slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${w.root}</div><div class="wb-slot-sub">${w.e}</div>`;
   const slS=document.getElementById('wbs-s');
   slS.classList.add('filled');
-  slS.innerHTML=`<div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">${sfx.val}</div><div class="wb-slot-sub">${sfx.sub}</div>`;
-
+  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">∅</div><div class="wb-slot-sub">bare stem</div>`;
   const slRes=document.getElementById('wbs-result');
   slRes.classList.add('filled');
-  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${isGenerated?'*':''}${assembled}</div><div class="wb-slot-sub">${englishParts}</div>`;
-
+  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.f}</div><div class="wb-slot-sub">${f.l}</div>`;
   const rz=document.getElementById('wb-result-zone');
   rz.style.display='block';
   document.getElementById('wb-decomp').innerHTML=
-    `<span class="wb-tag wb-tp">${f.prefix}</span>`+
-    (ni?` + <span class="wb-tag wb-tni">${ni.root}</span>`:'')+
-    ` + <span class="wb-tag wb-tr">${f.root}</span>`+
-    (d?` + <span class="wb-tag wb-td">${d.suffix}</span>`:'')+
-    (sfx.val!=='∅'?` + <span class="wb-tag wb-ts">${sfx.val}</span>`:'')+
-    ` <span style="color:var(--ew);">→</span>`+
-    ` <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${isGenerated?'*':''}${assembled}</strong>`+
-    ` <span style="color:var(--ew);font-style:italic;font-size:.8rem;">${englishParts}${f.verified&&!ni&&!d?' · verified':' · *generated'}</span>`;
-
-  const phn=document.getElementById('wb-ph-note');
-  if(isGenerated){
-    phn.style.display='block';
-    phn.textContent=ni||d
-      ?'* Compound assembled from attested roots — the specific combined form has not been verified against a speaker. Use as a learning example.'
-      :'* Generated by prefix rule — not yet verified against a speaker or reference.';
-  }else{phn.style.display='none';}
+    `<span class="wb-tag wb-tp">${f.p}</span> +
+     <span class="wb-tag wb-tr">${w.root}</span>
+     <span style="color:var(--ew);">→</span>
+     <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.f}</strong>
+     <span style="color:var(--ew);font-style:italic;font-size:.8rem;">(${f.l})</span>`;
+  document.getElementById('wb-ph-note').style.display='none';
 }
 
-function wbRenderKinshipAssembly(f){
-  const w=WB.word;
-  ['wbs-ni','wbs-d','wbs-eq-ni','wbs-eq-d'].forEach(id=>{const el=document.getElementById(id);if(el){el.style.display='none';el.classList.remove('filled');}});
-  const slP=document.getElementById('wbs-p');slP.classList.add('filled');
-  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.p}</div><div class="wb-slot-sub">possessor</div>`;
-  const slR=document.getElementById('wbs-r');slR.classList.add('filled');
-  slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${w.root}</div><div class="wb-slot-sub">${w.e}</div>`;
-  const slS=document.getElementById('wbs-s');slS.classList.add('filled');
-  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">∅</div><div class="wb-slot-sub">bare nominal stem</div>`;
-  const slRes=document.getElementById('wbs-result');slRes.classList.add('filled');
-  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.f}</div><div class="wb-slot-sub">${f.l}</div>`;
-  document.getElementById('wb-result-zone').style.display='block';
+function wbRenderBuilderFromGenForm(f,w){
+  if(!f||!w)return;
+  const slP=document.getElementById('wbs-p');
+  slP.classList.add('filled');
+  slP.innerHTML=`<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:#7A3800;">${f.prefix}</div><div class="wb-slot-sub">${f.label}</div>`;
+  const slR=document.getElementById('wbs-r');
+  slR.classList.add('filled');
+  slR.innerHTML=`<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:#1A4060;">${f.root}</div><div class="wb-slot-sub">${w.e}</div>`;
+  /* Suffix: use the root's habitualS flag (data-driven) rather than phonological inference.
+     Stative verbs and glottal-final roots are bare stem (∅); habitual verbs take -s. */
+  const sfxVal=w.habitualS?'-s':'∅';
+  const sfxSub=w.habitualS?'habitual aspect':(w.pos==='verb.stative'?'stative — no habitual form':'bare stem');
+  const slS=document.getElementById('wbs-s');
+  slS.classList.add('filled');
+  slS.innerHTML=`<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">${sfxVal}</div><div class="wb-slot-sub">${sfxSub}</div>`;
+  const slRes=document.getElementById('wbs-result');
+  slRes.classList.add('filled');
+  slRes.innerHTML=`<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val">${f.flagged?'*':''}${f.form}</div><div class="wb-slot-sub">${f.label}</div>`;
+  const rz=document.getElementById('wb-result-zone');
+  rz.style.display='block';
   document.getElementById('wb-decomp').innerHTML=
-    `<span class="wb-tag wb-tp">${f.p}</span> + <span class="wb-tag wb-tr">${w.root}</span>`+
-    ` <span style="color:var(--ew);">→</span> <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.f}</strong>`+
-    ` <span style="color:var(--ew);font-style:italic;font-size:.8rem;">${f.l} — verified</span>`;
-  document.getElementById('wb-ph-note').style.display='none';
+    `<span class="wb-tag wb-tp">${f.prefix}-</span> +
+     <span class="wb-tag wb-tr">${f.root}</span>
+     ${w.habitualS?' + <span class="wb-tag wb-ts">-s</span>':''}
+     <span style="color:var(--ew);">→</span>
+     <strong style="font-family:'Playfair Display',serif;font-size:.94rem;color:var(--ed);">${f.flagged?'*':''}${f.form}</strong>
+     <span style="color:var(--ew);font-style:italic;font-size:.8rem;">(${f.label}${f.verified?' — verified':' — *generated'})</span>`;
+  const phn=document.getElementById('wb-ph-note');
+  if(f.flagged){
+    phn.style.display='block';
+    phn.textContent='* Generated by prefix rule — not yet verified against a speaker or reference. Compare with glossary/phrase entries.';
+  }else{phn.style.display='none';}
 }
 
 function wbClearBuilder(){
   ['wbs-p','wbs-r','wbs-s','wbs-result'].forEach(id=>{
-    const el=document.getElementById(id);if(!el)return;el.classList.remove('filled');
+    const el=document.getElementById(id);if(!el)return;
+    el.classList.remove('filled');
   });
-  document.getElementById('wbs-p').innerHTML='<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · series</div>';
-  document.getElementById('wbs-r').innerHTML='<div class="wb-slot-lbl">Verb root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core action</div>';
-  document.getElementById('wbs-s').innerHTML='<div class="wb-slot-lbl">Aspect</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div>';
+  document.getElementById('wbs-p').innerHTML='<div class="wb-slot-lbl">Prefix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">person · aspect</div>';
+  document.getElementById('wbs-r').innerHTML='<div class="wb-slot-lbl">Root</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">core meaning</div>';
+  document.getElementById('wbs-s').innerHTML='<div class="wb-slot-lbl">Suffix</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">aspect · mood</div>';
   document.getElementById('wbs-result').innerHTML='<div class="wb-slot-lbl">Full form</div><div class="wb-slot-val" style="color:var(--smoke);">—</div><div class="wb-slot-sub">assembled word</div>';
-  ['wbs-ni','wbs-d','wbs-eq-ni','wbs-eq-d'].forEach(id=>{
-    const el=document.getElementById(id);if(el){el.style.display='none';el.classList.remove('filled');}
-  });
   const rz=document.getElementById('wb-result-zone');if(rz)rz.style.display='none';
 }
-
 
 /* ── ACTIVITY ── */
 function wbSetActType(t,btn){
@@ -4089,12 +3851,7 @@ function wbGetAllForms(){
   const all=[];
   WB_ROOTS.forEach(w=>{
     if(w.stem==='kinship'){
-      (WB_KINSHIP[w.id]||[]).forEach(f=>all.push({
-        w,form:f.f,label:f.l,
-        // strip trailing dash for consistency with verbal prefixes in activity pool
-        prefix:f.p.replace(/-$/,''),
-        verified:true,flagged:false,root:w.root
-      }));
+      (WB_KINSHIP[w.id]||[]).forEach(f=>all.push({w,form:f.f,label:f.l,prefix:f.p,verified:true,flagged:false,root:w.root}));
     } else {
       const forms=wbGenerateForms(w.root,w.stem,'subj',w.knownSubj);
       forms.forEach(f=>all.push({w,...f}));
@@ -4112,7 +3869,6 @@ function wbGenQuestion(){
   if(all.length<4){panel.innerHTML='<div style="color:var(--ew);font-style:italic;font-size:.88rem;">Not enough verified forms for activity yet.</div>';return;}
   const item=all[Math.floor(Math.random()*all.length)];
   const w=item.w;
-  const mkBtn=(c,correct)=>`<button class="wb-choice" data-val="${c.replace(/"/g,'&quot;')}" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`;
 
   let html='';
   if(WB.actType==='prefix'){
@@ -4123,7 +3879,7 @@ function wbGenQuestion(){
       <div class="wb-act-sub">Identify the person/aspect prefix · ${w.stem}</div>
       <div class="wb-act-target">${item.form}</div>
       <div class="wb-act-en">${w.e} · <em>${item.label}</em></div>
-      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   } else if(WB.actType==='form'){
@@ -4137,7 +3893,7 @@ function wbGenQuestion(){
         <span class="wb-tag wb-tr">${w.root}</span>
         <span style="color:var(--ew);">= ?</span>
       </div>
-      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   } else {
@@ -4150,7 +3906,7 @@ function wbGenQuestion(){
       <div style="display:flex;gap:.4rem;align-items:center;margin-bottom:1rem;">
         <span class="wb-tag wb-tp">${item.prefix}-</span> + <span class="wb-tag wb-tr">${w.root}</span>
       </div>
-      <div class="wb-choices">${choices.map(c=>mkBtn(c,correct)).join('')}</div>
+      <div class="wb-choices">${choices.map(c=>`<button class="wb-choice" onclick="wbCheck(this,${JSON.stringify(c)},${JSON.stringify(correct)})">${c}</button>`).join('')}</div>
       <div id="wb-fb" class="wb-fb"></div>
       <button class="wb-next-btn" id="wb-next" onclick="wbGenQuestion()" style="display:none;">Next question →</button>`;
   }
@@ -4166,7 +3922,7 @@ function wbCheck(btn,chosen,correct){
   document.getElementById('wb-attempts').textContent=WB.attempts;
   document.querySelectorAll('.wb-choice').forEach(b=>{
     b.disabled=true;
-    if(b.dataset.val===correct)b.classList.add('wb-cor');
+    if(b.textContent.trim()===correct)b.classList.add('wb-cor');
     else if(b===btn&&!ok)b.classList.add('wb-wrg');
   });
   const fb=document.getElementById('wb-fb');
@@ -4176,338 +3932,69 @@ function wbCheck(btn,chosen,correct){
 }
 
 /* ── PREFIX BROWSER ── */
-/* Organised to mirror the PDF paradigm tables:
-   one card per person/number slot, grouped by series → stem class.
-   'persons' lists all slots in that card so clicking filters correctly. */
 const WB_PFCAT=[
-  // ── SUBJECTIVE SERIES ──────────────────────────────────────────
-  {section:'Subjective series', series:'subj', stem:'a-stem',
-   rows:[
-     {pfx:'ka',   person:'1sg',   label:'I (singular)'},
-     {pfx:'sa',   person:'2sg',   label:'you (singular)'},
-     {pfx:'ra',   person:'3sg.m', label:'he'},
-     {pfx:'yon',  person:'3sg.f', label:'she'},
-     {pfx:'wa',   person:'3sg.n', label:'it'},
-     {pfx:'tya',  person:'12du',  label:'you & I'},
-     {pfx:'yakya',person:'13du',  label:'he/she & I'},
-     {pfx:'tsya', person:'2du',   label:'you two'},
-     {pfx:'ya',   person:'3du.m', label:'they two (m)'},
-     {pfx:'kya',  person:'3du.f', label:'they two (f)'},
-     {pfx:'tewa', person:'12pl',  label:'you all & I'},
-     {pfx:'yakwa',person:'13pl',  label:'they all & I'},
-     {pfx:'sewa', person:'2pl',   label:'you all'},
-     {pfx:'ron',  person:'3pl.m', label:'they (m)'},
-     {pfx:'kon',  person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Subjective series', series:'subj', stem:'c-stem',
-   rows:[
-     {pfx:'k',    person:'1sg',   label:'I (singular)'},
-     {pfx:'s',    person:'2sg',   label:'you (singular)'},
-     {pfx:'ra',   person:'3sg.m', label:'he'},
-     {pfx:'ye',   person:'3sg.f', label:'she'},
-     {pfx:'ka',   person:'3sg.n', label:'it'},
-     {pfx:'teni', person:'12du',  label:'you & I'},
-     {pfx:'yakeni',person:'13du', label:'he/she & I'},
-     {pfx:'seni', person:'2du',   label:'you two'},
-     {pfx:'ni',   person:'3du.m', label:'they two (m)'},
-     {pfx:'keni', person:'3du.f', label:'they two (f)'},
-     {pfx:'tewa', person:'12pl',  label:'you all & I'},
-     {pfx:'yakwa',person:'13pl',  label:'they all & I'},
-     {pfx:'sewa', person:'2pl',   label:'you all'},
-     {pfx:'rati', person:'3pl.m', label:'they (m)'},
-     {pfx:'konti',person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Subjective series', series:'subj', stem:'i-stem',
-   rows:[
-     {pfx:'ki',   person:'1sg',   label:'I'},
-     {pfx:'si',   person:'2sg',   label:'you'},
-     {pfx:'ren',  person:'3sg.m', label:'he'},
-     {pfx:'ye',   person:'3sg.f', label:'she'},
-     {pfx:'ken',  person:'3sg.n', label:'it'},
-     {pfx:'teni', person:'12du',  label:'you & I'},
-     {pfx:'yakeni',person:'13du', label:'he/she & I'},
-     {pfx:'seni', person:'2du',   label:'you two'},
-     {pfx:'ni',   person:'3du.m', label:'they two (m)'},
-     {pfx:'keni', person:'3du.f', label:'they two (f)'},
-     {pfx:'tewen',person:'12pl',  label:'you all & I'},
-     {pfx:'yakwen',person:'13pl', label:'they all & I'},
-     {pfx:'sewen',person:'2pl',   label:'you all'},
-     {pfx:'rati', person:'3pl.m', label:'they (m)'},
-     {pfx:'konti',person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Subjective series', series:'subj', stem:'e-stem',
-   rows:[
-     {pfx:'ken',  person:'1sg',   label:'I'},
-     {pfx:'sen',  person:'2sg',   label:'you'},
-     {pfx:'ren',  person:'3sg.m', label:'he'},
-     {pfx:'yen',  person:'3sg.f', label:'she'},
-     {pfx:'wen',  person:'3sg.n', label:'it'},
-     {pfx:'tenen',person:'12du',  label:'you & I'},
-     {pfx:'yakenen',person:'13du',label:'he/she & I'},
-     {pfx:'senen',person:'2du',   label:'you two'},
-     {pfx:'nen',  person:'3du.m', label:'they two (m)'},
-     {pfx:'kenen',person:'3du.f', label:'they two (f)'},
-     {pfx:'tewen',person:'12pl',  label:'you all & I'},
-     {pfx:'yakwen',person:'13pl', label:'they all & I'},
-     {pfx:'sewen',person:'2pl',   label:'you all'},
-     {pfx:'ronnen',person:'3pl.m',label:'they (m)'},
-     {pfx:'konnen',person:'3pl.f',label:'they (f)'},
-   ]},
-  {section:'Subjective series', series:'subj', stem:'o-stem',
-   rows:[
-     {pfx:'kon',  person:'1sg',   label:'I'},
-     {pfx:'son',  person:'2sg',   label:'you'},
-     {pfx:'ron',  person:'3sg.m', label:'he'},
-     {pfx:'yakon',person:'3sg.f', label:'she'},
-     {pfx:'yon',  person:'3sg.n', label:'it'},
-     {pfx:'tenon',person:'12du',  label:'you & I'},
-     {pfx:'yakenon',person:'13du',label:'he/she & I'},
-     {pfx:'senon',person:'2du',   label:'you two'},
-     {pfx:'non',  person:'3du.m', label:'they two (m)'},
-     {pfx:'kenon',person:'3du.f', label:'they two (f)'},
-     {pfx:'tyon', person:'12pl',  label:'you all & I'},
-     {pfx:'yakyon',person:'13pl', label:'they all & I'},
-     {pfx:'tsyon',person:'2pl',   label:'you all'},
-     {pfx:'ronnon',person:'3pl.m',label:'they (m)'},
-     {pfx:'konnon',person:'3pl.f',label:'they (f)'},
-   ]},
-  // ── OBJECTIVE SERIES ───────────────────────────────────────────
-  {section:'Objective series', series:'obj', stem:'a-stem',
-   rows:[
-     {pfx:'waka', person:'1sg',   label:'I (patient)'},
-     {pfx:'sa',   person:'2sg',   label:'you'},
-     {pfx:'ro',   person:'3sg.m', label:'he'},
-     {pfx:'yako', person:'3sg.f', label:'she'},
-     {pfx:'yo',   person:'3sg.n', label:'it'},
-     {pfx:'yonkya',person:'12du', label:'you & I'},
-     {pfx:'tsya', person:'2du',   label:'you two'},
-     {pfx:'rona', person:'3du.m', label:'they two (m)'},
-     {pfx:'yona', person:'3du.f', label:'they two (f)'},
-     {pfx:'yonkwa',person:'12pl', label:'you all & I'},
-     {pfx:'sewa', person:'2pl',   label:'you all'},
-     {pfx:'rona', person:'3pl.m', label:'they (m)'},
-     {pfx:'yona', person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Objective series', series:'obj', stem:'c-stem',
-   rows:[
-     {pfx:'wak',  person:'1sg',   label:'I (patient)'},
-     {pfx:'sa',   person:'2sg',   label:'you'},
-     {pfx:'ro',   person:'3sg.m', label:'he'},
-     {pfx:'yako', person:'3sg.f', label:'she'},
-     {pfx:'yo',   person:'3sg.n', label:'it'},
-     {pfx:'yonkeni',person:'12du',label:'you & I'},
-     {pfx:'seni', person:'2du',   label:'you two'},
-     {pfx:'roti', person:'3du.m', label:'they two (m)'},
-     {pfx:'yoti', person:'3du.f', label:'they two (f)'},
-     {pfx:'yonkwa',person:'12pl', label:'you all & I'},
-     {pfx:'sewa', person:'2pl',   label:'you all'},
-     {pfx:'roti', person:'3pl.m', label:'they (m)'},
-     {pfx:'yoti', person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Objective series', series:'obj', stem:'e-stem',
-   rows:[
-     {pfx:'waken', person:'1sg',  label:'I (patient)'},
-     {pfx:'sawen', person:'2sg',  label:'you'},
-     {pfx:'rawen', person:'3sg.m',label:'he'},
-     {pfx:'yakawen',person:'3sg.f',label:'she'},
-     {pfx:'yawen', person:'3sg.n',label:'it'},
-     {pfx:'yonkenen',person:'12du',label:'you & I'},
-     {pfx:'senen', person:'2du',  label:'you two'},
-     {pfx:'ronen', person:'3du.m',label:'they two (m)'},
-     {pfx:'yonen', person:'3du.f',label:'they two (f)'},
-     {pfx:'yonkwen',person:'12pl',label:'you all & I'},
-     {pfx:'sewen', person:'2pl',  label:'you all'},
-     {pfx:'ronen', person:'3pl.m',label:'they (m)'},
-     {pfx:'yonen', person:'3pl.f',label:'they (f)'},
-   ]},
-  {section:'Objective series', series:'obj', stem:'o-stem',
-   rows:[
-     {pfx:'wakon', person:'1sg',  label:'I (patient)'},
-     {pfx:'son',   person:'2sg',  label:'you'},
-     {pfx:'raon',  person:'3sg.m',label:'he'},
-     {pfx:'yakaon',person:'3sg.f',label:'she'},
-     {pfx:'yaon',  person:'3sg.n',label:'it'},
-     {pfx:'yonkenon',person:'12du',label:'you & I'},
-     {pfx:'senon', person:'2du',  label:'you two'},
-     {pfx:'ronon', person:'3du.m',label:'they two (m)'},
-     {pfx:'yonon', person:'3du.f',label:'they two (f)'},
-     {pfx:'yonkyon',person:'12pl',label:'you all & I'},
-     {pfx:'tsyon', person:'2pl',  label:'you all'},
-     {pfx:'ronon', person:'3pl.m',label:'they (m)'},
-     {pfx:'yonon', person:'3pl.f',label:'they (f)'},
-   ]},
-  // ── AORIST ─────────────────────────────────────────────────────
-  {section:'Aorist (completed action)', series:'aorist', stem:'a-stem',
-   rows:[
-     {pfx:"wa'ka", person:'1sg',   label:'I (completed)'},
-     {pfx:'wehsa', person:'2sg',   label:'you'},
-     {pfx:'waha',  person:'3sg.m', label:'he'},
-     {pfx:"wa'on", person:'3sg.f', label:'she'},
-     {pfx:'on',    person:'3sg.n', label:'it'},
-     {pfx:'etya',  person:'12du',  label:'you & I'},
-     {pfx:"wa'akya",person:'13du', label:'he/she & I'},
-     {pfx:'wetsya',person:'2du',   label:'you two'},
-     {pfx:'wahya', person:'3du.m', label:'they two (m)'},
-     {pfx:"wa'kya",person:'3du.f', label:'they two (f)'},
-     {pfx:'wetewa',person:'12pl',  label:'you all & I'},
-     {pfx:"wa'akwa",person:'13pl', label:'they all & I'},
-     {pfx:'wesewa',person:'2pl',   label:'you all'},
-     {pfx:'wahon', person:'3pl.m', label:'they (m)'},
-     {pfx:"wa'kon",person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Aorist (completed action)', series:'aorist', stem:'c-stem',
-   rows:[
-     {pfx:"wa'k",  person:'1sg',   label:'I (completed)'},
-     {pfx:'wahs',  person:'2sg',   label:'you'},
-     {pfx:'waha',  person:'3sg.m', label:'he'},
-     {pfx:"wa'e",  person:'3sg.f', label:'she'},
-     {pfx:"wa'ka", person:'3sg.n', label:'it'},
-     {pfx:'weteni',person:'12du',  label:'you & I'},
-     {pfx:"wa'akeni",person:'13du',label:'he/she & I'},
-     {pfx:'weseni',person:'2du',   label:'you two'},
-     {pfx:'wahni', person:'3du.m', label:'they two (m)'},
-     {pfx:"wa'keni",person:'3du.f',label:'they two (f)'},
-     {pfx:'wetewa',person:'12pl',  label:'you all & I'},
-     {pfx:"wa'akwa",person:'13pl', label:'they all & I'},
-     {pfx:'wesewa',person:'2pl',   label:'you all'},
-     {pfx:'wahati',person:'3pl.m', label:'they (m)'},
-     {pfx:"wa'konti",person:'3pl.f',label:'they (f)'},
-   ]},
-  // ── FUTURE ─────────────────────────────────────────────────────
-  {section:'Future', series:'future', stem:'a-stem',
-   rows:[
-     {pfx:'enka',  person:'1sg',   label:'I (will)'},
-     {pfx:'enhsa', person:'2sg',   label:'you'},
-     {pfx:'enha',  person:'3sg.m', label:'he'},
-     {pfx:'enyon', person:'3sg.f', label:'she'},
-     {pfx:'enwa',  person:'3sg.n', label:'it'},
-     {pfx:'entya', person:'12du',  label:'you & I'},
-     {pfx:'enyakya',person:'13du', label:'he/she & I'},
-     {pfx:'entsya',person:'2du',   label:'you two'},
-     {pfx:'enhya', person:'3du.m', label:'they two (m)'},
-     {pfx:'enkya', person:'3du.f', label:'they two (f)'},
-     {pfx:'entewa',person:'12pl',  label:'you all & I'},
-     {pfx:'enyakwa',person:'13pl', label:'they all & I'},
-     {pfx:'ensewa',person:'2pl',   label:'you all'},
-     {pfx:'enhon', person:'3pl.m', label:'they (m)'},
-     {pfx:'enkon', person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Future', series:'future', stem:'c-stem',
-   rows:[
-     {pfx:'enk',   person:'1sg',   label:'I (will)'},
-     {pfx:'enhs',  person:'2sg',   label:'you'},
-     {pfx:'enha',  person:'3sg.m', label:'he'},
-     {pfx:'enye',  person:'3sg.f', label:'she'},
-     {pfx:'enka',  person:'3sg.n', label:'it'},
-     {pfx:'enteni',person:'12du',  label:'you & I'},
-     {pfx:'enyakeni',person:'13du',label:'he/she & I'},
-     {pfx:'enseni',person:'2du',   label:'you two'},
-     {pfx:'enhni', person:'3du.m', label:'they two (m)'},
-     {pfx:'enkeni',person:'3du.f', label:'they two (f)'},
-     {pfx:'entewa',person:'12pl',  label:'you all & I'},
-     {pfx:'enyakwa',person:'13pl', label:'they all & I'},
-     {pfx:'ensewa',person:'2pl',   label:'you all'},
-     {pfx:'enhati',person:'3pl.m', label:'they (m)'},
-     {pfx:'enkonti',person:'3pl.f',label:'they (f)'},
-   ]},
-  // ── NON-DEFINITE (hypothetical / conditional) ───────────────────
-  {section:'Non-definite (hypothetical)', series:'nondef', stem:'a-stem',
-   rows:[
-     {pfx:'aka',   person:'1sg',   label:'I (would)'},
-     {pfx:'ahsa',  person:'2sg',   label:'you'},
-     {pfx:'aha',   person:'3sg.m', label:'he'},
-     {pfx:'ayon',  person:'3sg.f', label:'she'},
-     {pfx:'aon',   person:'3sg.n', label:'it'},
-     {pfx:'aetya', person:'12du',  label:'you & I'},
-     {pfx:'ayakya',person:'13du',  label:'he/she & I'},
-     {pfx:'aetsya',person:'2du',   label:'you two'},
-     {pfx:'ahya',  person:'3du.m', label:'they two (m)'},
-     {pfx:'akya',  person:'3du.f', label:'they two (f)'},
-     {pfx:'aetewa',person:'12pl',  label:'you all & I'},
-     {pfx:'ayakwa',person:'13pl',  label:'they all & I'},
-     {pfx:'aesewa',person:'2pl',   label:'you all'},
-     {pfx:'ahon',  person:'3pl.m', label:'they (m)'},
-     {pfx:'akon',  person:'3pl.f', label:'they (f)'},
-   ]},
-  {section:'Non-definite (hypothetical)', series:'nondef', stem:'c-stem',
-   rows:[
-     {pfx:'ak',    person:'1sg',   label:'I (would)'},
-     {pfx:'ahs',   person:'2sg',   label:'you'},
-     {pfx:'aha',   person:'3sg.m', label:'he'},
-     {pfx:'aye',   person:'3sg.f', label:'she'},
-     {pfx:'aka',   person:'3sg.n', label:'it'},
-     {pfx:'aeteni',person:'12du',  label:'you & I'},
-     {pfx:'ayakeni',person:'13du', label:'he/she & I'},
-     {pfx:'aeseni',person:'2du',   label:'you two'},
-     {pfx:'ahni',  person:'3du.m', label:'they two (m)'},
-     {pfx:'akeni', person:'3du.f', label:'they two (f)'},
-     {pfx:'aetewa',person:'12pl',  label:'you all & I'},
-     {pfx:'ayakwa',person:'13pl',  label:'they all & I'},
-     {pfx:'aesewa',person:'2pl',   label:'you all'},
-     {pfx:'ahati', person:'3pl.m', label:'they (m)'},
-     {pfx:'akonti',person:'3pl.f', label:'they (f)'},
-   ]},
-];
-
-/* Section headers for rendering */
-const WB_PFSECTIONS=[
-  {key:'subj',   label:'Subjective series',           note:'Subject performs the action'},
-  {key:'obj',    label:'Objective series',             note:'Subject receives / experiences the action'},
-  {key:'aorist', label:'Aorist (completed action)',    note:"wa' / wa / wah / we / on — varies by person"},
-  {key:'future', label:'Future',                       note:'en / enh — varies by person'},
-  {key:'nondef', label:'Non-definite (hypothetical)',  note:'a / ah / ae / aon — varies by person'},
+  // Subjective
+  {form:'ka / sa / ra',meaning:'a-stem: I / you / he — subjective',series:'subj',stem:'a-stem'},
+  {form:'yon / wa / ron / kon',meaning:'a-stem: she / it / they — subjective',series:'subj',stem:'a-stem'},
+  {form:'k / s / ra / ye / ka',meaning:'c-stem: I / you / he / she / it — subjective',series:'subj',stem:'c-stem'},
+  {form:'ki / si / ren / ye',meaning:'i-stem: I / you / he / she — subjective',series:'subj',stem:'i-stem'},
+  {form:'ken / sen / ren / yen',meaning:'e-stem: I / you / he / she — subjective',series:'subj',stem:'e-stem'},
+  {form:'kon / son / ron / yakon',meaning:'o-stem: I / you / he / she — subjective',series:'subj',stem:'o-stem'},
+  {form:'tya / tsya / tewa / sewa',meaning:'dual & plural — all subjective stems',series:'subj',stem:'all'},
+  // Objective
+  {form:'waka / ro / yako / yo',meaning:'a-stem: I / he / she / it — objective',series:'obj',stem:'a-stem'},
+  {form:'wak / ro / yako / yo',meaning:'c-stem: I / he / she / it — objective',series:'obj',stem:'c-stem'},
+  {form:'waki / ro / yako',meaning:'i-stem: I / he / she — objective',series:'obj',stem:'i-stem'},
+  {form:'waken / rawen / yakawen',meaning:'e-stem: I / he / she — objective',series:'obj',stem:'e-stem'},
+  {form:'wakon / raon / yakaon',meaning:'o-stem: I / he / she — objective',series:'obj',stem:'o-stem'},
+  {form:'yonkya / yonkwa / rona / yona',meaning:'dual & plural — a-stem objective',series:'obj',stem:'a-stem'},
+  // Aorist
+  {form:"wa'ka / wehsa / waha",meaning:"a-stem aorist: I / you / he (completed action)",series:'aorist',stem:'a-stem'},
+  {form:"wa'k / wahs / waha",meaning:"c-stem aorist: I / you / he (completed action)",series:'aorist',stem:'c-stem'},
+  // Future
+  {form:'enka / enhsa / enha',meaning:'a-stem future: I / you / he',series:'future',stem:'a-stem'},
+  {form:'enk / enhs / enha',meaning:'c-stem future: I / you / he',series:'future',stem:'c-stem'},
+  // Non-definite
+  {form:'aka / ahsa / aha',meaning:'a-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'a-stem'},
+  {form:'ak / ahs / aha',meaning:'c-stem non-definite: I / you / he (hypothetical)',series:'nondef',stem:'c-stem'},
+  // Nominal possessives
+  {form:'akwa- / sa- / rao-',meaning:'a-stem nominal possessive: my / your / his',series:'poss',stem:'a-stem'},
+  {form:'ake- / sa- / rao-',meaning:'c-stem nominal possessive: my / your / his',series:'poss',stem:'c-stem'},
+  // Locatives
+  {form:'-àke / -akon / -òkon / -akta',meaning:'locative suffixes: on / in / under / near',series:'loc',stem:'nominal'},
 ];
 
 function wbRenderPrefixGrid(){
   const grid=document.getElementById('wb-pref-grid');if(!grid)return;
-  // Render section headers + collapsible paradigm tables
-  let html='';
-  WB_PFSECTIONS.forEach(sec=>{
-    const cats=WB_PFCAT.filter(c=>c.series===sec.key);
-    if(!cats.length)return;
-    html+=`<div style="margin-bottom:1.1rem;">
-      <div style="font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--clay);margin-bottom:.3rem;">${sec.label}</div>
-      <div style="font-size:.78rem;color:var(--ew);font-style:italic;margin-bottom:.6rem;">${sec.note}</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.42rem;">`;
-    cats.forEach((cat,ci)=>{
-      const catIdx=WB_PFCAT.indexOf(cat);
-      html+=`<div class="wb-pref-card${WB.activePfx===catIdx?' wb-pf-sel':''}" onclick="wbFilterByPrefix(${catIdx})" style="padding:.55rem .75rem;">
-        <div style="font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--clay);margin-bottom:.3rem;text-transform:uppercase;">${cat.stem}</div>
-        <table style="width:100%;border-collapse:collapse;">`;
-      cat.rows.forEach(r=>{
-        html+=`<tr style="line-height:1.5;">
-          <td style="font-family:'Playfair Display',serif;font-size:.85rem;color:var(--ed);padding-right:.5rem;white-space:nowrap;">${r.pfx}</td>
-          <td style="font-size:.72rem;color:var(--ew);">${r.label}</td>
-        </tr>`;
-      });
-      html+=`</table></div>`;
-    });
-    html+=`</div></div>`;
-  });
-  grid.innerHTML=html;
+  grid.innerHTML=WB_PFCAT.map((p,i)=>`
+    <div class="wb-pref-card${WB.activePfx===i?' wb-pf-sel':''}" onclick="wbFilterByPrefix(${i})">
+      <div class="wb-pf-form">${p.form}</div>
+      <div class="wb-pf-mean">${p.meaning}</div>
+      <div class="wb-pf-tag">${p.series} · ${p.stem}</div>
+    </div>`).join('');
 }
 
-function wbFilterByPrefix(catIdx){
-  WB.activePfx=catIdx;
+function wbFilterByPrefix(i){
+  WB.activePfx=i;
   wbRenderPrefixGrid();
-  const cat=WB_PFCAT[catIdx];
-  if(!cat)return;
+  const pf=WB_PFCAT[i];
   const matched=WB_ROOTS.filter(w=>{
-    if(cat.stem==='nominal')return false;
-    return w.stem===cat.stem;
+    if(pf.stem==='all') return w.cat!=='kinship';
+    if(pf.stem==='nominal') return false;
+    if(pf.stem==='kinship') return w.stem==='kinship';
+    // e-stem-fake (grammatically c-stem class) should surface under e-stem in the prefix browser
+    if(pf.stem==='e-stem') return w.stem==='e-stem'||w.stem==='e-stem-fake';
+    return w.stem===pf.stem;
   });
   const lbl=document.getElementById('wb-pf-result-label');
-  if(lbl){lbl.style.display='block';lbl.textContent=`${cat.stem} — ${cat.section} (${matched.length} roots)`;}
+  if(lbl){lbl.style.display='block';lbl.textContent=`Roots using ${pf.stem} ${pf.series} prefixes (${matched.length} found)`;}
   const roots=document.getElementById('wb-pf-roots');
   if(!roots)return;
-  const targetSeries=cat.series;
   roots.innerHTML=matched.length?matched.map(w=>`
-    <div class="wb-chip" onclick="
-      wbSetMode('explore',document.getElementById('wbm-explore'));
-      WB.series=${JSON.stringify(targetSeries)};
-      wbSelectWord('${w.id}')">
+    <div class="wb-chip" onclick="wbSetMode('explore',document.getElementById('wbm-explore'));wbSelectWord('${w.id}')">
       <div class="wbc-r">${w.root}</div><div class="wbc-e">${w.e}</div><div class="wbc-pos">${w.pos}</div>
     </div>`).join(''):`<div style="font-size:.88rem;color:var(--ew);font-style:italic;">No roots for this stem class yet.</div>`;
+.`;
 }
 /* init */
 loadData().then(() => {
