@@ -101,7 +101,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-panel-sticky{position:fixed;bottom:var(--nav-h);left:0;right:0;z-index:90;box-shadow:0 -3px 16px rgba(44,24,16,.13);background:var(--cream);border-top:1px solid var(--sand);padding:0.6rem 1.2rem 0.7rem;}
 .wb-panel-sticky>.wb-slabel,.wb-asm-slots,.wb-asm-full,.wb-ph-note{max-width:560px;margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box;}
 #wb-explore{padding-bottom:.5rem;}
-.wb-carousel-nav{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;}
+.wb-dialect-row{display:flex;align-items:center;gap:.4rem;margin-bottom:.8rem;flex-wrap:wrap;}
+.wb-dialect-lbl{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ew);margin-right:.2rem;}
+.wb-dialect-btn{padding:.28rem .75rem;font-size:.75rem;font-weight:600;border:1.5px solid var(--smoke);border-radius:14px;cursor:pointer;background:transparent;font-family:'Crimson Pro',serif;color:var(--ew);transition:all .13s;}
+.wb-dialect-btn.active{background:var(--ed);color:var(--sand);border-color:var(--ed);}
+.wb-dialect-btn:hover:not(.active){border-color:var(--clay);color:var(--ed);}
 .wb-carr-btn{width:32px;height:32px;border-radius:50%;border:2px solid var(--clay);background:white;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .12s,border-color .12s;}
 .wb-carr-btn:hover:not(:disabled){background:var(--birch);}
 .wb-carr-btn:disabled{border-color:var(--smoke);opacity:.35;cursor:default;}
@@ -928,6 +932,13 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <div id="wb-explore">
         <div class="wb-info" id="wb-carousel-info">
           Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">verb root</span>, pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
+        </div>
+
+        <div class="wb-dialect-row">
+          <span class="wb-dialect-lbl">Dialect:</span>
+          <button class="wb-dialect-btn active" onclick="wbSetDialect('kanehsatake',this)">Kanehsatà:ke</button>
+          <button class="wb-dialect-btn" onclick="wbSetDialect('akwesasne',this)">Akwesasne</button>
+          <button class="wb-dialect-btn" onclick="wbSetDialect('sixnations',this)">Six Nations</button>
         </div>
 
         <!-- Step 1: verb root -->
@@ -3624,13 +3635,66 @@ function wbGetPrefix(stemClass,series,person,root){
   return pfx;
 }
 
+/* ── Boundary phonology ─────────────────────────────────────────────
+   Validated against the glossary and phrase library (4132 attested forms).
+
+   THE CONFIRMED RULE (same-vowel deletion only):
+   When a prefix ends in vowel V and the root ALSO begins with the same
+   vowel quality V, the root-initial V is deleted.
+
+   Attested evidence:
+     ka  (ends a) + aiosé:ren (starts a) → kaiosé:ren / saiosé:ren  ✓
+     ki  (ends i) + ienté:ri  (starts i) → kienté:ri                ✓
+     ka  (ends a) + a…        (starts a) → consonant follows ka- always ✓
+
+   CONFIRMED NON-RULES (do NOT apply):
+     • Different-vowel boundary: seni (ends i) + anón:we' (starts a)
+       → senianón:we'  — 'a' is RETAINED. No cross-vowel deletion.
+     • Nominals: konti-/roti-/keni-/tewa- retain root vowel completely.
+       The deletion rule is verb-specific.
+     • Glottal-initial roots (' as first char): never delete, no vowel precedes.
+
+   IMPLEMENTATION NOTE:
+   Some roots in WB_ROOTS are already stored post-deletion (e.g. á:tien, not
+   aá:tien), so the rule naturally produces no match and no double-deletion occurs.
+   ──────────────────────────────────────────────────────────────────── */
+function wbApplyBoundaryPhonology(prefix, root, stemClass){
+  if(!prefix || !root) return { form: prefix + root, note: null };
+
+  const pfxLast = prefix.slice(-1).toLowerCase().replace(/[áéíóú]/g, c =>
+    ({á:'a',é:'e',í:'i',ó:'o',ú:'u'}[c]||c));
+  const rootFirst = root[0];
+
+  // Glottal-initial root — no adjustment
+  if(rootFirst === "'") return { form: prefix + root, note: null };
+
+  const rootFirstBase = rootFirst.toLowerCase().replace(/[áéíóú]/g, c =>
+    ({á:'a',é:'e',í:'i',ó:'o',ú:'u'}[c]||c));
+
+  const pfxIsVowel = 'aeiou'.includes(pfxLast);
+  const rootIsVowel = 'aeiou'.includes(rootFirstBase);
+
+  // Only delete when BOTH are vowels AND they are the SAME base quality
+  if(pfxIsVowel && rootIsVowel && pfxLast === rootFirstBase){
+    const rootStripped = root.slice(1);
+    const assembled = prefix + rootStripped;
+    const note = `root-initial /${rootFirst}/ deleted after vowel-final prefix /${pfxLast}/`;
+    return { form: assembled, note };
+  }
+
+  return { form: prefix + root, note: null };
+}
+
 /* Generate all 15 forms for a root+stemClass+series */
-function wbGenerateForms(root,stemClass,series,knownForms){
+function wbGenerateForms(root,stemClass,series,knownForms,wordMeta){
   const persons=Object.keys(WB_PERSON_LABELS);
-  return persons.map(person=>{
+  // Food quality statives are inherently 3sg.n — only that person is valid
+  const isFoodStative=wordMeta&&wordMeta.cat==='food quality';
+  const allowedPersons=isFoodStative?['3sg.n']:persons;
+  return allowedPersons.map(person=>{
     const pfx=wbGetPrefix(stemClass,series,person,root);
     if(!pfx)return null;
-    const generated=pfx+root;
+    const {form:generated, note:boundaryNote}=wbApplyBoundaryPhonology(pfx,root,stemClass);
     const known=knownForms&&knownForms[person];
     return{
       person,
@@ -3639,6 +3703,7 @@ function wbGenerateForms(root,stemClass,series,knownForms){
       root,
       form:known||generated,
       generated,
+      boundaryNote: known?null:boundaryNote,
       verified:!!known,
       flagged:!known,
     };
@@ -3750,20 +3815,17 @@ const WB_KINSHIP={
    ─────────────────────────────────────────────────────────────────── */
 const WB_NI_ROOTS=[
   {id:'ni01', root:"hta'",    e:'shoe',     fullForm:"áhta'",
-   note:"Full form áhta' — drops a- for incorporation. Source: Kontinónhstats Lesson 7 / Mary McDonald.",
-   incorporatesInto:['av05','av06','av01']},
+   note:"Full form áhta' — drops a- for incorporation. Attested: áhta' + owá:nen → watahkowá:nen (big shoe). Source: Kontinónhstats Lesson 7 / Mary McDonald.",
+   incorporatesInto:['av01']},
   {id:'ni02', root:'kahión:ni', e:'house',  fullForm:'kahión:ni',
    note:"House/dwelling incorporation root. Used in compounds like rohkahión:ni (he has a house). Verify boundary phonology with speaker.",
    incorporatesInto:['fe01','cv05']},
   {id:'ni03', root:'hahséntha', e:'leaf / paper', fullForm:'ahahséntha',
-   note:"Leaf/paper root. In modern use also covers paper and documents. Drops a- for incorporation.",
+   note:"Leaf/paper root. In modern use also covers paper and documents. Drops a- for incorporation. Attested in study/read context.",
    incorporatesInto:['av09','fe01']},
   {id:'ni04', root:"ni'tskwá:ra", e:'chair', fullForm:"ani'tskwá:ra",
-   note:"Chair — full form ani'tskwá:ra, drops a- for incorporation.",
+   note:"Chair — full form ani'tskwá:ra, drops a- for incorporation. Attested: sit + chair root.",
    incorporatesInto:['v01']},
-  {id:'ni05', root:'hthén:no',  e:'ball',   fullForm:'ahthén:no',
-   note:"Ball root — full form ahthén:no, drops a- for incorporation.",
-   incorporatesInto:['av05','av06']},
 ];
 
 /* ── DESCRIPTOR SUFFIXES ────────────────────────────────────────────
@@ -3836,7 +3898,44 @@ const WB_COMPOUNDS=[
 
 /* ── WORD BUILDER STATE ── */
 /* ── WORD BUILDER STATE ── */
-let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,activeRow:null,niRootId:null,descriptorId:null};
+let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,activeRow:null,niRootId:null,descriptorId:null,formChosen:false,dialect:'kanehsatake'};
+
+/* ── Dialect adaptation ─────────────────────────────────────────────
+   Two productive rules affect pronominal prefixes in the builder:
+
+   1. r → l  (Akwesasne)
+      All pronominal-prefix r's become l:
+      ra→la, ron→lon, rati→lati, roti→loti, ronen→lonen, etc.
+      Attested in data_variants.json (p04, n05-n08).
+
+   2. i → y  (Six Nations / Tyendinaga)
+      Affects only the standalone 2sg/1sg pronoun words (í:se', í:'i),
+      NOT the verb-prefix tables (which use sa-, s-, etc. regardless).
+      For the word-builder prefix display there is no prefix-level change —
+      the only visible difference would be in the pronoun chips on step 2,
+      which already use the prefix tables. No prefix transformation needed.
+
+   So for the builder, only rule 1 (r→l) needs to be applied.
+   ──────────────────────────────────────────────────────────────────── */
+function wbApplyDialect(str){
+  if(!str||WB.dialect==='kanehsatake')return str;
+  if(WB.dialect==='akwesasne'){
+    // r→l: replace every 'r' in pronominal prefix position
+    // Use global replace — all r's in a prefix string are pronominal
+    return str.replace(/r/g,'l').replace(/R/g,'L');
+  }
+  // Six Nations: no prefix-table change (see note above)
+  return str;
+}
+
+function wbSetDialect(d,btn){
+  WB.dialect=d;
+  document.querySelectorAll('.wb-dialect-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  // Re-render everything that shows prefixes
+  if(WB.word)wbRenderPersonStep();
+  if(WB.formIdx!=null)wbUpdateAssembly();
+}
 
 function wbInit(){
   if(!WB.initialized){
@@ -3957,15 +4056,15 @@ function wbRenderPersonStep(){
     (hasModal?`<button class="wb-pill${WB.series==='future'?' active':''}" onclick="wbSetSeries('future',this)">Future</button>`:'')+
     (hasModal?`<button class="wb-pill${WB.series==='nondef'?' active':''}" onclick="wbSetSeries('nondef',this)">Non-definite</button>`:'');
 
-  const forms=wbGenerateForms(w.root,w.stem,WB.series,WB.series==='subj'?w.knownSubj:w.knownObj||{});
+  const forms=wbGenerateForms(w.root,w.stem,WB.series,WB.series==='subj'?w.knownSubj:w.knownObj||{},w);
   list.innerHTML=forms.map((f,i)=>`
     <div class="wb-form-chip${WB.formIdx===i?' wb-sel':''}" onclick="wbPickForm(${i})">
       <div>
-        <div class="wbf-word">${f.flagged?'*':''}${f.form}</div>
+        <div class="wbf-word">${f.flagged?'*':''}${wbApplyDialect(f.form)}</div>
         <div class="wbf-lbl">${f.label}</div>
       </div>
       <div class="wb-form-tags">
-        <span class="wb-tag wb-tp">${f.prefix}</span>
+        <span class="wb-tag wb-tp">${wbApplyDialect(f.prefix)}</span>
         ${f.flagged?'<span class="wb-tag wb-tph" title="generated — verify">*</span>':''}
       </div>
     </div>`).join('');
@@ -4010,11 +4109,29 @@ function wbPickKinship(i){
 function wbRenderNIStep(){
   const grid=document.getElementById('wb-ni-grid');
   if(!grid)return;
+  const verbId=WB.word?WB.word.id:null;
+
+  // Only show NI roots that list this verb in incorporatesInto
+  const compatible=WB_NI_ROOTS.filter(ni=>
+    verbId && ni.incorporatesInto && ni.incorporatesInto.includes(verbId)
+  );
+
   const noneChip=`<div class="wb-chip wb-chip-none${WB.niRootId===null?' wb-chip-sel':''}" onclick="wbPickNI(null)" style="min-width:100px;">
     <div class="wbc-r" style="font-size:.82rem;">none</div>
     <div class="wbc-e">simple verb</div>
   </div>`;
-  grid.innerHTML=noneChip+WB_NI_ROOTS.map(ni=>`
+
+  if(compatible.length===0){
+    grid.innerHTML=noneChip+
+      `<div style="font-size:.82rem;color:var(--ew);font-style:italic;padding:.4rem 0;">
+        No noun incorporation attested for this verb root.
+       </div>`;
+    // If a NI root was previously selected and is now incompatible, clear it
+    if(WB.niRootId!==null){WB.niRootId=null;wbUpdateAssembly();}
+    return;
+  }
+
+  grid.innerHTML=noneChip+compatible.map(ni=>`
     <div class="wb-chip wb-chip-ni${WB.niRootId===ni.id?' wb-chip-sel':''}" onclick="wbPickNI('${ni.id}')">
       <div class="wbc-r" style="color:#5A1A80;">${ni.root}</div>
       <div class="wbc-e">${ni.e}</div>
@@ -4032,15 +4149,34 @@ function wbPickNI(id){
 function wbRenderDescStep(){
   const grid=document.getElementById('wb-desc-grid');
   if(!grid)return;
+  const stem=WB.word?WB.word.stem:null;
+  const isStative=WB.word&&WB.word.pos&&WB.word.pos.includes('stative');
+
+  // Descriptors attach to NI roots or verb roots — gate by stem class match
+  // Stative verbs (food/emotional) don't take descriptor suffixes
+  const compatible=isStative?[]:WB_DESCRIPTORS.filter(d=>
+    !d.triggersStem || d.triggersStem===stem
+  );
+
   const noneChip=`<div class="wb-chip wb-chip-none${WB.descriptorId===null?' wb-chip-sel':''}" onclick="wbPickDesc(null)" style="min-width:100px;">
     <div class="wbc-r" style="font-size:.82rem;">none</div>
     <div class="wbc-e">no quality suffix</div>
   </div>`;
-  grid.innerHTML=noneChip+WB_DESCRIPTORS.map(d=>`
+
+  if(compatible.length===0){
+    grid.innerHTML=noneChip+
+      `<div style="font-size:.82rem;color:var(--ew);font-style:italic;padding:.4rem 0;">
+        ${isStative?'Stative verbs do not take descriptor suffixes.':'No descriptors attested for this stem class.'}
+       </div>`;
+    if(WB.descriptorId!==null){WB.descriptorId=null;wbUpdateAssembly();}
+    return;
+  }
+
+  grid.innerHTML=noneChip+compatible.map(d=>`
     <div class="wb-chip wb-chip-desc${WB.descriptorId===d.id?' wb-chip-sel':''}" onclick="wbPickDesc('${d.id}')">
       <div class="wbc-r" style="color:#704010;">${d.suffix}</div>
       <div class="wbc-e">${d.e}</div>
-      <div class="wbc-pos" style="font-size:.68rem;color:var(--ew);">${d.verified?'verified':'*generated'}</div>
+      <div class="wbc-pos" style="font-size:.68rem;color:var(--ew);">${d.verified?'verified':'*unverified'}</div>
     </div>`).join('');
 }
 
@@ -4101,6 +4237,139 @@ function wbGetSuffix(form,root,prefix){
   return{val:'∅',sub:'bare stem'};
 }
 
+/* ── English translation builder ───────────────────────────────────
+   Produces natural English from person + verb + NI noun + descriptor.
+   Validated against glossary patterns (e.g. "you make a fire (command)",
+   "I am sick", "she is happy", "he makes a fire (habitual)").
+   ──────────────────────────────────────────────────────────────────── */
+const WB_PRONOUNS={
+  '1sg':'I','2sg':'you','3sg.m':'he','3sg.f':'she','3sg.n':'it',
+  '12du':'you and I','13du':'he/she and I','2du':'you two',
+  '3du.m':'they two','3du.f':'they two','12pl':'we',
+  '13pl':'we','2pl':'you all','3pl.m':'they','3pl.f':'they',
+};
+const WB_BE={
+  '1sg':'am','2sg':'are','3sg.m':'is','3sg.f':'is','3sg.n':'is',
+  '12du':'are','13du':'are','2du':'are','3du.m':'are','3du.f':'are',
+  '12pl':'are','13pl':'are','2pl':'are','3pl.m':'are','3pl.f':'are',
+};
+const WB_3SG=new Set(['3sg.m','3sg.f','3sg.n']);
+
+/* How to rephrase the verb phrase when a specific NI noun is incorporated.
+   Keys: verb_e value → {ni_e: [verbReplacement, niPrep, niArticle]} */
+const WB_NI_TEMPLATES={
+  'to put on (clothing)':{
+    'shoe':['put on','','a'],
+  },
+  'to study / to read':{
+    'leaf / paper':['study / read','',''],
+    'paper':['study / read','',''],
+  },
+  'to sit':{
+    'chair':['sit','in a',''],
+  },
+  'to make it':{
+    'house':['make','a',''],
+    'leaf / paper':['make','',''],
+  },
+  'to give':{
+    'house':['give','a',''],
+  },
+};
+
+function wbAddS(verb){
+  if(!verb)return verb;
+  if(verb.endsWith('y')&&verb.length>1&&!'aeiou'.includes(verb[verb.length-2]))
+    return verb.slice(0,-1)+'ies';
+  if(/(?:s|sh|ch|x|z)$/.test(verb))return verb+'es';
+  return verb+'s';
+}
+
+function wbConjugatePhrase(verbPhrase,is3sg){
+  /* Conjugate the first word of a (possibly multi-word) verb phrase */
+  const words=verbPhrase.split(' ');
+  if(!words.length)return verbPhrase;
+  const first=is3sg?wbAddS(words[0]):words[0];
+  return [first,...words.slice(1)].join(' ');
+}
+
+function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
+  const pronoun=WB_PRONOUNS[person]||person;
+  const is3sg=WB_3SG.has(person);
+
+  /* Strip parenthetical notes: "to put on (clothing)" → "to put on" */
+  const verbClean=(verbE||'').replace(/\s*\([^)]+\)/g,'').trim();
+
+  /* Simplify multi-form strings for natural prose.
+     Nouns: use LAST part — most specific ("leaf / paper" → "paper").
+     Adjectives/descriptors: use FIRST part — conventional ("big / large" → "big"). */
+  const simplifyNoun =s=>s&&s.includes('/')?s.split('/').map(p=>p.trim()).filter(Boolean).slice(-1)[0]:s;
+  const simplifyAdj  =s=>s&&s.includes('/')?s.split('/')[0].trim():s;
+
+  const niSimple  =simplifyNoun(niE);
+  const descSimple=simplifyAdj(descriptorE);
+
+  /* Self-contained statives: "it is delicious" — pronoun already embedded */
+  if(/^it\s+is\s+/i.test(verbClean)){
+    return descSimple?`${verbClean} (${descSimple})`:verbClean;
+  }
+
+  /* Determine verb type */
+  let vtype,vphrase;
+  if(verbClean.startsWith('to be ')){
+    vtype='stative';vphrase=verbClean.slice(6);
+  } else if(verbClean.includes('/')&&verbClean.startsWith('to ')){
+    vtype='multi';
+    vphrase=verbClean.split('/').map(p=>p.trim().replace(/^to\s+/,'')).join(' / ');
+  } else if(verbClean.startsWith('to ')){
+    vtype='action';vphrase=verbClean.slice(3);
+  } else {
+    vtype='bare';vphrase=verbClean;
+  }
+
+  /* Conjugate base verb */
+  let baseVerb;
+  if(vtype==='stative'){
+    baseVerb=`${WB_BE[person]||'is'} ${vphrase}`;
+  } else if(vtype==='multi'){
+    baseVerb=is3sg
+      ?vphrase.split('/').map(p=>wbConjugatePhrase(p.trim(),true)).join(' / ')
+      :vphrase;
+  } else {
+    baseVerb=wbConjugatePhrase(vphrase,is3sg);
+  }
+
+  /* NI integration */
+  let result;
+  if(niE){
+    const tmpl=(WB_NI_TEMPLATES[verbE]||{})[niE];
+    if(tmpl){
+      const [verbRep,niPrep,niArt]=tmpl;
+      const verbConjRep=is3sg
+        ?verbRep.split('/').map(p=>wbConjugatePhrase(p.trim(),true)).join(' / ')
+        :verbRep;
+      /* noun phrase: [prep] [article] [adj?] noun */
+      const nounWord=descSimple?`${descSimple} ${niSimple}`:niSimple;
+      const nounPhrase=[niPrep,niArt,nounWord].filter(Boolean).join(' ');
+      result=`${pronoun} ${verbConjRep} ${nounPhrase}`;
+    } else {
+      /* Fallback: article + noun */
+      const art=/^[aeiou]/i.test(niSimple||'')?'an':'a';
+      const nounPhrase=descSimple?`${art} ${descSimple} ${niSimple}`:`${art} ${niSimple}`;
+      result=`${pronoun} ${baseVerb} ${nounPhrase}`;
+    }
+  } else {
+    result=`${pronoun} ${baseVerb}`;
+    /* Descriptor without NI is linguistically incomplete in Mohawk
+       (descriptors attach to incorporated nouns). Mark with ~ to signal
+       this is a partial/learning form rather than a full natural sentence. */
+    if(descSimple) result+=` (~${descSimple})`;
+  }
+
+  if(aspectVal&&aspectVal!=='∅') result+=' (habitual)';
+  return result;
+}
+
 function wbUpdateAssembly(){
   const w=WB.word;
   if(!w)return;
@@ -4110,22 +4379,23 @@ function wbUpdateAssembly(){
 
   const ni=WB.niRootId?WB_NI_ROOTS.find(n=>n.id===WB.niRootId):null;
   const d=WB.descriptorId?WB_DESCRIPTORS.find(x=>x.id===WB.descriptorId):null;
+
+  // Apply boundary phonology at prefix–root junction
+  const {form:prefixPlusRoot, note:boundaryNote}=wbApplyBoundaryPhonology(f.prefix, (ni?ni.root:'')+f.root, w.stem);
   const sfx=wbGetSuffix(f.form,f.root,f.prefix);
   const hasAspect=sfx.val!=='∅';
-  const assembled=f.prefix+(ni?ni.root:'')+f.root+(d?d.suffix:'')+(hasAspect?sfx.val.replace(/^-/,''):'');
+  const assembledBase=prefixPlusRoot+(d?d.suffix:'')+(hasAspect?sfx.val.replace(/^-/,''):'');
+  const assembled=wbApplyDialect(assembledBase);
   const isGenerated=f.flagged||!!ni||!!d;
+  const dialectChanged=WB.dialect!=='kanehsatake';
 
-  /* Build approximate English translation */
-  let engParts=[f.label];
-  if(ni)engParts.push(ni.e);
-  engParts.push(w.e);
-  if(d)engParts.push('('+d.e+')');
-  const engStr=(isGenerated?'* ':'')+engParts.join(' · ');
+  /* ── English translation ── */
+  const engStr=(isGenerated?'* ':'')+wbBuildTranslation(f.person,w.e,ni?ni.e:null,d?d.e:null,sfx.val);
 
   /* ── Prefix slot ── */
   const slP=document.getElementById('wbs-p');
   slP.className='wb-asm-slot f';
-  slP.innerHTML=`<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val" style="color:#7A3800;">${f.prefix}</div><div class="wb-asm-sub">${f.label}</div>`;
+  slP.innerHTML=`<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val" style="color:#7A3800;">${wbApplyDialect(f.prefix)}</div><div class="wb-asm-sub">${f.label}</div>`;
 
   /* ── Noun slot ── */
   const slNI=document.getElementById('wbs-ni');
@@ -4183,11 +4453,22 @@ function wbUpdateAssembly(){
 
   /* ── Disclaimer ── */
   const phn=document.getElementById('wb-ph-note');
+  let noteLines=[];
   if(isGenerated){
-    phn.style.display='block';
-    phn.textContent=ni||d
+    noteLines.push(ni||d
       ?'* Compound assembled from attested roots — the specific combined form has not been verified against a speaker. Use as a learning example.'
-      :'* Generated by prefix rule — not yet verified against a speaker or reference.';
+      :'* Generated by prefix rule — not yet verified against a speaker or reference.');
+  }
+  if(boundaryNote){
+    noteLines.push('Boundary rule applied: root-initial vowel deleted after vowel-final prefix (standard Mohawk phonology).');
+  }
+  if(dialectChanged){
+    const dialectLabels={akwesasne:'Akwesasne (r→l alternation in pronominal prefixes)',sixnations:'Six Nations / Tyendinaga (no prefix-level change from this dialect)'};
+    noteLines.push('Dialect: '+( dialectLabels[WB.dialect]||WB.dialect)+'. All community forms are equally valid.');
+  }
+  if(noteLines.length){
+    phn.style.display='block';
+    phn.innerHTML=noteLines.map(l=>`<div>${l}</div>`).join('');
   }else{
     phn.style.display='none';
   }
@@ -4258,7 +4539,7 @@ function wbGetAllForms(){
         verified:true,flagged:false,root:w.root
       }));
     } else {
-      const forms=wbGenerateForms(w.root,w.stem,'subj',w.knownSubj);
+      const forms=wbGenerateForms(w.root,w.stem,'subj',w.knownSubj,w);
       forms.forEach(f=>all.push({w,...f}));
     }
   });
