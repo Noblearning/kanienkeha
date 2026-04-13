@@ -1106,6 +1106,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
 </div>
 <button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
+  <span class="fab-ic" style="font-size:1.1rem;line-height:1;">★</span>
   <span style="font-size:.88rem;font-weight:700;letter-spacing:.02em;">Practice</span>
   <span class="fab-badge" id="fab-badge">0</span>
 </button>
@@ -1379,6 +1380,15 @@ function navTo(id){
   // Show journal FAB only on Journey (home) tab
   const jfab=document.getElementById('journal-fab');
   if(jfab)jfab.style.display=(id==='home')?'flex':'none';
+  // Show Practice FAB on Journey screens; hide on all other tabs
+  const pfab=document.getElementById('prac-fab');
+  if(pfab){
+    if(id==='home'||id==='unit-screen'||id==='lesson-screen'){
+      updateFab(PRAC&&PRAC.scope?PRAC.scope:'unit');
+    } else {
+      pfab.style.display='none';
+    }
+  }
   if(id==='builder')wbInit();
 }
 function renderJournal(){
@@ -1516,7 +1526,8 @@ function updateFab(scope) {
   const fab = document.getElementById('prac-fab');
   if (!fab || !CU) { if (fab) fab.style.display = 'none'; return; }
 
-  // Only show while browsing Journey, Units, or Lesson intros — never during active exercise/practice
+  // Only show while browsing Journey home, unit list, or lesson intro
+  // — never during active exercises/practice overlay
   const allowed = ['home','unit-screen','lesson-screen'];
   const isAllowed = allowed.some(id => {
     const el = document.getElementById(id);
@@ -1533,15 +1544,13 @@ function updateFab(scope) {
   const pool = buildPracPool(wids);
   const count = pool.length;
 
-  if (count === 0) {
-    fab.style.display = 'none';
-    return;
-  }
-
+  // Always show on Journey screens — update badge count (0 hides badge)
   fab.style.display = 'flex';
-  document.getElementById('fab-badge').textContent = count;
-  document.getElementById('fab-label').textContent =
-    count === 1 ? '1 to review' : `${count} to review`;
+  const badge = document.getElementById('fab-badge');
+  if (badge) {
+    badge.textContent = count;
+    badge.style.display = count > 0 ? 'flex' : 'none';
+  }
 }
 
 /* ── open overlay ── */
@@ -4290,10 +4299,13 @@ function wbRenderDescStep(){
   const stem=WB.word?WB.word.stem:null;
   const isStative=WB.word&&WB.word.pos&&WB.word.pos.includes('stative');
 
-  // Descriptors attach to NI roots or verb roots — gate by stem class match
-  // Stative verbs (food/emotional) don't take descriptor suffixes
+  // Descriptors attach to incorporated noun roots (not the verb root).
+  // When a noun root is incorporated, all non-stative descriptors are available —
+  // the noun, not the verb, governs suffix compatibility.
+  // When no noun root is incorporated, gate by verb stem class as before.
+  const hasNI=!!WB.niRootId;
   const compatible=isStative?[]:WB_DESCRIPTORS.filter(d=>
-    !d.triggersStem || d.triggersStem===stem
+    hasNI || !d.triggersStem || d.triggersStem===stem
   );
 
   const noneChip=`<div class="wb-chip wb-chip-none${WB.descriptorId===null?' wb-chip-sel':''}" onclick="wbPickDesc(null)" style="min-width:100px;">
