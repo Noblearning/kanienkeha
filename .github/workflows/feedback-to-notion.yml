@@ -1,0 +1,107 @@
+name: Sync Feedback to Notion
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # Runs daily at 8:00 AM UTC — adjust to taste
+  workflow_dispatch:       # Also allows manual trigger from Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync new feedback issues to Notion
+        uses: actions/github-script@v7
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const NOTION_TOKEN = process.env.NOTION_TOKEN;
+            const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
+
+            // ── 1. Fetch all open issues labelled 'user-report' but NOT 'synced-to-notion'
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'user-report',
+              state: 'open',
+              per_page: 100,
+            });
+
+            const unsynced = issues.filter(issue =>
+              !issue.labels.some(l => l.name === 'synced-to-notion')
+            );
+
+            console.log(`Found ${unsynced.length} unsynced report(s).`);
+
+            if (unsynced.length === 0) return;
+
+            // ── 2. For each issue, create a Notion page in the database
+            for (const issue of unsynced) {
+              // Parse the structured body written by the app
+              const body = issue.body || '';
+              const get = (field) => {
+                const match = body.match(new RegExp(`\\*\\*${field}:\\*\\*\\s*(.+)`));
+                return match ? match[1].trim() : '—';
+              };
+
+              const issueType  = get('Issue');
+              const question   = get('Question');
+              const exType     = get('Exercise type');
+              const reportedAt = get('Reported at');
+
+              const notionBody = {
+                parent: { database_id: NOTION_DATABASE_ID },
+                properties: {
+                  // "Name" is the title column — required in every Notion DB
+                  'Name': {
+                    title: [{ text: { content: issueType } }]
+                  },
+                  'Question': {
+                    rich_text: [{ text: { content: question } }]
+                  },
+                  'Exercise type': {
+                    rich_text: [{ text: { content: exType } }]
+                  },
+                  'Reported at': {
+                    rich_text: [{ text: { content: reportedAt } }]
+                  },
+                  'GitHub issue': {
+                    url: issue.html_url
+                  },
+                  'Status': {
+                    select: { name: 'New' }
+                  }
+                }
+              };
+
+              const res = await fetch('https://api.notion.com/v1/pages', {
+                method: 'POST',
+                headers: {
+                  'Authorization': `Bearer ${NOTION_TOKEN}`,
+                  'Notion-Version': '2022-06-28',
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(notionBody),
+              });
+
+              if (!res.ok) {
+                const err = await res.text();
+                console.error(`Failed to create Notion page for issue #${issue.number}: ${err}`);
+                continue;
+              }
+
+              console.log(`Created Notion page for issue #${issue.number}: ${issueType}`);
+
+              // ── 3. Label the issue as synced so it isn't processed again tomorrow
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['synced-to-notion'],
+              });
+            }
+
+            console.log('Sync complete.');

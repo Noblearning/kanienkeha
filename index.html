@@ -17,7 +17,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 /* ── Practice FAB ── */
-.prac-fab{position:fixed;bottom:calc(68px + env(safe-area-inset-bottom));right:1.1rem;z-index:90;display:none;align-items:center;gap:.55rem;background:var(--sage);color:white;border:none;border-radius:50px;padding:.72rem 1.2rem .72rem .9rem;font-family:'Crimson Pro',serif;font-size:.95rem;font-weight:600;cursor:pointer;box-shadow:0 4px 18px rgba(44,24,16,.28);transition:transform .15s,box-shadow .15s;letter-spacing:.02em;}
+.prac-fab{position:fixed;bottom:calc(68px + env(safe-area-inset-bottom) + 10px);right:1.1rem;z-index:90;display:none;align-items:center;gap:.55rem;background:var(--sage);color:white;border:none;border-radius:50px;padding:.72rem 1.2rem .72rem .9rem;font-family:'Crimson Pro',serif;font-size:.95rem;font-weight:600;cursor:pointer;box-shadow:0 4px 18px rgba(44,24,16,.28);transition:transform .15s,box-shadow .15s;letter-spacing:.02em;}
 .prac-fab:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(44,24,16,.35);}
 .prac-fab:active{transform:scale(.97);}
 .prac-fab .fab-ic{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;}
@@ -68,8 +68,71 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .skip-link{position:absolute;top:-999px;left:0;z-index:9999;background:var(--ed);color:var(--sand);padding:.6rem 1.2rem;border-radius:0 0 8px 0;font-family:'Crimson Pro',serif;font-size:.95rem;text-decoration:none;}
 .skip-link:focus{top:0;}
 
-/* ── BOTTOM NAV ── */
-.bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);}
+/* ── BOTTOM NAV — lesson hide/show ── */
+.bnav{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--ed);display:flex;justify-content:space-around;align-items:center;padding:.58rem 0 calc(.52rem + env(safe-area-inset-bottom));border-top:3px solid var(--clay);box-shadow:0 -4px 18px rgba(44,24,16,.22);transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .35s;}
+.bnav.lesson-hidden{transform:translateY(110%);opacity:0;pointer-events:none;}
+
+/* ── DUOLINGO-STYLE FEEDBACK DRAWER ── */
+.fb-drawer{
+  position:fixed;bottom:0;left:0;right:0;z-index:110;
+  background:white;
+  border-radius:16px 16px 0 0;
+  box-shadow:0 -4px 24px rgba(44,24,16,.18);
+  transform:translateY(100%);
+  transition:transform .32s cubic-bezier(.34,1.1,.64,1);
+  touch-action:none;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.fb-drawer.open{transform:translateY(0);}
+.fb-drawer.peek{transform:translateY(calc(100% - 52px));}
+.fb-drawer.cor{border-top:4px solid var(--cor);}
+.fb-drawer.wrg{border-top:4px solid var(--wrg);}
+.fb-drawer.try{border-top:4px solid var(--sky);}
+.fb-drawer.info{border-top:4px solid var(--clay);}
+
+/* drag handle */
+.fb-handle{width:36px;height:4px;background:var(--smoke);border-radius:4px;margin:.7rem auto .1rem;cursor:grab;flex-shrink:0;}
+
+/* main feedback panel */
+.fb-panel{padding:.6rem 1.3rem 1rem;}
+.fb-row{display:flex;align-items:center;gap:.7rem;margin-bottom:.45rem;}
+.fb-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0;}
+.fb-icon.cor{background:#d7f0d7;color:var(--cor);}
+.fb-icon.wrg{background:#f7e0e0;color:var(--wrg);}
+.fb-icon.try{background:rgba(107,143,168,.15);color:var(--sky);}
+.fb-icon.info{background:rgba(196,120,74,.12);color:var(--clay);}
+.fb-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ed);}
+.fb-detail{font-size:.86rem;color:var(--ew);font-style:italic;line-height:1.5;margin-bottom:.75rem;}
+.fb-actions{display:flex;align-items:center;justify-content:space-between;gap:.65rem;}
+.fb-continue{flex:1;padding:.82rem;border:none;border-radius:12px;font-family:'Crimson Pro',serif;font-size:1rem;font-weight:700;cursor:pointer;letter-spacing:.03em;transition:background .13s,transform .1s;}
+.fb-continue.cor{background:var(--cor);color:white;}
+.fb-continue.cor:hover{background:#4a7a4a;}
+.fb-continue.wrg{background:var(--wrg);color:white;}
+.fb-continue.wrg:hover{background:#7a3a2a;}
+.fb-continue.try{background:var(--sky);color:white;}
+.fb-continue.info{background:var(--clay);color:white;}
+.fb-flag-btn{display:flex;align-items:center;gap:.35rem;padding:.55rem .8rem;border:1.5px solid var(--smoke);border-radius:9px;background:white;font-family:'Crimson Pro',serif;font-size:.82rem;color:var(--ew);cursor:pointer;transition:border-color .13s,color .13s;white-space:nowrap;flex-shrink:0;}
+.fb-flag-btn:hover{border-color:var(--clay);color:var(--clay);}
+
+/* report panel (replaces fb-inner when flag tapped) */
+.fb-report-panel{padding:.5rem 1.3rem 1rem;display:none;}
+.fb-report-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem;}
+.fb-report-hdr h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--ed);}
+.fb-report-close{background:none;border:none;font-size:1.25rem;color:var(--ew);cursor:pointer;padding:.1rem .3rem;line-height:1;}
+.fb-report-opts{display:flex;flex-direction:column;gap:.4rem;margin-bottom:.8rem;}
+.fb-report-opt{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border:2px solid var(--smoke);border-radius:10px;background:white;cursor:pointer;font-family:'Crimson Pro',serif;font-size:.92rem;color:var(--ed);text-align:left;width:100%;transition:border-color .12s,background .12s;}
+.fb-report-opt:hover{border-color:var(--clay);background:var(--birch);}
+.fb-report-opt.selected{border-color:var(--clay);background:rgba(196,120,74,.08);}
+.fb-report-opt .opt-icon{font-size:1.05rem;flex-shrink:0;width:1.4rem;text-align:center;}
+.fb-report-submit{width:100%;padding:.8rem;border:none;border-radius:12px;background:var(--ed);color:var(--sand);font-family:'Crimson Pro',serif;font-size:.95rem;font-weight:700;cursor:pointer;opacity:.35;pointer-events:none;transition:opacity .13s,background .13s;}
+.fb-report-submit.ready{opacity:1;pointer-events:auto;}
+.fb-report-submit.ready:hover{background:var(--em);}
+
+/* thanks state */
+.fb-thanks{padding:1.2rem 1.3rem;text-align:center;display:none;}
+.fb-thanks .ty-icon{font-size:2rem;margin-bottom:.4rem;}
+.fb-thanks h3{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ed);margin-bottom:.25rem;}
+.fb-thanks p{font-size:.84rem;color:var(--ew);font-style:italic;line-height:1.5;}
 .nb{display:flex;flex-direction:column;align-items:center;gap:.15rem;background:none;border:none;cursor:pointer;color:var(--smoke);font-family:'Crimson Pro',serif;font-size:.62rem;padding:.55rem .38rem;border-radius:8px;transition:color .13s;min-width:46px;min-height:44px;}
 
 /* ── WORD BUILDER ── */
@@ -111,7 +174,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-carr-btn:disabled{border-color:var(--smoke);opacity:.35;cursor:default;}
 .wb-carr-btn svg{width:12px;height:12px;fill:none;stroke:var(--em);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
 .wb-carr-btn:disabled svg{stroke:var(--smoke);}
-.wb-carr-ctr{font-size:.75rem;color:var(--ew);letter-spacing:.03em;}
+.wb-carr-ctr{font-size:.75rem;color:var(--ew);letter-spacing:.03em;white-space:nowrap;}
+.wb-carousel-nav{display:flex;align-items:center;justify-content:center;gap:.65rem;padding:.5rem 0 .1rem;}
 .wb-asm-slots{display:flex;gap:.32rem;align-items:stretch;margin-bottom:.55rem;}
 .wb-asm-slot{flex:1;min-width:0;border:1.5px dashed var(--smoke);border-radius:7px;padding:.3rem .35rem;text-align:center;}
 .wb-asm-slot.f{border-style:solid;border-color:var(--sand);background:var(--cream);}
@@ -371,16 +435,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .starea:focus{border-color:var(--clay);}
 
 /* feedback — INLINE */
-.fb{padding:.82rem 1.05rem;border-radius:11px;margin-top:.82rem;display:none;align-items:flex-start;gap:.55rem;animation:fbin .22s ease;}
-.fb.show{display:flex;}
-.fb.corfb{background:#EEF5EE;border:1px solid var(--cor);}
-.fb.wrgfb{background:#F5EEEE;border:1px solid var(--wrg);}
-.fb.infofb{background:var(--birch);border:1px solid var(--sand);}
-.fb.tryfb{background:rgba(107,143,168,.1);border:1px solid var(--skyl);}
+/* fbin kept for other animations */
 @keyframes fbin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.fbi2{font-size:1.15rem;flex-shrink:0;}
-.fbt strong{display:block;font-size:.9rem;color:var(--ed);line-height:1.42;}
-.fbt span{font-size:.83rem;color:var(--ew);font-style:italic;display:block;margin-top:.18rem;line-height:1.45;}
 
 /* VARIANT NOTE */
 .var-note{background:rgba(122,140,110,.1);border:1px solid rgba(122,140,110,.4);border-radius:9px;padding:.65rem .88rem;margin-top:.68rem;font-size:.82rem;color:var(--em);line-height:1.52;}
@@ -708,10 +764,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <div class="ex-img-wrap" id="eimgwrap" style="display:none;"></div>
         <div class="ex-body" id="exbody"></div>
       </div>
-      <div class="fb" id="fbbar">
-        <span class="fbi2" id="fbic"></span>
-        <div class="fbt"><strong id="fbtitle"></strong><span id="fbdet"></span></div>
-      </div>
       <div id="varnotediv"></div>
       <button class="sbtn dark" id="actbtn" onclick="handleAction()" disabled>Submit</button>
     </div>
@@ -956,15 +1008,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <button class="wb-pill" onclick="wbSetCat('food quality',this)">Food</button>
           </div>
           <div class="wb-root-grid" id="wb-root-grid"></div>
-          <div class="wb-carousel-nav">
-            <button class="wb-carr-btn" id="wb-carr-prev" onclick="wbCarrPrev()" disabled aria-label="Previous step">
-              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
-            </button>
-            <span class="wb-carr-ctr" id="wb-carr-ctr">step 1 of 4</span>
-            <button class="wb-carr-btn" id="wb-carr-next" onclick="wbCarrNext()" disabled aria-label="Next step">
-              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
-            </button>
-          </div>
         </div>
 
         <!-- Step 2: person / series (hidden until step 1 done) -->
@@ -977,15 +1020,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="wb-form-list" id="wb-form-list">
             <div class="wb-step-hint">← Choose a verb root first</div>
           </div>
-          <div class="wb-carousel-nav">
-            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
-              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
-            </button>
-            <span class="wb-carr-ctr">step 2 of 4</span>
-            <button class="wb-carr-btn" id="wb-carr-next-2" onclick="wbCarrNext()" aria-label="Next step">
-              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
-            </button>
-          </div>
         </div>
 
         <!-- Step 3: noun incorporation (hidden until step 2 done) -->
@@ -997,15 +1031,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="wb-root-grid" id="wb-ni-grid">
             <div class="wb-step-hint">← Choose a person form first</div>
           </div>
-          <div class="wb-carousel-nav">
-            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
-              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
-            </button>
-            <span class="wb-carr-ctr">step 3 of 4</span>
-            <button class="wb-carr-btn" onclick="wbCarrNext()" aria-label="Next step">
-              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
-            </button>
-          </div>
         </div>
 
         <!-- Step 4: descriptor (hidden until step 2 done) -->
@@ -1016,15 +1041,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           </div>
           <div class="wb-root-grid" id="wb-desc-grid">
             <div class="wb-step-hint">← Choose a person form first</div>
-          </div>
-          <div class="wb-carousel-nav">
-            <button class="wb-carr-btn" onclick="wbCarrPrev()" aria-label="Previous step">
-              <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
-            </button>
-            <span class="wb-carr-ctr">step 4 of 4</span>
-            <button class="wb-carr-btn" disabled aria-label="No further steps">
-              <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
-            </button>
           </div>
         </div>
       </div>
@@ -1059,6 +1075,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
 <!-- Assembled word panel — fixed above bottom nav, only shown in builder Explore mode -->
 <div class="wb-panel wb-panel-sticky" id="wb-builder-panel" style="display:none;">
+  <div class="wb-carousel-nav" style="padding-top:0;padding-bottom:.5rem;">
+    <button class="wb-carr-btn" id="wb-carr-prev" onclick="wbCarrPrev()" disabled aria-label="Previous step">
+      <svg viewBox="0 0 12 12"><polyline points="8,1 3,6 8,11"/></svg>
+    </button>
+    <span class="wb-carr-ctr" id="wb-carr-ctr">step 1 of 4</span>
+    <button class="wb-carr-btn" id="wb-carr-next" onclick="wbCarrNext()" disabled aria-label="Next step">
+      <svg viewBox="0 0 12 12"><polyline points="4,1 9,6 4,11"/></svg>
+    </button>
+  </div>
   <div class="wb-slabel" style="margin-bottom:.45rem;">assembled word</div>
   <div class="wb-asm-slots" id="wbs-slots-row">
     <div class="wb-asm-slot" id="wbs-p"><div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div></div>
@@ -1078,7 +1103,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
 </div>
 <button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
-  <span class="fab-ic" style="font-size:1.1rem;line-height:1;">&#8635;</span>
+  <span class="fab-ic" style="font-size:1.1rem;line-height:1;">★</span>
   <span id="fab-label">Practice</span>
   <span class="fab-badge" id="fab-badge">0</span>
 </button>
@@ -1094,6 +1119,49 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   </div>
   <div class="prac-progress"><div class="prac-progress-fill" id="prac-prog-fill" style="width:0%"></div></div>
   <div class="prac-body" id="prac-body"></div>
+</div>
+
+<!-- DUOLINGO-STYLE FEEDBACK DRAWER -->
+<div class="fb-drawer" id="fb-drawer" role="status" aria-live="polite">
+  <div class="fb-handle" id="fb-handle"></div>
+
+  <!-- Feedback panel -->
+  <div class="fb-panel" id="fb-panel">
+    <div class="fb-row">
+      <div class="fb-icon" id="fb-icon"></div>
+      <div class="fb-title" id="fb-title"></div>
+    </div>
+    <div class="fb-detail" id="fb-detail"></div>
+    <div id="fb-varnotediv"></div>
+    <div class="fb-actions">
+      <button class="fb-flag-btn" id="fb-flag-btn" onclick="openReportPanel()">⚑ Report</button>
+      <button class="fb-continue" id="fb-continue" onclick="handleAction()">Continue</button>
+    </div>
+  </div>
+
+  <!-- Report panel (shown when flag tapped) -->
+  <div class="fb-report-panel" id="fb-report-panel">
+    <div class="fb-report-hdr">
+      <h3>Report a problem</h3>
+      <button class="fb-report-close" onclick="closeReportPanel()">✕</button>
+    </div>
+    <div class="fb-report-opts">
+      <button class="fb-report-opt" onclick="selectReportOption(this,'accepted')"><span class="opt-icon">✅</span>My answer should have been accepted</button>
+      <button class="fb-report-opt" onclick="selectReportOption(this,'audio')"><span class="opt-icon">🔊</span>The audio is wrong or missing</button>
+      <button class="fb-report-opt" onclick="selectReportOption(this,'spelling')"><span class="opt-icon">📝</span>The spelling or grammar is wrong</button>
+      <button class="fb-report-opt" onclick="selectReportOption(this,'translation')"><span class="opt-icon">🔄</span>The translation is wrong or unclear</button>
+      <button class="fb-report-opt" onclick="selectReportOption(this,'dialect')"><span class="opt-icon">🗣️</span>This is correct in my community's dialect</button>
+      <button class="fb-report-opt" onclick="selectReportOption(this,'other')"><span class="opt-icon">💬</span>Something else</button>
+    </div>
+    <button class="fb-report-submit" id="fb-report-submit" onclick="submitReportOption()">Send Report</button>
+  </div>
+
+  <!-- Thanks panel -->
+  <div class="fb-thanks" id="fb-thanks">
+    <div class="ty-icon">🌿</div>
+    <h3>Nia:wen — Thank you</h3>
+    <p>Your report helps keep this resource accurate and respectful.</p>
+  </div>
 </div>
 
 <!-- BOTTOM NAV -->
@@ -1292,6 +1360,9 @@ function navTo(id){
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
   const nb=document.getElementById('nb-'+id);if(nb)nb.classList.add('active');
   window.scrollTo(0,0);
+  // Hide the builder sticky panel whenever we leave the builder tab
+  const panel=document.getElementById('wb-builder-panel');
+  if(panel&&id!=='builder')panel.style.display='none';
   if(id==='glossary')renderGloss();
   if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
   if(id==='phrases')renderPhrases();
@@ -1433,6 +1504,14 @@ function updateFab(scope) {
   const fab = document.getElementById('prac-fab');
   if (!fab || !CU) { if (fab) fab.style.display = 'none'; return; }
 
+  // Only show while browsing Journey, Units, or Lesson intros — never during active exercise/practice
+  const allowed = ['home','unit-screen','lesson-screen'];
+  const isAllowed = allowed.some(id => {
+    const el = document.getElementById(id);
+    return el && el.classList.contains('active');
+  });
+  if (!isAllowed) { fab.style.display = 'none'; return; }
+
   PRAC.scope = scope;
   const wids = scope === 'lesson'
     ? lessonWids(CUi, CLi)
@@ -1455,6 +1534,8 @@ function updateFab(scope) {
 
 /* ── open overlay ── */
 function openPracOverlay() {
+  const fab = document.getElementById('prac-fab');
+  if (fab) fab.style.display = 'none';
   const wids = PRAC.scope === 'lesson'
     ? lessonWids(CUi, CLi)
     : unitWids(CUi);
@@ -1673,8 +1754,18 @@ function showPracComplete() {
     </div>`;
 }
 
-function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
-function goHome(){const f=document.getElementById('prac-fab');if(f)f.style.display='none';updateHomeUI();navTo('home');}
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0,0);
+  const panel=document.getElementById('wb-builder-panel');
+  if(panel&&id!=='builder')panel.style.display='none';
+}
+function goHome(){
+  document.getElementById('bnav').classList.remove('lesson-hidden');
+  hideFB();
+  updateHomeUI();navTo('home');updateFab(PRAC.scope||'unit');
+}
 
 /* ══════════════════════════════════════════════════════════
    HOME UI
@@ -1881,6 +1972,9 @@ function openLesson(ui,li){
 }
 
 function startExercises(){
+  const fab = document.getElementById('prac-fab');
+  if (fab) fab.style.display = 'none';
+  document.getElementById('bnav').classList.add('lesson-hidden');
   const l=UNITS[CUi].lessons[CLi];
   EX={pool:[...l.exercises],rpool:[],done:0,total:l.exercises.length,originalTotal:l.exercises.length,current:null,
       answered:false,attempts:0,correct:0,scoreable:0,mr:null,chunks:[],aurl:null};
@@ -1902,7 +1996,7 @@ function renderEx(){
 
   document.getElementById('epf').style.width=(EX.done/EX.total*100)+'%';
   document.getElementById('ectr').textContent=(EX.done+1)+'/'+EX.total;
-  document.getElementById('fbbar').className='fb';
+  hideFB();
   document.getElementById('varnotediv').innerHTML='';
 
   const btn=document.getElementById('actbtn');
@@ -2098,7 +2192,7 @@ function dlHandleAction(){
     const btns=document.querySelectorAll('#dl-interact .mcb');
     if(!isR&&DL.attempts===1){
       btns.forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
-      showFB('try','Not quite — please try again.','');
+      showFB('try','Not quite — please try again.');
       ab.disabled=true;
       return;
     }
@@ -2110,7 +2204,7 @@ function dlHandleAction(){
     DL.scoreable++;
     if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
     else{if(t.wid)recProf(t.wid,false);}
-    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite.'),'');
+    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite.'));
     ab.textContent='Continue';ab.disabled=false;ab.className=isR?'sbtn succ':'sbtn cont';
     EX.answered=true;
 
@@ -2122,13 +2216,13 @@ function dlHandleAction(){
     const isR=alts.some(a=>norm(v)===norm(a));
     DL.attempts++;
     if(!isR&&DL.attempts===1){
-      el.value='';showFB('try','Incorrect — please try again.','');el.focus();return;
+      el.value='';showFB('try','Incorrect — please try again.');el.focus();return;
     }
     el.classList.add(isR?'cor':'wrg');el.disabled=true;
     DL.scoreable++;
     if(isR){DL.correct++;if(t.wid)recProf(t.wid,true);}
     else{if(t.wid)recProf(t.wid,false);}
-    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite. The answer is: '+t.correct),'');
+    showFB(isR?'cor':'wrg',isR?(t.cm||'Tho niioht!'):(t.wm||'Not quite. The answer is: '+t.correct));
     const ab=document.getElementById('actbtn');
     ab.textContent='Continue';ab.disabled=false;ab.className=isR?'sbtn succ':'sbtn cont';
     EX.answered=true;
@@ -2152,7 +2246,7 @@ function dlAdvance(){
   thread.appendChild(ans);
 
   document.getElementById('dl-interact').innerHTML='';
-  document.getElementById('fbbar').className='fb';
+  hideFB();
   EX.answered=false;
   DL.step++;
   dlRenderStep();
@@ -2208,7 +2302,7 @@ function pickMatch(el){
       document.getElementById('mst').textContent=mPairs+' / '+ex.pairs.length+' matched';
       if(mPairs===ex.pairs.length){
         EX.answered=true;EX.correct++;EX.scoreable++;
-        showFB('cor',ex.cm,'');
+        showFB('cor',ex.cm);
         const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn succ';
       }
     } else {
@@ -2217,12 +2311,12 @@ function pickMatch(el){
       EX.attempts++;
       if(EX.attempts===1){
         // First error: only "incorrect, try again"
-        showFB('try','Incorrect — please try again.','');
+        showFB('try','Incorrect — please try again.');
       } else {
         // Second error: record wrong proficiency for all wids in this exercise
         if(ex.pairs)ex.pairs.forEach(pair=>{if(pair.wids)pair.wids.forEach(id=>recProf(id,false));});
         EX.rpool.push({...ex});EX.scoreable++;
-        showFB('wrg',ex.wm||'Not quite — this one will come back.',getVariantNote(ex));
+        showFB('wrg',ex.wm||'Not quite — this one will come back.');
         const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
         EX.answered=true;
       }
@@ -2249,7 +2343,7 @@ function handleAction(){
     if(!isR&&EX.attempts===1){
       // First error: silent "try again"
       document.querySelectorAll('.mcb').forEach(b=>{b.classList.remove('sel','cor','wrg');b.disabled=false;});
-      showFB('try','Incorrect — please try again.','');
+      showFB('try','Incorrect — please try again.');
       return;
     }
     // Correct OR second attempt
@@ -2267,7 +2361,7 @@ function handleAction(){
     if(!isR&&EX.attempts===1){
       // First error: silent "try again", clear field
       el.value='';
-      showFB('try','Incorrect — please try again.','');
+      showFB('try','Incorrect — please try again.');
       el.focus();
       return;
     }
@@ -2297,7 +2391,8 @@ function getVariantNote(ex){
 }
 
 function showVariantNote(wid){
-  const vd=document.getElementById('varnotediv');
+  const vd=document.getElementById('fb-varnotediv');
+  if(!vd)return;
   if(!wid||!VARIANTS[wid]){vd.innerHTML='';return;}
   const vs=VARIANTS[wid];
   vd.innerHTML=`<div class="var-note"><strong>Dialect variants — all are correct</strong>${vs.map(v=>`<div style="margin-top:.28rem"><strong style="color:var(--ed)">${v.c}:</strong> <span style="font-family:'Playfair Display',serif">${v.f}</span> <span style="color:var(--ew);font-size:.8rem">— ${v.n}</span></div>`).join('')}</div>`;
@@ -2305,19 +2400,48 @@ function showVariantNote(wid){
 
 function finishEx(isR,msg,varnote){
   EX.answered=true;
-  showFB(isR?'cor':'wrg',msg,'');
-  if(EX.current.wid)showVariantNote(EX.current.wid);
+  showFB(isR?'cor':'wrg',msg);
+  if(EX.current&&EX.current.wid)showVariantNote(EX.current.wid);
   const btn=document.getElementById('actbtn');
   btn.textContent='Continue';btn.disabled=false;
   btn.className=isR?'sbtn succ':'sbtn cont';
 }
-function showFB(type,title,detail){
-  const bar=document.getElementById('fbbar');
-  const map={cor:'corfb',wrg:'wrgfb',try:'tryfb',info:'infofb'};
-  bar.className='fb show '+(map[type]||'infofb');
-  document.getElementById('fbic').textContent={cor:'✓',wrg:'✗',try:'↩',info:'🌿'}[type]||'';
-  document.getElementById('fbtitle').textContent=title;
-  document.getElementById('fbdet').textContent=detail;
+function showFB(type,title){
+  const drawer=document.getElementById('fb-drawer');
+  const typeMap={cor:'cor',wrg:'wrg',try:'try',info:'info'};
+  const t=typeMap[type]||'info';
+  // Reset drawer state
+  drawer.className='fb-drawer '+t;
+  document.getElementById('fb-panel').style.display='';
+  document.getElementById('fb-report-panel').style.display='none';
+  document.getElementById('fb-thanks').style.display='none';
+  // Icon
+  const icon=document.getElementById('fb-icon');
+  icon.className='fb-icon '+t;
+  icon.textContent={cor:'✓',wrg:'✗',try:'↩',info:'🌿'}[type]||'';
+  // Title
+  document.getElementById('fb-title').textContent=title;
+  // Continue button style
+  const cont=document.getElementById('fb-continue');
+  cont.className='fb-continue '+t;
+  cont.textContent='Continue';
+  // Flag button — only on final answer (cor/wrg), hidden on try
+  document.getElementById('fb-flag-btn').style.display=(type==='cor'||type==='wrg')?'':'none';
+  // Open drawer
+  drawer.classList.add('open');
+  // Set up swipe-to-peek on handle
+  initDrawerSwipe();
+}
+function hideFB(){
+  const drawer=document.getElementById('fb-drawer');
+  drawer.classList.remove('open','peek');
+  // reset report state for next question
+  document.getElementById('fb-report-panel').style.display='none';
+  document.getElementById('fb-panel').style.display='';
+  document.getElementById('fb-thanks').style.display='none';
+  document.querySelectorAll('.fb-report-opt').forEach(b=>b.classList.remove('selected'));
+  const rs=document.getElementById('fb-report-submit');if(rs)rs.classList.remove('ready');
+  _reportVal='';
 }
 function advance(){
   // Always move forward in the main pool
@@ -2338,6 +2462,8 @@ function advance(){
   }
 }
 function finishLesson(){
+  document.getElementById('bnav').classList.remove('lesson-hidden');
+  hideFB();
   const acc=EX.scoreable>0?Math.round(EX.correct/EX.scoreable*100):100;
   document.getElementById('sacc').textContent=acc+'%';
   document.getElementById('csub').textContent=UNITS[CUi].lessons[CLi].title+' — complete';
@@ -2481,7 +2607,7 @@ function audioAssess(good){
   if(EX.audio){EX.audio.pause();}
   if(EX.current&&EX.current.wid)recProf(EX.current.wid,good);
   document.getElementById('sass').classList.remove('vis');
-  showFB('info',good?"You're building the voice of the language":'Every attempt is a seed planted','Speaking practice builds the deepest connection to a living language.');
+  showFB('info',good?"You're building the voice of the language":'Every attempt is a seed planted');
   EX.answered=true;
   const btn=document.getElementById('actbtn');btn.textContent='Continue';btn.disabled=false;btn.className='sbtn cont';
 }
@@ -4208,6 +4334,13 @@ function wbCarrGoto(idx){
   });
   WB_STEP=idx;
   wbRenderDots();
+  // Sync shared sticky nav
+  const ctr=document.getElementById('wb-carr-ctr');
+  if(ctr)ctr.textContent='step '+(idx+1)+' of '+WB_STEPS.length;
+  const prev=document.getElementById('wb-carr-prev');
+  if(prev)prev.disabled=(idx===0);
+  const next=document.getElementById('wb-carr-next');
+  if(next)next.disabled=(idx>=WB_STEPS.length-1)||(idx>=1&&!WB.formChosen);
 }
 
 function wbCarrNext(){
@@ -4227,14 +4360,6 @@ function wbRenderDots(){
     if(!el)continue;
     el.innerHTML=WB_STEPS.map((_,j)=>`<div style="width:5px;height:5px;border-radius:50%;background:${j===WB_STEP?'var(--clay)':'var(--smoke)'}"></div>`).join('');
   }
-}
-
-/* ── Live assembly — called after any picker selection ── */
-function wbGetSuffix(form,root,prefix){
-  const assembled=(prefix+root).replace(/[áéíóú:]/g,c=>c).toLowerCase();
-  const fLow=form.replace(/[áéíóú:]/g,c=>c).toLowerCase();
-  if(fLow.endsWith('s')&&!assembled.endsWith('s'))return{val:'-s',sub:'habitual aspect'};
-  return{val:'∅',sub:'bare stem'};
 }
 
 /* ── English translation builder ───────────────────────────────────
@@ -5000,6 +5125,134 @@ loadData().then(() => {
   if(last){const u=getUsers();if(u[last]){loginAs(last,u[last]);return;}}
   showScreen('login');
 });
+
+/* ── DUOLINGO DRAWER — swipe, report, submit ── */
+let _swipeStartY=0, _swipeActive=false;
+
+function initDrawerSwipe(){
+  const handle=document.getElementById('fb-handle');
+  const drawer=document.getElementById('fb-drawer');
+  if(!handle||!drawer||handle._drawerBound)return;
+  handle._drawerBound=true;
+
+  handle.addEventListener('touchstart',e=>{
+    _swipeStartY=e.touches[0].clientY;
+    _swipeActive=true;
+    drawer.style.transition='none';
+  },{passive:true});
+
+  handle.addEventListener('touchmove',e=>{
+    if(!_swipeActive)return;
+    const dy=e.touches[0].clientY-_swipeStartY;
+    if(dy>0) drawer.style.transform=`translateY(${dy}px)`;
+  },{passive:true});
+
+  handle.addEventListener('touchend',e=>{
+    if(!_swipeActive)return;
+    _swipeActive=false;
+    drawer.style.transition='';
+    const dy=e.changedTouches[0].clientY-_swipeStartY;
+    if(dy>80){
+      // swiped down far enough — peek (show just the handle)
+      drawer.style.transform='';
+      drawer.classList.remove('open');
+      drawer.classList.add('peek');
+    } else {
+      // snap back open
+      drawer.style.transform='';
+      drawer.classList.add('open');
+      drawer.classList.remove('peek');
+    }
+  },{passive:true});
+
+  // Tap the peeked handle to fully reopen
+  handle.addEventListener('click',()=>{
+    if(drawer.classList.contains('peek')){
+      drawer.classList.remove('peek');
+      drawer.classList.add('open');
+    }
+  });
+}
+
+function openReportPanel(){
+  document.getElementById('fb-panel').style.display='none';
+  document.getElementById('fb-report-panel').style.display='';
+  document.getElementById('fb-thanks').style.display='none';
+  // Make sure drawer is fully open when report panel shows
+  const drawer=document.getElementById('fb-drawer');
+  drawer.classList.add('open');
+  drawer.classList.remove('peek');
+}
+
+function closeReportPanel(){
+  document.getElementById('fb-report-panel').style.display='none';
+  document.getElementById('fb-panel').style.display='';
+}
+
+let _reportVal='';
+function selectReportOption(btn,val){
+  document.querySelectorAll('.fb-report-opt').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+  _reportVal=val;
+  const sub=document.getElementById('fb-report-submit');
+  if(sub)sub.classList.add('ready');
+}
+
+async function submitReportOption(){
+  const labels={
+    accepted:'Answer should be accepted',
+    audio:'Audio wrong or missing',
+    spelling:'Spelling or grammar wrong',
+    translation:'Translation wrong or unclear',
+    dialect:'Correct in my dialect',
+    other:'Something else'
+  };
+  const issueLabel=labels[_reportVal]||_reportVal;
+  const question=(document.getElementById('eq')||{}).textContent||'';
+  const exType=(document.getElementById('etlbl')||{}).textContent||'';
+
+  // Show thanks
+  document.getElementById('fb-report-panel').style.display='none';
+  document.getElementById('fb-panel').style.display='none';
+  document.getElementById('fb-thanks').style.display='';
+
+  // Treat as correct — credit the question, remove from rpool, advance
+  EX.correct++;
+  EX.scoreable++;
+  if(EX.current){
+    // Remove from rpool if it was queued for retry
+    EX.rpool=EX.rpool.filter(e=>e!==EX.current&&e.wid!==EX.current.wid);
+    if(EX.current.wid)recProf(EX.current.wid,true);
+  }
+  // Short pause to show thanks, then advance
+  setTimeout(()=>{ hideFB(); advance(); }, 1800);
+
+  // Submit to GitHub Issues
+  const GITHUB_OWNER='YOUR_GITHUB_USERNAME';
+  const GITHUB_REPO='YOUR_REPO_NAME';
+  const GITHUB_TOKEN='YOUR_FINE_GRAINED_PAT';
+  try{
+    await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/issues`,{
+      method:'POST',
+      headers:{
+        'Authorization':`Bearer ${GITHUB_TOKEN}`,
+        'Accept':'application/vnd.github+json',
+        'X-GitHub-Api-Version':'2022-11-28',
+        'Content-Type':'application/json',
+      },
+      body:JSON.stringify({
+        title:`[Report] ${issueLabel}`,
+        body:[
+          `**Issue:** ${issueLabel}`,
+          `**Question:** ${question||'—'}`,
+          `**Exercise type:** ${exType||'—'}`,
+          `**Reported at:** ${new Date().toISOString()}`,
+        ].join('\n'),
+        labels:['user-report'],
+      }),
+    });
+  }catch(e){console.warn('Report submission failed:',e);}
+}
 </script>
 </body>
 </html>
