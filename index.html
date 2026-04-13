@@ -22,6 +22,9 @@
 .prac-fab:active{transform:scale(.97);}
 .prac-fab .fab-ic{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;}
 .prac-fab .fab-badge{position:absolute;top:-6px;right:-6px;background:var(--clay);color:white;border-radius:50%;width:20px;height:20px;font-size:.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid white;}
+.journal-fab{position:fixed;bottom:calc(68px + env(safe-area-inset-bottom) + 10px);left:1.1rem;z-index:90;display:none;align-items:center;gap:.5rem;background:var(--ed);color:var(--sand);border:none;border-radius:50px;padding:.72rem 1.1rem;font-family:'Crimson Pro',serif;font-size:.88rem;font-weight:600;cursor:pointer;box-shadow:0 4px 18px rgba(44,24,16,.28);transition:transform .15s,box-shadow .15s;letter-spacing:.02em;}
+.journal-fab:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(44,24,16,.35);}
+.journal-fab:active{transform:scale(.97);}
 /* ── Practice session overlay ── */
 .prac-overlay{display:none;position:fixed;inset:0;z-index:200;background:var(--cream);overflow-y:auto;flex-direction:column;}
 .prac-overlay.open{display:flex;}
@@ -38,12 +41,12 @@
 html,body{height:100%;font-family:'Crimson Pro',Georgia,serif;background:var(--cream);color:var(--ed);overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(139,94,60,.06),transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(92,58,30,.04),transparent 50%);pointer-events:none;z-index:0;}
 .bm{height:5px;flex-shrink:0;background:repeating-linear-gradient(90deg,var(--clay) 0 8px,var(--ew) 8px 16px,var(--sand) 16px 20px,var(--sage) 20px 28px,var(--sand) 28px 32px);}
-.screen{display:none;position:relative;z-index:1;min-height:100vh;flex-direction:column;}
+.screen{display:none;position:relative;z-index:1;height:100vh;max-height:100vh;flex-direction:column;overflow:hidden;}
 .screen.active{display:flex;}
 .pw{flex:1;overflow-y:auto;padding-bottom:calc(var(--nav-h) + 1.5rem);}
 
 /* ── LOGIN ── */
-#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));position:relative;}
+#login{align-items:center;justify-content:center;padding:2rem 1.2rem;background:linear-gradient(160deg,var(--ed),var(--em));position:relative;overflow-y:auto;}
 #login>.bm{position:absolute;top:0;left:0;right:0;}
 .lbox{background:transparent;border-radius:22px;box-shadow:0 8px 40px rgba(44,24,16,.28);max-width:390px;width:100%;overflow:hidden;}
 .lhero{background:linear-gradient(150deg,var(--ed),var(--em));padding:2.2rem 2rem;text-align:center;border-radius:22px 22px 0 0;}
@@ -80,8 +83,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   box-shadow:0 -4px 24px rgba(44,24,16,.18);
   transform:translateY(100%);
   transition:transform .32s cubic-bezier(.34,1.1,.64,1);
-  touch-action:none;
   padding-bottom:env(safe-area-inset-bottom);
+  display:flex;flex-direction:column;
 }
 .fb-drawer.open{transform:translateY(0);}
 .fb-drawer.peek{transform:translateY(calc(100% - 52px));}
@@ -91,7 +94,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .fb-drawer.info{border-top:4px solid var(--clay);}
 
 /* drag handle */
-.fb-handle{width:36px;height:4px;background:var(--smoke);border-radius:4px;margin:.7rem auto .1rem;cursor:grab;flex-shrink:0;}
+.fb-handle{width:36px;height:4px;background:var(--smoke);border-radius:4px;margin:.7rem auto .1rem;cursor:grab;flex-shrink:0;touch-action:none;}
 
 /* main feedback panel */
 .fb-panel{padding:.6rem 1.3rem 1rem;}
@@ -115,7 +118,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .fb-flag-btn:hover{border-color:var(--clay);color:var(--clay);}
 
 /* report panel (replaces fb-inner when flag tapped) */
-.fb-report-panel{padding:.5rem 1.3rem 1rem;display:none;}
+.fb-report-panel{padding:.5rem 1.3rem 1rem;display:none;overflow-y:auto;max-height:80vh;}
 .fb-report-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem;}
 .fb-report-hdr h3{font-family:'Playfair Display',serif;font-size:1rem;color:var(--ed);}
 .fb-report-close{background:none;border:none;font-size:1.25rem;color:var(--ew);cursor:pointer;padding:.1rem .3rem;line-height:1;}
@@ -1103,9 +1106,14 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="wb-ph-note" id="wb-ph-note" style="display:none;"></div>
 </div>
 <button class="prac-fab" id="prac-fab" onclick="openPracOverlay()" aria-label="Practice weak words">
-  <span class="fab-ic" style="font-size:1.1rem;line-height:1;">★</span>
-  <span id="fab-label">Practice</span>
+  <span style="font-size:.88rem;font-weight:700;letter-spacing:.02em;">Practice</span>
   <span class="fab-badge" id="fab-badge">0</span>
+</button>
+
+<!-- JOURNAL FAB -->
+<button class="journal-fab" id="journal-fab" onclick="navTo('journal')" aria-label="Open journal">
+  <i class="fa-solid fa-seedling"></i>
+  Journal
 </button>
 
 <!-- PRACTICE OVERLAY -->
@@ -1168,9 +1176,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <nav class="bnav" id="bnav" style="display:none">
   <button class="nb active" id="nb-home" onclick="navTo('home')"><span class="ni"><i class="fa-solid fa-house"></i></span>Journey</button>
   <button class="nb" id="nb-syllabary" onclick="navTo('syllabary')"><span class="ni"><i class="fa-solid fa-volume-high"></i></span>Sounds</button>
-  <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni"><i class="fa-solid fa-book-open"></i></span>Words</button>
-  <button class="nb" id="nb-journal" onclick="navTo('journal')"><span class="ni"><i class="fa-solid fa-seedling"></i></span>Journal</button>
   <button class="nb" id="nb-builder" onclick="navTo('builder')"><span class="ni"><i class="fa-solid fa-puzzle-piece"></i></span>Builder</button>
+  <button class="nb" id="nb-glossary" onclick="navTo('glossary')"><span class="ni"><i class="fa-solid fa-book-open"></i></span>Words</button>
   <button class="nb" id="nb-resources" onclick="navTo('resources')"><span class="ni"><i class="fa-solid fa-compass"></i></span>Resources</button>
 </nav>
 
@@ -1247,6 +1254,7 @@ function loginAs(name,data){
   const today=new Date().toDateString();
   if(!data.daysLogged.includes(today)){data.daysLogged.push(today);saveUD(name,data);}
   document.getElementById('bnav').style.display='flex';
+  const jfab=document.getElementById('journal-fab');if(jfab)jfab.style.display='flex';
   updateHomeUI();navTo('home');
 }
 
@@ -1254,6 +1262,7 @@ function doLogout(){
   CU=null;
   localStorage.removeItem(LK);
   document.getElementById('bnav').style.display='none';
+  const jfabo=document.getElementById('journal-fab');if(jfabo)jfabo.style.display='none';
   document.getElementById('si-n').value='';
   document.getElementById('si-p').value='';
   document.getElementById('si-e').textContent='';
@@ -1367,6 +1376,9 @@ function navTo(id){
   if(id==='syllabary'){renderSylAll();updateSylProfSummary();}
   if(id==='phrases')renderPhrases();
   if(id==='journal')renderJournal();
+  // Show journal FAB only on Journey (home) tab
+  const jfab=document.getElementById('journal-fab');
+  if(jfab)jfab.style.display=(id==='home')?'flex':'none';
   if(id==='builder')wbInit();
 }
 function renderJournal(){

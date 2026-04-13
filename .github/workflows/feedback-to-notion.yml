@@ -21,6 +21,19 @@ jobs:
             const NOTION_TOKEN = process.env.NOTION_TOKEN;
             const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
 
+            // Maps the emoji-prefixed exercise type strings written by the app
+            // into the canonical title-case Notion multi-select option names.
+            // Create these exact names as options in your Notion "Exercise Type" column.
+            const EXERCISE_TYPE_MAP = {
+              '🌀 Multiple Choice':   'Multiple Choice',
+              '🔗 Matching':          'Matching',
+              '✏️ Fill in the Blank': 'Fill in the Blank',
+              '⌨️ Type the Word':     'Type the Word',
+              '🎙️ Speak Aloud':      'Speak Aloud',
+              '🌱 Story Moment':      'Story Moment',
+              '💬 Conversation':      'Conversation',
+            };
+
             // ── 1. Fetch all open issues labelled 'user-report' but NOT 'synced-to-notion'
             const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
@@ -44,13 +57,22 @@ jobs:
               const body = issue.body || '';
               const get = (field) => {
                 const match = body.match(new RegExp(`\\*\\*${field}:\\*\\*\\s*(.+)`));
-                return match ? match[1].trim() : '—';
+                return match ? match[1].trim() : '';
               };
 
-              const issueType  = get('Issue');
-              const question   = get('Question');
-              const exType     = get('Exercise type');
+              const issueType  = get('Issue') || '—';
+              const question   = get('Question') || '—';
+              const exTypeRaw  = get('Exercise type');
               const reportedAt = get('Reported at');
+
+              // Resolve exercise type label; fall back to raw value if unrecognised
+              const exTypeLabel = EXERCISE_TYPE_MAP[exTypeRaw] || exTypeRaw || '—';
+
+              // Notion date fields require { start: '<ISO 8601 string>' }.
+              // Fall back to the issue creation timestamp if the field is missing.
+              const dateValue = (reportedAt && !isNaN(Date.parse(reportedAt)))
+                ? reportedAt
+                : issue.created_at;
 
               const notionBody = {
                 parent: { database_id: NOTION_DATABASE_ID },
@@ -62,13 +84,15 @@ jobs:
                   'Question': {
                     rich_text: [{ text: { content: question } }]
                   },
-                  'Exercise type': {
-                    rich_text: [{ text: { content: exType } }]
+                  // Multi-select — add all seven options listed above to this column in Notion
+                  'Exercise Type': {
+                    multi_select: [{ name: exTypeLabel }]
                   },
-                  'Reported at': {
-                    rich_text: [{ text: { content: reportedAt } }]
+                  // Date type — value must be an ISO 8601 string
+                  'Reported At': {
+                    date: { start: dateValue }
                   },
-                  'GitHub issue': {
+                  'GitHub Issue': {
                     url: issue.html_url
                   },
                   'Status': {
