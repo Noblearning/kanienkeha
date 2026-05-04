@@ -1389,7 +1389,13 @@ function navTo(id){
       pfab.style.display='none';
     }
   }
-  if(id==='builder')wbInit();
+  if(id==='builder'){
+    wbInit();
+    // Re-show the assembly panel whenever we return to the builder tab
+    // (wbInit is guarded so won't re-run after first visit; show panel explicitly)
+    const wbPanel=document.getElementById('wb-builder-panel');
+    if(wbPanel)wbPanel.style.display=WB.mode==='explore'?'':'none';
+  }
 }
 function renderJournal(){
   if(!CU||!CU.data.journal)return;
@@ -4048,21 +4054,20 @@ const WB_COMPOUNDS=[
 let WB={word:null,series:'subj',formIdx:null,cat:'all',mode:'explore',actType:'prefix',score:0,streak:0,attempts:0,initialized:false,activePfx:null,activeRow:null,niRootId:null,descriptorId:null,formChosen:false,dialect:'kanehsatake'};
 
 /* ── Dialect adaptation ─────────────────────────────────────────────
-   Two productive rules affect pronominal prefixes in the builder:
+   Two productive rules affect the builder display:
 
    1. r → l  (Akwesasne)
       All pronominal-prefix r's become l:
-      ra→la, ron→lon, rati→lati, roti→loti, ronen→lonen, etc.
+      ra→la, ron→lon, rati→lati, etc.
       Attested in data_variants.json (p04, n05-n08).
 
-   2. i → y  (Six Nations / Tyendinaga)
-      Affects only the standalone 2sg/1sg pronoun words (í:se', í:'i),
-      NOT the verb-prefix tables (which use sa-, s-, etc. regardless).
-      For the word-builder prefix display there is no prefix-level change —
-      the only visible difference would be in the pronoun chips on step 2,
-      which already use the prefix tables. No prefix transformation needed.
+   2. i → y at word-initial position  (Six Nations / Tyendinaga)
+      Affects standalone pronouns (í:se'→ý:se', í:'i→ý:'i) and
+      any i-initial assembled form. Does NOT affect mid-word i
+      (e.g. prefix vowels in 'aki', 'ki' remain unchanged).
+      Attested in data_variants.json (p01, p02).
 
-   So for the builder, only rule 1 (r→l) needs to be applied.
+   Both rules are applied in wbApplyDialect() below.
    ──────────────────────────────────────────────────────────────────── */
 function wbApplyDialect(str){
   if(!str||WB.dialect==='kanehsatake')return str;
@@ -4071,7 +4076,12 @@ function wbApplyDialect(str){
     // Use global replace — all r's in a prefix string are pronominal
     return str.replace(/r/g,'l').replace(/R/g,'L');
   }
-  // Six Nations: no prefix-table change (see note above)
+  if(WB.dialect==='sixnations'){
+    // i→y at word-initial position (Six Nations / Tyendinaga orthography convention)
+    // Affects standalone pronouns: í:se'→ý:se', í:'i→ý:'i, and i-initial prefix strings
+    // Does not affect i mid-word (e.g. 'aki', 'ki' — these are prefix vowels, unchanged)
+    return str.replace(/^í/,'ý').replace(/^i/,'y').replace(/^I/,'Y');
+  }
   return str;
 }
 
@@ -4162,6 +4172,8 @@ function wbSelectWord(id){
   /* Enable forward arrow on step 1 now that a root is chosen */
   const nextBtn=document.getElementById('wb-carr-next');
   if(nextBtn)nextBtn.disabled=false;
+  /* Re-render dots/nav to reflect new state */
+  wbCarrGoto(0);
 }
 
 /* ── step lock/unlock ── */
@@ -4364,13 +4376,14 @@ function wbCarrGoto(idx){
   const prev=document.getElementById('wb-carr-prev');
   if(prev)prev.disabled=(idx===0);
   const next=document.getElementById('wb-carr-next');
-  if(next)next.disabled=(idx>=WB_STEPS.length-1)||(idx>=1&&!WB.formChosen);
+  if(next)next.disabled=(idx>=WB_STEPS.length-1)||(idx===0&&!WB.word)||(idx>=1&&!WB.formChosen);
 }
 
 function wbCarrNext(){
   const next=WB_STEP+1;
   if(next>=WB_STEPS.length)return;
-  /* Steps 3 & 4 require a form to have been chosen first */
+  /* Step 2 requires a word root; steps 3 & 4 also require a form */
+  if(next>=1&&!WB.word)return;
   if(next>=2&&!WB.formChosen)return;
   wbCarrGoto(next);
 }
@@ -4612,7 +4625,7 @@ function wbUpdateAssembly(){
     noteLines.push('Boundary rule applied: root-initial vowel deleted after vowel-final prefix (standard Mohawk phonology).');
   }
   if(dialectChanged){
-    const dialectLabels={akwesasne:'Akwesasne (r→l alternation in pronominal prefixes)',sixnations:'Six Nations / Tyendinaga (no prefix-level change from this dialect)'};
+    const dialectLabels={akwesasne:'Akwesasne (r→l alternation in pronominal prefixes)',sixnations:'Six Nations / Tyendinaga (word-initial i→y; e.g. í:se\' → ý:se\', í:\'i → ý:\'i)'};
     noteLines.push('Dialect: '+( dialectLabels[WB.dialect]||WB.dialect)+'. All community forms are equally valid.');
   }
   if(noteLines.length){
