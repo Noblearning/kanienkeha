@@ -1028,6 +1028,46 @@
             "word": "í:’i",
             "meaning": "I / me",
             "storyPrompt": "í:’i — I. A two-syllable word with a glottal stop in its heart. Think about what it means to say ‘I’ in a language that was taken from families. To say í:’i in Kanien’kéha is to locate yourself in this language. Not as a guest, not as a student only — as someone who exists in this language. Who are you, in this language, right now?"
+          },
+          {
+            "type": "wordbuilder",
+            "actType": "meaning",
+            "prompt": "Word Builder — what does this form mean?",
+            "sub": "Use what you know from the Builder tab",
+            "wid": null,
+            "cm": "Niawenhkó:wa! The prefix carries both the person and the series. Explore the Builder tab to see all the forms laid out together.",
+            "wm": "Not quite — this one will come back around."
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'you (singular) are sitting'",
+            "sub": "The root is given — choose the right person prefix",
+            "targetWord": "sá:tien",
+            "targetEnglish": "you (singular) are sitting",
+            "correct": "sá:tien",
+            "alts": [
+              "sa:tien",
+              "satien"
+            ],
+            "rootHint": "v01",
+            "cm": "Tho niioht! sá:tien — the sa- prefix marks second-person singular subjective on an a-stem verb. You'll see this prefix pattern across many verbs.",
+            "wm": "Not quite — look at the subjective series and find the prefix for 'you (singular)'.",
+            "wid": null
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'I am sitting'",
+            "sub": "Find the right root and prefix — both steps are open",
+            "targetWord": "ká:tiens",
+            "targetEnglish": "I am sitting",
+            "correct": "ká:tiens",
+            "alts": [
+              "ka:tiens",
+              "katiens"
+            ],
+            "cm": "Niawenhkó:wa! ká:tiens — ka- is the first-person singular subjective prefix on an a-stem verb. The habitual -s marks an ongoing state.",
+            "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'I' in the subjective series is ka-.",
+            "wid": null
           }
         ]
       },
@@ -2270,6 +2310,31 @@
               "k09",
               "k10"
             ]
+          },
+          {
+            "type": "wordbuilder",
+            "actType": "prefix",
+            "prompt": "Word Builder — identify the person prefix",
+            "sub": "Which prefix is used in this verb form?",
+            "wid": null,
+            "cm": "Tho niioht! Recognising prefixes is the foundation of reading Kanien'kéha — the prefix tells you who is doing the action before you even reach the root.",
+            "wm": "Not quite — this one will come back around."
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'my mother'",
+            "sub": "The root ista (mother) is given — choose the possessor prefix",
+            "targetWord": "ake'nihsténha",
+            "targetEnglish": "my mother",
+            "correct": "ake'nihsténha",
+            "alts": [
+              "ake'nihstenha",
+              "akenikstenha"
+            ],
+            "rootHint": "k01",
+            "cm": "Niawenhkó:wa! ake'nihsténha — my mother. The ake- prefix marks first-person singular possession on female kinship nouns. This same prefix appears across all female-line kinship terms.",
+            "wm": "Not quite — scroll the possessor list and find the form for 'my'.",
+            "wid": null
           }
         ]
       },
@@ -3107,6 +3172,29 @@
             "word": "Kahwatsíre’",
             "meaning": "Family",
             "storyPrompt": "Kahwatsíre’ — family. You have now learned how to name your family in Kanien’kéha, how to say you are going to their homes, how to ask who someone is and where their people are from. These are some of the first things any speaker of any language learns. You are doing that learning now, in this language. The vocabulary of family is the vocabulary of who you are. Onen’ ki’ wáhi."
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'your grandfather'",
+            "sub": "Choose both the kinship root and the possessor prefix",
+            "targetWord": "yahsótha",
+            "targetEnglish": "your grandfather",
+            "correct": "yahsótha",
+            "alts": [
+              "yahsotha"
+            ],
+            "cm": "Tho niioht! yahsótha — your grandfather. The yah- prefix marks second-person singular possession. In Akwesasne this becomes lahsótha — both are equally correct.",
+            "wm": "Not quite. The root is 'sot (grandfather) and the prefix for 'your' on male kinship nouns is yah-.",
+            "wid": null
+          },
+          {
+            "type": "wordbuilder",
+            "actType": "form",
+            "prompt": "Word Builder — build the correct verb form",
+            "sub": "Choose the fully assembled form for the given root and person",
+            "wid": null,
+            "cm": "Io'nikonhraién:ta'ne! Building the form from its parts is the core skill of Kanien'kéha literacy. Head to the Builder tab to explore more combinations.",
+            "wm": "Not quite — this one will come back around."
           }
         ]
       }
@@ -3624,6 +3712,46 @@
             "word": "sá:tien / ká:tiens",
             "meaning": "You sit / I am sitting",
             "storyPrompt": "sá:tien — sit. ká:tiens — I am sitting. These are your first Kanien'kéha verbs. They are humble, everyday actions. In Freire's (1970) pedagogy, literacy begins with the words of daily life — not abstractions. What everyday actions in your life would you most want to be able to name in Kanien'kéha? Think of three and write them here."
+          },
+          {
+            "type": "wordbuilder",
+            "actType": "meaning",
+            "prompt": "Word Builder — what does this verb form mean?",
+            "sub": "Read the assembled form and choose the correct meaning",
+            "wid": null,
+            "cm": "Niawenhkó:wa! Each form packages a whole phrase — person, action, and aspect — into one word. This is what makes Kanien'kéha polysynthetic.",
+            "wm": "Not quite — this one will come back around."
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'you are listening'",
+            "sub": "The root atkáhthon (to listen) is given — choose the person prefix",
+            "targetWord": "satkáhthons",
+            "targetEnglish": "you are listening",
+            "correct": "satkáhthons",
+            "alts": [
+              "satka:hthons",
+              "satkahthons"
+            ],
+            "rootHint": "v05",
+            "cm": "Tho niioht! satkáhthons — you are listening. The sa- prefix marks second-person singular. The habitual -s signals an ongoing or repeated action.",
+            "wm": "Not quite — find the subjective prefix for 'you (singular)' in the person list.",
+            "wid": null
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'I am running'",
+            "sub": "Choose the root and the first-person prefix — both steps are open",
+            "targetWord": "tekaráhtats",
+            "targetEnglish": "I am running",
+            "correct": "tekaráhtats",
+            "alts": [
+              "tekarahtats",
+              "tekarahtat"
+            ],
+            "cm": "Niawenhkó:wa! tekaráhtats — I am running. The te- is a directional reduplication element on this root; ka- is still doing the first-person singular work.",
+            "wm": "Not quite. The root is aráhtat (to run) and the first-person singular subjective prefix is ka-. Look for tekaráhtats in the form list.",
+            "wid": null
           }
         ]
       },
@@ -4792,6 +4920,30 @@
             "word": "Kanehsatà:ke",
             "meaning": "Kanehsatà:ke",
             "storyPrompt": "Kanehsatà:ke — where the crust is on the sand. This is where the curriculum this app is built on was created. Every word in this app has passed through that community's knowledge. You are learning the language of a specific place, with a specific name, held by specific people. Onen' ki' wáhi."
+          },
+          {
+            "type": "wordbuilder",
+            "actType": "prefix",
+            "prompt": "Word Builder — review: identify the prefix",
+            "sub": "Name the person/aspect prefix in this verb form",
+            "wid": null,
+            "cm": "Io'nikonhraién:ta'ne! You're reading the morpheme structure of Kanien'kéha verbs. Keep exploring the Builder tab to see how the prefix system extends across all stem classes.",
+            "wm": "Not quite — this one will come back around."
+          },
+          {
+            "type": "wbassemble",
+            "prompt": "Build the word for 'you all are sitting'",
+            "sub": "An open challenge — choose the root and the plural prefix",
+            "targetWord": "sewá:tien",
+            "targetEnglish": "you all are sitting",
+            "correct": "sewá:tien",
+            "alts": [
+              "sewa:tien",
+              "sewatien"
+            ],
+            "cm": "Tho niioht! sewá:tien — you all are sitting. The sewa- prefix marks second-person plural subjective. Compare sa- (you singular) → sewa- (you plural): the -wa- extends it to a group.",
+            "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'you all' is sewa-. Look in the subjective series for the plural form.",
+            "wid": null
           }
         ]
       }

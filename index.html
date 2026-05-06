@@ -238,6 +238,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .wb-act-panel{background:white;border:1px solid var(--smoke);border-radius:14px;padding:1.1rem 1.2rem;box-shadow:0 2px 8px rgba(44,24,16,.06);}
 .wb-act-prompt{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--ed);margin-bottom:.22rem;}
 .wb-act-sub{font-size:.84rem;color:var(--ew);font-style:italic;margin-bottom:1rem;}
+.wba-wrap{display:flex;flex-direction:column;gap:1rem;}.wba-step{transition:opacity .2s;}.wba-locked{opacity:.38;pointer-events:none;}.wba-step-hd{display:flex;align-items:center;gap:.5rem;margin-bottom:.55rem;}.wba-step-hint{font-size:.82rem;color:var(--ew);font-style:italic;}.wba-asm-panel{background:var(--birch);border:1px solid var(--sand);border-radius:12px;padding:.75rem .9rem;}.wba-toggle-row{display:flex;align-items:center;justify-content:space-between;background:var(--cream);border:1px solid var(--sand);border-radius:8px;padding:.45rem .75rem;}.wba-toggle-lbl{font-size:.78rem;color:var(--ew);}.wba-toggle{position:relative;width:36px;height:20px;cursor:pointer;flex-shrink:0;}.wba-toggle input{opacity:0;width:0;height:0;position:absolute;}.wba-track{position:absolute;inset:0;background:var(--smoke);border-radius:10px;transition:background .2s;}.wba-toggle input:checked+.wba-track{background:var(--clay);}.wba-thumb{position:absolute;top:3px;left:3px;width:14px;height:14px;background:white;border-radius:50%;transition:left .2s;pointer-events:none;}.wba-toggle input:checked~.wba-thumb{left:19px;}
 .wb-act-target{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--ed);margin-bottom:.18rem;}
 .wb-act-en{font-size:.88rem;color:var(--ew);font-style:italic;margin-bottom:1rem;}
 .wb-choices{display:grid;grid-template-columns:1fr 1fr;gap:.52rem;margin-bottom:.85rem;}
@@ -2055,6 +2056,7 @@ function renderEx(){
   else if(ex.type==='story')html+=rStory(ex);
   else if(ex.type==='dialogue')html+=rDialogue(ex);
   else if(ex.type==='wordbuilder')html+=rWordBuilder(ex); // delegates to wbBuildQuestionData()
+  else if(ex.type==='wbassemble')html+=rWBAssemble(ex);   // guided assembly exercise
   document.getElementById('exbody').innerHTML=html;
 
   if(ex.type==='audio'||ex.type==='story'){
@@ -2062,9 +2064,10 @@ function renderEx(){
     btn.disabled=false;btn.className='sbtn cont';
   }
   if(ex.type==='dialogue'){initDialogue(ex);}
+  if(ex.type==='wbassemble'){wbaInit(ex);}
 }
 
-function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment','dialogue':'💬 Conversation','wordbuilder':'🧩 Word Builder'}[t]||t;}
+function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment','dialogue':'💬 Conversation','wordbuilder':'🧩 Word Builder','wbassemble':'🧩 Word Builder — Assemble'}[t]||t;}
 function rMC(ex){return`<div class="mco">${ex.options.map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="pickMC(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')}</div>`;}
 function rMatch(ex){const sh=[...ex.pairs].sort(()=>Math.random()-.5);return`<div class="mgrid"><div class="mcol">${ex.pairs.map((p,i)=>`<div class="mi" data-id="${i}" data-side="L" onclick="pickMatch(this)">${p.target}</div>`).join('')}</div><div class="mcol">${sh.map(p=>{const i=ex.pairs.findIndex(x=>x.english===p.english);return`<div class="mi" data-id="${i}" data-side="R" onclick="pickMatch(this)">${p.english}</div>`;}).join('')}</div></div><div id="mst" style="text-align:center;margin-top:.55rem;font-style:italic;color:var(--ew);font-size:.82rem;">Tap a word on the left, then its match on the right</div>`;}
 function rFill(ex){return`<div class="fbs">${ex.sentence.replace('___',`<input class="fbi" id="fbi" type="text" placeholder="?" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)}</div><p style="font-size:.78rem;color:var(--ew);font-style:italic;">Hint: starts with <strong>${ex.hint}</strong></p>`;}
@@ -2361,6 +2364,7 @@ function onTyped(){const i=document.getElementById('fbi')||document.getElementBy
 function handleAction(){
   const ex=EX.current;
   if(ex.type==='wordbuilder'){handleWordBuilderAction();return;} // Word Builder exercise
+  if(ex.type==='wbassemble'){handleWBAssembleAction();return;}   // guided assembly exercise
   if(ex.type==='dialogue'){
     if(DL.done){advance();return;}
     if(EX.answered){dlAdvance();return;}
@@ -5033,6 +5037,569 @@ function handleWordBuilderAction(){
       '');
   }
 }
+
+/* ══════════════════════════════════════════════════════════ § WBASSEMBLE
+   WORD BUILDER ASSEMBLE EXERCISE TYPE
+   ══════════════════════════════════════════════════════════
+
+   Exercise schema (data_units.json):
+
+   {
+     "type": "wbassemble",
+     "prompt": "Build the word for 'she is walking'",
+     "sub": "Use the word builder to assemble the correct form",
+     "targetWord":  "yaié:res",           // canonical form shown in feedback
+     "targetEnglish": "she is walking",   // English shown in correct-answer feedback
+     "correct": "yaié:res",              // exact assembled string to match (after wbApplyDialect)
+     "alts": ["yaieres", "yaie:res"],    // unaccented / dialect variants also accepted
+     "rootHint": "v01",                  // optional — pre-select this root and lock it
+     "cm": "Niawenhkó:wa! …",            // correct feedback (standard)
+     "wm": "Not quite — …",             // wrong feedback  (standard)
+     "wid": null
+   }
+
+   rootHint: if supplied the root chip for that id is pre-selected and the
+   root step is locked so the learner focuses on prefix / aspect choice.
+   Omit rootHint to leave the root step open (harder).
+   ══════════════════════════════════════════════════════════ */
+
+/* Internal state for the in-exercise assembler.
+   Separate from the main WB object so lesson and builder tab don't clash. */
+let WBA = {
+  word: null,       // selected WB_ROOTS entry
+  formIdx: null,    // selected form index in _forms
+  niRootId: null,
+  descriptorId: null,
+  series: 'subj',
+  formChosen: false,
+  challenge: false, // hide English glosses
+  rootLocked: false,// true when rootHint pre-selects the root
+};
+
+/* ── Renderer ──────────────────────────────────────────────────── */
+function rWBAssemble(ex) {
+  if (typeof wbInit === 'function') wbInit(); // ensure WB_ROOTS etc. loaded
+
+  // Reset assembler state
+  WBA = { word:null, formIdx:null, niRootId:null, descriptorId:null,
+          series:'subj', formChosen:false, challenge:false, rootLocked:false };
+
+  // Pre-select root if hint provided
+  if (ex.rootHint) {
+    const hint = WB_ROOTS.find(w => w.id === ex.rootHint);
+    if (hint) { WBA.word = hint; WBA.rootLocked = true; }
+  }
+
+  return `
+<div class="wba-wrap" id="wba-wrap">
+
+  <!-- Challenge toggle -->
+  <div class="wba-toggle-row">
+    <span class="wba-toggle-lbl">Challenge mode — hide English glosses</span>
+    <label class="wba-toggle" aria-label="Toggle challenge mode">
+      <input type="checkbox" id="wba-challenge" onchange="wbaToggleChallenge(this.checked)">
+      <span class="wba-track"></span>
+      <span class="wba-thumb"></span>
+    </label>
+  </div>
+
+  <!-- Step 1: root picker (locked if rootHint) -->
+  <div class="wba-step" id="wbas-step-root"${WBA.rootLocked ? ' style="display:none"' : ''}>
+    <div class="wba-step-hd">
+      <span class="wb-tag wb-tr">word root</span>
+      <span class="wba-step-hint">Choose the verb or noun root</span>
+    </div>
+    <div class="wb-filter-row" style="margin-bottom:.5rem;">
+      <input class="wb-search" type="text" id="wba-search"
+        placeholder="Search…" oninput="wbaRenderRoots()"
+        autocorrect="off" autocapitalize="off">
+      <button class="wb-pill active" onclick="wbaSetCat('all',this)">All</button>
+      <button class="wb-pill" onclick="wbaSetCat('verb',this)">Verbs</button>
+      <button class="wb-pill" onclick="wbaSetCat('kinship',this)">Kinship</button>
+    </div>
+    <div class="wb-root-grid" id="wba-root-grid"></div>
+  </div>
+
+  <!-- Step 2: person / series -->
+  <div class="wba-step${WBA.rootLocked ? '' : ' wba-locked'}" id="wbas-step-person">
+    <div class="wba-step-hd">
+      <span class="wb-tag wb-tp">prefix</span>
+      <span class="wba-step-hint">Choose the person prefix${WBA.rootLocked && WBA.word ? ' for <strong>' + WBA.word.e + '</strong>' : ''}</span>
+    </div>
+    <div id="wba-series-bar" style="display:flex;gap:.3rem;margin-bottom:.6rem;flex-wrap:wrap;"></div>
+    <div class="wb-form-list" id="wba-form-list">
+      <div class="wb-step-hint">← Choose a root first</div>
+    </div>
+  </div>
+
+  <!-- Step 3: noun incorporation (optional) -->
+  <div class="wba-step wba-locked" id="wbas-step-ni">
+    <div class="wba-step-hd">
+      <span class="wb-tag wb-tni">noun</span>
+      <span class="wba-step-hint">Incorporate a noun <em style="font-weight:400;">(optional)</em></span>
+    </div>
+    <div class="wb-root-grid" id="wba-ni-grid"></div>
+  </div>
+
+  <!-- Step 4: descriptor suffix (optional) -->
+  <div class="wba-step wba-locked" id="wbas-step-desc">
+    <div class="wba-step-hd">
+      <span class="wb-tag wb-td">descriptor</span>
+      <span class="wba-step-hint">Add a quality suffix <em style="font-weight:400;">(optional)</em></span>
+    </div>
+    <div class="wb-root-grid" id="wba-desc-grid"></div>
+  </div>
+
+  <!-- Live assembly panel -->
+  <div class="wba-asm-panel" id="wba-asm-panel">
+    <div class="wb-slabel" style="margin-bottom:.4rem;">assembled word</div>
+    <div class="wb-asm-slots" id="wba-slots-row">
+      <div class="wb-asm-slot" id="wbas-p">
+        <div class="wb-asm-lbl">Prefix</div>
+        <div class="wb-asm-val dim" id="wbas-p-val">—</div>
+        <div class="wb-asm-sub" id="wbas-p-sub">person</div>
+      </div>
+      <div class="wb-asm-eq" id="wbas-eq-ni" style="display:none">+</div>
+      <div class="wb-asm-slot" id="wbas-ni" style="display:none">
+        <div class="wb-asm-lbl">Noun</div>
+        <div class="wb-asm-val" id="wbas-ni-val" style="color:#5A1A80">—</div>
+        <div class="wb-asm-sub" id="wbas-ni-sub"></div>
+      </div>
+      <div class="wb-asm-eq">+</div>
+      <div class="wb-asm-slot" id="wbas-r">
+        <div class="wb-asm-lbl">Root</div>
+        <div class="wb-asm-val dim" id="wbas-r-val">—</div>
+        <div class="wb-asm-sub" id="wbas-r-sub">word</div>
+      </div>
+      <div class="wb-asm-eq" id="wbas-eq-d" style="display:none">+</div>
+      <div class="wb-asm-slot" id="wbas-d" style="display:none">
+        <div class="wb-asm-lbl">Descriptor</div>
+        <div class="wb-asm-val" id="wbas-d-val" style="color:#704010">—</div>
+        <div class="wb-asm-sub" id="wbas-d-sub"></div>
+      </div>
+      <div class="wb-asm-eq" id="wbas-eq-s" style="display:none">+</div>
+      <div class="wb-asm-slot" id="wbas-s" style="display:none">
+        <div class="wb-asm-lbl">Aspect</div>
+        <div class="wb-asm-val" id="wbas-s-val" style="color:var(--ew)">—</div>
+        <div class="wb-asm-sub" id="wbas-s-sub"></div>
+      </div>
+    </div>
+    <div class="wb-asm-full dim" id="wba-full-box">
+      <div class="wb-asm-word dim" id="wba-full-word">—</div>
+      <div class="wb-asm-en" id="wba-full-en" style="display:none"></div>
+    </div>
+  </div>
+
+</div>`;
+}
+
+/* ── Called immediately after rWBAssemble injects HTML ─────────── */
+function wbaInit(ex) {
+  wbaRenderRoots();
+  if (WBA.rootLocked && WBA.word) {
+    wbaSelectWord(WBA.word.id, true /* silent — don't scroll */);
+    wbaUnlock('wbas-step-person');
+  }
+}
+
+/* ── Challenge toggle ──────────────────────────────────────────── */
+function wbaToggleChallenge(on) {
+  WBA.challenge = on;
+  // Flip visibility of all .wbc-e (root grid glosses) and .wbf-lbl (form glosses)
+  // and .wba-toggle-lbl gloss spans inside the assembler only
+  document.querySelectorAll('#wba-wrap .wbc-e, #wba-wrap .wbf-lbl').forEach(el => {
+    el.style.opacity = on ? '0' : '';
+    el.style.userSelect = on ? 'none' : '';
+  });
+  // Also hide English sub-labels inside assembly slots
+  document.querySelectorAll('#wba-wrap .wb-asm-sub').forEach(el => {
+    el.style.opacity = on ? '0' : '';
+  });
+}
+
+/* ── Root grid ─────────────────────────────────────────────────── */
+function wbaRenderRoots() {
+  const grid = document.getElementById('wba-root-grid');
+  if (!grid) return;
+  const q = ((document.getElementById('wba-search') || {}).value || '').toLowerCase();
+  const catBtns = document.querySelectorAll('#wbas-step-root .wb-pill');
+  let cat = 'all';
+  catBtns.forEach(b => { if (b.classList.contains('active')) cat = b.textContent.toLowerCase(); });
+  const words = WB_ROOTS.filter(w => {
+    if (cat !== 'all' && w.cat !== cat) return false;
+    if (q && !w.root.toLowerCase().includes(q) && !w.e.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  grid.innerHTML = words.map(w => `
+    <div class="wb-chip${WBA.word && WBA.word.id === w.id ? ' wb-sel' : ''}"
+         onclick="wbaSelectWord('${w.id}')">
+      <div class="wbc-r">${w.root}</div>
+      <div class="wbc-e"${WBA.challenge ? ' style="opacity:0"' : ''}>${w.e}</div>
+      <div class="wbc-pos">${w.stem}</div>
+    </div>`).join('');
+}
+
+function wbaSetCat(cat, btn) {
+  document.querySelectorAll('#wbas-step-root .wb-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  wbaRenderRoots();
+}
+
+/* ── Root selection ────────────────────────────────────────────── */
+function wbaSelectWord(id, silent) {
+  WBA.word = WB_ROOTS.find(w => w.id === id);
+  WBA.formIdx = null; WBA.niRootId = null; WBA.descriptorId = null;
+  WBA.series = 'subj'; WBA.formChosen = false;
+  if (!silent) wbaRenderRoots();
+  wbaRenderPersonStep();
+  wbaUpdateAssembly();
+  wbaUnlock('wbas-step-person');
+  wbaLock('wbas-step-ni');
+  wbaLock('wbas-step-desc');
+  // Disable submit until a form is chosen
+  document.getElementById('actbtn').disabled = true;
+}
+
+function wbaLock(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.add('wba-locked');
+}
+function wbaUnlock(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.remove('wba-locked');
+}
+
+/* ── Person / series step ──────────────────────────────────────── */
+function wbaRenderPersonStep() {
+  const w = WBA.word;
+  if (!w) return;
+  const list = document.getElementById('wba-form-list');
+  const bar  = document.getElementById('wba-series-bar');
+  if (!list || !bar) return;
+
+  if (w.stem === 'kinship') {
+    bar.innerHTML = '';
+    const kforms = WB_KINSHIP[w.id] || [];
+    list.innerHTML = kforms.map((f, i) => `
+      <div class="wb-form-chip${WBA.formIdx === i ? ' wb-sel' : ''}"
+           onclick="wbaPickKinship(${i})">
+        <div>
+          <div class="wbf-word">${f.f}</div>
+          <div class="wbf-lbl"${WBA.challenge ? ' style="opacity:0"' : ''}>${f.l}</div>
+        </div>
+        <div class="wb-form-tags"><span class="wb-tag wb-tp">${f.p}</span></div>
+      </div>`).join('');
+    list._kforms = kforms;
+    return;
+  }
+
+  const hasObj   = w.obj && WB_OBJ && WB_OBJ[w.stem];
+  const hasModal = ['a-stem','c-stem','i-stem','e-stem','o-stem'].includes(w.stem);
+
+  bar.innerHTML =
+    `<button class="wb-pill${WBA.series === 'subj'   ? ' active' : ''}" onclick="wbaSetSeries('subj',this)">Subjective</button>` +
+    (hasObj    ? `<button class="wb-pill${WBA.series === 'obj'    ? ' active' : ''}" onclick="wbaSetSeries('obj',this)">Objective</button>` : '') +
+    (hasModal  ? `<button class="wb-pill${WBA.series === 'aorist' ? ' active' : ''}" onclick="wbaSetSeries('aorist',this)">Aorist</button>` : '') +
+    (hasModal  ? `<button class="wb-pill${WBA.series === 'future' ? ' active' : ''}" onclick="wbaSetSeries('future',this)">Future</button>` : '') +
+    (hasModal  ? `<button class="wb-pill${WBA.series === 'nondef' ? ' active' : ''}" onclick="wbaSetSeries('nondef',this)">Non-definite</button>` : '');
+
+  const forms = wbGenerateForms(w.root, w.stem, WBA.series,
+    WBA.series === 'subj' ? w.knownSubj : (w.knownObj || {}), w);
+  list.innerHTML = forms.map((f, i) => `
+    <div class="wb-form-chip${WBA.formIdx === i ? ' wb-sel' : ''}"
+         onclick="wbaPickForm(${i})">
+      <div>
+        <div class="wbf-word">${f.flagged ? '*' : ''}${wbApplyDialect(f.form)}</div>
+        <div class="wbf-lbl"${WBA.challenge ? ' style="opacity:0"' : ''}>${f.label}</div>
+      </div>
+      <div class="wb-form-tags">
+        <span class="wb-tag wb-tp">${wbApplyDialect(f.prefix)}</span>
+        ${f.flagged ? '<span class="wb-tag wb-tph" title="generated — verify">*</span>' : ''}
+      </div>
+    </div>`).join('');
+  list._forms = forms;
+}
+
+function wbaSetSeries(s, btn) {
+  WBA.series = s; WBA.formIdx = null; WBA.niRootId = null;
+  WBA.descriptorId = null; WBA.formChosen = false;
+  document.querySelectorAll('#wba-series-bar .wb-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  wbaRenderPersonStep();
+  wbaLock('wbas-step-ni');
+  wbaLock('wbas-step-desc');
+  wbaUpdateAssembly();
+}
+
+function wbaPickForm(i) {
+  WBA.formIdx = i; WBA.niRootId = null; WBA.descriptorId = null;
+  document.querySelectorAll('#wba-form-list .wb-form-chip').forEach((el, j) =>
+    el.classList.toggle('wb-sel', j === i));
+  const f = (document.getElementById('wba-form-list')._forms || [])[i];
+  if (!f) return;
+  WBA.formChosen = true;
+  wbaRenderNIStep();
+  wbaRenderDescStep();
+  wbaUnlock('wbas-step-ni');
+  wbaUnlock('wbas-step-desc');
+  wbaUpdateAssembly();
+  // Enable submit now that a complete form is chosen
+  document.getElementById('actbtn').disabled = false;
+}
+
+function wbaPickKinship(i) {
+  WBA.formIdx = i;
+  document.querySelectorAll('#wba-form-list .wb-form-chip').forEach((el, j) =>
+    el.classList.toggle('wb-sel', j === i));
+  const f = (document.getElementById('wba-form-list')._kforms || [])[i];
+  if (!f) return;
+  WBA.formChosen = true;
+  wbaLock('wbas-step-ni');
+  wbaLock('wbas-step-desc');
+  wbaUpdateAssembly();
+  document.getElementById('actbtn').disabled = false;
+}
+
+/* ── NI and Descriptor steps ───────────────────────────────────── */
+function wbaRenderNIStep() {
+  const grid = document.getElementById('wba-ni-grid');
+  if (!grid || !WBA.word) return;
+  const verbId = WBA.word.id;
+  const compatible = WB_NI_ROOTS.filter(ni =>
+    ni.incorporatesInto && ni.incorporatesInto.includes(verbId));
+  const noneChip = `<div class="wb-chip wb-chip-none${WBA.niRootId === null ? ' wb-chip-sel' : ''}"
+      onclick="wbaPickNI(null)">
+    <div class="wbc-r" style="font-size:.82rem">none</div>
+    <div class="wbc-e">simple verb</div>
+  </div>`;
+  grid.innerHTML = noneChip + (compatible.length === 0
+    ? '<div style="font-size:.82rem;color:var(--ew);font-style:italic;padding:.4rem 0;">No noun incorporation attested for this root.</div>'
+    : compatible.map(ni => `
+      <div class="wb-chip wb-chip-ni${WBA.niRootId === ni.id ? ' wb-chip-sel' : ''}"
+           onclick="wbaPickNI('${ni.id}')">
+        <div class="wbc-r" style="color:#5A1A80">${ni.root}</div>
+        <div class="wbc-e"${WBA.challenge ? ' style="opacity:0"' : ''}>${ni.e}</div>
+        <div class="wbc-pos">${ni.fullForm}</div>
+      </div>`).join(''));
+  if (WBA.challenge) wbaApplyChallengeToGrid(grid);
+}
+
+function wbaPickNI(id) {
+  WBA.niRootId = id;
+  wbaRenderNIStep();
+  wbaUpdateAssembly();
+}
+
+function wbaRenderDescStep() {
+  const grid = document.getElementById('wba-desc-grid');
+  if (!grid || !WBA.word) return;
+  const isStative = WBA.word.pos && WBA.word.pos.includes('stative');
+  const hasNI = !!WBA.niRootId;
+  const compatible = isStative ? [] : WB_DESCRIPTORS.filter(d =>
+    hasNI || !d.triggersStem || d.triggersStem === WBA.word.stem);
+  const noneChip = `<div class="wb-chip wb-chip-none${WBA.descriptorId === null ? ' wb-chip-sel' : ''}"
+      onclick="wbaPickDesc(null)">
+    <div class="wbc-r" style="font-size:.82rem">none</div>
+    <div class="wbc-e">no quality suffix</div>
+  </div>`;
+  grid.innerHTML = noneChip + (compatible.length === 0
+    ? `<div style="font-size:.82rem;color:var(--ew);font-style:italic;padding:.4rem 0;">${isStative ? 'Stative verbs do not take descriptor suffixes.' : 'No descriptors for this stem class.'}</div>`
+    : compatible.map(d => `
+      <div class="wb-chip wb-chip-desc${WBA.descriptorId === d.id ? ' wb-chip-sel' : ''}"
+           onclick="wbaPickDesc('${d.id}')">
+        <div class="wbc-r" style="color:#704010">${d.suffix}</div>
+        <div class="wbc-e"${WBA.challenge ? ' style="opacity:0"' : ''}>${d.e}</div>
+        <div class="wbc-pos">${d.verified ? 'verified' : '*unverified'}</div>
+      </div>`).join(''));
+}
+
+function wbaPickDesc(id) {
+  WBA.descriptorId = id;
+  wbaRenderDescStep();
+  wbaUpdateAssembly();
+}
+
+function wbaApplyChallengeToGrid(grid) {
+  grid.querySelectorAll('.wbc-e').forEach(el => { el.style.opacity = '0'; el.style.userSelect = 'none'; });
+}
+
+/* ── Live assembly ─────────────────────────────────────────────── */
+function wbaUpdateAssembly() {
+  const w = WBA.word;
+  const list = document.getElementById('wba-form-list');
+
+  // Root slot
+  const rVal = document.getElementById('wbas-r-val');
+  const rSub = document.getElementById('wbas-r-sub');
+  const rSlot = document.getElementById('wbas-r');
+  if (w) {
+    rSlot.classList.add('f');
+    rVal.className = 'wb-asm-val'; rVal.style.color = '#1A4060'; rVal.textContent = w.root;
+    rSub.textContent = WBA.challenge ? '' : w.e;
+  } else {
+    rSlot.classList.remove('f');
+    rVal.className = 'wb-asm-val dim'; rVal.style.color = ''; rVal.textContent = '—';
+    rSub.textContent = 'word';
+  }
+
+  if (!w || WBA.formIdx === null) {
+    // Clear prefix + full word if no form yet
+    const pSlot = document.getElementById('wbas-p');
+    pSlot.classList.remove('f');
+    document.getElementById('wbas-p-val').className = 'wb-asm-val dim';
+    document.getElementById('wbas-p-val').textContent = '—';
+    document.getElementById('wbas-p-sub').textContent = 'person';
+    const fullBox = document.getElementById('wba-full-box');
+    const fullWord = document.getElementById('wba-full-word');
+    const fullEn   = document.getElementById('wba-full-en');
+    if (fullBox)  fullBox.className  = 'wb-asm-full dim';
+    if (fullWord) { fullWord.className = 'wb-asm-word dim'; fullWord.textContent = '—'; }
+    if (fullEn)   fullEn.style.display = 'none';
+    return;
+  }
+
+  // Kinship path
+  if (w.stem === 'kinship') {
+    const f = (list._kforms || [])[WBA.formIdx];
+    if (!f) return;
+    const pSlot = document.getElementById('wbas-p');
+    pSlot.classList.add('f');
+    const pVal = document.getElementById('wbas-p-val');
+    pVal.className = 'wb-asm-val'; pVal.style.color = '#7A3800'; pVal.textContent = f.p;
+    document.getElementById('wbas-p-sub').textContent = WBA.challenge ? '' : 'possessor';
+    ['wbas-eq-ni','wbas-ni','wbas-eq-d','wbas-d','wbas-eq-s','wbas-s'].forEach(id => {
+      const el = document.getElementById(id); if (el) el.style.display = 'none';
+    });
+    const fullBox = document.getElementById('wba-full-box');
+    const fullWord = document.getElementById('wba-full-word');
+    const fullEn   = document.getElementById('wba-full-en');
+    fullBox.className = 'wb-asm-full';
+    fullWord.className = 'wb-asm-word'; fullWord.textContent = f.f;
+    fullEn.style.display = WBA.challenge ? 'none' : '';
+    fullEn.textContent = f.l;
+    return;
+  }
+
+  // Verbal path — mirrors wbUpdateAssembly()
+  const f = (list._forms || [])[WBA.formIdx];
+  if (!f) return;
+  const ni = WBA.niRootId ? WB_NI_ROOTS.find(n => n.id === WBA.niRootId) : null;
+  const d  = WBA.descriptorId ? WB_DESCRIPTORS.find(x => x.id === WBA.descriptorId) : null;
+
+  const { form: prefixPlusRoot } = wbApplyBoundaryPhonology(f.prefix, (ni ? ni.root : '') + f.root, w.stem);
+  const sfx = wbGetSuffix(f.form, f.root, f.prefix);
+  const hasAspect = sfx.val !== '∅';
+  const assembledBase = prefixPlusRoot + (d ? d.suffix : '') + (hasAspect ? sfx.val.replace(/^-/, '') : '');
+  const assembled = wbApplyDialect(assembledBase);
+
+  // Prefix slot
+  const pSlot = document.getElementById('wbas-p');
+  pSlot.classList.add('f');
+  const pVal = document.getElementById('wbas-p-val');
+  pVal.className = 'wb-asm-val'; pVal.style.color = '#7A3800';
+  pVal.textContent = wbApplyDialect(f.prefix);
+  document.getElementById('wbas-p-sub').textContent = WBA.challenge ? '' : f.label;
+
+  // NI slot
+  const niSlot = document.getElementById('wbas-ni');
+  const niEq   = document.getElementById('wbas-eq-ni');
+  if (ni) {
+    niEq.style.display = ''; niSlot.style.display = '';
+    niSlot.className = 'wb-asm-slot f-ni';
+    document.getElementById('wbas-ni-val').textContent = ni.root;
+    document.getElementById('wbas-ni-sub').textContent = WBA.challenge ? '' : ni.e;
+  } else {
+    niEq.style.display = 'none'; niSlot.style.display = 'none';
+  }
+
+  // Descriptor slot
+  const dSlot = document.getElementById('wbas-d');
+  const dEq   = document.getElementById('wbas-eq-d');
+  if (d) {
+    dEq.style.display = ''; dSlot.style.display = '';
+    dSlot.className = 'wb-asm-slot f-d';
+    document.getElementById('wbas-d-val').textContent = d.suffix;
+    document.getElementById('wbas-d-sub').textContent = WBA.challenge ? '' : d.e;
+  } else {
+    dEq.style.display = 'none'; dSlot.style.display = 'none';
+  }
+
+  // Aspect slot
+  const sSlot = document.getElementById('wbas-s');
+  const sEq   = document.getElementById('wbas-eq-s');
+  if (hasAspect) {
+    sEq.style.display = ''; sSlot.style.display = '';
+    document.getElementById('wbas-s-val').textContent = sfx.val;
+    document.getElementById('wbas-s-sub').textContent = WBA.challenge ? '' : sfx.sub;
+  } else {
+    sEq.style.display = 'none'; sSlot.style.display = 'none';
+  }
+
+  // Full word box
+  const fullBox  = document.getElementById('wba-full-box');
+  const fullWord = document.getElementById('wba-full-word');
+  const fullEn   = document.getElementById('wba-full-en');
+  const isGenerated = f.flagged || !!ni || !!d;
+  fullBox.className  = 'wb-asm-full';
+  fullWord.className = 'wb-asm-word';
+  fullWord.textContent = (isGenerated ? '*' : '') + assembled;
+  if (!WBA.challenge) {
+    fullEn.style.display = '';
+    fullEn.textContent = wbBuildTranslation(f.person, w.e, ni ? ni.e : null, d ? d.e : null, sfx.val, f.series || WBA.series);
+  } else {
+    fullEn.style.display = 'none';
+  }
+
+  // Store the current assembled form so handleWBAssembleAction can read it
+  EX._wba = { assembled };
+}
+
+/* ── handleAction dispatch ─────────────────────────────────────── */
+function handleWBAssembleAction() {
+  const ex = EX.current;
+  if (EX.answered) { advance(); return; }
+
+  // Read assembled form from live state
+  if (!EX._wba || !EX._wba.assembled) return; // nothing assembled yet
+
+  const assembled = EX._wba.assembled;
+
+  // Normalise for comparison (strip accents + lower)
+  function norm(s) { return (s || '').toLowerCase().replace(/[áéíóúý]/g, c =>
+    ({ á:'a',é:'e',í:'i',ó:'o',ú:'u',ý:'y' }[c] || c)).replace(/[:']/g, '').trim(); }
+
+  const targets = [ex.correct, ...(ex.alts || [])];
+  const isR = targets.some(t => norm(assembled) === norm(t));
+
+  EX.attempts++;
+
+  // First wrong attempt: gentle redirect
+  if (!isR && EX.attempts === 1) {
+    showFB('try', 'Not quite — check each slot and try again.');
+    return;
+  }
+
+  EX.scoreable++;
+  EX.answered = true;
+  document.getElementById('actbtn').disabled = true;
+
+  // Lock all picker chips
+  document.querySelectorAll('#wba-wrap .wb-chip, #wba-wrap .wb-form-chip').forEach(el => {
+    el.style.pointerEvents = 'none';
+  });
+
+  if (isR) {
+    EX.correct++;
+    finishEx(true, ex.cm || 'Niawenhkó:wa! — correct form assembled.');
+  } else {
+    EX.rpool.push({ ...ex });
+    finishEx(false,
+      (ex.wm || 'Not quite — this one will come back.') +
+      ' The target form is: ' + ex.targetWord + ' (' + (ex.targetEnglish || ex.correct) + ')');
+  }
+}
+
+/* ══════════════════════════════════════════════════════════ END WBASSEMBLE */
 
 /* ── PREFIX BROWSER ── */
 /* Organised to mirror the PDF paradigm tables:
