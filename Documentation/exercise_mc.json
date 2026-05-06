@@ -1,0 +1,38 @@
+{
+  "_comment": "MULTIPLE CHOICE EXERCISE (type: mc) — the most common exercise type (634 in the corpus). Tests recognition: learner sees a prompt and picks from four options.",
+
+  "type": "mc",
+
+  "wid": "na01",
+  "_wid": "The glossary ID of the word being tested. Used to update spaced-repetition proficiency. Required for all mc exercises.",
+
+  "prompt": "What does Ohón:ta' mean?",
+  "_prompt": "The question shown to the learner. Usually 'What does [word] mean?' or 'Which word means [english]?' Vary direction across exercises in the same lesson.",
+
+  "sub": "Choose the correct answer",
+  "_sub": "Short subtitle under the prompt. Usually 'Choose the correct answer'. Required.",
+
+  "correct": "Leaf / leaves",
+  "_correct": "Must match one of the strings in options exactly (case-sensitive).",
+
+  "options": [
+    "Leaf / leaves",
+    "Grass",
+    "Branch",
+    "Bark"
+  ],
+  "_options": "Four options total. One correct, three plausible distractors from the same semantic field. Never use implausible distractors — they teach nothing. Order: correct answer in a random position (not always first).",
+
+  "cm": "Tho niioht! Ohón:ta' — leaf. A-class noun. You will see it in the Thanksgiving Address when we speak of the trees.",
+  "_cm": "Shown after the learner's second attempt if correct, or after reveal. Begin with an affirmation (Tho niioht!, Io'nikonhraién:ta'ne!, Niawenhkó:wa!). Add one sentence of linguistic or cultural context. Keep under 3 sentences.",
+
+  "wm": "That answer is incorrect — please try again.",
+  "_wm": "Shown after a wrong answer. Keep neutral and brief. On second wrong attempt the correct answer is revealed.",
+
+  "_optional_image": {
+    "_comment": "Add an image object only when a visual meaningfully aids recognition (physical objects, animals, places). Omit entirely for abstract words. Image must be freely licensed.",
+    "url": "https://images.unsplash.com/photo-XXXXXXXXXX?w=800&q=80",
+    "alt": "Descriptive alt text that includes the Kanien'kéha word and its meaning.",
+    "credit": "Unsplash"
+  }
+}

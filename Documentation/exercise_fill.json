@@ -1,0 +1,35 @@
+{
+  "_comment": "FILL-IN-THE-BLANK EXERCISE (type: fill) — a sentence with ___ replaced by a text input. Tests productive recall of a word fragment (usually a prefix, suffix, or root). 176 in the corpus.",
+
+  "type": "fill",
+
+  "wid": "na01",
+  "_wid": "Glossary ID of the word being tested. Required.",
+
+  "prompt": "Complete the word",
+  "_prompt": "Short instruction — usually 'Complete the word', 'Complete the sentence', or 'Fill in the prefix'. Keep it brief; the sentence does the heavy lifting.",
+
+  "sentence": "The Kanien'kéha word for leaf is Ohón___'",
+  "_sentence": "The full sentence with ___ marking exactly where the input goes. ___ can appear anywhere. The surrounding text gives the learner enough context to retrieve the answer. Do not make the blank so large that it reveals nothing.",
+
+  "correct": "ta:",
+  "_correct": "The exact string the learner must type. Case-insensitive matching is handled by the app.",
+
+  "hint": "t",
+  "_hint": "The first letter(s) of the correct answer. Shown as 'Hint: starts with [hint]'. Required — never leave blank.",
+
+  "alts": [
+    "ta:"
+  ],
+  "_alts": "Alternative accepted strings. Always include the correct answer itself in alts. Add unaccented variants if the accent mark is part of the blank (e.g. 'ta' without the colon if the app strips punctuation). Required — minimum one entry (the correct answer).",
+
+  "cm": "Niawenhkó:wa! Ohón:ta' — the length marker (:) is part of the word. In A-class nouns like this one, the root is stable across possessed and unpossessed forms.",
+  "_cm": "Correct-answer message. Confirm the full word, not just the blank. Add a brief linguistic note. Required.",
+
+  "wm": "That answer is incorrect — the missing part is 'ta:' with a length marker. The full word is Ohón:ta'.",
+  "_wm": "Wrong-answer message. Always include the correct answer so the learner can learn from it. Required.",
+
+  "_optional_image": {
+    "_comment": "image is valid on fill exercises but rare. Same schema as mc — omit unless a visual genuinely helps."
+  }
+}

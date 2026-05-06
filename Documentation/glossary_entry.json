@@ -1,0 +1,65 @@
+[
+  {
+    "_comment": "GLOSSARY ENTRY — copy and extend this template for data_glossary.json.",
+
+    "id": "na01",
+    "_id": "Unique across all glossary entries. Extend the nearest prefix series (see CLAUDE.md). Check for collisions before using.",
+
+    "target": "Ohón:ta'",
+    "_target": "The Kanien'kéha word or phrase, with full accent marks and length markers.",
+
+    "english": "leaf / leaves",
+    "_english": "English meaning. Used for display and as the basis for sortKey (computed — do not add sortKey manually).",
+
+    "pos": "noun.nature",
+    "_pos": "Machine tag. Must be one of the controlled values in CLAUDE.md. Use dot-notation (category.subcategory).",
+
+    "posLabel": "Noun — Nature",
+    "_posLabel": "Human-readable display label. May be more specific than pos (e.g. 'Noun — Bird' when pos is 'noun.animal'). Always provide.",
+
+    "unit": 3,
+    "lesson": 2,
+    "_unit_lesson": "Zero-based unit index and lesson index where this word is first introduced. Set both to 0 if not yet placed.",
+
+    "notes": "Ohón:ta' belongs to the A-class noun paradigm. The plural is the same form — context and number agreement on the verb signal whether one or many are meant. Common in seasonal vocabulary and the Thanksgiving Address.",
+    "_notes": "Cultural or linguistic context for learners. Explain morphological class, cultural significance, or usage context. Do not just restate the English definition.",
+
+    "cite": {
+      "text": "Kontinónhstats L22 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-22/"
+    },
+    "_cite": "Always include a source. Link to the specific Kontinónhstats lesson page where possible.",
+
+    "accepts": [
+      "Ohón:ta'",
+      "ohon:ta'",
+      "ohonta'"
+    ],
+    "_accepts": "All strings accepted as correct in typing exercises. Always include: (1) the canonical accented form, (2) the unaccented lowercase form, (3) any dialect variants. Learners are never penalised for their community's orthography.",
+
+    "forms": [
+      { "label": "leaf / leaves (basic)", "form": "Ohón:ta'" },
+      { "label": "my leaf",              "form": "akohón:ta'" },
+      { "label": "your leaf",            "form": "sohón:ta'" }
+    ],
+    "_forms": "Possessive forms, conjugation table, or paradigm. Set to null (not omit — set to null) if no paradigm is needed. Use for kinship terms, noun classes with possessive prefixes, and verbs with conjugation tables."
+  },
+
+  {
+    "_comment": "MINIMAL VALID ENTRY — only required fields. Use for quick batch additions; expand forms and notes later.",
+    "id": "na02",
+    "target": "Ohontsa'shón:'a",
+    "english": "grass",
+    "pos": "noun.nature",
+    "posLabel": "Noun — Nature",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Literally: small leaves of the ground. Common in land and environment vocabulary.",
+    "cite": {
+      "text": "Kontinónhstats · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": ["Ohontsa'shón:'a", "ohontsa'shon:'a", "ohontsa'shon:a"],
+    "forms": null
+  }
+]

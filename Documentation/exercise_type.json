@@ -1,0 +1,33 @@
+{
+  "_comment": "TYPE-THE-WORD EXERCISE (type: type) — learner types the full Kanien'kéha word from an English prompt. The most demanding production exercise. 114 in the corpus.",
+
+  "type": "type",
+
+  "wid": "na01",
+  "_wid": "Glossary ID of the word being tested. Required.",
+
+  "prompt": "How do you say 'leaf' in Kanien'kéha?",
+  "_prompt": "Give the English meaning and ask for the Kanien'kéha word. Vary phrasing across lessons. Alternatives: 'Type the Kanien'kéha word for [english]', 'What is the Kanien'kéha word for [english]?'",
+
+  "sub": "Dialect variants accepted",
+  "_sub": "Use 'Dialect variants accepted' whenever alts includes community variants. Use 'All accents accepted' if only unaccented variants are in alts. Optional but strongly recommended — it reassures learners their form is valid.",
+
+  "correct": "Ohón:ta'",
+  "_correct": "The canonical form. Case-insensitive matching is applied by the app. Accent marks are checked — include them in correct.",
+
+  "alts": [
+    "ohon:ta'",
+    "ohonta'"
+  ],
+  "_alts": "All other accepted strings. Always include the unaccented lowercase form. Add dialect variants (r→l, y→i, etc.) where they apply. The app accepts any string in alts as correct. Required — minimum one entry.",
+
+  "cm": "Niawenhkó:wa! Ohón:ta' — leaf. The length marker (:) on the ó changes the meaning if dropped — always include it in writing.",
+  "_cm": "Correct message. Confirm the word and add one brief note about spelling, pronunciation, or morphology. Required.",
+
+  "wm": "That answer is incorrect — please try again. The word is Ohón:ta' — note the length marker on the ó.",
+  "_wm": "Wrong-answer message. Always include the correct answer spelled out. Required.",
+
+  "_optional_image": {
+    "_comment": "image is valid on type exercises but rare (23 exercises total use images across mc, fill, and type combined). Omit unless a visual genuinely aids recall."
+  }
+}

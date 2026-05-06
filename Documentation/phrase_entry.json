@@ -1,0 +1,59 @@
+[
+  {
+    "_comment": "PHRASE ENTRY — copy and extend this template for data_phrases.json. Same shape as glossary_entry.json with two differences: (1) has 'scenario' instead of 'posLabel'; (2) no sortKey field (not computed either — simply absent).",
+
+    "id": "gr01",
+    "_id": "Unique across data_phrases.json. Extend the nearest prefix series. Common phrase prefixes: gr (greetings), q (questions), ds (discourse), eat (food/eating), fv (verbs), g (general).",
+
+    "target": "Niawenhkó:wa",
+    "english": "thank you (greatly)",
+    "pos": "particle.discourse",
+
+    "scenario": "Greetings and courtesy",
+    "_scenario": "Short string grouping phrases by communicative topic. Used to filter the Phrases screen. Keep consistent with existing scenario strings — check data_phrases.json for the active list before creating a new one.",
+
+    "unit": 0,
+    "lesson": 1,
+
+    "notes": "Literally: it is greatly so. The intensifier -kó:wa (great / big) elevates basic niawén:. Used in most community contexts for genuine thanks. Niawén: alone is lighter and more casual.",
+
+    "cite": {
+      "text": "Kontinónhstats L2 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-2/"
+    },
+
+    "accepts": [
+      "Niawenhkó:wa",
+      "niawenhko:wa",
+      "niawenhkowa",
+      "Niawén:",
+      "niawén:",
+      "niawen:"
+    ],
+    "_accepts": "Include the canonical form, unaccented forms, and any dialect variants or shortened forms that are genuinely used.",
+
+    "forms": [
+      { "label": "thank you (greatly)", "form": "Niawenhkó:wa" },
+      { "label": "thank you (lighter)", "form": "Niawén:" },
+      { "label": "you're welcome",      "form": "Hen, niawenhkó:wa í:se'" }
+    ]
+  },
+
+  {
+    "_comment": "MINIMAL VALID PHRASE ENTRY.",
+    "id": "gr02",
+    "target": "Shé:kon",
+    "english": "hello / greetings",
+    "pos": "particle.discourse",
+    "scenario": "Greetings and courtesy",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "The standard Kanien'kéha greeting. Returned in kind — if someone says Shé:kon, you reply Shé:kon.",
+    "cite": {
+      "text": "Kontinónhstats L1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": ["Shé:kon", "she:kon", "shekon"],
+    "forms": null
+  }
+]

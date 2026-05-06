@@ -986,7 +986,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <!-- EXPLORE -->
       <div id="wb-explore">
         <div class="wb-info" id="wb-carousel-info">
-          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">verb root</span>, pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
+          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">word root</span> (verb or noun), pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
         </div>
 
         <div class="wb-dialect-row">
@@ -996,10 +996,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <button class="wb-dialect-btn" onclick="wbSetDialect('sixnations',this)">Six Nations</button>
         </div>
 
-        <!-- Step 1: verb root -->
+        <!-- Step 1: word root -->
         <div class="wb-step-block" id="wb-step-root">
           <div style="display:flex;align-items:center;margin-bottom:.55rem;">
-            <div class="wb-slabel" style="margin-bottom:0;">1 — verb root</div>
+            <div class="wb-slabel" id="wb-step1-label" style="margin-bottom:0;">1 — word root</div>
             <div id="wb-dots-1" style="display:flex;gap:4px;margin-left:auto;"></div>
           </div>
           <div class="wb-filter-row">
@@ -1016,12 +1016,12 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <!-- Step 2: person / series (hidden until step 1 done) -->
         <div class="wb-step-block" id="wb-step-person" style="display:none;">
           <div style="display:flex;align-items:center;margin-bottom:.55rem;">
-            <div class="wb-slabel" style="margin-bottom:0;">2 — person &amp; series</div>
+            <div class="wb-slabel" id="wb-step2-label" style="margin-bottom:0;">2 — person &amp; series</div>
             <div id="wb-dots-2" style="display:flex;gap:4px;margin-left:auto;"></div>
           </div>
           <div id="wb-series-bar" style="display:flex;gap:.3rem;margin-bottom:.65rem;flex-wrap:wrap;"></div>
           <div class="wb-form-list" id="wb-form-list">
-            <div class="wb-step-hint">← Choose a verb root first</div>
+            <div class="wb-step-hint">← Choose a word root first</div>
           </div>
         </div>
 
@@ -1032,7 +1032,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-3"></div>
           </div>
           <div class="wb-root-grid" id="wb-ni-grid">
-            <div class="wb-step-hint">← Choose a person form first</div>
+            <div class="wb-step-hint">← Choose a word form first</div>
           </div>
         </div>
 
@@ -1043,7 +1043,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div style="display:flex;gap:4px;margin-left:auto;" id="wb-dots-4"></div>
           </div>
           <div class="wb-root-grid" id="wb-desc-grid">
-            <div class="wb-step-hint">← Choose a person form first</div>
+            <div class="wb-step-hint">← Choose a word form first</div>
           </div>
         </div>
       </div>
@@ -1093,7 +1093,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div class="wb-asm-eq" id="wbs-eq-ni" style="display:none;">+</div>
     <div class="wb-asm-slot" id="wbs-ni" style="display:none;"><div class="wb-asm-lbl">Noun</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">incorporated</div></div>
     <div class="wb-asm-eq">+</div>
-    <div class="wb-asm-slot" id="wbs-r"><div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div></div>
+    <div class="wb-asm-slot" id="wbs-r"><div class="wb-asm-lbl">Root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">word</div></div>
     <div class="wb-asm-eq" id="wbs-eq-d" style="display:none;">+</div>
     <div class="wb-asm-slot" id="wbs-d" style="display:none;"><div class="wb-asm-lbl">Descriptor</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">quality</div></div>
     <div class="wb-asm-eq" id="wbs-eq-s" style="display:none;">+</div>
@@ -1209,7 +1209,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 </main>
 
 <script>
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § LOCAL PROFILE SYSTEM
    LOCAL PROFILE SYSTEM
    Migration to backend: replace getUsers/saveUsers with API calls.
    All UI logic stays the same.
@@ -1270,7 +1270,7 @@ function doLogout(){
   showScreen('login');
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § PROFICIENCY
    PROFICIENCY — SM-2 spaced repetition
    Each word: {interval, easiness, due, reps, history[]}
    interval = days until next review (SM-2 schedule)
@@ -1361,7 +1361,7 @@ function migrateProf(data){
   data._profV2=true;
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § NAV
    NAV
    ══════════════════════════════════════════════════════════ */
 function navTo(id){
@@ -1420,7 +1420,7 @@ function renderJournal(){
   }).join('');
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § PRACTICE
    PRACTICE FAB + MINI-SESSION ENGINE
    ══════════════════════════════════════════════════════════
 
@@ -1520,8 +1520,9 @@ function buildPracPool(wids) {
     if (pool.length >= 10) break;
     const ex = exIndex[id];
     if (!ex) continue;
-    // Don't include story/dialogue/match in practice
-    if (['story','dialogue','match'].includes(ex.type)) continue;
+    // Don't include story/dialogue/match/wordbuilder in practice overlay
+    // (wordbuilder generates random content — not tied to a single wid)
+    if (['story','dialogue','match','wordbuilder'].includes(ex.type)) continue;
     pool.push({ ...ex, _pracWid: id });
   }
   return pool;
@@ -1794,7 +1795,7 @@ function goHome(){
   updateHomeUI();navTo('home');updateFab(PRAC.scope||'unit');
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § HOME UI
    HOME UI
    ══════════════════════════════════════════════════════════ */
 function renderHomeUnits(){
@@ -1825,7 +1826,7 @@ function updateHomeUI(){
   renderHomeUnits();
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § DATA
    DATA — loaded from external JSON files at runtime.
    ══════════════════════════════════════════════════════════
    FILE LAYOUT (all files sit in the same folder as index.html):
@@ -1952,7 +1953,7 @@ function showDataError(detail) {
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § EXERCISE ENGINE
    EXERCISE ENGINE
    ══════════════════════════════════════════════════════════ */
 let CUi=0,CLi=0;
@@ -2053,6 +2054,7 @@ function renderEx(){
   else if(ex.type==='audio')html+=rAudio(ex);
   else if(ex.type==='story')html+=rStory(ex);
   else if(ex.type==='dialogue')html+=rDialogue(ex);
+  else if(ex.type==='wordbuilder')html+=rWordBuilder(ex); // delegates to wbBuildQuestionData()
   document.getElementById('exbody').innerHTML=html;
 
   if(ex.type==='audio'||ex.type==='story'){
@@ -2062,7 +2064,7 @@ function renderEx(){
   if(ex.type==='dialogue'){initDialogue(ex);}
 }
 
-function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment','dialogue':'💬 Conversation'}[t]||t;}
+function tLabel(t){return{'mc':'🌀 Multiple Choice','match':'🔗 Matching','fill':'✏️ Fill in the Blank','type':'⌨️ Type the Word','audio':'🎙️ Speak Aloud','story':'🌱 Story Moment','dialogue':'💬 Conversation','wordbuilder':'🧩 Word Builder'}[t]||t;}
 function rMC(ex){return`<div class="mco">${ex.options.map(o=>`<button class="mcb" data-v="${qs(o)}" onclick="pickMC(this,'${qs(o)}','${qs(ex.correct)}')">${o}</button>`).join('')}</div>`;}
 function rMatch(ex){const sh=[...ex.pairs].sort(()=>Math.random()-.5);return`<div class="mgrid"><div class="mcol">${ex.pairs.map((p,i)=>`<div class="mi" data-id="${i}" data-side="L" onclick="pickMatch(this)">${p.target}</div>`).join('')}</div><div class="mcol">${sh.map(p=>{const i=ex.pairs.findIndex(x=>x.english===p.english);return`<div class="mi" data-id="${i}" data-side="R" onclick="pickMatch(this)">${p.english}</div>`;}).join('')}</div></div><div id="mst" style="text-align:center;margin-top:.55rem;font-style:italic;color:var(--ew);font-size:.82rem;">Tap a word on the left, then its match on the right</div>`;}
 function rFill(ex){return`<div class="fbs">${ex.sentence.replace('___',`<input class="fbi" id="fbi" type="text" placeholder="?" oninput="onTyped()" autocomplete="off" autocorrect="off" autocapitalize="off">`)}</div><p style="font-size:.78rem;color:var(--ew);font-style:italic;">Hint: starts with <strong>${ex.hint}</strong></p>`;}
@@ -2071,7 +2073,9 @@ function rAudio(ex){return`<div class="apbox"><span class="apword">${ex.word}</s
 function rStory(ex){return`${ex.word?`<div class="stcard"><span class="sqm">"</span><span class="stword">${ex.word}</span><span class="stmean">${ex.meaning}</span></div>`:''}<p class="stprompt">${ex.storyPrompt}</p><textarea class="starea" id="starea" placeholder="Write your reflection here — stays on your device only…"></textarea>`;}
 function qs(s){return(s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');}
 
-/* ── DIALOGUE ENGINE ─────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════ § DIALOGUE ENGINE
+   DIALOGUE ENGINE
+   ══════════════════════════════════════════════════════════ */
 let DL={turns:[],step:0,correct:0,scoreable:0,attempts:0,done:false,ex:null};
 
 function rDialogue(ex){
@@ -2356,6 +2360,7 @@ function onTyped(){const i=document.getElementById('fbi')||document.getElementBy
 
 function handleAction(){
   const ex=EX.current;
+  if(ex.type==='wordbuilder'){handleWordBuilderAction();return;} // Word Builder exercise
   if(ex.type==='dialogue'){
     if(DL.done){advance();return;}
     if(EX.answered){dlAdvance();return;}
@@ -2761,6 +2766,9 @@ function toggleSort(){
   renderGloss();
 }
 
+/* ══════════════════════════════════════════════════════════ § GLOSSARY
+   GLOSSARY — search, filter, alpha bar, vocab detail drawer
+   ══════════════════════════════════════════════════════════ */
 function renderGloss(){
   populateAdvSearch();
   filterGloss();
@@ -2827,7 +2835,7 @@ function filterGloss(){
   // Sort — use sortKey if present (e.g. entries beginning with article "a ")
   const sorted=[...matching];
   const glossSortKey=w=>sortByKanien
-    ? (w.sortKey||w.target).toLowerCase()
+    ? w.english.replace(/^(a|an) /i, '').toLowerCase()
     : w.english.toLowerCase();
   if(sortByKanien){
     sorted.sort((a,b)=>glossSortKey(a).localeCompare(glossSortKey(b),'fr'));
@@ -3088,7 +3096,7 @@ if(window.speechSynthesis){
   window.speechSynthesis.onvoiceschanged=()=>window.speechSynthesis.getVoices();
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § SYLLABARY PRACTICE ENGINE
    SYLLABARY PRACTICE ENGINE
    ══════════════════════════════════════════════════════════ */
 
@@ -3377,7 +3385,7 @@ function finishSylPractice(){
   document.body.appendChild(note);
 }
 
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § PHRASES ENGINE
    PHRASES ENGINE
    ══════════════════════════════════════════════════════════ */
 
@@ -3485,7 +3493,7 @@ function renderPhraseCard(p){
 function togglePhraseCard(card){
   card.classList.toggle('open');
 }
-/* ══════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════ § WORD BUILDER ENGINE
    WORD BUILDER ENGINE — PREFIX RULE SYSTEM
    Prefix tables from: Kanienkeha_Prefixes_Sub_Obj_Trans.pdf
    Roots verified against data_glossary.json paradigm forms.
@@ -3854,6 +3862,7 @@ function wbGenerateForms(root,stemClass,series,knownForms,wordMeta){
       label:WB_PERSON_LABELS[person],
       prefix:pfx,
       root,
+      series,
       form:known||generated,
       generated,
       boundaryNote: known?null:boundaryNote,
@@ -4124,6 +4133,9 @@ function wbSetCat(c,btn){
   wbLockStep('wb-step-person');
   wbLockStep('wb-step-ni');
   wbLockStep('wb-step-desc');
+  /* Reset context-sensitive labels to defaults */
+  const s2=document.getElementById('wb-step2-label');
+  if(s2)s2.textContent='2 — person & series';
 }
 
 function wbFiltered(){
@@ -4158,16 +4170,22 @@ function wbSelectWord(id){
   wbRenderRoots();
   wbRenderPersonStep();
   wbClearBuilder();
-  /* Show the verb root immediately in the assembly panel */
+  /* Show the word root immediately in the assembly panel */
   const w=WB.word;
   if(w){
+    const isNoun=w.stem==='kinship';
+    const rootLabel=isNoun?'Noun root':'Verb root';
+    const rootSub=isNoun?'noun':'action';
     const slR=document.getElementById('wbs-r');
     if(slR){
       slR.className='wb-asm-slot f';
-      slR.innerHTML=`<div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val" style="color:#1A4060;">${w.root}</div><div class="wb-asm-sub">${w.e}</div>`;
+      slR.innerHTML=`<div class="wb-asm-lbl">${rootLabel}</div><div class="wb-asm-val" style="color:#1A4060;">${w.root}</div><div class="wb-asm-sub">${w.e}</div>`;
     }
     const fullWord=document.getElementById('wb-asm-word');
     if(fullWord){fullWord.className='wb-asm-word dim';fullWord.textContent=w.root;}
+    /* Update step 2 label to reflect word type */
+    const step2lbl=document.getElementById('wb-step2-label');
+    if(step2lbl)step2lbl.textContent=isNoun?'2 — possessor':'2 — person & series';
   }
   /* Enable forward arrow on step 1 now that a root is chosen */
   const nextBtn=document.getElementById('wb-carr-next');
@@ -4203,11 +4221,29 @@ function wbRenderPersonStep(){
         <div class="wb-form-tags"><span class="wb-tag wb-tp">${f.p}</span></div>
       </div>`).join('');
     list._kforms=kforms;
+    /* Update labels & hide verb-only steps for kinship nouns */
+    const s2=document.getElementById('wb-step2-label');
+    if(s2)s2.textContent='2 — possessor';
+    /* Steps 3 & 4 don't apply to possessive nouns — keep them hidden */
+    ['wb-step-ni','wb-step-desc'].forEach(id=>{
+      const el=document.getElementById(id);
+      if(el)el.style.display='none';
+    });
     return;
   }
 
   const hasObj=w.obj&&WB_OBJ[w.stem];
   const hasModal=(w.stem==='a-stem'||w.stem==='c-stem'||w.stem==='i-stem'||w.stem==='e-stem'||w.stem==='o-stem');
+
+  /* Restore verb-specific labels in case we came from a kinship word */
+  const s2=document.getElementById('wb-step2-label');
+  if(s2)s2.textContent='2 — person & series';
+  /* Re-show steps 3 & 4 (they may have been hidden if previous word was kinship) */
+  ['wb-step-ni','wb-step-desc'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el&&el.style.display==='none'&&el.classList.contains('wb-step-locked'))el.style.display='';
+  });
+
   bar.innerHTML=
     `<button class="wb-pill${WB.series==='subj'?' active':''}" onclick="wbSetSeries('subj',this)">Subjective</button>`+
     (hasObj?`<button class="wb-pill${WB.series==='obj'?' active':''}" onclick="wbSetSeries('obj',this)">Objective</button>`:'')+
@@ -4362,7 +4398,13 @@ function wbGetSuffix(form,root,prefix){
 const WB_STEPS=['wb-step-root','wb-step-person','wb-step-ni','wb-step-desc'];
 let WB_STEP=0;
 
+function wbStepCount(){
+  /* Kinship nouns only use steps 1 & 2 (root + possessor); verbs use all 4 */
+  return(WB.word&&WB.word.stem==='kinship')?2:WB_STEPS.length;
+}
+
 function wbCarrGoto(idx){
+  const total=wbStepCount();
   WB_STEPS.forEach((id,i)=>{
     const el=document.getElementById(id);
     if(!el)return;
@@ -4372,16 +4414,16 @@ function wbCarrGoto(idx){
   wbRenderDots();
   // Sync shared sticky nav
   const ctr=document.getElementById('wb-carr-ctr');
-  if(ctr)ctr.textContent='step '+(idx+1)+' of '+WB_STEPS.length;
+  if(ctr)ctr.textContent='step '+(idx+1)+' of '+total;
   const prev=document.getElementById('wb-carr-prev');
   if(prev)prev.disabled=(idx===0);
   const next=document.getElementById('wb-carr-next');
-  if(next)next.disabled=(idx>=WB_STEPS.length-1)||(idx===0&&!WB.word)||(idx>=1&&!WB.formChosen);
+  if(next)next.disabled=(idx>=total-1)||(idx===0&&!WB.word)||(idx>=1&&!WB.formChosen);
 }
 
 function wbCarrNext(){
   const next=WB_STEP+1;
-  if(next>=WB_STEPS.length)return;
+  if(next>=wbStepCount())return;
   /* Step 2 requires a word root; steps 3 & 4 also require a form */
   if(next>=1&&!WB.word)return;
   if(next>=2&&!WB.formChosen)return;
@@ -4392,10 +4434,12 @@ function wbCarrPrev(){
 }
 
 function wbRenderDots(){
+  const total=wbStepCount();
   for(let i=1;i<=4;i++){
     const el=document.getElementById('wb-dots-'+i);
     if(!el)continue;
-    el.innerHTML=WB_STEPS.map((_,j)=>`<div style="width:5px;height:5px;border-radius:50%;background:${j===WB_STEP?'var(--clay)':'var(--smoke)'}"></div>`).join('');
+    // Only render dots for steps that exist in the current word type
+    el.innerHTML=WB_STEPS.slice(0,total).map((_,j)=>`<div style="width:5px;height:5px;border-radius:50%;background:${j===WB_STEP?'var(--clay)':'var(--smoke)'}"></div>`).join('');
   }
 }
 
@@ -4455,9 +4499,88 @@ function wbConjugatePhrase(verbPhrase,is3sg){
   return [first,...words.slice(1)].join(' ');
 }
 
-function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
+/* ── Series → tense framing ──────────────────────────────────────────
+   subj/obj  → habitual present (with -s suffix) or bare command/stative
+   aorist    → simple past (completed)
+   future    → prospective "will …"
+   nondef    → hypothetical "would …"
+   ──────────────────────────────────────────────────────────────────── */
+function wbApplySeries(series, vtype, vphrase, person, is3sg, hasHabitualS){
+  const be=WB_BE[person]||'is';
+
+  if(series==='aorist'){
+    /* Completed past — simple past tense */
+    if(vtype==='stative'){
+      /* "to be afraid" → "was afraid" */
+      const waswere={'1sg':'was','2sg':'were','3sg.m':'was','3sg.f':'was','3sg.n':'was',
+        '12du':'were','13du':'were','2du':'were','3du.m':'were','3du.f':'were',
+        '12pl':'were','13pl':'were','2pl':'were','3pl.m':'were','3pl.f':'were'};
+      return`${waswere[person]||'was'} ${vphrase}`;
+    }
+    /* Regular action → simple past. Use -ed as default; flag multi-form with "/" */
+    if(vtype==='multi'){
+      return vphrase.split('/').map(p=>wbPastTense(p.trim())).join(' / ');
+    }
+    return wbPastTense(vphrase);
+  }
+
+  if(series==='future'){
+    /* Prospective — "will + bare infinitive" */
+    if(vtype==='stative') return`will be ${vphrase}`;
+    if(vtype==='multi') return`will ${vphrase}`;
+    return`will ${vphrase}`;
+  }
+
+  if(series==='nondef'){
+    /* Non-definite / hypothetical — "would + bare infinitive" */
+    if(vtype==='stative') return`would be ${vphrase}`;
+    if(vtype==='multi') return`would ${vphrase}`;
+    return`would ${vphrase}`;
+  }
+
+  /* subj / obj — habitual present or stative */
+  if(vtype==='stative'){
+    return`${be} ${vphrase}`;
+  }
+  if(vtype==='multi'){
+    return is3sg
+      ?vphrase.split('/').map(p=>wbConjugatePhrase(p.trim(),true)).join(' / ')
+      :vphrase;
+  }
+  /* Habitual -s already baked into the conjugated form in Kanien'kéha.
+     Reflect it in English as third-person habitual or bare (command) */
+  if(hasHabitualS){
+    return wbConjugatePhrase(vphrase,is3sg);
+  }
+  /* No aspect suffix → imperative / stative bare form */
+  return vphrase;
+}
+
+/* Produce a simple past tense form of an English bare verb.
+   Covers the most common irregular forms found in the WB verb list. */
+const WB_PAST_IRREG={
+  'sit':'sat','run':'ran','eat':'ate','sleep':'slept',
+  'give':'gave','put':'put','put on':'put on',
+  'carry':'carried','make':'made','spend':'spent',
+  'read':'read','study':'studied','sweep':'swept',
+  'cut':'cut','look':'looked','listen':'listened',
+  'walk':'walked','want':'wanted','mow':'mowed',
+  'brush':'brushed','wipe':'wiped',
+};
+function wbPastTense(verb){
+  if(!verb)return verb;
+  const lower=verb.toLowerCase();
+  if(WB_PAST_IRREG[lower])return WB_PAST_IRREG[lower];
+  if(lower.endsWith('e'))return verb+'d';
+  if(lower.endsWith('y')&&!'aeiou'.includes(lower[lower.length-2]))
+    return verb.slice(0,-1)+'ied';
+  return verb+'ed';
+}
+
+function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal,series){
   const pronoun=WB_PRONOUNS[person]||person;
   const is3sg=WB_3SG.has(person);
+  const ser=series||'subj';
 
   /* Strip parenthetical notes: "to put on (clothing)" → "to put on" */
   const verbClean=(verbE||'').replace(/\s*\([^)]+\)/g,'').trim();
@@ -4473,6 +4596,9 @@ function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
 
   /* Self-contained statives: "it is delicious" — pronoun already embedded */
   if(/^it\s+is\s+/i.test(verbClean)){
+    if(ser==='aorist') return verbClean.replace(/^it is /i,'it was ');
+    if(ser==='future') return verbClean.replace(/^it is /i,'it will be ');
+    if(ser==='nondef') return verbClean.replace(/^it is /i,'it would be ');
     return descSimple?`${verbClean} (${descSimple})`:verbClean;
   }
 
@@ -4489,17 +4615,8 @@ function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
     vtype='bare';vphrase=verbClean;
   }
 
-  /* Conjugate base verb */
-  let baseVerb;
-  if(vtype==='stative'){
-    baseVerb=`${WB_BE[person]||'is'} ${vphrase}`;
-  } else if(vtype==='multi'){
-    baseVerb=is3sg
-      ?vphrase.split('/').map(p=>wbConjugatePhrase(p.trim(),true)).join(' / ')
-      :vphrase;
-  } else {
-    baseVerb=wbConjugatePhrase(vphrase,is3sg);
-  }
+  const hasHabitualS=aspectVal&&aspectVal!=='∅';
+  const baseVerb=wbApplySeries(ser,vtype,vphrase,person,is3sg,hasHabitualS);
 
   /* NI integration */
   let result;
@@ -4507,13 +4624,12 @@ function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
     const tmpl=(WB_NI_TEMPLATES[verbE]||{})[niE];
     if(tmpl){
       const [verbRep,niPrep,niArt]=tmpl;
-      const verbConjRep=is3sg
-        ?verbRep.split('/').map(p=>wbConjugatePhrase(p.trim(),true)).join(' / ')
-        :verbRep;
+      /* Apply series to the NI-specific verb replacement */
+      const verbRepConjugated=wbApplySeries(ser,'action',verbRep,person,is3sg,hasHabitualS);
       /* noun phrase: [prep] [article] [adj?] noun */
       const nounWord=descSimple?`${descSimple} ${niSimple}`:niSimple;
       const nounPhrase=[niPrep,niArt,nounWord].filter(Boolean).join(' ');
-      result=`${pronoun} ${verbConjRep} ${nounPhrase}`;
+      result=`${pronoun} ${verbRepConjugated} ${nounPhrase}`;
     } else {
       /* Fallback: article + noun */
       const art=/^[aeiou]/i.test(niSimple||'')?'an':'a';
@@ -4528,7 +4644,6 @@ function wbBuildTranslation(person,verbE,niE,descriptorE,aspectVal){
     if(descSimple) result+=` (~${descSimple})`;
   }
 
-  if(aspectVal&&aspectVal!=='∅') result+=' (habitual)';
   return result;
 }
 
@@ -4552,7 +4667,7 @@ function wbUpdateAssembly(){
   const dialectChanged=WB.dialect!=='kanehsatake';
 
   /* ── English translation ── */
-  const engStr=(isGenerated?'* ':'')+wbBuildTranslation(f.person,w.e,ni?ni.e:null,d?d.e:null,sfx.val);
+  const engStr=(isGenerated?'* ':'')+wbBuildTranslation(f.person,w.e,ni?ni.e:null,d?d.e:null,sfx.val,f.series||WB.series);
 
   /* ── Prefix slot ── */
   const slP=document.getElementById('wbs-p');
@@ -4669,7 +4784,7 @@ function wbClearBuilder(){
   slP.innerHTML='<div class="wb-asm-lbl">Prefix</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">person</div>';
   const slR=document.getElementById('wbs-r');
   slR.className='wb-asm-slot';
-  slR.innerHTML='<div class="wb-asm-lbl">Verb root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">action</div>';
+  slR.innerHTML='<div class="wb-asm-lbl">Root</div><div class="wb-asm-val dim">—</div><div class="wb-asm-sub">word</div>';
   const fullBox=document.getElementById('wb-asm-full');
   const fullWord=document.getElementById('wb-asm-word');
   const fullEn=document.getElementById('wb-asm-en');
@@ -4710,16 +4825,31 @@ function wbGetAllForms(){
 
 function wbShuffle(a){return a.slice().sort(()=>Math.random()-.5);}
 
-function wbGenQuestion(){
-  const panel=document.getElementById('wb-act-panel');
-  if(!panel)return;
+/* ── SHARED QUESTION DATA BUILDER ───────────────────────────────────────────
+   Pure data function — no DOM access. Returns null if the form pool is too
+   small (fewer than 4 verified entries).
+
+   Called by:
+     • wbGenQuestion()         → renders into the Word Builder Activity tab
+     • rWordBuilder() / handleWordBuilderAction()  → powers the lesson
+       exercise type "wordbuilder"
+
+   If you add new roots, change prefix tables, or update boundary phonology,
+   those changes propagate automatically to both surfaces because both call
+   this function.
+
+   @param {string} actType  'prefix' | 'form' | 'meaning'
+   @returns {{ promptHtml, choices, correct } | null}
+   ─────────────────────────────────────────────────────────────────────────── */
+function wbBuildQuestionData(actType){
   const all=wbGetAllForms().filter(x=>!x.flagged||x.verified);
-  if(all.length<4){panel.innerHTML='<div style="color:var(--ew);font-style:italic;font-size:.88rem;">Not enough verified forms for activity yet.</div>';return;}
+  if(all.length<4)return null;
+
   const item=all[Math.floor(Math.random()*all.length)];
   const w=item.w;
-
   let correct,choices,promptHtml;
-  if(WB.actType==='prefix'){
+
+  if(actType==='prefix'){
     correct=item.prefix;
     const pool=wbShuffle([...new Set(all.map(x=>x.prefix).filter(p=>p!==correct))]).slice(0,3);
     choices=wbShuffle([correct,...pool]);
@@ -4727,7 +4857,7 @@ function wbGenQuestion(){
       <div class="wb-act-sub">Identify the person/aspect prefix · ${w.stem}</div>
       <div class="wb-act-target">${item.form}</div>
       <div class="wb-act-en">${w.e} · <em>${item.label}</em></div>`;
-  } else if(WB.actType==='form'){
+  } else if(actType==='form'){
     correct=item.form;
     const pool=wbShuffle(all.filter(x=>x.form!==correct).map(x=>x.form)).slice(0,3);
     choices=wbShuffle([correct,...pool]);
@@ -4739,6 +4869,7 @@ function wbGenQuestion(){
         <span style="color:var(--ew);">= ?</span>
       </div>`;
   } else {
+    /* actType === 'meaning' (default) */
     correct=`${item.label} — ${w.e}`;
     const pool=wbShuffle(all.filter(x=>x.form!==item.form)).slice(0,3).map(x=>`${x.label} — ${x.w.e}`);
     choices=wbShuffle([correct,...pool]);
@@ -4749,16 +4880,26 @@ function wbGenQuestion(){
         <span class="wb-tag wb-tp">${item.prefix}-</span> + <span class="wb-tag wb-tr">${w.root}</span>
       </div>`;
   }
+  return{promptHtml,choices,correct};
+}
 
+/* Renders into the Word Builder Activity tab — unchanged behaviour.
+   Delegates all question logic to wbBuildQuestionData(). */
+function wbGenQuestion(){
+  const panel=document.getElementById('wb-act-panel');
+  if(!panel)return;
+  const q=wbBuildQuestionData(WB.actType||'meaning');
+  if(!q){
+    panel.innerHTML='<div style="color:var(--ew);font-style:italic;font-size:.88rem;">Not enough verified forms for activity yet.</div>';
+    return;
+  }
   // Store choices on panel to avoid inline JSON quoting issues
-  panel._choices=choices;
-  panel._correct=correct;
-
-  const btns=choices.map((c,i)=>
+  panel._choices=q.choices;
+  panel._correct=q.correct;
+  const btns=q.choices.map((c,i)=>
     `<button class="wb-choice" data-idx="${i}" onclick="wbCheck(this)">${c}</button>`
   ).join('');
-
-  panel.innerHTML=promptHtml+
+  panel.innerHTML=q.promptHtml+
     `<div class="wb-choices">${btns}</div>
      <div id="wb-fb" class="fb"></div>
      <div class="wb-act-footer">
@@ -4786,6 +4927,111 @@ function wbCheck(btn){
   fb.className='fb show '+(ok?'corfb':'wrgfb');
   fb.innerHTML=`<span class="fbi2">${ok?'✓':'✗'}</span><div class="fbt"><strong>${ok?'Niawenhkó:wa!':'Not quite'}</strong><span>${ok?correct:'Correct answer: '+correct}</span></div>`;
   document.getElementById('wb-next').style.display='inline-block';
+}
+
+/* ── WORD BUILDER LESSON EXERCISE TYPE ──────────────────────────────────────
+   Exercise schema (add to any lesson's exercises array in data_units.json):
+
+   {
+     "type": "wordbuilder",
+     "actType": "prefix" | "form" | "meaning",   // which question flavour
+     "prompt": "Word Builder — identify the prefix",  // shown in ex-q / eq
+     "sub": "Use what you know from the Builder tab", // optional subtitle
+     "wid": null  // no single vocab word; proficiency not recorded per-word
+   }
+
+   The question content (root, prefix, form, choices) is generated at runtime
+   by wbBuildQuestionData(), which is the same function used by the Word Builder
+   Activity tab. Any updates to WB_ROOTS, prefix tables, or boundary phonology
+   rules are reflected here automatically.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* Renders the initial question HTML into ex-body. Called by renderEx(). */
+function rWordBuilder(ex){
+  // Ensure WB data is initialised (wbInit() is idempotent)
+  if(typeof wbInit==='function')wbInit();
+
+  const actType=ex.actType||'meaning';
+  const q=wbBuildQuestionData(actType);
+  if(!q){
+    return`<div style="color:var(--ew);font-style:italic;font-size:.9rem;padding:.5rem 0;">
+      Not enough verified Word Builder forms for this activity yet. More roots are being added.
+    </div>`;
+  }
+
+  /* Stash question data on EX so handleWordBuilderAction() can read it
+     without touching the Word Builder tab's own panel element. */
+  EX._wb={choices:q.choices,correct:q.correct,answered:false};
+
+  const btns=q.choices.map((c,i)=>
+    `<button class="wb-choice" data-wbidx="${i}" onclick="pickWBChoice(this)">${c}</button>`
+  ).join('');
+
+  return`<div class="wb-act-panel" id="ex-wb-panel">
+    ${q.promptHtml}
+    <div class="wb-choices">${btns}</div>
+  </div>`;
+}
+
+/* Called when a learner taps a choice button in the lesson Word Builder card.
+   Enables the Submit button (same pattern as pickMC). */
+function pickWBChoice(btn){
+  if(EX._wb&&EX._wb.answered)return;
+  document.querySelectorAll('#ex-wb-panel .wb-choice').forEach(b=>b.classList.remove('wb-chip-sel'));
+  btn.classList.add('wb-chip-sel');
+  const ab=document.getElementById('actbtn');
+  ab.disabled=false;
+  ab._wbIdx=parseInt(btn.dataset.wbidx);
+}
+
+/* Called from handleAction() when ex.type==='wordbuilder'.
+   Uses the lesson's standard showFB / finishEx system — the learner sees the
+   same green/red Duolingo-style drawer they see for every other exercise type.
+   Word Builder stat counters (WB.score / WB.streak) are intentionally NOT
+   updated here — this is a lesson exercise, not a free-practice session. */
+function handleWordBuilderAction(){
+  if(!EX._wb)return;
+  if(EX._wb.answered){advance();return;}
+
+  const wb=EX._wb;
+  const ab=document.getElementById('actbtn');
+  if(ab._wbIdx===undefined||ab._wbIdx===null)return; // no selection yet
+  const chosen=wb.choices[ab._wbIdx];
+  const ok=(chosen===wb.correct);
+
+  EX.attempts++;
+
+  /* First wrong attempt: silent "try again" (matches mc/fill behaviour) */
+  if(!ok&&EX.attempts===1){
+    document.querySelectorAll('#ex-wb-panel .wb-choice').forEach(b=>b.classList.remove('wb-chip-sel'));
+    ab._wbIdx=undefined;
+    ab.disabled=true;
+    showFB('try','Incorrect — please try again.');
+    return;
+  }
+
+  /* Reveal correct / wrong on all buttons */
+  document.querySelectorAll('#ex-wb-panel .wb-choice').forEach((b,i)=>{
+    b.disabled=true;
+    b.classList.remove('wb-chip-sel');
+    if(wb.choices[i]===wb.correct)b.classList.add('wb-cor');
+    else if(i===ab._wbIdx&&!ok)b.classList.add('wb-wrg');
+  });
+
+  wb.answered=true;
+  EX.scoreable++;
+
+  const ex=EX.current;
+  if(ok){
+    EX.correct++;
+    finishEx(true, ex.cm||'Niawenhkó:wa! — correct form identified.', '');
+  } else {
+    EX.rpool.push({...ex});
+    finishEx(false,
+      (ex.wm||'Not quite — this one will come back around.')+
+      ' Correct answer: '+wb.correct,
+      '');
+  }
 }
 
 /* ── PREFIX BROWSER ── */
@@ -5163,7 +5409,9 @@ loadData().then(() => {
   showScreen('login');
 });
 
-/* ── DUOLINGO DRAWER — swipe, report, submit ── */
+/* ══════════════════════════════════════════════════════════ § FEEDBACK / REPORT
+   FEEDBACK / REPORT — drawer swipe, report panel, GitHub issue submit
+   ══════════════════════════════════════════════════════════ */
 let _swipeStartY=0, _swipeActive=false;
 
 function initDrawerSwipe(){

@@ -1108,7 +1108,7 @@
             "wid": "p11",
             "prompt": "Why might it matter grammatically whether your listener is inside or outside the ‘we’?",
             "sub": "",
-            "correct": "Because it tells the listener whether they are being included in what you are saying — they know immediately if you mean them",
+            "correct": "Because it tells the listener whether they are being included — they know immediately if you mean them",
             "options": [
               "Because it tells the listener whether they are being included — they know immediately if you mean them",
               "It is a historical accident",
@@ -1505,7 +1505,7 @@
             "wid": "p11",
             "prompt": "The inclusive/exclusive distinction only exists in the plural and dual. English has no equivalent. What does this mean for someone translating between Kanien’kéha and English?",
             "sub": "",
-            "correct": "Some meaning is always lost in translation — the English ‘we’ cannot carry the inclusive/exclusive information that Kanien’kéha builds in",
+            "correct": "Some meaning is always lost in translation — the English ‘we’ cannot carry the inclusive/exclusive information",
             "options": [
               "Some meaning is always lost in translation — the English ‘we’ cannot carry the inclusive/exclusive information",
               "Translation is perfect between the two languages",
@@ -2336,7 +2336,7 @@
             "wid": "ex09",
             "prompt": "Kahwatsíre’ means ‘family / extended family’. In Kanien’kehá:ka society, the extended family often includes clan members you have never met. What does this tell you?",
             "sub": "",
-            "correct": "Clan membership creates family relationships with people across the community and beyond — you have siblings everywhere your clan exists",
+            "correct": "Clan membership creates family relationships with people across the community and beyond",
             "options": [
               "Clan membership creates family relationships with people across the community and beyond",
               "Family only means immediate blood relatives",
@@ -2460,7 +2460,7 @@
             "wid": "ds01",
             "prompt": "In Ake’nistén:ha tsi tiakonónhsote’ wà:ke’, what does tsi do?",
             "sub": "",
-            "correct": "It connects the destination (her house) to the direction verb — ‘where her house is’",
+            "correct": "It connects the destination to the direction verb — ‘where her house is’",
             "options": [
               "It connects the destination to the direction verb — ‘where her house is’",
               "It marks the past tense",
@@ -2633,7 +2633,7 @@
             "wid": "k01",
             "prompt": "In the matrilineal system, a child belongs to their mother’s clan. What does this mean for the word Ake’nistén:ha — my mother?",
             "sub": "",
-            "correct": "Your mother is the source of your clan identity — knowing who your mother is tells you who you are in the community",
+            "correct": "Your mother is the source of your clan identity",
             "options": [
               "Your mother is the source of your clan identity",
               "The mother’s role is primarily domestic",
@@ -2648,7 +2648,7 @@
             "wid": "le04",
             "prompt": "Iakoiánéhr — clan mother. She is a woman who has earned the recognition of her clan family. What makes her authority legitimate?",
             "sub": "",
-            "correct": "Her authority comes from her clan family’s recognition — she is nominated and acknowledged by the women of her clan, not appointed by outside authority",
+            "correct": "Her authority comes from clan family recognition — not outside appointment",
             "options": [
               "Her authority comes from clan family recognition — not outside appointment",
               "She is elected by the whole community",
@@ -2911,7 +2911,7 @@
             "wid": "ar02",
             "prompt": "When you say ‘I am going to the longhouse’, you use the article thi with the destination. Why thi and not ne?",
             "sub": "",
-            "correct": "Thi marks something as a destination in motion — you are going toward it; ne marks something stationary",
+            "correct": "Thi marks something as a destination in motion — you are going toward it; ne marks a stationary reference",
             "options": [
               "Thi marks something as a destination in motion — you are going toward it; ne marks a stationary reference",
               "They are interchangeable",
@@ -2940,7 +2940,7 @@
             "wid": "dv04",
             "prompt": "Ka’ iéhse’skwe’? asks where you went — it uses a past-completed form. How do you know it refers to the past?",
             "sub": "",
-            "correct": "The -skwe’ ending marks a completed past event — something that happened and is finished",
+            "correct": "The -skwe’ ending marks a completed past event",
             "options": [
               "The -skwe’ ending marks a completed past event",
               "The word order marks the past",
@@ -3399,7 +3399,7 @@
             "wid": "ka02",
             "prompt": "Sa-kahiatónhsera means 'your book'. What prefix marks 'your'?",
             "sub": "",
-            "correct": "Sa- — the your prefix",
+            "correct": "Sa-",
             "options": [
               "Sa-",
               "Ak-",
@@ -4285,7 +4285,7 @@
             "wid": "par11",
             "prompt": "Nahò:ten ne ní:'i? — what is this? You know ne (specific article) and ní:'i (pointer). What does the full question ask?",
             "sub": "",
-            "correct": "What is this/that? — asking for the name of something being pointed to",
+            "correct": "What is this/that?",
             "options": [
               "What is this/that?",
               "What do you want?",
@@ -4624,7 +4624,7 @@
             "wid": "ka10",
             "prompt": "Karihtón:ni — clock. The name is built from the Ka-class system. What does it describe?",
             "sub": "",
-            "correct": "Something like 'the thing that counts the hours' — the Ka-class names the object by its function",
+            "correct": "The thing that counts the hours",
             "options": [
               "The thing that counts the hours",
               "A borrowed French word",
@@ -4644,7 +4644,7 @@
             "wid": "ex10",
             "prompt": "Onkwehón:we means 'Indigenous person / original person'. What does the word itself say?",
             "sub": "",
-            "correct": "It names Indigenous people as the original people of the land — the identity is built into the word",
+            "correct": "It names Indigenous people as the original people",
             "options": [
               "It names Indigenous people as the original people",
               "It is only a political term",
@@ -4746,7 +4746,7 @@
             "wid": "v01",
             "prompt": "Sá:tien means 'sit' (command). Ká:tiens means 'I am sitting'. What changes?",
             "sub": "",
-            "correct": "The prefix changes — s- for you (command), k- for I — and the habitual -s suffix is added",
+            "correct": "The prefix changes from s- to k-, and -s suffix is added",
             "options": [
               "The prefix changes from s- to k-, and -s suffix is added",
               "Only the suffix changes",
@@ -5129,7 +5129,7 @@
             "wid": "col01",
             "prompt": "Onekwénhtara means red — related to the word for blood. The strawberry is red — Ken’ niiohontésha’ Onekwénhtara. What do red things share in Kanien’kéha colour logic?",
             "sub": "",
-            "correct": "Red is the colour of living blood — the word names the colour by its most vivid living source",
+            "correct": "Red is the colour of living blood",
             "options": [
               "Red is the colour of living blood",
               "Red is named after a plant",
@@ -5471,7 +5471,7 @@
             "wid": "bp22",
             "prompt": "Otsìtà:’a (leg) and Ohsì:’a (foot) share the same -sì- root. What does this suggest?",
             "sub": "",
-            "correct": "The leg and foot share a root because they are part of the same limb — the language groups related body parts",
+            "correct": "The leg and foot share a root because they are part of the same limb",
             "options": [
               "The leg and foot share a root because they are part of the same limb",
               "It is a coincidence",
@@ -6327,7 +6327,7 @@
             "wid": "ta02",
             "prompt": "Onkwehshón:’a — the people / human beings. The Address acknowledges the people first. Why do you think the people come before the earth in the sequence?",
             "sub": "",
-            "correct": "The people are the ones gathered — acknowledging them first affirms that everyone is present before turning to the wider world",
+            "correct": "The people are the ones gathered — acknowledging them first affirms that everyone is present",
             "options": [
               "The people are the ones gathered — acknowledging them first affirms that everyone is present",
               "People are more important than the earth",
@@ -6342,7 +6342,7 @@
             "wid": "ta04",
             "prompt": "Ohwén:tsia ne Ionkwarihó:ten — the earth that sustains us. What does the word Ionkwarihó:ten tell you about the earth?",
             "sub": "",
-            "correct": "It is actively sustaining us right now — the earth is not just a place but a living provider",
+            "correct": "It is actively sustaining us right now",
             "options": [
               "It is actively sustaining us right now",
               "The earth is a historical concept",
@@ -6451,7 +6451,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi’nikonhraién:tase’ — it makes our minds happy / we give thanks — comes after each group is acknowledged. What does this phrase do in the Address?",
             "sub": "",
-            "correct": "It closes each acknowledgement with a collective expression of gratitude — the minds of everyone gathered are made one in thanks",
+            "correct": "It closes each acknowledgement with collective gratitude",
             "options": [
               "It closes each acknowledgement with collective gratitude",
               "It is only said by the speaker",
@@ -6504,7 +6504,7 @@
             "wid": "fo05",
             "prompt": "Onón:ta (corn) is one of the Three Sisters acknowledged in the Address. What makes the Three Sisters — corn, beans, squash — a specific group worth naming together?",
             "sub": "",
-            "correct": "They grow together, support each other, and together provide complete nutrition — they are acknowledged as a unit because they work as a unit",
+            "correct": "They grow together, support each other, and provide complete nutrition as a unit",
             "options": [
               "They grow together, support each other, and provide complete nutrition as a unit",
               "They are the only plants in Kanien’kehá:ka territory",
@@ -6611,7 +6611,7 @@
             "wid": "le17",
             "prompt": "Ratiwéras — the Thunderers. In the Thanksgiving Address they are thanked by name. What does it mean that they have a specific name rather than just being called ‘thunder’?",
             "sub": "",
-            "correct": "They are beings with a specific identity and role — naming them acknowledges who they are, not just what they do",
+            "correct": "They are beings with a specific identity and role",
             "options": [
               "They are beings with a specific identity and role",
               "The name is a coincidence",
@@ -6626,7 +6626,7 @@
             "wid": "pl02",
             "prompt": "Karáhkwa — the sun. You have known this word since Unit 3. What is different about knowing it in the context of the Thanksgiving Address?",
             "sub": "",
-            "correct": "In the Address, Karáhkwa is not just a Ka-class noun — it is a being being thanked for specific gifts given every day",
+            "correct": "In the Address, Karáhkwa is a being being thanked for specific gifts given every day",
             "options": [
               "In the Address, Karáhkwa is a being being thanked for specific gifts given every day",
               "Nothing is different",
@@ -6694,7 +6694,7 @@
             "wid": "le05",
             "prompt": "Shonkwaiá:tison — the Creator. The Address acknowledges the Creator last, after all the other beings. What does this order suggest?",
             "sub": "",
-            "correct": "You move through all of creation before arriving at its source — the gratitude builds from the immediate to the vast",
+            "correct": "You move through all of creation before arriving at its source",
             "options": [
               "You move through all of creation before arriving at its source",
               "The Creator is less important than the other beings",
@@ -6709,7 +6709,7 @@
             "wid": "ph07",
             "prompt": "Onen’ ki’ wáhi closes the Thanksgiving Address. You have said this at the end of every unit in this course. What does it feel like to say it now, knowing it is the closing phrase of the most important text in Kanien’kéha?",
             "sub": "",
-            "correct": "The phrase carries more weight — knowing it closes the Thanksgiving Address connects everyday speech to ceremony",
+            "correct": "The phrase carries more weight — it connects everyday speech to ceremony",
             "options": [
               "The phrase carries more weight — it connects everyday speech to ceremony",
               "Nothing changes — it is just a phrase",
@@ -6820,7 +6820,7 @@
             "wid": "ta01",
             "prompt": "In Haudenosaunee schools, children begin each day with the Thanksgiving Address. What does this practice do for language revitalization?",
             "sub": "",
-            "correct": "It makes the most important ceremonial text part of daily life — children who hear and say it daily internalise both the language and the worldview it carries",
+            "correct": "It makes the most important text part of daily life",
             "options": [
               "It makes the most important text part of daily life",
               "It is only a formality",
@@ -6835,7 +6835,7 @@
             "wid": "ex14",
             "prompt": "Ionteriwahrónnion — school / place of learning. In Kanien’kehá:ka immersion schools, the day begins with the Thanksgiving Address spoken in Kanien’kéha. What kind of language learning is this?",
             "sub": "",
-            "correct": "Immersion learning — the language is used as the medium of daily life, not just as a subject of study",
+            "correct": "Immersion learning — the language is used as the medium of daily life",
             "options": [
               "Immersion learning — the language is used as the medium of daily life",
               "Translation practice",
@@ -6850,7 +6850,7 @@
             "wid": "loc07",
             "prompt": "At kanonhséhsne — at the longhouse. Every gathering at the longhouse begins with the Thanksgiving Address. What does this tell you about the relationship between the Address and the longhouse?",
             "sub": "",
-            "correct": "The Address and the longhouse are inseparable — you cannot have a longhouse gathering without the Address opening it",
+            "correct": "The Address and the longhouse are inseparable",
             "options": [
               "The Address and the longhouse are inseparable",
               "The Address is optional at longhouse gatherings",
@@ -7023,7 +7023,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi’nikonhraién:tase’ — it makes our minds happy. This phrase appears after each being is acknowledged. What does its repeated use do for the structure of the Address?",
             "sub": "",
-            "correct": "It creates a rhythm and a collective pause — each section closes with shared gratitude before moving to the next",
+            "correct": "It creates a rhythm and collective pause between sections",
             "options": [
               "It creates a rhythm and collective pause between sections",
               "It means the section was particularly important",
@@ -7038,7 +7038,7 @@
             "wid": "pl02",
             "prompt": "You are listening to the Thanksgiving Address and you hear Karáhkwa. Which section are you in?",
             "sub": "",
-            "correct": "The sky beings section — the sun is acknowledged after the Thunderers",
+            "correct": "The sky beings section — the sun comes after the Thunderers",
             "options": [
               "The sky beings section — the sun comes after the Thunderers",
               "The earth section",
@@ -7337,7 +7337,7 @@
             "wid": "sh06",
             "prompt": "Teionteriwaién:te’ — circle. Wampum belts often have circular patterns. What does it mean to use a shape word to describe a ceremonial object?",
             "sub": "",
-            "correct": "Shape vocabulary connects the everyday description of form to the ceremonial objects that carry specific meaning",
+            "correct": "Shape vocabulary connects everyday description to ceremonial objects",
             "options": [
               "Shape vocabulary connects everyday description to ceremonial objects",
               "Shape words are only for geometry",
@@ -7687,7 +7687,7 @@
             "wid": "wa06",
             "prompt": "Oskenhón:ton — deer. Deer appear in the Thanksgiving Address as part of the animal section. Beyond food, what role do deer play in Kanien’kehá:ka material culture?",
             "sub": "",
-            "correct": "Deer hide is used for clothing, moccasins, drums, and other important objects — the whole animal is used with respect",
+            "correct": "Deer hide is used for clothing, moccasins, drums, and other objects",
             "options": [
               "Deer hide is used for clothing, moccasins, drums, and other objects",
               "Only deer meat is used",
@@ -7923,7 +7923,7 @@
             "wid": "cl04",
             "prompt": "Roti’nehí:io — Snipe Clan. The Snipe (Tkaréhton) is one of the clan animals of the broader Haudenosaunee Confederacy. What does having a bird as a clan animal suggest?",
             "sub": "",
-            "correct": "Birds are as central to Haudenosaunee identity as the wolf, bear, and turtle — the living world organises the social world",
+            "correct": "Birds are central to identity as well as land animals",
             "options": [
               "Birds are central to identity as well as land animals",
               "Only large animals can be clan symbols",
@@ -7976,7 +7976,7 @@
             "wid": "bi01",
             "prompt": "Á:kwe’ks — eagle. The eagle sits at the top of the Great Tree of Peace in Haudenosaunee tradition. What is the eagle’s role there?",
             "sub": "",
-            "correct": "The eagle watches from above for any threat to the peace — it is a sentinel, not just a symbol",
+            "correct": "The eagle watches for threats to the peace — a sentinel",
             "options": [
               "The eagle watches for threats to the peace — a sentinel",
               "The eagle is only decorative",
@@ -8217,7 +8217,7 @@
             "wid": "cl02",
             "prompt": "Rotiniáhton — Turtle Clan. The Turtle Clan is the keeper of the earth in Haudenosaunee tradition — the turtle whose back Sky Woman landed on. What does it mean for a clan to be connected to the creation story?",
             "sub": "",
-            "correct": "The clan carries the identity of that being from before the world existed — Turtle Clan people are the descendants of the original relationship with the turtle",
+            "correct": "The clan carries identity from the creation story",
             "options": [
               "The clan carries identity from the creation story",
               "It is a historical title only",
@@ -8232,7 +8232,7 @@
             "wid": "cu01",
             "prompt": "In the longhouse, the three clans are arranged on specific sides. Bear and Turtle face Wolf and other clans across the fire. Why does this seating arrangement matter?",
             "sub": "",
-            "correct": "It reflects the clan moiety system — clans are divided into two groups that balance each other in governance and ceremony",
+            "correct": "It reflects the clan moiety system — two groups that balance each other",
             "options": [
               "It reflects the clan moiety system — two groups that balance each other",
               "It is for convenience only",
@@ -8247,7 +8247,7 @@
             "wid": "cl03",
             "prompt": "Ronathahí:non — Wolf Clan. The Wolf Clan is responsible for keeping peace between nations in Haudenosaunee tradition. How does this connect to the Great Law?",
             "sub": "",
-            "correct": "The Great Law distributes specific responsibilities to specific clans — the Wolf Clan’s role in peacemaking is built into the law",
+            "correct": "The Great Law distributes responsibilities to clans",
             "options": [
               "The Great Law distributes responsibilities to clans",
               "It is a ceremonial role only",
@@ -8420,7 +8420,7 @@
             "wid": "cl02",
             "prompt": "A’nó:wara Rotiniáhton — the Turtle, the Turtle Clan. In the creation story the turtle carries the world. In the clan system the Turtle Clan carries which responsibility?",
             "sub": "",
-            "correct": "The Turtle Clan is often associated with the keeper of the earth and the natural world",
+            "correct": "The Turtle Clan keeps the earth and natural world",
             "options": [
               "The Turtle Clan keeps the earth and natural world",
               "The Turtle Clan keeps medicine",
@@ -8435,7 +8435,7 @@
             "wid": "sh01",
             "prompt": "Otsísto — star shape and sky star. Ratiwéras — the Thunderers. Both appear in the sky. The Thanksgiving Address thanks both. What do they have in common in the Address?",
             "sub": "",
-            "correct": "Both are sky beings thanked for specific gifts they give — the stars for light and navigation, the Thunderers for rain",
+            "correct": "Both are sky beings thanked for specific gifts",
             "options": [
               "Both are sky beings thanked for specific gifts",
               "They are the same being",
@@ -8919,7 +8919,7 @@
             "wid": "fo05",
             "prompt": "Onón:ta — corn. In the Thanksgiving Address the Three Sisters are thanked. How does eating the corn connect to that gratitude?",
             "sub": "",
-            "correct": "Eating receives the gift the Address thanks — the ceremony names what the meal contains",
+            "correct": "Eating receives the gift the Address thanks",
             "options": [
               "Eating receives the gift the Address thanks",
               "Eating is unrelated to the Address",
@@ -9312,7 +9312,7 @@
             "wid": "cu06",
             "prompt": "Ionkwaiénhton — corn husk doll. The doll's legend teaches about humility. What is the teaching?",
             "sub": "",
-            "correct": "The first corn husk doll was given a beautiful face and became vain; the Creator took her face away as a lesson",
+            "correct": "She was given a beautiful face, became vain, and the Creator removed it",
             "options": [
               "She was given a beautiful face, became vain, and the Creator removed it",
               "The doll was made as a game",
@@ -9327,7 +9327,7 @@
             "wid": "cu19",
             "prompt": "Onhkwa'shón:'a — beads. Beadwork uses specific colours and patterns that carry meaning. What does knowing the vocabulary of beads mean?",
             "sub": "",
-            "correct": "It connects you to the knowledge of design, clan identity, and the makers who have worked this craft for generations",
+            "correct": "It connects to design knowledge and generational craft",
             "options": [
               "It connects to design knowledge and generational craft",
               "It is only practical for artists",
@@ -9413,7 +9413,7 @@
             "wid": "cu05",
             "prompt": "Onkwatà:wen — native tobacco — carries prayers. What does this mean in practice?",
             "sub": "",
-            "correct": "When you put tobacco down and speak a prayer, the tobacco carries that intention to the spirit world",
+            "correct": "Tobacco carries intentions to the spirit world",
             "options": [
               "Tobacco carries intentions to the spirit world",
               "Tobacco is only used socially",
@@ -9907,7 +9907,7 @@
             "wid": "le04",
             "prompt": "Iakoiánéhr — clan mother. She appears across Units 7, 12, and 16. What does her appearing across multiple units tell you?",
             "sub": "",
-            "correct": "Her role spans multiple domains — governance, ceremony, family, community are all things she is part of",
+            "correct": "Her role spans multiple domains of life",
             "options": [
               "Her role spans multiple domains of life",
               "The title is repeated by mistake",
@@ -10194,7 +10194,7 @@
             "wid": "t01",
             "prompt": "Iekwahrahnhá:ra’ — hammer. The name describes the tool’s action. What does this tell you about how Kanien’kéha names tools?",
             "sub": "",
-            "correct": "Tools are named by what they do — the name is a description of the action, not an arbitrary label",
+            "correct": "Tools are named by what they do",
             "options": [
               "Tools are named by what they do",
               "Tool names are borrowed from English",
@@ -10209,7 +10209,7 @@
             "wid": "cv01",
             "prompt": "Kwe’tarón:ko means ‘to cut’. When you use a knife to cut, which verb do you use?",
             "sub": "",
-            "correct": "Kwe’tarón:ko — combined with the knife (Ietkarihón:ni) to describe the action",
+            "correct": "Kwe’tarón:ko — cutting verb with the knife noun",
             "options": [
               "Kwe’tarón:ko — cutting verb with the knife noun",
               "Káhere’ — sweep",
@@ -10627,7 +10627,7 @@
             "wid": "ov01",
             "prompt": "Sohkwá:ren means ‘you are strong / be strong’. This is an O-stem verb. What kind of meaning do O-stem verbs typically carry?",
             "sub": "",
-            "correct": "A state or condition — being strong describes what state you are in, not what you are actively doing",
+            "correct": "A state or condition — being strong is a state, not an action",
             "options": [
               "A state or condition — being strong is a state, not an action",
               "An action being performed",
@@ -10680,7 +10680,7 @@
             "wid": "ov03",
             "prompt": "Saiosé:ren means ‘you are sick / be sick’. When would you use the command form ‘be sick’?",
             "sub": "",
-            "correct": "You would not command someone to be sick — the command form here is also the you-statement: ‘you are sick’",
+            "correct": "You would not command someone to be sick — the form doubles as ‘you are sick’",
             "options": [
               "You would not command someone to be sick — the form doubles as ‘you are sick’",
               "To tell someone to pretend to be sick",
@@ -10826,7 +10826,7 @@
             "wid": "fe15",
             "prompt": "Tesenón:niahkhw — you dance. This is a Fake E-stem verb with the te- prefix. What does the te- tell you?",
             "sub": "",
-            "correct": "The te- marks a dualic action — dancing involves moving in two phases (like running), from stillness into motion",
+            "correct": "The te- marks a dualic two-phase action",
             "options": [
               "The te- marks a dualic two-phase action",
               "The te- marks a plural",
@@ -10896,7 +10896,7 @@
             "wid": "p02",
             "prompt": "Ak-áhta’ means ‘my shoe’. The ak- prefix marks ‘my’ on A-class nouns. What prefix marks ‘your’?",
             "sub": "",
-            "correct": "Sa- — Sa-áhta’ would be your shoe",
+            "correct": "Sa- — Sa-áhta’ = your shoe",
             "options": [
               "Sa- — Sa-áhta’ = your shoe",
               "Ro- — Ro-áhta’ = your shoe",
@@ -10949,7 +10949,7 @@
             "wid": "k01",
             "prompt": "For kinship terms, the possessive prefix changes. Ake’nistén:ha = my mother. What is ‘your mother’?",
             "sub": "",
-            "correct": "Sa’nistén:ha — your mother (sa- prefix on the mother root)",
+            "correct": "Sa’nistén:ha — your mother",
             "options": [
               "Sa’nistén:ha — your mother",
               "Ro’nistén:ha — your mother",
@@ -11053,7 +11053,7 @@
             "wid": "g06",
             "prompt": "In Iáh ká:tiens (I am not sitting) the te- prefix sometimes appears on verbs in the negative: Iáh teká:tiens. What does the te- add in the negative?",
             "sub": "",
-            "correct": "The te- strengthens the negation — it is part of a negative-polarity pattern in Kanien’kéha",
+            "correct": "The te- strengthens the negation — it marks negative polarity",
             "options": [
               "The te- strengthens the negation — it marks negative polarity",
               "The te- marks duality",
@@ -11168,7 +11168,7 @@
             "wid": "ov01",
             "prompt": "Sohkwá:ren (you are strong) and saiosé:ren (you are sick) are both O-stem. What do they have in common?",
             "sub": "",
-            "correct": "Both describe states or conditions rather than actions being performed",
+            "correct": "Both describe states — being strong, being sick",
             "options": [
               "Both describe states — being strong, being sick",
               "Both involve physical movement",
@@ -11183,7 +11183,7 @@
             "wid": "fe01",
             "prompt": "Sahrón:ni (you make it) is Fake E-stem. Sennnhiáhkhw (you sing) is also Fake E-stem. What makes these two verbs part of the same class despite having different meanings?",
             "sub": "",
-            "correct": "They share the same stem class morphology — the class is defined by the verb’s structural pattern, not its meaning",
+            "correct": "They share the same stem class morphology",
             "options": [
               "They share the same stem class morphology",
               "They both describe making things",
@@ -11447,7 +11447,7 @@
             "wid": "cl05",
             "prompt": "Rotineniotthró:non — Eel Clan. The eel names a clan of the Haudenosaunee Confederacy. What does this tell you about fish in Haudenosaunee identity?",
             "sub": "",
-            "correct": "Fish are significant enough to serve as clan identities — the eel names a people the same way the bear or turtle do",
+            "correct": "Fish are significant enough to serve as clan identities",
             "options": [
               "Fish are significant enough to serve as clan identities",
               "Fish are only food",
@@ -11500,7 +11500,7 @@
             "wid": "fo21",
             "prompt": "Namé:s o'wá:ron — fish as food. Industrial contamination of the St. Lawrence, particularly affecting Akwesasne, has made traditional fishing unsafe for decades. What does this mean for Kanien'kehá:ka communities?",
             "sub": "",
-            "correct": "A primary food source and cultural practice was severely disrupted — the word for fish as food carries that history",
+            "correct": "A primary food source was disrupted — the word carries that history",
             "options": [
               "A primary food source was disrupted — the word carries that history",
               "Nothing has changed",
@@ -11815,7 +11815,7 @@
             "wid": "bi04",
             "prompt": "Tsistí:keri — horned owl. In many Indigenous traditions the owl may carry messages from the spirit world. What should a learner understand about this?",
             "sub": "",
-            "correct": "Its significance depends on context and community knowledge — this lesson acknowledges that such knowledge exists without reproducing restricted teachings",
+            "correct": "Significance depends on context and community knowledge",
             "options": [
               "Significance depends on context and community knowledge",
               "All owls mean the same thing everywhere",
@@ -12563,7 +12563,7 @@
             "wid": "par30",
             "prompt": "Someone responds Hen' to your question. What have they said?",
             "sub": "",
-            "correct": "Yes — the affirmative answer",
+            "correct": "I don't know",
             "options": [
               "Yes",
               "No",
@@ -12672,7 +12672,7 @@
             "wid": "ex10",
             "prompt": "Onkwehón:we — original person. You have completed nine units of a Kanien'kéha course. Regardless of your identity, what does learning this language give you access to?",
             "sub": "",
-            "correct": "A way of seeing and naming the world developed over thousands of years on this land",
+            "correct": "A way of seeing and naming the world developed over thousands of years",
             "options": [
               "A way of seeing and naming the world developed over thousands of years",
               "Nothing beyond the words themselves",
@@ -12756,7 +12756,7 @@
             "wid": "ov01",
             "prompt": "Sohkwá:ren — you are strong. What kind of verb is this?",
             "sub": "",
-            "correct": "Stative — it describes a state or condition, not an action being performed",
+            "correct": "Stative — a state or condition",
             "options": [
               "Stative — a state or condition",
               "Active — strength is an action",
@@ -12809,7 +12809,7 @@
             "wid": "par22",
             "prompt": "Ioia'táwen — it is good. Is this active or stative?",
             "sub": "",
-            "correct": "Stative — goodness is a condition something is in, not an action",
+            "correct": "Stative — goodness is a condition",
             "options": [
               "Stative — goodness is a condition",
               "Active — being good is something you do",
@@ -12824,7 +12824,7 @@
             "wid": "v01",
             "prompt": "In Kanien'kéha, the same verb root can often appear in both active and stative forms with different meanings. What does this tell you?",
             "sub": "",
-            "correct": "The active/stative distinction is built into the verb system itself — it is not just vocabulary, it is grammar",
+            "correct": "The active/stative distinction is built into the verb system",
             "options": [
               "The active/stative distinction is built into the verb system",
               "The same verb always means the same thing",
@@ -12871,7 +12871,7 @@
             "wid": "v01",
             "prompt": "Ká:tiens — I am sitting. The -s at the end is the habitual suffix. What does 'habitual' mean here?",
             "sub": "",
-            "correct": "Something that happens regularly or is currently ongoing — I sit (I am a sitter, I am currently sitting)",
+            "correct": "Something that happens regularly or is currently ongoing",
             "options": [
               "Something that happens regularly or is currently ongoing",
               "A one-time completed action",
@@ -12924,7 +12924,7 @@
             "wid": "fe16",
             "prompt": "Sennnhiáhkhw — you sing (command). What would 'you are singing (habitual)' look like?",
             "sub": "",
-            "correct": "The habitual form replaces the command prefix s- with the habitual prefix se- or similar, and adds -s",
+            "correct": "The habitual replaces s- with se- and adds -s",
             "options": [
               "The habitual replaces s- with se- and adds -s",
               "Nothing changes from the command",
@@ -12939,7 +12939,7 @@
             "wid": "v03",
             "prompt": "te-s-aráhtat — you run (dualic command). The -s- is the person marker. Where does the habitual -s appear in habitual forms?",
             "sub": "",
-            "correct": "The habitual -s appears as a suffix at the end of the verb — not in the middle",
+            "correct": "As a suffix at the end of the verb",
             "options": [
               "As a suffix at the end of the verb",
               "In the middle between prefixes",
@@ -13003,7 +13003,7 @@
             "wid": "p02",
             "prompt": "You know ká:tiens (I am sitting). What changes to say 'you are sitting'?",
             "sub": "",
-            "correct": "The prefix changes from k- (I) to s- (you) — sa:tiens",
+            "correct": "The prefix changes from k- (I) to s- (you)",
             "options": [
               "The prefix changes from k- (I) to s- (you)",
               "The suffix changes",
@@ -13060,7 +13060,7 @@
             "wid": "ov01",
             "prompt": "Sohkwá:ren — you are strong (O-stem stative). What prefix marks 'I am strong'?",
             "sub": "",
-            "correct": "wa- or similar — the first-person stative prefix replaces s-",
+            "correct": "wa- — first-person stative replaces s-",
             "options": [
               "wa- — first-person stative replaces s-",
               "k- — the same as active verbs",
@@ -13075,7 +13075,7 @@
             "wid": "v03",
             "prompt": "te-s-aráhtat — you run (command). What is the plural command for 'you all run'?",
             "sub": "",
-            "correct": "The sewa- or se- prefix replaces s- to mark plural you — tesewará:htat or similar",
+            "correct": "The te- prefix is removed for plural",
             "options": [
               "Plural replaces s- with sewa- or se-",
               "Nothing changes — the command stays the same",
@@ -13136,7 +13136,7 @@
             "wid": "v03",
             "prompt": "te-s-aráhtat — you (one person) run. How do you tell two people to run?",
             "sub": "",
-            "correct": "te-sekeni-aráhtat or similar — the dual prefix tekeni- replaces the singular s-",
+            "correct": "te-sekeni-aráhtat — dual prefix replaces singular",
             "options": [
               "te-sekeni-aráhtat — dual prefix replaces singular",
               "te-sewa-aráhtat — that is plural",
@@ -13151,7 +13151,7 @@
             "wid": "p10",
             "prompt": "For a plural command — telling a group to do something — which prefix family marks 'you all'?",
             "sub": "",
-            "correct": "sewa- — you all, the plural you prefix",
+            "correct": "sewa- — plural you",
             "options": [
               "sewa- — plural you",
               "tekeni- — that is dual (two people)",
@@ -13208,7 +13208,7 @@
             "wid": "v05",
             "prompt": "satkáhthon — you listen (command). How does this connect to katkáhthons (I am listening, habitual)?",
             "sub": "",
-            "correct": "Same root -káhthon-, different person prefix and different form — command vs habitual",
+            "correct": "Same root, different prefix and form",
             "options": [
               "Same root, different prefix and form",
               "Completely different words",
@@ -13377,7 +13377,7 @@
             "wid": "v01",
             "prompt": "Ká:tiens (I am sitting) vs sá:tiens (you are sitting). What changes between these two forms?",
             "sub": "",
-            "correct": "The person prefix — k- (I) becomes s- (you). The root and habitual suffix stay the same.",
+            "correct": "The person prefix changes — k- to s-",
             "options": [
               "The person prefix changes — k- to s-",
               "The root changes",
@@ -13392,7 +13392,7 @@
             "wid": "p01",
             "prompt": "Sá:tien (command to one person). Tesewá:tien (command to a group). What changes between singular and plural commands?",
             "sub": "",
-            "correct": "The person prefix changes — s- (you singular) becomes tesewa- (you all)",
+            "correct": "The person prefix changes — s- to tesewa-",
             "options": [
               "The person prefix changes — s- to tesewa-",
               "The root changes",
@@ -13467,7 +13467,7 @@
             "wid": "p04",
             "prompt": "You know raónha (he) and akaónha (she) as standalone pronouns. In relational verbs, the relationship between he and she is built into the verb itself. What does this mean?",
             "sub": "",
-            "correct": "One verb form encodes both who is acting AND who is being acted upon — the relationship is in the grammar",
+            "correct": "One verb form encodes both actor and recipient",
             "options": [
               "One verb form encodes both actor and recipient",
               "He and she are always named separately",
@@ -13482,7 +13482,7 @@
             "wid": "p02",
             "prompt": "In English: 'I see you', 'you see me', 'he sees her' — three sentences, each needing subject and object separately. In Kanien'kéha, how is this handled?",
             "sub": "",
-            "correct": "A single relational prefix on the verb encodes both people — the verb itself says who is doing and who is receiving",
+            "correct": "A single relational prefix encodes both people",
             "options": [
               "A single relational prefix encodes both people",
               "The same as English — separate words for each person",
@@ -13497,7 +13497,7 @@
             "wid": "p01",
             "prompt": "You have been learning person prefixes since Unit 1. How does the relational prefix system build on what you already know?",
             "sub": "",
-            "correct": "It combines two person values into one prefix — instead of just 'I' or 'you', it marks 'I acting on you' or 'he acting on her'",
+            "correct": "It combines two person values — actor and recipient — into one prefix",
             "options": [
               "It combines two person values — actor and recipient — into one prefix",
               "It replaces the prefix system entirely",
@@ -13512,7 +13512,7 @@
             "wid": "p03",
             "prompt": "Why might a language build relationships directly into verb forms rather than using separate subject and object words?",
             "sub": "",
-            "correct": "It keeps the relationship at the centre of the sentence — the verb itself names both who acts and who is affected",
+            "correct": "It keeps the relationship at the centre — both parties are in the verb",
             "options": [
               "It keeps the relationship at the centre — both parties are in the verb",
               "It is simpler than using separate words",
@@ -13557,7 +13557,7 @@
             "wid": "p04",
             "prompt": "Raksatá:ti means 'he sees me'. The rak- prefix marks 'he acting on me'. What does the ako- prefix mark?",
             "sub": "",
-            "correct": "She acting on me / she toward me — the female equivalent of rak-",
+            "correct": "She acting on me — female equivalent of rak-",
             "options": [
               "She acting on me — female equivalent of rak-",
               "He acting on her",
@@ -13610,7 +13610,7 @@
             "wid": "p09",
             "prompt": "Teknisatá:ti — we two see each other (mutual/reciprocal). What does the mutual form express that the simple relational does not?",
             "sub": "",
-            "correct": "Both people are simultaneously acting on each other — not A→B but A↔B",
+            "correct": "Both are simultaneously acting on each other — mutual action",
             "options": [
               "Both are simultaneously acting on each other — mutual action",
               "The same as A→B but phrased differently",
@@ -13679,7 +13679,7 @@
             "wid": "p04",
             "prompt": "Rakhronnión:ni means 'he helps me' (approximately). The rak- prefix marks he→me. What would 'she helps me' look like?",
             "sub": "",
-            "correct": "Ako- replaces rak- — akohronniónni or similar",
+            "correct": "Ako- replaces rak- — akohronniónni",
             "options": [
               "Ako- replaces rak- — akohronniónni",
               "The verb changes entirely",
@@ -13694,7 +13694,7 @@
             "wid": "ex09",
             "prompt": "In Kanien'kehá:ka life, helping (hronniónni) is not just practical — it is relational. What does it mean that the verb for helping uses a relational prefix?",
             "sub": "",
-            "correct": "Helping in Kanien'kéha is always between specific people — the grammar requires you to name who is helping whom",
+            "correct": "Helping is always between specific people — the grammar names both",
             "options": [
               "Helping is always between specific people — the grammar names both",
               "Helping is a general concept without specific participants",
@@ -13747,7 +13747,7 @@
             "wid": "cu04",
             "prompt": "Skennón:'a — peace. The condolence ceremony is about restoring peace through helping the grieving. Why does helping (hronniónni) matter so much in that ceremony?",
             "sub": "",
-            "correct": "The ceremony is an act of helping — one nation helps another restore its clarity and balance after loss",
+            "correct": "Helping is the ceremony's core act — one nation restores another",
             "options": [
               "Helping is the ceremony's core act — one nation restores another",
               "The helping verb is only ceremonial",
@@ -13795,7 +13795,7 @@
             "wid": "st22",
             "prompt": "Wakaterién:tare — I am aware / I know (general). This is a stative form that describes a state of knowledge. How is it different from Kienté:ri (I know something specific)?",
             "sub": "",
-            "correct": "Wakaterién:tare is general awareness; Kienté:ri names specific knowledge of a particular thing",
+            "correct": "Wakaterién:tare is general awareness; Kienté:ri is specific knowledge",
             "options": [
               "Wakaterién:tare is general awareness; Kienté:ri is specific knowledge",
               "They are the same",
@@ -13848,7 +13848,7 @@
             "wid": "st04",
             "prompt": "Wake'nikonhrí:io — I feel good inside. The -nikonhr- root relates to the mind/inner self. Where have you seen this root before?",
             "sub": "",
-            "correct": "In Ionkhi'nikonhraién:tase' — the Thanksgiving Address phrase 'it makes our minds happy'",
+            "correct": "In Ionkhi'nikonhraién:tase' — our minds made happy in the Thanksgiving Address",
             "options": [
               "In Ionkhi'nikonhraién:tase' — our minds made happy in the Thanksgiving Address",
               "Only in this lesson",
@@ -13863,7 +13863,7 @@
             "wid": "p02",
             "prompt": "When relational prefixes are applied to emotional verbs — for example, 'he makes me happy' — what does the verb express?",
             "sub": "",
-            "correct": "That someone's action is the cause of your emotional state — the relationship produces the feeling",
+            "correct": "That someone's action causes your emotional state",
             "options": [
               "That someone's action causes your emotional state",
               "That emotions happen independently of others",
@@ -13924,7 +13924,7 @@
             "wid": "gr08",
             "prompt": "Kateweyénhstha Kanyen'kéha — I am studying Kanien'kéha. This uses the habitual form. What does that tell you about the activity?",
             "sub": "",
-            "correct": "It is ongoing — studying is not a one-time event but a regular, continuing practice",
+            "correct": "It is ongoing — studying is a regular continuing practice",
             "options": [
               "It is ongoing — studying is a regular continuing practice",
               "It happened once and is finished",
@@ -13977,7 +13977,7 @@
             "wid": "gr05",
             "prompt": "Oh nahò:ten yesá:ya'ts? is the Six Nations form for 'what is your name?' You learned Kanié:ri iken'? in Unit 12. Both ask the same thing. What does having two forms tell you?",
             "sub": "",
-            "correct": "Kanien'kéha is a living language used across multiple communities — different forms are correct in different places",
+            "correct": "Kanien'kéha is used across multiple communities — both forms are correct",
             "options": [
               "Kanien'kéha is used across multiple communities — both forms are correct",
               "One form is wrong",
@@ -13992,7 +13992,7 @@
             "wid": "st23",
             "prompt": "Kienté:ri — I know (something specific). After completing Unit 11, what do you specifically know that you did not before?",
             "sub": "",
-            "correct": "How relational prefixes encode relationships between people in a single verb form",
+            "correct": "How relational prefixes encode relationships in verb forms",
             "options": [
               "How relational prefixes encode relationships in verb forms",
               "Nothing new — Unit 11 was review",
@@ -14161,7 +14161,7 @@
             "wid": "st22",
             "prompt": "Wakaterién:tare (I am aware/know generally) vs Kienté:ri (I know something specific). You have learned the relational verbs for knowing. What does 'relational knowing' add?",
             "sub": "",
-            "correct": "It encodes who knows whom — knowing becomes a relationship between a knower and something/someone known",
+            "correct": "It encodes who knows whom — knowing is relational",
             "options": [
               "It encodes who knows whom — knowing is relational",
               "Nothing changes from the stative form",
@@ -14176,7 +14176,7 @@
             "wid": "st06",
             "prompt": "Wakatshennón:ni (I am happy) is a stative. If you add a relational prefix to express 'he makes me happy', what does the grammar require?",
             "sub": "",
-            "correct": "A relational prefix on the emotional verb, naming both who causes the feeling and who feels it",
+            "correct": "A relational prefix naming both cause and feeler",
             "options": [
               "A relational prefix naming both cause and feeler",
               "No change — the stative form is enough",
@@ -15334,7 +15334,7 @@
             "wid": "ph05",
             "prompt": "Kanié:ri iken'? asks your name. Rakní:ra is my name. In a full introduction, what comes after your name?",
             "sub": "",
-            "correct": "Your clan, your community, your family — the introduction builds your full identity",
+            "correct": "Your clan, community, and family",
             "options": [
               "Your clan, community, and family",
               "Nothing — name is sufficient",
@@ -16950,7 +16950,7 @@
             "wid": "v05",
             "prompt": "Katkáhthons — I am listening (habitual). How is the daily routine connected to the Thanksgiving Address?",
             "sub": "",
-            "correct": "The Address is said at the start of each day in many Kanien'kehá:ka schools — the daily routine begins with it",
+            "correct": "The Address opens each school day — daily routine and ceremony begin together",
             "options": [
               "The Address opens each school day — daily routine and ceremony begin together",
               "The routine and Address are separate",
@@ -17233,7 +17233,7 @@
             "wid": "ta01",
             "prompt": "In the Thanksgiving Address, the waters of the world are acknowledged and thanked. Why does rain fit naturally into that acknowledgement?",
             "sub": "",
-            "correct": "Rain is one of the ways the waters return to the land — it is part of the same cycle of water that sustains life",
+            "correct": "Rain is part of the same cycle of water that sustains life — it is one of the ways the waters return to the land",
             "options": [
               "Rain is part of the same cycle of water that sustains life — it is one of the ways the waters return to the land",
               "Rain is not mentioned in the Thanksgiving Address",
@@ -18441,7 +18441,7 @@
             "wid": "na06",
             "prompt": "Kenién:ke — winter. The Midwinter Ceremony happens in Kenién:ke. The seasonal weather pattern connects to which ceremony?",
             "sub": "",
-            "correct": "The Midwinter Ceremony — the Haudenosaunee New Year, held in the depth of winter",
+            "correct": "The Midwinter Ceremony — the New Year",
             "options": [
               "The Midwinter Ceremony — the New Year",
               "The Green Corn Ceremony — that is summer",
@@ -18565,7 +18565,7 @@
             "wid": "le23",
             "prompt": "Iakoriwá:ienstha — she makes pots. The Iak- prefix marks female. What does having a specific word for the potter tell you?",
             "sub": "",
-            "correct": "The role is recognised and named — pottery is important enough to have its own word for the practitioner",
+            "correct": "The role is recognised and named — pottery is important enough to have its own word",
             "options": [
               "The role is recognised and named — pottery is important enough to have its own word",
               "Only women make pottery",
@@ -18580,7 +18580,7 @@
             "wid": "a08",
             "prompt": "À:there' — basket. You learned this in Unit 3 as a true A-class noun. Now you know Ronataierénhthon. What connects the noun and the maker?",
             "sub": "",
-            "correct": "Both are named — the language holds the object and the knowledge needed to make it",
+            "correct": "Both are named — the language holds the object and the knowledge to make it",
             "options": [
               "Both are named — the language holds the object and the knowledge to make it",
               "They share the same root",
@@ -18667,7 +18667,7 @@
             "wid": "cu18",
             "prompt": "Kanatsi'tón:nis — beading loom. Why is a loom different from other tools?",
             "sub": "",
-            "correct": "A loom organises materials rather than cutting or shaping them directly",
+            "correct": "A loom organises materials rather than cutting or shaping directly",
             "options": [
               "A loom organises materials rather than cutting or shaping directly",
               "A loom is the same as a hammer",
@@ -18682,7 +18682,7 @@
             "wid": "cu20",
             "prompt": "Ohwèn:ton — mortar (food processing). What does the mortar's presence in vocabulary tell you?",
             "sub": "",
-            "correct": "Corn processing is central enough to daily life that its tool has a specific name",
+            "correct": "Corn processing is central enough that its tool has a specific name",
             "options": [
               "Corn processing is central enough that its tool has a specific name",
               "The mortar is a minor household item",
@@ -18750,7 +18750,7 @@
             "wid": "cu19",
             "prompt": "Onhkwa'shón:'a — beads. You saw this as both a noun (beads) and a describing verb (it is small) in Unit 23. What does this dual function tell you?",
             "sub": "",
-            "correct": "Beads are small — the word captures both the object and its defining quality in the same root",
+            "correct": "Beads are small — the word captures both object and quality in one root",
             "options": [
               "Beads are small — the word captures both object and quality in one root",
               "The two uses are unrelated",
@@ -18803,7 +18803,7 @@
             "wid": "cu16",
             "prompt": "Kaionhá:ton — brooch / pin. What do Kanien'kehá:ka beaded brooches typically depict?",
             "sub": "",
-            "correct": "Floral designs, clan animals, geometric patterns specific to the maker's clan and family",
+            "correct": "Floral designs, clan animals, geometric patterns specific to the maker's clan",
             "options": [
               "Floral designs, clan animals, geometric patterns specific to the maker's clan",
               "Random decorative patterns only",
@@ -18818,7 +18818,7 @@
             "wid": "le24",
             "prompt": "Beadwork was forbidden in many residential schools. When Kanien'kehá:ka beadworkers teach the craft to younger generations today, what are they transmitting?",
             "sub": "",
-            "correct": "The craft itself, the designs and their meanings, the vocabulary that names the materials, and cultural continuity",
+            "correct": "The craft, the designs, the vocabulary, and cultural continuity",
             "options": [
               "The craft, the designs, the vocabulary, and cultural continuity",
               "Only the technical skill of sewing beads",
@@ -18873,7 +18873,7 @@
             "wid": "na03",
             "prompt": "Wahtá: — maple tree. Black ash (a different species) is used for basket splints. What do maple and black ash have in common?",
             "sub": "",
-            "correct": "Both are harvested using specific knowledge of when and how — maple in spring for sap, black ash for splints",
+            "correct": "Both are harvested with specific seasonal and technical knowledge",
             "options": [
               "Both are harvested with specific seasonal and technical knowledge",
               "Both are only used for firewood",
@@ -18888,7 +18888,7 @@
             "wid": "t01",
             "prompt": "Basket making begins by pounding the black ash log. You know Iekwahrahnhá:ra' — hammer. How does the same tool appear in both construction and basket making?",
             "sub": "",
-            "correct": "The hammer's function — striking to shape or separate material — applies to both",
+            "correct": "The hammer strikes to shape or separate material in both contexts",
             "options": [
               "The hammer strikes to shape or separate material in both contexts",
               "A different hammer is used for baskets",
@@ -18903,7 +18903,7 @@
             "wid": "a08",
             "prompt": "À:there' — basket. This is a true A-class noun whose original root is no longer recognisable. What does 'true' mean here?",
             "sub": "",
-            "correct": "The noun root has been in the language long enough that its origin is obscured — it just means basket",
+            "correct": "The root has been in the language long enough that its origin is obscured",
             "options": [
               "The root has been in the language long enough that its origin is obscured",
               "It means the basket is made of a specific material",
@@ -18918,7 +18918,7 @@
             "wid": "le24",
             "prompt": "The emerald ash borer is killing black ash trees across eastern North America. What does this environmental crisis mean for language?",
             "sub": "",
-            "correct": "If the tree disappears, the craft's living context is threatened — as is the vocabulary naming it",
+            "correct": "If the tree disappears, the craft's living context is threatened — as is the vocabulary",
             "options": [
               "If the tree disappears, the craft's living context is threatened — as is the vocabulary",
               "Language is unaffected by environmental change",
@@ -18994,7 +18994,7 @@
             "wid": "wa06",
             "prompt": "Oskenhón:ton — deer. Deer hide is the primary material for traditional clothing. What does this connection tell you?",
             "sub": "",
-            "correct": "The animal is the source of the material — knowing its name is knowing where clothing comes from",
+            "correct": "The animal is the source of the material — knowing it is knowing the origin of clothing",
             "options": [
               "The animal is the source of the material — knowing it is knowing the origin of clothing",
               "The connection is coincidental",
@@ -19047,7 +19047,7 @@
             "wid": "t04",
             "prompt": "Ietkarihón:ni — knife. The knife is used at multiple stages of hide tanning. What does this multi-use tell you?",
             "sub": "",
-            "correct": "One tool serves multiple stages — knowing how to use it differently at each stage is part of the skill",
+            "correct": "One tool serves multiple stages — knowing how to use it differently is part of the skill",
             "options": [
               "One tool serves multiple stages — knowing how to use it differently is part of the skill",
               "A different knife is used at each stage",
@@ -19107,7 +19107,7 @@
             "wid": "le23",
             "prompt": "Iakoriwá:ienstha — she makes pots. How does this fit the pattern of role words in Kanien'kéha?",
             "sub": "",
-            "correct": "Role words in Kanien'kéha often describe the action of the role — the potter is the one who pot-makes",
+            "correct": "Role words describe the action rather than naming it abstractly",
             "options": [
               "Role words describe the action rather than naming it abstractly",
               "The name is unrelated to the activity",
@@ -19122,7 +19122,7 @@
             "wid": "o16",
             "prompt": "O'tá:ra — clay / pottery / chimney. What connects all three meanings?",
             "sub": "",
-            "correct": "All three involve fired clay in different forms: raw clay, shaped pots, and clay-built chimneys",
+            "correct": "All three involve fired clay in different forms",
             "options": [
               "All three involve fired clay in different forms",
               "The word has three unrelated meanings",
@@ -19137,7 +19137,7 @@
             "wid": "na02",
             "prompt": "Ohwén:tsia — earth / ground. Clay comes from the earth. How does pottery connect to the Thanksgiving Address?",
             "sub": "",
-            "correct": "The potter works directly with the earth's material — pottery is one of the most direct relationships between people and Ohwén:tsia",
+            "correct": "Pottery is one of the most direct relationships between people and the earth",
             "options": [
               "Pottery is one of the most direct relationships between people and the earth",
               "Pottery has no connection to the Thanksgiving Address",
@@ -19231,7 +19231,7 @@
             "wid": "env01",
             "prompt": "Karón:ta — tree / log / trunk. The same word covers the living tree and the material. What does this continuity tell you?",
             "sub": "",
-            "correct": "The material is understood as continuous with its living source — a log is not separate from the tree it came from",
+            "correct": "The material is continuous with its source — a log is the tree it came from",
             "options": [
               "The material is continuous with its source — a log is the tree it came from",
               "The word means only the trunk, not the tree",
@@ -19284,7 +19284,7 @@
             "wid": "ka04",
             "prompt": "Kaná:tsihs — canoe. What made the birchbark canoe so effective?",
             "sub": "",
-            "correct": "It was lightweight enough to portage overland yet strong enough to carry people and goods on rivers and lakes",
+            "correct": "Lightweight for portaging yet strong enough to carry people and goods",
             "options": [
               "Lightweight for portaging yet strong enough to carry people and goods",
               "It was the largest possible watercraft",
@@ -19299,7 +19299,7 @@
             "wid": "cv03",
             "prompt": "Tetshon'ká:ria'k — you saw the board (dualic command). Why is this a dualic verb?",
             "sub": "",
-            "correct": "Sawing involves a two-phase action — the te- prefix marks this across all dualic verbs",
+            "correct": "Sawing is two-phase: stroke and return, moving material from whole to cut",
             "options": [
               "Sawing is two-phase: stroke and return, moving material from whole to cut",
               "Two people are always needed to saw",
@@ -19414,7 +19414,7 @@
             "wid": "cv01",
             "prompt": "Skwe'tarón:ko — you cut it up. How is cutting involved in both basket making and food preparation?",
             "sub": "",
-            "correct": "Cutting is core in both: cutting splints to width for baskets, cutting meat and vegetables for food",
+            "correct": "Cutting is core in both: splints for baskets, meat and vegetables for food",
             "options": [
               "Cutting is core in both: splints for baskets, meat and vegetables for food",
               "Cutting is only for food preparation",
@@ -19429,7 +19429,7 @@
             "wid": "fe15",
             "prompt": "Tesenón:niahkhw — you dance. This is also a Fake E-stem verb. What does its presence in the same class as cooking and making verbs tell you?",
             "sub": "",
-            "correct": "The Fake E-stem class is large and covers many kinds of deliberate action — dancing is as deliberate as cooking",
+            "correct": "The Fake E-stem class covers many kinds of deliberate action",
             "options": [
               "The Fake E-stem class covers many kinds of deliberate action",
               "Dancing is a form of making",
@@ -19444,7 +19444,7 @@
             "wid": "iv03",
             "prompt": "Sahsennón:ni — you make a fire. Why is making fire as important as any other making verb in the craft tradition?",
             "sub": "",
-            "correct": "Fire is essential to almost every craft: firing pottery, smoking hides, bending wood, cooking food",
+            "correct": "Fire is essential to almost every craft: pottery, hides, wood, food",
             "options": [
               "Fire is essential to almost every craft: pottery, hides, wood, food",
               "Fire is only for cooking",
@@ -19502,7 +19502,7 @@
             "wid": "gr08",
             "prompt": "Kateweyénhstha Kanyen'kéha — I am learning Kanien'kéha. What does it mean to include this phrase in a lesson about craft and identity?",
             "sub": "",
-            "correct": "Learning the language is itself a form of making — you are building something when you learn Kanien'kéha",
+            "correct": "Learning the language is a form of making — you are building something",
             "options": [
               "Learning the language is a form of making — you are building something",
               "The phrase is unrelated to craft",
@@ -19555,7 +19555,7 @@
             "wid": "cl01",
             "prompt": "Bear Clan keeps medicine knowledge, Wolf Clan keeps peace, Turtle Clan keeps the earth. How does clan identity connect to craft?",
             "sub": "",
-            "correct": "Clans often carry specific knowledge traditions that may shape which crafts a person is drawn to",
+            "correct": "Clans carry specific knowledge traditions that may shape craft identity",
             "options": [
               "Clans carry specific knowledge traditions that may shape craft identity",
               "Clan has no connection to craft",
@@ -19666,7 +19666,7 @@
             "wid": "fe01",
             "prompt": "Sahrón:ni (Fake E-stem), Sahsennón:ni (I-stem), Skwe'tarón:ko (Consonant-stem). Three making verbs, three different stem classes. What does this tell you?",
             "sub": "",
-            "correct": "Making is a universal activity — making verbs appear across multiple stem classes",
+            "correct": "Making is universal — making verbs appear across multiple stem classes",
             "options": [
               "Making is universal — making verbs appear across multiple stem classes",
               "All making verbs are Fake E-stem",
@@ -19681,7 +19681,7 @@
             "wid": "t05",
             "prompt": "Iakoa'sháhen — awl. It appears in both beadwork and hide sewing. What does a tool that crosses craft traditions tell you?",
             "sub": "",
-            "correct": "Some tools are fundamental — the awl's function (punching holes) is useful across any craft involving sewing",
+            "correct": "Some tools are fundamental across crafts — the function is what matters",
             "options": [
               "Some tools are fundamental across crafts — the function is what matters",
               "The awl is only for beadwork",
@@ -21223,7 +21223,7 @@
             "wid": "ex11",
             "prompt": "Rotinonhsyón:ni — People of the Longhouse. After this unit, what do you understand that name to mean beyond 'people who live in longhouses'?",
             "sub": "",
-            "correct": "A whole way of life — governance by clan mothers and chiefs, the Great Law, condolence, ceremony, council, and community",
+            "correct": "A whole way of life — governance, law, ceremony, and community",
             "options": [
               "A whole way of life — governance, law, ceremony, and community",
               "Only that they lived in longhouses historically",
@@ -22332,7 +22332,7 @@
             "wid": "ph08",
             "prompt": "Someone asks: Tsi niiohtonhátie? It is quarter past eight in the morning. What is the closest answer in Kanien’kéha?",
             "sub": "",
-            "correct": "Sha’té:kon niiohtonhátie — eight o’clock (the closest full hour)",
+            "correct": "Sha’té:kon niiohtonhátie — eight o’clock",
             "options": [
               "Sha’té:kon niiohtonhátie — eight o’clock",
               "Wísk niiohtonhátie — five o’clock",
@@ -22495,7 +22495,7 @@
             "wid": "ti01",
             "prompt": "Énska niiohtonhátie — one o'clock. Seskéha — August. Tékeni óia'k niió:re' wakén:iate — I am twenty years old. What do these three sentences have in common?",
             "sub": "",
-            "correct": "All three express time — the hour, the month, and an age — using the number system",
+            "correct": "All three express time using numbers",
             "options": [
               "All three express time using numbers",
               "They are all greetings",
@@ -22566,7 +22566,7 @@
             "wid": "fe01",
             "prompt": "Sahrón:ni — you make it. The 'it' is already in the verb. What does this tell you about transitive verbs in Kanien'kéha?",
             "sub": "",
-            "correct": "The object (it) is encoded in the verb itself through a prefix — it does not float free as a separate word",
+            "correct": "The object is encoded in the verb itself through a prefix",
             "options": [
               "The object is encoded in the verb itself through a prefix",
               "'It' is a separate word after the verb",
@@ -22619,7 +22619,7 @@
             "wid": "ov04",
             "prompt": "Satkatho — you look / look (command). Is this transitive or intransitive?",
             "sub": "",
-            "correct": "It can be both — 'you look' is intransitive, 'you look at it' adds a transitive object prefix",
+            "correct": "It can be both — intransitive alone, transitive with an object prefix",
             "options": [
               "It can be both — intransitive alone, transitive with an object prefix",
               "It is always intransitive",
@@ -22634,7 +22634,7 @@
             "wid": "p02",
             "prompt": "In English: 'I see the bear'. In Kanien'kéha the bear does not float after the verb — instead, the object relationship is in the prefix. What advantage does this have?",
             "sub": "",
-            "correct": "The verb is self-contained — it tells you both who acts and what is affected without needing word order to clarify",
+            "correct": "The verb is self-contained — it tells you both actor and object without word order",
             "options": [
               "The verb is self-contained — it tells you both actor and object without word order",
               "It is just a stylistic difference",
@@ -22682,7 +22682,7 @@
             "wid": "fe01",
             "prompt": "Sahrón:ni — you make it. The object is inanimate (it). When the object is a specific male person — you make him something — the prefix changes. What does this change signal?",
             "sub": "",
-            "correct": "The object prefix encodes not just 'there is an object' but specifically what kind of object — animate vs inanimate, male vs female",
+            "correct": "The object prefix encodes what kind of object — animate/inanimate, male/female",
             "options": [
               "The object prefix encodes what kind of object — animate/inanimate, male/female",
               "The prefix change is cosmetic only",
@@ -22735,7 +22735,7 @@
             "wid": "cv01",
             "prompt": "Skwe'tarón:ko — you cut it up. The 'it' object is inanimate — you are cutting a thing. If you were cutting for someone (cutting his meat), the prefix would change. What does this grammatical requirement force the speaker to do?",
             "sub": "",
-            "correct": "Specify exactly what is being cut and for whom — the grammar requires precision about the relationship",
+            "correct": "Specify exactly what is cut and for whom — the grammar requires relational precision",
             "options": [
               "Specify exactly what is cut and for whom — the grammar requires relational precision",
               "Nothing changes — context handles it",
@@ -22765,7 +22765,7 @@
             "wid": "p04",
             "prompt": "Raksatá:ti — he sees me. You learned this in Unit 11 as a relational prefix. How is this the same as the transitive object system?",
             "sub": "",
-            "correct": "It is the same system — relational prefixes are how Kanien'kéha handles animate objects in transitive verbs",
+            "correct": "It is the same system — relational prefixes handle animate objects in transitive verbs",
             "options": [
               "It is the same system — relational prefixes handle animate objects in transitive verbs",
               "They are completely different systems",
@@ -22812,7 +22812,7 @@
             "wid": "cv05",
             "prompt": "Skahó:wi — you give (command). This is a transitive verb. What two things must the prefix system track for this verb?",
             "sub": "",
-            "correct": "Who is giving (actor) and who or what is being given to (recipient/object)",
+            "correct": "Who is giving and who or what is being given to",
             "options": [
               "Who is giving and who or what is being given to",
               "Only who is giving",
@@ -22865,7 +22865,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' — it makes our minds happy. This is from the Thanksgiving Address. Is it transitive?",
             "sub": "",
-            "correct": "Yes — it acts on our minds (us), making it transitive. The ionkhi- prefix encodes 'our minds' as the object.",
+            "correct": "Yes — it acts on our minds. The ionkhi- prefix encodes us as the object.",
             "options": [
               "Yes — it acts on our minds. The ionkhi- prefix encodes us as the object.",
               "No — it is intransitive because no person is named",
@@ -22880,7 +22880,7 @@
             "wid": "p01",
             "prompt": "You want to say 'I see you'. In Kanien'kéha, which system handles the 'you' object?",
             "sub": "",
-            "correct": "The relational prefix system — a prefix encodes both 'I' (actor) and 'you' (object) in one prefix",
+            "correct": "The relational prefix system encodes both I and you in one prefix",
             "options": [
               "The relational prefix system encodes both I and you in one prefix",
               "A separate word for 'you' follows the verb",
@@ -22943,7 +22943,7 @@
             "wid": "fe01",
             "prompt": "Wahró:nis — he makes it. You know sahrón:ni (you make it). What changed between 'you make it' and 'he makes it'?",
             "sub": "",
-            "correct": "The actor prefix changed from sa- (you) to wa- (he) — the root and object encoding stayed the same",
+            "correct": "The actor prefix changed from sa- (you) to wa- (he)",
             "options": [
               "The actor prefix changed from sa- (you) to wa- (he)",
               "The root changed",
@@ -22958,7 +22958,7 @@
             "wid": "wa01",
             "prompt": "You want to say 'the bear eats the corn'. In Kanien'kéha, how is this expressed?",
             "sub": "",
-            "correct": "The eating verb carries an object prefix encoding corn (inanimate), and the bear is the actor encoded in the prefix — the whole thing may be one complex verb",
+            "correct": "The eating verb carries both actor and inanimate object in its prefixes",
             "options": [
               "The eating verb carries both actor and inanimate object in its prefixes",
               "Bear and corn are both separate words after the verb",
@@ -22973,7 +22973,7 @@
             "wid": "cv05",
             "prompt": "Raksakhó:wi — he gives it to me. The rak- encodes he→me. The -s- or -kh- encodes the giving action. What does this one word replace in English?",
             "sub": "",
-            "correct": "'He gives it to me' — five English words compressed into one Kanien'kéha verb form",
+            "correct": "'He gives it to me' — five words in one verb form",
             "options": [
               "'He gives it to me' — five words in one verb form",
               "'He gives' only",
@@ -23072,7 +23072,7 @@
             "wid": "par10",
             "prompt": "Ónhka ne raónha? — Who is he? You know this from Unit 12. How do you use Ónhka to ask 'Who sees you?'",
             "sub": "",
-            "correct": "Ónhka saksatá:ti? — Who sees you? (Ónhka + the seeing verb with you as object)",
+            "correct": "Ónhka saksatá:ti? — Who sees you?",
             "options": [
               "Ónhka saksatá:ti? — Who sees you?",
               "Ónhka ne raónha saksatá:ti?",
@@ -23126,7 +23126,7 @@
             "wid": "par11",
             "prompt": "Nahò:ten — what. When you ask Nahò:ten wahró:nis? (what does he make?), what information does the answer need to provide?",
             "sub": "",
-            "correct": "The inanimate object being made — the answer names the thing that is the object of the making verb",
+            "correct": "The inanimate object being made",
             "options": [
               "The inanimate object being made",
               "Who is making it",
@@ -23229,7 +23229,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' — it makes our minds happy. You have said this since Unit 5. Now that you understand transitive verbs, what do you recognise in this form?",
             "sub": "",
-            "correct": "The ionkhi- prefix is a transitive object prefix — our minds (us) are the object being acted upon",
+            "correct": "The ionkhi- is a transitive object prefix — we are the object",
             "options": [
               "The ionkhi- is a transitive object prefix — we are the object",
               "The word is intransitive",
@@ -23244,7 +23244,7 @@
             "wid": "cv05",
             "prompt": "Skahó:wi (you give) vs Raksakhó:wi (he gives to me). What is the difference in the prefix structure?",
             "sub": "",
-            "correct": "Skahó:wi has only an actor prefix (you). Raksakhó:wi has both actor (he) and object (me) encoded in the prefix.",
+            "correct": "Skahó:wi has actor only; Raksakhó:wi has actor + object",
             "options": [
               "Skahó:wi has actor only; Raksakhó:wi has actor + object",
               "They are the same",
@@ -23322,7 +23322,7 @@
             "wid": "v02",
             "prompt": "Ká:tiens — I am sitting (habitual). The -s marks the habitual aspect: ongoing or regular. What is the aspect called that marks a completed, one-time action?",
             "sub": "",
-            "correct": "Punctual — it marks a specific, completed event rather than an ongoing or habitual one",
+            "correct": "Punctual — a specific, completed event",
             "options": [
               "Punctual — a specific, completed event",
               "Progressive — still in progress",
@@ -23375,7 +23375,7 @@
             "wid": "v01",
             "prompt": "The Thanksgiving Address is spoken in the habitual. Why is the habitual the right aspect for the Address?",
             "sub": "",
-            "correct": "The Address describes ongoing relationships and regular thanks — not past events, not future intentions, but what is continuously true",
+            "correct": "The Address describes ongoing relationships — what is continuously true",
             "options": [
               "The Address describes ongoing relationships — what is continuously true",
               "The Address is past tense — it describes what was given",
@@ -23390,7 +23390,7 @@
             "wid": "fe01",
             "prompt": "Wahrón:nis — he made it (punctual, completed). Wahró:nis could be he makes it (habitual). What is the difference in meaning?",
             "sub": "",
-            "correct": "Punctual means it happened and is done. Habitual means it happens regularly or is currently happening.",
+            "correct": "Punctual = happened and done. Habitual = regular or current.",
             "options": [
               "Punctual = happened and done. Habitual = regular or current.",
               "They mean the same thing",
@@ -23437,7 +23437,7 @@
             "wid": "dv04",
             "prompt": "Ka' iéhse'skwe' — where did you go? The -skwe' marks completed past on the going verb. What does -skwe' signal to the listener?",
             "sub": "",
-            "correct": "The going is finished — it happened and is done, not currently happening",
+            "correct": "The going is finished — happened and done",
             "options": [
               "The going is finished — happened and done",
               "You are currently going",
@@ -23452,7 +23452,7 @@
             "wid": "v01",
             "prompt": "Katiens'on — I sat down (completed, punctual). The -on or similar suffix marks completed past on A-stem verbs. How is this different from ká:tiens (I am sitting, habitual)?",
             "sub": "",
-            "correct": "Ká:tiens is ongoing/regular. Katiens'on is completed — I sat down at a specific moment and the action is done.",
+            "correct": "Ká:tiens is ongoing; katiens'on is completed at a specific moment",
             "options": [
               "Ká:tiens is ongoing; katiens'on is completed at a specific moment",
               "They mean the same thing",
@@ -23467,7 +23467,7 @@
             "wid": "fe01",
             "prompt": "Wahrón:ni — he made it (completed). The ceremony is over: what aspect would you use to describe it?",
             "sub": "",
-            "correct": "Completed/punctual — the ceremony happened at a specific time and is now finished",
+            "correct": "Completed/punctual — happened at a specific time, now finished",
             "options": [
               "Completed/punctual — happened at a specific time, now finished",
               "Habitual — it happens regularly",
@@ -23530,7 +23530,7 @@
             "wid": "dv02",
             "prompt": "Wà:ke — I am going. This already leans toward future. The intentional prefix makes the future explicit. When would you use the intentional rather than the habitual?",
             "sub": "",
-            "correct": "When you are stating a specific plan or intention — not what you do regularly, but what you are going to do",
+            "correct": "When stating a specific plan or intention — not regular, but planned",
             "options": [
               "When stating a specific plan or intention — not regular, but planned",
               "They are interchangeable",
@@ -23583,7 +23583,7 @@
             "wid": "fe01",
             "prompt": "Wahró:non — he will make it (future/intentional). You know wahró:nis (he made it, completed). What changed?",
             "sub": "",
-            "correct": "The aspect suffix changed from completed past to future/intentional — the root stayed the same",
+            "correct": "The aspect suffix changed from completed to future/intentional",
             "options": [
               "The aspect suffix changed from completed to future/intentional",
               "The root changed",
@@ -23646,7 +23646,7 @@
             "wid": "pc03",
             "prompt": "Tsi — where / at / when (locative). This particle can introduce time conditions: tsi Kenién:ke — when it is winter. How does tsi function in conditional sentences?",
             "sub": "",
-            "correct": "It introduces the condition — 'when/if this situation exists' — before the consequence is stated",
+            "correct": "It introduces the condition — when/if this situation exists",
             "options": [
               "It introduces the condition — when/if this situation exists",
               "It marks the future only",
@@ -23661,7 +23661,7 @@
             "wid": "pc05",
             "prompt": "Onen' — now / then / at this point. In conditional sentences, onen' often introduces the consequence: if X, then onen' Y. What does onen' signal here?",
             "sub": "",
-            "correct": "The consequence follows — 'then this happens' or 'at that point this occurs'",
+            "correct": "The consequence follows — 'then this happens'",
             "options": [
               "The consequence follows — 'then this happens'",
               "It marks the condition",
@@ -23676,7 +23676,7 @@
             "wid": "na06",
             "prompt": "Tsi Kenién:ke, onen' Kanonsesné:hane' — when it is winter, then (people) gather in the longhouse. What type of conditional is this?",
             "sub": "",
-            "correct": "A real conditional — if winter comes (and it will), then people gather. The condition is predictable and real.",
+            "correct": "A real conditional — predictable and real",
             "options": [
               "A real conditional — predictable and real",
               "A counterfactual — the opposite of what happens",
@@ -23691,7 +23691,7 @@
             "wid": "pc02",
             "prompt": "Iah ka'niká:ien — never / not ever. This is a strong negation. How does it interact with conditional sentences?",
             "sub": "",
-            "correct": "It produces negative conditionals: if X never happens, then Y cannot follow — strong denial of the condition",
+            "correct": "It produces strong negative conditionals — denying the condition",
             "options": [
               "It produces strong negative conditionals — denying the condition",
               "It is only used in affirmative sentences",
@@ -23740,7 +23740,7 @@
             "wid": "pc04",
             "prompt": "Ki' — just / only / already. In past narratives, ki' can mark an event as just completed or recently done. How does this differ from the completed past suffix?",
             "sub": "",
-            "correct": "Ki' adds recency — just now, already — while the completed past suffix simply marks that the action is done",
+            "correct": "Ki' adds recency (just now, already) while completed past just marks done",
             "options": [
               "Ki' adds recency (just now, already) while completed past just marks done",
               "They are identical",
@@ -23755,7 +23755,7 @@
             "wid": "ta01",
             "prompt": "In the oral tradition, stories about the past are told in specific verb forms. The creation story is told in a narrative past style. Why does the aspect system matter for oral tradition?",
             "sub": "",
-            "correct": "Consistent aspect use signals to listeners where each event sits in time — the narrative is organised by aspect as much as by sequence",
+            "correct": "Consistent aspect organises the narrative timeline for listeners",
             "options": [
               "Consistent aspect organises the narrative timeline for listeners",
               "Aspect does not matter in oral tradition",
@@ -23770,7 +23770,7 @@
             "wid": "fe01",
             "prompt": "You want to tell a story: 'First she made the fire, then she made the corn soup.' What aspect would you use for both verbs?",
             "sub": "",
-            "correct": "Completed past for both — both actions happened in sequence and are finished",
+            "correct": "Completed past for both — sequential finished events",
             "options": [
               "Completed past for both — sequential finished events",
               "Habitual for both — these are regular activities",
@@ -23897,7 +23897,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address uses the habitual throughout. Why is this the right aspect for it?",
             "sub": "",
-            "correct": "The Address describes ongoing relationships and continuous truth — what is always being given, not what was given once or will be given eventually",
+            "correct": "The Address describes ongoing, continuously true relationships",
             "options": [
               "The Address describes ongoing, continuously true relationships",
               "The Address is past tense",
@@ -23912,7 +23912,7 @@
             "wid": "dv04",
             "prompt": "Ka' iéhse'skwe' — where did you go? You have known this question since Unit 2. What do you now understand about the -skwe' that you did not before?",
             "sub": "",
-            "correct": "It is the completed past marker — it places the going firmly in the finished past",
+            "correct": "It is the completed past marker — the going is finished",
             "options": [
               "It is the completed past marker — the going is finished",
               "It marks the future",
@@ -25494,7 +25494,7 @@
             "wid": "par28",
             "prompt": "Owá:nen — it is big. This is a stative describing verb. What sentence structure does it create when paired with a noun?",
             "sub": "",
-            "correct": "Noun + describing verb — the noun first, then the state it is in (Ohkwá:ri owá:nen — the bear is big)",
+            "correct": "Noun + describing verb — noun then state",
             "options": [
               "Noun + describing verb — noun then state",
               "Verb + noun — verb first",
@@ -25562,7 +25562,7 @@
             "wid": "pc01",
             "prompt": "Tánon — and / also. This is the most basic sentence connector. Ohkwá:ri owá:nen tánon Okwáho onhkwé:ton — the bear is big and the wolf is small. What does tánon do?",
             "sub": "",
-            "correct": "It joins two equal clauses — and connects them without making one depend on the other",
+            "correct": "It makes one clause depend on the other",
             "options": [
               "It joins two equal clauses equally",
               "It makes one clause depend on the other",
@@ -25577,7 +25577,7 @@
             "wid": "pc03",
             "prompt": "Tsi introduces a clause that gives the time or place of the main action. Tsi ká:tiens, katkáhthons — while I am sitting, I am listening. How is this different from tánon?",
             "sub": "",
-            "correct": "Tsi makes one clause the time/place frame for the other — it is subordinating, not coordinating",
+            "correct": "Tsi subordinates one clause to the other as its time/place frame",
             "options": [
               "Tsi subordinates one clause to the other as its time/place frame",
               "Tsi is the same as tánon",
@@ -25694,7 +25694,7 @@
             "wid": "le23",
             "prompt": "Iakoriwá:ienstha — she who makes pots. This is a nominalised verb — a verb turned into a noun-modifier. What does this tell you about how Kanien'kéha forms 'the person who...' expressions?",
             "sub": "",
-            "correct": "It uses nominalised verbs — the verb form itself describes the person, without needing a separate relative pronoun like 'who' or 'that'",
+            "correct": "It uses nominalised verbs — no separate 'who' is needed",
             "options": [
               "It uses nominalised verbs — no separate 'who' is needed",
               "It uses 'who' as a separate word",
@@ -25747,7 +25747,7 @@
             "wid": "wa01",
             "prompt": "The bear that runs — how would Kanien'kéha express this?",
             "sub": "",
-            "correct": "By nominalising the running verb with the bear as actor — the running bear becomes one complex nominal expression",
+            "correct": "By nominalising the running verb with the bear as actor",
             "options": [
               "By nominalising the running verb with the bear as actor",
               "By using 'that' as a relative pronoun",
@@ -25828,7 +25828,7 @@
             "wid": "gr08",
             "prompt": "Kateweyénhstha Kanyen'kéha — I am learning Kanien'kéha. To say WHY, you add a purposive clause. The reason: because the language matters. How do causal/purposive clauses in Kanien'kéha typically work?",
             "sub": "",
-            "correct": "A particle or verb form introduces the reason or purpose as a dependent clause after or before the main action",
+            "correct": "A particle introduces the reason as a dependent clause",
             "options": [
               "A particle introduces the reason as a dependent clause",
               "'Because' is borrowed from English",
@@ -25843,7 +25843,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address gives reasons throughout: the waters are thanked because they sustain us, the sun because it gives warmth. What clause type is this?",
             "sub": "",
-            "correct": "Causal — each acknowledgement states the being and the reason (because they do X) for thanking them",
+            "correct": "Causal — the being + because they do X",
             "options": [
               "Causal — the being + because they do X",
               "Purposive — the being in order to thank them",
@@ -25998,7 +25998,7 @@
             "wid": "le23",
             "prompt": "Iakoriwá:ienstha is a nominalised verb used as a relative clause. What does knowing this tell you about the maker words you learned in Unit 15?",
             "sub": "",
-            "correct": "They were all relative clauses — she who makes pots, those who weave baskets — embedded in noun form",
+            "correct": "They were all relative clauses embedded in noun form",
             "options": [
               "They were all relative clauses embedded in noun form",
               "They are simple nouns with no embedded structure",
@@ -26013,7 +26013,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address contains causal, purposive, and relative clauses throughout. What does this tell you about its grammatical sophistication?",
             "sub": "",
-            "correct": "The Address is one of the most grammatically complex texts in the language — it uses the full clause system to express nuanced gratitude",
+            "correct": "The Address uses the full clause system — it is grammatically sophisticated",
             "options": [
               "The Address uses the full clause system — it is grammatically sophisticated",
               "The Address is simple and repetitive",
@@ -26081,7 +26081,7 @@
             "wid": "v01",
             "prompt": "Ká:tiens — I am sitting (active, habitual). Sohkwá:ren — you are strong (stative). Sahrón:ni — you make it (transitive, habitual). Wahrón:nis — he made it (transitive, completed). What do these four forms show together?",
             "sub": "",
-            "correct": "The full range of the verb system: active/stative distinction, transitive/intransitive, and aspect — all in four words",
+            "correct": "The full range: active/stative, transitive/intransitive, and aspect — all in four words",
             "options": [
               "The full range: active/stative, transitive/intransitive, and aspect — all in four words",
               "They are all the same type of verb",
@@ -26134,7 +26134,7 @@
             "wid": "fe02",
             "prompt": "Sahsénhawe — you carry it. What are the three things the verb system is encoding in this one word?",
             "sub": "",
-            "correct": "Actor (you), object (it/inanimate), and habitual aspect — three grammatical dimensions in one verb",
+            "correct": "Actor (you), object (inanimate it), habitual aspect — three dimensions",
             "options": [
               "Actor (you), object (inanimate it), habitual aspect — three dimensions",
               "Actor only",
@@ -26220,7 +26220,7 @@
             "wid": "ov03",
             "prompt": "Saiosé:ren — you are sick (stative). Tánon ká:tiens — and you are sitting (active). What grammatical contrast is in this combined sentence?",
             "sub": "",
-            "correct": "A stative condition (being sick) combined with an active ongoing action (sitting) — two verb types, one sentence",
+            "correct": "Stative condition + active ongoing action — two verb types in one sentence",
             "options": [
               "Stative condition + active ongoing action — two verb types in one sentence",
               "Both are stative",
@@ -26235,7 +26235,7 @@
             "wid": "par22",
             "prompt": "Ioia'táwen — it is good (stative). Tánon wahró:nis — and he made it (active, completed). What does combining these two tell the listener?",
             "sub": "",
-            "correct": "The thing is good AND it was made — the quality (stative) and the origin (active completed) together",
+            "correct": "The stative always overrides the active",
             "options": [
               "Quality and origin together — what it is and how it came to be",
               "They contradict each other",
@@ -26363,7 +26363,7 @@
             "wid": "v02",
             "prompt": "Ká:tiens — habitual. Ka' iéhse'skwe' — completed past. Iahsé:ke — future. A story uses all three. Which aspect opens a typical narrative?",
             "sub": "",
-            "correct": "Habitual — setting the scene of what was regularly happening before the specific events",
+            "correct": "Habitual — setting the scene of regular background activity",
             "options": [
               "Habitual — setting the scene of regular background activity",
               "Completed past — the events have already happened",
@@ -26416,7 +26416,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address uses habitual throughout. Why is this the right narrative mode for it?",
             "sub": "",
-            "correct": "The Address describes the world as it continuously is — not past events or future plans, but the ongoing state of relationships",
+            "correct": "The Address describes ongoing relationships — the habitual is the aspect of continuous truth",
             "options": [
               "The Address describes ongoing relationships — the habitual is the aspect of continuous truth",
               "The Address is a story of past events",
@@ -26501,7 +26501,7 @@
             "wid": "fe01",
             "prompt": "You want to say: 'She made the basket and she carries it now.' What aspects do you need?",
             "sub": "",
-            "correct": "Completed past for made (it's done) and habitual for carries (ongoing now)",
+            "correct": "Completed past for 'made', habitual for 'carries'",
             "options": [
               "Completed past for 'made', habitual for 'carries'",
               "Habitual for both",
@@ -26516,7 +26516,7 @@
             "wid": "p04",
             "prompt": "You want to say: 'He sees her and she helps him.' What grammatical system handles these two verbs?",
             "sub": "",
-            "correct": "Relational prefixes — he→her for seeing, she→him for helping — both encoded in the verb prefixes",
+            "correct": "Relational prefixes encode both relationships in the verb prefixes",
             "options": [
               "Relational prefixes encode both relationships in the verb prefixes",
               "Separate object words after each verb",
@@ -26531,7 +26531,7 @@
             "wid": "ov01",
             "prompt": "You want to say: 'I am strong and I will make the canoe.' What combination do you need?",
             "sub": "",
-            "correct": "Stative for 'strong' (condition) + future/intentional for 'will make' (planned)",
+            "correct": "Stative for 'strong' + future/intentional for 'will make'",
             "options": [
               "Stative for 'strong' + future/intentional for 'will make'",
               "Active habitual for both",
@@ -26652,7 +26652,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' has been in this course since Unit 5. Now that you understand the verb system, what do you recognise in it?",
             "sub": "",
-            "correct": "A collective transitive: ionkhi- is the object prefix (our minds/us), the root is making-happy, the aspect is habitual — it continuously makes our minds happy",
+            "correct": "ionkhi- is the object prefix, the root is making-happy, habitual — continuously true",
             "options": [
               "ionkhi- is the object prefix, the root is making-happy, habitual — continuously true",
               "It is a simple intransitive",
@@ -26667,7 +26667,7 @@
             "wid": "dv04",
             "prompt": "Ka' iéhse'skwe'? — where did you go? You have known this since Unit 2. What is the -skwe' now that you understand the aspect system?",
             "sub": "",
-            "correct": "The completed past marker — the going happened and is finished",
+            "correct": "The completed past marker — the going is done",
             "options": [
               "The completed past marker — the going is done",
               "A question particle",
@@ -28411,7 +28411,7 @@
             "wid": "par29",
             "prompt": "Onhkwa'shón:'a — it is small (as a description). You have also seen this word as the noun for beads. What does this tell you about Kanien'kéha vocabulary?",
             "sub": "",
-            "correct": "The same root can function as a noun and a describing verb — meaning shifts with grammatical context",
+            "correct": "The same root can be noun or describing verb — context determines meaning",
             "options": [
               "The same root can be noun or describing verb — context determines meaning",
               "There are two different words",
@@ -28481,7 +28481,7 @@
             "wid": "na11",
             "prompt": "Ohwén:tsiake — on the earth / at ground level. The -ke suffix marks 'on/at'. Where else have you seen -ke as a locative suffix?",
             "sub": "",
-            "correct": "In Kanehsatà:ke (at Kanehsatà:ke) and Kaniatarà:ke (at the river) — the -ke suffix is the standard locative",
+            "correct": "In Kanehsatà:ke and Kaniatarà:ke — -ke is the standard locative suffix",
             "options": [
               "In Kanehsatà:ke and Kaniatarà:ke — -ke is the standard locative suffix",
               "Only in Ohwén:tsiake",
@@ -28534,7 +28534,7 @@
             "wid": "pl03",
             "prompt": "Awé:ri — down the bay / toward the water. This is a directional locative specific to Kanehsatà:ke. What does having a place-specific directional tell you?",
             "sub": "",
-            "correct": "Locative language is grounded in specific landscapes — the directions are not abstract but tied to actual geographic features",
+            "correct": "Locative language is grounded in actual geographic features",
             "options": [
               "Locative language is grounded in actual geographic features",
               "Directionals are always abstract",
@@ -28654,7 +28654,7 @@
             "wid": "loc07",
             "prompt": "Kanonhséhsne — at the longhouse. This is the locative form of the longhouse noun. You are going to the longhouse. What direction verb would you use?",
             "sub": "",
-            "correct": "wà:ke — I am going — combined with the longhouse locative to say 'I am going to the longhouse'",
+            "correct": "wà:ke — I am going — combined with the longhouse locative",
             "options": [
               "wà:ke — I am going — combined with the longhouse locative",
               "A completely different verb",
@@ -28669,7 +28669,7 @@
             "wid": "na04",
             "prompt": "Kaniatarà:ke — at the river. To say 'I am going to the river', you use wà:ke thi Kaniatarà:ke. Why is thi the right article here rather than ne?",
             "sub": "",
-            "correct": "Thi marks motion toward a destination — ne marks a stationary reference. Going requires thi.",
+            "correct": "Thi marks motion toward a destination — ne marks stationary reference",
             "options": [
               "Thi marks motion toward a destination — ne marks stationary reference",
               "They are interchangeable",
@@ -28791,7 +28791,7 @@
             "wid": "env09",
             "prompt": "Kaniá:tara — lake. Kaniatarà:ke — at the river. They share the Kaniat- root. What does this shared root suggest?",
             "sub": "",
-            "correct": "Both relate to water bodies — the root carries the sense of a significant body of water, with suffixes specifying lake vs river location",
+            "correct": "Both relate to water bodies — the root carries that sense",
             "options": [
               "Both relate to water bodies — the root carries that sense",
               "The words are unrelated",
@@ -28806,7 +28806,7 @@
             "wid": "pl01",
             "prompt": "Kanehsatà:ke means 'where the crust of snow on top of the earth is'. Why is a description of snow part of the community's name?",
             "sub": "",
-            "correct": "Place names describe what is actually there at a particular season or condition — the name captures a real, recurring feature of the land",
+            "correct": "Place names describe real, recurring features of the land",
             "options": [
               "Place names describe real, recurring features of the land",
               "The name was assigned randomly",
@@ -28928,7 +28928,7 @@
             "wid": "dv02",
             "prompt": "Wà:ke thi Kanehsatà:ke — I am going to Kanehsatà:ke. What makes this a complete direction sentence?",
             "sub": "",
-            "correct": "Direction verb (wà:ke) + motion article (thi) + destination locative (Kanehsatà:ke) — three pieces make the complete sentence",
+            "correct": "Direction verb + motion article + destination — three pieces make it complete",
             "options": [
               "Direction verb + motion article + destination — three pieces make it complete",
               "The verb alone is enough",
@@ -29029,7 +29029,7 @@
             "wid": "pl03",
             "prompt": "Awé:ri — down the bay / toward the water. You are at Kanehsatà:ke and heading toward the water. What two pieces of information does this direction give?",
             "sub": "",
-            "correct": "Your starting point (Kanehsatà:ke) and your direction (toward the water/bay)",
+            "correct": "Starting point and direction toward the water",
             "options": [
               "Starting point and direction toward the water",
               "Only direction",
@@ -29058,7 +29058,7 @@
             "wid": "env09",
             "prompt": "Kaniá:tara — lake. You are describing a journey: from the mountains, to the lake, to the longhouse. What spatial vocabulary do you need?",
             "sub": "",
-            "correct": "Tsi iononté:nion (mountains), Kaniá:tara (lake), kanonhséhsne (at the longhouse) — locatives for each place",
+            "correct": "Locatives for each place: mountains, lake, longhouse",
             "options": [
               "Locatives for each place: mountains, lake, longhouse",
               "Only direction verbs",
@@ -29134,7 +29134,7 @@
             "wid": "ka10",
             "prompt": "Karihtón:ni — clock. The name describes what it does: the measuring/counting thing. How does this naming strategy apply to modern technology?",
             "sub": "",
-            "correct": "Modern objects are named by what they do — a phone is 'the voice-carrying thing', a computer is 'the calculating thing' — using the same Ka-class descriptive strategy",
+            "correct": "Modern objects are named by what they do — using the same descriptive strategy",
             "options": [
               "Modern objects are named by what they do — using the same descriptive strategy",
               "Modern objects use borrowed English names",
@@ -29149,7 +29149,7 @@
             "wid": "loc05",
             "prompt": "Tsi waterennótha — radio station. The name describes what it does: where voices/words go out. What does this naming strategy reveal about how Kanien'kéha speakers understood radio?",
             "sub": "",
-            "correct": "They understood it as a technology that sends voices/words out — the name captures the function from the perspective of the speaker",
+            "correct": "The name captures the function from the speaker's perspective",
             "options": [
               "The name captures the function from the speaker's perspective",
               "The name is borrowed from English",
@@ -29202,7 +29202,7 @@
             "wid": "ex10",
             "prompt": "Onkwehón:we — Indigenous person / original person. Why does Indigenous identity vocabulary matter in a unit about technology?",
             "sub": "",
-            "correct": "Indigenous communities are active users and producers of technology — Kanien'kehá:ka people make apps, podcasts, social media content in their language",
+            "correct": "Indigenous communities are active technology users and producers in their language",
             "options": [
               "Indigenous communities are active technology users and producers in their language",
               "Technology is irrelevant to Indigenous identity",
@@ -29282,7 +29282,7 @@
             "wid": "loc05",
             "prompt": "Tsi waterennótha — radio station. Kanien'kehá:ka radio broadcasting began in Kahnawà:ke in the 1970s. What made radio particularly valuable for language revitalization?",
             "sub": "",
-            "correct": "Radio reaches people in their homes without requiring them to attend a class — it puts the language in daily domestic space",
+            "correct": "Radio reaches people in their homes — it puts the language in daily life",
             "options": [
               "Radio reaches people in their homes — it puts the language in daily life",
               "Radio only reaches young people",
@@ -29297,7 +29297,7 @@
             "wid": "ex14",
             "prompt": "Ionteriwahrónnion — school / place of learning. Kanien'kéha immersion schools teach all subjects in the language. Why is immersion the most effective language learning environment?",
             "sub": "",
-            "correct": "When every part of the day happens in the language, learners cannot avoid using it — immersion creates the conditions of a first language",
+            "correct": "Immersion makes the language unavoidable — it recreates first language conditions",
             "options": [
               "Immersion makes the language unavoidable — it recreates first language conditions",
               "Immersion is only for young children",
@@ -29312,7 +29312,7 @@
             "wid": "gr08",
             "prompt": "Kateweyénhstha Kanyen'kéha — I am learning Kanien'kéha. This verb is in the habitual aspect. What does this tell you about language learning?",
             "sub": "",
-            "correct": "It is ongoing — not a one-time event but a continuous, regular practice that is always happening",
+            "correct": "It is ongoing — a continuous practice always in progress",
             "options": [
               "It is ongoing — a continuous practice always in progress",
               "It happened once and is done",
@@ -29430,7 +29430,7 @@
             "wid": "gr08",
             "prompt": "Kateweyénhstha Kanyen'kéha. You are learning this language through technology. What does this say about the relationship between technology and Indigenous language survival?",
             "sub": "",
-            "correct": "Technology is a tool — it can serve language survival or undermine it, depending on how communities choose to use it",
+            "correct": "Technology is a tool — communities choose how it serves the language",
             "options": [
               "Technology is a tool — communities choose how it serves the language",
               "Technology automatically undermines Indigenous languages",
@@ -29489,7 +29489,7 @@
             "wid": "ka02",
             "prompt": "Kahiatónhsera — paper / book. The same word is used for a webpage or document on a screen. What does this tell you about how Kanien'kéha handles digital documents?",
             "sub": "",
-            "correct": "The function is the same — it carries written information — so the same word applies regardless of medium",
+            "correct": "The function is the same so the same word applies",
             "options": [
               "The function is the same so the same word applies",
               "A new word is invented for digital documents",
@@ -29504,7 +29504,7 @@
             "wid": "loc05",
             "prompt": "Tsi waterennótha — radio station. A podcast is a similar technology: recorded voices sent out. How would the naming strategy apply to a podcast?",
             "sub": "",
-            "correct": "The podcast would be named by what it does — recorded voices that go out — using the same descriptive function-based strategy",
+            "correct": "Named by what it does — recorded voices that go out",
             "options": [
               "Named by what it does — recorded voices that go out",
               "The word would be borrowed from English",
@@ -29621,7 +29621,7 @@
             "wid": "ka10",
             "prompt": "Karihtón:ni — clock. Kahiatónhsera — book/webpage. Tsi waterennótha — radio station. What do all three names have in common?",
             "sub": "",
-            "correct": "All describe the object or place by its function — what it does or what happens there",
+            "correct": "All describe by function — what it does or what happens there",
             "options": [
               "All describe by function — what it does or what happens there",
               "All are borrowed from English",
@@ -29730,7 +29730,7 @@
             "wid": "le12",
             "prompt": "Iakoiánehr tsi oiontátkon — she makes medicine / medicine woman. The medicine woman's role connects to which clan?",
             "sub": "",
-            "correct": "The Bear Clan — Rotihskeré:wake — which carries the medicine keeping responsibility",
+            "correct": "Bear Clan — Rotihskeré:wake — the medicine keepers",
             "options": [
               "Bear Clan — Rotihskeré:wake — the medicine keepers",
               "Wolf Clan",
@@ -29745,7 +29745,7 @@
             "wid": "cu05",
             "prompt": "Onkwatà:wen — native tobacco — is used in healing protocols. How does tobacco function in a healing context?",
             "sub": "",
-            "correct": "It opens communication with the spirit world, carries the patient's need, and begins the healing ceremony",
+            "correct": "It opens communication with the spirit world and begins the healing",
             "options": [
               "It opens communication with the spirit world and begins the healing",
               "It replaces other medicines",
@@ -29760,7 +29760,7 @@
             "wid": "st05",
             "prompt": "Wake'nikonhrén:ton — I am heavy-hearted. Is this a physical or emotional health symptom?",
             "sub": "",
-            "correct": "Both — heavy-heartedness affects both emotional wellbeing and can manifest physically. The four domains of health are not separate.",
+            "correct": "Both — the four domains of health are not separate",
             "options": [
               "Both — the four domains of health are not separate",
               "Emotional only",
@@ -29842,7 +29842,7 @@
             "wid": "le19",
             "prompt": "Iotsiskwatáties — false face mask. The False Face Society uses these masks in healing ceremonies. What is appropriate for a language learner to know about the False Face Society?",
             "sub": "",
-            "correct": "That it exists, that it performs healing ceremonies, that its masks and songs are restricted knowledge — and that this boundary deserves respect",
+            "correct": "That it exists, performs healing, and that its content is restricted — respect that boundary",
             "options": [
               "That it exists, performs healing, and that its content is restricted — respect that boundary",
               "All ceremonial details should be shared",
@@ -29895,7 +29895,7 @@
             "wid": "cu14",
             "prompt": "Okwéskons — rattle. The rattle is used in healing ceremonies. Why does sound play such an important role in healing?",
             "sub": "",
-            "correct": "Sound in Kanien'kehá:ka healing connects the physical ceremony to the spiritual world — it calls on helpers and marks the ceremonial space",
+            "correct": "Sound connects the physical ceremony to the spiritual world",
             "options": [
               "Sound connects the physical ceremony to the spiritual world",
               "Sound is decorative only",
@@ -30015,7 +30015,7 @@
             "wid": "le12",
             "prompt": "The medicine woman holds restricted knowledge. This lesson has introduced her title and role. What has it deliberately not done?",
             "sub": "",
-            "correct": "It has not reproduced restricted ceremonial content — the boundary around specific healing knowledge is respected",
+            "correct": "It has not reproduced restricted ceremonial content",
             "options": [
               "It has not reproduced restricted ceremonial content",
               "It has not named the medicines",
@@ -30114,7 +30114,7 @@
             "wid": "st05",
             "prompt": "Wake'nikonhrén:ton — I am heavy-hearted. The condolence ceremony addresses this state directly. What does this tell you about how Haudenosaunee governance treats emotional health?",
             "sub": "",
-            "correct": "Emotional health is a prerequisite for governance — you cannot lead or decide clearly when heavy-hearted, and the ceremony addresses that before governance resumes",
+            "correct": "Emotional health is a prerequisite for governance — the ceremony restores it before decisions are made",
             "options": [
               "Emotional health is a prerequisite for governance — the ceremony restores it before decisions are made",
               "Emotion is separate from governance",
@@ -30129,7 +30129,7 @@
             "wid": "cu04",
             "prompt": "Skennón:'a — peace. In a health context, how is peace a health state?",
             "sub": "",
-            "correct": "Peace is the condition of a clear mind and whole spirit — the state the condolence ceremony restores and the Thanksgiving Address maintains",
+            "correct": "Peace is the condition of a clear mind and whole spirit",
             "options": [
               "Peace is the condition of a clear mind and whole spirit",
               "Peace is only political",
@@ -30250,7 +30250,7 @@
             "wid": "cu05",
             "prompt": "Onkwatà:wen — native tobacco. It opens healing protocols. What does this tell you about the relationship between ceremony and medicine in Kanien'kehá:ka health practice?",
             "sub": "",
-            "correct": "Ceremony and medicine are not separate — healing begins with ceremony and proceeds through it",
+            "correct": "Ceremony and medicine are not separate — healing is ceremonial",
             "options": [
               "Ceremony and medicine are not separate — healing is ceremonial",
               "Medicine is purely physical",
@@ -30359,7 +30359,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' — it makes our minds happy / we give thanks. The Thanksgiving Address gives thanks for the Three Sisters. Why are they thanked as a group rather than individually?",
             "sub": "",
-            "correct": "They work as a unit — thanking them as a group reflects how they actually exist, in relationship with each other",
+            "correct": "They work as a unit — the group reflects their actual ecological relationship",
             "options": [
               "They work as a unit — the group reflects their actual ecological relationship",
               "It is more efficient",
@@ -30374,7 +30374,7 @@
             "wid": "mo08",
             "prompt": "Seskéha — August, the green corn moon. The Green Corn Ceremony happens in Seskéha. What does naming August after the green corn tell you about the relationship between the calendar and the crops?",
             "sub": "",
-            "correct": "The calendar is built around the crops — the month is named for what the land is doing, not for an abstract number",
+            "correct": "The calendar is built around the crops — months are named for what the land does",
             "options": [
               "The calendar is built around the crops — months are named for what the land does",
               "The name is coincidental",
@@ -30457,7 +30457,7 @@
             "wid": "ev04",
             "prompt": "Sanerénhton — you mow the lawn (command). This is a True E-stem verb. What agricultural action might a similar True E-stem verb describe for the corn garden?",
             "sub": "",
-            "correct": "Clearing the ground before planting — using a similar physical motion to mowing",
+            "correct": "Clearing the ground before planting — a similar motion",
             "options": [
               "Clearing the ground before planting — a similar motion",
               "Harvesting the corn — a different motion",
@@ -30472,7 +30472,7 @@
             "wid": "fe07",
             "prompt": "Senonnhéron — you shuck corn (command). What stage of the agricultural cycle does shucking belong to?",
             "sub": "",
-            "correct": "Harvest processing — after the corn is picked, it is shucked (husks removed) before drying and storage",
+            "correct": "Harvest processing — after picking, before drying",
             "options": [
               "Harvest processing — after picking, before drying",
               "Planting",
@@ -30487,7 +30487,7 @@
             "wid": "na07",
             "prompt": "Sé:ske — spring. The Strawberry Ceremony signals the start of the growing season. Why does the agricultural year begin with strawberries, not with planting corn?",
             "sub": "",
-            "correct": "The first strawberries signal that the growing season has arrived — they are the first fruits and their appearance means the soil is warm enough to plant",
+            "correct": "Strawberries signal the growing season is ready — they appear when soil is warm enough to plant",
             "options": [
               "Strawberries signal the growing season is ready — they appear when soil is warm enough to plant",
               "Strawberries are planted before corn",
@@ -30646,7 +30646,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' — it makes our minds happy. The Three Sisters are thanked in the Thanksgiving Address with this phrase. What makes the Three Sisters different from other agricultural products?",
             "sub": "",
-            "correct": "They are acknowledged as beings that sustain life — not as commodities but as relatives whose gifts are given and received",
+            "correct": "They are acknowledged as relatives whose gifts sustain life — not as commodities",
             "options": [
               "They are acknowledged as relatives whose gifts sustain life — not as commodities",
               "They are acknowledged because they taste good",
@@ -30707,7 +30707,7 @@
             "wid": "fo05",
             "prompt": "Onón:ta o'wá:ron — corn with meat. This is the name of corn soup. What does o'wá:ron add?",
             "sub": "",
-            "correct": "O'wá:ron means meat — corn soup is corn combined with meat (bear, deer, or other)",
+            "correct": "O'wá:ron means meat — corn soup includes meat",
             "options": [
               "O'wá:ron means meat — corn soup includes meat",
               "O'wá:ron means water",
@@ -30722,7 +30722,7 @@
             "wid": "cu20",
             "prompt": "Ohwèn:ton — mortar. The mortar pounds dried corn into flour for bread. You know Kanà:taros — bread. What process connects the mortar to the bread?",
             "sub": "",
-            "correct": "Dried corn → mortar pounds it to flour → flour is mixed and baked/cooked → bread (Kanà:taros)",
+            "correct": "Dried corn pounded to flour → flour cooked → bread",
             "options": [
               "Dried corn pounded to flour → flour cooked → bread",
               "The mortar makes the bread directly",
@@ -30879,7 +30879,7 @@
             "wid": "ta03",
             "prompt": "Ionkhi'nikonhraién:tase' — the Three Sisters are thanked in the Thanksgiving Address. What makes the Three Sisters different from other crops?",
             "sub": "",
-            "correct": "They are acknowledged as beings who give — relatives whose gifts are received with gratitude, not commodities",
+            "correct": "They are acknowledged as relatives whose gifts sustain life",
             "options": [
               "They are acknowledged as relatives whose gifts sustain life",
               "They are thanked because they taste good",
@@ -30947,7 +30947,7 @@
             "wid": "na06",
             "prompt": "Kenién:ke — winter. Stories of the creation and legendary beings are told in winter. What does the frozen ground signal that makes winter the storytelling season?",
             "sub": "",
-            "correct": "The snakes and insects that might overhear the powerful stories are sleeping — the spiritual world is quieter and safer for telling certain stories",
+            "correct": "Snakes and insects sleep — the spiritual world is quieter and safer",
             "options": [
               "Snakes and insects sleep — the spiritual world is quieter and safer",
               "Stories are easier to remember in winter",
@@ -30962,7 +30962,7 @@
             "wid": "le16",
             "prompt": "Onkwehshón:'a tsi onnhéhton — the little people. These are beings who live in the rocks and forests and can be helpful or mischievous. Why might their existence be acknowledged in a storytelling lesson?",
             "sub": "",
-            "correct": "They are part of the cosmological world the stories describe — knowing they exist is knowing the audience for whom the protocol matters",
+            "correct": "They are part of the cosmological world the stories describe",
             "options": [
               "They are part of the cosmological world the stories describe",
               "They are only mentioned in children's stories",
@@ -30977,7 +30977,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address is said before storytelling gatherings. Why does the Address matter in this context?",
             "sub": "",
-            "correct": "The Address acknowledges all the beings who might be present or affected — it sets a respectful frame before stories that involve those beings are told",
+            "correct": "The Address acknowledges all beings present — it frames the stories respectfully",
             "options": [
               "The Address acknowledges all beings present — it frames the stories respectfully",
               "The Address is said before all gatherings regardless",
@@ -31063,7 +31063,7 @@
             "wid": "wa02",
             "prompt": "A'nó:wara — turtle. The Turtle Clan (Rotiniáhton) takes its name from the turtle. Now that you know the creation story connection, what does the Turtle Clan name carry?",
             "sub": "",
-            "correct": "The memory of the turtle whose back became the foundation of the world — the clan name holds the creation story",
+            "correct": "The memory of the turtle whose back became the foundation — the name holds the story",
             "options": [
               "The memory of the turtle whose back became the foundation — the name holds the story",
               "The turtle is only an animal symbol",
@@ -31078,7 +31078,7 @@
             "wid": "le05",
             "prompt": "Shonkwaiá:tison — the Creator. The Creator is acknowledged at the end of the Thanksgiving Address, after all other beings. In the creation story, the Creator is present at the beginning. What does this tell you?",
             "sub": "",
-            "correct": "The Creator brackets the whole of existence — present at the beginning in the story, acknowledged at the end of the Address that thanks the created world",
+            "correct": "The Creator brackets existence — beginning of the story, end of the Address",
             "options": [
               "The Creator brackets existence — beginning of the story, end of the Address",
               "The Creator is only in the Address",
@@ -31164,7 +31164,7 @@
             "wid": "le10",
             "prompt": "Tsi nihononterá:kehre' — the Stone Giant. Stone Giants are beings in the oral tradition who threatened communities. In the stories, they are defeated through specific means. What is the appropriate way to learn about those means?",
             "sub": "",
-            "correct": "From knowledge keepers, in the storytelling season — the full stories belong to those contexts, not to a language app",
+            "correct": "From knowledge keepers in the storytelling season",
             "options": [
               "From knowledge keepers in the storytelling season",
               "From this lesson",
@@ -31179,7 +31179,7 @@
             "wid": "le16",
             "prompt": "Onkwehshón:'a tsi onnhéhton — the little people. They are said to live in rocks and forests and can be helpful or tricky. What does having a specific name for the little people tell you?",
             "sub": "",
-            "correct": "They are recognised beings in the Kanien'kehá:ka cosmological world — specific enough to have their own name",
+            "correct": "They are recognised beings with their own specific name",
             "options": [
               "They are recognised beings with their own specific name",
               "The little people are fictional only",
@@ -31227,7 +31227,7 @@
             "wid": "na06",
             "prompt": "Kenién:ke — winter. Why is it significant that the storytelling season is a specific season, not 'whenever you feel like it'?",
             "sub": "",
-            "correct": "The protocol reflects a specific cosmological understanding — certain stories have power that must be handled carefully and at the right time",
+            "correct": "The protocol reflects a specific cosmological understanding — stories have power",
             "options": [
               "The protocol reflects a specific cosmological understanding — stories have power",
               "Winter nights are just longer",
@@ -31311,7 +31311,7 @@
             "wid": "na06",
             "prompt": "Kenién:ke — winter. Why does the storytelling season being specifically winter matter?",
             "sub": "",
-            "correct": "The protocol reflects a specific cosmological understanding — certain stories have power that must be handled at the right time",
+            "correct": "The protocol reflects cosmological understanding — stories have power",
             "options": [
               "The protocol reflects cosmological understanding — stories have power",
               "Winter nights are longer",
@@ -31364,7 +31364,7 @@
             "wid": "ta01",
             "prompt": "The Thanksgiving Address and the creation story together form a complete cosmology. What are their two different functions?",
             "sub": "",
-            "correct": "The creation story tells how the world came to be; the Address thanks the world that was created — origin and gratitude, beginning and daily practice",
+            "correct": "Creation story = origin; Address = daily gratitude for the created world",
             "options": [
               "Creation story = origin; Address = daily gratitude for the created world",
               "They have the same function",
@@ -31420,7 +31420,7 @@
             "wid": "ta01",
             "prompt": "Ohén:ton Karihwatéhkwen — the Thanksgiving Address. You have known this text since Unit 5. What makes it an example of ceremonial register rather than everyday speech?",
             "sub": "",
-            "correct": "Specific vocabulary not used in daily life, formal oratorical structure, specific phrase patterns, and the expectation of completeness — it is a complete text, not a conversation",
+            "correct": "Specific vocabulary, formal structure, complete text form — not everyday conversation",
             "options": [
               "Specific vocabulary, formal structure, complete text form — not everyday conversation",
               "The language is different from everyday Kanien'kéha",
@@ -31435,7 +31435,7 @@
             "wid": "cu04",
             "prompt": "Skennón:'a — peace. In the condolence ceremony, this word carries enormous weight. In everyday speech it is also usable. What is the difference between ceremonial and everyday use of the same word?",
             "sub": "",
-            "correct": "Ceremonial use carries the full weight of the Great Law and the condolence tradition; everyday use is lighter. Context elevates the word.",
+            "correct": "Ceremonial use carries the full cultural and legal weight; everyday use is lighter — context elevates the word",
             "options": [
               "Ceremonial use carries the full cultural and legal weight; everyday use is lighter — context elevates the word",
               "The word changes meaning entirely in ceremony",
@@ -31450,7 +31450,7 @@
             "wid": "le04",
             "prompt": "Iakoiánehr — clan mother. In ceremonial context, how does addressing a clan mother differ from everyday address?",
             "sub": "",
-            "correct": "Ceremonial address uses the formal title in full, often with respectful acknowledgement of her role — the formal register marks the occasion",
+            "correct": "Ceremonial address uses the full formal title with acknowledgement of role",
             "options": [
               "Ceremonial address uses the full formal title with acknowledgement of role",
               "There is no difference",
@@ -31536,7 +31536,7 @@
             "wid": "le06",
             "prompt": "Ratiwennahní:ion — the singers. Some of their songs are public; some are restricted. How does a learner know which is which?",
             "sub": "",
-            "correct": "By being in community relationship with knowledge keepers who can share what is shareable — a language app cannot make this determination",
+            "correct": "By being in community relationship with knowledge keepers",
             "options": [
               "By being in community relationship with knowledge keepers",
               "By looking it up in a reference",
@@ -31551,7 +31551,7 @@
             "wid": "fe15",
             "prompt": "Tesenón:niahkhw — you dance (command). Social dances are public — anyone can participate. How do social dances differ from restricted ceremonial dances?",
             "sub": "",
-            "correct": "Social dances are open invitations — anyone present can join. Restricted dances belong to specific societies or ceremonies with specific membership.",
+            "correct": "Social dances are open invitations to all. Restricted dances belong to specific societies.",
             "options": [
               "Social dances are open invitations to all. Restricted dances belong to specific societies.",
               "All dances are the same",
@@ -31637,7 +31637,7 @@
             "wid": "ta01",
             "prompt": "You have now encountered the Thanksgiving Address in Units 5, 14, 15, 16, 19, 20, 24, 27, 28, and 29. Why does it keep appearing?",
             "sub": "",
-            "correct": "Because it is the connective tissue of the language and culture — it touches every domain, every topic, every vocabulary area in the course",
+            "correct": "Because it is the connective tissue of language and culture — it touches every domain",
             "options": [
               "Because it is the connective tissue of language and culture — it touches every domain",
               "Because it is the most important vocabulary to memorise",
@@ -31684,7 +31684,7 @@
             "wid": "ta01",
             "prompt": "Ohén:ton Karihwatéhkwen — the words that come before all else. How is this a form of prayer?",
             "sub": "",
-            "correct": "It acknowledges every being the Creator made — a comprehensive act of gratitude that is the foundation of all that follows",
+            "correct": "It acknowledges every being the Creator made — comprehensive gratitude before all else",
             "options": [
               "It acknowledges every being the Creator made — comprehensive gratitude before all else",
               "It is not prayer — only a greeting",
@@ -31699,7 +31699,7 @@
             "wid": "cu05",
             "prompt": "Onkwatà:wen — tobacco is put down before making a request or beginning a ceremony. What is the theology of tobacco as prayer medium?",
             "sub": "",
-            "correct": "Tobacco carries the intention to the spirit world — it opens the channel of communication and marks the request as sincere",
+            "correct": "Tobacco carries the intention — it opens communication and marks sincerity",
             "options": [
               "Tobacco carries the intention — it opens communication and marks sincerity",
               "Tobacco is decorative",
@@ -31714,7 +31714,7 @@
             "wid": "le05",
             "prompt": "Shonkwaiá:tison — the Creator. The Thanksgiving Address acknowledges the Creator last, after all the created beings. In prayer, what does this order mean?",
             "sub": "",
-            "correct": "You acknowledge all the Creator's gifts first — then you arrive at the Creator, having named everything that was given",
+            "correct": "You acknowledge the gifts first, then arrive at the Creator having named what was given",
             "options": [
               "You acknowledge the gifts first, then arrive at the Creator having named what was given",
               "The Creator is less important than other beings",
@@ -31799,7 +31799,7 @@
             "wid": "ta01",
             "prompt": "You have encountered the Thanksgiving Address across many units. Why does it keep appearing?",
             "sub": "",
-            "correct": "Because it is the connective tissue of the language and culture — it touches every domain, every topic, every vocabulary area",
+            "correct": "It is the connective tissue — it touches every domain and topic",
             "options": [
               "It is the connective tissue — it touches every domain and topic",
               "It is repeated for memorisation",
@@ -33303,7 +33303,7 @@
             "wid": "u29l2",
             "prompt": "Short vowels and long vowels are marked differently in Kanien'kéha. A long vowel is written with a colon (:) after the vowel letter. What does the colon tell you?",
             "sub": "",
-            "correct": "Hold this vowel longer — length changes meaning in Kanien'kéha",
+            "correct": "Hold this vowel longer — length changes meaning",
             "options": [
               "Hold this vowel longer — length changes meaning",
               "It marks a question",
@@ -33318,7 +33318,7 @@
             "wid": "u29l3",
             "prompt": "The glottal stop is written with an apostrophe ('). You have seen it in áhta' (shoe), Onen' (now), and many other words. What does it sound like?",
             "sub": "",
-            "correct": "A brief catch in the throat between sounds — the sound between the syllables of 'uh-oh' in English",
+            "correct": "A brief catch in the throat — like the middle of 'uh-oh'",
             "options": [
               "A brief catch in the throat — like the middle of 'uh-oh'",
               "A long pause",

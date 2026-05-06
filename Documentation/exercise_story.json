@@ -1,0 +1,23 @@
+{
+  "_comment": "REFLECTIVE WRITING EXERCISE (type: story) — learner reads a word and a culturally grounded prompt, then writes a personal reflection. Response is saved locally only and never transmitted. 253 in the corpus — the second most common type. Every lesson must have at least one (LaFever Emotional/Spiritual domain requirement).",
+
+  "type": "story",
+
+  "wid": "na01",
+  "_wid": "Glossary ID. Required.",
+
+  "prompt": "Connect to your world",
+  "_prompt": "Short framing phrase above the reflective prompt. Common values: 'Connect to your life', 'Connect to your world', 'A moment of reflection', 'Carry this word with you'. Required.",
+
+  "sub": "A moment of reflection",
+  "_sub": "Subtitle under the prompt. Usually 'A moment of reflection'. Required.",
+
+  "word": "Ohón:ta'",
+  "_word": "The Kanien'kéha word shown on the story card. Required — always include for story exercises (it is present in 100% of story exercises in the corpus).",
+
+  "meaning": "Leaf / leaves",
+  "_meaning": "English meaning shown on the story card alongside word. Required.",
+
+  "storyPrompt": "In Kanien'kéha, the changing of leaves is not just a season — it is a relationship. The trees do not lose their leaves; they give them back to the earth. The Thanksgiving Address thanks the trees by name, not as a category but as relatives. Where do you notice leaves in your daily life — not as background, but as something present? Take a moment before you write.",
+  "_storyPrompt": "The full reflective prompt shown to the learner. Required. Structure: (1) a cultural or linguistic frame that positions the word as more than a vocabulary item — connect it to ceremony, land, kinship, history, or political context; (2) a personal bridge — invite the learner to bring their own life, memory, or relationship into the word; (3) optionally, a brief moment of pause before writing ('Take a moment before you write'). Keep to 3–5 sentences. Do not ask learners to translate or define — ask them to relate. The prompt should feel like something a teacher might say before a quiet moment, not a quiz question."
+}

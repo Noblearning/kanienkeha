@@ -1,0 +1,44 @@
+{
+  "_comment": "MATCHING EXERCISE (type: match) — learner taps a word on the left, then its English equivalent on the right. Good for introducing a set of 3–5 related words together. 244 in the corpus.",
+
+  "type": "match",
+
+  "wid": null,
+  "_wid": "Always null for match exercises. Proficiency is tracked per word via the wids array inside each pair, not at the exercise level.",
+
+  "prompt": "Match each nature word to its meaning",
+  "_prompt": "Describe what the learner is matching. Usually 'Match each [category] to its meaning'.",
+
+  "sub": "Tap a word on the left, then its match on the right",
+  "_sub": "This exact string is standard for all match exercises. Required.",
+
+  "pairs": [
+    {
+      "target": "Ohón:ta'",
+      "english": "Leaf / leaves",
+      "wids": ["na01"]
+    },
+    {
+      "target": "Ohontsa'shón:'a",
+      "english": "Grass",
+      "wids": ["na02"]
+    },
+    {
+      "target": "Ohneka'shón:'a",
+      "english": "Water",
+      "wids": ["na03"]
+    },
+    {
+      "target": "Tsi iontatié:ras",
+      "english": "The forest",
+      "wids": ["na04"]
+    }
+  ],
+  "_pairs": "3–5 pairs. Each pair: target = Kanien'kéha word, english = English meaning, wids = array of glossary IDs (usually one, occasionally two for compound concepts). The right column is shuffled automatically — do not try to pre-shuffle.",
+
+  "cm": "Io'nikonhraién:ta'ne! These four words form the core of land vocabulary. Notice how -shón:'a appears in both ohontsa'shón:'a (grass) and ohneka'shón:'a (water) — it is a diminutive suffix meaning 'small' or 'little ones of'.",
+  "_cm": "Correct message shown after all pairs are matched. Use it to highlight a pattern or connection across the set. Required.",
+
+  "wm": "That answer is incorrect — please try again.",
+  "_wm": "Shown when a pair is matched incorrectly. Required."
+}

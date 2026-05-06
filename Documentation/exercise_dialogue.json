@@ -1,0 +1,90 @@
+{
+  "_comment": "MULTI-TURN DIALOGUE EXERCISE (type: dialogue) — a scripted conversation where the learner takes turns responding. Currently 16 in the corpus; all learner turns use mode: mc. Use for one climactic exercise at the end of a lesson block, after words have been introduced individually. Each dialogue should test 3–6 words from vocabIds.",
+
+  "type": "dialogue",
+
+  "id": "dl_u3l4_01",
+  "_id": "Unique ID. Format: dl_{u}{unitId}l{lessonId}_{sequence}. Required.",
+
+  "prompt": "Gathering medicines",
+  "_prompt": "Scene title shown as the exercise header. Keep short — 2–4 words. Required.",
+
+  "sub": "Use what you know",
+  "_sub": "Subtitle. Usually 'Use what you know'. Required.",
+
+  "scene": "You are walking with your Raksótha (grandfather) at the edge of the forest in early autumn. He stops beside a stand of trees and turns to you.",
+  "_scene": "Narrative scene-setter shown to the learner before the conversation begins. 2–4 sentences. Ground the exchange in a specific, believable community moment. Use character names from the glossary where possible (Rokstén:ha, Raksótha, Akokstén:ha, etc.). Required.",
+
+  "turns": [
+    {
+      "speaker": "other",
+      "name": "Raksótha",
+      "line": "Okwé:ri. Shé:kon, ohón:ta'.",
+      "gloss": "Look. Hello, leaf."
+    },
+    {
+      "speaker": "learner",
+      "instruction": "He is greeting the leaf — addressing it directly. What does he mean by ohón:ta'?",
+      "mode": "mc",
+      "options": [
+        "Leaf / leaves",
+        "Tree",
+        "Branch",
+        "Bark"
+      ],
+      "correct": "Leaf / leaves",
+      "cm": "Tho niioht! Ohón:ta' — leaf. In Kanien'kéha, it is not unusual to greet the plants and acknowledge them before taking from them. The Thanksgiving Address does this at scale — it thanks every living relative by name.",
+      "wm": "He said ohón:ta' — which word did you learn for this? Return to the vocabulary if you need to."
+    },
+    {
+      "speaker": "other",
+      "name": "Raksótha",
+      "line": "Tsi iontatié:ras — kanónhsa n'í:'i. The forest — it is my home.",
+      "gloss": "The forest — it is home to me."
+    },
+    {
+      "speaker": "learner",
+      "instruction": "He says the forest is his home. How do you say 'the forest' in Kanien'kéha?",
+      "mode": "mc",
+      "options": [
+        "Tsi iontatié:ras",
+        "Ohón:ta'",
+        "Kanónhsa",
+        "Ohontsa'shón:'a"
+      ],
+      "correct": "Tsi iontatié:ras",
+      "cm": "Niawenhkó:wa! Tsi iontatié:ras — the forest. Literally: where they (the trees) stand together. The verb is doing the work — Kanien'kéha names places by what happens in them.",
+      "wm": "He said 'the forest is my home' — which of these words means forest?"
+    },
+    {
+      "speaker": "other",
+      "name": "Raksótha",
+      "line": "Ka' nontáhse', í:se'?",
+      "gloss": "Where did you come from?"
+    },
+    {
+      "speaker": "learner",
+      "instruction": "He's asking where you came from. Tell him you came from home (kanónhsa).",
+      "mode": "mc",
+      "options": [
+        "Non kanónhsa nontà:ke.",
+        "Kanónhsa wà:ke.",
+        "Ka' wáhse', í:se'?",
+        "Tsi iontatié:ras nontà:ke."
+      ],
+      "correct": "Non kanónhsa nontà:ke.",
+      "cm": "Io'nikonhraién:ta'ne! Non kanónhsa nontà:ke — I came from home. Non marks the origin (from); nontà:ke is the verb 'I came from'. wà:ke means 'I am going' — direction matters in Kanien'kéha.",
+      "wm": "He asked where you came from — you need the 'came from' verb (nontà:ke), not the 'going' verb (wà:ke). And non marks the origin."
+    }
+  ],
+  "_turns": "Array of turn objects. Alternate other and learner turns, beginning with other. Each other turn: speaker, name, line (Kanien'kéha), gloss (English). Each learner turn: speaker (learner), instruction, mode (always mc), options (4), correct, cm, wm. Aim for 3–5 learner turns per dialogue.",
+
+  "closing": "You moved through a real moment with your grandfather — greeting a plant, naming the forest, and saying where you came from. The direction verbs (wà:ke vs nontà:ke) are not interchangeable. Kanien'kéha encodes direction into the verb, not just the sentence.",
+  "_closing": "Optional. Shown after the dialogue ends. 2–4 sentences summarising what the learner practiced and highlighting one key linguistic takeaway. Do not repeat the correct answers — give the learner something to carry forward.",
+
+  "dialect_note": "In Akwesasne, Raksótha becomes Laksótha. All community forms accepted.",
+  "_dialect_note": "Optional. Note any dialect variation relevant to this dialogue. Keep to one sentence.",
+
+  "wids_tested": ["na01", "na04", "dv01", "dv02", "k04"],
+  "_wids_tested": "Optional but recommended. Flat list of all glossary IDs tested across the learner turns. Used for future analytics. Include every wid referenced in the correct answers."
+}

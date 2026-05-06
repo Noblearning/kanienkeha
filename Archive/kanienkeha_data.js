@@ -1,4 +1,27 @@
 /**
+ * ╔══════════════════════════════════════════════════════════════╗
+ * ║  ARCHIVED — DO NOT EDIT                                      ║
+ * ║                                                              ║
+ * ║  This file has been superseded by the four data_*.json files ║
+ * ║  loaded at runtime by the app. It is no longer imported by   ║
+ * ║  index.html and should not be edited.                        ║
+ * ║                                                              ║
+ * ║  All vocabulary, units, and lesson content has been migrated ║
+ * ║  to:                                                         ║
+ * ║    data_glossary.json   — vocabulary entries                 ║
+ * ║    data_phrases.json    — phrase entries                     ║
+ * ║    data_units.json      — units, lessons, exercises          ║
+ * ║    data_syllabary.json  — phonology content                  ║
+ * ║    data_variants.json   — dialect variant notes              ║
+ * ║                                                              ║
+ * ║  Retained for reference only. The 12 vocabulary entries that ║
+ * ║  existed only here (k09, k10, p05, p07–p09, p11–p13, v02,   ║
+ * ║  v04, v06) have been migrated to data_glossary.json by       ║
+ * ║  retire_legacy_js.py.                                        ║
+ * ╚══════════════════════════════════════════════════════════════╝
+ */
+
+/**
  * KANIEN'KÉHA LEARNING APP — DATA FILE
  * ======================================
  * Primary source: Kontinónhstats (kanehsatakevoices.com)

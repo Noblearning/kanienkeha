@@ -3,7 +3,7 @@
     "id": "p01",
     "target": "í:se'",
     "english": "you",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "Kanien'kéha distinguishes singular, dual, and plural 'you'. In Six Nations/Tyendinaga dialects í:se' becomes ý:se' (y-form).",
@@ -45,7 +45,7 @@
     "id": "p02",
     "target": "í:'i",
     "english": "i / we",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "First person pronouns. Kanien'kéha has three numbers: singular, dual (you and I), and plural (we all, inclusive). In Ontario dialects: ý:'i.",
@@ -87,7 +87,7 @@
     "id": "p03",
     "target": "akaónha",
     "english": "she / her",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "Female third-person pronouns. Kanien'kéha encodes social register directly into the pronoun: akaónha for respected females (mothers, elders); aónha for familiar females, animals, or objects.",
@@ -130,7 +130,7 @@
     "id": "p04",
     "target": "raónha",
     "english": "he / him",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "Male third-person pronouns. Ra- marks male throughout Kanien'kéha. In Akwesasne: laónha (r→l alternation). The dual forms cover two-female (teteniiáhshe) and two-male/mixed (tehniiáhshe) pairs.",
@@ -177,7 +177,7 @@
     "id": "p06",
     "target": "teseniiáhshe",
     "english": "you two (dual)",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "Dual 'you two'. Kanien'kéha maintains singular/dual/plural as distinct categories.",
@@ -199,7 +199,7 @@
     "id": "p10",
     "target": "sewakwé:kon",
     "english": "you all (plural)",
-    "pos": "pronoun",
+    "pos": "pronoun.independent",
     "unit": 0,
     "lesson": 0,
     "notes": "Plural 'you all'. The -kwé:kon suffix signals plurality throughout Kanien'kéha.",
@@ -1161,7 +1161,7 @@
     "id": "v01",
     "target": "á:tien",
     "english": "to sit",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": 2,
     "lesson": 7,
     "notes": "A-stem verb. Command: s- (you) + á:tien. Habitual: k- (I) + á:tien + -s. Dual and plural command forms use the seni-/sewa- prefixes.",
@@ -1201,7 +1201,7 @@
     "id": "v03",
     "target": "aráhtat",
     "english": "to run",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": 2,
     "lesson": 7,
     "notes": "Dualic A-stem verb. The te- dualic prefix is obligatory — it cannot be dropped. Describes a two-phase motion: stopping then moving forward.",
@@ -1241,7 +1241,7 @@
     "id": "v05",
     "target": "atkáhthon",
     "english": "to listen",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": 2,
     "lesson": 7,
     "notes": "A-stem verb with the at- middle voice infix, common in body-related and reflexive verbs. Habitual suffix -s marks repeated action.",
@@ -2085,7 +2085,7 @@
     "id": "num01",
     "target": "Énska",
     "english": "one (1)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "One. Numbers in Kanien'kéha are used for counting, telling time, and expressing quantities. Note that Énska is also the root seen in the word for 'one at a time'.",
@@ -2108,7 +2108,7 @@
     "id": "num02",
     "target": "Tékeni",
     "english": "two (2)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Two. You have already seen this root in the dual prefix tékeni- (two people). The connection is explicit — duality is built on the number two.",
@@ -2131,7 +2131,7 @@
     "id": "num03",
     "target": "Áhsen",
     "english": "three (3)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Three. Plural person nouns (three or more) are named relative to this number — the plural threshold.",
@@ -2154,7 +2154,7 @@
     "id": "num04",
     "target": "Kaié:ri",
     "english": "four (4)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Four. Also a common root in place names and time expressions.",
@@ -2178,7 +2178,7 @@
     "id": "num05",
     "target": "Wísk",
     "english": "five (5)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Five. Wísk is a short, sharp word. Numbers 1–10 form the basis for all counting in Kanien'kéha.",
@@ -2201,7 +2201,7 @@
     "id": "num06",
     "target": "Ià:ia'k",
     "english": "six (6)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Six. The Haudenosaunee confederacy is made up of Six Nations — Ia:ia'k Onkwehonwe ('six peoples').",
@@ -2225,7 +2225,7 @@
     "id": "num07",
     "target": "Tsà:ta",
     "english": "seven (7)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Seven.",
@@ -2248,7 +2248,7 @@
     "id": "num08",
     "target": "Sha'té:kon",
     "english": "eight (8)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Eight. The glottal stop (') in sha'té:kon is part of the word — do not drop it.",
@@ -2271,7 +2271,7 @@
     "id": "num09",
     "target": "Tióhton",
     "english": "nine (9)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Nine.",
@@ -2293,7 +2293,7 @@
     "id": "num10",
     "target": "Óia'k",
     "english": "ten (10)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 4,
     "lesson": 14,
     "notes": "Ten. From ten onwards, numbers are formed by combining roots: eleven = ten + one (óia'k énska), twenty = two tens (tékeni óia'k), and so on.",
@@ -3981,7 +3981,7 @@
     "id": "cv01",
     "target": "kwe'tarón:ko",
     "english": "to cut",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": 7,
     "lesson": 1,
     "notes": "Consonant-stem verb. The root begins with k-, so the first-person habitual doubles the initial consonant: k- + kwe'... → kkwe'tarón:kwas.",
@@ -4059,7 +4059,7 @@
     "id": "cv04",
     "target": "káhere'",
     "english": "to sweep",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": 7,
     "lesson": 1,
     "notes": "Consonant-stem command: s- + káhere'. Dual and plural forms use the áhseron root variant.",
@@ -4754,7 +4754,7 @@
     "id": "n11",
     "target": "Óia'k énska",
     "english": "eleven (11)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 8,
     "lesson": 3,
     "notes": "Eleven = ten + one. Óia'k (ten) + énska (one). All numbers above ten in Kanien'kéha are compound — built from the ten-base plus the units. This base-10 additive system is transparent and logical once you know 1–10.",
@@ -4777,7 +4777,7 @@
     "id": "n12",
     "target": "Óia'k tékeni",
     "english": "twelve (12)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 8,
     "lesson": 3,
     "notes": "Twelve = ten + two. The number system is completely transparent: óia'k (10) + tékeni (2) = 12. No irregular forms to memorise.",
@@ -4800,7 +4800,7 @@
     "id": "n20",
     "target": "Tékeni óia'k",
     "english": "twenty (20)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 8,
     "lesson": 3,
     "notes": "Twenty = two tens. Tékeni (two) + óia'k (ten). Note the order reverses: for 11–19, ten comes first (óia'k énska). For multiples of ten (20, 30…), the multiplier comes first (tékeni óia'k).",
@@ -4823,7 +4823,7 @@
     "id": "n50",
     "target": "Wísk óia'k",
     "english": "fifty (50)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 8,
     "lesson": 3,
     "notes": "Fifty = five tens. Wísk (five) + óia'k (ten). The pattern is consistent: once you know 1–10, you can construct any number to 100.",
@@ -4846,7 +4846,7 @@
     "id": "n100",
     "target": "Tewá:sen",
     "english": "one hundred (100)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": 8,
     "lesson": 3,
     "notes": "One hundred — a single word rather than a compound. Tewá:sen is the base for 100; larger hundreds are formed by multiplying (tékeni tewá:sen = 200, áhsen tewá:sen = 300, etc.).",
@@ -5337,7 +5337,7 @@
     "id": "pc04",
     "target": "ki'",
     "english": "just / only / already",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": 10,
     "lesson": 1,
     "notes": "Just / only / already. You've seen ki' in the ceremonial closing Onen' ki' wáhi (that's it now, truly). Ki' modifies verbs and nouns to indicate recency, limitation, or completeness.",
@@ -5621,7 +5621,9 @@
     ],
     "forms": null,
     "sortKey": "log / wooden blocks",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o10",
@@ -5642,7 +5644,9 @@
     ],
     "forms": null,
     "sortKey": "pencil / pen",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o11",
@@ -5663,7 +5667,9 @@
     ],
     "forms": null,
     "sortKey": "rattle",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o12",
@@ -5684,7 +5690,9 @@
     ],
     "forms": null,
     "sortKey": "blouse / top",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o13",
@@ -5705,7 +5713,9 @@
     ],
     "forms": null,
     "sortKey": "skirt",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o14",
@@ -5725,7 +5735,9 @@
     ],
     "forms": null,
     "sortKey": "light / lamp",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o15",
@@ -5746,7 +5758,9 @@
     ],
     "forms": null,
     "sortKey": "window",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o16",
@@ -5766,7 +5780,9 @@
     ],
     "forms": null,
     "sortKey": "paint",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o17",
@@ -5787,7 +5803,9 @@
     ],
     "forms": null,
     "sortKey": "butter",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o18",
@@ -5808,7 +5826,9 @@
     ],
     "forms": null,
     "sortKey": "hominy corn",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o19",
@@ -5828,7 +5848,9 @@
     ],
     "forms": null,
     "sortKey": "leather",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o20",
@@ -5848,7 +5870,9 @@
     ],
     "forms": null,
     "sortKey": "nuts",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o21",
@@ -5868,7 +5892,9 @@
     ],
     "forms": null,
     "sortKey": "fur",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o22",
@@ -5889,7 +5915,9 @@
     ],
     "forms": null,
     "sortKey": "root / roots",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o23",
@@ -5909,7 +5937,9 @@
     ],
     "forms": null,
     "sortKey": "oar",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o24",
@@ -5930,7 +5960,9 @@
     ],
     "forms": null,
     "sortKey": "pine tree",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "o25",
@@ -5950,7 +5982,9 @@
     ],
     "forms": null,
     "sortKey": "colour / color",
-    "posLabel": "Noun — O-Class"
+    "posLabel": "Noun — O-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka07",
@@ -5971,7 +6005,9 @@
     ],
     "forms": null,
     "sortKey": "dresser / cupboard / coffin",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka08",
@@ -5991,7 +6027,9 @@
     ],
     "forms": null,
     "sortKey": "nail / needle",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka09",
@@ -6011,7 +6049,9 @@
     ],
     "forms": null,
     "sortKey": "bag / sack",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka10",
@@ -6032,7 +6072,9 @@
     ],
     "forms": null,
     "sortKey": "clock",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka11",
@@ -6052,7 +6094,9 @@
     ],
     "forms": null,
     "sortKey": "purse",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka12",
@@ -6072,7 +6116,9 @@
     ],
     "forms": null,
     "sortKey": "snowshoes",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka13",
@@ -6092,7 +6138,9 @@
     ],
     "forms": null,
     "sortKey": "socks / stockings",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka14",
@@ -6112,7 +6160,9 @@
     ],
     "forms": null,
     "sortKey": "key",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka15",
@@ -6131,7 +6181,9 @@
     ],
     "forms": null,
     "sortKey": "cradleboard",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ka16",
@@ -6152,7 +6204,9 @@
     ],
     "forms": null,
     "sortKey": "pottery / can / bottle",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par10",
@@ -6172,7 +6226,9 @@
     ],
     "forms": null,
     "sortKey": "who / which person",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par11",
@@ -6192,7 +6248,9 @@
     ],
     "forms": null,
     "sortKey": "what",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par12",
@@ -6212,7 +6270,9 @@
     ],
     "forms": null,
     "sortKey": "where",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par13",
@@ -6232,7 +6292,9 @@
     ],
     "forms": null,
     "sortKey": "when",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par14",
@@ -6252,7 +6314,9 @@
     ],
     "forms": null,
     "sortKey": "why",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par15",
@@ -6272,7 +6336,9 @@
     ],
     "forms": null,
     "sortKey": "hurry / quickly",
-    "posLabel": "Particle — Quality / Manner"
+    "posLabel": "Particle — Quality / Manner",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par16",
@@ -6292,7 +6358,9 @@
     ],
     "forms": null,
     "sortKey": "it is cold (weather)",
-    "posLabel": "Particle — Quality (Weather / State)"
+    "posLabel": "Particle — Quality (Weather / State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par17",
@@ -6312,13 +6380,15 @@
     ],
     "forms": null,
     "sortKey": "it is hot (weather)",
-    "posLabel": "Particle — Quality (Weather / State)"
+    "posLabel": "Particle — Quality (Weather / State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par18",
     "target": "Ohnhó:kon",
     "english": "cold water",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "group": "particles",
     "groupLabel": "particles & connectors",
     "notes": "Cold water — ohnhó:kon. Compound: cold + water. You know ónhka (water); the cold modifier creates this compound.",
@@ -6332,13 +6402,15 @@
     ],
     "forms": null,
     "sortKey": "cold water",
-    "posLabel": "Particle — Compound"
+    "posLabel": "Particle — Compound",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par19",
     "target": "Ionnhóhton",
     "english": "hot water",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "group": "particles",
     "groupLabel": "particles & connectors",
     "notes": "Hot water — ionnhóhton. Compound: hot + water.",
@@ -6352,7 +6424,9 @@
     ],
     "forms": null,
     "sortKey": "hot water",
-    "posLabel": "Particle — Compound"
+    "posLabel": "Particle — Compound",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par20",
@@ -6372,7 +6446,9 @@
     ],
     "forms": null,
     "sortKey": "it is fast",
-    "posLabel": "Particle — Quality / Manner"
+    "posLabel": "Particle — Quality / Manner",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par21",
@@ -6392,7 +6468,9 @@
     ],
     "forms": null,
     "sortKey": "it is slow",
-    "posLabel": "Particle — Quality / Manner"
+    "posLabel": "Particle — Quality / Manner",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par22",
@@ -6412,7 +6490,9 @@
     ],
     "forms": null,
     "sortKey": "it is good",
-    "posLabel": "Particle — Quality"
+    "posLabel": "Particle — Quality",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par23",
@@ -6432,7 +6512,9 @@
     ],
     "forms": null,
     "sortKey": "it is bad / ugly",
-    "posLabel": "Particle — Quality"
+    "posLabel": "Particle — Quality",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par24",
@@ -6452,7 +6534,9 @@
     ],
     "forms": null,
     "sortKey": "long ago",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par25",
@@ -6472,7 +6556,9 @@
     ],
     "forms": null,
     "sortKey": "it is wet",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par26",
@@ -6492,7 +6578,9 @@
     ],
     "forms": null,
     "sortKey": "it is dry",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par27",
@@ -6512,7 +6600,9 @@
     ],
     "forms": null,
     "sortKey": "it is different",
-    "posLabel": "Particle — Quality"
+    "posLabel": "Particle — Quality",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par28",
@@ -6532,7 +6622,9 @@
     ],
     "forms": null,
     "sortKey": "it is big / large",
-    "posLabel": "Particle — Quality (Size)"
+    "posLabel": "Particle — Quality (Size)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par29",
@@ -6552,7 +6644,9 @@
     ],
     "forms": null,
     "sortKey": "it is small",
-    "posLabel": "Particle — Quality (Size)"
+    "posLabel": "Particle — Quality (Size)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par30",
@@ -6574,7 +6668,9 @@
     ],
     "forms": null,
     "sortKey": "yes",
-    "posLabel": "Particle — Discourse (Affirmation)"
+    "posLabel": "Particle — Discourse (Affirmation)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par31",
@@ -6594,7 +6690,9 @@
     ],
     "forms": null,
     "sortKey": "no / not",
-    "posLabel": "Particle — Negation"
+    "posLabel": "Particle — Negation",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par32",
@@ -6614,7 +6712,9 @@
     ],
     "forms": null,
     "sortKey": "never",
-    "posLabel": "Particle — Negation (Temporal)"
+    "posLabel": "Particle — Negation (Temporal)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par33",
@@ -6634,7 +6734,9 @@
     ],
     "forms": null,
     "sortKey": "it is heavy",
-    "posLabel": "Particle — Quality (Physical)"
+    "posLabel": "Particle — Quality (Physical)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par34",
@@ -6654,7 +6756,9 @@
     ],
     "forms": null,
     "sortKey": "it is light (weight)",
-    "posLabel": "Particle — Quality (Physical)"
+    "posLabel": "Particle — Quality (Physical)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par35",
@@ -6674,7 +6778,9 @@
     ],
     "forms": null,
     "sortKey": "it is dirty",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par36",
@@ -6694,7 +6800,9 @@
     ],
     "forms": null,
     "sortKey": "it is old (thing)",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par37",
@@ -6714,7 +6822,9 @@
     ],
     "forms": null,
     "sortKey": "it smells good",
-    "posLabel": "Particle — Quality (Sensory)"
+    "posLabel": "Particle — Quality (Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par38",
@@ -6734,7 +6844,9 @@
     ],
     "forms": null,
     "sortKey": "it stinks",
-    "posLabel": "Particle — Quality (Sensory)"
+    "posLabel": "Particle — Quality (Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par39",
@@ -6754,7 +6866,9 @@
     ],
     "forms": null,
     "sortKey": "it is full / stuffed",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par40",
@@ -6774,7 +6888,9 @@
     ],
     "forms": null,
     "sortKey": "it is open",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "par41",
@@ -6794,13 +6910,15 @@
     ],
     "forms": null,
     "sortKey": "it is closed",
-    "posLabel": "Particle — Quality / State"
+    "posLabel": "Particle — Quality / State",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av01",
     "target": "énha",
     "english": "to put on (clothing)",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_dress",
     "notes": "A-stem dressing verb. s- (you) + énha (root). Command form only in source material.",
     "cite": {
@@ -6830,7 +6948,9 @@
       }
     ],
     "sortKey": "to put on (clothing)",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av02",
@@ -6859,7 +6979,9 @@
       }
     ],
     "sortKey": "you brush your teeth (habitual)",
-    "posLabel": "Verb — A-Stem (Habitual)"
+    "posLabel": "Verb — A-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av03",
@@ -6878,13 +7000,15 @@
     ],
     "forms": null,
     "sortKey": "you wash your hands (habitual)",
-    "posLabel": "Verb — A-Stem (Habitual)"
+    "posLabel": "Verb — A-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av05",
     "target": "átskhwa'",
     "english": "to eat",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_eat",
     "notes": "A-stem verb. Command: s- + átskhwa'. Dual and plural command forms use seni-/sewa- prefixes.",
     "cite": {
@@ -6915,13 +7039,15 @@
       }
     ],
     "sortKey": "to eat",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av06",
     "target": "aié:re",
     "english": "to walk",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_walk",
     "notes": "A-stem motion verb. Habitual: s- (you) + aié:re + -s. One of the most common motion verbs in daily conversation.",
     "cite": {
@@ -6952,13 +7078,15 @@
       }
     ],
     "sortKey": "to walk",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av07",
     "target": "anón:we",
     "english": "to sleep",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_sleep",
     "notes": "A-stem verb for sleep. A fundamental daily routine verb.",
     "cite": {
@@ -6989,13 +7117,15 @@
       }
     ],
     "sortKey": "to sleep",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av09",
     "target": "atkatón:ni",
     "english": "to study / to read",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_study",
     "notes": "A-stem study/read verb. Habitual suffix -s and command form without suffix. A key educational verb.",
     "cite": {
@@ -7030,7 +7160,9 @@
       }
     ],
     "sortKey": "to study / to read",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av10",
@@ -7049,7 +7181,9 @@
     ],
     "forms": null,
     "sortKey": "you cough (command)",
-    "posLabel": "Verb — A-Stem (Command)"
+    "posLabel": "Verb — A-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av11",
@@ -7068,7 +7202,9 @@
     ],
     "forms": null,
     "sortKey": "you button up / fasten (habitual)",
-    "posLabel": "Verb — A-Stem (Habitual)"
+    "posLabel": "Verb — A-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av12",
@@ -7087,13 +7223,15 @@
     ],
     "forms": null,
     "sortKey": "you hide (command)",
-    "posLabel": "Verb — A-Stem Dualic (Command)"
+    "posLabel": "Verb — A-Stem Dualic (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av13",
     "target": "atohsaré:ko",
     "english": "to wipe",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_wipe",
     "notes": "A-stem wipe verb. Note the object incorporation differs between singular (table root) and dual/plural (window root) forms in the source material.",
     "cite": {
@@ -7124,7 +7262,9 @@
       }
     ],
     "sortKey": "to wipe",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av14",
@@ -7143,7 +7283,9 @@
     ],
     "forms": null,
     "sortKey": "you blow your nose (command)",
-    "posLabel": "Verb — A-Stem (Command)"
+    "posLabel": "Verb — A-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "av15",
@@ -7163,7 +7305,9 @@
     ],
     "forms": null,
     "sortKey": "you slide (command)",
-    "posLabel": "Verb — A-Stem Dualic (Command)"
+    "posLabel": "Verb — A-Stem Dualic (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe04",
@@ -7183,7 +7327,9 @@
     ],
     "forms": null,
     "sortKey": "you make bread / pie (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe05",
@@ -7203,7 +7349,9 @@
     ],
     "forms": null,
     "sortKey": "you peel it (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe06",
@@ -7223,7 +7371,9 @@
     ],
     "forms": null,
     "sortKey": "you choose (habitual)",
-    "posLabel": "Verb — Fake E-Stem (Habitual)"
+    "posLabel": "Verb — Fake E-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe07",
@@ -7243,7 +7393,9 @@
     ],
     "forms": null,
     "sortKey": "you shuck corn (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe08",
@@ -7263,7 +7415,9 @@
     ],
     "forms": null,
     "sortKey": "you iron (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe09",
@@ -7283,7 +7437,9 @@
     ],
     "forms": null,
     "sortKey": "you cook meat (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe10",
@@ -7303,7 +7459,9 @@
     ],
     "forms": null,
     "sortKey": "you chill / cool it (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe11",
@@ -7323,7 +7481,9 @@
     ],
     "forms": null,
     "sortKey": "you hang it up (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe12",
@@ -7343,7 +7503,9 @@
     ],
     "forms": null,
     "sortKey": "you freeze it (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe13",
@@ -7363,7 +7525,9 @@
     ],
     "forms": null,
     "sortKey": "you buy a car (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe14",
@@ -7383,7 +7547,9 @@
     ],
     "forms": null,
     "sortKey": "you dry the dishes (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe15",
@@ -7412,7 +7578,9 @@
       }
     ],
     "sortKey": "you dance (command)",
-    "posLabel": "Verb — Fake E-Stem Dualic (Command)"
+    "posLabel": "Verb — Fake E-Stem Dualic (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe16",
@@ -7441,7 +7609,9 @@
       }
     ],
     "sortKey": "you sing (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe17",
@@ -7460,7 +7630,9 @@
     ],
     "forms": null,
     "sortKey": "you blow it up (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe18",
@@ -7479,7 +7651,9 @@
     ],
     "forms": null,
     "sortKey": "you put objects next to each other (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fe19",
@@ -7498,7 +7672,9 @@
     ],
     "forms": null,
     "sortKey": "you pry it up (command)",
-    "posLabel": "Verb — Fake E-Stem (Command)"
+    "posLabel": "Verb — Fake E-Stem (Command)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl04",
@@ -7518,7 +7694,9 @@
     ],
     "forms": null,
     "sortKey": "the village (kanehsatà:ke community centre area)",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl05",
@@ -7538,7 +7716,9 @@
     ],
     "forms": null,
     "sortKey": "the lacrosse box / arena",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl06",
@@ -7557,7 +7737,9 @@
     ],
     "forms": null,
     "sortKey": "in the pines",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl07",
@@ -7577,7 +7759,9 @@
     ],
     "forms": null,
     "sortKey": "oka park / up the bay",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl08",
@@ -7596,7 +7780,9 @@
     ],
     "forms": null,
     "sortKey": "center road / main road",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pl09",
@@ -7616,7 +7802,9 @@
     ],
     "forms": null,
     "sortKey": "blue mountain",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sh09",
@@ -7636,7 +7824,9 @@
     ],
     "forms": null,
     "sortKey": "arrow",
-    "posLabel": "Noun — Shape"
+    "posLabel": "Noun — Shape",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sh10",
@@ -7656,7 +7846,9 @@
     ],
     "forms": null,
     "sortKey": "cloud",
-    "posLabel": "Noun — Shape / Nature"
+    "posLabel": "Noun — Shape / Nature",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sh11",
@@ -7675,7 +7867,9 @@
     ],
     "forms": null,
     "sortKey": "heart (shape)",
-    "posLabel": "Noun — Shape"
+    "posLabel": "Noun — Shape",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sh12",
@@ -7695,7 +7889,9 @@
     ],
     "forms": null,
     "sortKey": "half moon",
-    "posLabel": "Noun — Shape / Celestial"
+    "posLabel": "Noun — Shape / Celestial",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "col09",
@@ -7715,7 +7911,9 @@
     ],
     "forms": null,
     "sortKey": "grey",
-    "posLabel": "Noun — Colour"
+    "posLabel": "Noun — Colour",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "col10",
@@ -7736,7 +7934,9 @@
     ],
     "forms": null,
     "sortKey": "orange",
-    "posLabel": "Noun — Colour"
+    "posLabel": "Noun — Colour",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "col11",
@@ -7756,7 +7956,9 @@
     ],
     "forms": null,
     "sortKey": "purple",
-    "posLabel": "Noun — Colour"
+    "posLabel": "Noun — Colour",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa09",
@@ -7776,7 +7978,9 @@
     ],
     "forms": null,
     "sortKey": "skunk",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa10",
@@ -7796,7 +8000,9 @@
     ],
     "forms": null,
     "sortKey": "snake",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa11",
@@ -7816,7 +8022,9 @@
     ],
     "forms": null,
     "sortKey": "fox",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa12",
@@ -7836,7 +8044,9 @@
     ],
     "forms": null,
     "sortKey": "muskrat",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa13",
@@ -7856,7 +8066,9 @@
     ],
     "forms": null,
     "sortKey": "elk / wapiti",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa14",
@@ -7876,7 +8088,9 @@
     ],
     "forms": null,
     "sortKey": "buffalo / bison",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa15",
@@ -7895,7 +8109,9 @@
     ],
     "forms": null,
     "sortKey": "bobcat",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa16",
@@ -7914,7 +8130,9 @@
     ],
     "forms": null,
     "sortKey": "mink",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa17",
@@ -7934,7 +8152,9 @@
     ],
     "forms": null,
     "sortKey": "otter",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa18",
@@ -7954,7 +8174,9 @@
     ],
     "forms": null,
     "sortKey": "chipmunk",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa19",
@@ -7974,7 +8196,9 @@
     ],
     "forms": null,
     "sortKey": "squirrel",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "wa20",
@@ -7994,7 +8218,9 @@
     ],
     "forms": null,
     "sortKey": "mole",
-    "posLabel": "Noun — Animal (Wild)"
+    "posLabel": "Noun — Animal (Wild)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da06",
@@ -8014,7 +8240,9 @@
     ],
     "forms": null,
     "sortKey": "dog",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da07",
@@ -8034,7 +8262,9 @@
     ],
     "forms": null,
     "sortKey": "pig",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da08",
@@ -8054,7 +8284,9 @@
     ],
     "forms": null,
     "sortKey": "duck",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da09",
@@ -8075,7 +8307,9 @@
     ],
     "forms": null,
     "sortKey": "chicken",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da10",
@@ -8094,7 +8328,9 @@
     ],
     "forms": null,
     "sortKey": "domestic rabbit",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "da11",
@@ -8113,7 +8349,9 @@
     ],
     "forms": null,
     "sortKey": "domestic goose",
-    "posLabel": "Noun — Animal (Domestic)"
+    "posLabel": "Noun — Animal (Domestic)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fi08",
@@ -8133,7 +8371,9 @@
     ],
     "forms": null,
     "sortKey": "bullhead catfish",
-    "posLabel": "Noun — Fish"
+    "posLabel": "Noun — Fish",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fi09",
@@ -8153,7 +8393,9 @@
     ],
     "forms": null,
     "sortKey": "catfish",
-    "posLabel": "Noun — Fish"
+    "posLabel": "Noun — Fish",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fi10",
@@ -8172,7 +8414,9 @@
     ],
     "forms": null,
     "sortKey": "minnow",
-    "posLabel": "Noun — Fish"
+    "posLabel": "Noun — Fish",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bi09",
@@ -8192,7 +8436,9 @@
     ],
     "forms": null,
     "sortKey": "pigeon / dove",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bi10",
@@ -8211,7 +8457,9 @@
     ],
     "forms": null,
     "sortKey": "loon",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bi11",
@@ -8231,7 +8479,9 @@
     ],
     "forms": null,
     "sortKey": "turkey",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bi12",
@@ -8251,7 +8501,9 @@
     ],
     "forms": null,
     "sortKey": "snipe",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp09",
@@ -8271,7 +8523,9 @@
     ],
     "forms": null,
     "sortKey": "forehead",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp10",
@@ -8291,7 +8545,9 @@
     ],
     "forms": null,
     "sortKey": "eyebrow",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp11",
@@ -8310,7 +8566,9 @@
     ],
     "forms": null,
     "sortKey": "eyelash",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp12",
@@ -8329,7 +8587,9 @@
     ],
     "forms": null,
     "sortKey": "cheek",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp13",
@@ -8349,7 +8609,9 @@
     ],
     "forms": null,
     "sortKey": "neck",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp14",
@@ -8369,7 +8631,9 @@
     ],
     "forms": null,
     "sortKey": "shoulder",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp15",
@@ -8389,7 +8653,9 @@
     ],
     "forms": null,
     "sortKey": "elbow",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp16",
@@ -8409,7 +8675,9 @@
     ],
     "forms": null,
     "sortKey": "wrist",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp17",
@@ -8429,7 +8697,9 @@
     ],
     "forms": null,
     "sortKey": "thumb",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp18",
@@ -8448,7 +8718,9 @@
     ],
     "forms": null,
     "sortKey": "finger",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp19",
@@ -8467,7 +8739,9 @@
     ],
     "forms": null,
     "sortKey": "palm",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp20",
@@ -8487,7 +8761,9 @@
     ],
     "forms": null,
     "sortKey": "fingernail",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp21",
@@ -8507,7 +8783,9 @@
     ],
     "forms": null,
     "sortKey": "body / torso",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp22",
@@ -8527,7 +8805,9 @@
     ],
     "forms": null,
     "sortKey": "leg",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp23",
@@ -8547,7 +8827,9 @@
     ],
     "forms": null,
     "sortKey": "foot",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "bp24",
@@ -8567,13 +8849,15 @@
     ],
     "forms": null,
     "sortKey": "back",
-    "posLabel": "Noun — Body Part"
+    "posLabel": "Noun — Body Part",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n13",
     "target": "Óia'k áhsen",
     "english": "thirteen (13)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Thirteen — ten + three. Óia'k (10) + áhsen (3).",
@@ -8587,13 +8871,15 @@
     ],
     "forms": null,
     "sortKey": "thirteen (13)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n14",
     "target": "Óia'k kaié:ri",
     "english": "fourteen (14)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Fourteen — ten + four.",
@@ -8607,13 +8893,15 @@
     ],
     "forms": null,
     "sortKey": "fourteen (14)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n15",
     "target": "Óia'k wísk",
     "english": "fifteen (15)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Fifteen — ten + five.",
@@ -8627,13 +8915,15 @@
     ],
     "forms": null,
     "sortKey": "fifteen (15)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n16",
     "target": "Óia'k ià:ia'k",
     "english": "sixteen (16)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Sixteen — ten + six. Sixteen is also the number of the Haudenosaunee Confederacy founding nations' original settlement sites.",
@@ -8647,13 +8937,15 @@
     ],
     "forms": null,
     "sortKey": "sixteen (16)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n17",
     "target": "Óia'k tsà:ta",
     "english": "seventeen (17)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Seventeen — ten + seven.",
@@ -8667,13 +8959,15 @@
     ],
     "forms": null,
     "sortKey": "seventeen (17)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n18",
     "target": "Óia'k sha'té:kon",
     "english": "eighteen (18)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Eighteen — ten + eight.",
@@ -8687,13 +8981,15 @@
     ],
     "forms": null,
     "sortKey": "eighteen (18)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n19",
     "target": "Óia'k tióhton",
     "english": "nineteen (19)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Nineteen — ten + nine.",
@@ -8707,13 +9003,15 @@
     ],
     "forms": null,
     "sortKey": "nineteen (19)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n30",
     "target": "Áhsen óia'k",
     "english": "thirty (30)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Thirty — three tens. Áhsen (3) + óia'k (10).",
@@ -8727,13 +9025,15 @@
     ],
     "forms": null,
     "sortKey": "thirty (30)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n40",
     "target": "Kaié:ri óia'k",
     "english": "forty (40)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Forty — four tens.",
@@ -8747,13 +9047,15 @@
     ],
     "forms": null,
     "sortKey": "forty (40)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n60",
     "target": "Ià:ia'k óia'k",
     "english": "sixty (60)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Sixty — six tens.",
@@ -8767,13 +9069,15 @@
     ],
     "forms": null,
     "sortKey": "sixty (60)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n70",
     "target": "Tsà:ta óia'k",
     "english": "seventy (70)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Seventy — seven tens.",
@@ -8787,13 +9091,15 @@
     ],
     "forms": null,
     "sortKey": "seventy (70)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n80",
     "target": "Sha'té:kon óia'k",
     "english": "eighty (80)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Eighty — eight tens.",
@@ -8806,13 +9112,15 @@
     ],
     "forms": null,
     "sortKey": "eighty (80)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "n90",
     "target": "Tióhton óia'k",
     "english": "ninety (90)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "group": "num_higher",
     "groupLabel": "numbers 11–100",
     "notes": "Ninety — nine tens.",
@@ -8825,7 +9133,9 @@
     ],
     "forms": null,
     "sortKey": "ninety (90)",
-    "posLabel": "Number"
+    "posLabel": "Number",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr07",
@@ -8845,7 +9155,9 @@
     ],
     "forms": null,
     "sortKey": "thimbleberries",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr08",
@@ -8865,7 +9177,9 @@
     ],
     "forms": null,
     "sortKey": "elderberries",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr09",
@@ -8885,7 +9199,9 @@
     ],
     "forms": null,
     "sortKey": "plums",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr10",
@@ -8905,7 +9221,9 @@
     ],
     "forms": null,
     "sortKey": "grapes",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr11",
@@ -8924,7 +9242,9 @@
     ],
     "forms": null,
     "sortKey": "purple flowering raspberry",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fr12",
@@ -8943,7 +9263,9 @@
     ],
     "forms": null,
     "sortKey": "cantaloupe / muskmelon",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo09",
@@ -8962,7 +9284,9 @@
     ],
     "forms": null,
     "sortKey": "carrots",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo10",
@@ -8982,7 +9306,9 @@
     ],
     "forms": null,
     "sortKey": "onions",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo11",
@@ -9002,7 +9328,9 @@
     ],
     "forms": null,
     "sortKey": "cabbage",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo12",
@@ -9022,7 +9350,9 @@
     ],
     "forms": null,
     "sortKey": "beets",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo13",
@@ -9042,7 +9372,9 @@
     ],
     "forms": null,
     "sortKey": "green beans",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo14",
@@ -9062,7 +9394,9 @@
     ],
     "forms": null,
     "sortKey": "pumpkin",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo15",
@@ -9082,7 +9416,9 @@
     ],
     "forms": null,
     "sortKey": "eggs",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo16",
@@ -9102,7 +9438,9 @@
     ],
     "forms": null,
     "sortKey": "rice",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo17",
@@ -9122,7 +9460,9 @@
     ],
     "forms": null,
     "sortKey": "clams / oysters",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo18",
@@ -9142,7 +9482,9 @@
     ],
     "forms": null,
     "sortKey": "turkey (as food)",
-    "posLabel": "Noun — Food (Compound)"
+    "posLabel": "Noun — Food (Compound)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo19",
@@ -9162,7 +9504,9 @@
     ],
     "forms": null,
     "sortKey": "lobster / crab",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo20",
@@ -9182,7 +9526,9 @@
     ],
     "forms": null,
     "sortKey": "chicken (as food)",
-    "posLabel": "Noun — Food (Compound)"
+    "posLabel": "Noun — Food (Compound)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fo21",
@@ -9202,7 +9548,9 @@
     ],
     "forms": null,
     "sortKey": "fish (as food)",
-    "posLabel": "Noun — Food (Compound)"
+    "posLabel": "Noun — Food (Compound)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu07",
@@ -9222,7 +9570,9 @@
     ],
     "forms": null,
     "sortKey": "iroquois headdress",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu08",
@@ -9241,7 +9591,9 @@
     ],
     "forms": null,
     "sortKey": "longhouse (variant)",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu09",
@@ -9261,7 +9613,9 @@
     ],
     "forms": null,
     "sortKey": "the great tree of peace",
-    "posLabel": "Noun — Cultural / Political"
+    "posLabel": "Noun — Cultural / Political",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu10",
@@ -9281,7 +9635,9 @@
     ],
     "forms": null,
     "sortKey": "bow (weapon)",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu11",
@@ -9300,7 +9656,9 @@
     ],
     "forms": null,
     "sortKey": "quiver (arrow holder)",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu12",
@@ -9320,7 +9678,9 @@
     ],
     "forms": null,
     "sortKey": "lacrosse / the creator's game",
-    "posLabel": "Noun — Cultural / Sport"
+    "posLabel": "Noun — Cultural / Sport",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu13",
@@ -9340,7 +9700,9 @@
     ],
     "forms": null,
     "sortKey": "water drum",
-    "posLabel": "Noun — Cultural (Instrument)"
+    "posLabel": "Noun — Cultural (Instrument)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu14",
@@ -9360,7 +9722,9 @@
     ],
     "forms": null,
     "sortKey": "rattle (ceremonial)",
-    "posLabel": "Noun — Cultural (Instrument)"
+    "posLabel": "Noun — Cultural (Instrument)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu15",
@@ -9379,7 +9743,9 @@
     ],
     "forms": null,
     "sortKey": "corn washing basket",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu16",
@@ -9399,7 +9765,9 @@
     ],
     "forms": null,
     "sortKey": "brooch / pin",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu17",
@@ -9418,7 +9786,9 @@
     ],
     "forms": null,
     "sortKey": "pipe (ceremonial)",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu18",
@@ -9437,7 +9807,9 @@
     ],
     "forms": null,
     "sortKey": "beading loom",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu19",
@@ -9456,7 +9828,9 @@
     ],
     "forms": null,
     "sortKey": "beads",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu20",
@@ -9476,7 +9850,9 @@
     ],
     "forms": null,
     "sortKey": "mortar (food processing)",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu21",
@@ -9495,7 +9871,9 @@
     ],
     "forms": null,
     "sortKey": "buffalo robe",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cu22",
@@ -9514,7 +9892,9 @@
     ],
     "forms": null,
     "sortKey": "pastel / soft cloth",
-    "posLabel": "Noun — Cultural"
+    "posLabel": "Noun — Cultural",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho04",
@@ -9534,7 +9914,9 @@
     ],
     "forms": null,
     "sortKey": "toothbrush",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho05",
@@ -9554,7 +9936,9 @@
     ],
     "forms": null,
     "sortKey": "toothpaste",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho06",
@@ -9573,7 +9957,9 @@
     ],
     "forms": null,
     "sortKey": "bathroom",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho07",
@@ -9593,7 +9979,9 @@
     ],
     "forms": null,
     "sortKey": "bath tub",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho08",
@@ -9613,7 +10001,9 @@
     ],
     "forms": null,
     "sortKey": "face cloth",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho09",
@@ -9632,7 +10022,9 @@
     ],
     "forms": null,
     "sortKey": "toilet paper",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho10",
@@ -9652,7 +10044,9 @@
     ],
     "forms": null,
     "sortKey": "shampoo",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho11",
@@ -9672,7 +10066,9 @@
     ],
     "forms": null,
     "sortKey": "sofa / couch",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ho12",
@@ -9692,7 +10088,9 @@
     ],
     "forms": null,
     "sortKey": "scale (weighing device)",
-    "posLabel": "Noun — Household Item"
+    "posLabel": "Noun — Household Item",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na10",
@@ -9712,7 +10110,9 @@
     ],
     "forms": null,
     "sortKey": "sky / the above",
-    "posLabel": "Noun — Nature"
+    "posLabel": "Noun — Nature",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na11",
@@ -9732,7 +10132,9 @@
     ],
     "forms": null,
     "sortKey": "on the earth / ground level",
-    "posLabel": "Noun — Place / Locative"
+    "posLabel": "Noun — Place / Locative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na12",
@@ -9752,7 +10154,9 @@
     ],
     "forms": null,
     "sortKey": "on the water / on the lake",
-    "posLabel": "Noun — Place / Locative"
+    "posLabel": "Noun — Place / Locative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na13",
@@ -9772,7 +10176,9 @@
     ],
     "forms": null,
     "sortKey": "in the water",
-    "posLabel": "Noun — Place / Locative"
+    "posLabel": "Noun — Place / Locative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na14",
@@ -9792,7 +10198,9 @@
     ],
     "forms": null,
     "sortKey": "field / lawn / meadow",
-    "posLabel": "Noun — Place / Locative"
+    "posLabel": "Noun — Place / Locative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na15",
@@ -9812,7 +10220,9 @@
     ],
     "forms": null,
     "sortKey": "elm tree",
-    "posLabel": "Noun — Nature (Tree)"
+    "posLabel": "Noun — Nature (Tree)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na16",
@@ -9832,7 +10242,9 @@
     ],
     "forms": null,
     "sortKey": "basswood tree",
-    "posLabel": "Noun — Nature (Tree)"
+    "posLabel": "Noun — Nature (Tree)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na17",
@@ -9852,7 +10264,9 @@
     ],
     "forms": null,
     "sortKey": "cedar tree",
-    "posLabel": "Noun — Nature (Tree)"
+    "posLabel": "Noun — Nature (Tree)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na18",
@@ -9872,7 +10286,9 @@
     ],
     "forms": null,
     "sortKey": "birch tree",
-    "posLabel": "Noun — Nature (Tree)"
+    "posLabel": "Noun — Nature (Tree)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na19",
@@ -9892,7 +10308,9 @@
     ],
     "forms": null,
     "sortKey": "hickory tree",
-    "posLabel": "Noun — Nature (Tree)"
+    "posLabel": "Noun — Nature (Tree)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na20",
@@ -9912,7 +10330,9 @@
     ],
     "forms": null,
     "sortKey": "sunrise",
-    "posLabel": "Noun — Nature (Time)"
+    "posLabel": "Noun — Nature (Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na21",
@@ -9932,7 +10352,9 @@
     ],
     "forms": null,
     "sortKey": "sunset",
-    "posLabel": "Noun — Nature (Time)"
+    "posLabel": "Noun — Nature (Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na22",
@@ -9952,7 +10374,9 @@
     ],
     "forms": null,
     "sortKey": "daytime",
-    "posLabel": "Noun — Nature (Time)"
+    "posLabel": "Noun — Nature (Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "na23",
@@ -9972,7 +10396,9 @@
     ],
     "forms": null,
     "sortKey": "nighttime",
-    "posLabel": "Noun — Nature (Time)"
+    "posLabel": "Noun — Nature (Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le07",
@@ -9992,7 +10418,9 @@
     ],
     "forms": null,
     "sortKey": "thadodaho / tadodaho (the onondaga chief)",
-    "posLabel": "Proper Noun — Cultural Figure"
+    "posLabel": "Proper Noun — Cultural Figure",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le08",
@@ -10011,7 +10439,9 @@
     ],
     "forms": null,
     "sortKey": "longhouse chief (generic)",
-    "posLabel": "Noun — Cultural / Political"
+    "posLabel": "Noun — Cultural / Political",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le09",
@@ -10031,7 +10461,9 @@
     ],
     "forms": null,
     "sortKey": "the large water serpent",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le10",
@@ -10051,7 +10483,9 @@
     ],
     "forms": null,
     "sortKey": "the stone giant",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le11",
@@ -10072,7 +10506,9 @@
     ],
     "forms": null,
     "sortKey": "handsome lake / sganyodaiyo",
-    "posLabel": "Proper Noun — Cultural Figure"
+    "posLabel": "Proper Noun — Cultural Figure",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le12",
@@ -10092,7 +10528,9 @@
     ],
     "forms": null,
     "sortKey": "she makes medicine / medicine woman",
-    "posLabel": "Noun — Cultural (Role)"
+    "posLabel": "Noun — Cultural (Role)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le13",
@@ -10112,7 +10550,9 @@
     ],
     "forms": null,
     "sortKey": "she tans hides",
-    "posLabel": "Noun — Cultural (Role)"
+    "posLabel": "Noun — Cultural (Role)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le14",
@@ -10132,7 +10572,9 @@
     ],
     "forms": null,
     "sortKey": "lacrosse player",
-    "posLabel": "Noun — Cultural / Sport"
+    "posLabel": "Noun — Cultural / Sport",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le15",
@@ -10152,7 +10594,9 @@
     ],
     "forms": null,
     "sortKey": "skeleton",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le16",
@@ -10172,7 +10616,9 @@
     ],
     "forms": null,
     "sortKey": "the little people",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le17",
@@ -10192,7 +10638,9 @@
     ],
     "forms": null,
     "sortKey": "the thunder people / thunderers",
-    "posLabel": "Noun — Nature (Celestial Being)"
+    "posLabel": "Noun — Nature (Celestial Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le18",
@@ -10212,7 +10660,9 @@
     ],
     "forms": null,
     "sortKey": "corn husk mask",
-    "posLabel": "Noun — Cultural (Ceremonial)"
+    "posLabel": "Noun — Cultural (Ceremonial)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le19",
@@ -10232,7 +10682,9 @@
     ],
     "forms": null,
     "sortKey": "false face mask",
-    "posLabel": "Noun — Cultural (Ceremonial)"
+    "posLabel": "Noun — Cultural (Ceremonial)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le20",
@@ -10252,7 +10704,9 @@
     ],
     "forms": null,
     "sortKey": "fireball",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le21",
@@ -10272,7 +10726,9 @@
     ],
     "forms": null,
     "sortKey": "the flying head",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le22",
@@ -10292,7 +10748,9 @@
     ],
     "forms": null,
     "sortKey": "ghost / spirit",
-    "posLabel": "Noun — Cultural (Legendary Being)"
+    "posLabel": "Noun — Cultural (Legendary Being)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le23",
@@ -10312,7 +10770,9 @@
     ],
     "forms": null,
     "sortKey": "she makes pots / potter",
-    "posLabel": "Noun — Cultural (Role)"
+    "posLabel": "Noun — Cultural (Role)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "le24",
@@ -10332,7 +10792,9 @@
     ],
     "forms": null,
     "sortKey": "basket makers (plural)",
-    "posLabel": "Noun — Cultural (Role)"
+    "posLabel": "Noun — Cultural (Role)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp06",
@@ -10351,7 +10813,9 @@
     ],
     "forms": null,
     "sortKey": "your pants (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp07",
@@ -10370,7 +10834,9 @@
     ],
     "forms": null,
     "sortKey": "my pants (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp08",
@@ -10389,7 +10855,9 @@
     ],
     "forms": null,
     "sortKey": "your shirt/coat (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp09",
@@ -10408,7 +10876,9 @@
     ],
     "forms": null,
     "sortKey": "my shirt/coat (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp10",
@@ -10427,7 +10897,9 @@
     ],
     "forms": null,
     "sortKey": "your earrings (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp11",
@@ -10446,7 +10918,9 @@
     ],
     "forms": null,
     "sortKey": "your eyeglasses (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp12",
@@ -10465,7 +10939,9 @@
     ],
     "forms": null,
     "sortKey": "your chair (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "pp13",
@@ -10484,7 +10960,9 @@
     ],
     "forms": null,
     "sortKey": "my chair (a-class possessed)",
-    "posLabel": "Noun — A-Class (Possessed)"
+    "posLabel": "Noun — A-Class (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "k17",
@@ -10518,7 +10996,9 @@
       }
     ],
     "sortKey": "grandchild",
-    "posLabel": "Noun — Kinship"
+    "posLabel": "Noun — Kinship",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "k19",
@@ -10592,7 +11072,9 @@
       }
     ],
     "sortKey": "niece / nephew",
-    "posLabel": "Noun — Kinship (Possessed)"
+    "posLabel": "Noun — Kinship (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex02",
@@ -10612,7 +11094,9 @@
     ],
     "forms": null,
     "sortKey": "there / that place",
-    "posLabel": "Particle — Locative (Demonstrative)"
+    "posLabel": "Particle — Locative (Demonstrative)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex03",
@@ -10632,7 +11116,9 @@
     ],
     "forms": null,
     "sortKey": "now / so then / at this point",
-    "posLabel": "Particle — Discourse"
+    "posLabel": "Particle — Discourse",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex04",
@@ -10652,7 +11138,9 @@
     ],
     "forms": null,
     "sortKey": "truly / so it is (affirmative particle)",
-    "posLabel": "Particle — Discourse (Affirmative)"
+    "posLabel": "Particle — Discourse (Affirmative)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex05",
@@ -10672,7 +11160,9 @@
     ],
     "forms": null,
     "sortKey": "what",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex06",
@@ -10692,7 +11182,9 @@
     ],
     "forms": null,
     "sortKey": "boat / canoe",
-    "posLabel": "Noun — Ka-Class"
+    "posLabel": "Noun — Ka-Class",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex07",
@@ -10712,7 +11204,9 @@
     ],
     "forms": null,
     "sortKey": "first / number one (ordinal)",
-    "posLabel": "Number — Ordinal"
+    "posLabel": "Number — Ordinal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex08",
@@ -10732,7 +11226,9 @@
     ],
     "forms": null,
     "sortKey": "second (ordinal)",
-    "posLabel": "Number — Ordinal"
+    "posLabel": "Number — Ordinal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex09",
@@ -10752,7 +11248,9 @@
     ],
     "forms": null,
     "sortKey": "family / extended family",
-    "posLabel": "Noun — Person / Social Role"
+    "posLabel": "Noun — Person / Social Role",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex10",
@@ -10772,7 +11270,9 @@
     ],
     "forms": null,
     "sortKey": "indigenous person / original person",
-    "posLabel": "Noun — Person / Identity"
+    "posLabel": "Noun — Person / Identity",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex11",
@@ -10792,7 +11292,9 @@
     ],
     "forms": null,
     "sortKey": "haudenosaunee / people of the longhouse",
-    "posLabel": "Proper Noun — Identity"
+    "posLabel": "Proper Noun — Identity",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex12",
@@ -10812,7 +11314,9 @@
     ],
     "forms": null,
     "sortKey": "lacrosse / the creator's game",
-    "posLabel": "Noun — Cultural / Sport"
+    "posLabel": "Noun — Cultural / Sport",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex13",
@@ -10832,7 +11336,9 @@
     ],
     "forms": null,
     "sortKey": "the stars (collective)",
-    "posLabel": "Noun — Nature (Celestial)"
+    "posLabel": "Noun — Nature (Celestial)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex14",
@@ -10852,7 +11358,9 @@
     ],
     "forms": null,
     "sortKey": "school / place of learning",
-    "posLabel": "Noun — Cultural (Institution)"
+    "posLabel": "Noun — Cultural (Institution)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex16",
@@ -10872,7 +11380,9 @@
     ],
     "forms": null,
     "sortKey": "it is good / it is right",
-    "posLabel": "Particle — Quality"
+    "posLabel": "Particle — Quality",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex21",
@@ -10892,7 +11402,9 @@
     ],
     "forms": null,
     "sortKey": "sweet grass",
-    "posLabel": "Noun — Nature (Sacred Plant)"
+    "posLabel": "Noun — Nature (Sacred Plant)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex22",
@@ -10912,7 +11424,9 @@
     ],
     "forms": null,
     "sortKey": "sage",
-    "posLabel": "Noun — Nature (Sacred Plant)"
+    "posLabel": "Noun — Nature (Sacred Plant)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ex23",
@@ -10932,7 +11446,9 @@
     ],
     "forms": null,
     "sortKey": "sky world / upper world",
-    "posLabel": "Noun — Cultural (Cosmology)"
+    "posLabel": "Noun — Cultural (Cosmology)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day01",
@@ -10953,7 +11469,9 @@
     ],
     "forms": null,
     "sortKey": "sunday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day02",
@@ -10974,7 +11492,9 @@
     ],
     "forms": null,
     "sortKey": "monday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day03",
@@ -10994,7 +11514,9 @@
     ],
     "forms": null,
     "sortKey": "tuesday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day04",
@@ -11015,7 +11537,9 @@
     ],
     "forms": null,
     "sortKey": "wednesday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day05",
@@ -11036,7 +11560,9 @@
     ],
     "forms": null,
     "sortKey": "thursday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day06",
@@ -11056,7 +11582,9 @@
     ],
     "forms": null,
     "sortKey": "friday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "day07",
@@ -11077,7 +11605,9 @@
     ],
     "forms": null,
     "sortKey": "saturday",
-    "posLabel": "Noun — Nature (Day / Time)"
+    "posLabel": "Noun — Nature (Day / Time)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo01",
@@ -11098,7 +11628,9 @@
     ],
     "forms": null,
     "sortKey": "january (the great cold month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo02",
@@ -11119,7 +11651,9 @@
     ],
     "forms": null,
     "sortKey": "february",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo03",
@@ -11140,7 +11674,9 @@
     ],
     "forms": null,
     "sortKey": "march (the great february / lengthening days)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo04",
@@ -11161,7 +11697,9 @@
     ],
     "forms": null,
     "sortKey": "april (buds opening month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo05",
@@ -11182,7 +11720,9 @@
     ],
     "forms": null,
     "sortKey": "may (great buds month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo06",
@@ -11203,7 +11743,9 @@
     ],
     "forms": null,
     "sortKey": "june (early summer)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo07",
@@ -11224,7 +11766,9 @@
     ],
     "forms": null,
     "sortKey": "july (great summer month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo08",
@@ -11245,7 +11789,9 @@
     ],
     "forms": null,
     "sortKey": "august (green corn month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo09",
@@ -11266,7 +11812,9 @@
     ],
     "forms": null,
     "sortKey": "september (great green corn month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo10",
@@ -11287,7 +11835,9 @@
     ],
     "forms": null,
     "sortKey": "october (autumn / harvest winding down)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo11",
@@ -11308,7 +11858,9 @@
     ],
     "forms": null,
     "sortKey": "november (great autumn month)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "mo12",
@@ -11329,7 +11881,9 @@
     ],
     "forms": null,
     "sortKey": "december (beginning of winter)",
-    "posLabel": "Noun — Nature (Month)"
+    "posLabel": "Noun — Nature (Month)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env01",
@@ -11350,7 +11904,9 @@
     ],
     "forms": null,
     "sortKey": "tree / log / trunk",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env02",
@@ -11370,7 +11926,9 @@
     ],
     "forms": null,
     "sortKey": "bush / shrub / small tree",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env03",
@@ -11391,7 +11949,9 @@
     ],
     "forms": null,
     "sortKey": "dirt / dust / soil",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env04",
@@ -11411,7 +11971,9 @@
     ],
     "forms": null,
     "sortKey": "road / street",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env05",
@@ -11432,7 +11994,9 @@
     ],
     "forms": null,
     "sortKey": "rock / stone / pavement",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env06",
@@ -11452,7 +12016,9 @@
     ],
     "forms": null,
     "sortKey": "mud",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env07",
@@ -11472,7 +12038,9 @@
     ],
     "forms": null,
     "sortKey": "sand",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env08",
@@ -11492,7 +12060,9 @@
     ],
     "forms": null,
     "sortKey": "river / stream",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env09",
@@ -11512,7 +12082,9 @@
     ],
     "forms": null,
     "sortKey": "lake",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env10",
@@ -11532,7 +12104,9 @@
     ],
     "forms": null,
     "sortKey": "rapids",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env11",
@@ -11552,7 +12126,9 @@
     ],
     "forms": null,
     "sortKey": "swamp / marsh / wetland",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env12",
@@ -11572,7 +12148,9 @@
     ],
     "forms": null,
     "sortKey": "fence",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env13",
@@ -11592,7 +12170,9 @@
     ],
     "forms": null,
     "sortKey": "sky / heaven",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env14",
@@ -11612,7 +12192,9 @@
     ],
     "forms": null,
     "sortKey": "snow",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env15",
@@ -11632,7 +12214,9 @@
     ],
     "forms": null,
     "sortKey": "field / garden",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "env16",
@@ -11652,7 +12236,9 @@
     ],
     "forms": null,
     "sortKey": "clay / pottery / chimney",
-    "posLabel": "Noun — Nature / Environment"
+    "posLabel": "Noun — Nature / Environment",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc01",
@@ -11672,7 +12258,9 @@
     ],
     "forms": null,
     "sortKey": "school (at the school)",
-    "posLabel": "Noun — Place (Locative)"
+    "posLabel": "Noun — Place (Locative)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc02",
@@ -11692,7 +12280,9 @@
     ],
     "forms": null,
     "sortKey": "library",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc03",
@@ -11712,7 +12302,9 @@
     ],
     "forms": null,
     "sortKey": "mall / large store",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc04",
@@ -11732,7 +12324,9 @@
     ],
     "forms": null,
     "sortKey": "band office",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc05",
@@ -11752,7 +12346,9 @@
     ],
     "forms": null,
     "sortKey": "radio station",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc06",
@@ -11772,7 +12368,9 @@
     ],
     "forms": null,
     "sortKey": "hospital",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc07",
@@ -11792,7 +12390,9 @@
     ],
     "forms": null,
     "sortKey": "longhouse (locative — at the longhouse)",
-    "posLabel": "Noun — Place (Locative)"
+    "posLabel": "Noun — Place (Locative)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc08",
@@ -11812,7 +12412,9 @@
     ],
     "forms": null,
     "sortKey": "restaurant",
-    "posLabel": "Noun — Place"
+    "posLabel": "Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc09",
@@ -11833,7 +12435,9 @@
     ],
     "forms": null,
     "sortKey": "six nations grand river territory",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc10",
@@ -11854,7 +12458,9 @@
     ],
     "forms": null,
     "sortKey": "montreal / tiohtià:ke",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc11",
@@ -11875,7 +12481,9 @@
     ],
     "forms": null,
     "sortKey": "toronto",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "loc12",
@@ -11896,7 +12504,9 @@
     ],
     "forms": null,
     "sortKey": "ottawa",
-    "posLabel": "Proper Noun — Place"
+    "posLabel": "Proper Noun — Place",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins01",
@@ -11916,7 +12526,9 @@
     ],
     "forms": null,
     "sortKey": "ant",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins02",
@@ -11936,7 +12548,9 @@
     ],
     "forms": null,
     "sortKey": "bee (honey)",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins03",
@@ -11956,7 +12570,9 @@
     ],
     "forms": null,
     "sortKey": "butterfly",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins04",
@@ -11976,7 +12592,9 @@
     ],
     "forms": null,
     "sortKey": "firefly / lightning bug",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins05",
@@ -11996,7 +12614,9 @@
     ],
     "forms": null,
     "sortKey": "fly",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins06",
@@ -12016,7 +12636,9 @@
     ],
     "forms": null,
     "sortKey": "frog",
-    "posLabel": "Noun — Insect / Amphibian"
+    "posLabel": "Noun — Insect / Amphibian",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins07",
@@ -12036,7 +12658,9 @@
     ],
     "forms": null,
     "sortKey": "mosquito",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins08",
@@ -12056,7 +12680,9 @@
     ],
     "forms": null,
     "sortKey": "spider",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins09",
@@ -12076,7 +12702,9 @@
     ],
     "forms": null,
     "sortKey": "tick",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ins10",
@@ -12096,7 +12724,9 @@
     ],
     "forms": null,
     "sortKey": "worm",
-    "posLabel": "Noun — Insect"
+    "posLabel": "Noun — Insect",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani01",
@@ -12117,7 +12747,9 @@
     ],
     "forms": null,
     "sortKey": "mouse",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani02",
@@ -12137,7 +12769,9 @@
     ],
     "forms": null,
     "sortKey": "rat",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani03",
@@ -12157,7 +12791,9 @@
     ],
     "forms": null,
     "sortKey": "opossum",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani04",
@@ -12177,7 +12813,9 @@
     ],
     "forms": null,
     "sortKey": "otter",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani05",
@@ -12197,7 +12835,9 @@
     ],
     "forms": null,
     "sortKey": "jackrabbit",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani06",
@@ -12217,7 +12857,9 @@
     ],
     "forms": null,
     "sortKey": "moose (variant form)",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani07",
@@ -12238,7 +12880,9 @@
     ],
     "forms": null,
     "sortKey": "raccoon",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "ani08",
@@ -12259,7 +12903,9 @@
     ],
     "forms": null,
     "sortKey": "cougar / lynx",
-    "posLabel": "Noun — Animal"
+    "posLabel": "Noun — Animal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd01",
@@ -12280,7 +12926,9 @@
     ],
     "forms": null,
     "sortKey": "chickadee",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd02",
@@ -12301,7 +12949,9 @@
     ],
     "forms": null,
     "sortKey": "crow",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd03",
@@ -12322,7 +12972,9 @@
     ],
     "forms": null,
     "sortKey": "duck (variant)",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd04",
@@ -12343,7 +12995,9 @@
     ],
     "forms": null,
     "sortKey": "grouse",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd05",
@@ -12364,7 +13018,9 @@
     ],
     "forms": null,
     "sortKey": "hummingbird",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd06",
@@ -12385,7 +13041,9 @@
     ],
     "forms": null,
     "sortKey": "killdeer / sandpiper",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd07",
@@ -12405,7 +13063,9 @@
     ],
     "forms": null,
     "sortKey": "loon (variant)",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd08",
@@ -12426,7 +13086,9 @@
     ],
     "forms": null,
     "sortKey": "woodpecker",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd09",
@@ -12447,7 +13109,9 @@
     ],
     "forms": null,
     "sortKey": "cardinal",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd10",
@@ -12468,7 +13132,9 @@
     ],
     "forms": null,
     "sortKey": "robin (variant)",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "brd11",
@@ -12489,7 +13155,9 @@
     ],
     "forms": null,
     "sortKey": "swan",
-    "posLabel": "Noun — Bird"
+    "posLabel": "Noun — Bird",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr01",
@@ -12526,13 +13194,15 @@
       }
     ],
     "sortKey": "i love him",
-    "posLabel": "Verb — Relational"
+    "posLabel": "Verb — Relational",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr02",
     "target": "rí:waks",
     "english": "to work",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_work",
     "notes": "Work verb. kate- (I, stative) + rí:waks; ra- (he) + í:waks. Essential for daily conversation.",
     "cite": {
@@ -12562,7 +13232,9 @@
       }
     ],
     "sortKey": "to work",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr04",
@@ -12582,13 +13254,15 @@
     ],
     "forms": null,
     "sortKey": "i am learning",
-    "posLabel": "Verb — Active"
+    "posLabel": "Verb — Active",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr05",
     "target": "ná:ton",
     "english": "to speak / to say",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_speak",
     "notes": "Two related speaking roots: ná:ton (to say/speak) and -wenna- (word-making). The root -wenna- is related to words and language — compare onkwawenna (our language).",
     "cite": {
@@ -12618,13 +13292,15 @@
       }
     ],
     "sortKey": "to speak / to say",
-    "posLabel": "Verb"
+    "posLabel": "Verb",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr06",
     "target": "kahiátons",
     "english": "i write (habitual)",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "group": "v_write",
     "groupLabel": "writing verbs",
     "notes": "I write — ka- (I) + hiá:ton (writing root) + -s (habitual). You know kahiatónhsera (paper/book = the writing-thing) — this is the verb from which that noun is derived.",
@@ -12647,7 +13323,9 @@
       }
     ],
     "sortKey": "i write (habitual)",
-    "posLabel": "Verb (Habitual)"
+    "posLabel": "Verb (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr07",
@@ -12667,7 +13345,9 @@
     ],
     "forms": null,
     "sortKey": "you are swimming (habitual)",
-    "posLabel": "Verb — A-Stem (Habitual)"
+    "posLabel": "Verb — A-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr08",
@@ -12687,7 +13367,9 @@
     ],
     "forms": null,
     "sortKey": "i am cooking (habitual)",
-    "posLabel": "Verb — O-Stem (Habitual)"
+    "posLabel": "Verb — O-Stem (Habitual)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr09",
@@ -12720,7 +13402,9 @@
       }
     ],
     "sortKey": "i am sick (habitual)",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr11",
@@ -12740,7 +13424,9 @@
     ],
     "forms": null,
     "sortKey": "it is raining",
-    "posLabel": "Verb — Stative (Weather)"
+    "posLabel": "Verb — Stative (Weather)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr12",
@@ -12760,7 +13446,9 @@
     ],
     "forms": null,
     "sortKey": "it is snowing",
-    "posLabel": "Verb — Stative (Weather)"
+    "posLabel": "Verb — Stative (Weather)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "vr14",
@@ -12781,7 +13469,9 @@
     ],
     "forms": null,
     "sortKey": "it is windy",
-    "posLabel": "Verb — Stative (Weather)"
+    "posLabel": "Verb — Stative (Weather)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cv07",
@@ -12801,7 +13491,9 @@
     ],
     "forms": null,
     "sortKey": "okay then / alright then",
-    "posLabel": "Particle — Discourse"
+    "posLabel": "Particle — Discourse",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cv08",
@@ -12822,7 +13514,9 @@
     ],
     "forms": null,
     "sortKey": "it is new / newly",
-    "posLabel": "Particle — Quality"
+    "posLabel": "Particle — Quality",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "cv09",
@@ -12843,7 +13537,9 @@
     ],
     "forms": null,
     "sortKey": "it's finished / it's done / that's it",
-    "posLabel": "Particle — Discourse (Completion)"
+    "posLabel": "Particle — Discourse (Completion)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "kin02",
@@ -12881,7 +13577,9 @@
       }
     ],
     "sortKey": "my cousin",
-    "posLabel": "Noun — Kinship (Possessed)"
+    "posLabel": "Noun — Kinship (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "kin03",
@@ -12915,7 +13613,9 @@
       }
     ],
     "sortKey": "my friend (male)",
-    "posLabel": "Noun — Kinship (Social/Possessed)"
+    "posLabel": "Noun — Kinship (Social/Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "kin04",
@@ -12953,7 +13653,9 @@
       }
     ],
     "sortKey": "my uncle",
-    "posLabel": "Noun — Kinship (Possessed)"
+    "posLabel": "Noun — Kinship (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "kin08",
@@ -12974,7 +13676,9 @@
     ],
     "forms": null,
     "sortKey": "my older siblings (plural)",
-    "posLabel": "Noun — Kinship (Possessed)"
+    "posLabel": "Noun — Kinship (Possessed)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh01",
@@ -12995,7 +13699,9 @@
     ],
     "forms": null,
     "sortKey": "blanket",
-    "posLabel": "Noun — A-Class Object"
+    "posLabel": "Noun — A-Class Object",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh02",
@@ -13016,7 +13722,9 @@
     ],
     "forms": null,
     "sortKey": "table",
-    "posLabel": "Noun — A-Class Object"
+    "posLabel": "Noun — A-Class Object",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh03",
@@ -13037,13 +13745,15 @@
     ],
     "forms": null,
     "sortKey": "axe",
-    "posLabel": "Noun — Tool"
+    "posLabel": "Noun — Tool",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh04",
     "target": "atókwa'",
     "english": "spoon",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "group": "household",
     "groupLabel": "household items",
     "notes": "Spoon — atókwa'. A kitchen utensil. The verb for eating (sátskhwa') shares a root with the spoon.",
@@ -13058,7 +13768,9 @@
     ],
     "forms": null,
     "sortKey": "spoon",
-    "posLabel": "Noun — Object"
+    "posLabel": "Noun — Object",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh05",
@@ -13080,7 +13792,9 @@
     ],
     "forms": null,
     "sortKey": "gloves / mittens",
-    "posLabel": "Noun — Clothing"
+    "posLabel": "Noun — Clothing",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh06",
@@ -13102,13 +13816,15 @@
     ],
     "forms": null,
     "sortKey": "hat / cap",
-    "posLabel": "Noun — Clothing"
+    "posLabel": "Noun — Clothing",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh07",
     "target": "atáthken'",
     "english": "mirror",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "group": "household",
     "groupLabel": "household items",
     "notes": "Mirror — atáthken'. A post-contact reflective object given a descriptive Kanien'kéha name.",
@@ -13123,13 +13839,15 @@
     ],
     "forms": null,
     "sortKey": "mirror",
-    "posLabel": "Noun — Object"
+    "posLabel": "Noun — Object",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh08",
     "target": "aón:ta'",
     "english": "pail / container",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "group": "household",
     "groupLabel": "household items",
     "notes": "Pail or container — aón:ta'. A general container noun, useful for kitchen and outdoor vocabulary.",
@@ -13145,7 +13863,9 @@
     ],
     "forms": null,
     "sortKey": "pail / container",
-    "posLabel": "Noun — Object"
+    "posLabel": "Noun — Object",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh09",
@@ -13166,13 +13886,15 @@
     ],
     "forms": null,
     "sortKey": "bracelet",
-    "posLabel": "Noun — Clothing / Jewellery"
+    "posLabel": "Noun — Clothing / Jewellery",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh10",
     "target": "atenró:sera",
     "english": "friendship",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "group": "kinship",
     "groupLabel": "kinship",
     "notes": "Friendship — atenró:sera. An abstract noun for the quality of friendship. Related to the friend terms (onkyatén:ron etc.) — the same root.",
@@ -13187,7 +13909,9 @@
     ],
     "forms": null,
     "sortKey": "friendship",
-    "posLabel": "Noun — Abstract"
+    "posLabel": "Noun — Abstract",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh11",
@@ -13208,7 +13932,9 @@
     ],
     "forms": null,
     "sortKey": "riverbank / beside water",
-    "posLabel": "Noun — Place (Locative)"
+    "posLabel": "Noun — Place (Locative)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh12",
@@ -13229,7 +13955,9 @@
     ],
     "forms": null,
     "sortKey": "clothing (collective)",
-    "posLabel": "Noun — Clothing"
+    "posLabel": "Noun — Clothing",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh13",
@@ -13250,7 +13978,9 @@
     ],
     "forms": null,
     "sortKey": "day (a day)",
-    "posLabel": "Noun — Nature (Temporal)"
+    "posLabel": "Noun — Nature (Temporal)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh14",
@@ -13271,7 +14001,9 @@
     ],
     "forms": null,
     "sortKey": "tomorrow",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh15",
@@ -13292,7 +14024,9 @@
     ],
     "forms": null,
     "sortKey": "tonight",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh16",
@@ -13313,7 +14047,9 @@
     ],
     "forms": null,
     "sortKey": "in the morning / morning (adverbial)",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh17",
@@ -13334,7 +14070,9 @@
     ],
     "forms": null,
     "sortKey": "at midnight",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh18",
@@ -13356,7 +14094,9 @@
     ],
     "forms": null,
     "sortKey": "at noon / midday",
-    "posLabel": "Particle — Temporal"
+    "posLabel": "Particle — Temporal",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh19",
@@ -13377,7 +14117,9 @@
     ],
     "forms": null,
     "sortKey": "paddle (canoe paddle)",
-    "posLabel": "Noun — Tool"
+    "posLabel": "Noun — Tool",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh20",
@@ -13399,7 +14141,9 @@
     ],
     "forms": null,
     "sortKey": "lover / romantic partner",
-    "posLabel": "Noun — Kinship / Relationship"
+    "posLabel": "Noun — Kinship / Relationship",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh22",
@@ -13420,7 +14164,9 @@
     ],
     "forms": null,
     "sortKey": "fresh fruit",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh23",
@@ -13441,7 +14187,9 @@
     ],
     "forms": null,
     "sortKey": "beer / fermented drink",
-    "posLabel": "Noun — Food / Drink"
+    "posLabel": "Noun — Food / Drink",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh24",
@@ -13462,7 +14210,9 @@
     ],
     "forms": null,
     "sortKey": "coffee",
-    "posLabel": "Noun — Food / Drink"
+    "posLabel": "Noun — Food / Drink",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "dh25",
@@ -13483,7 +14233,9 @@
     ],
     "forms": null,
     "sortKey": "dollar(s) / money amount",
-    "posLabel": "Noun — Tool / Object (Money)"
+    "posLabel": "Noun — Tool / Object (Money)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sb01",
@@ -13504,7 +14256,9 @@
     ],
     "forms": null,
     "sortKey": "it is good / it is beautiful",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sb04",
@@ -13525,7 +14279,9 @@
     ],
     "forms": null,
     "sortKey": "it is new / fresh",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sb05",
@@ -13546,7 +14302,9 @@
     ],
     "forms": null,
     "sortKey": "it is old / ancient",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sb07",
@@ -13567,7 +14325,9 @@
     ],
     "forms": null,
     "sortKey": "it is expensive / dear",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "sb08",
@@ -13588,7 +14348,9 @@
     ],
     "forms": null,
     "sortKey": "it is cheap / inexpensive",
-    "posLabel": "Verb — Stative"
+    "posLabel": "Verb — Stative",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fp01",
@@ -13609,7 +14371,9 @@
     ],
     "forms": null,
     "sortKey": "fin (fish)",
-    "posLabel": "Noun — Body Part (Anatomy)"
+    "posLabel": "Noun — Body Part (Anatomy)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fp02",
@@ -13630,7 +14394,9 @@
     ],
     "forms": null,
     "sortKey": "gill (fish)",
-    "posLabel": "Noun — Body Part (Anatomy)"
+    "posLabel": "Noun — Body Part (Anatomy)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fp03",
@@ -13652,7 +14418,9 @@
     ],
     "forms": null,
     "sortKey": "scale (fish)",
-    "posLabel": "Noun — Body Part (Anatomy)"
+    "posLabel": "Noun — Body Part (Anatomy)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fp04",
@@ -13673,7 +14441,9 @@
     ],
     "forms": null,
     "sortKey": "feather (generic)",
-    "posLabel": "Noun — Body Part (Anatomy)"
+    "posLabel": "Noun — Body Part (Anatomy)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fp05",
@@ -13694,7 +14464,9 @@
     ],
     "forms": null,
     "sortKey": "wing",
-    "posLabel": "Noun — Body Part (Anatomy)"
+    "posLabel": "Noun — Body Part (Anatomy)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st01",
@@ -13715,7 +14487,9 @@
     ],
     "forms": null,
     "sortKey": "i am afraid",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st02",
@@ -13736,7 +14510,9 @@
     ],
     "forms": null,
     "sortKey": "i am angry",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st03",
@@ -13757,7 +14533,9 @@
     ],
     "forms": null,
     "sortKey": "i am busy",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st04",
@@ -13779,7 +14557,9 @@
     ],
     "forms": null,
     "sortKey": "i am content / i feel good (inside)",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st05",
@@ -13800,7 +14580,9 @@
     ],
     "forms": null,
     "sortKey": "i am depressed / heavy-hearted",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st06",
@@ -13835,7 +14617,9 @@
       }
     ],
     "sortKey": "i am happy",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st07",
@@ -13857,7 +14641,9 @@
     ],
     "forms": null,
     "sortKey": "i am sad",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st08",
@@ -13878,7 +14664,9 @@
     ],
     "forms": null,
     "sortKey": "i have time / i am free",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st09",
@@ -13900,7 +14688,9 @@
     ],
     "forms": null,
     "sortKey": "i am waiting",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st10",
@@ -13921,7 +14711,9 @@
     ],
     "forms": null,
     "sortKey": "i am lucky",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st11",
@@ -13942,7 +14734,9 @@
     ],
     "forms": null,
     "sortKey": "i am unlucky",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st12",
@@ -13963,7 +14757,9 @@
     ],
     "forms": null,
     "sortKey": "i am smart / clever",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st13",
@@ -13984,7 +14780,9 @@
     ],
     "forms": null,
     "sortKey": "i am lazy",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st14",
@@ -14006,7 +14804,9 @@
     ],
     "forms": null,
     "sortKey": "i am ready / prepared",
-    "posLabel": "Verb — Stative (State)"
+    "posLabel": "Verb — Stative (State)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st15",
@@ -14028,7 +14828,9 @@
     ],
     "forms": null,
     "sortKey": "i am thrilled / excited",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st16",
@@ -14050,7 +14852,9 @@
     ],
     "forms": null,
     "sortKey": "i am surprised",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st17",
@@ -14071,7 +14875,9 @@
     ],
     "forms": null,
     "sortKey": "i am mean / nasty",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st18",
@@ -14093,7 +14899,9 @@
     ],
     "forms": null,
     "sortKey": "i am lonesome / lonely",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st19",
@@ -14114,7 +14922,9 @@
     ],
     "forms": null,
     "sortKey": "i am worried / concerned",
-    "posLabel": "Verb — Stative (Emotional)"
+    "posLabel": "Verb — Stative (Emotional)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st20",
@@ -14136,7 +14946,9 @@
     ],
     "forms": null,
     "sortKey": "it is dangerous",
-    "posLabel": "Verb — Stative (Quality)"
+    "posLabel": "Verb — Stative (Quality)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st21",
@@ -14157,7 +14969,9 @@
     ],
     "forms": null,
     "sortKey": "i am funny",
-    "posLabel": "Verb — Stative (Quality)"
+    "posLabel": "Verb — Stative (Quality)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st22",
@@ -14179,7 +14993,9 @@
     ],
     "forms": null,
     "sortKey": "i am aware / i know (general)",
-    "posLabel": "Verb — Stative (Cognitive)"
+    "posLabel": "Verb — Stative (Cognitive)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "st23",
@@ -14200,7 +15016,9 @@
     ],
     "forms": null,
     "sortKey": "i know (something specific)",
-    "posLabel": "Verb — Stative (Cognitive)"
+    "posLabel": "Verb — Stative (Cognitive)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "q16",
@@ -14221,7 +15039,9 @@
     ],
     "forms": null,
     "sortKey": "when?",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "q17",
@@ -14242,7 +15062,9 @@
     ],
     "forms": null,
     "sortKey": "how many?",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "q18",
@@ -14263,7 +15085,9 @@
     ],
     "forms": null,
     "sortKey": "why?",
-    "posLabel": "Particle — Question Word"
+    "posLabel": "Particle — Question Word",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "eat02",
@@ -14298,7 +15122,9 @@
       }
     ],
     "sortKey": "i am hungry",
-    "posLabel": "Verb — Stative (Food / Body)"
+    "posLabel": "Verb — Stative (Food / Body)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd01",
@@ -14319,7 +15145,9 @@
     ],
     "forms": null,
     "sortKey": "food (ready-to-eat)",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd02",
@@ -14340,7 +15168,9 @@
     ],
     "forms": null,
     "sortKey": "fruit (generic)",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd03",
@@ -14362,7 +15192,9 @@
     ],
     "forms": null,
     "sortKey": "groceries / lunch",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd04",
@@ -14383,7 +15215,9 @@
     ],
     "forms": null,
     "sortKey": "bread",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd05",
@@ -14404,7 +15238,9 @@
     ],
     "forms": null,
     "sortKey": "squash (generic)",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd06",
@@ -14425,7 +15261,9 @@
     ],
     "forms": null,
     "sortKey": "potato",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd07",
@@ -14446,7 +15284,9 @@
     ],
     "forms": null,
     "sortKey": "soup",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd08",
@@ -14467,7 +15307,9 @@
     ],
     "forms": null,
     "sortKey": "maple syrup",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd09",
@@ -14489,7 +15331,9 @@
     ],
     "forms": null,
     "sortKey": "it is delicious",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd10",
@@ -14511,7 +15355,9 @@
     ],
     "forms": null,
     "sortKey": "it is cooked / done",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd11",
@@ -14533,7 +15379,9 @@
     ],
     "forms": null,
     "sortKey": "it is raw / uncooked",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd12",
@@ -14554,7 +15402,9 @@
     ],
     "forms": null,
     "sortKey": "it is hot (food/drink)",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd13",
@@ -14576,7 +15426,9 @@
     ],
     "forms": null,
     "sortKey": "it is cool / cold (food/drink)",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd14",
@@ -14597,7 +15449,9 @@
     ],
     "forms": null,
     "sortKey": "it is burnt",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd15",
@@ -14618,7 +15472,9 @@
     ],
     "forms": null,
     "sortKey": "it is boiled",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd16",
@@ -14639,7 +15495,9 @@
     ],
     "forms": null,
     "sortKey": "it is fried / deep-fried",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd17",
@@ -14660,7 +15518,9 @@
     ],
     "forms": null,
     "sortKey": "it is greasy",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd18",
@@ -14682,7 +15542,9 @@
     ],
     "forms": null,
     "sortKey": "it is spicy / hot (taste)",
-    "posLabel": "Verb — Stative (Food / Sensory)"
+    "posLabel": "Verb — Stative (Food / Sensory)",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd19",
@@ -14703,7 +15565,9 @@
     ],
     "forms": null,
     "sortKey": "strawberry (six nations form)",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd20",
@@ -14724,7 +15588,9 @@
     ],
     "forms": null,
     "sortKey": "apple (generic)",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd21",
@@ -14745,7 +15611,9 @@
     ],
     "forms": null,
     "sortKey": "maple syrup / sap",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fd22",
@@ -14766,7 +15634,9 @@
     ],
     "forms": null,
     "sortKey": "beer (six nations form)",
-    "posLabel": "Noun — Food / Drink"
+    "posLabel": "Noun — Food / Drink",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx01",
@@ -14787,7 +15657,9 @@
     ],
     "forms": null,
     "sortKey": "garlic",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx02",
@@ -14809,7 +15681,9 @@
     ],
     "forms": null,
     "sortKey": "oatmeal / cornmush / pudding",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx03",
@@ -14830,7 +15704,9 @@
     ],
     "forms": null,
     "sortKey": "ice cream",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx04",
@@ -14851,7 +15727,9 @@
     ],
     "forms": null,
     "sortKey": "corn soup",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx05",
@@ -14873,7 +15751,9 @@
     ],
     "forms": null,
     "sortKey": "sausage / hot dog",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx06",
@@ -14895,7 +15775,9 @@
     ],
     "forms": null,
     "sortKey": "fried bread / bannock",
-    "posLabel": "Noun — Food"
+    "posLabel": "Noun — Food",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx07",
@@ -14916,7 +15798,9 @@
     ],
     "forms": null,
     "sortKey": "cranberry",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx08",
@@ -14937,7 +15821,9 @@
     ],
     "forms": null,
     "sortKey": "raspberries",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx09",
@@ -14958,7 +15844,9 @@
     ],
     "forms": null,
     "sortKey": "watermelon",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx10",
@@ -14979,7 +15867,9 @@
     ],
     "forms": null,
     "sortKey": "blackberry",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx11",
@@ -15000,7 +15890,9 @@
     ],
     "forms": null,
     "sortKey": "blueberry",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx12",
@@ -15021,7 +15913,9 @@
     ],
     "forms": null,
     "sortKey": "cherry",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "fx13",
@@ -15042,7 +15936,9 @@
     ],
     "forms": null,
     "sortKey": "plum (oer form)",
-    "posLabel": "Noun — Fruit"
+    "posLabel": "Noun — Fruit",
+    "unit": 0,
+    "lesson": 0
   },
   {
     "id": "col-oer02",
@@ -15378,7 +16274,7 @@
     "id": "num-oer01",
     "target": "Énskat",
     "english": "one (OER form)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "One — Énskat (OER / Six Nations form). Compare Énska (Kontinónhstats).",
@@ -15400,7 +16296,7 @@
     "id": "num-oer03",
     "target": "Kióhton",
     "english": "nine",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "Nine — Kióhton (OER form). Compare Tióhton (Kontinónhstats).",
@@ -15422,7 +16318,7 @@
     "id": "num-oer04",
     "target": "Oié:ri",
     "english": "ten (OER form)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "Ten — Oié:ri (OER form). Compare Óia'k (Kontinónhstats).",
@@ -15444,7 +16340,7 @@
     "id": "num-oer05",
     "target": "Tewen'nyá:we",
     "english": "hundred (number marker)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "Hundred number marker — Tewen'nyá:we. Used when expressing hundreds (e.g., Tewen'nyá:we + number = that many hundreds).",
@@ -15466,7 +16362,7 @@
     "id": "num-oer06",
     "target": "iawén:re",
     "english": "+ ten (teens marker)",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "Teens marker — iawén:re. Added after the base number to form 11–19 (e.g., Énskat iawén:re = eleven).",
@@ -15487,7 +16383,7 @@
     "id": "num-oer07",
     "target": "niwáhsen",
     "english": "tens marker",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": "Tens marker — niwáhsen. Used to form multiples of ten (e.g., Áhsen niwáhsen = thirty).",
@@ -16892,7 +17788,7 @@
     "id": "fv001",
     "target": "ahia'kserakèn:iate",
     "english": "weekend",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -16914,7 +17810,7 @@
     "id": "fv002",
     "target": "ahia'kserakwé:kon",
     "english": "all week long",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -16936,7 +17832,7 @@
     "id": "fv003",
     "target": "ahnenhsotáhrho",
     "english": "suspenders",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -16958,7 +17854,7 @@
     "id": "fv004",
     "target": "ahseriie'kó:wa",
     "english": "rope",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -16980,7 +17876,7 @@
     "id": "fv005",
     "target": "ahshiá:ton",
     "english": "you should write it",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17002,7 +17898,7 @@
     "id": "fv006",
     "target": "ahsónhta",
     "english": "wall",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17134,7 +18030,7 @@
     "id": "fv012",
     "target": "aiontéswahte'",
     "english": "smell",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17244,7 +18140,7 @@
     "id": "fv017",
     "target": "akè:ra",
     "english": "plate",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17266,7 +18162,7 @@
     "id": "fv018",
     "target": "akitshenen'kénhen",
     "english": "the pet I used to have",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17464,7 +18360,7 @@
     "id": "fv027",
     "target": "akwá:wen",
     "english": "mine",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17486,7 +18382,7 @@
     "id": "fv028",
     "target": "akwé:kon",
     "english": "all",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17530,7 +18426,7 @@
     "id": "fv030",
     "target": "anishonwatá:se karón:ware",
     "english": "screw",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17728,7 +18624,7 @@
     "id": "fv039",
     "target": "arihwa'konhnéha otsistóhkwa",
     "english": "amethyst",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17772,7 +18668,7 @@
     "id": "fv041",
     "target": "ase'stsi",
     "english": "new",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17904,7 +18800,7 @@
     "id": "fv047",
     "target": "atenentshahnha",
     "english": "watch",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -17926,7 +18822,7 @@
     "id": "fv048",
     "target": "atenénha",
     "english": "peach stone game",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18124,7 +19020,7 @@
     "id": "fv057",
     "target": "atkahri'tsherónnia",
     "english": "toy",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18344,7 +19240,7 @@
     "id": "fv067",
     "target": "awenhràhsa",
     "english": "moss",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18366,7 +19262,7 @@
     "id": "fv068",
     "target": "awennékeri",
     "english": "hay",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18388,7 +19284,7 @@
     "id": "fv069",
     "target": "awentskwè:na",
     "english": "chest",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18410,7 +19306,7 @@
     "id": "fv070",
     "target": "awè:ri",
     "english": "heart",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18432,7 +19328,7 @@
     "id": "fv071",
     "target": "a'én:na",
     "english": "bow",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18454,7 +19350,7 @@
     "id": "fv072",
     "target": "a'nià:nawen",
     "english": "mittens",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18498,7 +19394,7 @@
     "id": "fv074",
     "target": "a'tóhsera",
     "english": "teepee",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18564,7 +19460,7 @@
     "id": "fv077",
     "target": "áhsen iawén:re",
     "english": "thirteen",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18608,7 +19504,7 @@
     "id": "fv079",
     "target": "áhsen niwáhsen",
     "english": "thirty",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18630,7 +19526,7 @@
     "id": "fv080",
     "target": "áhsen niwáhsen énska",
     "english": "thirty-one",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18696,7 +19592,7 @@
     "id": "fv083",
     "target": "ákso",
     "english": "grandma",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18718,7 +19614,7 @@
     "id": "fv084",
     "target": "á:io'",
     "english": "cranberries",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18740,7 +19636,7 @@
     "id": "fv085",
     "target": "á:keke'",
     "english": "I ought to eat it",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18828,7 +19724,7 @@
     "id": "fv089",
     "target": "ehtà:ke",
     "english": "below",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18872,7 +19768,7 @@
     "id": "fv091",
     "target": "ehtsható:ri",
     "english": "you send him to",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18894,7 +19790,7 @@
     "id": "fv092",
     "target": "ehtshenorónhkhwa",
     "english": "you love him",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18938,7 +19834,7 @@
     "id": "fv094",
     "target": "ehtshró:ri",
     "english": "tell him",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18960,7 +19856,7 @@
     "id": "fv095",
     "target": "enhá:ken",
     "english": "he will see her",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -18982,7 +19878,7 @@
     "id": "fv096",
     "target": "enhni'takèn:iate",
     "english": "end of the month",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19004,7 +19900,7 @@
     "id": "fv097",
     "target": "enhni'takwé:kon",
     "english": "the whole month",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19026,7 +19922,7 @@
     "id": "fv098",
     "target": "enhní:tase'",
     "english": "new month",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19048,7 +19944,7 @@
     "id": "fv099",
     "target": "enhshahtén:ti",
     "english": "he will go home",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19070,7 +19966,7 @@
     "id": "fv100",
     "target": "enhshiá:ton",
     "english": "you write it",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19092,7 +19988,7 @@
     "id": "fv101",
     "target": "enhshonwenhnónksa",
     "english": "they will go and get him back",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19114,7 +20010,7 @@
     "id": "fv102",
     "target": "enkahtén:ti",
     "english": "I shall go",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19136,7 +20032,7 @@
     "id": "fv103",
     "target": "enkhní:non'",
     "english": "I shall buy it",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19158,7 +20054,7 @@
     "id": "fv104",
     "target": "ensehsahtén:ti",
     "english": "you will go back home",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19180,7 +20076,7 @@
     "id": "fv105",
     "target": "entsitewahwe'nón:ni",
     "english": "we gather",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19224,7 +20120,7 @@
     "id": "fv107",
     "target": "énska iawén:re",
     "english": "eleven",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19268,7 +20164,7 @@
     "id": "fv109",
     "target": "énska tewen'niáwe",
     "english": "one hundred",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19290,7 +20186,7 @@
     "id": "fv110",
     "target": "énska tewen'niáwe tánon énska",
     "english": "one hundred and one",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19312,7 +20208,7 @@
     "id": "fv111",
     "target": "énska million",
     "english": "one million",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19334,7 +20230,7 @@
     "id": "fv112",
     "target": "éntene",
     "english": "I will go with you",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19356,7 +20252,7 @@
     "id": "fv113",
     "target": "én:keke'",
     "english": "I shall eat it",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19378,7 +20274,7 @@
     "id": "fv114",
     "target": "é:neken",
     "english": "above",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19422,7 +20318,7 @@
     "id": "fv116",
     "target": "é:so",
     "english": "a lot",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19444,7 +20340,7 @@
     "id": "fv117",
     "target": "hánio",
     "english": "come on",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19466,7 +20362,7 @@
     "id": "fv118",
     "target": "hen",
     "english": "yes",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19488,7 +20384,7 @@
     "id": "fv119",
     "target": "iahónhste'ne",
     "english": "water evaporates",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19510,7 +20406,7 @@
     "id": "fv120",
     "target": "iakaon'wéskwani",
     "english": "she likes it",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19532,7 +20428,7 @@
     "id": "fv121",
     "target": "iakawénshie",
     "english": "madam",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19642,7 +20538,7 @@
     "id": "fv126",
     "target": "iakonorónhkwahkwe",
     "english": "she used to love her",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19686,7 +20582,7 @@
     "id": "fv128",
     "target": "iakotehre'ónhskon",
     "english": "she is a widow",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19708,7 +20604,7 @@
     "id": "fv129",
     "target": "iakwatátenonhkwe",
     "english": "we are related",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19730,7 +20626,7 @@
     "id": "fv130",
     "target": "iakwáhsa'as",
     "english": "we finish it",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19840,7 +20736,7 @@
     "id": "fv135",
     "target": "iatá:wens",
     "english": "two of them are swimming",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19884,7 +20780,7 @@
     "id": "fv137",
     "target": "iató:rats",
     "english": "they hunt",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19906,7 +20802,7 @@
     "id": "fv138",
     "target": "iawenhnó:ton",
     "english": "flood",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19928,7 +20824,7 @@
     "id": "fv139",
     "target": "iawentaná:wen",
     "english": "it is mild",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19950,7 +20846,7 @@
     "id": "fv140",
     "target": "ia'tesó:a'k",
     "english": "aim it",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19972,7 +20868,7 @@
     "id": "fv141",
     "target": "iáh tehonorón:se",
     "english": "he is not losing strength",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -19994,7 +20890,7 @@
     "id": "fv142",
     "target": "iáh tehó:ta's",
     "english": "he doesn't sleep",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20038,7 +20934,7 @@
     "id": "fv144",
     "target": "iáh thé:nen",
     "english": "nothing",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20060,7 +20956,7 @@
     "id": "fv145",
     "target": "iá:ia'k iawén:re",
     "english": "sixteen",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20082,7 +20978,7 @@
     "id": "fv146",
     "target": "iá:ia'k niwáhsen",
     "english": "sixty",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20104,7 +21000,7 @@
     "id": "fv147",
     "target": "iá:ia'k niwáhsen énska",
     "english": "sixty-one",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20126,7 +21022,7 @@
     "id": "fv148",
     "target": "iehio'thiiónhkhwa onén:ia",
     "english": "sharpening stone",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20148,7 +21044,7 @@
     "id": "fv149",
     "target": "iehnekíhrhahkwe",
     "english": "she used to drink",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20236,7 +21132,7 @@
     "id": "fv153",
     "target": "iehshà:kon",
     "english": "inside of mouth",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20280,7 +21176,7 @@
     "id": "fv155",
     "target": "ieiá:tase'",
     "english": "young lady",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20302,7 +21198,7 @@
     "id": "fv156",
     "target": "iekahrontáhkhwa",
     "english": "punch",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20368,7 +21264,7 @@
     "id": "fv159",
     "target": "ieketá:tha",
     "english": "sander",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20456,7 +21352,7 @@
     "id": "fv163",
     "target": "ieksohare'táhkhwa onia'tará:'a",
     "english": "dish cloth",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20478,7 +21374,7 @@
     "id": "fv164",
     "target": "ieksokewáhtha",
     "english": "dish towel",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20500,7 +21396,7 @@
     "id": "fv165",
     "target": "ienaktoróktha",
     "english": "sheets",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20522,7 +21418,7 @@
     "id": "fv166",
     "target": "iena'tsahráhkhwa",
     "english": "fry pan",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20544,7 +21440,7 @@
     "id": "fv167",
     "target": "ieneniakwe'tará:tha",
     "english": "stone trimmer",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20610,7 +21506,7 @@
     "id": "fv170",
     "target": "ienia'taroháhrha",
     "english": "flag",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20632,7 +21528,7 @@
     "id": "fv171",
     "target": "ienohare'táhkhwa ka'náhkon",
     "english": "washtub",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20654,7 +21550,7 @@
     "id": "fv172",
     "target": "ienohare'táhkhwa onoharé:tha",
     "english": "laundry soap",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20698,7 +21594,7 @@
     "id": "fv174",
     "target": "ienon'tawerontáhkhwa",
     "english": "pitcher",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20720,7 +21616,7 @@
     "id": "fv175",
     "target": "ieriseronniá:tha ahserí:ie",
     "english": "yarn",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20830,7 +21726,7 @@
     "id": "fv180",
     "target": "iestatha'tahkhwa ahserí:ie",
     "english": "clothes line",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20852,7 +21748,7 @@
     "id": "fv181",
     "target": "iethihsothó:kon",
     "english": "ancestors",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20896,7 +21792,7 @@
     "id": "fv183",
     "target": "ietsi'tsaráhkhwa",
     "english": "vase",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -20984,7 +21880,7 @@
     "id": "fv187",
     "target": "ie'níkhons",
     "english": "she is sewing",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21006,7 +21902,7 @@
     "id": "fv188",
     "target": "ie'wastotáhkhwa",
     "english": "clothes pin",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21028,7 +21924,7 @@
     "id": "fv189",
     "target": "iohiatonhkwakaión:'on",
     "english": "it is an old pencil",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21072,7 +21968,7 @@
     "id": "fv191",
     "target": "iohiáthen/wihshon'kó:wa",
     "english": "prune",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21116,7 +22012,7 @@
     "id": "fv193",
     "target": "iohnekaratá:ton/iawenhnó:ton",
     "english": "water is high",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21138,7 +22034,7 @@
     "id": "fv194",
     "target": "iohrèn:ton",
     "english": "it is hanging",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21182,7 +22078,7 @@
     "id": "fv196",
     "target": "ioió'te",
     "english": "it works/she is working",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21204,7 +22100,7 @@
     "id": "fv197",
     "target": "iokaión:'on",
     "english": "it is old",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21248,7 +22144,7 @@
     "id": "fv199",
     "target": "ionatshinaká:te",
     "english": "centipede",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21292,7 +22188,7 @@
     "id": "fv201",
     "target": "ionekwénhtonte",
     "english": "cap",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21336,7 +22232,7 @@
     "id": "fv203",
     "target": "ionen'óntion",
     "english": "hail",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21380,7 +22276,7 @@
     "id": "fv205",
     "target": "ionhsohkwahrhóhstha kahiatónhsera",
     "english": "coloring book",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21578,7 +22474,7 @@
     "id": "fv214",
     "target": "ionontakwarontóntie's",
     "english": "waves",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21600,7 +22496,7 @@
     "id": "fv215",
     "target": "ionontatékhas",
     "english": "volcano",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21644,7 +22540,7 @@
     "id": "fv217",
     "target": "iononwataríhen/iononwaná:wen",
     "english": "warm water",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21666,7 +22562,7 @@
     "id": "fv218",
     "target": "ionrahsènthohs ahthén:no",
     "english": "soccer ball",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21688,7 +22584,7 @@
     "id": "fv219",
     "target": "ionrahsi'tahráhkhwa",
     "english": "foot stool",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21886,7 +22782,7 @@
     "id": "fv228",
     "target": "iontá:wens",
     "english": "she is swimming",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21974,7 +22870,7 @@
     "id": "fv232",
     "target": "iontenia'taraniákstha",
     "english": "necktie",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -21996,7 +22892,7 @@
     "id": "fv233",
     "target": "iontenonhsotáhkhwa",
     "english": "umbrella",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22018,7 +22914,7 @@
     "id": "fv234",
     "target": "iontenontsistohare'táhkhwa",
     "english": "shampoo",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22062,7 +22958,7 @@
     "id": "fv236",
     "target": "ionteweienstáhkhwa taionhthénno'ke",
     "english": "driving range",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22106,7 +23002,7 @@
     "id": "fv238",
     "target": "ionthonwiharáhkhwa",
     "english": "swing",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22128,7 +23024,7 @@
     "id": "fv239",
     "target": "iontia'tawi'tsherón:ni",
     "english": "seamstress",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22172,7 +23068,7 @@
     "id": "fv241",
     "target": "iontkonhsohare'táhkhwa onia'tará:'a",
     "english": "face cloth",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22194,7 +23090,7 @@
     "id": "fv242",
     "target": "iontkonhsokewáhtha",
     "english": "bath towel",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22216,7 +23112,7 @@
     "id": "fv243",
     "target": "iontkonhstonhriá:ktha á:share",
     "english": "razor",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22326,7 +23222,7 @@
     "id": "fv248",
     "target": "ionttsi'nionhkerà:tha",
     "english": "handkerchief",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22370,7 +23266,7 @@
     "id": "fv250",
     "target": "iorahkwarónnion o'nó:wa",
     "english": "ladybug",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22480,7 +23376,7 @@
     "id": "fv255",
     "target": "ioterahkwatehiahrón:tie",
     "english": "first quarter",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22546,7 +23442,7 @@
     "id": "fv258",
     "target": "iothó:re",
     "english": "very cold",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22590,7 +23486,7 @@
     "id": "fv260",
     "target": "iotón:niate",
     "english": "peninsula",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22656,7 +23552,7 @@
     "id": "fv263",
     "target": "iotstenhró:ton",
     "english": "boulders",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22722,7 +23618,7 @@
     "id": "fv266",
     "target": "iowisóntion",
     "english": "sleet",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22744,7 +23640,7 @@
     "id": "fv267",
     "target": "iowistanawen'enhátie",
     "english": "melting",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22766,7 +23662,7 @@
     "id": "fv268",
     "target": "iowísto",
     "english": "cool",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22832,7 +23728,7 @@
     "id": "fv271",
     "target": "io'néhtarare",
     "english": "sandpaper",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22854,7 +23750,7 @@
     "id": "fv272",
     "target": "io'sharaké:tote/ieketá:tha",
     "english": "spokeshaver",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22876,7 +23772,7 @@
     "id": "fv273",
     "target": "io'taríhen",
     "english": "hot",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22898,7 +23794,7 @@
     "id": "fv274",
     "target": "ióhste'/tiohnekatí:ronte'",
     "english": "water recedes",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -22920,7 +23816,7 @@
     "id": "fv275",
     "target": "iónhnhe",
     "english": "alive",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23008,7 +23904,7 @@
     "id": "fv279",
     "target": "ísi'",
     "english": "over there",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23030,7 +23926,7 @@
     "id": "fv280",
     "target": "í:ions nà:kon tié:iens",
     "english": "long johns",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23052,7 +23948,7 @@
     "id": "fv281",
     "target": "í:se",
     "english": "you",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23184,7 +24080,7 @@
     "id": "fv287",
     "target": "kahiatonhkwasé'stsi",
     "english": "it is a new pencil",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23206,7 +24102,7 @@
     "id": "fv288",
     "target": "kahiatonhsera'shón:'a",
     "english": "papers",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23250,7 +24146,7 @@
     "id": "fv290",
     "target": "kahnà:ta",
     "english": "purse",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23338,7 +24234,7 @@
     "id": "fv294",
     "target": "kahnhotónkwa",
     "english": "keys",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23382,7 +24278,7 @@
     "id": "fv296",
     "target": "kahnhóha o'nò:wa",
     "english": "lock",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23536,7 +24432,7 @@
     "id": "fv303",
     "target": "kahrhakón:ha á:non'k",
     "english": "wild onions",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23624,7 +24520,7 @@
     "id": "fv307",
     "target": "kahsén:na",
     "english": "name",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23690,7 +24586,7 @@
     "id": "fv310",
     "target": "kaia'tákerahs",
     "english": "goat",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23734,7 +24630,7 @@
     "id": "fv312",
     "target": "kaia'tón:ni",
     "english": "doll",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23756,7 +24652,7 @@
     "id": "fv313",
     "target": "kaiáhsa",
     "english": "cross",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23778,7 +24674,7 @@
     "id": "fv314",
     "target": "kaienthóhsera",
     "english": "plant",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23800,7 +24696,7 @@
     "id": "fv315",
     "target": "kaienthóhsera ohté:ra",
     "english": "root",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23844,7 +24740,7 @@
     "id": "fv317",
     "target": "kaié:ri iawén:re",
     "english": "fourteen",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23866,7 +24762,7 @@
     "id": "fv318",
     "target": "kaié:ri niwáhsen",
     "english": "forty",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23888,7 +24784,7 @@
     "id": "fv319",
     "target": "kaié:ri niwáhsen énska",
     "english": "forty-one",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -23932,7 +24828,7 @@
     "id": "fv321",
     "target": "kakahráksen",
     "english": "it has bad eyesight",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24108,7 +25004,7 @@
     "id": "fv329",
     "target": "kanà:kare",
     "english": "stick",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24152,7 +25048,7 @@
     "id": "fv331",
     "target": "kanáwa'ahte",
     "english": "pole",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24174,7 +25070,7 @@
     "id": "fv332",
     "target": "kaná:ta",
     "english": "town",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24218,7 +25114,7 @@
     "id": "fv334",
     "target": "kanehshio'táksen",
     "english": "bad cabbage",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24262,7 +25158,7 @@
     "id": "fv336",
     "target": "kanehshio'towá:nen",
     "english": "big cabbage",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24372,7 +25268,7 @@
     "id": "fv341",
     "target": "kanèn:nawen",
     "english": "pipe",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24460,7 +25356,7 @@
     "id": "fv345",
     "target": "kaniión:ta/nikentsá:sa",
     "english": "minnows",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24570,7 +25466,7 @@
     "id": "fv350",
     "target": "kanónhsa",
     "english": "house",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24592,7 +25488,7 @@
     "id": "fv351",
     "target": "kanó:tsot",
     "english": "muskie",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24680,7 +25576,7 @@
     "id": "fv355",
     "target": "karáhstha",
     "english": "camera",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24746,7 +25642,7 @@
     "id": "fv358",
     "target": "karonta'shón:'a ohté:ra",
     "english": "tree roots",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24790,7 +25686,7 @@
     "id": "fv360",
     "target": "karòn:ta",
     "english": "tree",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -24944,7 +25840,7 @@
     "id": "fv367",
     "target": "katakwaríhshions",
     "english": "level",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25098,7 +25994,7 @@
     "id": "fv374",
     "target": "ka'nehsarónhkwi o'neróhkwa",
     "english": "sandbox",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25164,7 +26060,7 @@
     "id": "fv377",
     "target": "ka'níkhons",
     "english": "sewing machine",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25252,7 +26148,7 @@
     "id": "fv381",
     "target": "ka'seréhtes ká:sere",
     "english": "limousine",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25362,7 +26258,7 @@
     "id": "fv386",
     "target": "kàksa",
     "english": "cup",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25384,7 +26280,7 @@
     "id": "fv387",
     "target": "kà'nhia",
     "english": "hockey stick",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25472,7 +26368,7 @@
     "id": "fv391",
     "target": "káhrhon",
     "english": "cradleboard",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25494,7 +26390,7 @@
     "id": "fv392",
     "target": "káti'",
     "english": "then",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25516,7 +26412,7 @@
     "id": "fv393",
     "target": "kátshe",
     "english": "jug",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25538,7 +26434,7 @@
     "id": "fv394",
     "target": "ká:nen",
     "english": "seed",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25582,7 +26478,7 @@
     "id": "fv396",
     "target": "kentstenhrakèn:rat",
     "english": "slate",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25604,7 +26500,7 @@
     "id": "fv397",
     "target": "ken'niiohontésha",
     "english": "strawberries",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25626,7 +26522,7 @@
     "id": "fv398",
     "target": "ken'nikahiatonhkwá:'a",
     "english": "small pencil",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25648,7 +26544,7 @@
     "id": "fv399",
     "target": "ken'nikanehshio'tá:'a",
     "english": "brussel sprouts",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25934,7 +26830,7 @@
     "id": "fv412",
     "target": "kén:thon",
     "english": "here",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -25956,7 +26852,7 @@
     "id": "fv413",
     "target": "kén:ton",
     "english": "it means",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26088,7 +26984,7 @@
     "id": "fv419",
     "target": "khenorónhkhwa",
     "english": "I love her",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26110,7 +27006,7 @@
     "id": "fv420",
     "target": "khenón:we's",
     "english": "I like her",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26132,7 +27028,7 @@
     "id": "fv421",
     "target": "kherihonnién:ni",
     "english": "I teach her",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26220,7 +27116,7 @@
     "id": "fv425",
     "target": "khiá:tons",
     "english": "I write",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26308,7 +27204,7 @@
     "id": "fv429",
     "target": "konwahnhá'skwe",
     "english": "they used to hire her",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26352,7 +27248,7 @@
     "id": "fv431",
     "target": "kón:ne's",
     "english": "they are here",
-    "pos": "verb",
+    "pos": "verb.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26462,7 +27358,7 @@
     "id": "fv436",
     "target": "nà:kon",
     "english": "under",
-    "pos": "particle",
+    "pos": "particle.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26484,7 +27380,7 @@
     "id": "fv437",
     "target": "nia'tewahsóhkwake otsistóhkwa",
     "english": "topaz",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26506,7 +27402,7 @@
     "id": "fv438",
     "target": "niá:wen",
     "english": "thank you",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26528,7 +27424,7 @@
     "id": "fv439",
     "target": "niiohontesha'kó:wa",
     "english": "cultivated strawberries",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26572,7 +27468,7 @@
     "id": "fv441",
     "target": "nithoiòn:ha",
     "english": "young man",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26594,7 +27490,7 @@
     "id": "fv442",
     "target": "nitiakoiòn:ha",
     "english": "young woman",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26660,7 +27556,7 @@
     "id": "fv445",
     "target": "oháhsera",
     "english": "light",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26682,7 +27578,7 @@
     "id": "fv446",
     "target": "ohéhsa",
     "english": "decayed wood",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26704,7 +27600,7 @@
     "id": "fv447",
     "target": "ohénhsa",
     "english": "earwax",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26726,7 +27622,7 @@
     "id": "fv448",
     "target": "ohiakháhon",
     "english": "tomato",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26748,7 +27644,7 @@
     "id": "fv449",
     "target": "ohiakwì:ra",
     "english": "toe",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26770,7 +27666,7 @@
     "id": "fv450",
     "target": "ohiatónhkwa",
     "english": "pencils",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26792,7 +27688,7 @@
     "id": "fv451",
     "target": "ohióhsa",
     "english": "elbow",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26814,7 +27710,7 @@
     "id": "fv452",
     "target": "ohì:kta",
     "english": "thorn",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26836,7 +27732,7 @@
     "id": "fv453",
     "target": "ohí:ia",
     "english": "hip bone",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26858,7 +27754,7 @@
     "id": "fv454",
     "target": "ohká:ra",
     "english": "wood chips",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26968,7 +27864,7 @@
     "id": "fv459",
     "target": "ohné:kanos",
     "english": "water",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -26990,7 +27886,7 @@
     "id": "fv460",
     "target": "ohnión:wara",
     "english": "thorns",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27012,7 +27908,7 @@
     "id": "fv461",
     "target": "ohónhsa",
     "english": "hearing",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27034,7 +27930,7 @@
     "id": "fv462",
     "target": "ohónhta",
     "english": "ear",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27056,7 +27952,7 @@
     "id": "fv463",
     "target": "ohsohkwa'shón:'a",
     "english": "crayons",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27078,7 +27974,7 @@
     "id": "fv464",
     "target": "ohsò:kwa",
     "english": "nut",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27122,7 +28018,7 @@
     "id": "fv466",
     "target": "ohtèn:na",
     "english": "tree trunk",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27144,7 +28040,7 @@
     "id": "fv467",
     "target": "ohtsà:na",
     "english": "hand",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27232,7 +28128,7 @@
     "id": "fv471",
     "target": "osthó:seri",
     "english": "feathers",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27254,7 +28150,7 @@
     "id": "fv472",
     "target": "oswen'karà:ke",
     "english": "floor",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27276,7 +28172,7 @@
     "id": "fv473",
     "target": "othé:sera",
     "english": "flour",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27408,7 +28304,7 @@
     "id": "fv479",
     "target": "ó:kwire",
     "english": "tree",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27430,7 +28326,7 @@
     "id": "fv480",
     "target": "ó:wise",
     "english": "glass",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27474,7 +28370,7 @@
     "id": "fv482",
     "target": "rotiráhston",
     "english": "drawings",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27540,7 +28436,7 @@
     "id": "fv485",
     "target": "shakotinenióia'ks",
     "english": "elves",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27760,7 +28656,7 @@
     "id": "fv495",
     "target": "tsá:ta",
     "english": "seven",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27826,7 +28722,7 @@
     "id": "fv498",
     "target": "tsothonwí:sen",
     "english": "girl",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27870,7 +28766,7 @@
     "id": "fv500",
     "target": "watena'taratsha'áhta",
     "english": "toaster",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27892,7 +28788,7 @@
     "id": "fv501",
     "target": "wennekerákon",
     "english": "sweet grass",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -27914,7 +28810,7 @@
     "id": "fv502",
     "target": "wisk",
     "english": "five",
-    "pos": "number",
+    "pos": "number.cardinal",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28024,7 +28920,7 @@
     "id": "fv507",
     "target": "O'tara'shón:'a",
     "english": "Clans",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28090,7 +28986,7 @@
     "id": "fv510",
     "target": "Shakonhstónhrha",
     "english": "Santa Claus",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28134,7 +29030,7 @@
     "id": "fv512",
     "target": "karáhston ahsonhtà:ke iera'nentáktha",
     "english": "poster",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28156,7 +29052,7 @@
     "id": "fv513",
     "target": "ka'wahrowá:wen",
     "english": "big piece of meat",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28178,7 +29074,7 @@
     "id": "fv514",
     "target": "ohén:ton ié:rate/ie:iéte ne ionterihwaienstáhkhwa",
     "english": "principal (male/female)",
-    "pos": "noun",
+    "pos": "noun.unclassified",
     "unit": null,
     "lesson": null,
     "notes": null,
@@ -28195,5 +29091,250 @@
     "groupLabel": "Places",
     "sortKey": "principal (male/female)",
     "posLabel": "Noun"
+  },
+  {
+    "id": "p05",
+    "target": "aónha",
+    "english": "It / She (informal)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Informal",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Three uses: (1) a female animal, (2) a familiar female — sister or close friend, (3) an inanimate object. Familiarity and animacy are encoded grammatically in Kanien'kéha rather than through separate pronouns.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "aónha",
+      "aonha"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p07",
+    "target": "teiakeniiáhshe",
+    "english": "We two (you and I)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Dual Inclusive",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "First person dual inclusive. The teiaken- prefix marks 'you and I together'. Distinct from teniáhshe (us two, exclusive — not including the listener).",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "teiakeniiáhshe",
+      "teiakeniia:hshe",
+      "teiakeniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p08",
+    "target": "teteniiáhshe",
+    "english": "Two females (us two)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Dual Feminine",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Dual pronoun for two females. The tete- prefix marks a feminine dual. Compare with tehniiáhshe (two males or mixed pair).",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "teteniiáhshe",
+      "teteniia:hshe",
+      "teteniiahshe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p09",
+    "target": "tehniiáhshe",
+    "english": "Two males / one of each",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Dual Masculine",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "For two males, or one male and one female together. The teh- prefix marks a masculine or mixed dual.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "tehniiáhshe",
+      "tehniia:hshe",
+      "tehniia:hshe",
+      "tehniia'she",
+      "tehniia:she"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p11",
+    "target": "onkwé:kon",
+    "english": "We all (plural, inclusive)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Plural Inclusive",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "First person plural inclusive — all of us, including the person being spoken to. Distinct from konwé:kon (all females, exclusive) and ratiié:ren (all males or mixed plural).",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "onkwé:kon",
+      "onkwe:kon",
+      "onkwekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p12",
+    "target": "kontié:ren",
+    "english": "All females (plural)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Plural Feminine",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Third person feminine plural. Used when referring to a group of women or girls. The kon- prefix marks feminine plural.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "kontié:ren",
+      "kontie:ren",
+      "kontieren"
+    ],
+    "forms": null
+  },
+  {
+    "id": "p13",
+    "target": "ratié:ren",
+    "english": "All males / everybody (plural)",
+    "pos": "pronoun.independent",
+    "posLabel": "Pronoun — Plural Masculine",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "Third person masculine/mixed plural. Can mean 'all the males' or, in context, 'everybody' (inclusive of males). The ra- prefix marks masculine; -tié:ren marks plural.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-1/"
+    },
+    "accepts": [
+      "ratié:ren",
+      "ratie:ren",
+      "ratieren"
+    ],
+    "forms": null
+  },
+  {
+    "id": "k09",
+    "target": "Sheién:'a",
+    "english": "Your daughter",
+    "pos": "noun.kinship",
+    "posLabel": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 0,
+    "notes": "Your daughter. The she- prefix marks second person possession (your). Daughter and son forms use distinct prefix patterns from sibling forms.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "Sheién:'a",
+      "sheién:'a",
+      "sheien:'a",
+      "shiena"
+    ],
+    "forms": null
+  },
+  {
+    "id": "k10",
+    "target": "Shetiá:wen",
+    "english": "Your son",
+    "pos": "noun.kinship",
+    "posLabel": "Noun — Kinship",
+    "unit": 1,
+    "lesson": 0,
+    "notes": "Your son. The she- prefix marks second person possession (your). Compare with Akhsotá (my grandmother) — kinship terms in Kanien'kéha encode the relationship from the speaker's perspective.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 5 · Mary McDonald, Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/lessons/lesson-5/"
+    },
+    "accepts": [
+      "Shetiá:wen",
+      "shetiá:wen",
+      "shetia:wen",
+      "shetiawen"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v02",
+    "target": "Niawén:kwe",
+    "english": "Thank you",
+    "pos": "particle.discourse",
+    "posLabel": "Expression — Gratitude",
+    "unit": 4,
+    "lesson": 0,
+    "notes": "A simpler form of Niawenhkó:wa (thank you greatly). Niawén: is the root; -kwe is a softening particle. Used in everyday contexts; Niawenhkó:wa is more formal or emphatic.",
+    "cite": {
+      "text": "Kontinónhstats · common usage · Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Niawén:kwe",
+      "niawén:kwe",
+      "niawen:kwe",
+      "niawenkwe"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v04",
+    "target": "Shé:kon",
+    "english": "Hello / Still / Yet",
+    "pos": "particle.discourse",
+    "posLabel": "Particle — Greeting",
+    "unit": 0,
+    "lesson": 0,
+    "notes": "The most common everyday greeting. Shé:kon also means 'still' or 'yet' in non-greeting contexts — the greeting use is idiomatic. Returned in kind: if someone says Shé:kon, you reply Shé:kon.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 1 / common usage · Kanehsatà:ke",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Shé:kon",
+      "she:kon",
+      "shekon"
+    ],
+    "forms": null
+  },
+  {
+    "id": "v06",
+    "target": "Wá:s",
+    "english": "Go! (command, singular)",
+    "pos": "verb.a-stem",
+    "posLabel": "Verb — Command",
+    "unit": 4,
+    "lesson": 1,
+    "notes": "Wá:s — 'Go!' Command form for one person. Kanien'kéha verbs encode person, number, gender, and aspect. Structure: pronominal prefix + verb root + aspect suffix. For plural command (go, all of you), the prefix changes.",
+    "cite": {
+      "text": "Kontinónhstats Lesson 12 · Deering & Harries-Delisle teaching grammar",
+      "url": "https://www.kanehsatakevoices.com/"
+    },
+    "accepts": [
+      "Wá:s",
+      "wá:s",
+      "wa:s",
+      "was"
+    ],
+    "forms": null
   }
 ]

@@ -1,0 +1,23 @@
+{
+  "_comment": "SPEAK-ALOUD EXERCISE (type: audio) — learner records themselves, listens back, and self-assesses as 'Felt right' or 'Still learning'. No automated speech scoring. 165 in the corpus. Use once per lesson, near the end.",
+
+  "type": "audio",
+
+  "wid": "na01",
+  "_wid": "Glossary ID. Required.",
+
+  "prompt": "Say this word aloud",
+  "_prompt": "Usually 'Say this word aloud' or 'Pronounce this word'. Keep short — the word display does the work. Required.",
+
+  "sub": "Record, listen back, and self-assess",
+  "_sub": "This exact string is standard for all audio exercises. Required.",
+
+  "word": "Ohón:ta'",
+  "_word": "The Kanien'kéha word shown large on screen. Required.",
+
+  "meaning": "Leaf / leaves",
+  "_meaning": "English meaning shown below the word. Required.",
+
+  "hint": "Three syllables: O-HÓN-ta'. Stress on the second syllable. The length mark (:) on the ó means you hold it slightly longer than a short vowel. The apostrophe at the end is a glottal stop — a brief, full closure of the throat, like the catch in 'uh-oh'.",
+  "_hint": "Pronunciation guide shown to the learner before they record. Required. Structure: (1) syllable breakdown with stress marked, (2) notes on any unusual sounds (length marks, glottal stops, nasalisation), (3) a familiar English comparison if helpful. No Kanien'kéha voice exists in any browser — the app uses English speech synthesis as an approximation. The hint compensates for this."
+}
