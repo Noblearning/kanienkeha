@@ -1052,7 +1052,19 @@
             "rootHint": "v01",
             "cm": "Tho niioht! sá:tien — the sa- prefix marks second-person singular subjective on an a-stem verb. You'll see this prefix pattern across many verbs.",
             "wm": "Not quite — look at the subjective series and find the prefix for 'you (singular)'.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av05",
+              "av06"
+            ],
+            "prefixOptions": [
+              "sa",
+              "ka",
+              "sk",
+              "sewa"
+            ]
           },
           {
             "type": "wbassemble",
@@ -1067,7 +1079,19 @@
             ],
             "cm": "Niawenhkó:wa! ká:tiens — ka- is the first-person singular subjective prefix on an a-stem verb. The habitual -s marks an ongoing state.",
             "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'I' in the subjective series is ka-.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av06",
+              "v05"
+            ],
+            "prefixOptions": [
+              "ka",
+              "sa",
+              "kk",
+              "wake"
+            ]
           }
         ]
       },
@@ -2334,7 +2358,19 @@
             "rootHint": "k01",
             "cm": "Niawenhkó:wa! ake'nihsténha — my mother. The ake- prefix marks first-person singular possession on female kinship nouns. This same prefix appears across all female-line kinship terms.",
             "wm": "Not quite — scroll the possessor list and find the form for 'my'.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "k01",
+              "k04",
+              "k02",
+              "k03"
+            ],
+            "prefixOptions": [
+              "ake",
+              "yako",
+              "sa",
+              "iake"
+            ]
           }
         ]
       },
@@ -3185,7 +3221,19 @@
             ],
             "cm": "Tho niioht! yahsótha — your grandfather. The yah- prefix marks second-person singular possession. In Akwesasne this becomes lahsótha — both are equally correct.",
             "wm": "Not quite. The root is 'sot (grandfather) and the prefix for 'your' on male kinship nouns is yah-.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "k03",
+              "k04",
+              "k02",
+              "k01"
+            ],
+            "prefixOptions": [
+              "yah",
+              "ra",
+              "ake",
+              "yako"
+            ]
           },
           {
             "type": "wordbuilder",
@@ -3736,7 +3784,19 @@
             "rootHint": "v05",
             "cm": "Tho niioht! satkáhthons — you are listening. The sa- prefix marks second-person singular. The habitual -s signals an ongoing or repeated action.",
             "wm": "Not quite — find the subjective prefix for 'you (singular)' in the person list.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v05",
+              "v01",
+              "av06",
+              "ov04"
+            ],
+            "prefixOptions": [
+              "sa",
+              "ka",
+              "sewa",
+              "sk"
+            ]
           },
           {
             "type": "wbassemble",
@@ -3751,7 +3811,19 @@
             ],
             "cm": "Niawenhkó:wa! tekaráhtats — I am running. The te- is a directional reduplication element on this root; ka- is still doing the first-person singular work.",
             "wm": "Not quite. The root is aráhtat (to run) and the first-person singular subjective prefix is ka-. Look for tekaráhtats in the form list.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v03",
+              "v01",
+              "av06",
+              "v05"
+            ],
+            "prefixOptions": [
+              "teka",
+              "ka",
+              "tesa",
+              "tewaka"
+            ]
           }
         ]
       },
@@ -4943,7 +5015,19 @@
             ],
             "cm": "Tho niioht! sewá:tien — you all are sitting. The sewa- prefix marks second-person plural subjective. Compare sa- (you singular) → sewa- (you plural): the -wa- extends it to a group.",
             "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'you all' is sewa-. Look in the subjective series for the plural form.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av05",
+              "av06"
+            ],
+            "prefixOptions": [
+              "sewa",
+              "sa",
+              "iakwa",
+              "seni"
+            ]
           }
         ]
       }
@@ -34211,7 +34295,19 @@
             "rootHint": "v01",
             "cm": "Tho niioht! sá:tien — the sa- prefix marks second-person singular subjective on an a-stem verb. You'll see this prefix pattern across many verbs.",
             "wm": "Not quite — look at the subjective series and find the prefix for 'you (singular)'.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av05",
+              "av06"
+            ],
+            "prefixOptions": [
+              "sa",
+              "ka",
+              "sk",
+              "sewa"
+            ]
           },
           {
             "type": "wbassemble",
@@ -34226,7 +34322,19 @@
             ],
             "cm": "Niawenhkó:wa! ká:tiens — ka- is the first-person singular subjective prefix on an a-stem verb. The habitual -s marks an ongoing state.",
             "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'I' in the subjective series is ka-.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av06",
+              "v05"
+            ],
+            "prefixOptions": [
+              "ka",
+              "sa",
+              "kk",
+              "wake"
+            ]
           },
           {
             "type": "wordbuilder",
@@ -34251,7 +34359,19 @@
             "rootHint": "k01",
             "cm": "Niawenhkó:wa! ake'nihsténha — my mother. The ake- prefix marks first-person singular possession on female kinship nouns. This same prefix appears across all female-line kinship terms.",
             "wm": "Not quite — scroll the possessor list and find the form for 'my'.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "k01",
+              "k04",
+              "k02",
+              "k03"
+            ],
+            "prefixOptions": [
+              "ake",
+              "yako",
+              "sa",
+              "iake"
+            ]
           },
           {
             "type": "wbassemble",
@@ -34265,7 +34385,19 @@
             ],
             "cm": "Tho niioht! yahsótha — your grandfather. The yah- prefix marks second-person singular possession. In Akwesasne this becomes lahsótha — both are equally correct.",
             "wm": "Not quite. The root is 'sot (grandfather) and the prefix for 'your' on male kinship nouns is yah-.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "k03",
+              "k04",
+              "k02",
+              "k01"
+            ],
+            "prefixOptions": [
+              "yah",
+              "ra",
+              "ake",
+              "yako"
+            ]
           },
           {
             "type": "wordbuilder",
@@ -34299,7 +34431,19 @@
             "rootHint": "v05",
             "cm": "Tho niioht! satkáhthons — you are listening. The sa- prefix marks second-person singular. The habitual -s signals an ongoing or repeated action.",
             "wm": "Not quite — find the subjective prefix for 'you (singular)' in the person list.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v05",
+              "v01",
+              "av06",
+              "ov04"
+            ],
+            "prefixOptions": [
+              "sa",
+              "ka",
+              "sewa",
+              "sk"
+            ]
           },
           {
             "type": "wbassemble",
@@ -34314,7 +34458,19 @@
             ],
             "cm": "Niawenhkó:wa! tekaráhtats — I am running. The te- is a directional reduplication element on this root; ka- is still doing the first-person singular work.",
             "wm": "Not quite. The root is aráhtat (to run) and the first-person singular subjective prefix is ka-. Look for tekaráhtats in the form list.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v03",
+              "v01",
+              "av06",
+              "v05"
+            ],
+            "prefixOptions": [
+              "teka",
+              "ka",
+              "tesa",
+              "tewaka"
+            ]
           },
           {
             "type": "wordbuilder",
@@ -34338,7 +34494,19 @@
             ],
             "cm": "Tho niioht! sewá:tien — you all are sitting. The sewa- prefix marks second-person plural subjective. Compare sa- (you singular) → sewa- (you plural): the -wa- extends it to a group.",
             "wm": "Not quite. The root is á:tien (to sit) and the prefix for 'you all' is sewa-. Look in the subjective series for the plural form.",
-            "wid": null
+            "wid": null,
+            "rootOptions": [
+              "v01",
+              "v03",
+              "av05",
+              "av06"
+            ],
+            "prefixOptions": [
+              "sewa",
+              "sa",
+              "iakwa",
+              "seni"
+            ]
           }
         ]
       }
