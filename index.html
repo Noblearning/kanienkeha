@@ -976,7 +976,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <div id="builder" class="screen">
   <div class="bm"></div>
   <div class="pw">
-    <div class="sh"><h2>Word builder</h2><p>Assemble Kanien'kéha words from roots, prefixes, and suffixes.</p></div>
+    <div class="sh"><h2>Word builder</h2><p>Assemble <span class="wb-lang-name">Kanien'kéha</span> words from roots, prefixes, and suffixes.</p></div>
     <div class="wb-wrap">
       <div class="wb-mode-bar">
         <button class="wb-mode-btn active" id="wbm-explore" onclick="wbSetMode('explore',this)">Explore</button>
@@ -987,7 +987,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <!-- EXPLORE -->
       <div id="wb-explore">
         <div class="wb-info" id="wb-carousel-info">
-          Kanien'kéha is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">word root</span> (verb or noun), pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
+          <span class="wb-lang-name">Kanien'kéha</span> is <strong>polysynthetic</strong> — a whole phrase becomes one word. Choose a <span class="wb-tag wb-tr">word root</span> (verb or noun), pick a <span class="wb-tag wb-tp">person prefix</span>, then optionally add a <span class="wb-tag wb-tni">noun root</span> and a <span class="wb-tag wb-td">descriptor</span>. <span class="wb-tag wb-tph">*</span> = unverified form.
         </div>
 
         <div class="wb-dialect-row">
@@ -4098,10 +4098,21 @@ function wbApplyDialect(str){
   return str;
 }
 
+/* Dialect names for the language itself — Eastern vs Ontario orthography */
+const WB_LANG_NAMES={
+  kanehsatake:"Kanien'kéha",
+  akwesasne:"Kanien'kéha",
+  sixnations:"Kanyen'kéha"
+};
+
 function wbSetDialect(d,btn){
   WB.dialect=d;
   document.querySelectorAll('.wb-dialect-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
+  // Update the language name throughout the Word Builder UI
+  // (Six Nations uses Kanyen'kéha; Eastern communities use Kanien'kéha)
+  const langName=WB_LANG_NAMES[d]||"Kanien'kéha";
+  document.querySelectorAll('#builder .wb-lang-name').forEach(el=>el.textContent=langName);
   // Re-render everything that shows prefixes
   if(WB.word)wbRenderPersonStep();
   if(WB.formIdx!=null)wbUpdateAssembly();
@@ -4140,6 +4151,8 @@ function wbSetCat(c,btn){
   /* Reset context-sensitive labels to defaults */
   const s2=document.getElementById('wb-step2-label');
   if(s2)s2.textContent='2 — person & series';
+  /* Return carousel to step 1 so locked steps aren't left on screen */
+  wbCarrGoto(0);
 }
 
 function wbFiltered(){
@@ -4191,6 +4204,8 @@ function wbSelectWord(id){
     const step2lbl=document.getElementById('wb-step2-label');
     if(step2lbl)step2lbl.textContent=isNoun?'2 — possessor':'2 — person & series';
   }
+  /* Unlock step 2 so its form chips are interactive (wbSetCat locks them) */
+  wbUnlockStep('wb-step-person');
   /* Enable forward arrow on step 1 now that a root is chosen */
   const nextBtn=document.getElementById('wb-carr-next');
   if(nextBtn)nextBtn.disabled=false;
@@ -4278,6 +4293,9 @@ function wbSetSeries(s,btn){
   wbLockStep('wb-step-ni');
   wbLockStep('wb-step-desc');
   wbClearBuilder();
+  /* Disable Next arrow — a new form must be chosen before advancing */
+  const nextBtn=document.getElementById('wb-carr-next');
+  if(nextBtn)nextBtn.disabled=true;
 }
 
 function wbPickForm(i){
@@ -4289,8 +4307,14 @@ function wbPickForm(i){
   wbRenderNIStep();
   wbRenderDescStep();
   wbUpdateAssembly();
-  /* Mark steps 3 & 4 as unlocked (carousel will show them when navigated to) */
+  /* Unlock steps 3 & 4 so their chips are interactive when navigated to */
+  wbUnlockStep('wb-step-ni');
+  wbUnlockStep('wb-step-desc');
   WB.formChosen=true;
+  /* Re-enable the Next arrow — wbCarrGoto(1) left it disabled until a form
+     was chosen; now that one is, the user can advance to steps 3 & 4 */
+  const nextBtn=document.getElementById('wb-carr-next');
+  if(nextBtn)nextBtn.disabled=false;
 }
 
 function wbPickKinship(i){
@@ -4423,6 +4447,10 @@ function wbCarrGoto(idx){
   if(prev)prev.disabled=(idx===0);
   const next=document.getElementById('wb-carr-next');
   if(next)next.disabled=(idx>=total-1)||(idx===0&&!WB.word)||(idx>=1&&!WB.formChosen);
+  // Scroll the builder panel to top so the incoming step is always visible
+  // (the root-word grid can be long; without this, step 2 appears above the fold)
+  const pw=document.querySelector('#builder .pw');
+  if(pw)pw.scrollTop=0;
 }
 
 function wbCarrNext(){
